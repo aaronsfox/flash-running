@@ -477,6 +477,8 @@ osimHelper.kinematicsToStates(kinematicsFileName = 'ikResults.mot',
                               outputFileName = 'refQ.sto',
                               inDegrees = True, outDegrees = False)
 
+###### TODO: check IK errors - some look high???
+
 # %% Run a tracking simulation on experimental data
 
 # This section contains adapted code from Ross Miller's UMocoD walking project
@@ -719,6 +721,42 @@ for ii in range(0,model.getNumStateVariables()):
 
 #Solve!
 sprintTrackingSolution = study.solve()
+
+study.printToXML('test.omoco')
+
+# % Write the solution to a file
+# sprintTrackingSolution.write('sprintTracking_solution_halfStride.sto')
+
+# % Visualize the solution
+# study.visualize(gaitTrackingSolution);
+
+forcesLeftFoot.append('/forceset/contactHeel_l')
+forcesLeftFoot.append('/forceset/contactMH1_l')
+forcesLeftFoot.append('/forceset/contactMH3_l')
+forcesLeftFoot.append('/forceset/contactMH5_l')
+forcesLeftFoot.append('/forceset/contactHallux_l')
+forcesLeftFoot.append('/forceset/contactOtherToes_l')
+
+#Write solution's GRF to a file
+contact_r = osim.StdVectorString()
+contact_l = osim.StdVectorString()
+contact_r.append('/forceset/contactHeel_r')
+contact_r.append('/forceset/contactMH1_r')
+contact_r.append('/forceset/contactMH3_r')
+contact_r.append('/forceset/contactMH5_r')
+contact_r.append('/forceset/contactHallux_r')
+contact_r.append('/forceset/contactOtherToes_r')
+contact_l.append('/forceset/contactHeel_l')
+contact_l.append('/forceset/contactMH1_l')
+contact_l.append('/forceset/contactMH3_l')
+contact_l.append('/forceset/contactMH5_l')
+contact_l.append('/forceset/contactHallux_l')
+contact_l.append('/forceset/contactOtherToes_l')
+externalForcesTableFlat = osim.createExternalLoadsTableForGait(model,sprintTrackingSolution,contact_r,contact_l)
+osim.writeTableToFile(externalForcesTableFlat,'sprintTracking_solution_halfStride_GRF.sto')
+                         
+##### TODO: getting the -nan(ind) values again...did this have a solution???
+
 
 # %% DON'T THINK RRA IS NECESSARY GIVEN CHANGES TO KINEMATICS WILL OCCUR DURING TRACKING SIM...?
 
