@@ -18,5 +18,5 @@ Warning: intermediate_callback is disfunctional in your installation. You will o
 intermediate_callback: Error in Function::operator() for 'NlpsolCallback' [CallbackInternal] at D:\a\opensim-moco\opensim-moco\dependencies\casadi\casadi\core\function.cpp:1319:
 D:\a\opensim-moco\opensim-moco\dependencies\casadi\casadi\core\function_internal.cpp:3119: Failed to evaluate 'eval_dm' for NlpsolCallback:
 D:\a\opensim-moco\opensim-moco\dependencies\casadi\casadi\core\callback_internal.cpp:104: Error calling "eval" for object NlpsolCallback:
-File 'delete_this_to_stop_optimization__2020-09-10T220607.993494.txt' deleted.
+File 'delete_this_to_stop_optimization__2020-09-11T105158.325554.txt' deleted.
 	Thrown at MocoUtilities.h:814 in throwIfDeleted().

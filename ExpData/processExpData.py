@@ -17,6 +17,7 @@ Created on Thu Sep 10 11:31:10 2020
 
 import os
 import btk
+import math
 import opensim as osim
 import osimHelper
 import numpy as np
@@ -674,20 +675,17 @@ contactTracking.setProjectionVector(osim.Vec3(0, 0, 1))
 #Add to problem
 problem.addGoal(contactTracking)
 
-#Set joint coordinate bounds to their maximum and minimum values
-coordList = ['pelvis_tilt','hip_flexion_r','knee_angle_r','ankle_angle_r',
-             'hip_flexion_l','knee_angle_l','ankle_angle_l','lumbar_extension']
-for cc in range(0,len(coordList)):    
-    #Get absolute path string for joint coordinate
-    jointStr = model.getCoordinateSet().get(coordList[cc]).getAbsolutePathString()
-    #Get max and min values
-    mxVal = model.getCoordinateSet().get(coordList[cc]).getRangeMax()
-    mnVal = model.getCoordinateSet().get(coordList[cc]).getRangeMin()
-    #Set in problem
-    problem.setStateInfo(jointStr+'/value', [mnVal, mxVal])
-#Add translational limits
+#Set joint coordinate bounds
 problem.setStateInfo('/jointset/ground_pelvis/pelvis_tx/value', [0, 5])
 problem.setStateInfo('/jointset/ground_pelvis/pelvis_ty/value', [0.75, 1.25])
+problem.setStateInfo('/jointset/ground_pelvis/pelvis_tilt/value', [math.radians(-20), math.radians(10)])
+problem.setStateInfo('/jointset/back/lumbar_extension/value', [math.radians(-30), math.radians(5)])
+problem.setStateInfo('/jointset/hip_r/hip_flexion_r/value', [math.radians(-30), math.radians(90)])
+problem.setStateInfo('/jointset/hip_l/hip_flexion_l/value', [math.radians(-30), math.radians(90)])
+problem.setStateInfo('/jointset/walker_knee_r/knee_angle_r/value', [math.radians(0), math.radians(140)])
+problem.setStateInfo('/jointset/walker_knee_l/knee_angle_l/value', [math.radians(0), math.radians(140)])
+problem.setStateInfo('/jointset/ankle_r/ankle_angle_r/value', [math.radians(-40), math.radians(30)])
+problem.setStateInfo('/jointset/ankle_l/ankle_angle_l/value', [math.radians(-40), math.radians(30)])
 
 #Set muscle limits in problem
 #### TODO: these may need to be adjusted for sprinting (from walking data)
@@ -730,6 +728,9 @@ study.printToXML('test.omoco')
 # % Visualize the solution
 # study.visualize(gaitTrackingSolution);
 
+
+#### TODO: must unlock model coordinates to avoid NaN's in force table...
+
 forcesLeftFoot.append('/forceset/contactHeel_l')
 forcesLeftFoot.append('/forceset/contactMH1_l')
 forcesLeftFoot.append('/forceset/contactMH3_l')
@@ -754,8 +755,6 @@ contact_l.append('/forceset/contactHallux_l')
 contact_l.append('/forceset/contactOtherToes_l')
 externalForcesTableFlat = osim.createExternalLoadsTableForGait(model,sprintTrackingSolution,contact_r,contact_l)
 osim.writeTableToFile(externalForcesTableFlat,'sprintTracking_solution_halfStride_GRF.sto')
-                         
-##### TODO: getting the -nan(ind) values again...did this have a solution???
 
 
 # %% DON'T THINK RRA IS NECESSARY GIVEN CHANGES TO KINEMATICS WILL OCCUR DURING TRACKING SIM...?
