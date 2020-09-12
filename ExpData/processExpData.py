@@ -23,6 +23,7 @@ import osimHelper
 import numpy as np
 import pandas as pd
 from scipy.signal import butter, lfilter
+from scipy.spatial.transform import Rotation as R
 import matplotlib.pyplot as plt
 import xml.etree.ElementTree as et
 
@@ -101,6 +102,87 @@ dynamicTRCFile.write(dynamicMarkers, 'maxSprint.trc')
 
 #Convert c3d force data to .mot and .xml files
 
+#Load in the c3d data via btk
+dynamicC3D = btk.btkAcquisitionFileReader()
+dynamicC3D.SetFilename('maxSprint.c3d')
+dynamicC3D.Update()
+dynamicAcq = dynamicC3D.GetOutput()
+
+#Extract the force platforms data
+forcePlatforms = btk.btkForcePlatformsExtractor()
+forcePlatforms.SetInput(dynamicAcq)
+forcePlatforms.Update()
+# fpExtract.GetOutput() #fp collection
+# fpExtract.GetOutput().GetItem(1).GetChannels().GetItemNumber() #fplatform
+
+#Get the wrenchs for position and force data
+groundReactionWrenches = btk.btkGroundReactionWrenchFilter()
+groundReactionWrenches.SetInput(forcePlatforms.GetOutput())
+groundReactionWrenches.Update()
+
+#Loop through the 8 plates and get their info
+grf = list()
+grm = list()
+cop = list()
+for fp in range(0,8):
+    #Get the different sets of values and append to lists
+    grf.append(groundReactionWrenches.GetOutput().GetItem(fp).GetForce().GetValues())
+    grm.append(groundReactionWrenches.GetOutput().GetItem(fp).GetMoment().GetValues())
+    cop.append(groundReactionWrenches.GetOutput().GetItem(fp).GetPosition().GetValues())
+
+#Rotate force plate data
+#First rotation
+rotMag = np.radians(-90)
+rotAx = np.array([0,0,1])
+rotVec = rotMag * rotAx
+rotMat1 = R.from_rotvec(rotVec)
+for fp in range(0,8):
+    grf[fp] = rotMat1.apply(grf[fp])
+    grm[fp] = rotMat1.apply(grm[fp])
+    cop[fp] = rotMat1.apply(cop[fp])
+#Second rotation
+rotMag = np.radians(-90)
+rotAx = np.array([1,0,0])
+rotVec = rotMag * rotAx
+rotMat2 = R.from_rotvec(rotVec)
+for fp in range(0,8):
+    grf[fp] = rotMat2.apply(grf[fp])
+    grm[fp] = rotMat2.apply(grm[fp])
+    cop[fp] = rotMat2.apply(cop[fp])
+
+#Convert mm to m units
+for fp in range(0,8):
+    grm[fp] = grm[fp] / 1000
+    cop[fp] = cop[fp] / 1000
+
+#Extract data into matrix
+forcesMat = np.zeros((len(grf[0]), 3 * 3 * 8))
+colNo = 0
+for fp in range(0,8):
+    forcesMat[:,colNo:colNo+3] = grf[fp]
+    forcesMat[:,colNo+3:colNo+3+3] = cop[fp]
+    forcesMat[:,colNo+6:colNo+6+3] = grm[fp]
+    colNo = colNo+9
+
+#Define filter for forces data (50N Low-pass 4th Order Butterworth)
+fs = 2000
+nyq = 0.5 * fs
+normCutoff = 50 / nyq
+b, a = butter(4, normCutoff, btype = 'low', analog = False)
+
+#Apply lowpass filter to force data (50N cut-off)
+forcesFilt = np.zeros((np.size(forcesMat,0), np.size(forcesMat,1)))
+for jj in range(0,np.size(forcesMat,1)):
+    forcesFilt[:,jj] = lfilter(b, a, forcesMat[:,jj])
+    
+#Cast array to dataframe
+
+#####UP TO HERE...
+forceLabels = ['Fx','Fy','Fz','Px','Py','Pz','Mx','My','Mz']
+df_forces = pd.DataFrame(forcesFilt, columns = allForceLabels)
+
+# %%
+
 #Get forces data
 dynamicForces = dynamicC3DFile.getForcesTable(dynamicData)
 
@@ -120,12 +202,12 @@ for ii in range(dynamicForces.getNumRows()):
     vec_rotated = rotMat2.multiply(vec)
     dynamicForces.setRowAtIndex(ii, vec_rotated)
     
-#Convert mm units to m
-pList = ['p1','p2','p3','p4','p5','p6','p7','p8']
-mList = ['m1','m2','m3','m4','m5','m6','m7','m8']
-for ff in range(0,len(pList)):
-    osimHelper.mm_to_m(dynamicForces, pList[ff])
-    osimHelper.mm_to_m(dynamicForces, mList[ff])
+# #Convert mm units to m
+# pList = ['p1','p2','p3','p4','p5','p6','p7','p8']
+# mList = ['m1','m2','m3','m4','m5','m6','m7','m8']
+# for ff in range(0,len(pList)):
+#     osimHelper.mm_to_m(dynamicForces, pList[ff])
+#     osimHelper.mm_to_m(dynamicForces, mList[ff])
 
 #Define filter for forces data (50N Low-pass 4th Order Butterworth)
 fs = 2000
@@ -297,6 +379,15 @@ forceXML.printToXML('refGRF.xml')
 #Adapt for the 2D version 
 forceXML.setDataFileName('refGRF_2D.mot')
 forceXML.printToXML('refGRF_2D.xml')
+
+##### GRF position data looks weird, impacting solutions???
+
+##### Forces are OK for their magnitude values
+##### Torques and position look like they need to be divided by 1000
+##### Timing of data seems wrong, but is probably OK (i.e. all files are ~1.5 secs)
+##### Position data looks wrong though, suggests constant force plate contact
+    ##### > Added together right?
+    ##### THey probably don't need to be added to one another actually...
 
 # %% Model scaling
 
@@ -480,6 +571,197 @@ osimHelper.kinematicsToStates(kinematicsFileName = 'ikResults.mot',
 
 ###### TODO: check IK errors - some look high???
 
+# %% Run an inverse simulation to on experimental data
+
+# # At this point we convert the model and data to a 2D problem, so there are elements
+# # here that are necessary to do this
+
+# #Lock the frontal and transverse coordinates of the model
+# lockList = ['pelvis_list', 'pelvis_rotation', 'pelvis_tz',
+#             'hip_adduction_r', 'hip_rotation_r', 'hip_adduction_l', 'hip_rotation_l',
+#             'lumbar_bending', 'lumbar_rotation']
+# for kk in range(0,len(lockList)):
+#     scaledModelMuscle.getCoordinateSet().get(lockList[kk]).set_locked(True)
+    
+# #Set lumbar bending and rotational torques to non-existent values
+# #Removing or disabling them generates errors from problem to solver
+# osim.CoordinateActuator.safeDownCast(scaledModelMuscle.getForceSet().get('tau_lumbar_bend')).setMinControl(-1e-10)
+# osim.CoordinateActuator.safeDownCast(scaledModelMuscle.getForceSet().get('tau_lumbar_bend')).setMaxControl(1e-10)
+# osim.CoordinateActuator.safeDownCast(scaledModelMuscle.getForceSet().get('tau_lumbar_bend')).setOptimalForce(1)
+# osim.CoordinateActuator.safeDownCast(scaledModelMuscle.getForceSet().get('tau_lumbar_rot')).setMinControl(-1e-10)
+# osim.CoordinateActuator.safeDownCast(scaledModelMuscle.getForceSet().get('tau_lumbar_rot')).setMaxControl(1e-10)
+# osim.CoordinateActuator.safeDownCast(scaledModelMuscle.getForceSet().get('tau_lumbar_rot')).setOptimalForce(1)
+      
+# #Export model for processing
+# scaledModelMuscle.finalizeConnections()
+# scaledModelMuscle.printToXML('model2D.osim')
+
+# #Construct the MocoInverse tool.
+# inverse = osim.MocoInverse()
+
+# #Set model and parameters
+# modelProcessor = osim.ModelProcessor('model2D.osim')
+# modelProcessor.append(osim.ModOpReplaceMusclesWithDeGrooteFregly2016())
+# modelProcessor.append(osim.ModOpIgnoreTendonCompliance())
+# modelProcessor.append(osim.ModOpIgnorePassiveFiberForcesDGF())
+# # modelProcessor.append(osim.ModOpTendonComplianceDynamicsModeDGF('implicit')) # Use muscle contractile dynamics
+# #modelProcessor.append(ModOpIgnorePassiveFiberForcesDGF()); # Set passive muscle fiber forces to zero
+# modelProcessor.append(osim.ModOpScaleActiveFiberForceCurveWidthDGF(1.5))
+# modelProcessor.append(osim.ModOpAddReserves(1.0))
+# inverse.setModel(modelProcessor)
+
+# #Construct a TableProcessor of the coordinate data and pass it to the
+# #inverse tool. TableProcessors can be used in the same way as
+# #ModelProcessors by appending TableOperators to modify the base table.
+# #A TableProcessor with no operators, as we have here, simply returns the
+# #base table.
+# inverse.setKinematics(osim.TableProcessor('refQ.sto'))
+
+# # Initial time, final time, and mesh interval.
+# inverse.set_initial_time(startTime)
+# inverse.set_final_time(endTime)
+# inverse.set_mesh_interval(0.02) #### currently just adopted from example
+
+# #By default, Moco gives an error if the kinematics contains extra columns.
+# #Here, we tell Moco to allow (and ignore) those extra columns.
+# inverse.set_kinematics_allow_extra_columns(True)
+
+# #Solve the problem and write the solution to a Storage file.
+# inverseSolution = inverse.solve()
+# # inverseSolution.getMocoSolution().unseal()
+# inverseSolution.getMocoSolution().write('stopped_MocoInverse_solution.sto')
+
+# %% Run a basic tracking simulation without GRF tracking
+
+# This section contains adapted code from Ross Miller's UMocoD walking project
+
+# At this point we convert the model and data to a 2D problem, so there are elements
+# here that are necessary to do this
+
+#Lock the frontal and transverse coordinates of the model
+lockList = ['pelvis_list', 'pelvis_rotation', 'pelvis_tz',
+            'hip_adduction_r', 'hip_rotation_r', 'hip_adduction_l', 'hip_rotation_l',
+            'lumbar_bending', 'lumbar_rotation']
+for kk in range(0,len(lockList)):
+    scaledModelMuscle.getCoordinateSet().get(lockList[kk]).set_locked(True)
+    
+#Set lumbar bending and rotational torques to non-existent values
+#Removing or disabling them generates errors from problem to solver
+osim.CoordinateActuator.safeDownCast(scaledModelMuscle.getForceSet().get('tau_lumbar_bend')).setMinControl(-1e-10)
+osim.CoordinateActuator.safeDownCast(scaledModelMuscle.getForceSet().get('tau_lumbar_bend')).setMaxControl(1e-10)
+osim.CoordinateActuator.safeDownCast(scaledModelMuscle.getForceSet().get('tau_lumbar_bend')).setOptimalForce(1)
+osim.CoordinateActuator.safeDownCast(scaledModelMuscle.getForceSet().get('tau_lumbar_rot')).setMinControl(-1e-10)
+osim.CoordinateActuator.safeDownCast(scaledModelMuscle.getForceSet().get('tau_lumbar_rot')).setMaxControl(1e-10)
+osim.CoordinateActuator.safeDownCast(scaledModelMuscle.getForceSet().get('tau_lumbar_rot')).setOptimalForce(1)
+
+#Turn off the contact force elements
+osim.SmoothSphereHalfSpaceForce.safeDownCast(scaledModelMuscle.getForceSet().get('contactHeel_r')).set_appliesForce(False)
+osim.SmoothSphereHalfSpaceForce.safeDownCast(scaledModelMuscle.getForceSet().get('contactMH1_r')).set_appliesForce(False)
+osim.SmoothSphereHalfSpaceForce.safeDownCast(scaledModelMuscle.getForceSet().get('contactMH3_r')).set_appliesForce(False)
+osim.SmoothSphereHalfSpaceForce.safeDownCast(scaledModelMuscle.getForceSet().get('contactMH5_r')).set_appliesForce(False)
+osim.SmoothSphereHalfSpaceForce.safeDownCast(scaledModelMuscle.getForceSet().get('contactHallux_r')).set_appliesForce(False)
+osim.SmoothSphereHalfSpaceForce.safeDownCast(scaledModelMuscle.getForceSet().get('contactOtherToes_r')).set_appliesForce(False)
+osim.SmoothSphereHalfSpaceForce.safeDownCast(scaledModelMuscle.getForceSet().get('contactHeel_l')).set_appliesForce(False)
+osim.SmoothSphereHalfSpaceForce.safeDownCast(scaledModelMuscle.getForceSet().get('contactMH1_l')).set_appliesForce(False)
+osim.SmoothSphereHalfSpaceForce.safeDownCast(scaledModelMuscle.getForceSet().get('contactMH3_l')).set_appliesForce(False)
+osim.SmoothSphereHalfSpaceForce.safeDownCast(scaledModelMuscle.getForceSet().get('contactMH5_l')).set_appliesForce(False)
+osim.SmoothSphereHalfSpaceForce.safeDownCast(scaledModelMuscle.getForceSet().get('contactHallux_l')).set_appliesForce(False)
+osim.SmoothSphereHalfSpaceForce.safeDownCast(scaledModelMuscle.getForceSet().get('contactOtherToes_l')).set_appliesForce(False)
+
+#Export model for processing
+scaledModelMuscle.finalizeConnections()
+scaledModelMuscle.printToXML('model2D_noContact.osim')
+
+#Define the motion tracking problem
+track = osim.MocoTrack()
+track.setName('sprintTracking_noContact')
+
+#Set kinematics
+tableProcessor = osim.TableProcessor('refQ.sto')
+
+#Set model and parameters
+modelProcessor = osim.ModelProcessor('model2D_noContact.osim')
+modelProcessor.append(osim.ModOpAddExternalLoads('refGRF_2D.xml'))
+modelProcessor.append(osim.ModOpReplaceMusclesWithDeGrooteFregly2016())
+modelProcessor.append(osim.ModOpIgnoreTendonCompliance())
+modelProcessor.append(osim.ModOpIgnorePassiveFiberForcesDGF())
+modelProcessor.append(osim.ModOpScaleActiveFiberForceCurveWidthDGF(1.5))
+modelProcessor.append(osim.ModOpAddReserves(2))
+# modelProcessor.append(osim.ModOpTendonComplianceDynamicsModeDGF('implicit')) # Use muscle contractile dynamics
+#modelProcessor.append(ModOpIgnorePassiveFiberForcesDGF()); # Set passive muscle fiber forces to zero
+track.setModel(modelProcessor)
+
+#Set states reference details
+track.setStatesReference(tableProcessor) # Apply the target data to the tracking problem
+track.set_states_global_tracking_weight(5) # Default tracking weight (is changed below)
+track.set_allow_unused_references(True) # Target data can include DoF not in this model
+track.set_track_reference_position_derivatives(True) # Track speed trajectories
+track.set_apply_tracked_states_to_guess(True) # Use target data in initial guess
+
+#Set times
+track.set_initial_time(osim.Storage('refQ.sto').getFirstTime())
+track.set_final_time(osim.Storage('refQ.sto').getLastTime())
+
+#Specify tracking weights as mean standard deviations from Miller et al. (2014)
+#Pelvis and lumbar targets have arbitrarily large weights
+stateWeights = osim.MocoWeightSet()
+#Joint values
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_tx/value',10))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_ty/value',10))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_tilt/value',5))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/back/lumbar_extension/value',5))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_r/hip_flexion_r/value',25))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/walker_knee_r/knee_angle_r/value',50))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ankle_r/ankle_angle_r/value',25))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_l/hip_flexion_l/value',25))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/walker_knee_l/knee_angle_l/value',50))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ankle_l/ankle_angle_l/value',25))
+#Add to tracking problem
+track.set_states_weight_set(stateWeights)
+
+#Define the Moco study and problem
+study = track.initialize()
+problem = study.updProblem()
+
+#Regularization term on MocoTrack problem (minimize squared muscle excitations)
+effort = osim.MocoControlGoal.safeDownCast(problem.updGoal('control_effort'))
+effort.setWeight(1)
+
+#Set joint coordinate bounds
+problem.setStateInfo('/jointset/ground_pelvis/pelvis_tx/value', [0, 5])
+problem.setStateInfo('/jointset/ground_pelvis/pelvis_ty/value', [0.75, 1.25])
+problem.setStateInfo('/jointset/ground_pelvis/pelvis_tilt/value', [math.radians(-20), math.radians(10)])
+problem.setStateInfo('/jointset/back/lumbar_extension/value', [math.radians(-30), math.radians(5)])
+problem.setStateInfo('/jointset/hip_r/hip_flexion_r/value', [math.radians(-30), math.radians(90)])
+problem.setStateInfo('/jointset/hip_l/hip_flexion_l/value', [math.radians(-30), math.radians(90)])
+problem.setStateInfo('/jointset/walker_knee_r/knee_angle_r/value', [math.radians(0), math.radians(140)])
+problem.setStateInfo('/jointset/walker_knee_l/knee_angle_l/value', [math.radians(0), math.radians(140)])
+problem.setStateInfo('/jointset/ankle_r/ankle_angle_r/value', [math.radians(-40), math.radians(30)])
+problem.setStateInfo('/jointset/ankle_l/ankle_angle_l/value', [math.radians(-40), math.radians(30)])
+
+#Set muscle limits in problem
+#### TODO: these may need to be adjusted for sprinting (from walking data)
+# problem.setStateInfoPattern('/forceset/.*/normalized_tendon_force', [0, 1.8], [], [])
+problem.setStateInfoPattern('/forceset/.*/activation',   [0.001, 1.0], [], [])
+
+#Define the solver and set its options
+solver = osim.MocoCasADiSolver.safeDownCast(study.updSolver())
+#solver.set_multibody_dynamics_mode('implicit')
+#solver.set_minimize_implicit_multibody_accelerations(true)
+#solver.set_implicit_multibody_accelerations_weight(0.00001)
+solver.set_optim_max_iterations(1000)
+solver.set_num_mesh_intervals(25) ####TODO: might need to be upped, low for speed right now
+solver.set_optim_constraint_tolerance(1e-2) ####TODO: might need to be lower
+solver.set_optim_convergence_tolerance(1e-2) ####TODO: might need to be lower
+solver.set_minimize_implicit_auxiliary_derivatives(True)
+solver.set_implicit_auxiliary_derivatives_weight(0.001)
+solver.resetProblem(problem)
+
+# %% Solve the tracking problem without contact
+
+#Solve!
+sprintTrackingSolution_noContact = study.solve()
+
 # %% Run a tracking simulation on experimental data
 
 # This section contains adapted code from Ross Miller's UMocoD walking project
@@ -517,7 +799,10 @@ tableProcessor = osim.TableProcessor('refQ.sto')
 #Set model and parameters
 modelProcessor = osim.ModelProcessor('model2D.osim')
 modelProcessor.append(osim.ModOpReplaceMusclesWithDeGrooteFregly2016())
-modelProcessor.append(osim.ModOpTendonComplianceDynamicsModeDGF('implicit')) # Use muscle contractile dynamics
+modelProcessor.append(osim.ModOpIgnoreTendonCompliance())
+modelProcessor.append(osim.ModOpIgnorePassiveFiberForcesDGF())
+modelProcessor.append(osim.ModOpScaleActiveFiberForceCurveWidthDGF(1.5))
+# modelProcessor.append(osim.ModOpTendonComplianceDynamicsModeDGF('implicit')) # Use muscle contractile dynamics
 #modelProcessor.append(ModOpIgnorePassiveFiberForcesDGF()); # Set passive muscle fiber forces to zero
 track.setModel(modelProcessor)
 
@@ -615,13 +900,13 @@ for mm in range(0,len(muscNames)):
     periodicityGoal.addStatePair(pair)
     
     
-    #Only set tendon force pair if tendon compliance is considered
-    if model.getMuscles().get(muscNames[mm]+'_r').get_ignore_tendon_compliance() is False:
-        #Set the pair for normalised tendon force
-        pair = osim.MocoPeriodicityGoalPair('/forceset/'+muscNames[mm]+'_r/normalized_tendon_force',
-                                            '/forceset/'+muscNames[mm]+'_l/normalized_tendon_force')
-        #Add to the goal
-        periodicityGoal.addStatePair(pair)
+    # #Only set tendon force pair if tendon compliance is considered
+    # if model.getMuscles().get(muscNames[mm]+'_r').get_ignore_tendon_compliance() is False:
+    #     #Set the pair for normalised tendon force
+    #     pair = osim.MocoPeriodicityGoalPair('/forceset/'+muscNames[mm]+'_r/normalized_tendon_force',
+    #                                         '/forceset/'+muscNames[mm]+'_l/normalized_tendon_force')
+    #     #Add to the goal
+    #     periodicityGoal.addStatePair(pair)
     
 #Symmetric coordinate actuator controls
 periodicityGoal.addControlPair(osim.MocoPeriodicityGoalPair('/forceset/tau_lumbar_ext'));
@@ -689,7 +974,7 @@ problem.setStateInfo('/jointset/ankle_l/ankle_angle_l/value', [math.radians(-40)
 
 #Set muscle limits in problem
 #### TODO: these may need to be adjusted for sprinting (from walking data)
-problem.setStateInfoPattern('/forceset/.*/normalized_tendon_force', [0, 1.8], [], [])
+# problem.setStateInfoPattern('/forceset/.*/normalized_tendon_force', [0, 1.8], [], [])
 problem.setStateInfoPattern('/forceset/.*/activation',   [0.001, 1.0], [], [])
 
 #Define the solver and set its options
@@ -705,15 +990,15 @@ solver.set_minimize_implicit_auxiliary_derivatives(True)
 solver.set_implicit_auxiliary_derivatives_weight(0.001)
 solver.resetProblem(problem)
 
-#Set the normalized tendon forces if not loading initial guess from file
-guess = solver.getGuess()
-numRows = guess.getNumTimes()
-stateNames = model.getStateVariableNames()
-for ii in range(0,model.getNumStateVariables()):
-    #Get current state name
-    currentStateName = stateNames.get(ii)
-    if 'normalized_tendon_force' in currentStateName:
-        guess.setState(currentStateName, np.linspace(0.2,0.2,numRows))
+# #Set the normalized tendon forces if not loading initial guess from file
+# guess = solver.getGuess()
+# numRows = guess.getNumTimes()
+# stateNames = model.getStateVariableNames()
+# for ii in range(0,model.getNumStateVariables()):
+#     #Get current state name
+#     currentStateName = stateNames.get(ii)
+#     if 'normalized_tendon_force' in currentStateName:
+#         guess.setState(currentStateName, np.linspace(0.2,0.2,numRows))
 
 # %% Solve the tracking problem
 
