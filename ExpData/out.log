@@ -1,148 +1,99 @@
 Loaded model scaledModel from file scaledModelMuscle.osim
 Storage: read data file =refQ.sto (nr=71 nc=26)
 Storage: read data file =refQ.sto (nr=71 nc=26)
-Loaded model scaledModel from file model2D.osim
-Loaded model scaledModel from file model2D.osim
-Storage: read data file =refQ.sto (nr=71 nc=26)
+Adding reserve actuators with an optimal force of 1000...
+Added 16 reserve actuator(s), for each of the following coordinates:
+  /jointset/ground_pelvis/pelvis_tilt
+  /jointset/ground_pelvis/pelvis_list
+  /jointset/ground_pelvis/pelvis_rotation
+  /jointset/ground_pelvis/pelvis_tx
+  /jointset/ground_pelvis/pelvis_ty
+  /jointset/ground_pelvis/pelvis_tz
+  /jointset/hip_r/hip_flexion_r
+  /jointset/hip_r/hip_adduction_r
+  /jointset/hip_r/hip_rotation_r
+  /jointset/walker_knee_r/knee_angle_r
+  /jointset/ankle_r/ankle_angle_r
+  /jointset/hip_l/hip_flexion_l
+  /jointset/hip_l/hip_adduction_l
+  /jointset/hip_l/hip_rotation_l
+  /jointset/walker_knee_l/knee_angle_l
+  /jointset/ankle_l/ankle_angle_l
 ===============================================================================
-MocoCasADiSolver starting. Mon Sep 14 17:01:57 2020
+MocoCasADiSolver starting. Mon Sep 14 22:52:02 2020
 -------------------------------------------------------------------------------
-Costs: (total: 4)
-  state_tracking. MocoStateTrackingGoal, enabled: 1, mode: cost, weight: 1
-        state: /jointset/ground_pelvis/pelvis_tilt/value, weight: 32.8405
-        state: /jointset/ground_pelvis/pelvis_list/value, weight: 0
-        state: /jointset/ground_pelvis/pelvis_rotation/value, weight: 0
-        state: /jointset/ground_pelvis/pelvis_tx/value, weight: 100
-        state: /jointset/ground_pelvis/pelvis_ty/value, weight: 25
-        state: /jointset/ground_pelvis/pelvis_tz/value, weight: 0
-        state: /jointset/hip_r/hip_flexion_r/value, weight: 238.886
-        state: /jointset/hip_r/hip_adduction_r/value, weight: 0
-        state: /jointset/hip_r/hip_rotation_r/value, weight: 0
-        state: /jointset/walker_knee_r/knee_angle_r/value, weight: 126.531
+Costs: (total: 3)
+  state_tracking. MocoStateTrackingGoal, enabled: 1, mode: cost, weight: 5
+        state: /jointset/ground_pelvis/pelvis_tilt/value, weight: 50
+        state: /jointset/ground_pelvis/pelvis_list/value, weight: 50
+        state: /jointset/ground_pelvis/pelvis_rotation/value, weight: 50
+        state: /jointset/ground_pelvis/pelvis_tx/value, weight: 10
+        state: /jointset/ground_pelvis/pelvis_ty/value, weight: 10
+        state: /jointset/ground_pelvis/pelvis_tz/value, weight: 10
+        state: /jointset/hip_r/hip_flexion_r/value, weight: 25
+        state: /jointset/hip_r/hip_adduction_r/value, weight: 10
+        state: /jointset/hip_r/hip_rotation_r/value, weight: 5
+        state: /jointset/walker_knee_r/knee_angle_r/value, weight: 50
         state: /jointset/patellofemoral_r/knee_angle_r_beta/value, weight: 0
-        state: /jointset/ankle_r/ankle_angle_r/value, weight: 303.512
+        state: /jointset/ankle_r/ankle_angle_r/value, weight: 25
         state: /jointset/subtalar_r/subtalar_angle_r/value, weight: 0
         state: /jointset/mtp_r/mtp_angle_r/value, weight: 0
-        state: /jointset/hip_l/hip_flexion_l/value, weight: 238.886
-        state: /jointset/hip_l/hip_adduction_l/value, weight: 0
-        state: /jointset/hip_l/hip_rotation_l/value, weight: 0
-        state: /jointset/walker_knee_l/knee_angle_l/value, weight: 126.531
+        state: /jointset/hip_l/hip_flexion_l/value, weight: 25
+        state: /jointset/hip_l/hip_adduction_l/value, weight: 10
+        state: /jointset/hip_l/hip_rotation_l/value, weight: 5
+        state: /jointset/walker_knee_l/knee_angle_l/value, weight: 50
         state: /jointset/patellofemoral_l/knee_angle_l_beta/value, weight: 0
-        state: /jointset/ankle_l/ankle_angle_l/value, weight: 303.512
+        state: /jointset/ankle_l/ankle_angle_l/value, weight: 25
         state: /jointset/subtalar_l/subtalar_angle_l/value, weight: 0
         state: /jointset/mtp_l/mtp_angle_l/value, weight: 0
-        state: /jointset/back/lumbar_extension/value, weight: 32.8405
-        state: /jointset/back/lumbar_bending/value, weight: 0
-        state: /jointset/back/lumbar_rotation/value, weight: 0
-        state: /jointset/ground_pelvis/pelvis_tilt/speed, weight: 0.292205
-        state: /jointset/ground_pelvis/pelvis_list/speed, weight: 0
-        state: /jointset/ground_pelvis/pelvis_rotation/speed, weight: 0
-        state: /jointset/ground_pelvis/pelvis_tx/speed, weight: 0.1
-        state: /jointset/ground_pelvis/pelvis_ty/speed, weight: 0.025
-        state: /jointset/ground_pelvis/pelvis_tz/speed, weight: 0
-        state: /jointset/hip_r/hip_flexion_r/speed, weight: 0.238886
-        state: /jointset/hip_r/hip_adduction_r/speed, weight: 0
-        state: /jointset/hip_r/hip_rotation_r/speed, weight: 0
-        state: /jointset/walker_knee_r/knee_angle_r/speed, weight: 0.126531
+        state: /jointset/back/lumbar_extension/value, weight: 5
+        state: /jointset/back/lumbar_bending/value, weight: 5
+        state: /jointset/back/lumbar_rotation/value, weight: 5
+        state: /jointset/ground_pelvis/pelvis_tilt/speed, weight: 1
+        state: /jointset/ground_pelvis/pelvis_list/speed, weight: 1
+        state: /jointset/ground_pelvis/pelvis_rotation/speed, weight: 1
+        state: /jointset/ground_pelvis/pelvis_tx/speed, weight: 1
+        state: /jointset/ground_pelvis/pelvis_ty/speed, weight: 1
+        state: /jointset/ground_pelvis/pelvis_tz/speed, weight: 1
+        state: /jointset/hip_r/hip_flexion_r/speed, weight: 1
+        state: /jointset/hip_r/hip_adduction_r/speed, weight: 1
+        state: /jointset/hip_r/hip_rotation_r/speed, weight: 1
+        state: /jointset/walker_knee_r/knee_angle_r/speed, weight: 1
         state: /jointset/patellofemoral_r/knee_angle_r_beta/speed, weight: 0
-        state: /jointset/ankle_r/ankle_angle_r/speed, weight: 0.303512
+        state: /jointset/ankle_r/ankle_angle_r/speed, weight: 1
         state: /jointset/subtalar_r/subtalar_angle_r/speed, weight: 0
         state: /jointset/mtp_r/mtp_angle_r/speed, weight: 0
-        state: /jointset/hip_l/hip_flexion_l/speed, weight: 0.238886
-        state: /jointset/hip_l/hip_adduction_l/speed, weight: 0
-        state: /jointset/hip_l/hip_rotation_l/speed, weight: 0
-        state: /jointset/walker_knee_l/knee_angle_l/speed, weight: 0.126531
+        state: /jointset/hip_l/hip_flexion_l/speed, weight: 1
+        state: /jointset/hip_l/hip_adduction_l/speed, weight: 1
+        state: /jointset/hip_l/hip_rotation_l/speed, weight: 1
+        state: /jointset/walker_knee_l/knee_angle_l/speed, weight: 1
         state: /jointset/patellofemoral_l/knee_angle_l_beta/speed, weight: 0
-        state: /jointset/ankle_l/ankle_angle_l/speed, weight: 0.303512
+        state: /jointset/ankle_l/ankle_angle_l/speed, weight: 1
         state: /jointset/subtalar_l/subtalar_angle_l/speed, weight: 0
         state: /jointset/mtp_l/mtp_angle_l/speed, weight: 0
-        state: /jointset/back/lumbar_extension/speed, weight: 0.0328405
-        state: /jointset/back/lumbar_bending/speed, weight: 0
-        state: /jointset/back/lumbar_rotation/speed, weight: 0
+        state: /jointset/back/lumbar_extension/speed, weight: 1
+        state: /jointset/back/lumbar_bending/speed, weight: 1
+        state: /jointset/back/lumbar_rotation/speed, weight: 1
   control_effort. MocoControlGoal, enabled: 1, mode: cost, weight: 0.1
         control: /forceset/tau_lumbar_ext, weight: 1
         control: /forceset/tau_lumbar_bend, weight: 1
         control: /forceset/tau_lumbar_rot, weight: 1
-        control: /forceset/addbrev_r, weight: 1
-        control: /forceset/addlong_r, weight: 1
-        control: /forceset/addmagDist_r, weight: 1
-        control: /forceset/addmagIsch_r, weight: 1
-        control: /forceset/addmagMid_r, weight: 1
-        control: /forceset/addmagProx_r, weight: 1
-        control: /forceset/bflh140_r, weight: 1
-        control: /forceset/bfsh140_r, weight: 1
-        control: /forceset/edl_r, weight: 1
-        control: /forceset/ehl_r, weight: 1
-        control: /forceset/fdl_r, weight: 1
-        control: /forceset/fhl_r, weight: 1
-        control: /forceset/gaslat140_r, weight: 1
-        control: /forceset/gasmed_r, weight: 1
-        control: /forceset/glmax1_r, weight: 1
-        control: /forceset/glmax2_r, weight: 1
-        control: /forceset/glmax3_r, weight: 1
-        control: /forceset/glmed1_r, weight: 1
-        control: /forceset/glmed2_r, weight: 1
-        control: /forceset/glmed3_r, weight: 1
-        control: /forceset/glmin1_r, weight: 1
-        control: /forceset/glmin2_r, weight: 1
-        control: /forceset/glmin3_r, weight: 1
-        control: /forceset/grac_r, weight: 1
-        control: /forceset/iliacus_r, weight: 1
-        control: /forceset/perbrev_r, weight: 1
-        control: /forceset/perlong_r, weight: 1
-        control: /forceset/piri_r, weight: 1
-        control: /forceset/psoas_r, weight: 1
-        control: /forceset/recfem_r, weight: 1
-        control: /forceset/sart_r, weight: 1
-        control: /forceset/semimem_r, weight: 1
-        control: /forceset/semiten_r, weight: 1
-        control: /forceset/soleus_r, weight: 1
-        control: /forceset/tfl_r, weight: 1
-        control: /forceset/tibant_r, weight: 1
-        control: /forceset/tibpost_r, weight: 1
-        control: /forceset/vasint_r, weight: 1
-        control: /forceset/vaslat140_r, weight: 1
-        control: /forceset/vasmed_r, weight: 1
-        control: /forceset/addbrev_l, weight: 1
-        control: /forceset/addlong_l, weight: 1
-        control: /forceset/addmagDist_l, weight: 1
-        control: /forceset/addmagIsch_l, weight: 1
-        control: /forceset/addmagMid_l, weight: 1
-        control: /forceset/addmagProx_l, weight: 1
-        control: /forceset/bflh140_l, weight: 1
-        control: /forceset/bfsh140_l, weight: 1
-        control: /forceset/edl_l, weight: 1
-        control: /forceset/ehl_l, weight: 1
-        control: /forceset/fdl_l, weight: 1
-        control: /forceset/fhl_l, weight: 1
-        control: /forceset/gaslat140_l, weight: 1
-        control: /forceset/gasmed_l, weight: 1
-        control: /forceset/glmax1_l, weight: 1
-        control: /forceset/glmax2_l, weight: 1
-        control: /forceset/glmax3_l, weight: 1
-        control: /forceset/glmed1_l, weight: 1
-        control: /forceset/glmed2_l, weight: 1
-        control: /forceset/glmed3_l, weight: 1
-        control: /forceset/glmin1_l, weight: 1
-        control: /forceset/glmin2_l, weight: 1
-        control: /forceset/glmin3_l, weight: 1
-        control: /forceset/grac_l, weight: 1
-        control: /forceset/iliacus_l, weight: 1
-        control: /forceset/perbrev_l, weight: 1
-        control: /forceset/perlong_l, weight: 1
-        control: /forceset/piri_l, weight: 1
-        control: /forceset/psoas_l, weight: 1
-        control: /forceset/recfem_l, weight: 1
-        control: /forceset/sart_l, weight: 1
-        control: /forceset/semimem_l, weight: 1
-        control: /forceset/semiten_l, weight: 1
-        control: /forceset/soleus_l, weight: 1
-        control: /forceset/tfl_l, weight: 1
-        control: /forceset/tibant_l, weight: 1
-        control: /forceset/tibpost_l, weight: 1
-        control: /forceset/vasint_l, weight: 1
-        control: /forceset/vaslat140_l, weight: 1
-        control: /forceset/vasmed_l, weight: 1
+        control: /forceset/reserve_jointset_ground_pelvis_pelvis_tilt, weight: 1
+        control: /forceset/reserve_jointset_ground_pelvis_pelvis_list, weight: 1
+        control: /forceset/reserve_jointset_ground_pelvis_pelvis_rotation, weight: 1
+        control: /forceset/reserve_jointset_ground_pelvis_pelvis_tx, weight: 1
+        control: /forceset/reserve_jointset_ground_pelvis_pelvis_ty, weight: 1
+        control: /forceset/reserve_jointset_ground_pelvis_pelvis_tz, weight: 1
+        control: /forceset/reserve_jointset_hip_r_hip_flexion_r, weight: 1
+        control: /forceset/reserve_jointset_hip_r_hip_adduction_r, weight: 1
+        control: /forceset/reserve_jointset_hip_r_hip_rotation_r, weight: 1
+        control: /forceset/reserve_jointset_walker_knee_r_knee_angle_r, weight: 1
+        control: /forceset/reserve_jointset_ankle_r_ankle_angle_r, weight: 1
+        control: /forceset/reserve_jointset_hip_l_hip_flexion_l, weight: 1
+        control: /forceset/reserve_jointset_hip_l_hip_adduction_l, weight: 1
+        control: /forceset/reserve_jointset_hip_l_hip_rotation_l, weight: 1
+        control: /forceset/reserve_jointset_walker_knee_l_knee_angle_l, weight: 1
+        control: /forceset/reserve_jointset_ankle_l_ankle_angle_l, weight: 1
   contact. MocoContactTrackingGoal, enabled: 1, mode: cost, weight: 1
         projection type: plane
         projection vector: ~[0,0,1]
@@ -162,280 +113,86 @@ Costs: (total: 4)
                 /forceset/contactMH5_l
                 /forceset/contactHallux_l
                 /forceset/contactOtherToes_l
-  pelvisOrientation. MocoOrientationTrackingGoal, enabled: 1, mode: cost, weight: 0.1
-        rotation reference file: 
-        frame 0: /bodyset/pelvis, weight: 1
-Endpoint constraints: (total: 2)
-  symmetryGoal. MocoPeriodicityGoal, enabled: 1, mode: endpoint_constraint
-        state periodicity pairs: 
-                initial: /jointset/hip_r/hip_flexion_r/value, final: /jointset/hip_l/hip_flexion_l/value
-                initial: /jointset/hip_r/hip_flexion_r/speed, final: /jointset/hip_l/hip_flexion_l/speed
-                initial: /jointset/walker_knee_r/knee_angle_r/value, final: /jointset/walker_knee_l/knee_angle_l/value
-                initial: /jointset/walker_knee_r/knee_angle_r/speed, final: /jointset/walker_knee_l/knee_angle_l/speed
-                initial: /jointset/ankle_r/ankle_angle_r/value, final: /jointset/ankle_l/ankle_angle_l/value
-                initial: /jointset/ankle_r/ankle_angle_r/speed, final: /jointset/ankle_l/ankle_angle_l/speed
-                initial: /forceset/addbrev_r/activation, final: /forceset/addbrev_l/activation
-                initial: /forceset/addlong_r/activation, final: /forceset/addlong_l/activation
-                initial: /forceset/addmagDist_r/activation, final: /forceset/addmagDist_l/activation
-                initial: /forceset/addmagIsch_r/activation, final: /forceset/addmagIsch_l/activation
-                initial: /forceset/addmagMid_r/activation, final: /forceset/addmagMid_l/activation
-                initial: /forceset/addmagProx_r/activation, final: /forceset/addmagProx_l/activation
-                initial: /forceset/bflh140_r/activation, final: /forceset/bflh140_l/activation
-                initial: /forceset/bfsh140_r/activation, final: /forceset/bfsh140_l/activation
-                initial: /forceset/edl_r/activation, final: /forceset/edl_l/activation
-                initial: /forceset/ehl_r/activation, final: /forceset/ehl_l/activation
-                initial: /forceset/fdl_r/activation, final: /forceset/fdl_l/activation
-                initial: /forceset/fhl_r/activation, final: /forceset/fhl_l/activation
-                initial: /forceset/gaslat140_r/activation, final: /forceset/gaslat140_l/activation
-                initial: /forceset/gasmed_r/activation, final: /forceset/gasmed_l/activation
-                initial: /forceset/glmax1_r/activation, final: /forceset/glmax1_l/activation
-                initial: /forceset/glmax2_r/activation, final: /forceset/glmax2_l/activation
-                initial: /forceset/glmax3_r/activation, final: /forceset/glmax3_l/activation
-                initial: /forceset/glmed1_r/activation, final: /forceset/glmed1_l/activation
-                initial: /forceset/glmed2_r/activation, final: /forceset/glmed2_l/activation
-                initial: /forceset/glmed3_r/activation, final: /forceset/glmed3_l/activation
-                initial: /forceset/glmin1_r/activation, final: /forceset/glmin1_l/activation
-                initial: /forceset/glmin2_r/activation, final: /forceset/glmin2_l/activation
-                initial: /forceset/glmin3_r/activation, final: /forceset/glmin3_l/activation
-                initial: /forceset/grac_r/activation, final: /forceset/grac_l/activation
-                initial: /forceset/iliacus_r/activation, final: /forceset/iliacus_l/activation
-                initial: /forceset/perbrev_r/activation, final: /forceset/perbrev_l/activation
-                initial: /forceset/perlong_r/activation, final: /forceset/perlong_l/activation
-                initial: /forceset/piri_r/activation, final: /forceset/piri_l/activation
-                initial: /forceset/psoas_r/activation, final: /forceset/psoas_l/activation
-                initial: /forceset/recfem_r/activation, final: /forceset/recfem_l/activation
-                initial: /forceset/sart_r/activation, final: /forceset/sart_l/activation
-                initial: /forceset/semimem_r/activation, final: /forceset/semimem_l/activation
-                initial: /forceset/semiten_r/activation, final: /forceset/semiten_l/activation
-                initial: /forceset/soleus_r/activation, final: /forceset/soleus_l/activation
-                initial: /forceset/tfl_r/activation, final: /forceset/tfl_l/activation
-                initial: /forceset/tibant_r/activation, final: /forceset/tibant_l/activation
-                initial: /forceset/tibpost_r/activation, final: /forceset/tibpost_l/activation
-                initial: /forceset/vasint_r/activation, final: /forceset/vasint_l/activation
-                initial: /forceset/vaslat140_r/activation, final: /forceset/vaslat140_l/activation
-                initial: /forceset/vasmed_r/activation, final: /forceset/vasmed_l/activation
-        control periodicity pairs: 
-                initial: /forceset/tau_lumbar_ext, final: /forceset/tau_lumbar_ext
-  speed. MocoAverageSpeedGoal, enabled: 1, mode: endpoint_constraint
-Kinematic constraints: (total: 2)
+Endpoint constraints: none
+Kinematic constraints: (total: 6)
+  kinematic_constraint_cid21. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+  kinematic_constraint_cid22. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+  kinematic_constraint_cid23. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+  kinematic_constraint_cid24. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
   kinematic_constraint_cid25. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
   kinematic_constraint_cid26. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
 Path constraints: none
-States: (total: 130)
-  /forceset/addbrev_r/activation. bounds: [0.001, 1]
-  /forceset/addlong_r/activation. bounds: [0.001, 1]
-  /forceset/addmagDist_r/activation. bounds: [0.001, 1]
-  /forceset/addmagIsch_r/activation. bounds: [0.001, 1]
-  /jointset/mtp_l/mtp_angle_l/speed. bounds: [-50, 50]
-  /forceset/addmagMid_r/activation. bounds: [0.001, 1]
-  /forceset/addmagProx_r/activation. bounds: [0.001, 1]
-  /forceset/bflh140_r/activation. bounds: [0.001, 1]
+States: (total: 50)
+  /jointset/ground_pelvis/pelvis_tx/value. bounds: [0, 5]
+  /jointset/ankle_l/ankle_angle_l/value. bounds: [-0.698132, 0.523599]
+  /jointset/ground_pelvis/pelvis_ty/value. bounds: [0.75, 1.25]
+  /jointset/hip_l/hip_rotation_l/value. bounds: [-0.523599, 0.261799]
+  /jointset/ground_pelvis/pelvis_tz/value. bounds: [0, 0.3]
+  /jointset/subtalar_l/subtalar_angle_l/value. bounds: [-0.610865, 0.610865]
+  /jointset/mtp_r/mtp_angle_r/value. bounds: [-0.523599, 0.523599]
+  /jointset/ground_pelvis/pelvis_tilt/value. bounds: [-0.349066, 0.174533]
+  /jointset/ground_pelvis/pelvis_list/value. bounds: [-0.349066, 0.349066]
+  /jointset/walker_knee_r/knee_angle_r/value. bounds: [0, 2.44346]
+  /jointset/ground_pelvis/pelvis_rotation/value. bounds: [-0.349066, 0.349066]
+  /jointset/back/lumbar_extension/value. bounds: [-0.523599, 0.0872665]
+  /jointset/hip_l/hip_flexion_l/speed. bounds: [-50, 50]
+  /jointset/subtalar_r/subtalar_angle_r/speed. bounds: [-50, 50]
+  /jointset/back/lumbar_bending/value. bounds: [-0.349066, 0.349066]
+  /jointset/walker_knee_r/knee_angle_r/speed. bounds: [-50, 50]
+  /jointset/ground_pelvis/pelvis_rotation/speed. bounds: [-50, 50]
+  /jointset/back/lumbar_rotation/value. bounds: [-0.174533, 0.436332]
   /jointset/hip_r/hip_adduction_r/speed. bounds: [-50, 50]
   /jointset/ankle_r/ankle_angle_r/value. bounds: [-0.698132, 0.523599]
   /jointset/hip_r/hip_flexion_r/value. bounds: [-0.523599, 1.5708]
-  /forceset/bfsh140_r/activation. bounds: [0.001, 1]
-  /forceset/edl_r/activation. bounds: [0.001, 1]
-  /forceset/semimem_r/activation. bounds: [0.001, 1]
-  /forceset/ehl_r/activation. bounds: [0.001, 1]
-  /forceset/fdl_r/activation. bounds: [0.001, 1]
-  /forceset/fhl_r/activation. bounds: [0.001, 1]
-  /forceset/gaslat140_r/activation. bounds: [0.001, 1]
-  /forceset/gasmed_r/activation. bounds: [0.001, 1]
-  /forceset/glmax1_r/activation. bounds: [0.001, 1]
-  /forceset/glmax2_r/activation. bounds: [0.001, 1]
-  /forceset/glmax3_r/activation. bounds: [0.001, 1]
-  /jointset/ground_pelvis/pelvis_tilt/value. bounds: [-0.261799, 0.0872665]
-  /forceset/glmed1_r/activation. bounds: [0.001, 1]
-  /forceset/glmed2_r/activation. bounds: [0.001, 1]
-  /forceset/tibant_r/activation. bounds: [0.001, 1]
-  /forceset/glmed3_r/activation. bounds: [0.001, 1]
-  /forceset/glmin1_r/activation. bounds: [0.001, 1]
-  /forceset/glmin2_r/activation. bounds: [0.001, 1]
-  /forceset/glmin3_r/activation. bounds: [0.001, 1]
-  /forceset/grac_r/activation. bounds: [0.001, 1]
-  /forceset/iliacus_r/activation. bounds: [0.001, 1]
-  /forceset/perbrev_r/activation. bounds: [0.001, 1]
-  /forceset/perlong_r/activation. bounds: [0.001, 1]
-  /forceset/piri_r/activation. bounds: [0.001, 1]
-  /forceset/psoas_r/activation. bounds: [0.001, 1]
-  /forceset/recfem_r/activation. bounds: [0.001, 1]
-  /forceset/sart_r/activation. bounds: [0.001, 1]
-  /forceset/semiten_r/activation. bounds: [0.001, 1]
-  /forceset/soleus_r/activation. bounds: [0.001, 1]
-  /forceset/tfl_r/activation. bounds: [0.001, 1]
-  /forceset/tibpost_r/activation. bounds: [0.001, 1]
-  /jointset/hip_r/hip_rotation_r/speed. bounds: [-50, 50]
-  /forceset/vasint_r/activation. bounds: [0.001, 1]
-  /forceset/vaslat140_r/activation. bounds: [0.001, 1]
-  /forceset/vasmed_r/activation. bounds: [0.001, 1]
-  /forceset/addbrev_l/activation. bounds: [0.001, 1]
-  /forceset/addlong_l/activation. bounds: [0.001, 1]
-  /forceset/addmagDist_l/activation. bounds: [0.001, 1]
-  /forceset/addmagIsch_l/activation. bounds: [0.001, 1]
-  /jointset/ground_pelvis/pelvis_ty/value. bounds: [0.75, 1.25]
-  /forceset/addmagMid_l/activation. bounds: [0.001, 1]
-  /forceset/addmagProx_l/activation. bounds: [0.001, 1]
-  /forceset/bflh140_l/activation. bounds: [0.001, 1]
-  /forceset/bfsh140_l/activation. bounds: [0.001, 1]
-  /forceset/edl_l/activation. bounds: [0.001, 1]
-  /forceset/semimem_l/activation. bounds: [0.001, 1]
-  /forceset/ehl_l/activation. bounds: [0.001, 1]
-  /forceset/fdl_l/activation. bounds: [0.001, 1]
-  /forceset/fhl_l/activation. bounds: [0.001, 1]
-  /jointset/walker_knee_r/knee_angle_r/speed. bounds: [-50, 50]
-  /forceset/gaslat140_l/activation. bounds: [0.001, 1]
-  /forceset/gasmed_l/activation. bounds: [0.001, 1]
-  /forceset/glmax1_l/activation. bounds: [0.001, 1]
-  /forceset/glmax2_l/activation. bounds: [0.001, 1]
-  /forceset/glmax3_l/activation. bounds: [0.001, 1]
-  /forceset/glmed1_l/activation. bounds: [0.001, 1]
-  /forceset/glmed2_l/activation. bounds: [0.001, 1]
-  /forceset/tibant_l/activation. bounds: [0.001, 1]
-  /forceset/glmed3_l/activation. bounds: [0.001, 1]
-  /forceset/glmin1_l/activation. bounds: [0.001, 1]
-  /jointset/patellofemoral_r/knee_angle_r_beta/speed. bounds: [-50, 50]
-  /forceset/glmin2_l/activation. bounds: [0.001, 1]
-  /forceset/glmin3_l/activation. bounds: [0.001, 1]
-  /forceset/grac_l/activation. bounds: [0.001, 1]
-  /forceset/iliacus_l/activation. bounds: [0.001, 1]
-  /forceset/perbrev_l/activation. bounds: [0.001, 1]
-  /jointset/ground_pelvis/pelvis_rotation/speed. bounds: [-50, 50]
-  /forceset/perlong_l/activation. bounds: [0.001, 1]
-  /forceset/piri_l/activation. bounds: [0.001, 1]
-  /forceset/psoas_l/activation. bounds: [0.001, 1]
-  /forceset/recfem_l/activation. bounds: [0.001, 1]
-  /forceset/sart_l/activation. bounds: [0.001, 1]
-  /forceset/semiten_l/activation. bounds: [0.001, 1]
-  /forceset/soleus_l/activation. bounds: [0.001, 1]
-  /forceset/tfl_l/activation. bounds: [0.001, 1]
-  /forceset/tibpost_l/activation. bounds: [0.001, 1]
-  /forceset/vasint_l/activation. bounds: [0.001, 1]
-  /forceset/vaslat140_l/activation. bounds: [0.001, 1]
-  /forceset/vasmed_l/activation. bounds: [0.001, 1]
-  /jointset/ground_pelvis/pelvis_tx/value. bounds: [0, 5]
-  /jointset/ground_pelvis/pelvis_tz/value. bounds: 0
-  /jointset/ground_pelvis/pelvis_list/value. bounds: 0
-  /jointset/ground_pelvis/pelvis_rotation/value. bounds: 0
-  /jointset/back/lumbar_extension/value. bounds: [-0.436332, 0.0872665]
-  /jointset/back/lumbar_bending/value. bounds: 0
-  /jointset/back/lumbar_rotation/value. bounds: 0
-  /jointset/hip_r/hip_adduction_r/value. bounds: 0
+  /jointset/hip_r/hip_adduction_r/value. bounds: [-0.349066, 0.261799]
   /jointset/back/lumbar_rotation/speed. bounds: [-50, 50]
-  /jointset/hip_r/hip_rotation_r/value. bounds: 0
-  /jointset/subtalar_r/subtalar_angle_r/value. bounds: 0
+  /jointset/hip_r/hip_rotation_r/value. bounds: [-0.523599, 0.261799]
+  /jointset/hip_l/hip_adduction_l/value. bounds: [-0.349066, 0.261799]
+  /jointset/back/lumbar_extension/speed. bounds: [-50, 50]
+  /jointset/subtalar_r/subtalar_angle_r/value. bounds: [-0.610865, 0.610865]
   /jointset/hip_l/hip_flexion_l/value. bounds: [-0.523599, 1.5708]
-  /jointset/hip_l/hip_adduction_l/value. bounds: 0
-  /jointset/hip_l/hip_rotation_l/value. bounds: 0
-  /jointset/walker_knee_r/knee_angle_r/value. bounds: [0, 2.44346]
+  /jointset/patellofemoral_l/knee_angle_l_beta/value. bounds: [-99999.9, 99999.9]
   /jointset/walker_knee_l/knee_angle_l/value. bounds: [0, 2.44346]
-  /jointset/ankle_l/ankle_angle_l/value. bounds: [-0.698132, 0.523599]
-  /jointset/mtp_r/mtp_angle_r/value. bounds: 0
-  /jointset/subtalar_l/subtalar_angle_l/value. bounds: 0
-  /jointset/mtp_l/mtp_angle_l/value. bounds: 0
+  /jointset/subtalar_l/subtalar_angle_l/speed. bounds: [-50, 50]
+  /jointset/mtp_r/mtp_angle_r/speed. bounds: [-50, 50]
   /jointset/ground_pelvis/pelvis_tilt/speed. bounds: [-50, 50]
   /jointset/ground_pelvis/pelvis_list/speed. bounds: [-50, 50]
   /jointset/ground_pelvis/pelvis_tx/speed. bounds: [-50, 50]
+  /jointset/ankle_l/ankle_angle_l/speed. bounds: [-50, 50]
   /jointset/ground_pelvis/pelvis_ty/speed. bounds: [-50, 50]
+  /jointset/hip_l/hip_rotation_l/speed. bounds: [-50, 50]
   /jointset/ground_pelvis/pelvis_tz/speed. bounds: [-50, 50]
   /jointset/ankle_r/ankle_angle_r/speed. bounds: [-50, 50]
   /jointset/hip_r/hip_flexion_r/speed. bounds: [-50, 50]
+  /jointset/hip_r/hip_rotation_r/speed. bounds: [-50, 50]
   /jointset/patellofemoral_r/knee_angle_r_beta/value. bounds: [-99999.9, 99999.9]
-  /jointset/hip_l/hip_flexion_l/speed. bounds: [-50, 50]
-  /jointset/subtalar_r/subtalar_angle_r/speed. bounds: [-50, 50]
-  /jointset/mtp_r/mtp_angle_r/speed. bounds: [-50, 50]
+  /jointset/patellofemoral_r/knee_angle_r_beta/speed. bounds: [-50, 50]
   /jointset/hip_l/hip_adduction_l/speed. bounds: [-50, 50]
-  /jointset/hip_l/hip_rotation_l/speed. bounds: [-50, 50]
-  /jointset/walker_knee_l/knee_angle_l/speed. bounds: [-50, 50]
-  /jointset/patellofemoral_l/knee_angle_l_beta/value. bounds: [-99999.9, 99999.9]
   /jointset/patellofemoral_l/knee_angle_l_beta/speed. bounds: [-50, 50]
-  /jointset/ankle_l/ankle_angle_l/speed. bounds: [-50, 50]
-  /jointset/subtalar_l/subtalar_angle_l/speed. bounds: [-50, 50]
-  /jointset/back/lumbar_extension/speed. bounds: [-50, 50]
+  /jointset/walker_knee_l/knee_angle_l/speed. bounds: [-50, 50]
   /jointset/back/lumbar_bending/speed. bounds: [-50, 50]
-Controls: (total: 83):
-  /forceset/addmagIsch_r. bounds: [0.01, 1]
+  /jointset/mtp_l/mtp_angle_l/value. bounds: [-0.523599, 0.523599]
+  /jointset/mtp_l/mtp_angle_l/speed. bounds: [-50, 50]
+Controls: (total: 19):
+  /forceset/reserve_jointset_ground_pelvis_pelvis_rotation. bounds: [-inf, inf]
   /forceset/tau_lumbar_ext. bounds: [-inf, inf]
   /forceset/tau_lumbar_bend. bounds: [-inf, inf]
+  /forceset/reserve_jointset_walker_knee_r_knee_angle_r. bounds: [-inf, inf]
   /forceset/tau_lumbar_rot. bounds: [-inf, inf]
-  /forceset/addbrev_r. bounds: [0.01, 1]
-  /forceset/addlong_r. bounds: [0.01, 1]
-  /forceset/addmagDist_r. bounds: [0.01, 1]
-  /forceset/addmagMid_r. bounds: [0.01, 1]
-  /forceset/addmagProx_r. bounds: [0.01, 1]
-  /forceset/bflh140_r. bounds: [0.01, 1]
-  /forceset/bfsh140_r. bounds: [0.01, 1]
-  /forceset/edl_r. bounds: [0.01, 1]
-  /forceset/semimem_r. bounds: [0.01, 1]
-  /forceset/ehl_r. bounds: [0.01, 1]
-  /forceset/fdl_r. bounds: [0.01, 1]
-  /forceset/fhl_r. bounds: [0.01, 1]
-  /forceset/gaslat140_r. bounds: [0.01, 1]
-  /forceset/gasmed_r. bounds: [0.01, 1]
-  /forceset/glmax1_r. bounds: [0.01, 1]
-  /forceset/glmax2_r. bounds: [0.01, 1]
-  /forceset/glmax3_r. bounds: [0.01, 1]
-  /forceset/glmed1_r. bounds: [0.01, 1]
-  /forceset/glmed2_r. bounds: [0.01, 1]
-  /forceset/tibant_r. bounds: [0.01, 1]
-  /forceset/glmed3_r. bounds: [0.01, 1]
-  /forceset/glmin1_r. bounds: [0.01, 1]
-  /forceset/glmin2_r. bounds: [0.01, 1]
-  /forceset/glmin3_r. bounds: [0.01, 1]
-  /forceset/grac_r. bounds: [0.01, 1]
-  /forceset/iliacus_r. bounds: [0.01, 1]
-  /forceset/perbrev_r. bounds: [0.01, 1]
-  /forceset/perlong_r. bounds: [0.01, 1]
-  /forceset/piri_r. bounds: [0.01, 1]
-  /forceset/psoas_r. bounds: [0.01, 1]
-  /forceset/recfem_r. bounds: [0.01, 1]
-  /forceset/sart_r. bounds: [0.01, 1]
-  /forceset/semiten_r. bounds: [0.01, 1]
-  /forceset/soleus_r. bounds: [0.01, 1]
-  /forceset/tfl_r. bounds: [0.01, 1]
-  /forceset/tibpost_r. bounds: [0.01, 1]
-  /forceset/vasint_r. bounds: [0.01, 1]
-  /forceset/vaslat140_r. bounds: [0.01, 1]
-  /forceset/vasmed_r. bounds: [0.01, 1]
-  /forceset/addbrev_l. bounds: [0.01, 1]
-  /forceset/addlong_l. bounds: [0.01, 1]
-  /forceset/addmagDist_l. bounds: [0.01, 1]
-  /forceset/addmagIsch_l. bounds: [0.01, 1]
-  /forceset/addmagMid_l. bounds: [0.01, 1]
-  /forceset/addmagProx_l. bounds: [0.01, 1]
-  /forceset/bflh140_l. bounds: [0.01, 1]
-  /forceset/bfsh140_l. bounds: [0.01, 1]
-  /forceset/edl_l. bounds: [0.01, 1]
-  /forceset/semimem_l. bounds: [0.01, 1]
-  /forceset/ehl_l. bounds: [0.01, 1]
-  /forceset/fdl_l. bounds: [0.01, 1]
-  /forceset/fhl_l. bounds: [0.01, 1]
-  /forceset/gaslat140_l. bounds: [0.01, 1]
-  /forceset/gasmed_l. bounds: [0.01, 1]
-  /forceset/glmax1_l. bounds: [0.01, 1]
-  /forceset/glmax2_l. bounds: [0.01, 1]
-  /forceset/glmax3_l. bounds: [0.01, 1]
-  /forceset/glmed1_l. bounds: [0.01, 1]
-  /forceset/glmed2_l. bounds: [0.01, 1]
-  /forceset/tibant_l. bounds: [0.01, 1]
-  /forceset/glmed3_l. bounds: [0.01, 1]
-  /forceset/glmin1_l. bounds: [0.01, 1]
-  /forceset/glmin2_l. bounds: [0.01, 1]
-  /forceset/glmin3_l. bounds: [0.01, 1]
-  /forceset/grac_l. bounds: [0.01, 1]
-  /forceset/iliacus_l. bounds: [0.01, 1]
-  /forceset/perbrev_l. bounds: [0.01, 1]
-  /forceset/perlong_l. bounds: [0.01, 1]
-  /forceset/piri_l. bounds: [0.01, 1]
-  /forceset/psoas_l. bounds: [0.01, 1]
-  /forceset/recfem_l. bounds: [0.01, 1]
-  /forceset/sart_l. bounds: [0.01, 1]
-  /forceset/semiten_l. bounds: [0.01, 1]
-  /forceset/soleus_l. bounds: [0.01, 1]
-  /forceset/tfl_l. bounds: [0.01, 1]
-  /forceset/tibpost_l. bounds: [0.01, 1]
-  /forceset/vasint_l. bounds: [0.01, 1]
-  /forceset/vaslat140_l. bounds: [0.01, 1]
-  /forceset/vasmed_l. bounds: [0.01, 1]
+  /forceset/reserve_jointset_ground_pelvis_pelvis_tilt. bounds: [-inf, inf]
+  /forceset/reserve_jointset_ground_pelvis_pelvis_list. bounds: [-inf, inf]
+  /forceset/reserve_jointset_ground_pelvis_pelvis_tx. bounds: [-inf, inf]
+  /forceset/reserve_jointset_hip_r_hip_flexion_r. bounds: [-inf, inf]
+  /forceset/reserve_jointset_ground_pelvis_pelvis_ty. bounds: [-inf, inf]
+  /forceset/reserve_jointset_ground_pelvis_pelvis_tz. bounds: [-inf, inf]
+  /forceset/reserve_jointset_hip_r_hip_adduction_r. bounds: [-inf, inf]
+  /forceset/reserve_jointset_hip_r_hip_rotation_r. bounds: [-inf, inf]
+  /forceset/reserve_jointset_ankle_r_ankle_angle_r. bounds: [-inf, inf]
+  /forceset/reserve_jointset_hip_l_hip_flexion_l. bounds: [-inf, inf]
+  /forceset/reserve_jointset_hip_l_hip_adduction_l. bounds: [-inf, inf]
+  /forceset/reserve_jointset_walker_knee_l_knee_angle_l. bounds: [-inf, inf]
+  /forceset/reserve_jointset_hip_l_hip_rotation_l. bounds: [-inf, inf]
+  /forceset/reserve_jointset_ankle_l_ankle_angle_l. bounds: [-inf, inf]
 Parameters: none
 Number of threads: 8
 
@@ -463,101 +220,1113 @@ This program contains Ipopt, a library for large-scale nonlinear optimization.
 This is Ipopt version 3.12.8, running with linear solver mumps.
 NOTE: Other linear solvers might be more efficient (see Ipopt documentation).
 
-Number of nonzeros in equality constraint Jacobian...:  5458154
+Number of nonzeros in equality constraint Jacobian...:  1244550
 Number of nonzeros in inequality constraint Jacobian.:        0
 Number of nonzeros in Lagrangian Hessian.............:        0
 
-Total number of variables............................:    20502
+Total number of variables............................:    15675
                      variables with only lower bounds:        0
-                variables with lower and upper bounds:    20199
+                variables with lower and upper bounds:    11856
                      variables with only upper bounds:        0
-Total number of equality constraints.................:    17504
+Total number of equality constraints.................:    13718
 Total number of inequality constraints...............:        0
         inequality constraints with only lower bounds:        0
    inequality constraints with lower and upper bounds:        0
         inequality constraints with only upper bounds:        0
 
 iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
-   0  2.5759087e+03 9.41e+05 1.00e+02   0.0 0.00e+00    -  0.00e+00 0.00e+00   0
-   1  2.5111932e+03 9.27e+05 9.16e+01  -3.0 1.01e+01    -  7.66e-03 1.46e-02h  1
-   2  2.4870247e+03 9.22e+05 1.15e+02  -3.0 4.99e+01    -  1.09e-02 5.78e-03h  1
-   3  2.4129467e+03 9.05e+05 5.43e+02  -3.0 5.39e+01    -  6.81e-03 1.81e-02h  1
-   4  2.3761991e+03 8.97e+05 6.66e+02  -3.0 4.85e+01    -  1.55e-02 9.23e-03h  1
-   5  2.3313772e+03 8.87e+05 8.11e+02  -3.0 4.84e+01    -  1.51e-02 1.15e-02h  1
-   6  2.3249128e+03 8.86e+05 8.33e+02   0.9 8.98e+02    -  2.59e-03 1.03e-03f  1
-   7  2.2663966e+03 8.72e+05 1.05e+03  -3.0 4.80e+01    -  1.15e-02 1.54e-02h  1
-   8  2.2143787e+03 8.60e+05 1.53e+03  -3.0 4.41e+01    -  8.74e-03 1.43e-02h  1
-   9  2.0916734e+03 8.30e+05 4.27e+03  -3.0 4.93e+01    -  2.03e-02 3.48e-02h  1
+   0  1.9251361e+04 4.12e+05 2.90e-02   0.0 0.00e+00    -  0.00e+00 0.00e+00   0
+   1  1.7483378e+04 3.97e+05 8.81e+02   1.5 6.64e+01    -  5.56e-01 1.16e-02f  1
+   2  1.4348933e+03 8.89e+04 4.41e+04  -2.8 7.96e+00    -  6.92e-01 1.00e+00h  1
+   3  5.4351943e+02 2.36e+04 3.98e+03   0.6 7.77e+00    -  9.90e-01 1.00e+00f  1
+   4  4.8694825e+02 5.71e+03 3.99e+03  -0.1 4.25e+00    -  9.95e-01 1.00e+00f  1
+   5  4.9466207e+02 1.82e+03 7.42e+01  -1.1 2.11e+00    -  1.00e+00 1.00e+00h  1
+   6  4.9754591e+02 2.21e+03 6.18e+00  -2.7 2.03e+00    -  1.00e+00 1.00e+00h  1
+   7  4.7455414e+02 8.26e+02 6.14e-01  -4.1 7.48e-01    -  1.00e+00 1.00e+00h  1
+   8  4.2073881e+02 1.90e+04 1.44e+00  -4.6 3.18e+00    -  1.00e+00 1.00e+00h  1
+   9  4.1817591e+02 1.67e+04 1.14e+00  -5.0 4.84e+00    -  1.00e+00 1.00e+00h  1
 iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
-  10  2.0287060e+03 8.14e+05 6.29e+03  -3.0 5.12e+01    -  1.13e-02 1.90e-02h  1
-  11  2.0023718e+03 8.07e+05 7.30e+03  -3.0 5.41e+01    -  9.17e-03 8.17e-03h  1
-  12  1.9811108e+03 8.02e+05 8.24e+03  -3.0 9.60e+00    -  1.17e-02 6.57e-03h  1
-  13  1.8590349e+03 7.71e+05 3.05e+04  -3.1 9.15e+00    -  6.76e-03 3.82e-02h  1
-  14  1.7808326e+03 7.51e+05 2.72e+04  -3.1 8.24e+00    -  1.56e-02 2.67e-02h  1
-  15  1.7555559e+03 7.44e+05 2.61e+04  -3.1 7.91e+00    -  7.70e-04 8.93e-03h  1
-  16  1.7084541e+03 7.32e+05 2.58e+04  -3.1 7.88e+00    -  3.09e-02 1.71e-02h  1
-  17  1.6395109e+03 7.12e+05 3.28e+04  -3.1 8.04e+00    -  8.03e-03 2.61e-02h  1
-  18  1.5921240e+03 6.99e+05 3.80e+04  -3.1 8.29e+00    -  2.15e-02 1.88e-02h  1
-  19  1.5356400e+03 6.83e+05 4.40e+04  -3.1 1.28e+01    -  3.25e-02 2.32e-02h  1
+  10  3.6853293e+02 6.39e+03 6.11e-01  -5.0 3.42e+00    -  1.00e+00 5.00e-01h  2
+  11  3.3757578e+02 3.69e+04 3.97e-01  -5.7 2.18e+00    -  1.00e+00 1.00e+00h  1
+  12  3.3790564e+02 2.19e+04 2.17e+00  -5.8 2.32e+00    -  9.99e-01 1.00e+00h  1
+  13  3.2130500e+02 8.66e+03 8.92e-01  -6.0 2.53e+00    -  1.00e+00 5.00e-01h  2
+  14  3.1878465e+02 4.99e+03 3.53e-01  -6.3 2.39e+00    -  1.00e+00 1.00e+00h  1
+  15  3.0702059e+02 2.05e+04 1.23e+00  -7.0 3.64e+00    -  1.00e+00 5.00e-01h  2
+  16  2.9611276e+02 5.61e+03 6.57e-01  -7.2 1.67e+00    -  1.00e+00 1.00e+00h  1
+  17  2.8212338e+02 1.41e+04 2.61e-01  -7.6 1.89e+00    -  1.00e+00 1.00e+00h  1
+  18  2.9446330e+02 4.08e+03 3.82e-01  -8.5 1.48e+00    -  1.00e+00 1.00e+00h  1
+  19  2.8148429e+02 2.33e+03 1.59e-01  -9.6 8.71e-01    -  1.00e+00 1.00e+00h  1
 iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
-  20  1.4707514e+03 6.64e+05 5.16e+04  -3.1 1.27e+01    -  1.76e-02 2.84e-02h  1
-  21  1.3722123e+03 6.33e+05 6.46e+04  -3.1 1.26e+01    -  9.12e-04 4.53e-02h  1
-  22  1.3126585e+03 6.15e+05 7.45e+04  -3.1 1.03e+01    -  3.14e-02 2.99e-02h  1
-  23  1.3050839e+03 6.12e+05 7.57e+04  -3.1 1.44e+01    -  1.98e-02 3.98e-03h  1
-  24  1.3045715e+03 6.12e+05 7.58e+04  -3.1 1.84e+01    -  2.54e-03 2.70e-04h  1
-  25  1.2737700e+03 6.03e+05 8.42e+04  -3.1 1.93e+01    -  4.19e-03 1.51e-02h  1
-  26  1.2357983e+03 5.90e+05 9.29e+04  -3.1 1.90e+01    -  2.44e-03 2.05e-02h  1
-  27  1.1644630e+03 5.66e+05 1.10e+05  -3.1 8.35e+01    -  2.68e-02 4.15e-02h  1
-  28  1.0979413e+03 5.42e+05 1.28e+05  -3.1 8.48e+01    -  1.99e-02 4.19e-02h  1
-  29  1.0968409e+03 5.42e+05 1.29e+05  -3.2 8.01e+01    -  1.57e-02 7.36e-04h  1
+  20  2.7494360e+02 2.08e+03 1.37e-01 -10.0 6.31e-01    -  1.00e+00 1.00e+00h  1
+  21  2.6583629e+02 2.35e+04 3.28e-01  -8.0 2.13e+00    -  1.00e+00 7.40e-01h  1
+  22  2.6524388e+02 2.35e+04 3.21e-01  -6.7 2.54e+00    -  1.00e+00 6.13e-03H  1
+  23  2.6762430e+02 5.65e+03 1.66e+00  -6.7 9.60e-01    -  1.29e-01 1.00e+00h  1
+  24  2.6835804e+02 1.80e+03 3.44e-01  -6.0 1.04e+00    -  1.00e+00 1.00e+00h  1
+  25  2.6406450e+02 2.15e+03 1.16e-01  -7.1 4.96e-01    -  1.00e+00 1.00e+00h  1
+  26  2.5981850e+02 5.36e+03 1.66e-01  -6.8 5.42e-01    -  1.00e+00 1.00e+00h  1
+  27  2.5643344e+02 4.44e+03 1.92e-01  -6.6 4.72e-01    -  1.00e+00 1.00e+00h  1
+  28  2.5477000e+02 5.32e+01 1.43e+01  -4.6 1.15e-01    -  4.81e-02 1.00e+00h  1
+  29  2.5495676e+02 1.28e+00 7.46e-01  -5.3 3.17e-02    -  1.00e+00 1.00e+00h  1
 iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
-  30  1.0554653e+03 5.27e+05 1.43e+05  -3.2 8.25e+01    -  9.68e-03 2.80e-02h  1
-  31  1.0466377e+03 5.23e+05 1.46e+05  -3.2 1.72e+01    -  1.51e-03 6.22e-03h  1
-  32  1.0271220e+03 5.16e+05 1.53e+05  -3.2 1.73e+01    -  4.80e-02 1.40e-02h  1
-  33  9.6882430e+02 4.93e+05 1.78e+05  -3.2 1.79e+01    -  8.96e-03 4.41e-02h  1
-  34  9.0676301e+02 4.68e+05 2.10e+05  -3.2 1.86e+01    -  3.35e-02 5.17e-02h  1
-  35  8.5329871e+02 4.46e+05 2.40e+05  -3.2 1.89e+01    -  8.22e-03 4.62e-02h  1
-  36  8.4287456e+02 4.42e+05 2.46e+05  -3.2 1.03e+01    -  2.96e-02 9.59e-03h  1
-  37  8.1702336e+02 4.31e+05 2.60e+05  -3.2 1.02e+01    -  1.27e-02 2.43e-02h  1
-  38  7.8077637e+02 4.16e+05 2.82e+05  -3.2 1.05e+01    -  2.04e-02 3.79e-02h  1
-  39  7.8029206e+02 4.15e+05 2.82e+05  -3.2 1.01e+01    -  8.92e-03 5.41e-04h  1
+  30  2.5494479e+02 3.38e-04 5.16e-04  -7.2 5.16e-04    -  1.00e+00 1.00e+00h  1
+  31  2.5493394e+02 1.85e-04 4.75e-04  -9.3 4.75e-04    -  1.00e+00 1.00e+00h  1
+  32  2.5420166e+02 1.23e+00 5.70e-03  -9.4 4.69e+00    -  1.00e+00 8.77e-03f  1
+  33  2.5377153e+02 1.97e+00 5.74e-02  -7.4 1.23e+01    -  1.00e+00 2.32e-03h  1
+  34  2.4649435e+02 1.64e+03 1.42e-01  -5.4 8.66e+02    -  1.99e-02 1.10e-03h  1
+  35  2.4458993e+02 1.63e+03 1.47e-01  -6.0 3.81e+00    -  3.54e-01 2.37e-02H  1
+  36  2.3349131e+02 1.49e+03 2.19e-01  -7.6 1.60e+00    -  3.63e-01 1.00e+00H  1
+  37  2.2946025e+02 4.15e+03 2.49e-01  -4.9 1.91e+00    -  3.79e-02 1.00e+00h  1
+  38  2.1807389e+02 1.03e+03 8.36e-02  -5.8 6.54e-01    -  6.86e-01 9.88e-01h  1
+  39  2.1776447e+02 1.48e+03 1.10e-01  -5.6 4.68e-01    -  1.14e-01 1.00e+00H  1
 iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
-  40  7.4797398e+02 4.00e+05 3.00e+05  -3.2 1.05e+01    -  8.44e-03 3.75e-02h  1
+  40  2.1382488e+02 4.54e+02 5.92e-02  -5.8 5.22e-01    -  1.00e+00 1.00e+00h  1
+  41  2.1237299e+02 5.63e+02 2.60e-02  -6.1 2.49e-01    -  1.00e+00 1.00e+00h  1
+  42  2.0895711e+02 5.89e+03 6.59e-02  -5.3 2.48e+00    -  7.41e-02 5.00e-01h  2
+  43  2.1145348e+02 1.32e+04 1.20e-01  -4.8 5.58e+00    -  6.38e-02 4.11e-01h  2
+  44  3.5344861e+02 1.47e+04 1.52e-01  -5.8 3.23e+00    -  8.75e-01 8.44e-01H  1
+  45  2.5353877e+02 6.68e+03 2.87e-01  -5.8 2.19e+00    -  2.77e-03 5.00e-01h  2
+  46  2.2182254e+02 5.01e+03 2.44e-01  -5.8 8.05e+00    -  5.81e-02 6.69e-02h  4
+  47  2.1568315e+02 3.98e+03 3.60e-01  -5.8 2.06e+00    -  9.15e-01 5.00e-01h  2
+  48  2.0705285e+02 1.68e+03 1.57e-01  -5.8 1.39e+00    -  1.00e+00 7.25e-01h  1
+  49  2.1279531e+02 3.58e+02 1.11e-01  -7.5 9.95e-01    -  5.27e-01 1.00e+00H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  50  2.0399431e+02 5.15e+02 3.59e-02  -7.2 3.95e-01    -  8.66e-01 9.27e-01h  1
+  51  2.0271376e+02 1.86e+02 5.29e-02  -8.1 5.24e-01    -  1.00e+00 1.00e+00h  1
+  52  2.0163750e+02 1.39e+02 2.02e-02  -7.8 3.51e-01    -  1.00e+00 1.00e+00h  1
+  53  2.0005185e+02 9.11e+02 5.90e-02  -6.2 1.22e+00    -  3.51e-01 9.48e-01h  1
+  54  2.0087158e+02 3.32e+03 2.47e-01  -5.0 1.75e+01    -  1.07e-02 1.08e-01h  3
+  55  1.9954304e+02 3.33e+03 2.25e-01  -6.6 3.76e+00    -  2.89e-01 7.14e-02h  1
+  56  1.9852167e+02 1.50e+03 7.99e-02  -5.7 2.14e+00    -  7.14e-03 1.00e+00F  1
+  57  1.9797938e+02 1.15e+04 3.86e-01  -6.1 3.38e+00    -  9.60e-01 5.00e-01h  2
+  58  1.9248600e+02 2.13e+03 9.79e-02  -5.9 6.86e-01    -  1.00e+00 1.00e+00h  1
+  59  1.9340657e+02 2.31e+02 3.82e-02  -5.6 7.94e-01    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  60  1.9329941e+02 3.83e+02 6.08e-02  -6.4 1.11e+00    -  9.86e-01 1.00e+00H  1
+  61  1.9192227e+02 2.92e+03 8.71e-02  -6.4 1.87e+00    -  9.06e-01 7.97e-01h  1
+  62  2.1088557e+02 2.58e+03 3.26e-01  -5.4 9.08e-01    -  8.44e-02 7.85e-01H  1
+  63  1.9658722e+02 1.05e+03 9.80e-02  -6.2 7.66e-01    -  1.00e+00 6.76e-01h  1
+  64  1.8969426e+02 6.66e+02 1.59e-01  -6.2 5.32e-01    -  1.72e-01 1.00e+00h  1
+  65  1.8826929e+02 1.66e+03 1.01e-01  -5.9 4.34e-01    -  1.00e+00 1.00e+00h  1
+  66  1.8625284e+02 7.77e+02 2.86e-02  -6.3 3.84e-01    -  1.00e+00 1.00e+00h  1
+  67  1.8470574e+02 2.25e+03 3.83e-02  -6.5 1.21e+00    -  9.53e-01 9.51e-01h  1
+  68  1.8400341e+02 6.33e+02 8.06e-02  -6.1 2.85e+00    -  2.12e-01 1.00e+00H  1
+  69  1.8073862e+02 7.39e+02 1.33e-01  -6.1 6.23e+00    -  4.78e-01 5.00e-01h  2
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  70  1.7997754e+02 3.53e+03 2.34e-01  -5.3 5.89e+00    -  6.26e-02 2.41e-01h  3
+  71  1.7704746e+02 1.72e+03 6.21e-02  -5.5 5.69e-01    -  1.00e+00 1.00e+00h  1
+  72  1.7551731e+02 6.51e+02 4.09e-02  -6.3 9.11e-01    -  1.00e+00 1.00e+00h  1
+  73  1.7506047e+02 1.24e+03 4.70e-02  -6.0 1.06e+00    -  1.00e+00 1.00e+00h  1
+  74  1.7419164e+02 4.13e+02 4.19e-02  -6.0 7.18e-01    -  9.16e-01 1.00e+00h  1
+  75  1.7418066e+02 2.98e+02 3.80e-02  -6.3 2.20e-01    -  1.00e+00 1.00e+00h  1
+  76  1.7398032e+02 8.50e+02 2.48e-02  -6.3 2.74e-01    -  5.59e-01 1.00e+00h  1
+  77  1.7372925e+02 3.38e+02 2.47e-02  -6.0 3.38e-01    -  6.84e-01 1.00e+00h  1
+  78  1.7333471e+02 6.88e+01 2.27e-02  -6.2 1.42e-01    -  1.00e+00 1.00e+00h  1
+  79  1.7329908e+02 8.72e+02 2.97e-02  -7.1 3.03e-01    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  80  1.7260680e+02 1.95e+02 1.32e-02  -6.7 4.33e-01    -  1.00e+00 1.00e+00h  1
+  81  1.7569375e+02 6.42e+03 7.07e-02  -5.3 2.59e+00    -  2.18e-02 3.44e-01h  2
+  82  1.7832976e+02 2.78e+03 1.17e-01  -6.6 8.86e-01    -  1.00e+00 6.33e-01h  1
+  83  1.7373739e+02 2.18e+03 5.13e-02  -6.6 8.84e-01    -  8.41e-02 4.05e-01h  1
+  84  1.8819317e+02 2.34e+03 1.11e-01  -6.6 1.11e+00    -  5.92e-01 6.65e-01H  1
+  85  1.7301571e+02 2.33e+03 7.94e-02  -6.6 7.49e-01    -  3.47e-01 1.00e+00h  1
+  86  1.7535944e+02 7.49e+02 1.05e-01  -6.6 5.17e-01    -  9.11e-01 1.00e+00h  1
+  87  1.7250792e+02 2.89e+02 4.68e-02  -6.6 2.30e-01    -  1.00e+00 6.85e-01h  1
+  88  1.7183920e+02 1.66e+02 1.57e-02  -7.4 2.41e-01    -  6.09e-01 9.92e-01h  1
+  89  1.7334728e+02 7.87e+01 6.42e-02  -7.7 5.40e-01    -  9.66e-01 1.00e+00H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  90  1.7146932e+02 1.30e+02 2.54e-02  -8.0 1.63e-01    -  1.00e+00 1.00e+00h  1
+  91  1.7128176e+02 8.35e+00 1.46e-02  -7.0 7.89e-02    -  1.00e+00 1.00e+00h  1
+  92  1.7106037e+02 4.62e+01 8.52e-03 -11.0 4.02e-01    -  7.87e-01 1.00e+00h  1
+  93  1.7120373e+02 1.30e+03 5.96e-02  -6.0 3.71e+00    -  8.56e-03 4.31e-01h  2
+  94  1.7075652e+02 1.10e+03 4.66e-02  -7.6 2.69e+00    -  6.02e-01 1.82e-01h  1
+  95  1.7033943e+02 2.16e+03 4.24e-02  -5.8 1.97e+01    -  1.20e-02 7.60e-02f  4
+  96  1.6972121e+02 2.76e+03 2.74e-02  -6.2 1.23e+01    -  1.16e-01 1.15e-01h  4
+  97  1.7006276e+02 5.31e+03 7.93e-02  -5.7 6.16e+00    -  2.77e-01 8.62e-01h  1
+  98  1.6939752e+02 4.21e+03 6.87e-02  -6.3 5.85e+00    -  7.35e-02 2.15e-01h  1
+  99  1.9175176e+02 1.29e+04 3.54e-01  -6.0 2.56e+00    -  1.67e-01 1.00e+00H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 100  1.7393434e+02 5.03e+03 1.88e-01  -6.3 5.20e+00    -  8.39e-01 1.00e+00h  1
+ 101  1.6633673e+02 3.01e+04 1.92e-01  -6.3 1.35e+01    -  1.47e-01 1.89e-01h  2
+ 102  1.7060884e+02 2.53e+03 1.01e-01 -11.0 3.62e+00    -  2.33e-01 1.00e+00h  1
+ 103  1.6851086e+02 1.87e+03 8.54e-02  -6.5 1.93e+00    -  1.00e+00 2.59e-01h  1
+ 104  1.7072481e+02 9.16e+02 9.62e-02  -7.5 3.10e+00    -  5.84e-01 1.00e+00H  1
+ 105  1.6957746e+02 1.27e+03 9.23e-02  -6.9 5.75e+00    -  1.00e+00 3.72e-01h  1
+ 106  1.6782343e+02 4.25e+03 6.10e-02  -5.6 1.44e+00    -  1.48e-02 5.00e-01f  2
+ 107  1.7001541e+02 6.90e+03 1.24e-01  -6.2 2.53e+00    -  7.26e-01 1.00e+00H  1
+ 108  1.8745922e+02 4.03e+03 3.16e-01  -6.4 3.87e+00    -  1.00e+00 8.37e-01H  1
+ 109  1.8061230e+02 2.03e+03 1.50e-01  -6.4 1.93e+00    -  1.00e+00 8.88e-01H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 110  1.7060775e+02 2.17e+03 1.40e-01  -6.4 1.24e+00    -  5.34e-01 1.00e+00H  1
+ 111  1.6567618e+02 7.17e+02 6.83e-02 -11.0 9.53e-01    -  5.61e-01 1.00e+00h  1
+ 112  1.6474114e+02 6.85e+02 2.49e-02  -6.9 6.21e-01    -  1.00e+00 1.00e+00h  1
+ 113  1.6496628e+02 2.84e+02 3.71e-02  -6.7 7.53e-01    -  1.00e+00 1.00e+00h  1
+ 114  1.6382679e+02 2.91e+02 2.68e-02  -6.9 2.96e-01    -  1.00e+00 1.00e+00h  1
+ 115  1.6342554e+02 2.35e+01 2.78e-02  -8.0 3.51e-01    -  1.00e+00 1.00e+00h  1
+ 116  1.6280042e+02 1.14e+03 1.45e-02  -8.3 6.62e-01    -  1.00e+00 1.00e+00h  1
+ 117  1.6251317e+02 1.10e+02 4.49e-02  -9.2 4.83e-01    -  1.00e+00 1.00e+00h  1
+ 118  1.6084475e+02 5.89e+03 2.26e-02  -9.6 2.28e+00    -  1.00e+00 1.00e+00h  1
+ 119  1.5984124e+02 3.44e+03 7.08e-02  -7.6 1.20e+00    -  1.00e+00 3.01e-01h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 120  1.5951453e+02 1.43e+03 4.60e-02  -8.3 1.01e+00    -  1.00e+00 5.44e-01h  1
+ 121  1.5953914e+02 1.25e+03 1.78e-01  -6.8 1.72e-01    -  1.00e+00 1.31e-01h  1
+ 122  1.5970816e+02 2.72e+00 1.50e+00  -7.1 1.49e-01    -  1.00e+00 1.00e+00h  1
+ 123  1.5971744e+02 1.53e-02 5.25e-03  -8.9 2.37e-03    -  1.00e+00 1.00e+00h  1
+ 124  1.5971729e+02 4.15e-06 1.25e-04 -11.0 1.41e-04    -  1.00e+00 1.00e+00h  1
+ 125  1.5954630e+02 5.54e+00 7.22e-02 -11.0 1.35e-01    -  1.78e-01 1.00e+00h  1
+ 126  1.5812117e+02 7.19e+02 9.01e-02  -9.0 8.48e+01    -  1.21e-04 1.97e-02h  1
+ 127  1.5810545e+02 7.18e+02 9.00e-02  -9.0 1.42e+01    -  1.00e+00 1.10e-03h  1
+ 128  1.5770960e+02 7.08e+02 8.84e-02  -7.2 1.43e+01    -  2.63e-01 3.69e-02h  1
+ 129  1.5588892e+02 1.42e+03 8.47e-02  -5.7 3.75e+02    -  1.35e-03 6.81e-03h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 130  1.5605188e+02 1.54e+03 8.95e-02  -6.2 8.82e-01  -4.0 1.05e-01 1.00e+00h  1
+ 131  1.5528309e+02 1.23e+03 7.82e-02  -7.2 2.45e+01    -  5.90e-02 5.73e-02h  1
+ 132  1.5475703e+02 2.40e+03 5.52e-02  -5.6 4.40e+01    -  2.30e-03 5.32e-02f  2
+ 133  1.5303076e+02 1.84e+03 6.60e-02  -6.6 8.06e+00    -  6.64e-02 1.33e-01h  3
+ 134  1.5384693e+02 6.80e+02 6.06e-02  -6.4 5.37e-01    -  2.26e-01 9.87e-01H  1
+ 135  1.5299792e+02 1.78e+03 3.65e-02  -5.9 1.55e+00    -  4.63e-01 1.00e+00h  1
+ 136  1.5919257e+02 1.10e+03 1.56e-01  -6.2 4.06e-01    -  8.86e-01 1.00e+00h  1
+ 137  1.5125405e+02 5.24e+02 8.89e-02  -6.3 3.42e-01    -  1.00e+00 1.00e+00h  1
+ 138  1.5076100e+02 4.89e+01 1.36e-02  -6.9 1.10e-01    -  1.00e+00 1.00e+00h  1
+ 139  1.5045855e+02 1.26e+02 1.40e-02  -7.2 2.97e-01    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 140  1.4984478e+02 1.25e+03 4.90e-02  -6.1 1.25e+00    -  4.12e-01 8.85e-01h  1
+ 141  1.4620696e+02 1.84e+04 3.02e-01  -5.8 1.62e+00    -  1.59e-01 1.00e+00H  1
+ 142  1.4995666e+02 5.11e+03 4.22e-01  -5.9 1.20e+00    -  9.56e-01 1.00e+00h  1
+ 143  1.4792950e+02 1.27e+03 3.02e-01  -6.0 4.92e-01    -  9.42e-01 1.00e+00h  1
+ 144  1.4692200e+02 5.08e+02 4.52e-02  -6.1 7.01e-01    -  1.00e+00 1.00e+00h  1
+ 145  1.4613605e+02 1.60e+03 2.07e-01  -6.7 1.57e+00    -  1.00e+00 1.00e+00h  1
+ 146  1.4607332e+02 1.27e+03 1.75e-01  -6.1 2.23e+00  -4.5 1.59e-01 2.50e-01h  3
+ 147  1.4553487e+02 5.75e+02 1.15e-01  -6.0 1.18e+00    -  4.46e-01 1.00e+00h  1
+ 148  1.4514521e+02 5.04e+02 1.14e-01  -6.0 4.08e+00    -  3.18e-01 1.08e-01h  4
+ 149  1.4497916e+02 1.53e+02 1.53e-01  -6.3 3.18e-01    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 150  1.4391842e+02 2.91e+02 9.52e-02  -7.3 5.17e-01    -  1.00e+00 1.00e+00h  1
+ 151  1.4324307e+02 1.78e+02 9.81e-02  -6.7 7.32e-01    -  8.97e-01 5.16e-01h  1
+ 152  1.4319729e+02 1.84e+02 9.58e-02  -7.3 2.32e+00    -  1.49e-02 2.69e-03H  1
+ 153  1.4314981e+02 1.84e+02 9.59e-02 -11.0 4.36e+00    -  6.04e-02 1.57e-03h  1
+ 154  1.4295921e+02 8.86e+03 9.04e-02  -8.1 5.66e+00    -  1.02e-01 3.48e-01H  1
+ 155  1.3958323e+02 7.27e+03 7.58e-02  -6.0 2.20e+00    -  1.86e-01 3.13e-01h  1
+ 156  1.3892143e+02 1.64e+03 1.56e-01  -6.2 1.17e+00    -  3.32e-01 1.00e+00h  1
+ 157  1.3750988e+02 4.37e+02 5.10e-02  -6.0 4.75e-01    -  9.10e-01 1.00e+00h  1
+ 158  1.3550245e+02 1.22e+04 6.94e-02  -6.9 1.28e+00    -  1.00e+00 1.00e+00h  1
+ 159  1.3568525e+02 6.14e+02 4.97e-02  -6.2 3.01e-01    -  7.97e-01 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 160  1.3498490e+02 3.14e+02 3.00e-02  -6.4 1.83e-01    -  1.00e+00 1.00e+00h  1
+ 161  1.3442320e+02 7.72e+01 1.27e-02  -6.4 4.50e-01    -  1.00e+00 1.00e+00h  1
+ 162  1.3370217e+02 1.61e+03 2.69e-02  -6.1 6.36e+00    -  6.06e-01 2.50e-01h  3
+ 163  1.3380338e+02 2.50e+03 5.87e-02  -5.4 9.65e+00    -  4.83e-02 1.94e-01h  3
+ 164  1.3573245e+02 2.08e+03 7.20e-02  -6.2 6.24e+00    -  7.70e-01 2.50e-01h  3
+ 165  1.3224469e+02 7.00e+02 7.00e-02  -6.2 6.45e-01    -  1.00e+00 1.00e+00h  1
+ 166  1.3166533e+02 2.20e+02 4.97e-02  -6.5 2.01e-01    -  1.00e+00 1.00e+00h  1
+ 167  1.3101797e+02 3.66e+02 1.97e-02  -7.3 2.86e-01    -  1.00e+00 1.00e+00h  1
+ 168  1.2863404e+02 1.41e+03 5.43e-02  -7.0 6.16e-01    -  1.00e+00 1.00e+00h  1
+ 169  1.2905069e+02 9.35e+01 3.77e-02  -7.4 1.38e+00    -  1.00e+00 9.94e-01H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 170  1.2944911e+02 6.25e+03 2.05e-01  -5.8 5.39e+00    -  2.22e-02 4.95e-01H  1
+ 171  1.2923942e+02 5.93e+03 2.03e-01  -7.2 2.76e+00    -  6.43e-01 4.96e-02h  1
+ 172  1.2855172e+02 6.17e+02 1.42e-01  -7.2 1.07e+00    -  2.94e-01 1.00e+00h  1
+ 173  1.2706738e+02 6.35e+02 1.30e-01 -11.0 4.60e+00    -  1.22e-01 1.06e-01h  1
+ 174  1.2664060e+02 2.25e+03 7.77e-02  -6.2 2.43e+00    -  4.65e-02 1.00e+00h  1
+ 175  1.3137969e+02 1.90e+03 1.19e-01  -6.8 1.93e+00    -  8.17e-01 1.00e+00h  1
+ 176  1.2705779e+02 1.49e+03 9.05e-02  -6.9 1.16e+00    -  2.26e-01 2.36e-01h  1
+ 177  1.2251871e+02 9.93e+02 7.03e-02  -6.6 8.85e-01    -  3.14e-01 1.00e+00f  1
+ 178  1.2183780e+02 3.92e+02 2.55e-02  -6.3 3.64e-01    -  1.00e+00 1.00e+00h  1
+ 179  1.2156292e+02 8.45e+01 2.07e-02  -6.9 2.72e-01    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 180  1.2129898e+02 1.98e+02 2.10e-02  -7.3 3.69e-01    -  1.00e+00 1.00e+00h  1
+ 181  1.2124172e+02 5.82e+02 4.46e-02  -8.2 4.24e-01    -  1.00e+00 1.00e+00h  1
+ 182  1.2061658e+02 5.87e+01 1.81e-02  -7.2 2.00e-01    -  1.00e+00 1.00e+00h  1
+ 183  1.2048692e+02 1.50e+02 2.92e-02  -8.0 5.19e-01    -  1.00e+00 1.00e+00h  1
+ 184  1.2005492e+02 3.63e+02 3.19e-02  -6.3 6.98e-01    -  4.07e-01 9.63e-01h  1
+ 185  1.1826751e+02 1.62e+04 5.76e-02  -6.1 2.59e+00    -  1.59e-01 4.82e-01h  2
+ 186  1.3212014e+02 4.23e+03 2.07e-01  -6.3 1.21e+00    -  1.95e-01 7.63e-01H  1
+ 187  1.2098039e+02 1.12e+03 6.58e-02  -6.6 9.16e-01    -  8.67e-02 7.58e-01h  1
+ 188  1.1874883e+02 1.01e+03 1.02e-01  -6.6 6.11e-01    -  1.48e-01 1.00e+00h  1
+ 189  1.2004708e+02 4.01e+02 3.96e-02  -6.7 5.59e-01    -  9.66e-01 9.95e-01h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 190  1.1862013e+02 8.85e+01 1.68e-02  -8.0 1.41e-01    -  1.00e+00 1.00e+00h  1
+ 191  1.1846025e+02 1.03e+01 1.06e-02  -7.5 1.82e-01    -  1.00e+00 1.00e+00h  1
+ 192  1.1826475e+02 2.83e+02 4.59e-02  -8.9 3.06e-01    -  1.00e+00 1.00e+00h  1
+ 193  1.1801388e+02 3.29e+02 5.09e-02  -6.8 4.79e+00    -  9.50e-01 1.08e-01h  1
+ 194  1.1747830e+02 3.71e+03 7.51e-02  -6.1 7.16e+00    -  2.59e-02 5.00e-01h  2
+ 195  1.1543414e+02 1.80e+04 7.86e-02  -5.4 4.65e+01    -  5.94e-02 8.91e-02H  1
+ 196  1.1473605e+02 1.45e+04 6.88e-02  -5.8 1.01e+01    -  3.66e-01 1.56e-01h  3
+ 197  1.1805469e+02 4.46e+03 1.55e-01  -6.3 7.23e+00    -  4.50e-01 7.37e-01H  1
+ 198  1.1497286e+02 3.24e+03 8.45e-02  -6.3 2.09e+00    -  9.65e-01 2.50e-01h  3
+ 199  1.4358421e+02 2.49e+03 1.37e-01 -11.0 1.23e+00    -  2.28e-01 1.00e+00H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 200  1.1596207e+02 4.83e+03 5.70e-01  -6.5 7.82e-01    -  8.49e-02 1.00e+00h  1
+ 201  1.1002432e+02 3.22e+03 3.31e-01  -6.5 3.54e+00    -  1.00e+00 3.85e-01h  1
+ 202  1.0929450e+02 3.20e+03 3.48e-01  -5.6 1.03e+01    -  6.68e-02 8.43e-02h  4
+ 203  1.0949006e+02 2.22e+03 8.41e-02  -5.8 2.43e+00    -  5.42e-01 1.00e+00h  1
+ 204  1.0819682e+02 2.45e+03 1.19e-01  -6.0 2.25e+01    -  3.36e-01 6.23e-02h  5
+ 205  1.0519163e+02 2.24e+03 1.82e-01  -5.4 1.45e+01    -  1.00e+00 2.19e-01h  3
+ 206  1.0364706e+02 4.56e+03 2.33e-01  -5.9 4.66e+01    -  3.81e-01 1.05e-01h  3
+ 207  1.0285975e+02 4.91e+03 2.74e-01  -5.0 5.35e+01    -  2.01e-01 3.22e-02h  5
+ 208  1.0541387e+02 5.47e+03 1.19e-01  -5.1 2.24e+00    -  1.00e+00 1.00e+00h  1
+ 209  1.0329630e+02 2.72e+03 1.52e-01  -5.2 4.33e+00    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 210  9.7202832e+01 4.17e+03 1.22e-01  -5.7 9.12e+00    -  1.00e+00 2.50e-01h  3
+ 211  1.0191815e+02 4.32e+03 1.60e-01  -5.2 2.80e+00    -  1.00e+00 1.00e+00H  1
+ 212  1.2994428e+02 1.27e+03 1.44e-01  -5.6 3.31e+00    -  1.00e+00 1.00e+00H  1
+ 213  1.1014757e+02 1.10e+03 1.32e-01  -5.7 1.51e+00    -  1.00e+00 2.55e-01h  1
+ 214  9.7625209e+01 7.32e+03 2.57e-01  -5.7 1.07e+00    -  2.10e-02 1.00e+00h  1
+ 215  9.1132187e+01 9.54e+02 7.99e-02  -5.7 3.39e-01    -  6.42e-01 1.00e+00h  1
+ 216  9.0665618e+01 6.56e+01 8.43e-03  -7.1 5.92e-02    -  1.00e+00 1.00e+00h  1
+ 217  9.0117042e+01 1.25e+02 1.18e-02  -5.7 2.75e-01    -  1.00e+00 1.00e+00h  1
+ 218  8.9715063e+01 1.10e+03 4.86e-02  -6.1 7.48e-01    -  4.40e-01 1.00e+00h  1
+ 219  9.2217636e+01 1.33e+03 5.73e-02  -6.4 1.18e+00    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 220  8.9369698e+01 9.67e+02 4.17e-02  -6.5 7.11e-01    -  1.00e+00 1.00e+00h  1
+ 221  8.8133987e+01 6.18e+02 4.18e-02  -7.0 3.98e-01    -  1.00e+00 1.00e+00h  1
+ 222  8.7668840e+01 1.49e+02 9.67e-03  -6.7 3.09e-01    -  1.00e+00 1.00e+00h  1
+ 223  8.7428776e+01 2.97e+02 2.49e-02  -7.3 8.64e-01    -  1.00e+00 1.00e+00h  1
+ 224  8.9506702e+01 3.94e+02 5.28e-02  -5.8 3.15e+00    -  4.31e-01 9.04e-01H  1
+ 225  8.8571708e+01 5.88e+02 4.52e-02  -6.3 5.80e+00    -  3.41e-01 1.25e-01h  4
+ 226  8.6775910e+01 4.23e+02 3.35e-02  -6.3 7.23e-01    -  2.03e-01 2.76e-01h  1
+ 227  8.4782505e+01 7.92e+02 3.12e-02  -6.3 7.86e-01    -  1.00e+00 1.00e+00h  1
+ 228  8.4331560e+01 3.46e+02 3.17e-02  -6.9 5.85e-01    -  1.88e-01 9.87e-01h  1
+ 229  8.3473853e+01 1.44e+02 2.45e-02  -7.6 6.79e-01    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 230  8.3081059e+01 5.76e+02 3.71e-02  -6.3 1.11e+00    -  9.71e-01 9.80e-01h  1
+ 231  8.2615233e+01 3.93e+02 3.87e-02  -6.8 1.41e+00    -  4.97e-01 6.59e-01H  1
+ 232  8.6461756e+01 4.80e+02 1.09e-01  -6.7 2.51e+00    -  7.01e-01 1.00e+00H  1
+ 233  8.0892834e+01 1.52e+03 4.70e-02  -6.7 4.57e-01    -  5.50e-01 1.00e+00h  1
+ 234  7.8829808e+01 5.10e+02 5.47e-02  -6.9 3.03e-01    -  1.00e+00 1.00e+00h  1
+ 235  7.8095730e+01 7.72e+01 3.03e-02  -7.5 2.63e-01    -  1.00e+00 1.00e+00h  1
+ 236  7.7604145e+01 2.04e+02 3.10e-02  -8.5 3.84e-01    -  1.00e+00 1.00e+00h  1
+ 237  7.7587148e+01 2.83e+02 3.11e-02  -7.1 3.98e-01    -  1.00e+00 1.00e+00h  1
+ 238  7.7210083e+01 4.13e+02 3.54e-02  -7.6 5.20e-01    -  1.00e+00 1.00e+00h  1
+ 239  7.6826912e+01 1.10e+02 1.82e-02  -7.4 2.49e-01    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 240  7.6674872e+01 9.76e+01 1.14e-02  -7.0 2.79e-01    -  1.00e+00 1.00e+00h  1
+ 241  7.6456200e+01 2.06e+02 1.13e-02  -7.1 1.75e+00    -  9.95e-01 2.94e-01h  1
+ 242  7.6301418e+01 1.59e+04 5.04e-02  -6.8 1.13e+01    -  2.12e-01 2.50e-01h  3
+ 243  8.4883229e+01 1.17e+03 1.19e-01  -7.1 2.55e+00    -  3.06e-01 1.00e+00H  1
+ 244  7.6746355e+01 8.76e+02 7.43e-02  -7.1 1.08e+00    -  9.42e-01 1.00e+00h  1
+ 245  7.1832576e+01 4.12e+03 5.03e-02  -7.1 1.22e+00    -  4.75e-01 1.00e+00h  1
+ 246  6.8878424e+01 4.43e+03 2.16e-01  -6.4 1.32e+00    -  1.00e+00 9.99e-01h  1
+ 247  6.8935309e+01 5.40e+02 4.73e-02 -11.0 7.35e-01    -  7.73e-02 1.00e+00h  1
+ 248  6.9143197e+01 2.18e+01 4.54e+00  -5.5 1.18e-01    -  1.00e+00 1.00e+00h  1
+ 249  6.9132341e+01 2.30e-02 9.11e-03  -6.9 7.50e-03    -  9.84e-01 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 250  6.9052768e+01 6.15e+01 2.63e-02  -7.4 4.82e-01    -  4.53e-01 2.40e-01h  3
+ 251  6.8717675e+01 7.57e+00 6.83e-02  -7.0 3.61e-02    -  1.00e+00 1.00e+00h  1
+ 252  6.8630735e+01 7.18e+00 6.70e-02 -11.0 8.60e-02    -  6.66e-01 5.58e-01h  1
+ 253  6.8309277e+01 1.28e+02 6.67e-02  -7.0 4.89e-01    -  1.00e+00 4.73e-01h  1
+ 254  6.8127168e+01 4.33e+02 6.68e-02 -11.0 5.45e+00    -  1.70e-01 4.58e-02h  2
+ 255  6.7105129e+01 7.23e+02 1.16e-01  -8.1 2.17e+00    -  1.61e-01 2.49e-01h  3
+ 256  6.6780483e+01 2.46e+02 3.72e-02  -7.4 3.25e-01    -  1.00e+00 7.10e-01h  1
+ 257  6.6950540e+01 1.22e+02 3.99e-02  -6.6 2.64e-01    -  1.51e-01 1.00e+00H  1
+ 258  6.6374994e+01 2.86e+02 1.42e-02  -7.2 1.50e-01    -  1.00e+00 1.00e+00h  1
+ 259  6.6310793e+01 1.40e+02 2.29e-02  -6.3 1.58e-01    -  2.05e-01 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 260  6.6093379e+01 9.25e+01 9.70e-03  -6.9 2.28e-01    -  4.82e-01 9.95e-01h  1
+ 261  6.5997635e+01 9.60e+01 1.22e-02  -8.0 2.07e-01    -  1.00e+00 1.00e+00h  1
+ 262  6.6001829e+01 1.88e+02 1.84e-02  -6.3 4.81e-01    -  2.29e-01 1.00e+00h  1
+ 263  6.5864025e+01 1.51e+02 1.76e-02  -7.0 2.79e-01    -  8.73e-01 7.05e-01h  1
+ 264  6.5709226e+01 8.80e+01 1.04e-02  -7.7 1.48e-01    -  9.22e-01 4.20e-01h  1
+ 265  6.5597455e+01 7.92e+00 5.09e-03  -7.9 1.10e-01    -  1.00e+00 1.00e+00h  1
+ 266  6.5506630e+01 1.20e+02 9.94e-03  -8.2 2.34e-01    -  1.00e+00 1.00e+00h  1
+ 267  6.5411526e+01 1.21e+02 9.40e-03  -9.4 1.29e+00    -  8.87e-01 1.57e-01h  1
+ 268  6.5266822e+01 1.64e+02 1.08e-02  -7.7 6.53e+00    -  1.00e+00 6.75e-02h  1
+ 269  6.4898057e+01 7.65e+02 2.42e-02  -6.1 1.67e+01    -  3.60e-02 1.25e-01h  4
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 270  6.4592537e+01 2.10e+03 3.98e-02  -6.6 6.02e+01    -  1.57e-01 4.74e-02h  4
+ 271  6.4382338e+01 2.39e+03 3.85e-02  -6.2 3.92e+01    -  8.98e-02 6.23e-02h  4
+ 272  6.3080883e+01 2.53e+03 4.50e-02  -5.8 6.08e+01    -  1.01e-01 5.21e-02h  4
+ 273  6.3201234e+01 2.61e+03 5.74e-02  -6.2 3.52e+01    -  2.56e-01 7.09e-02h  4
+ 274  6.2956583e+01 2.42e+03 6.13e-02  -6.8 1.03e+01    -  2.54e-01 1.17e-01h  4
+ 275  6.2838295e+01 2.06e+03 5.95e-02  -6.8 2.32e+00    -  9.26e-01 2.50e-01h  3
+ 276  6.3427697e+01 3.10e+03 6.63e-02  -6.5 1.95e+00    -  9.10e-01 1.00e+00h  1
+ 277  7.7674804e+01 1.45e+03 1.63e-01  -6.5 1.06e+00    -  9.65e-01 1.00e+00H  1
+ 278  6.2485607e+01 1.27e+04 2.43e-01  -6.6 2.87e+00    -  1.00e+00 1.00e+00h  1
+ 279  6.5919525e+01 1.33e+03 7.39e-02  -6.0 1.26e+00    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 280  6.3010526e+01 6.01e+02 5.84e-02  -6.1 3.79e-01    -  1.00e+00 1.00e+00h  1
+ 281  6.2352441e+01 3.33e+02 1.97e-02  -6.2 4.68e-01    -  1.00e+00 1.00e+00h  1
+ 282  6.2442188e+01 1.72e+02 2.89e-02  -6.6 4.81e-01    -  1.00e+00 1.00e+00h  1
+ 283  6.1916319e+01 7.49e+01 1.19e-02  -7.1 2.32e-01    -  1.00e+00 1.00e+00h  1
+ 284  6.1771728e+01 3.54e+01 1.09e-02  -8.4 2.54e-01    -  1.00e+00 1.00e+00h  1
+ 285  6.1475886e+01 3.00e+02 1.53e-02  -8.7 5.33e-01    -  1.00e+00 1.00e+00h  1
+ 286  6.1139975e+01 2.94e+02 1.03e-02  -6.9 7.08e+00    -  9.84e-01 8.57e-02h  1
+ 287  6.1095493e+01 1.22e+03 4.44e-02  -7.6 1.18e+01    -  4.57e-01 1.94e-01h  2
+ 288  6.0804183e+01 1.24e+03 6.80e-02  -6.8 5.98e+00  -5.4 6.63e-01 1.25e-01h  4
+ 289  6.0561588e+01 1.17e+03 6.14e-02  -6.3 1.76e+00    -  3.80e-02 6.15e-02h  5
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 290  6.0201445e+01 4.70e+02 2.23e-02  -7.2 5.49e-01    -  6.94e-01 9.93e-01h  1
+ 291  5.9572927e+01 2.26e+03 4.73e-02  -5.6 1.33e+00    -  2.61e-02 1.00e+00h  1
+ 292  1.2350671e+02 5.18e+03 4.14e-01  -6.2 1.34e+00    -  3.42e-01 9.76e-01H  1
+ 293  9.4816934e+01 5.41e+03 2.77e-01  -6.6 1.27e+00    -  7.05e-02 2.57e-01h  1
+ 294  6.2965733e+01 8.17e+03 6.27e-01  -6.6 1.36e+00    -  3.22e-02 8.33e-01h  1
+ 295  6.0218086e+01 7.44e+03 5.42e-01  -6.6 2.50e+00    -  1.20e-02 1.02e-01h  1
+ 296  6.2002552e+01 3.17e+03 3.08e-01  -6.6 1.21e+00    -  1.75e-03 5.53e-01h  1
+ 297  6.1661532e+01 3.09e+03 2.98e-01  -6.6 1.69e+00    -  2.98e-03 3.24e-02h  1
+ 298  5.9324313e+01 2.11e+03 1.96e-01  -6.6 3.46e-01    -  2.87e-03 3.52e-01f  1
+ 299  6.3642705e+01 2.68e+03 3.40e-01  -5.1 1.03e+00    -  7.26e-04 9.64e-01h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 300  6.2056999e+01 2.37e+03 3.01e-01  -6.6 6.78e-01    -  1.00e+00 1.17e-01h  1
+ 301  6.0059592e+01 2.39e+03 1.48e-01  -6.6 5.53e-01    -  1.39e-01 1.00e+00h  1
+ 302  5.7499899e+01 4.55e+02 4.49e-02  -6.2 1.86e-01    -  1.00e+00 1.00e+00h  1
+ 303  5.7336825e+01 1.25e+01 6.80e-03  -7.3 7.41e-02    -  1.00e+00 1.00e+00h  1
+ 304  5.7145749e+01 2.49e+02 1.40e-02  -7.7 2.73e-01    -  1.00e+00 1.00e+00h  1
+ 305  5.9641796e+01 1.19e+02 6.32e-02  -6.5 1.11e+00    -  6.23e-01 1.00e+00H  1
+ 306  5.7045423e+01 1.13e+03 1.15e-02  -6.8 5.40e-01    -  1.00e+00 1.00e+00h  1
+ 307  5.7034642e+01 1.43e+02 3.21e-02  -7.2 2.85e-01    -  1.00e+00 1.00e+00h  1
+ 308  5.6560298e+01 3.79e+01 3.71e-03  -7.5 5.85e-02    -  1.00e+00 1.00e+00h  1
+ 309  5.6491402e+01 1.67e+01 3.12e-03  -8.8 1.65e-01    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 310  5.6390127e+01 1.87e+02 1.15e-02  -6.9 6.93e+00    -  8.63e-01 8.68e-02h  2
+ 311  5.6230408e+01 5.99e+02 1.56e-02  -8.1 5.18e+00    -  6.52e-01 1.68e-01h  1
+ 312  5.6292541e+01 2.42e+03 3.52e-02  -6.3 4.79e+00    -  1.91e-01 5.00e-01h  2
+ 313  5.4871282e+01 1.43e+04 4.67e-02  -7.0 1.56e+01    -  3.32e-01 1.70e-01h  1
+ 314  5.4094107e+01 1.32e+04 3.33e-02  -6.6 4.19e+00    -  1.48e-01 6.88e-02h  4
+ 315  5.6659658e+01 9.13e+02 6.43e-01  -6.0 2.09e+00    -  1.50e-01 1.00e+00H  1
+ 316  5.6050972e+01 9.03e+02 6.34e-01  -6.6 6.12e+00    -  1.00e-01 1.14e-02h  1
+ 317  5.4763647e+01 5.81e+03 1.33e+00  -5.7 3.02e+01    -  1.79e-01 9.18e-02f  1
+ 318  8.6530129e+01 1.41e+04 4.21e-01  -6.3 3.92e+00    -  1.53e-01 1.00e+00h  1
+ 319  5.9871595e+01 6.22e+03 1.38e-01  -6.3 6.17e-01    -  2.96e-01 6.50e-01h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 320  5.5490598e+01 5.21e+03 1.43e-01  -6.3 2.46e+00    -  1.00e+00 2.02e-01h  1
+ 321  6.4047930e+01 6.80e+02 2.20e-01  -6.3 1.37e+00    -  4.70e-01 1.00e+00H  1
+ 322  5.2715835e+01 2.08e+03 1.58e-01  -6.3 4.99e-01    -  1.44e-01 7.34e-01h  1
+ 323  5.1787094e+01 3.71e+02 7.03e-02  -6.8 2.83e-01    -  7.76e-01 1.00e+00h  1
+ 324  5.0479029e+01 6.55e+01 3.25e-02  -6.9 1.33e-01    -  1.00e+00 1.00e+00h  1
+ 325  5.0224529e+01 1.90e+01 1.83e-02  -7.8 1.01e-01    -  1.00e+00 1.00e+00h  1
+ 326  4.9655350e+01 2.90e+02 2.43e-02  -8.3 5.86e-01    -  1.00e+00 1.00e+00h  1
+ 327  4.9306225e+01 5.15e+02 5.08e-02  -6.7 1.67e+00    -  6.63e-01 1.00e+00h  1
+ 328  4.9015749e+01 6.77e+02 6.69e-02  -7.6 3.23e+00    -  5.19e-01 4.94e-01h  2
+ 329  4.8406288e+01 1.15e+03 3.78e-02  -7.2 4.96e-01    -  1.34e-01 5.00e-01h  2
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 330  4.8092080e+01 2.39e+02 1.04e-02  -7.1 1.80e-01    -  6.64e-01 1.00e+00h  1
+ 331  4.8018317e+01 3.12e+01 9.86e-03  -7.5 1.44e-01    -  1.00e+00 1.00e+00h  1
+ 332  4.7898747e+01 6.05e+01 8.23e-03  -7.0 2.83e-01    -  8.53e-01 5.23e-01h  1
+ 333  4.7807234e+01 2.29e+02 1.31e-02  -7.1 1.04e+00    -  6.36e-01 4.61e-01h  2
+ 334  4.8869811e+01 1.51e+02 4.13e-02  -6.0 1.15e+00    -  8.64e-02 1.00e+00H  1
+ 335  4.8170546e+01 1.03e+02 2.42e-02  -6.9 4.63e-01    -  9.94e-01 2.98e-01h  1
+ 336  4.7467943e+01 2.41e+02 2.21e-02  -6.9 2.07e-01    -  2.36e-01 1.00e+00h  1
+ 337  4.7328333e+01 2.69e+01 8.79e-03  -7.2 2.16e-01    -  1.00e+00 1.00e+00h  1
+ 338  4.7231261e+01 1.43e+02 1.36e-02  -6.7 4.05e-01    -  1.00e+00 1.00e+00h  1
+ 339  4.8815822e+01 1.24e+02 4.48e-02  -6.7 3.54e+00    -  7.68e-01 1.00e+00H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 340  4.8292824e+01 1.03e+03 3.90e-02  -6.8 2.99e+00    -  3.18e-01 5.00e-01h  2
+ 341  4.7632791e+01 9.32e+02 3.65e-02  -6.8 6.71e-01    -  4.76e-01 9.30e-02h  1
+ 342  4.6402023e+01 6.40e+02 1.93e-02  -6.8 9.80e-01    -  3.26e-02 1.00e+00h  1
+ 343  4.7381676e+01 1.71e+02 4.57e-02  -7.4 2.56e+00    -  1.00e+00 1.00e+00H  1
+ 344  4.6680718e+01 8.51e+02 4.96e-02  -7.5 5.23e+00    -  7.68e-01 3.56e-01h  1
+ 345  4.6244010e+01 1.01e+03 4.04e-02  -7.5 1.72e+01    -  5.76e-01 5.08e-02h  4
+ 346  4.9345286e+01 6.93e+02 8.46e-02  -6.3 1.92e+00    -  2.75e-01 1.00e+00H  1
+ 347  4.6501205e+01 1.22e+03 5.34e-02  -6.9 1.43e+00    -  4.53e-01 1.00e+00h  1
+ 348  4.6933922e+01 1.09e+03 5.64e-02  -6.9 5.05e-01    -  8.37e-01 1.00e+00h  1
+ 349  4.5522790e+01 2.33e+02 1.35e-02  -6.9 6.45e-01    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 350  4.5587617e+01 7.74e+01 1.96e-02  -7.1 3.36e-01    -  1.00e+00 1.00e+00h  1
+ 351  4.5404113e+01 2.83e+01 7.79e-03  -8.3 5.88e-02    -  1.00e+00 1.00e+00h  1
+ 352  4.5359019e+01 8.64e+00 7.38e-03  -9.8 4.25e-02    -  1.00e+00 1.00e+00h  1
+ 353  4.5327921e+01 1.13e+00 2.88e-03  -7.7 7.32e-02    -  1.00e+00 8.62e-01h  1
+ 354  4.5229667e+01 4.39e+01 1.22e-02  -6.9 2.12e+00    -  7.83e-01 2.05e-01h  1
+ 355  4.5184043e+01 8.56e+02 2.46e-02  -8.1 2.34e+00    -  5.80e-01 1.00e+00h  1
+ 356  4.5046144e+01 2.52e+03 2.95e-02  -5.8 2.10e+01    -  6.48e-03 1.29e-01h  3
+ 357  4.4696811e+01 3.26e+03 2.96e-02  -6.3 1.44e+01    -  1.89e-01 9.57e-02h  3
+ 358  4.4120171e+01 5.41e+03 3.41e-02  -5.6 1.58e+01    -  7.84e-02 1.11e-01h  2
+ 359  4.5040574e+01 5.24e+03 3.17e-02  -5.4 5.93e+00    -  5.75e-02 1.95e-01h  3
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 360  4.5177970e+01 1.51e+03 5.63e-02  -6.4 3.73e-01    -  7.05e-01 8.16e-01h  1
+ 361  4.4060542e+01 8.66e+02 3.07e-02  -6.4 3.11e-01    -  1.00e+00 1.00e+00h  1
+ 362  4.3335486e+01 4.31e+02 2.08e-02  -6.6 7.03e-01    -  1.00e+00 1.00e+00h  1
+ 363  4.3508442e+01 6.81e+01 2.43e-02  -6.7 2.42e-01    -  1.00e+00 1.00e+00H  1
+ 364  4.3101129e+01 2.40e+02 9.83e-03  -7.4 3.71e-01    -  1.00e+00 1.00e+00h  1
+ 365  4.3219327e+01 6.95e+00 1.69e-02  -8.1 5.39e-01    -  1.00e+00 9.99e-01H  1
+ 366  4.2960096e+01 1.31e+02 1.47e-02  -8.8 3.29e-01    -  1.00e+00 1.00e+00h  1
+ 367  4.2694293e+01 1.22e+02 2.20e-02  -6.8 5.25e-01    -  7.41e-01 7.85e-01H  1
+ 368  4.1604859e+01 1.69e+03 3.84e-02  -6.7 4.46e-01    -  6.91e-01 1.00e+00h  1
+ 369  4.3426133e+01 4.31e+02 1.28e-01  -6.4 1.13e+00    -  4.16e-01 1.00e+00H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 370  4.2344498e+01 7.45e+02 8.17e-02  -6.6 4.07e-01    -  1.00e+00 8.28e-01h  1
+ 371  4.1230633e+01 5.04e+02 3.27e-02  -6.6 6.99e-01    -  4.63e-01 1.00e+00h  1
+ 372  4.0934421e+01 5.72e+02 1.98e-02  -6.6 2.92e-01    -  1.00e+00 9.81e-01h  1
+ 373  4.0917606e+01 1.35e+02 1.64e-02  -7.7 2.23e-01    -  1.00e+00 1.00e+00h  1
+ 374  4.0738036e+01 1.30e+02 9.61e-03  -7.8 3.12e-01    -  1.00e+00 1.00e+00h  1
+ 375  4.0793850e+01 2.14e+01 1.25e-02  -9.2 1.93e-01    -  1.00e+00 1.00e+00h  1
+ 376  4.0624262e+01 3.08e+01 3.38e-03  -7.5 6.13e-02    -  1.00e+00 1.00e+00h  1
+ 377  4.0575626e+01 3.29e+00 2.19e-03  -8.2 1.78e-01    -  1.00e+00 1.00e+00h  1
+ 378  4.0499802e+01 1.37e+01 2.61e-03  -8.2 4.37e+00    -  1.00e+00 6.80e-02h  1
+ 379  4.0226419e+01 2.93e+02 1.80e-02  -7.2 1.40e+01    -  2.39e-01 1.83e-01h  3
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 380  3.8712426e+01 1.39e+04 3.36e-02  -5.9 5.01e+01    -  1.98e-02 1.11e-01h  3
+ 381  3.8669146e+01 8.92e+03 3.34e-02  -6.8 3.12e+01    -  1.33e-01 1.87e-01h  3
+ 382  3.8751299e+01 9.95e+03 3.46e-02  -6.5 2.56e+01    -  6.56e-02 1.49e-01h  3
+ 383  3.9721471e+01 7.59e+03 4.05e-02  -7.2 4.31e+00    -  2.03e-01 2.96e-01h  1
+ 384  3.7907520e+01 3.89e+03 2.69e-02  -7.2 5.78e-01    -  2.14e-01 5.11e-01h  1
+ 385  3.7967833e+01 1.69e+03 7.68e-02 -11.0 5.58e-01    -  3.06e-01 1.00e+00h  1
+ 386  3.7168350e+01 6.18e+02 2.07e-02  -8.2 2.36e-01    -  1.00e+00 1.00e+00h  1
+ 387  3.6963301e+01 2.78e+01 1.03e-02  -8.7 1.70e-01    -  1.00e+00 1.00e+00h  1
+ 388  3.6491031e+01 1.65e+02 1.77e-02  -9.1 8.19e-01    -  1.00e+00 1.00e+00h  1
+ 389  3.6154055e+01 2.51e+02 2.90e-02 -11.0 4.34e+01    -  1.15e-01 1.26e-02h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 390  3.5782213e+01 2.15e+03 9.82e-02  -8.6 2.75e+01    -  9.03e-01 7.36e-02h  3
+ 391  3.5558309e+01 2.48e+03 9.10e-02  -6.6 2.47e+00    -  8.96e-02 6.64e-02h  4
+ 392  3.5563755e+01 2.39e+03 3.24e-01  -5.6 5.74e-01    -  1.00e+00 3.85e-02h  1
+ 393  3.5924188e+01 3.06e+02 2.23e+02  -5.6 5.45e-01    -  2.05e-01 1.00e+00h  1
+ 394  3.5841496e+01 7.77e+00 9.60e-01  -7.3 3.02e-02    -  1.00e+00 1.00e+00h  1
+ 395  3.5839931e+01 1.64e-04 3.78e-04  -9.0 3.78e-04    -  1.00e+00 1.00e+00h  1
+ 396  3.4531296e+01 1.60e+03 2.30e-01  -7.8 5.57e-01    -  8.24e-01 1.00e+00f  1
+ 397  3.3767453e+01 6.74e+02 1.11e-01  -7.6 2.24e-01    -  1.00e+00 6.64e-01h  1
+ 398  3.3648823e+01 8.59e+01 2.33e-02  -6.9 1.32e-01    -  8.29e-01 1.00e+00h  1
+ 399  3.3569513e+01 4.17e+00 9.15e-03  -8.0 5.42e-02    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 400  3.3411251e+01 1.29e+02 1.09e-02  -8.3 3.12e-01    -  1.00e+00 1.00e+00h  1
+ 401  3.4331365e+01 1.34e+02 3.95e-02  -6.5 1.19e+00    -  1.40e-01 1.00e+00H  1
+ 402  3.3561122e+01 7.52e+02 3.22e-02  -7.4 3.80e-01    -  5.42e-01 1.00e+00h  1
+ 403  3.3023558e+01 4.13e+02 1.91e-02  -7.4 2.27e-01    -  1.00e+00 4.62e-01h  1
+ 404  3.2707941e+01 7.65e+01 8.08e-03  -7.7 2.05e-01    -  6.72e-01 1.00e+00h  1
+ 405  3.2563013e+01 6.34e+01 9.02e-03  -7.6 3.96e-01    -  1.00e+00 1.00e+00h  1
+ 406  3.2464768e+01 1.66e+04 2.34e-02  -6.2 7.36e+00    -  3.24e-02 2.50e-01h  3
+ 407  3.4747743e+01 1.07e+03 3.43e-02  -7.1 4.75e-01    -  1.00e+00 1.00e+00h  1
+ 408  3.2390609e+01 2.05e+03 3.56e-02  -7.2 6.59e-01    -  1.00e+00 1.00e+00h  1
+ 409  3.2224981e+01 1.27e+02 1.90e-02  -7.4 2.39e-01    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 410  3.2048615e+01 3.72e+01 5.72e-03  -8.6 1.96e-01    -  1.00e+00 1.00e+00h  1
+ 411  3.1994549e+01 2.41e+01 9.02e-03  -7.4 2.55e-01    -  1.00e+00 1.00e+00h  1
+ 412  3.1846294e+01 4.19e+02 1.16e-02  -7.6 9.60e-01    -  1.00e+00 1.00e+00h  1
+ 413  3.1706394e+01 9.75e+02 1.41e-02  -7.1 1.18e+01    -  1.99e-01 1.25e-01h  4
+ 414  3.1602158e+01 1.36e+03 1.92e-02  -6.6 2.88e+01    -  6.28e-02 6.25e-02h  5
+ 415  3.1456312e+01 1.67e+03 1.73e-02  -6.8 4.82e+01    -  1.04e-01 3.11e-02h  6
+ 416  3.1557554e+01 1.04e+03 2.16e-02  -6.8 1.79e+01    -  3.38e-01 1.25e-01h  4
+ 417  3.1493427e+01 8.44e+02 2.92e-02  -7.2 1.02e+01    -  1.00e+00 1.25e-01h  4
+ 418  3.1352844e+01 1.19e+03 1.99e-02  -7.3 1.37e+01    -  1.00e+00 1.18e-01h  3
+ 419  3.1252901e+01 1.18e+03 1.97e-02  -7.4 5.85e+00    -  5.51e-01 5.58e-02h  5
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 420  3.1930777e+01 4.06e+02 3.30e-02  -7.1 3.62e-01    -  6.58e-01 1.00e+00h  1
+ 421  3.0945021e+01 1.11e+03 1.26e-02  -7.3 1.36e+00    -  3.01e-01 1.00e+00h  1
+ 422  3.1627744e+01 6.78e+01 3.23e-02  -6.9 3.60e-01    -  9.94e-01 1.00e+00H  1
+ 423  3.0871240e+01 1.11e+02 1.28e-02  -8.3 5.96e-01    -  1.00e+00 1.00e+00h  1
+ 424  3.1408969e+01 1.92e+02 3.46e-02  -7.1 4.55e-01    -  1.00e+00 9.00e-01H  1
+ 425  3.0717956e+01 2.35e+02 6.81e-03  -7.3 1.94e-01    -  6.18e-01 1.00e+00h  1
+ 426  3.0664908e+01 1.43e+01 2.00e-03  -7.7 8.14e-02    -  1.00e+00 1.00e+00h  1
+ 427  3.0507516e+01 1.08e+03 1.02e-02  -7.2 7.67e+00    -  4.54e-01 1.25e-01h  4
+ 428  3.0452403e+01 2.50e+03 1.05e-02  -5.8 1.94e+01    -  1.32e-02 5.05e-02h  4
+ 429  3.0320138e+01 2.76e+03 8.10e-03  -6.1 8.36e+00    -  1.12e-01 9.54e-02h  4
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 430  3.0402305e+01 2.51e+03 1.24e-02  -6.9 6.65e+00    -  5.73e-01 1.25e-01h  4
+ 431  3.0440137e+01 1.11e+03 2.42e-02  -7.2 1.14e+00    -  1.00e+00 1.00e+00h  1
+ 432  3.2671099e+01 7.86e+02 5.16e-02  -6.6 7.53e-01    -  2.67e-01 9.10e-01H  1
+ 433  3.1054700e+01 5.24e+02 3.44e-02  -7.0 8.92e-01    -  6.29e-01 3.99e-01h  1
+ 434  3.3904804e+01 4.91e+02 1.48e-01  -7.0 1.20e+00    -  1.17e-01 1.00e+00H  1
+ 435  3.1928483e+01 6.75e+02 1.22e-01  -7.0 5.32e+00    -  3.92e-02 2.50e-01h  3
+ 436  3.0658890e+01 1.17e+03 9.19e-02  -7.0 2.06e+01    -  3.31e-01 9.90e-02h  3
+ 437  2.9828894e+01 2.14e+03 5.75e-02  -7.0 1.91e+01    -  7.05e-01 1.11e-01h  3
+ 438  2.9835043e+01 2.08e+03 3.01e-02  -6.1 3.35e+00    -  1.71e-01 1.02e-01h  4
+ 439  2.9636416e+01 3.59e+02 2.63e-02  -6.7 9.56e-01    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 440  3.2160462e+01 3.04e+02 5.11e-02  -6.9 1.43e+00    -  1.00e+00 9.37e-01H  1
+ 441  2.9399137e+01 8.52e+02 2.31e-02  -7.0 1.14e+00    -  1.00e+00 1.00e+00h  1
+ 442  2.9995068e+01 2.25e+02 2.81e-02  -7.3 1.86e-01    -  1.00e+00 1.00e+00h  1
+ 443  2.9168022e+01 9.90e+01 5.05e-03  -8.2 9.12e-02    -  1.00e+00 1.00e+00h  1
+ 444  2.9129432e+01 4.65e+00 7.54e-03  -7.9 6.15e-02    -  1.00e+00 1.00e+00h  1
+ 445  2.9080053e+01 4.80e+00 2.28e-03  -8.3 1.01e-01    -  1.00e+00 1.00e+00h  1
+ 446  2.8981701e+01 1.33e+02 9.91e-03  -7.1 2.02e+00    -  1.00e+00 2.60e-01h  1
+ 447  2.8948603e+01 3.88e+03 2.37e-02  -7.5 5.53e+00    -  4.17e-01 5.00e-01h  2
+ 448  2.8970749e+01 3.85e+03 2.28e-02  -6.0 1.09e+02    -  1.75e-02 4.02e-02h  5
+ 449  2.9175983e+01 3.71e+02 4.10e-02  -7.3 1.49e+00  -4.6 1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 450  2.8285462e+01 2.68e+02 3.03e-02  -7.3 4.74e+00    -  1.00e+00 5.60e-01h  1
+ 451  2.7859965e+01 6.43e+02 4.24e-02  -5.7 1.95e+01    -  2.99e-02 4.45e-02f  3
+ 452  3.2559182e+01 6.32e+02 6.23e-02  -6.2 1.39e+00    -  1.26e-01 1.00e+00H  1
+ 453  2.7716385e+01 1.93e+03 2.93e-02  -6.8 1.53e+00    -  1.00e+00 1.00e+00h  1
+ 454  3.0354921e+01 8.06e+02 9.26e-02  -6.6 6.05e-01    -  1.00e+00 1.00e+00h  1
+ 455  2.6914406e+01 3.93e+02 1.28e-02  -6.7 3.20e-01    -  1.00e+00 1.00e+00h  1
+ 456  2.6853745e+01 3.92e+01 7.47e-03  -6.8 1.28e-01    -  1.00e+00 1.00e+00h  1
+ 457  2.6792103e+01 1.47e+01 5.18e-03  -7.8 1.14e-01    -  1.00e+00 1.00e+00h  1
+ 458  2.6707606e+01 1.51e+02 1.04e-02  -7.0 7.86e-01    -  9.24e-01 7.04e-01h  1
+ 459  2.8979568e+01 7.10e+01 4.76e-02  -6.6 1.89e+00    -  1.28e-01 1.00e+00H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 460  2.7802793e+01 2.79e+02 3.80e-02  -7.0 6.65e-01    -  1.00e+00 2.65e-01h  1
+ 461  2.9192776e+01 2.58e+02 5.81e-02  -7.0 3.25e-01    -  1.40e-01 1.00e+00H  1
+ 462  2.6509700e+01 3.47e+02 2.19e-02  -7.0 3.05e-01    -  1.00e+00 7.38e-01h  1
+ 463  2.6148694e+01 7.38e+01 3.67e-03  -6.8 3.50e-01    -  1.00e+00 1.00e+00h  1
+ 464  2.6073777e+01 8.42e+00 7.80e-03  -7.3 4.75e-01    -  1.00e+00 1.00e+00h  1
+ 465  2.5900781e+01 1.20e+04 3.71e-02  -7.3 4.59e+00    -  1.00e+00 1.00e+00h  1
+ 466  4.6928271e+01 3.75e+03 1.18e-01  -6.7 2.78e+00    -  3.35e-01 1.00e+00H  1
+ 467  3.3602186e+01 1.13e+04 8.29e-02  -7.1 1.94e+00    -  1.74e-01 1.00e+00h  1
+ 468  3.1549153e+01 1.02e+04 7.34e-02  -7.1 3.47e+00    -  1.00e+00 9.18e-02h  1
+ 469  2.9066316e+01 3.23e+03 1.06e-01  -7.1 2.86e+00    -  3.18e-01 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 470  2.6404670e+01 2.95e+03 6.42e-02  -7.1 1.47e+00    -  2.33e-01 1.00e+00h  1
+ 471  2.5680725e+01 5.56e+02 4.06e-02  -7.1 7.43e-01    -  1.00e+00 1.00e+00h  1
+ 472  2.5750459e+01 1.38e+02 2.19e-02  -7.9 2.24e-01    -  1.00e+00 1.00e+00h  1
+ 473  2.5439857e+01 4.10e+01 1.13e-02  -8.3 9.31e-02    -  1.00e+00 1.00e+00h  1
+ 474  2.5395874e+01 8.79e+00 3.41e-03  -9.4 2.76e-02    -  1.00e+00 1.00e+00h  1
+ 475  2.5368825e+01 2.68e+00 3.37e-03  -7.5 7.86e-02    -  1.00e+00 1.00e+00h  1
+ 476  2.5322675e+01 1.53e+01 5.32e-03  -7.6 2.96e-01    -  9.99e-01 9.57e-01h  1
+ 477  2.7136556e+01 1.14e+01 3.43e-02  -7.0 1.74e+00    -  2.97e-01 1.00e+00H  1
+ 478  2.5856076e+01 1.81e+02 1.82e-02  -7.4 4.60e-01    -  1.00e+00 4.18e-01h  1
+ 479  2.5158816e+01 3.00e+02 1.52e-02  -7.4 3.71e-01    -  9.49e-01 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 480  2.5073752e+01 1.65e+02 7.41e-03  -7.5 1.69e-01    -  1.00e+00 1.00e+00h  1
+ 481  2.5028302e+01 2.97e+00 4.27e-03  -8.0 1.94e-01    -  1.00e+00 1.00e+00h  1
+ 482  2.5015379e+01 9.73e+01 1.50e-02  -8.0 1.15e+00    -  1.00e+00 9.99e-01h  1
+ 483  2.7384395e+01 1.08e+02 7.63e-02  -7.0 5.37e+00    -  2.19e-01 1.00e+00H  1
+ 484  2.6147133e+01 3.69e+02 4.64e-02  -7.6 3.93e+00    -  8.51e-01 4.94e-01h  1
+ 485  2.5991903e+01 8.48e+02 5.00e-02  -7.6 6.45e-01    -  1.48e-01 5.09e-01h  1
+ 486  2.4609360e+01 3.78e+02 1.01e-02  -7.6 5.82e-01    -  1.00e+00 6.51e-01h  1
+ 487  2.4320826e+01 6.80e+01 9.28e-03  -9.7 9.27e-02    -  9.62e-01 1.00e+00h  1
+ 488  2.4294665e+01 1.51e+01 9.45e-03  -7.4 2.45e-01    -  1.00e+00 1.00e+00h  1
+ 489  2.4255495e+01 1.24e+01 1.06e-02  -8.6 6.31e-01    -  9.50e-01 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 490  2.5504371e+01 1.54e+02 4.49e-02  -7.0 3.06e+00    -  1.60e-02 1.00e+00H  1
+ 491  2.5005047e+01 2.17e+02 3.21e-02  -8.3 5.05e-01    -  1.00e+00 4.36e-01h  1
+ 492  2.4065230e+01 2.37e+02 1.26e-02  -8.3 1.17e+00    -  1.32e-01 1.00e+00h  1
+ 493  2.4189914e+01 5.28e+02 1.47e-02  -9.5 1.23e-01    -  7.46e-01 8.98e-01h  1
+ 494  2.3986073e+01 1.84e+02 1.46e-03  -9.0 2.81e-01    -  1.00e+00 1.00e+00h  1
+ 495  2.3952507e+01 6.99e+01 2.47e-03  -9.3 6.82e-01    -  1.00e+00 1.00e+00h  1
+ 496  2.3928372e+01 1.34e+02 8.89e-03  -7.7 7.87e-01  -5.1 9.87e-01 2.50e-01h  3
+ 497  2.3907339e+01 2.49e+02 1.31e-02  -8.3 1.03e+01    -  4.67e-01 2.98e-01h  2
+ 498  2.3901637e+01 3.22e+02 1.29e-02  -6.1 6.14e+01    -  2.79e-02 2.76e-02h  5
+ 499  2.3764314e+01 8.79e+02 2.31e-02  -7.6 2.07e+01    -  3.96e-01 1.65e-01h  2
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 500  2.3680255e+01 8.77e+02 2.73e-02  -6.6 5.44e+01    -  8.00e-03 2.33e-02h  1
+ 501  2.3549860e+01 7.03e+02 2.07e-02  -6.4 2.02e+00  -5.5 2.24e-02 2.51e-01h  2
+ 502  3.1280787e+01 4.53e+02 9.81e-02  -7.4 2.98e+00    -  6.93e-01 1.00e+00H  1
+ 503  2.4775772e+01 1.81e+03 3.44e-02  -7.5 1.13e+00    -  1.00e+00 8.34e-01h  1
+ 504  2.4601222e+01 9.98e+02 5.07e-02  -7.5 1.13e+00    -  7.46e-03 5.00e-01h  2
+ 505  2.4119881e+01 8.02e+02 3.69e-02  -7.5 1.73e-01    -  1.00e+00 2.00e-01h  1
+ 506  2.3247488e+01 1.51e+02 1.50e-02  -7.5 1.32e-01    -  6.11e-01 8.85e-01h  1
+ 507  2.3213204e+01 2.72e+01 1.38e-02 -11.0 7.52e-02    -  3.31e-01 1.00e+00h  1
+ 508  2.3132239e+01 6.20e+00 1.50e-03  -7.8 2.33e-02    -  1.00e+00 1.00e+00h  1
+ 509  2.3109732e+01 1.37e+00 1.11e-03  -7.6 3.55e-02    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 510  2.3008738e+01 3.10e+01 6.66e-03  -7.2 3.20e-01    -  8.28e-01 1.00e+00h  1
+ 511  2.2996283e+01 2.87e+02 1.37e-02  -7.2 2.96e+00    -  2.61e-01 2.50e-01h  3
+ 512  2.3065681e+01 5.42e+01 2.31e-02  -7.0 7.22e-01    -  1.00e+00 1.00e+00H  1
+ 513  2.2920601e+01 1.65e+02 1.78e-02  -6.5 2.17e-01    -  1.00e+00 1.00e+00h  1
+ 514  2.2653129e+01 7.51e+01 8.22e-03 -11.0 1.15e-01    -  5.33e-01 1.00e+00h  1
+ 515  2.2599498e+01 1.22e+01 5.86e-03  -8.1 2.46e-01    -  1.00e+00 1.00e+00h  1
+ 516  2.2490168e+01 6.22e+01 6.09e-03  -7.2 7.65e-01    -  1.00e+00 1.00e+00h  1
+ 517  2.2475649e+01 4.73e+01 2.11e-02  -7.0 1.05e+00  -4.7 4.85e-01 1.00e+00H  1
+ 518  2.2406772e+01 2.09e+03 3.84e-02  -6.7 7.59e+00    -  1.00e+00 2.50e-01h  3
+ 519  2.4250248e+01 2.08e+03 1.11e-01  -7.2 2.89e+00    -  5.89e-01 2.50e-01h  3
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 520  2.2348510e+01 1.34e+03 5.39e-02  -7.0 7.44e-01    -  1.00e+00 3.93e-01h  1
+ 521  2.3134982e+01 9.37e+02 1.01e-01  -7.3 9.10e-01    -  3.25e-01 1.00e+00H  1
+ 522  2.1598557e+01 2.96e+02 6.45e-02  -7.2 4.59e-01    -  6.22e-01 7.18e-01h  1
+ 523  2.1020510e+01 2.00e+02 2.37e-02  -6.9 2.34e-01    -  2.42e-01 1.00e+00f  1
+ 524  2.0976077e+01 4.03e+01 9.01e-03  -7.2 1.48e-01    -  1.00e+00 1.00e+00h  1
+ 525  2.1154527e+01 9.61e+00 2.57e-02  -8.3 2.71e-01    -  1.00e+00 1.00e+00H  1
+ 526  2.0808966e+01 4.48e+01 7.35e-03  -7.6 1.27e-01    -  1.00e+00 1.00e+00h  1
+ 527  2.0752175e+01 1.73e+01 5.29e-03  -9.3 8.18e-02    -  1.00e+00 1.00e+00h  1
+ 528  2.0683855e+01 2.23e+02 3.32e-03  -9.0 2.61e-01    -  1.00e+00 1.00e+00h  1
+ 529  2.1880317e+01 8.91e+01 3.05e-02  -7.3 2.44e+00    -  2.31e-01 1.00e+00H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 530  2.0956941e+01 1.21e+03 2.06e-02  -8.0 7.64e-01    -  1.00e+00 9.60e-01h  1
+ 531  2.0788058e+01 1.05e+03 1.68e-02  -8.0 7.24e-01    -  5.58e-01 1.37e-01h  1
+ 532  2.0376334e+01 1.51e+02 1.52e-02  -8.0 5.68e-01    -  2.61e-02 1.00e+00h  1
+ 533  2.0612087e+01 2.54e+02 2.83e-02  -8.9 5.25e-01    -  8.94e-01 1.00e+00h  1
+ 534  2.0196691e+01 7.10e+01 6.02e-03  -8.9 2.09e-01    -  1.00e+00 9.98e-01h  1
+ 535  2.0159257e+01 7.09e+00 7.15e-03 -11.0 2.76e-01    -  3.11e-01 1.00e+00h  1
+ 536  2.0059712e+01 5.70e+01 1.08e-02 -10.3 8.84e-01    -  8.93e-01 1.00e+00h  1
+ 537  2.0018996e+01 5.88e+01 1.11e-02  -9.6 1.33e+01    -  6.32e-01 1.66e-02h  1
+ 538  1.9780517e+01 4.97e+03 2.32e-02  -7.6 3.35e+01    -  7.71e-03 1.40e-01h  2
+ 539  1.9575512e+01 3.59e+03 2.83e-02  -7.4 1.32e+01    -  4.83e-02 2.09e-01h  3
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 540  1.9202413e+01 2.49e+03 2.63e-02  -6.6 4.34e+01    -  5.01e-02 6.79e-02h  3
+ 541  1.8890115e+01 2.02e+03 3.31e-02  -5.9 4.30e+01    -  3.73e-02 6.54e-02h  3
+ 542  1.9223529e+01 1.61e+03 3.44e-02  -6.5 2.21e+01    -  7.77e-02 1.91e-01h  3
+ 543  1.9423030e+01 1.94e+03 3.85e-02  -6.0 5.88e+00    -  4.90e-01 2.50e-01h  3
+ 544  1.8623484e+01 2.37e+03 4.78e-02  -6.4 2.71e+00    -  4.40e-01 5.00e-01h  2
+ 545  2.0877165e+01 7.18e+02 9.97e-02  -7.0 1.45e+00    -  1.00e+00 1.00e+00H  1
+ 546  1.9819186e+01 2.19e+03 5.68e-02  -7.1 7.60e+00    -  5.48e-01 7.12e-01h  1
+ 547  1.8032358e+01 2.24e+03 5.60e-02  -7.1 9.05e+00    -  9.26e-03 1.43e-01h  2
+ 548  2.0335588e+01 1.55e+03 6.73e-02  -7.3 8.08e-01    -  1.00e+00 1.00e+00h  1
+ 549  1.6716029e+01 1.08e+03 4.01e-02  -7.4 1.23e+00    -  1.05e-01 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 550  1.6575148e+01 1.85e+02 2.61e-02  -7.5 5.09e-01    -  1.00e+00 1.00e+00h  1
+ 551  1.6287021e+01 7.22e+01 7.28e-03  -7.2 1.78e-01    -  1.20e-01 1.00e+00h  1
+ 552  1.6235003e+01 2.39e+01 6.11e-03  -6.5 1.69e-01    -  1.00e+00 1.00e+00h  1
+ 553  1.6172083e+01 4.65e+01 6.60e-03 -11.0 1.56e-01    -  5.64e-01 1.00e+00h  1
+ 554  1.6323500e+01 2.61e+01 1.78e-02  -6.6 7.30e-01    -  1.00e+00 1.00e+00H  1
+ 555  1.6116755e+01 1.59e+02 1.46e-02  -7.5 5.10e-01    -  1.00e+00 1.00e+00h  1
+ 556  1.6119047e+01 4.65e+01 2.19e-02  -7.7 2.73e-01    -  1.00e+00 1.00e+00H  1
+ 557  1.5783337e+01 2.49e+02 5.59e-03  -8.2 2.13e-01    -  1.00e+00 1.00e+00h  1
+ 558  1.5734257e+01 1.86e+01 5.57e-03  -6.7 3.28e-01    -  1.00e+00 1.00e+00h  1
+ 559  1.6115508e+01 1.91e+01 2.46e-02  -6.7 2.61e+00    -  3.10e-01 1.00e+00H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 560  1.5785968e+01 3.77e+02 2.77e-02  -6.9 9.06e+00    -  5.02e-01 1.48e-01h  3
+ 561  1.4958153e+01 2.81e+03 4.91e-02  -6.9 3.12e+01    -  6.85e-01 8.10e-02h  2
+ 562  1.4468236e+01 2.24e+03 4.80e-02  -6.5 8.18e+00    -  4.88e-01 1.25e-01h  4
+ 563  1.3717632e+01 3.12e+03 5.15e-02  -6.7 4.32e+00    -  1.00e+00 2.50e-01h  3
+ 564  1.3393130e+01 2.36e+03 3.56e-02  -5.9 2.49e+00    -  7.68e-02 2.50e-01h  3
+ 565  1.3156070e+01 7.73e+02 3.13e-02  -7.5 1.34e+00    -  1.00e+00 1.00e+00h  1
+ 566  1.4691004e+01 9.29e+02 3.68e-02  -7.7 1.51e+00    -  9.63e-01 1.00e+00H  1
+ 567  1.4211370e+01 1.43e+03 3.75e-02  -6.7 3.85e-01    -  1.00e+00 1.00e+00h  1
+ 568  1.2870921e+01 3.15e+02 2.26e-02  -6.8 3.29e-01    -  1.00e+00 1.00e+00h  1
+ 569  1.2783494e+01 1.40e+03 5.21e-02  -7.9 3.40e-01    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 570  1.2533324e+01 3.72e+02 1.59e-02  -8.4 1.14e-01    -  1.00e+00 1.00e+00h  1
+ 571  1.2491549e+01 3.74e+01 4.20e-03  -9.9 8.63e-02    -  1.00e+00 1.00e+00h  1
+ 572  1.2457168e+01 5.20e+00 3.53e-03 -11.0 9.97e-02    -  1.00e+00 1.00e+00h  1
+ 573  1.2392737e+01 2.08e+01 4.55e-03  -9.0 1.73e+00    -  1.00e+00 1.51e-01h  1
+ 574  1.2364130e+01 1.36e+03 1.15e-02  -7.1 3.59e+00    -  1.00e+00 1.68e-01H  1
+ 575  1.2312914e+01 1.19e+03 9.31e-03  -6.6 6.48e+00    -  1.00e+00 1.25e-01h  4
+ 576  1.2383117e+01 3.16e+02 1.89e-02 -11.0 2.49e+00    -  5.60e-01 5.00e-01h  2
+ 577  1.3936542e+01 5.83e+02 4.00e-02  -7.1 1.96e+00    -  4.69e-01 1.00e+00H  1
+ 578  1.2620200e+01 3.28e+02 3.13e-02  -7.1 5.06e-01    -  1.00e+00 5.00e-01h  1
+ 579  1.2009767e+01 7.01e+02 3.82e-02  -7.1 6.43e-01    -  5.37e-02 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 580  1.2149416e+01 5.30e+02 2.32e-02  -8.3 2.89e-01    -  1.00e+00 1.00e+00h  1
+ 581  1.1863023e+01 2.87e+02 8.15e-03  -9.5 2.75e-01    -  1.00e+00 1.00e+00h  1
+ 582  1.1828235e+01 8.24e+00 2.76e-03  -7.5 1.86e-01    -  1.00e+00 1.00e+00h  1
+ 583  1.1822099e+01 1.15e+02 1.62e-02  -7.3 2.95e+00    -  1.00e+00 1.00e+00H  1
+ 584  1.1722819e+01 9.90e+01 1.17e-02  -7.6 1.40e+00  -5.2 9.98e-01 2.50e-01h  3
+ 585  1.1678528e+01 2.63e+01 2.04e-02  -8.5 2.95e-01    -  1.00e+00 1.00e+00H  1
+ 586  1.1656290e+01 1.81e+02 2.06e-02 -10.1 3.53e-01    -  1.00e+00 1.00e+00h  1
+ 587  1.1480338e+01 1.10e+02 1.23e-02 -10.4 8.72e-01    -  1.00e+00 1.00e+00h  1
+ 588  1.1987712e+01 1.32e+02 2.85e-02  -8.4 1.52e+00    -  1.00e+00 7.40e-01H  1
+ 589  1.1425139e+01 2.73e+02 1.20e-02  -8.5 2.03e-01    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 590  1.1324106e+01 4.55e+01 1.15e-02 -10.0 5.81e-02    -  1.00e+00 1.00e+00h  1
+ 591  1.1292337e+01 1.68e+01 3.34e-03  -8.0 1.77e-01    -  1.00e+00 7.15e-01h  1
+ 592  1.1250205e+01 1.76e+01 5.44e-03  -8.6 4.52e-01    -  1.00e+00 1.00e+00h  1
+ 593  1.1212933e+01 5.48e+01 6.20e-03  -6.6 1.45e+01    -  5.32e-02 5.28e-02h  5
+ 594  1.1200487e+01 5.41e+01 4.40e-03  -8.0 6.71e+00    -  1.00e+00 3.13e-02h  6
+ 595  1.1418567e+01 2.70e+01 2.14e-02  -8.3 2.42e+00    -  1.00e+00 9.81e-01H  1
+ 596  1.1260589e+01 3.00e+02 1.83e-02  -8.4 2.22e-01  -4.7 9.75e-01 9.84e-01h  1
+ 597  1.1072323e+01 1.27e+02 1.56e-02  -8.4 4.68e-01    -  1.00e+00 1.00e+00h  1
+ 598  1.1076884e+01 1.38e+01 2.16e-02  -9.0 1.30e+00    -  9.90e-01 1.00e+00H  1
+ 599  1.1014184e+01 4.63e+01 1.41e-02  -8.3 4.01e+00    -  1.00e+00 1.83e-01h  3
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 600  1.0879968e+01 2.96e+02 1.03e-02  -8.1 1.11e+01    -  6.33e-01 1.25e-01h  4
+ 601  1.0795227e+01 3.98e+02 1.05e-02  -6.4 2.23e+01    -  1.96e-02 2.43e-02h  5
+ 602  1.0781485e+01 3.80e+02 9.88e-03  -7.5 1.33e+00    -  3.95e-01 1.25e-01h  4
+ 603  1.0961768e+01 1.74e+02 2.35e-02  -7.4 3.28e-01    -  1.00e+00 1.00e+00h  1
+ 604  1.0734027e+01 1.55e+02 2.39e-02  -7.5 8.24e-01    -  1.00e+00 1.00e+00h  1
+ 605  1.2710617e+01 8.20e+01 4.94e-02  -7.2 1.26e+00    -  1.00e+00 1.00e+00H  1
+ 606  1.0608123e+01 4.71e+02 8.76e-03  -7.3 1.71e-01    -  1.00e+00 1.00e+00h  1
+ 607  1.0428290e+01 7.58e+01 7.27e-03  -8.3 2.53e-01    -  1.00e+00 1.00e+00h  1
+ 608  1.0432023e+01 5.57e+01 9.79e-03  -8.8 1.33e-01    -  1.00e+00 1.00e+00h  1
+ 609  1.0383328e+01 2.74e+01 7.92e-03  -9.8 1.02e-01    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 610  1.0365510e+01 2.92e+01 7.54e-03 -11.0 9.86e-02    -  1.00e+00 1.00e+00h  1
+ 611  1.0323465e+01 8.40e+00 4.61e-03 -11.0 9.78e-02    -  1.00e+00 1.00e+00h  1
+ 612  1.0285093e+01 2.48e+01 6.01e-03 -11.0 2.74e-01    -  1.00e+00 1.00e+00h  1
+ 613  1.0249289e+01 4.20e+01 1.05e-02 -11.0 1.34e+00    -  1.00e+00 2.50e-01h  3
+ 614  1.1070654e+01 6.02e+01 5.32e-02 -11.0 2.62e+00    -  1.00e+00 1.00e+00H  1
+ 615  1.0893800e+01 8.10e+01 4.51e-02 -11.0 7.74e+00    -  1.00e+00 6.06e-02h  1
+ 616  1.0552353e+01 7.89e+02 2.38e-02 -11.0 9.17e+00    -  1.00e+00 1.96e-01h  2
+ 617  1.0291060e+01 7.88e+02 2.29e-02 -11.0 4.44e+00    -  3.53e-01 1.25e-01h  4
+ 618  1.0457678e+01 4.73e+02 3.89e-02 -11.0 3.55e-01    -  4.57e-03 1.00e+00H  1
+ 619  9.7648198e+00 4.16e+02 2.87e-02 -11.0 1.24e-01    -  3.98e-01 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 620  9.4130129e+00 2.16e+02 1.02e-02  -9.3 2.49e-01    -  1.00e+00 1.00e+00h  1
+ 621  9.2594660e+00 8.57e+01 9.56e-03 -10.7 7.27e-01    -  1.00e+00 1.00e+00h  1
+ 622  9.0819688e+00 3.57e+02 2.11e-02  -9.5 4.00e+00    -  1.00e+00 2.50e-01h  3
+ 623  8.9273591e+00 4.41e+02 2.97e-02  -9.0 5.69e+00    -  1.00e+00 1.25e-01h  4
+ 624  8.8910913e+00 6.90e+02 4.25e-02  -9.3 5.60e+00    -  8.52e-01 1.25e-01h  4
+ 625  8.8178946e+00 6.48e+02 4.13e-02  -9.4 2.02e+00    -  1.00e+00 5.57e-02H  1
+ 626  9.4385046e+00 2.95e+02 4.45e-02  -9.7 1.59e+00    -  1.00e+00 1.00e+00H  1
+ 627  9.1984218e+00 1.56e+03 2.53e-02  -9.8 6.89e-01    -  1.00e+00 1.00e+00h  1
+ 628  8.7833060e+00 1.15e+03 1.57e-02  -9.8 2.16e-01    -  1.00e+00 2.59e-01h  1
+ 629  8.5148236e+00 1.65e+02 1.56e-02 -11.0 2.61e-01    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 630  8.4683603e+00 1.50e+01 1.01e-02 -11.0 2.11e-01    -  1.00e+00 1.00e+00h  1
+ 631  8.4392242e+00 1.10e+01 4.30e-03 -11.0 2.79e-01    -  1.00e+00 1.00e+00h  1
+ 632  8.6361578e+00 1.56e+00 2.28e-02 -11.0 6.54e-01    -  1.00e+00 1.00e+00H  1
+ 633  8.3921583e+00 7.77e+01 1.10e-02 -11.0 1.00e-01    -  1.00e+00 1.00e+00h  1
+ 634  8.3281385e+00 2.32e+01 4.24e-03 -11.0 1.76e-01    -  1.00e+00 1.00e+00h  1
+ 635  8.2941673e+00 2.54e+01 8.72e-03 -11.0 5.72e-01    -  1.00e+00 1.00e+00h  1
+ 636  8.2372722e+00 1.33e+02 1.46e-02  -9.0 1.08e+01    -  1.00e+00 1.54e-01h  3
+ 637  8.2372416e+00 1.33e+02 1.46e-02  -7.0 2.38e+02  -5.2 1.68e-01 4.25e-04h 10
+ 638  9.8592262e+00 2.65e+02 5.02e-02  -7.9 5.59e-01  -4.8 5.50e-02 1.00e+00H  1
+ 639  8.1741316e+00 6.78e+02 9.03e-03  -7.9 3.22e-01    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 640  8.0956468e+00 2.01e+01 8.94e-03  -7.5 1.90e-01    -  1.00e+00 1.00e+00h  1
+ 641  8.0637160e+00 4.77e+01 7.46e-03  -8.1 9.80e-01    -  1.00e+00 1.00e+00h  1
+ 642  7.9977838e+00 2.17e+02 8.74e-03  -6.6 2.82e+01    -  3.39e-02 6.25e-02h  5
+ 643  7.9943950e+00 1.55e+02 1.14e-02  -7.8 1.04e+00  -5.3 8.56e-01 2.50e-01h  3
+ 644  7.9771989e+00 2.20e+02 1.50e-02  -8.5 4.23e-01    -  1.00e+00 1.00e+00h  1
+ 645  8.4750208e+00 1.04e+02 3.94e-02  -9.3 8.91e-01    -  7.33e-01 1.00e+00H  1
+ 646  7.9863952e+00 2.51e+02 2.60e-02  -9.0 3.60e-01    -  1.00e+00 1.00e+00h  1
+ 647  7.8229176e+00 2.02e+02 2.14e-02  -9.0 4.32e-01    -  1.00e+00 1.00e+00h  1
+ 648  7.7736904e+00 6.03e+01 1.02e-02  -8.7 3.26e-01    -  1.00e+00 1.00e+00h  1
+ 649  7.9052443e+00 1.32e+01 1.53e-02  -9.2 2.65e-01    -  1.00e+00 9.81e-01H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 650  7.7247738e+00 1.69e+02 7.18e-03 -10.5 1.09e-01    -  1.00e+00 1.00e+00h  1
+ 651  7.7083004e+00 7.83e+00 7.20e-03 -11.0 1.01e-01    -  1.00e+00 1.00e+00h  1
+ 652  7.6924032e+00 2.79e+00 3.54e-03 -11.0 1.16e-01    -  1.00e+00 1.00e+00h  1
+ 653  7.6886886e+00 3.89e+02 1.43e-02 -11.0 7.29e-01    -  1.00e+00 1.00e+00H  1
+ 654  7.6615537e+00 4.00e+02 1.63e-02 -11.0 1.90e+00    -  1.00e+00 1.24e-01h  2
+ 655  7.6131658e+00 3.56e+02 1.39e-02  -9.0 1.19e+00    -  1.00e+00 1.60e-01h  1
+ 656  7.6052895e+00 4.39e+02 1.57e-02  -9.3 1.89e+00    -  2.32e-02 2.50e-01h  3
+ 657  8.1827007e+00 6.41e+01 4.78e-02  -9.1 2.90e-01    -  1.00e+00 1.00e+00H  1
+ 658  7.5447425e+00 3.18e+02 7.41e-03  -9.1 5.01e-01    -  1.00e+00 1.00e+00h  1
+ 659  8.2002532e+00 5.72e+02 2.94e-02  -8.8 1.41e-01    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 660  7.4962160e+00 3.45e+02 2.42e-03  -8.9 1.20e-01    -  1.00e+00 1.00e+00h  1
+ 661  7.4835345e+00 1.36e+00 1.62e-03 -10.7 1.98e-02    -  1.00e+00 1.00e+00h  1
+ 662  7.4738298e+00 4.59e+00 3.46e-03 -10.1 7.22e-02    -  1.00e+00 1.00e+00h  1
+ 663  7.6048896e+00 1.91e+01 2.91e-02  -9.6 7.84e-01    -  1.00e+00 1.00e+00H  1
+ 664  7.5612963e+00 5.46e+01 1.80e-02  -9.7 1.36e+00    -  4.92e-01 2.50e-01h  3
+ 665  7.4362272e+00 1.91e+02 7.81e-03  -9.7 4.87e-01    -  1.00e+00 5.00e-01h  2
+ 666  7.8170629e+00 4.42e+01 2.36e-02 -10.8 3.97e-01    -  1.00e+00 1.00e+00H  1
+ 667  7.3861834e+00 1.86e+02 9.15e-03 -10.9 2.76e-01    -  9.63e-01 1.00e+00h  1
+ 668  7.4280631e+00 4.51e+01 1.14e-02 -11.0 1.75e-01    -  1.00e+00 1.00e+00h  1
+ 669  7.3479521e+00 8.33e+00 2.89e-03 -11.0 4.12e-02    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 670  7.3397491e+00 2.13e+00 1.41e-03 -11.0 5.09e-02    -  1.00e+00 1.00e+00h  1
+ 671  7.3309143e+00 1.29e+02 1.32e-02 -10.6 3.12e+00    -  1.00e+00 2.50e-01h  3
+ 672  7.2965760e+00 2.57e+01 8.79e-03  -8.6 4.48e-02  -3.9 1.00e+00 1.00e+00h  1
+ 673  7.2609655e+00 6.72e+00 4.38e-03  -8.9 1.48e-01    -  1.00e+00 1.00e+00h  1
+ 674  7.2467217e+00 9.46e+01 6.91e-03  -9.2 1.25e+00    -  1.00e+00 5.00e-01h  2
+ 675  7.3316146e+00 1.56e+02 2.47e-02 -10.1 1.39e-01  -4.4 1.00e+00 1.00e+00H  1
+ 676  7.1971331e+00 2.21e+02 6.44e-03 -10.2 1.00e+00    -  1.00e+00 1.00e+00h  1
+ 677  7.1845522e+00 2.14e+02 5.40e-03 -10.3 9.85e-01    -  1.00e+00 3.13e-02h  6
+ 678  7.1600588e+00 1.73e+01 4.38e-03 -11.0 6.13e-02    -  1.00e+00 1.00e+00h  1
+ 679  7.2686071e+00 2.17e+01 1.84e-02 -11.0 9.08e-01    -  1.00e+00 1.00e+00H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 680  7.2496979e+00 2.82e+01 1.71e-02 -11.0 2.01e+00    -  1.00e+00 1.25e-01h  4
+ 681  7.1686701e+00 6.13e+02 1.84e-02 -11.0 6.25e-01    -  1.00e+00 5.00e-01h  2
+In iteration 681, 1 Slack too small, adjusting variable bound
+ 682  7.1446986e+00 5.90e+02 1.59e-02 -11.0 5.89e-01    -  1.00e+00 3.93e-02h  1
+ 683  7.1222680e+00 5.94e+01 1.63e-02 -11.0 1.67e-01    -  1.00e+00 1.00e+00h  1
+ 684  7.0926037e+00 2.86e+01 2.11e-02 -11.0 4.14e-01    -  1.00e+00 1.00e+00h  1
+ 685  7.0828198e+00 2.41e+02 1.18e-02 -11.0 5.63e-01    -  1.00e+00 1.25e-01h  4
+ 686  7.0377509e+00 9.84e+00 3.56e-03 -11.0 6.15e-02    -  1.00e+00 1.00e+00h  1
+ 687  7.0327650e+00 1.90e+01 6.85e-03 -11.0 5.45e-02    -  1.00e+00 1.00e+00h  1
+ 688  7.0285299e+00 1.77e+01 8.72e-03 -11.0 1.43e-01    -  1.00e+00 1.00e+00h  1
+ 689  7.4174620e+00 3.96e+00 2.22e-02 -11.0 7.80e-01    -  1.00e+00 1.00e+00H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 690  7.7210856e+00 1.29e+00 4.49e-02 -11.0 5.63e-01    -  1.00e+00 1.00e+00H  1
+ 691  7.3162963e+00 1.57e+03 2.28e-02 -11.0 6.41e-01    -  1.00e+00 1.00e+00h  1
+In iteration 691, 1 Slack too small, adjusting variable bound
+ 692  7.3288551e+00 1.11e+03 3.88e-02 -11.0 2.08e-01    -  1.00e+00 5.66e-01h  1
+ 693  6.9758704e+00 3.23e+02 2.33e-02 -11.0 3.06e-01    -  1.00e+00 1.00e+00h  1
+ 694  7.5929832e+00 6.00e+01 4.10e-02 -11.0 4.28e-01    -  1.00e+00 1.00e+00H  1
+ 695  6.9655936e+00 4.31e+02 8.72e-03 -11.0 2.79e-01    -  1.00e+00 1.00e+00h  1
+ 696  7.1588976e+00 2.21e+02 3.01e-02 -11.0 1.30e-01    -  8.75e-01 1.00e+00h  1
+In iteration 696, 1 Slack too small, adjusting variable bound
+ 697  7.1588567e+00 2.21e+02 3.01e-02 -11.0 8.12e-02    -  1.00e+00 8.91e-05h  1
+ 698  6.9299768e+00 1.12e+02 5.52e-03 -11.0 9.15e-02    -  1.00e+00 1.00e+00h  1
+ 699  6.9273591e+00 3.91e+00 5.69e-03 -11.0 1.57e-02    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 700  6.9240480e+00 6.13e-01 5.06e-04 -11.0 6.43e-03    -  1.00e+00 1.00e+00h  1
+ 701  6.9227143e+00 1.10e-01 5.81e-04 -11.0 6.41e-03    -  1.00e+00 1.00e+00h  1
+ 702  6.9317194e+00 1.97e-02 1.09e-02 -11.0 5.95e-02    -  1.00e+00 1.00e+00H  1
+ 703  6.9290443e+00 3.14e+01 8.53e-03 -11.0 1.28e-01    -  1.00e+00 1.00e+00h  1
+ 704  7.2911508e+00 1.16e+02 3.37e-02 -11.0 1.23e-01    -  1.00e+00 1.00e+00H  1
+ 705  6.9058036e+00 3.68e+02 3.71e-03 -11.0 1.27e-01    -  1.00e+00 1.00e+00h  1
+ 706  6.9163176e+00 6.18e+00 8.00e-03 -11.0 1.66e-02    -  1.00e+00 1.00e+00h  1
+ 707  6.8999885e+00 3.86e+00 5.91e-04 -11.0 1.73e-02    -  1.00e+00 1.00e+00h  1
+ 708  6.8973161e+00 6.19e-01 1.11e-03 -11.0 2.15e-02    -  1.00e+00 1.00e+00h  1
+ 709  6.8943542e+00 7.51e+01 4.09e-03  -9.0 2.63e+00    -  1.00e+00 6.04e-02h  5
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 710  6.8935303e+00 7.40e+01 5.99e-03  -9.3 2.59e+00    -  9.98e-01 3.13e-02h  6
+ 711  6.9771194e+00 4.81e+01 2.22e-02 -10.6 4.22e-01    -  1.00e+00 1.00e+00H  1
+ 712  6.9353955e+00 4.51e+01 9.07e-03 -10.7 7.79e-01    -  1.00e+00 2.50e-01h  3
+ 713  6.8943030e+00 2.61e+02 9.12e-03 -10.7 4.43e-01    -  1.00e+00 2.50e-01h  3
+ 714  6.8744115e+00 1.43e+02 6.23e-03 -10.7 1.75e-01    -  1.00e+00 5.00e-01h  2
+ 715  6.8565811e+00 2.51e+01 6.13e-03 -11.0 5.13e-02    -  1.00e+00 1.00e+00h  1
+ 716  6.8465854e+00 8.20e+00 4.35e-03 -11.0 3.67e-02    -  1.00e+00 1.00e+00h  1
+ 717  6.8465291e+00 9.48e+00 5.65e-03 -11.0 1.72e-02    -  1.00e+00 1.00e+00h  1
+ 718  6.8393221e+00 1.49e+00 1.28e-03 -11.0 1.87e-02    -  1.00e+00 1.00e+00h  1
+ 719  6.8374166e+00 1.79e+00 2.10e-03 -11.0 9.00e-03    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 720  6.8429285e+00 2.11e-01 9.56e-03 -11.0 4.77e-02    -  1.00e+00 1.00e+00H  1
+ 721  6.8366855e+00 6.63e+00 5.24e-03 -11.0 3.40e-02    -  1.00e+00 1.00e+00h  1
+ 722  6.8309312e+00 6.32e+00 2.78e-03 -11.0 1.47e-02    -  1.00e+00 1.00e+00h  1
+ 723  6.8284233e+00 9.92e-01 1.80e-03 -11.0 9.57e-03    -  1.00e+00 1.00e+00h  1
+ 724  6.8266556e+00 4.26e+00 1.89e-03 -11.0 2.85e-02    -  1.00e+00 1.00e+00h  1
+ 725  6.8249346e+00 7.06e+00 1.41e-03 -11.0 2.89e-01    -  1.00e+00 1.25e-01h  4
+ 726  6.8791936e+00 4.87e+00 1.51e-02 -11.0 3.52e-01    -  1.00e+00 1.00e+00H  1
+ 727  6.8639886e+00 5.74e+01 9.90e-03 -11.0 7.94e-01    -  1.00e+00 2.50e-01h  3
+ 728  6.8454126e+00 5.89e+01 7.80e-03 -11.0 1.95e-01    -  1.00e+00 1.25e-01h  4
+ 729  6.8215781e+00 1.04e+02 9.44e-03 -11.0 2.42e-01    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 730  6.8151740e+00 1.25e+02 5.69e-03 -11.0 2.77e+00    -  7.11e-01 4.35e-02h  5
+ 731  6.9517868e+00 1.10e+02 2.23e-02 -11.0 1.20e-01    -  1.00e+00 1.00e+00h  1
+ 732  6.8089607e+00 1.42e+02 3.66e-03 -11.0 6.37e-02    -  1.00e+00 1.00e+00h  1
+ 733  6.8100858e+00 4.24e+00 5.95e-03 -11.0 1.28e-02    -  1.00e+00 1.00e+00h  1
+ 734  6.8029950e+00 2.17e+00 2.77e-03 -11.0 2.72e-02    -  1.00e+00 1.00e+00h  1
+ 735  6.8122120e+00 1.54e-01 7.60e-03 -11.0 4.99e-02    -  1.00e+00 1.00e+00H  1
+ 736  6.7999874e+00 7.19e-01 1.19e-03 -11.0 9.07e-03    -  1.00e+00 1.00e+00h  1
+ 737  6.7990065e+00 2.04e-01 1.46e-03 -11.0 5.78e-03    -  1.00e+00 1.00e+00h  1
+ 738  6.7974257e+00 1.47e+00 1.74e-03 -11.0 2.33e-02    -  1.00e+00 1.00e+00h  1
+ 739  6.7939051e+00 1.49e+01 2.51e-03 -11.0 6.44e-01    -  1.00e+00 1.25e-01h  4
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 740  6.7900190e+00 2.41e+01 5.01e-03 -11.0 2.38e+00    -  1.00e+00 6.25e-02h  5
+ 741  6.7878560e+00 3.74e+01 6.96e-03 -10.7 4.75e+00    -  1.00e+00 6.25e-02h  5
+ 742  6.7822518e+00 4.29e+01 6.57e-03 -10.4 1.23e+01    -  1.00e+00 1.52e-02h  7
+ 743  6.8905223e+00 1.14e+01 2.10e-02 -11.0 6.84e-02  -4.9 1.00e+00 1.00e+00H  1
+ 744  6.7903695e+00 1.14e+02 1.50e-02 -11.0 5.75e-01    -  1.00e+00 1.00e+00h  1
+ 745  6.8595106e+00 1.11e+02 1.18e-02 -11.0 3.87e-01  -5.4 1.00e+00 1.25e-01h  4
+ 746  6.7589404e+00 1.27e+01 3.24e-03 -11.0 1.29e-01    -  1.00e+00 1.00e+00h  1
+ 747  6.8409801e+00 1.11e+01 1.78e-02 -11.0 2.75e-02    -  1.00e+00 1.00e+00h  1
+ 748  6.7547383e+00 8.61e+00 4.69e-04 -11.0 4.94e-02    -  1.00e+00 1.00e+00h  1
+ 749  6.7536697e+00 1.75e-01 3.84e-04 -11.0 1.06e-02    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 750  6.8714457e+00 8.69e-01 2.18e-02 -11.0 1.77e-01    -  1.00e+00 1.00e+00H  1
+ 751  6.7521653e+00 6.66e+01 4.81e-03 -11.0 1.06e-01    -  1.00e+00 1.00e+00h  1
+ 752  6.7780595e+00 3.22e+01 1.29e-02 -11.0 4.43e-02    -  1.00e+00 1.00e+00h  1
+ 753  6.7457883e+00 9.60e+00 3.24e-03 -11.0 3.12e-02    -  1.00e+00 1.00e+00h  1
+ 754  6.7469589e+00 3.28e+00 4.27e-03 -11.0 1.67e-02    -  1.00e+00 1.00e+00h  1
+ 755  6.7439460e+00 1.11e+00 9.23e-04 -11.0 6.33e-03    -  1.00e+00 1.00e+00h  1
+ 756  6.7435517e+00 3.35e-02 8.65e-04 -11.0 3.80e-03    -  1.00e+00 1.00e+00h  1
+ 757  6.7420995e+00 8.21e-01 1.29e-03 -11.0 2.12e-02    -  1.00e+00 1.00e+00h  1
+ 758  6.7419641e+00 3.41e+00 3.92e-03 -11.0 5.24e-01    -  1.00e+00 1.25e-01h  4
+ 759  6.7900299e+00 1.18e+00 1.30e-02 -11.0 1.59e-01    -  1.00e+00 1.00e+00H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 760  6.7460145e+00 3.05e+00 3.72e-03 -11.0 3.20e-02    -  1.00e+00 1.00e+00H  1
+ 761  6.7366046e+00 2.50e+00 5.00e-03 -11.0 3.50e-02    -  1.00e+00 1.00e+00h  1
+ 762  6.7372442e+00 9.75e-01 4.76e-03 -11.0 2.37e-02    -  1.00e+00 1.00e+00h  1
+ 763  6.7353401e+00 1.96e+00 2.44e-03 -11.0 2.10e-02    -  1.00e+00 1.00e+00h  1
+ 764  6.7350445e+00 1.07e+00 2.09e-03 -11.0 1.59e-02    -  1.00e+00 1.00e+00h  1
+ 765  6.7338717e+00 6.80e-01 1.43e-03 -11.0 1.09e-02    -  1.00e+00 1.00e+00h  1
+ 766  6.7340332e+00 4.33e-01 2.17e-03 -11.0 5.32e-03    -  1.00e+00 1.00e+00h  1
+ 767  6.7329679e+00 1.75e-01 7.12e-04 -11.0 5.75e-03    -  1.00e+00 1.00e+00h  1
+ 768  6.7325006e+00 1.31e-01 1.16e-03 -11.0 8.49e-03    -  1.00e+00 1.00e+00h  1
+ 769  6.7384920e+00 9.96e-03 8.25e-03 -11.0 8.49e-02    -  1.00e+00 1.00e+00H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 770  6.7366378e+00 8.49e+00 6.73e-03 -11.0 4.27e-01    -  1.00e+00 2.50e-01h  3
+ 771  6.7354006e+00 9.66e+00 7.65e-03 -11.0 8.05e-01    -  1.00e+00 3.13e-02h  6
+ 772  6.7553939e+00 8.07e-01 6.99e-03 -11.0 6.92e-02    -  1.00e+00 1.00e+00H  1
+ 773  6.7321491e+00 2.86e+01 3.63e-03 -11.0 7.57e-02    -  1.00e+00 1.00e+00h  1
+ 774  6.7534587e+00 2.87e+00 6.92e-03 -11.0 5.46e-02    -  1.00e+00 1.00e+00H  1
+ 775  6.7275512e+00 1.77e+01 2.19e-03 -11.0 3.99e-02    -  1.00e+00 1.00e+00h  1
+ 776  6.7307240e+00 1.46e+00 6.29e-03 -11.0 1.37e-02    -  1.00e+00 1.00e+00h  1
+ 777  6.7257250e+00 7.62e-01 1.32e-03 -11.0 7.91e-03    -  1.00e+00 1.00e+00h  1
+ 778  6.7255172e+00 3.14e-02 4.79e-04 -11.0 2.57e-03    -  1.00e+00 1.00e+00h  1
+ 779  6.7248342e+00 2.96e-01 8.22e-04 -11.0 1.22e-02    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 780  6.7245575e+00 7.87e+00 2.82e-03 -11.0 5.35e-01    -  1.00e+00 1.25e-01h  4
+ 781  7.0467257e+00 1.10e+01 3.92e-02 -11.0 4.13e-01    -  1.00e+00 1.00e+00H  1
+ 782  6.7603872e+00 3.47e+02 7.59e-03 -11.0 3.06e-01    -  1.00e+00 1.00e+00h  1
+ 783  6.8322659e+00 2.23e+02 1.20e-02 -11.0 9.21e-02    -  1.00e+00 5.00e-01h  2
+ 784  6.7281199e+00 3.43e+01 1.02e-02 -11.0 4.44e-02    -  1.00e+00 1.00e+00h  1
+ 785  6.7522785e+00 6.51e+00 2.33e-02 -11.0 3.51e-02    -  1.00e+00 1.00e+00h  1
+ 786  6.7179636e+00 3.58e+00 1.97e-03 -11.0 5.56e-02    -  1.00e+00 1.00e+00h  1
+ 787  6.7181594e+00 5.84e-01 4.33e-03 -11.0 1.82e-02    -  1.00e+00 1.00e+00h  1
+ 788  6.7165567e+00 2.13e-01 2.46e-03 -11.0 1.30e-02    -  1.00e+00 1.00e+00h  1
+ 789  6.7162559e+00 5.75e-01 1.68e-03 -11.0 6.62e-03    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 790  6.7152492e+00 1.25e-01 5.23e-04 -11.0 4.48e-03    -  1.00e+00 1.00e+00h  1
+ 791  6.7145805e+00 9.49e-02 3.34e-04 -11.0 1.39e-02    -  1.00e+00 1.00e+00h  1
+ 792  6.7138922e+00 3.32e-01 1.18e-03 -11.0 4.78e-01    -  1.00e+00 6.25e-02h  5
+ 793  6.9477174e+00 1.78e+00 4.53e-02 -11.0 3.31e-01    -  1.00e+00 1.00e+00H  1
+ 794  6.7147854e+00 3.21e+01 4.64e-03 -11.0 5.33e-02    -  1.00e+00 1.00e+00h  1
+ 795  6.7069866e+00 5.90e+00 3.43e-03 -11.0 2.84e-02    -  1.00e+00 1.00e+00h  1
+ 796  6.7074027e+00 3.14e+00 5.17e-03 -11.0 3.90e-02    -  1.00e+00 1.00e+00h  1
+ 797  6.7032844e+00 4.93e+00 4.04e-03 -11.0 2.09e-01    -  1.00e+00 1.00e+00h  1
+ 798  6.7016789e+00 5.23e+00 4.61e-03 -10.7 4.18e+00    -  1.00e+00 1.56e-02h  7
+ 799  6.7008929e+00 1.16e+01 4.39e-03 -11.0 2.29e+00    -  1.00e+00 6.25e-02h  5
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 800  6.6984572e+00 1.25e+01 3.67e-03 -11.0 3.77e+00    -  1.00e+00 3.13e-02h  6
+ 801  6.6967980e+00 1.34e+01 4.61e-03 -11.0 5.52e+00    -  1.00e+00 1.56e-02h  7
+ 802  6.6946054e+00 1.85e+01 4.12e-03 -11.0 5.19e+00    -  1.00e+00 3.13e-02h  6
+ 803  6.6932182e+00 2.93e+02 3.87e-03 -11.0 5.44e+00    -  1.00e+00 1.25e-01h  4
+ 804  9.4447818e+00 2.76e+01 6.21e-02 -11.0 2.22e-01  -4.9 1.00e+00 1.00e+00H  1
+ 805  6.6853619e+00 2.88e+01 2.87e-03 -11.0 7.21e-01    -  1.00e+00 1.00e+00H  1
+ 806  6.6838386e+00 6.40e+00 2.89e-03 -11.0 1.54e-01    -  1.00e+00 1.00e+00h  1
+ 807  6.6818285e+00 1.15e+01 3.35e-03 -11.0 2.96e+00    -  1.00e+00 6.25e-02h  5
+ 808  6.6942805e+00 1.56e+00 6.04e-03 -11.0 5.72e-02  -4.5 1.00e+00 1.00e+00H  1
+ 809  6.6881828e+00 1.93e+01 1.25e-02 -11.0 4.32e-01    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 810  6.6842524e+00 1.91e+01 7.48e-03 -11.0 5.76e+00    -  9.29e-01 1.56e-02h  7
+ 811  6.8193821e+00 2.14e+00 3.28e-02 -11.0 2.39e-01    -  1.00e+00 1.00e+00H  1
+ 812  6.7435299e+00 7.14e+00 2.28e-02 -11.0 5.47e-02    -  1.00e+00 1.00e+00H  1
+ 813  6.6629556e+00 3.05e+01 1.01e-02 -11.0 6.83e-02    -  1.00e+00 1.00e+00h  1
+ 814  6.6644235e+00 1.87e+00 4.33e-03 -10.7 2.67e-02    -  1.00e+00 1.00e+00h  1
+ 815  6.6604129e+00 1.02e+00 1.98e-03 -11.0 1.85e-02    -  1.00e+00 1.00e+00h  1
+ 816  6.6596912e+00 6.42e-01 2.16e-03 -11.0 3.03e-02    -  1.00e+00 1.00e+00h  1
+ 817  6.6683037e+00 8.42e-02 7.85e-03 -11.0 3.20e-02    -  1.00e+00 1.00e+00H  1
+ 818  6.6574352e+00 3.13e+00 2.11e-03 -11.0 1.41e-02    -  1.00e+00 1.00e+00h  1
+ 819  6.6561158e+00 5.59e-01 1.25e-03 -11.0 9.11e-03    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 820  6.6545985e+00 8.75e-01 6.93e-04 -11.0 2.56e-02    -  1.00e+00 1.00e+00h  1
+ 821  6.6528702e+00 6.14e+00 2.16e-03  -9.0 1.62e+00    -  1.00e+00 3.88e-02h  5
+ 822  6.6519472e+00 8.84e+00 1.87e-03  -9.7 8.49e-01    -  1.00e+00 6.25e-02h  5
+ 823  6.7648192e+00 1.69e+02 2.23e-02 -10.9 4.79e-01    -  1.00e+00 1.00e+00H  1
+ 824  6.8340488e+00 1.50e+00 1.80e-02 -11.0 1.22e-01    -  1.00e+00 1.00e+00H  1
+ 825  6.6938684e+00 1.56e+02 2.52e-02 -11.0 2.71e-01    -  7.51e-01 1.00e+00h  1
+ 826  6.6830277e+00 1.30e+02 1.40e-02 -11.0 1.02e+00    -  1.00e+00 2.50e-01h  3
+ 827  7.2914949e+00 1.15e+00 4.94e-02 -11.0 1.39e-01    -  1.00e+00 1.00e+00H  1
+ 828  6.6580092e+00 5.71e+02 5.71e-03 -11.0 1.45e-01    -  1.00e+00 1.00e+00h  1
+ 829  6.6508445e+00 1.17e+01 6.94e-03 -11.0 3.73e-02    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 830  6.6454449e+00 2.40e-01 1.76e-03 -11.0 1.10e-02    -  1.00e+00 1.00e+00h  1
+ 831  6.6449088e+00 1.52e-01 9.62e-04 -11.0 5.49e-03    -  1.00e+00 1.00e+00h  1
+ 832  6.6446948e+00 3.25e-01 1.42e-03 -11.0 1.20e-02    -  1.00e+00 1.00e+00h  1
+ 833  6.6524237e+00 2.65e-01 7.84e-03 -11.0 5.78e-02    -  1.00e+00 1.00e+00H  1
+ 834  6.6447982e+00 6.04e+00 1.45e-03 -11.0 3.44e-02    -  1.00e+00 1.00e+00h  1
+ 835  6.6455931e+00 4.13e+00 3.46e-03 -11.0 1.93e-02    -  1.00e+00 5.00e-01h  2
+ 836  6.6440847e+00 3.50e-01 9.86e-04 -11.0 4.57e-03    -  1.00e+00 1.00e+00h  1
+ 837  6.6439973e+00 1.26e-02 3.20e-04 -11.0 2.77e-03    -  1.00e+00 1.00e+00h  1
+ 838  6.6438639e+00 1.43e-01 4.20e-04 -11.0 4.46e-03    -  1.00e+00 1.00e+00h  1
+ 839  6.6434619e+00 1.84e+01 1.84e-03 -11.0 8.51e-02    -  1.00e+00 5.00e-01h  2
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 840  6.6432588e+00 2.41e+01 3.66e-03 -11.0 1.53e-01    -  1.00e+00 1.25e-01h  4
+ 841  6.6574487e+00 4.43e+01 8.47e-03 -11.0 7.39e-02    -  1.00e+00 1.00e+00H  1
+ 842  6.6437912e+00 1.19e+01 2.92e-03 -11.0 3.09e-02    -  1.00e+00 1.00e+00h  1
+ 843  6.6434380e+00 4.87e+00 4.90e-03 -11.0 1.34e-02    -  1.00e+00 1.00e+00h  1
+ 844  6.6415701e+00 7.89e-01 1.44e-03 -11.0 1.01e-02    -  1.00e+00 1.00e+00h  1
+ 845  6.6415524e+00 1.46e+00 1.20e-03 -11.0 1.27e-02    -  1.00e+00 1.00e+00h  1
+ 846  6.6415500e+00 3.31e+00 1.44e-03 -11.0 3.31e-02    -  1.00e+00 1.00e+00h  1
+ 847  6.6548592e+00 1.01e+01 8.07e-03 -11.0 1.92e-01    -  1.00e+00 1.00e+00H  1
+ 848  6.8305837e+00 8.97e-02 1.85e-02 -11.0 3.56e-01    -  1.00e+00 1.00e+00H  1
+ 849  6.6793843e+00 1.80e-01 9.82e-03 -11.0 3.21e-01    -  1.00e+00 1.00e+00H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 850  6.6745522e+00 1.96e-01 9.20e-03 -11.0 5.84e-01    -  1.00e+00 1.56e-02h  7
+ 851  6.6712681e+00 2.08e-01 8.12e-03 -11.0 1.19e-01    -  1.00e+00 3.13e-02h  6
+ 852  6.6642594e+00 6.23e-01 1.75e-02 -11.0 1.27e-01    -  1.00e+00 1.00e+00H  1
+ 853  6.6538422e+00 5.18e-01 1.24e-02 -11.0 4.39e-02    -  1.00e+00 1.25e-01h  4
+ 854  6.6384002e+00 4.53e+00 3.70e-03 -11.0 4.15e-02    -  1.00e+00 1.00e+00h  1
+ 855  6.6407312e+00 4.78e-01 4.76e-03 -11.0 8.02e-03    -  1.00e+00 1.00e+00h  1
+ 856  6.6380486e+00 2.76e-01 2.83e-04 -11.0 6.98e-03    -  1.00e+00 1.00e+00h  1
+ 857  6.6380134e+00 2.92e-03 1.08e-04 -11.0 9.31e-04    -  1.00e+00 1.00e+00h  1
+ 858  6.6379371e+00 4.49e+00 1.58e-03 -11.0 3.60e-02    -  1.00e+00 1.00e+00h  1
+ 859  6.6378691e+00 1.37e+01 2.87e-03 -11.0 1.83e-01    -  1.00e+00 2.50e-01h  3
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 860  6.6610563e+00 7.42e+01 8.31e-03 -11.0 1.16e-01    -  1.00e+00 1.00e+00H  1
+ 861  6.6378507e+00 4.87e+01 2.21e-03 -11.0 6.05e-02    -  1.00e+00 1.00e+00h  1
+ 862  6.6368553e+00 2.63e+01 1.87e-03 -11.0 3.78e-02    -  1.00e+00 5.00e-01h  2
+ 863  6.6363108e+00 2.01e+00 1.01e-03 -11.0 5.87e-03    -  1.00e+00 1.00e+00h  1
+ 864  6.6361707e+00 2.79e-01 6.53e-04 -11.0 3.63e-03    -  1.00e+00 1.00e+00h  1
+ 865  6.6361523e+00 8.45e-02 8.61e-04 -11.0 3.00e-03    -  1.00e+00 1.00e+00h  1
+ 866  6.6360661e+00 9.33e-02 3.12e-04 -11.0 2.33e-03    -  1.00e+00 1.00e+00h  1
+ 867  6.6360185e+00 6.49e-01 9.21e-04 -11.0 6.72e-03    -  1.00e+00 1.00e+00h  1
+ 868  6.6360865e+00 2.51e-01 1.31e-03 -11.0 1.76e-02    -  1.00e+00 1.00e+00H  1
+ 869  6.6371957e+00 9.00e-02 2.86e-03 -11.0 5.66e-02    -  1.00e+00 1.00e+00H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 870  6.6461064e+00 4.05e-03 6.01e-03 -11.0 3.47e-02    -  1.00e+00 1.00e+00H  1
+ 871  6.6353365e+00 5.51e+00 7.12e-04 -11.0 4.74e-02    -  1.00e+00 1.00e+00h  1
+ 872  6.6368988e+00 3.16e-01 2.72e-03 -11.0 7.94e-03    -  1.00e+00 1.00e+00h  1
+ 873  6.6351701e+00 2.07e-01 2.92e-04 -11.0 6.21e-03    -  1.00e+00 1.00e+00h  1
+ 874  6.6351287e+00 6.04e-02 3.50e-04 -11.0 4.92e-03    -  1.00e+00 1.00e+00h  1
+ 875  6.6350108e+00 9.34e+00 1.94e-03 -11.0 3.98e-01    -  1.00e+00 2.50e-01h  3
+ 876  6.6437992e+00 1.61e+00 8.01e-03 -11.0 8.71e-02  -5.5 1.00e+00 1.00e+00H  1
+ 877  6.6624807e+00 6.43e+00 1.18e-02 -11.0 2.59e-01    -  1.00e+00 1.00e+00H  1
+ 878  6.6565079e+00 6.05e+00 1.08e-02 -11.0 1.97e-01    -  1.00e+00 6.25e-02h  5
+ 879  6.6356491e+00 4.63e+01 3.28e-03 -11.0 1.54e-01    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 880  6.6437192e+00 2.43e+01 5.46e-03 -11.0 5.62e-02    -  1.00e+00 5.00e-01h  2
+ 881  6.6328467e+00 8.43e+00 8.75e-04 -11.0 2.20e-02    -  1.00e+00 1.00e+00h  1
+ 882  6.6327763e+00 6.13e-02 1.42e-03 -11.0 6.40e-03    -  1.00e+00 1.00e+00h  1
+ 883  6.6325977e+00 2.30e-02 1.21e-03 -11.0 7.20e-03    -  1.00e+00 1.00e+00h  1
+ 884  6.6323945e+00 1.25e-01 6.15e-04 -11.0 9.72e-03    -  1.00e+00 1.00e+00h  1
+ 885  6.6320449e+00 1.50e-01 4.74e-04 -11.0 1.79e-02    -  1.00e+00 1.00e+00h  1
+ 886  6.6316526e+00 7.88e-01 1.62e-03 -11.0 3.29e-01    -  1.00e+00 1.25e-01h  4
+ 887  6.6677190e+00 2.74e+00 9.02e-03 -11.0 2.63e-01    -  1.00e+00 1.00e+00H  1
+ 888  6.6383086e+00 7.94e+00 4.89e-03 -11.0 8.96e-02    -  1.00e+00 1.00e+00h  1
+ 889  6.6456148e+00 1.39e+01 9.50e-03 -11.0 9.99e-02    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 890  6.6362371e+00 4.44e+00 5.51e-03 -11.0 9.97e-02    -  1.00e+00 1.00e+00h  1
+ 891  6.6564055e+00 2.73e-01 1.05e-02 -11.0 3.40e-02    -  1.00e+00 1.00e+00H  1
+ 892  6.6307761e+00 4.38e+00 4.97e-03 -11.0 3.07e-02    -  1.00e+00 1.00e+00h  1
+ 893  6.6314132e+00 9.03e-01 6.05e-03 -11.0 1.74e-02    -  1.00e+00 1.00e+00h  1
+ 894  6.6297357e+00 3.74e-01 6.80e-04 -11.0 7.62e-03    -  1.00e+00 1.00e+00h  1
+ 895  6.6296500e+00 3.31e-02 4.86e-04 -11.0 1.69e-03    -  1.00e+00 1.00e+00h  1
+ 896  6.6295863e+00 7.11e-03 3.11e-04 -11.0 1.97e-03    -  1.00e+00 1.00e+00h  1
+ 897  6.6293861e+00 2.63e+00 1.04e-03 -11.0 2.21e-02    -  1.00e+00 1.00e+00h  1
+ 898  6.6356875e+00 9.66e-02 5.94e-03 -11.0 6.04e-02    -  1.00e+00 1.00e+00H  1
+ 899  6.6296421e+00 2.09e+00 2.07e-03 -11.0 2.54e-02    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 900  6.6318102e+00 1.23e+00 4.44e-03 -11.0 2.48e-02    -  1.00e+00 1.00e+00h  1
+ 901  6.6292541e+00 2.91e-01 2.14e-03 -11.0 7.90e-03    -  1.00e+00 1.00e+00h  1
+ 902  6.6290269e+00 2.20e-01 2.33e-03 -11.0 1.27e-02    -  1.00e+00 1.00e+00h  1
+ 903  6.6288418e+00 3.13e-02 4.45e-04 -11.0 3.53e-03    -  1.00e+00 1.00e+00h  1
+ 904  6.6287997e+00 4.86e-02 4.48e-04 -11.0 2.53e-03    -  1.00e+00 1.00e+00h  1
+ 905  6.6287708e+00 7.54e-03 2.94e-04 -11.0 1.39e-03    -  1.00e+00 1.00e+00h  1
+ 906  6.6287239e+00 1.42e-02 1.44e-04 -11.0 3.46e-03    -  1.00e+00 1.00e+00h  1
+ 907  6.6291266e+00 1.30e-02 1.68e-03 -11.0 3.04e-02    -  1.00e+00 1.00e+00H  1
+ 908  6.6292306e+00 9.76e-03 1.48e-03 -11.0 6.76e-02    -  1.00e+00 1.00e+00H  1
+ 909  6.6287612e+00 2.84e+00 2.22e-03 -11.0 3.45e-01    -  1.00e+00 6.25e-02h  5
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 910  6.6939663e+00 1.62e-01 1.97e-02 -11.0 7.68e-02    -  1.00e+00 1.00e+00H  1
+ 911  6.6280434e+00 1.70e+01 1.34e-03 -11.0 4.53e-02    -  1.00e+00 1.00e+00h  1
+ 912  6.6278754e+00 4.66e+00 1.19e-03 -11.0 1.91e-02    -  1.00e+00 1.00e+00h  1
+ 913  6.6356923e+00 3.56e-01 9.02e-03 -11.0 3.49e-02    -  1.00e+00 1.00e+00H  1
+ 914  6.6275804e+00 1.41e+01 1.25e-03 -11.0 4.98e-02    -  1.00e+00 1.00e+00h  1
+ 915  6.6337628e+00 5.25e+00 4.08e-03 -11.0 2.24e-02    -  1.00e+00 1.00e+00h  1
+ 916  6.6272454e+00 2.83e+00 3.58e-04 -11.0 1.48e-02    -  1.00e+00 1.00e+00h  1
+ 917  6.6271987e+00 3.20e-02 4.45e-04 -11.0 3.87e-03    -  1.00e+00 1.00e+00h  1
+ 918  6.6271265e+00 5.23e-01 4.23e-04 -11.0 8.98e-03    -  1.00e+00 1.00e+00h  1
+ 919  6.6270178e+00 3.54e+00 6.20e-04 -11.0 3.66e-01    -  1.00e+00 6.25e-02h  5
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 920  6.6269403e+00 4.89e+00 4.96e-04 -11.0 2.97e-01    -  1.00e+00 6.25e-02h  5
+ 921  6.6371299e+00 1.04e+00 5.70e-03 -11.0 1.82e-01    -  1.00e+00 1.00e+00H  1
+ 922  6.6296099e+00 5.87e+00 4.04e-03 -11.0 9.77e-02    -  1.00e+00 1.00e+00h  1
+ 923  6.6995669e+00 4.84e-02 1.94e-02 -11.0 4.80e-02    -  1.00e+00 1.00e+00H  1
+ 924  6.6259582e+00 1.12e+01 1.04e-03 -11.0 3.74e-02    -  1.00e+00 1.00e+00h  1
+ 925  6.6256558e+00 7.36e-02 4.85e-04 -11.0 6.48e-03    -  1.00e+00 1.00e+00h  1
+ 926  6.6256655e+00 1.53e-03 2.50e-03 -11.0 2.07e-02    -  1.00e+00 1.00e+00H  1
+ 927  6.6349222e+00 2.78e-03 7.68e-03 -11.0 1.53e-01    -  1.00e+00 1.00e+00H  1
+ 928  6.6321144e+00 1.58e+00 6.78e-03 -11.0 2.82e-01    -  1.00e+00 2.50e-01h  3
+ 929  6.6262249e+00 3.86e+00 3.83e-03 -11.0 1.05e-01    -  1.00e+00 2.50e-01h  3
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 930  6.6282028e+00 2.21e-01 4.62e-03 -11.0 7.02e-02    -  1.00e+00 1.00e+00H  1
+ 931  6.6315770e+00 1.29e-01 3.98e-03 -11.0 1.65e-02    -  1.00e+00 1.00e+00H  1
+ 932  6.6239560e+00 4.03e+00 1.04e-03 -11.0 6.07e-02    -  1.00e+00 1.00e+00h  1
+ 933  6.6282143e+00 8.26e-01 4.31e-03 -11.0 1.04e-02    -  1.00e+00 1.00e+00h  1
+ 934  6.6237757e+00 5.96e-01 4.05e-04 -11.0 8.24e-03    -  1.00e+00 1.00e+00h  1
+ 935  6.6237303e+00 8.68e-03 4.41e-04 -11.0 1.15e-03    -  1.00e+00 1.00e+00h  1
+ 936  6.6236572e+00 4.80e-02 3.51e-04 -11.0 3.33e-03    -  1.00e+00 1.00e+00h  1
+ 937  6.6260245e+00 9.01e-02 5.65e-03 -11.0 4.70e-02    -  1.00e+00 1.00e+00H  1
+ 938  6.6269122e+00 9.60e-04 3.82e-03 -11.0 1.61e-02    -  1.00e+00 1.00e+00H  1
+ 939  6.6233859e+00 6.58e+00 1.44e-03 -11.0 3.52e-02    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 940  6.6247131e+00 2.62e-01 2.41e-03 -11.0 6.11e-03    -  1.00e+00 1.00e+00h  1
+ 941  6.6232641e+00 2.25e-01 1.18e-04 -11.0 4.82e-03    -  1.00e+00 1.00e+00h  1
+ 942  6.6232365e+00 1.78e-02 1.07e-04 -11.0 2.22e-03    -  1.00e+00 1.00e+00h  1
+ 943  6.6231450e+00 2.19e+00 9.01e-04 -11.0 3.60e-01    -  1.00e+00 6.25e-02h  5
+ 944  6.6229695e+00 8.39e+00 9.43e-04 -11.0 2.83e-01    -  1.00e+00 1.25e-01h  4
+ 945  6.6228962e+00 2.37e+01 1.59e-03 -11.0 7.43e-01    -  1.00e+00 6.25e-02h  5
+ 946  6.6227294e+00 4.36e+01 1.16e-03 -11.0 7.06e-01    -  1.00e+00 6.25e-02h  5
+ 947  6.6610548e+00 2.19e+00 1.01e-02 -11.0 4.50e-01    -  1.00e+00 1.00e+00H  1
+ 948  6.7197153e+00 1.01e-01 1.70e-02 -11.0 1.78e-01    -  1.00e+00 1.00e+00H  1
+ 949  6.6276643e+00 1.78e+01 6.46e-03 -11.0 2.62e-01    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 950  6.8150768e+00 1.27e-02 1.80e-02 -11.0 1.59e-01    -  1.00e+00 1.00e+00H  1
+ 951  6.6233991e+00 3.35e+01 2.17e-03 -11.0 1.37e-01    -  1.00e+00 1.00e+00h  1
+ 952  6.6275743e+00 1.49e+00 6.45e-03 -11.0 3.10e-02    -  1.00e+00 1.00e+00h  1
+ 953  6.6224075e+00 6.75e-01 1.71e-03 -11.0 8.37e-03    -  1.00e+00 1.00e+00h  1
+ 954  6.6221966e+00 4.47e-02 1.76e-03 -11.0 2.45e-03    -  1.00e+00 1.00e+00h  1
+ 955  6.6220945e+00 1.02e-02 2.86e-04 -11.0 2.06e-03    -  1.00e+00 1.00e+00h  1
+ 956  6.6220449e+00 7.55e-03 1.75e-04 -11.0 2.93e-03    -  1.00e+00 1.00e+00h  1
+ 957  6.6218895e+00 4.59e-01 1.17e-03 -11.0 7.86e-02    -  1.00e+00 2.50e-01h  3
+ 958  6.6217807e+00 5.88e-01 1.35e-03 -11.0 9.36e-02    -  1.00e+00 1.25e-01h  4
+ 959  6.6217374e+00 4.76e+00 1.42e-03 -11.0 9.94e-02    -  1.00e+00 5.00e-01h  2
 
-Number of Iterations....: 40
+Number of Iterations....: 959
 
                                    (scaled)                 (unscaled)
-Objective...............:   1.6500310921058896e+00    7.4797398127801716e+02
-Dual infeasibility......:   2.9962667768464051e+05    1.3582347634362242e+08
-Constraint violation....:   4.1858290204359427e+01    3.9968683785420819e+05
-Complementarity.........:   5.5707106274554564e+04    2.5252533885574929e+07
-Overall NLP error.......:   9.5138352733439649e+04    1.3582347634362242e+08
+Objective...............:   2.6285412790654715e-03    6.6217374190629199e+00
+Dual infeasibility......:   1.4237518392012181e-03    3.5866702585892831e+00
+Constraint violation....:   1.0440105189048199e-03    4.7577370173046347e+00
+Complementarity.........:   1.0146846492317231e-11    2.5561612305191721e-08
+Overall NLP error.......:   1.4237518392012181e-03    4.7577370173046347e+00
 
 
-Number of objective function evaluations             = 41
-Number of objective gradient evaluations             = 41
-Number of equality constraint evaluations            = 41
+Number of objective function evaluations             = 2150
+Number of objective gradient evaluations             = 960
+Number of equality constraint evaluations            = 2150
 Number of inequality constraint evaluations          = 0
-Number of equality constraint Jacobian evaluations   = 41
+Number of equality constraint Jacobian evaluations   = 960
 Number of inequality constraint Jacobian evaluations = 0
 Number of Lagrangian Hessian evaluations             = 0
-Total CPU secs in IPOPT (w/o function evaluations)   =    332.085
-Total CPU secs in NLP function evaluations           =   1832.106
+Total CPU secs in IPOPT (w/o function evaluations)   =   3734.222
+Total CPU secs in NLP function evaluations           =  27358.679
 
 EXIT: Stopping optimization at current point as requested by user.
                t_proc [s]   t_wall [s]    n_eval
-callback_fun        0.022       0.0222        40
-         nlp     2.16e+03     2.16e+03         1
-       nlp_f         1.61         1.61        41
-       nlp_g         2.25         2.26        41
-  nlp_grad_f          424          424        42
-   nlp_jac_g     1.45e+03     1.45e+03        42
+callback_fun         0.47        0.449       959
+         nlp     3.11e+04     3.11e+04         1
+       nlp_f          115          115      2150
+       nlp_g         63.1         63.1      2150
+  nlp_grad_f     3.29e+03     3.29e+03       961
+   nlp_jac_g     2.39e+04     2.39e+04       961
 
 Breakdown of objective (including weights):
-  state_tracking: 6.68916
-  control_effort: 0.657126
-  contact: 740.627
-  pelvisOrientation: 0.000489525
+  state_tracking: 0.576606
+  control_effort: 0.403463
+  contact: 5.64167
 
 Active or violated continuous variable bounds
 L and U indicate which bound is active; '*' indicates a bound is violated. 
@@ -579,207 +1348,189 @@ Time bounds: no bounds active or violated
 
 Parameter bounds: no bounds active or violated
 
-Total number of constraints: 17504.
+Total number of constraints: 13718.
 
 Differential equation defects:
   L2 norm across mesh, max abs value (L1 norm), time of max abs
-/jointset/ground_pelvis/pelvis_tilt/value        2.10e-04       8.12e-05       0.870800
-/jointset/ground_pelvis/pelvis_list/value        8.32e-05       4.92e-05       0.926800
-/jointset/ground_pelvis/pelvis_rotation/value        3.00e-05       1.16e-05       0.921200
-/jointset/ground_pelvis/pelvis_tx/value        6.90e-06       4.02e-06       0.870800
-/jointset/ground_pelvis/pelvis_ty/value        3.39e-04       2.42e-04       0.921200
-/jointset/ground_pelvis/pelvis_tz/value        1.04e-05       6.53e-06       0.929600
-/jointset/hip_r/hip_flexion_r/value        3.39e-04       2.11e-04       0.868000
-/jointset/hip_r/hip_adduction_r/value        1.55e-04       1.06e-04       0.929600
-/jointset/hip_r/hip_rotation_r/value        2.72e-04       1.43e-04       0.929600
-/jointset/hip_l/hip_flexion_l/value        2.36e-04       1.63e-04       0.868000
-/jointset/hip_l/hip_adduction_l/value        7.68e-05       4.02e-05       0.926800
-/jointset/hip_l/hip_rotation_l/value        8.71e-05       4.47e-05       0.929600
-/jointset/back/lumbar_extension/value        4.85e-04       3.42e-04       0.952000
-/jointset/back/lumbar_bending/value        8.18e-05       3.35e-05       0.929600
-/jointset/back/lumbar_rotation/value        3.47e-05       1.62e-05       0.935200
-/jointset/walker_knee_r/knee_angle_r/value        3.99e-04       2.22e-04       0.868000
-/jointset/patellofemoral_r/knee_angle_r_beta/value        3.93e-04       2.22e-04       0.868000
-/jointset/walker_knee_l/knee_angle_l/value        6.85e-05       4.56e-05       0.868000
-/jointset/patellofemoral_l/knee_angle_l_beta/value        6.85e-05       4.56e-05       0.868000
-/jointset/ankle_r/ankle_angle_r/value        2.89e-04       1.73e-04       0.868000
-/jointset/ankle_l/ankle_angle_l/value        2.14e-04       9.48e-05       1.002400
-/jointset/subtalar_r/subtalar_angle_r/value        2.63e-04       1.39e-04       0.932400
-/jointset/subtalar_l/subtalar_angle_l/value        4.40e-05       1.64e-05       0.935200
-/jointset/mtp_r/mtp_angle_r/value        7.60e-04       5.32e-04       0.932400
-/jointset/mtp_l/mtp_angle_l/value        3.93e-05       1.82e-05       0.926800
-/jointset/ground_pelvis/pelvis_tilt/speed        1.48e-01       6.10e-02       0.929600
-/jointset/ground_pelvis/pelvis_list/speed        2.48e-01       6.70e-02       0.893200
-/jointset/ground_pelvis/pelvis_rotation/speed        1.83e-01       8.97e-02       0.929600
-/jointset/ground_pelvis/pelvis_tx/speed        1.18e-02       6.14e-03       0.929600
-/jointset/ground_pelvis/pelvis_ty/speed        1.31e-02       5.26e-03       0.926800
-/jointset/ground_pelvis/pelvis_tz/speed        1.29e-02       4.20e-03       0.868000
-/jointset/hip_r/hip_flexion_r/speed        5.30e-01       1.79e-01       0.918400
-/jointset/hip_r/hip_adduction_r/speed        3.23e-01       1.94e-01       0.868000
-/jointset/hip_r/hip_rotation_r/speed        7.23e-01       1.91e-01       0.918400
-/jointset/hip_l/hip_flexion_l/speed        2.66e-01       1.39e-01       0.882000
-/jointset/hip_l/hip_adduction_l/speed        3.01e-01       9.30e-02       0.893200
-/jointset/hip_l/hip_rotation_l/speed        2.89e-01       1.28e-01       1.005200
-/jointset/back/lumbar_extension/speed        1.50e-01       4.06e-02       1.005200
-/jointset/back/lumbar_bending/speed        2.75e-01       1.92e-01       0.868000
-/jointset/back/lumbar_rotation/speed        1.95e-01       5.98e-02       0.870800
-/jointset/walker_knee_r/knee_angle_r/speed        2.50e+00       8.46e-01       0.918400
-/jointset/patellofemoral_r/knee_angle_r_beta/speed        9.03e+01       6.82e+01       1.005200
-/jointset/walker_knee_l/knee_angle_l/speed        7.34e-02       2.70e-02       0.882000
-/jointset/patellofemoral_l/knee_angle_l_beta/speed        1.84e+02       1.14e+02       0.882000
-/jointset/ankle_r/ankle_angle_r/speed        9.40e+00       5.65e+00       0.929600
-/jointset/ankle_l/ankle_angle_l/speed        6.53e-01       1.54e-01       0.949200
-/jointset/subtalar_r/subtalar_angle_r/speed        2.10e+01       1.28e+01       0.932400
-/jointset/subtalar_l/subtalar_angle_l/speed        4.90e-01       2.46e-01       0.999600
-/jointset/mtp_r/mtp_angle_r/speed        3.74e+01       2.62e+01       0.932400
-/jointset/mtp_l/mtp_angle_l/speed        7.37e-01       2.24e-01       0.999600
-/forceset/addbrev_r/activation        4.46e-03       2.20e-03       0.929600
-/forceset/addlong_r/activation        4.27e-03       1.52e-03       0.996800
-/forceset/addmagDist_r/activation        2.69e-03       6.95e-04       1.002400
-/forceset/addmagIsch_r/activation        3.06e-03       1.33e-03       0.870800
-/forceset/addmagMid_r/activation        3.65e-03       1.16e-03       0.938000
-/forceset/addmagProx_r/activation        2.44e-03       9.39e-04       1.002400
-/forceset/bflh140_r/activation        1.00e-03       7.43e-04       0.929600
-/forceset/bfsh140_r/activation        3.16e-03       2.03e-03       0.868000
-/forceset/edl_r/activation        4.18e-03       1.89e-03       0.868000
-/forceset/ehl_r/activation        4.11e-03       1.72e-03       0.940800
-/forceset/fdl_r/activation        1.57e-03       7.42e-04       0.926800
-/forceset/fhl_r/activation        1.65e-03       8.99e-04       0.926800
-/forceset/gaslat140_r/activation        4.03e-03       1.45e-03       0.952000
-/forceset/gasmed_r/activation        4.92e-03       1.27e-03       0.926800
-/forceset/glmax1_r/activation        1.85e-03       1.15e-03       0.876400
-/forceset/glmax2_r/activation        2.13e-03       1.29e-03       0.876400
-/forceset/glmax3_r/activation        2.89e-03       9.68e-04       1.002400
-/forceset/glmed1_r/activation        3.66e-03       1.29e-03       0.904400
-/forceset/glmed2_r/activation        2.63e-03       1.38e-03       0.868000
-/forceset/glmed3_r/activation        3.30e-03       2.19e-03       0.868000
-/forceset/glmin1_r/activation        3.37e-03       1.30e-03       0.940800
-/forceset/glmin2_r/activation        3.06e-03       1.21e-03       0.870800
-/forceset/glmin3_r/activation        3.09e-03       1.72e-03       0.868000
-/forceset/grac_r/activation        2.93e-03       2.45e-03       0.924000
-/forceset/iliacus_r/activation        2.87e-03       1.23e-03       1.005200
-/forceset/perbrev_r/activation        1.24e-03       6.24e-04       0.935200
-/forceset/perlong_r/activation        2.27e-03       7.24e-04       0.935200
-/forceset/piri_r/activation        2.88e-03       7.62e-04       0.876400
-/forceset/psoas_r/activation        3.38e-03       2.14e-03       0.868000
-/forceset/recfem_r/activation        3.65e-03       1.23e-03       0.879200
-/forceset/sart_r/activation        2.53e-03       2.13e-03       0.868000
-/forceset/semimem_r/activation        4.14e-03       2.57e-03       0.929600
-/forceset/semiten_r/activation        2.86e-03       1.17e-03       0.949200
-/forceset/soleus_r/activation        2.35e-03       7.84e-04       0.910000
-/forceset/tfl_r/activation        2.50e-03       7.95e-04       0.940800
-/forceset/tibant_r/activation        3.13e-03       1.90e-03       0.868000
-/forceset/tibpost_r/activation        1.47e-03       5.79e-04       0.932400
-/forceset/vasint_r/activation        4.11e-03       1.02e-03       0.879200
-/forceset/vaslat140_r/activation        6.21e-03       1.83e-03       0.870800
-/forceset/vasmed_r/activation        4.18e-03       1.11e-03       0.879200
-/forceset/addbrev_l/activation        3.79e-03       1.44e-03       0.868000
-/forceset/addlong_l/activation        4.75e-03       1.93e-03       1.002400
-/forceset/addmagDist_l/activation        2.40e-03       1.06e-03       0.893200
-/forceset/addmagIsch_l/activation        2.99e-03       1.22e-03       1.002400
-/forceset/addmagMid_l/activation        3.51e-03       1.31e-03       0.893200
-/forceset/addmagProx_l/activation        2.72e-03       1.11e-03       0.893200
-/forceset/bflh140_l/activation        4.69e-03       1.65e-03       0.999600
-/forceset/bfsh140_l/activation        4.18e-03       1.96e-03       0.868000
-/forceset/edl_l/activation        2.52e-03       7.85e-04       0.996800
-/forceset/ehl_l/activation        4.34e-03       2.35e-03       1.002400
-/forceset/fdl_l/activation        6.49e-04       3.88e-04       0.994000
-/forceset/fhl_l/activation        9.46e-04       4.45e-04       0.994000
-/forceset/gaslat140_l/activation        2.39e-03       1.97e-03       0.868000
-/forceset/gasmed_l/activation        2.04e-03       1.72e-03       0.868000
-/forceset/glmax1_l/activation        3.38e-03       1.19e-03       0.929600
-/forceset/glmax2_l/activation        2.75e-03       1.10e-03       0.977200
-/forceset/glmax3_l/activation        3.30e-03       1.27e-03       0.918400
-/forceset/glmed1_l/activation        7.60e-03       1.92e-03       1.002400
-/forceset/glmed2_l/activation        1.54e-03       6.00e-04       0.949200
-/forceset/glmed3_l/activation        3.02e-03       1.09e-03       0.977200
-/forceset/glmin1_l/activation        5.37e-03       2.29e-03       0.868000
-/forceset/glmin2_l/activation        4.36e-03       1.47e-03       1.002400
-/forceset/glmin3_l/activation        1.14e-03       4.48e-04       0.882000
-/forceset/grac_l/activation        3.58e-03       1.55e-03       1.005200
-/forceset/iliacus_l/activation        2.99e-03       2.37e-03       0.868000
-/forceset/perbrev_l/activation        5.16e-04       2.51e-04       0.994000
-/forceset/perlong_l/activation        1.14e-03       5.94e-04       0.994000
-/forceset/piri_l/activation        2.55e-03       9.29e-04       0.994000
-/forceset/psoas_l/activation        4.62e-03       2.12e-03       1.005200
-/forceset/recfem_l/activation        3.02e-03       2.21e-03       0.868000
-/forceset/sart_l/activation        4.57e-03       2.16e-03       0.868000
-/forceset/semimem_l/activation        1.66e-03       6.54e-04       0.999600
-/forceset/semiten_l/activation        3.77e-03       1.61e-03       0.999600
-/forceset/soleus_l/activation        1.07e-03       3.56e-04       0.960400
-/forceset/tfl_l/activation        5.33e-03       2.24e-03       0.868000
-/forceset/tibant_l/activation        4.10e-03       1.18e-03       0.996800
-/forceset/tibpost_l/activation        9.57e-04       4.62e-04       0.994000
-/forceset/vasint_l/activation        1.97e-03       9.10e-04       0.882000
-/forceset/vaslat140_l/activation        2.47e-03       8.32e-04       0.879200
-/forceset/vasmed_l/activation        2.51e-03       1.01e-03       0.882000
+/jointset/ground_pelvis/pelvis_tilt/value        1.21e-16       3.36e-17       0.940800
+/jointset/ground_pelvis/pelvis_list/value        1.42e-16       3.18e-17       0.900200
+/jointset/ground_pelvis/pelvis_rotation/value        1.43e-16       4.73e-17       0.891800
+/jointset/ground_pelvis/pelvis_tx/value        2.15e-15       5.81e-16       0.952000
+/jointset/ground_pelvis/pelvis_ty/value        1.04e-15       2.80e-16       0.968800
+/jointset/ground_pelvis/pelvis_tz/value        1.53e-16       4.38e-17       0.950600
+/jointset/hip_r/hip_flexion_r/value        3.66e-16       1.74e-16       0.872200
+/jointset/hip_r/hip_adduction_r/value        1.32e-16       4.55e-17       0.938000
+/jointset/hip_r/hip_rotation_r/value        2.26e-16       5.74e-17       0.877800
+/jointset/hip_l/hip_flexion_l/value        1.02e-15       3.03e-16       0.971600
+/jointset/hip_l/hip_adduction_l/value        1.08e-16       2.49e-17       0.995400
+/jointset/hip_l/hip_rotation_l/value        1.98e-16       6.84e-17       0.968800
+/jointset/back/lumbar_extension/value        1.51e-16       4.00e-17       0.921200
+/jointset/back/lumbar_bending/value        2.15e-16       4.77e-17       0.897400
+/jointset/back/lumbar_rotation/value        2.72e-16       7.23e-17       0.961800
+/jointset/walker_knee_r/knee_angle_r/value        7.37e-16       2.63e-16       0.988400
+/jointset/patellofemoral_r/knee_angle_r_beta/value        7.37e-16       2.63e-16       0.988400
+/jointset/walker_knee_l/knee_angle_l/value        1.69e-15       4.78e-16       0.922600
+/jointset/patellofemoral_l/knee_angle_l_beta/value        1.69e-15       4.78e-16       0.922600
+/jointset/ankle_r/ankle_angle_r/value        3.94e-16       1.55e-16       0.950600
+/jointset/ankle_l/ankle_angle_l/value        1.96e-16       6.38e-17       0.924000
+/jointset/subtalar_r/subtalar_angle_r/value        1.79e-19       1.79e-19       0.957600
+/jointset/subtalar_l/subtalar_angle_l/value        1.06e-20       1.51e-25       0.991200
+/jointset/mtp_r/mtp_angle_r/value        1.72e-19       9.46e-21       0.953400
+/jointset/mtp_l/mtp_angle_l/value        5.70e-20       5.30e-20       0.957600
+/jointset/ground_pelvis/pelvis_tilt/speed        1.79e-05       8.09e-06       0.870800
+/jointset/ground_pelvis/pelvis_list/speed        1.64e-05       8.68e-06       0.869400
+/jointset/ground_pelvis/pelvis_rotation/speed        4.47e-05       2.35e-05       0.870800
+/jointset/ground_pelvis/pelvis_tx/speed        6.46e-07       1.62e-07       0.929600
+/jointset/ground_pelvis/pelvis_ty/speed        1.63e-06       5.20e-07       0.870800
+/jointset/ground_pelvis/pelvis_tz/speed        3.19e-06       1.33e-06       0.869400
+/jointset/hip_r/hip_flexion_r/speed        2.82e-05       1.86e-05       0.868000
+/jointset/hip_r/hip_adduction_r/speed        2.26e-05       5.06e-06       0.926800
+/jointset/hip_r/hip_rotation_r/speed        3.81e-05       1.78e-05       0.869400
+/jointset/hip_l/hip_flexion_l/speed        2.07e-05       9.48e-06       0.868000
+/jointset/hip_l/hip_adduction_l/speed        2.49e-05       1.43e-05       0.869400
+/jointset/hip_l/hip_rotation_l/speed        4.45e-05       2.17e-05       0.870800
+/jointset/back/lumbar_extension/speed        2.02e-05       7.26e-06       0.868000
+/jointset/back/lumbar_bending/speed        2.16e-05       1.02e-05       0.870800
+/jointset/back/lumbar_rotation/speed        4.16e-05       1.84e-05       0.869400
+/jointset/walker_knee_r/knee_angle_r/speed        9.32e-05       9.04e-05       0.868000
+/jointset/patellofemoral_r/knee_angle_r_beta/speed        7.75e-05       7.04e-05       0.868000
+/jointset/walker_knee_l/knee_angle_l/speed        1.32e-05       5.99e-06       0.868000
+/jointset/patellofemoral_l/knee_angle_l_beta/speed        4.42e-05       1.58e-05       0.926800
+/jointset/ankle_r/ankle_angle_r/speed        3.16e-04       2.69e-04       0.868000
+/jointset/ankle_l/ankle_angle_l/speed        8.96e-06       2.88e-06       0.929600
+/jointset/subtalar_r/subtalar_angle_r/speed        8.41e-04       8.07e-04       0.868000
+/jointset/subtalar_l/subtalar_angle_l/speed        6.32e-06       1.89e-06       0.869400
+/jointset/mtp_r/mtp_angle_r/speed        1.25e-03       1.16e-03       0.868000
+/jointset/mtp_l/mtp_angle_l/speed        1.78e-05       2.23e-06       0.869400
 
 Kinematic constraints:
   L2 norm across mesh, max abs value (L1 norm), time of max abs
-00:  cid25_p0        8.06e-05       5.11e-05       0.926800
-01:  cid26_p0        2.58e-07       5.98e-08       1.008000
-02: cid25_p0d        3.79e-07       2.41e-07       0.929600
-03: cid26_p0d        6.29e-09       9.58e-10       0.868000
-04:cid25_p0dd        5.14e+05       -1.48e+03       0.868000
-05:cid26_p0dd        1.29e+06       3.38e+04       0.870800
+00:  cid21_p0        4.90e-24       2.65e-24       0.897400
+01:  cid22_p0        3.95e-24       3.82e-25       0.954800
+02:  cid23_p0        7.67e-25       5.68e-25       0.903000
+03:  cid24_p0        5.09e-25       2.38e-25       0.884800
+04:  cid25_p0        0.00e+00       0.00e+00       0.868000
+05:  cid26_p0        0.00e+00       0.00e+00       0.868000
+06: cid21_p0d        2.05e-20       1.53e-20       0.981400
+07: cid22_p0d        4.37e-20       3.20e-20       0.954800
+08: cid23_p0d        2.82e-19       2.24e-19       0.981400
+09: cid24_p0d        7.94e-22       5.56e-23       0.959000
+10: cid25_p0d        0.00e+00       0.00e+00       0.868000
+11: cid26_p0d        0.00e+00       0.00e+00       0.868000
+12:cid21_p0dd        2.57e+00       1.28e-01       0.910000
+13:cid22_p0dd        2.32e-02       4.55e-03       0.868000
+14:cid23_p0dd        5.16e+00       1.45e+00       0.869400
+15:cid24_p0dd        6.04e-02       5.86e-03       0.926800
+16:cid25_p0dd        6.92e-02       7.38e-03       0.883400
+17:cid26_p0dd        6.38e-02       2.48e-02       0.926800
 Kinematic constraint values at each mesh point:
-      time          0          1          2          3          4          5  
-000   0.868000  -4.75e-08  -4.34e-09  -1.04e-09   9.58e-10  -1.48e+03  -3.90e+04  
-001   8.71e-01   1.67e-08   6.50e-09  -1.14e-09   2.23e-10  -3.11e+04  -3.38e+04  
-002   8.74e-01   2.79e-08   6.97e-09  -3.87e-10  -4.68e-10  -3.48e+04  -2.89e+04  
-003   8.76e-01   3.88e-08   2.75e-09  -9.95e-10  -9.33e-10  -4.06e+04  -2.94e+04  
-004   8.79e-01   5.64e-08  -1.77e-09  -1.54e-09  -1.42e-09  -5.20e+04  -4.23e+04  
-005   8.82e-01   6.45e-08   6.68e-09  -1.03e-09  -1.84e-09  -7.83e+04  -1.23e+05  
-006   8.85e-01   7.97e-08   1.73e-09  -2.52e-10  -2.21e-09  -1.16e+05  -2.86e+05  
-007   8.88e-01   5.16e-08  -4.61e-08   8.75e-11  -2.10e-09  -1.41e+05  -4.00e+05  
-008   8.90e-01   2.94e-08  -1.69e-08   4.37e-10  -1.87e-09  -1.49e+05  -3.99e+05  
-009   8.93e-01   1.82e-08  -1.42e-08   8.88e-10  -1.62e-09  -1.45e+05  -3.59e+05  
-010   8.96e-01   2.64e-08   3.02e-09   1.15e-09  -1.28e-09  -1.37e+05  -3.03e+05  
-011   8.99e-01   3.34e-09   6.07e-09   1.15e-09  -8.91e-10  -1.33e+05  -2.53e+05  
-012   9.02e-01  -1.59e-08   1.10e-08   1.03e-09  -5.89e-10  -1.34e+05  -2.23e+05  
-013   9.04e-01   2.03e-07   5.65e-09   2.23e-09  -4.11e-10  -1.32e+05  -2.09e+05  
-014   9.07e-01   6.82e-07   9.78e-09   5.53e-09  -2.74e-10  -1.23e+05  -2.04e+05  
-015   9.10e-01   4.11e-07   8.73e-09   8.91e-09  -1.51e-10  -1.14e+05  -2.10e+05  
-016   9.13e-01   2.52e-06   5.35e-09   1.70e-08  -1.72e-10  -1.03e+05  -2.29e+05  
-017   9.16e-01   5.10e-06  -6.55e-09   3.86e-08  -2.92e-10  -8.76e+04  -2.36e+05  
-018   9.18e-01  -6.04e-07  -5.38e-09   4.75e-08  -5.49e-10  -6.93e+04  -2.21e+05  
-019   9.21e-01   3.20e-05  -4.17e-09   1.42e-07  -9.46e-10  -5.22e+04  -2.01e+05  
-020   9.24e-01  -3.22e-05  -9.12e-08   1.35e-07  -1.23e-09  -3.67e+04  -1.73e+05  
-021   9.27e-01   5.11e-05  -5.82e-08   1.92e-07  -1.17e-09  -2.60e+04  -1.67e+05  
-022   9.30e-01  -3.21e-05  -1.46e-07   2.41e-07  -1.51e-09  -1.96e+04  -1.93e+05  
-023   9.32e-01  -2.75e-05  -1.03e-07   7.61e-08  -1.85e-10  -1.51e+04  -2.24e+05  
-024   9.35e-01   1.18e-06  -8.05e-08   3.93e-09   6.73e-10  -1.11e+04  -2.45e+05  
-025   9.38e-01   6.90e-07  -3.05e-08   5.72e-09   7.05e-10  -7.67e+03  -2.58e+05  
-026   9.41e-01  -1.50e-07   2.67e-09   5.80e-09   9.43e-10  -5.45e+03  -2.66e+05  
-027   9.44e-01  -3.06e-07   1.95e-08   3.74e-09   8.98e-10  -4.06e+03  -2.65e+05  
-028   9.46e-01  -1.90e-07   2.61e-08   2.24e-09   6.04e-10  -3.16e+03  -2.52e+05  
-029   9.49e-01  -2.05e-07   1.59e-08   1.41e-09   4.47e-10  -2.56e+03  -2.18e+05  
-030   9.52e-01  -1.20e-07   8.56e-09   7.12e-10   5.00e-11  -2.23e+03  -1.64e+05  
-031   9.55e-01  -1.23e-07   6.63e-09   2.71e-10  -2.88e-10  -2.08e+03  -1.09e+05  
-032   9.58e-01  -9.41e-08   1.15e-08   4.44e-11  -5.01e-10  -2.03e+03  -6.50e+04  
-033   9.60e-01  -1.04e-07   1.17e-08  -1.29e-10  -5.82e-10  -1.98e+03  -3.52e+04  
-034   9.63e-01  -7.83e-08   4.71e-09  -3.49e-10  -5.74e-10  -1.99e+03  -1.79e+04  
-035   9.66e-01  -6.88e-08  -3.56e-09  -5.14e-10  -4.31e-10  -2.10e+03  -8.61e+03  
-036   9.69e-01  -7.50e-08  -8.56e-09  -6.38e-10  -2.06e-10  -2.44e+03  -4.03e+03  
-037   9.72e-01  -8.02e-08  -8.60e-09  -7.16e-10   5.80e-11  -4.51e+03  -2.19e+03  
-038   9.74e-01  -5.78e-08  -5.16e-09  -7.18e-10   3.42e-10  -8.07e+03  -1.55e+03  
-039   9.77e-01  -4.09e-08   6.64e-10  -5.55e-10   5.96e-10  -8.79e+03  -1.16e+03  
-040   9.80e-01  -2.95e-08   1.89e-09  -2.85e-10   7.38e-10  -1.12e+04  -8.62e+02  
-041   9.83e-01  -2.24e-08   3.19e-09  -6.16e-11   7.19e-10  -1.72e+04  -6.45e+02  
-042   9.86e-01   1.31e-08   1.12e-08   1.72e-11   4.97e-10  -2.29e+04  -5.81e+02  
-043   9.88e-01   1.84e-08   2.79e-08   2.17e-11   2.04e-10  -2.78e+04  -9.45e+02  
-044   9.91e-01   1.38e-08   3.77e-08  -3.66e-11   2.02e-11  -3.21e+04  -1.87e+03  
-045   9.94e-01   9.96e-09   5.34e-08  -8.95e-11  -5.68e-11  -3.60e+04  -2.39e+03  
-046   9.97e-01   2.35e-09   2.76e-08  -1.46e-10  -2.02e-10  -3.99e+04  -2.06e+03  
-047   1.00e+00  -5.33e-09   2.66e-08  -2.55e-10  -3.47e-10  -4.18e+04  -1.59e+03  
-048   1.00e+00  -9.50e-09   1.78e-08  -4.05e-10  -3.19e-10  -3.96e+04  -1.38e+03  
-049   1.01e+00  -6.98e-09   8.93e-09  -5.58e-10  -4.30e-10  -7.86e+04  -1.35e+03  
-050   1.01e+00   9.47e-10   5.98e-08  -5.63e-10  -6.62e-10  -1.76e+05  -1.40e+03  
+      time          0          1          2          3          4          5          6          7          8          9         10         11         12         13         14         15         16         17  
+000   0.868000  -2.86e-27   8.14e-27  -4.81e-27  -2.05e-26   0.00e+00   0.00e+00   6.22e-27   0.00e+00  -8.67e-25  -3.60e-28   0.00e+00   0.00e+00  -2.32e+00   4.55e-03  -4.76e+00   3.11e-03  -6.14e-02   2.15e-02  
+001   8.69e-01   1.63e-30   1.06e-29  -1.70e-28  -2.77e-30   0.00e+00   0.00e+00   2.56e-28  -1.23e-28  -2.33e-28   7.43e-30   0.00e+00   0.00e+00  -1.99e-02  -2.11e-03  -1.45e+00  -1.34e-03  -4.15e-03  -4.80e-03  
+002   8.71e-01  -2.45e-26  -1.99e-31   3.78e-28  -1.75e-31   0.00e+00   0.00e+00  -3.58e-27  -2.44e-29  -1.59e-28  -1.62e-29   0.00e+00   0.00e+00  -4.51e-01   3.30e-03  -7.36e-01   5.02e-03  -2.29e-02   2.06e-02  
+003   8.72e-01   5.11e-29  -1.43e-28   8.24e-28  -4.38e-30   0.00e+00   0.00e+00  -2.03e-27   3.67e-28  -1.96e-28   3.21e-29   0.00e+00   0.00e+00  -6.95e-02  -4.79e-04   8.94e-02  -6.04e-04   1.40e-03  -2.41e-03  
+004   8.74e-01   4.68e-27   2.85e-30  -3.56e-28  -2.86e-30   0.00e+00   0.00e+00   2.34e-24  -1.40e-28  -8.35e-28  -9.59e-29   0.00e+00   0.00e+00   2.49e-04   8.79e-04   4.91e-01   1.27e-03   6.85e-04   7.05e-03  
+005   8.75e-01   1.01e-26  -7.04e-29   2.48e-28  -1.31e-30   0.00e+00   0.00e+00   5.54e-24   4.42e-28  -2.85e-27  -1.55e-28   0.00e+00   0.00e+00  -1.12e-01  -2.61e-03   9.47e-02  -2.49e-03   5.80e-03  -1.28e-02  
+006   8.76e-01  -1.87e-26   3.72e-30   3.44e-28  -1.07e-30   0.00e+00   0.00e+00   4.28e-25  -1.65e-28  -9.61e-28  -2.57e-28   0.00e+00   0.00e+00  -1.34e-01   1.75e-03   1.71e-01   1.97e-03  -4.33e-03   1.19e-02  
+007   8.78e-01  -1.84e-25   7.41e-26  -4.60e-26  -1.31e-25   0.00e+00   0.00e+00   2.12e-25   0.00e+00  -3.95e-26   1.89e-28   0.00e+00   0.00e+00  -2.94e-01  -9.41e-04   4.48e-02  -8.51e-04   3.72e-03  -4.93e-03  
+008   8.79e-01  -1.08e-27  -1.68e-29  -2.91e-28   1.11e-30   0.00e+00   0.00e+00  -6.29e-25  -1.68e-28   5.13e-28  -1.16e-28   0.00e+00   0.00e+00  -2.88e-01  -7.50e-04   6.42e-02  -2.04e-03   6.97e-03  -7.35e-03  
+009   8.81e-01   9.85e-27  -4.82e-29   2.64e-28  -5.99e-31   0.00e+00   0.00e+00   5.73e-24  -1.92e-28   4.58e-28   8.06e-28   0.00e+00   0.00e+00  -4.19e-01   1.29e-03   3.01e-02   2.29e-03  -3.33e-03   9.72e-03  
+010   8.82e-01   2.70e-27  -1.59e-29   7.90e-28  -1.78e-30   0.00e+00   0.00e+00   5.53e-25   1.89e-29   1.23e-28   8.21e-29   0.00e+00   0.00e+00  -2.87e-01  -1.14e-03   3.26e-03  -2.76e-03   6.45e-03  -1.10e-02  
+011   8.83e-01   4.63e-25   2.47e-25  -6.12e-26  -2.87e-25   0.00e+00   0.00e+00   2.24e-25   0.00e+00  -7.63e-26   4.35e-26   0.00e+00   0.00e+00  -2.42e-01   4.81e-05  -4.09e-02  -3.10e-05   7.38e-03  -4.04e-04  
+012   8.85e-01  -3.48e-25   1.90e-25   2.35e-25   2.38e-25   0.00e+00   0.00e+00  -8.45e-25   0.00e+00  -6.25e-26  -6.96e-26   0.00e+00   0.00e+00  -3.06e-01   2.46e-04  -1.44e-01  -9.18e-04   1.76e-03  -2.88e-03  
+013   8.86e-01   1.09e-25  -3.23e-28   1.17e-26  -2.30e-29   0.00e+00   0.00e+00   6.56e-23  -4.29e-24   2.35e-21  -1.53e-25   0.00e+00   0.00e+00  -2.11e-01  -9.76e-05  -6.92e-02  -4.28e-04  -2.68e-03  -1.45e-03  
+014   8.88e-01   4.24e-26  -4.58e-27   9.02e-27  -2.12e-25   0.00e+00   0.00e+00  -1.51e-25   0.00e+00   1.79e-26   1.83e-26   0.00e+00   0.00e+00  -1.64e-01  -2.15e-04  -9.41e-03  -9.14e-04  -6.77e-04  -3.70e-03  
+015   8.89e-01   1.38e-28   7.46e-30   2.03e-28   9.01e-30   0.00e+00   0.00e+00   3.27e-24  -2.83e-28   1.16e-23   1.74e-28   0.00e+00   0.00e+00  -1.86e-01   3.31e-04   4.19e-02   4.23e-04  -4.40e-03   6.72e-04  
+016   8.90e-01  -3.91e-29  -2.74e-30  -1.70e-28  -6.34e-31   0.00e+00   0.00e+00   4.80e-26  -8.29e-29  -2.52e-27  -7.82e-29   0.00e+00   0.00e+00  -1.59e-01  -7.88e-05   1.05e-01  -4.07e-04   1.52e-03  -6.48e-04  
+017   8.92e-01   2.06e-27   1.55e-26  -1.36e-26   6.84e-26   0.00e+00   0.00e+00   0.00e+00   1.56e-28  -5.11e-27   9.21e-26   0.00e+00   0.00e+00  -1.64e-01  -7.11e-05   9.13e-03  -7.79e-04  -6.61e-04  -2.50e-03  
+018   8.93e-01   9.30e-27  -4.57e-27   3.68e-27   2.11e-25   0.00e+00   0.00e+00   0.00e+00   0.00e+00   1.23e-25  -7.53e-26   0.00e+00   0.00e+00  -1.19e-01  -1.52e-04   4.62e-02  -5.10e-04  -1.50e-03   2.05e-04  
+019   8.95e-01   6.19e-26   8.00e-29  -6.80e-27   7.66e-30   0.00e+00   0.00e+00   2.66e-22   3.71e-24  -4.20e-21  -1.72e-24   0.00e+00   0.00e+00  -1.48e-01  -2.74e-05   7.58e-02  -1.35e-03  -2.51e-03  -4.61e-03  
+020   8.96e-01  -7.10e-26   2.44e-28   1.10e-26   4.07e-29   0.00e+00   0.00e+00   6.08e-21  -2.99e-24   6.69e-23  -1.25e-24   0.00e+00   0.00e+00  -1.03e-01  -4.11e-04   7.97e-02  -1.29e-03  -1.73e-03  -2.68e-03  
+021   8.97e-01   2.65e-24  -1.28e-26   1.71e-25   1.96e-28   0.00e+00   0.00e+00  -3.05e-21   2.01e-22   3.65e-20  -3.80e-23   0.00e+00   0.00e+00  -9.63e-02  -3.82e-04  -1.01e-03  -1.67e-03  -1.30e-03  -3.73e-03  
+022   8.99e-01   1.55e-26   7.97e-27  -6.02e-27   4.51e-27   0.00e+00   0.00e+00   0.00e+00   0.00e+00  -3.35e-26   1.65e-26   0.00e+00   0.00e+00  -8.90e-02  -3.40e-04   1.52e-02  -1.65e-03  -2.78e-03  -5.65e-03  
+023   9.00e-01  -7.55e-29  -3.52e-30  -1.61e-26   1.41e-30   0.00e+00   0.00e+00  -3.22e-24  -1.43e-26  -2.40e-23   4.15e-27   0.00e+00   0.00e+00  -6.33e-02  -3.23e-04   5.85e-02  -1.42e-03  -2.26e-03  -4.19e-03  
+024   9.02e-01  -1.16e-26  -9.48e-31  -1.60e-26   1.41e-28   0.00e+00   0.00e+00  -1.25e-21   1.67e-24   9.25e-21  -1.22e-25   0.00e+00   0.00e+00  -1.89e-02  -4.13e-04   1.17e-02  -1.72e-03  -2.99e-03  -5.18e-03  
+025   9.03e-01   2.26e-25   1.70e-26   5.68e-25   2.68e-28   0.00e+00   0.00e+00   3.29e-21   8.43e-21  -3.59e-20  -6.11e-22   0.00e+00   0.00e+00   1.72e-02  -6.86e-05  -1.91e-03  -1.78e-04  -4.29e-03   4.47e-04  
+026   9.04e-01   6.03e-26  -8.13e-26   4.71e-28  -4.97e-26   0.00e+00   0.00e+00   0.00e+00   0.00e+00   5.79e-26  -8.09e-26   0.00e+00   0.00e+00   3.94e-02  -2.44e-06   9.35e-02   1.87e-04  -1.41e-03   1.07e-03  
+027   9.06e-01   2.91e-26  -1.53e-28  -6.89e-27   6.45e-30   0.00e+00   0.00e+00   9.55e-24   2.85e-27   8.26e-23   8.07e-27   0.00e+00   0.00e+00   1.24e-01  -1.90e-04   1.86e-01  -3.68e-04  -5.22e-04  -7.46e-04  
+028   9.07e-01  -6.78e-29  -4.77e-31  -4.11e-29   1.13e-30   0.00e+00   0.00e+00   6.66e-25   1.46e-26  -1.18e-23  -1.46e-27   0.00e+00   0.00e+00   1.21e-01  -5.29e-04   1.36e-01  -1.59e-03  -1.59e-03  -4.49e-03  
+029   9.09e-01  -3.42e-24   1.41e-26  -4.03e-27  -5.73e-29   0.00e+00   0.00e+00   4.03e-21   2.09e-25  -6.01e-21   5.76e-25   0.00e+00   0.00e+00   1.21e-01  -1.01e-03   5.14e-02  -2.74e-03  -3.17e-03  -1.04e-02  
+030   9.10e-01   1.07e-25  -2.07e-26   1.37e-27  -7.97e-27   0.00e+00   0.00e+00   1.18e-25   0.00e+00   2.22e-27   1.13e-26   0.00e+00   0.00e+00   1.28e-01   3.31e-04   7.18e-02   7.33e-04  -5.90e-03   4.45e-03  
+031   9.11e-01   2.14e-24  -3.05e-26   4.12e-25  -6.04e-28   0.00e+00   0.00e+00   4.91e-21  -1.27e-21  -1.08e-19  -4.69e-22   0.00e+00   0.00e+00   1.18e-01   3.42e-04   1.21e-01   1.32e-03  -2.12e-03   6.24e-03  
+032   9.13e-01  -1.18e-25   2.42e-28  -9.09e-27   8.94e-28   0.00e+00   0.00e+00   0.00e+00   0.00e+00  -1.13e-26   1.95e-27   0.00e+00   0.00e+00   1.06e-01   3.62e-04   1.90e-01   1.24e-03  -1.29e-03   3.19e-03  
+033   9.14e-01  -6.19e-26  -7.76e-29   4.03e-27   9.07e-31   0.00e+00   0.00e+00   7.66e-24  -1.56e-26  -7.12e-23  -4.97e-27   0.00e+00   0.00e+00   1.11e-01  -5.51e-04   2.42e-01  -1.13e-03   1.65e-04  -5.39e-03  
+034   9.16e-01   1.70e-28   6.90e-29   9.89e-29   3.19e-30   0.00e+00   0.00e+00   6.74e-26   1.55e-26  -5.96e-23  -2.36e-26   0.00e+00   0.00e+00   9.57e-02  -3.36e-05   2.02e-01  -1.21e-04  -7.41e-04  -1.25e-03  
+035   9.17e-01   4.99e-26  -2.91e-25   4.91e-27  -7.62e-26   0.00e+00   0.00e+00  -7.12e-25   0.00e+00  -1.69e-26  -2.27e-25   0.00e+00   0.00e+00   7.35e-02   4.46e-04   1.82e-01   9.74e-04  -1.64e-03   5.37e-03  
+036   9.18e-01  -6.04e-26  -1.56e-25   1.07e-26  -5.69e-27   0.00e+00   0.00e+00  -7.05e-26   0.00e+00   5.67e-26  -4.38e-27   0.00e+00   0.00e+00   9.20e-02   1.55e-04   3.07e-01   1.75e-04  -6.82e-04   3.63e-03  
+037   9.20e-01   4.46e-26  -2.36e-27   1.80e-27   5.19e-30   0.00e+00   0.00e+00   3.48e-26   0.00e+00   1.74e-27  -6.37e-28   0.00e+00   0.00e+00   7.65e-02  -4.39e-04   3.49e-01  -1.62e-03   4.15e-04  -4.36e-03  
+038   9.21e-01  -1.74e-29  -4.95e-29  -3.60e-29  -1.35e-30   0.00e+00   0.00e+00   1.02e-23  -1.74e-26  -1.35e-22  -6.95e-27   0.00e+00   0.00e+00   3.86e-02   1.04e-04   1.99e-01   5.83e-04   2.22e-04   3.49e-03  
+039   9.23e-01   9.08e-27  -6.27e-27  -4.45e-27  -1.66e-27   0.00e+00   0.00e+00  -7.38e-26   0.00e+00   1.96e-26  -4.85e-27   0.00e+00   0.00e+00   3.03e-02   4.78e-04   2.30e-01   7.38e-04  -5.48e-04   1.12e-03  
+040   9.24e-01  -6.12e-26  -5.62e-27  -6.47e-27  -7.37e-28   0.00e+00   0.00e+00   3.57e-27   0.00e+00  -2.23e-26   1.65e-26   0.00e+00   0.00e+00   2.25e-02  -1.28e-03   1.94e-01  -1.66e-03   3.84e-04  -1.57e-02  
+041   9.25e-01   1.00e-26  -7.47e-27   4.56e-27   2.86e-27   0.00e+00   0.00e+00   1.05e-26   0.00e+00  -1.00e-26  -9.94e-27   0.00e+00   0.00e+00  -1.80e-02   8.91e-04   1.28e-01   2.45e-03   8.68e-04   1.99e-03  
+042   9.27e-01   3.69e-29   2.58e-29   2.03e-28   1.71e-30   0.00e+00   0.00e+00   2.38e-24  -2.02e-26  -5.51e-24   1.08e-27   0.00e+00   0.00e+00  -3.40e-02   2.42e-03   3.15e-01   5.86e-03   4.45e-03   2.48e-02  
+043   9.28e-01   1.49e-26  -3.48e-27   6.84e-27  -1.46e-26   0.00e+00   0.00e+00   0.00e+00   0.00e+00   2.55e-27   8.43e-27   0.00e+00   0.00e+00   1.82e-02  -5.54e-04   4.70e-01  -3.06e-03   7.91e-04  -1.60e-02  
+044   9.30e-01  -2.84e-28   1.17e-29   3.04e-29   2.41e-30   0.00e+00   0.00e+00  -3.13e-23   3.05e-27   3.52e-24   3.24e-27   0.00e+00   0.00e+00  -4.72e-02  -2.25e-03   2.19e-01  -4.18e-03  -3.03e-03  -2.37e-02  
+045   9.31e-01   1.29e-28  -2.61e-26   7.95e-27   1.47e-28   0.00e+00   0.00e+00   0.00e+00   0.00e+00  -8.51e-27   7.93e-27   0.00e+00   0.00e+00  -3.31e-02  -7.83e-04   6.95e-02   4.95e-04  -1.15e-03  -7.63e-03  
+046   9.32e-01  -2.87e-28   6.52e-30  -1.50e-28   1.11e-30   0.00e+00   0.00e+00  -3.24e-25   2.82e-26  -2.88e-24   1.75e-26   0.00e+00   0.00e+00   2.67e-02   3.39e-04   1.29e-01   1.92e-03   4.77e-03   9.18e-04  
+047   9.34e-01  -9.19e-29   1.11e-29   1.72e-29  -3.75e-31   0.00e+00   0.00e+00   1.19e-26   3.89e-26  -4.07e-28  -1.02e-27   0.00e+00   0.00e+00  -7.15e-03   6.38e-04   5.94e-03   3.89e-05  -2.66e-03   6.23e-03  
+048   9.35e-01   1.24e-26  -8.43e-27   1.73e-28   5.23e-28   0.00e+00   0.00e+00   0.00e+00   0.00e+00   1.20e-27   3.27e-27   0.00e+00   0.00e+00   9.53e-04  -1.09e-04   1.03e-03   2.16e-03   3.15e-03   5.50e-03  
+049   9.37e-01  -1.57e-26  -2.18e-27  -1.41e-28   8.83e-29   0.00e+00   0.00e+00   4.31e-25   7.02e-24  -1.65e-23   3.24e-24   0.00e+00   0.00e+00  -5.50e-03  -7.66e-04  -2.63e-04  -3.36e-03  -2.88e-03  -6.23e-03  
+050   9.38e-01  -7.93e-27   6.04e-28  -4.40e-28   1.37e-28   0.00e+00   0.00e+00  -3.43e-28   0.00e+00  -2.81e-28  -7.45e-29   0.00e+00   0.00e+00   3.43e-03   4.77e-04   2.40e-04   2.47e-03   2.66e-03   7.14e-03  
+051   9.39e-01   1.74e-27   3.04e-27   7.93e-29  -1.18e-28   0.00e+00   0.00e+00   1.02e-23  -2.95e-24   1.59e-25  -6.15e-26   0.00e+00   0.00e+00   1.98e-03   6.03e-04   4.34e-04   1.40e-03   1.79e-03   4.28e-03  
+052   9.41e-01  -2.35e-28  -3.26e-29  -4.72e-30  -2.63e-31   0.00e+00   0.00e+00   5.45e-27   6.11e-27   9.97e-28   2.43e-26   0.00e+00   0.00e+00  -4.38e-03  -1.21e-03  -5.24e-04  -3.41e-03  -3.24e-03  -9.85e-03  
+053   9.42e-01  -4.90e-26   7.67e-27   1.58e-27  -2.05e-28   0.00e+00   0.00e+00   3.80e-23   3.40e-23   1.69e-23  -5.16e-24   0.00e+00   0.00e+00   1.99e-05   7.13e-04   6.24e-04   5.40e-04   1.26e-03   2.49e-03  
+054   9.44e-01   1.18e-27   1.25e-27  -1.54e-27   1.98e-28   0.00e+00   0.00e+00   0.00e+00   0.00e+00   2.52e-27   4.31e-29   0.00e+00   0.00e+00  -1.78e-03   6.90e-04   6.37e-04   7.26e-06   6.42e-04   2.75e-04  
+055   9.45e-01  -1.57e-28   1.32e-29  -5.42e-30  -7.22e-31   0.00e+00   0.00e+00   8.41e-25  -7.48e-25  -2.67e-25  -1.71e-25   0.00e+00   0.00e+00  -3.02e-03   1.70e-04   3.83e-04  -1.15e-03  -6.86e-04  -2.96e-03  
+056   9.46e-01   1.76e-30  -4.83e-30  -4.44e-30   6.82e-31   0.00e+00   0.00e+00  -3.53e-27  -7.46e-27   8.74e-27   8.75e-27   0.00e+00   0.00e+00  -2.22e-03   3.36e-04   3.63e-04  -4.64e-04  -9.65e-05  -8.07e-04  
+057   9.48e-01  -1.07e-28  -9.59e-31  -5.52e-31   1.44e-32   0.00e+00   0.00e+00   1.34e-27  -5.24e-29   5.50e-28   3.72e-29   0.00e+00   0.00e+00  -1.54e-03   1.61e-04   1.67e-04  -3.46e-04  -7.77e-05  -5.02e-04  
+058   9.49e-01  -1.07e-27  -3.96e-28  -1.41e-27   1.03e-27   0.00e+00   0.00e+00   0.00e+00  -8.36e-28   1.04e-27   8.69e-27   0.00e+00   0.00e+00   1.35e-04  -2.34e-05   1.09e-05  -1.22e-05   2.04e-04   1.03e-04  
+059   9.51e-01   5.80e-27   4.21e-27  -1.39e-28   4.61e-29   0.00e+00   0.00e+00   0.00e+00   0.00e+00   2.45e-28  -6.16e-28   0.00e+00   0.00e+00   1.36e-03  -1.71e-04  -3.07e-05   3.47e-04   3.82e-04   5.50e-04  
+060   9.52e-01  -4.69e-27   8.02e-28   2.04e-29  -3.76e-30   0.00e+00   0.00e+00   2.48e-24  -4.85e-24   3.54e-25   1.92e-24   0.00e+00   0.00e+00   1.96e-03  -3.02e-04  -2.00e-04   2.57e-04   3.26e-04   4.15e-04  
+061   9.53e-01  -2.31e-25  -5.33e-26   3.72e-26  -1.13e-28   0.00e+00   0.00e+00   3.68e-22  -6.73e-21   4.63e-21   4.13e-24   0.00e+00   0.00e+00   1.72e-03  -4.27e-04  -2.24e-04   2.95e-04   2.65e-04   7.06e-05  
+062   9.55e-01   7.22e-28   3.82e-25  -7.31e-28   9.99e-29   0.00e+00   0.00e+00  -4.07e-23   3.20e-20   1.71e-22  -9.44e-23   0.00e+00   0.00e+00   1.92e-03  -2.53e-04  -1.30e-04   2.65e-04   4.37e-04   4.13e-04  
+063   9.56e-01  -7.37e-31  -1.00e-29  -1.72e-29   2.34e-31   0.00e+00   0.00e+00   2.78e-27   1.28e-27  -3.33e-27  -1.86e-27   0.00e+00   0.00e+00   1.01e-03  -3.81e-04  -1.56e-04   1.08e-04   2.89e-04  -3.14e-04  
+064   9.58e-01  -3.90e-29   2.27e-29   5.65e-29  -3.81e-31   0.00e+00   0.00e+00  -2.88e-27   4.69e-28  -1.12e-27  -3.68e-27   0.00e+00   0.00e+00   8.84e-04  -6.96e-05   1.44e-04   1.59e-04   1.35e-03  -1.96e-04  
+065   9.59e-01  -4.98e-26   2.95e-29  -2.73e-29  -2.10e-30   0.00e+00   0.00e+00  -6.47e-21   1.08e-24   9.72e-25   5.56e-23   0.00e+00   0.00e+00   8.59e-04  -2.93e-05  -8.06e-05   2.68e-04   2.08e-04   5.26e-04  
+066   9.60e-01  -1.37e-27  -8.25e-28   1.03e-28  -3.92e-29   0.00e+00   0.00e+00   4.38e-25  -6.01e-26  -3.89e-26   6.16e-26   0.00e+00   0.00e+00  -3.59e-04  -3.79e-04  -3.45e-04  -2.30e-04  -1.00e-03  -2.35e-04  
+067   9.62e-01   3.04e-28   2.09e-28  -7.80e-29   5.88e-30   0.00e+00   0.00e+00  -1.54e-24  -1.67e-24   1.73e-25   3.57e-25   0.00e+00   0.00e+00   2.86e-04   9.63e-05   4.76e-05   1.35e-04   5.08e-04   2.88e-04  
+068   9.63e-01   5.76e-27   4.20e-28  -4.71e-28  -5.15e-27   0.00e+00   0.00e+00   0.00e+00   0.00e+00  -2.00e-28  -2.88e-27   0.00e+00   0.00e+00  -6.45e-05  -2.84e-05  -9.63e-05   7.27e-05  -6.61e-05   2.96e-04  
+069   9.65e-01  -7.97e-27   8.69e-27   1.05e-26   1.19e-28   0.00e+00   0.00e+00  -7.68e-22   2.94e-22  -1.20e-19  -2.84e-23   0.00e+00   0.00e+00  -4.64e-05   9.14e-05  -1.11e-05   1.21e-04   1.02e-04   5.05e-04  
+070   9.66e-01   3.25e-27   1.80e-28   4.24e-29   1.57e-28   0.00e+00   0.00e+00   0.00e+00   0.00e+00   1.83e-27  -6.56e-27   0.00e+00   0.00e+00  -4.13e-05   6.04e-05  -6.72e-05   9.70e-05  -1.34e-06   3.60e-04  
+071   9.67e-01  -1.87e-29   4.51e-30   1.05e-30  -2.27e-31   0.00e+00   0.00e+00  -1.05e-25   1.80e-25   4.05e-27  -4.71e-27   0.00e+00   0.00e+00  -8.16e-05   7.18e-05  -1.47e-04   8.69e-05  -2.18e-04   5.26e-04  
+072   9.69e-01  -2.28e-29  -1.19e-29   5.73e-30   1.43e-30   0.00e+00   0.00e+00  -1.07e-28   2.02e-28  -1.88e-30   2.31e-29   0.00e+00   0.00e+00  -2.23e-04   1.91e-04   5.55e-05   1.63e-04   5.42e-05   8.39e-04  
+073   9.70e-01  -3.29e-29  -2.18e-29   2.33e-30   5.15e-31   0.00e+00   0.00e+00  -1.22e-26  -9.32e-27   1.98e-26  -8.80e-28   0.00e+00   0.00e+00  -1.11e-04   1.59e-04  -8.77e-05   1.23e-04  -1.31e-04   5.05e-04  
+074   9.72e-01  -6.71e-27   5.51e-27   6.32e-27   5.76e-28   0.00e+00   0.00e+00   0.00e+00   0.00e+00   5.91e-28   2.64e-27   0.00e+00   0.00e+00  -8.05e-05   1.82e-04  -7.40e-05   1.45e-04  -2.98e-05   5.01e-04  
+075   9.73e-01   4.00e-27  -1.07e-25   1.51e-27  -9.14e-30   0.00e+00   0.00e+00  -5.67e-21  -2.77e-20   1.64e-20  -1.50e-22   0.00e+00   0.00e+00   4.29e-05   6.81e-05   4.19e-05   2.55e-04   2.11e-04   5.90e-04  
+076   9.74e-01  -2.70e-26  -5.58e-29  -4.95e-26   8.42e-31   0.00e+00   0.00e+00  -3.21e-21  -1.78e-26   1.74e-20  -1.90e-24   0.00e+00   0.00e+00  -1.32e-04   1.87e-04  -8.30e-05   2.36e-04  -1.46e-04   8.41e-04  
+077   9.76e-01   8.89e-28   7.67e-28   8.98e-29  -3.00e-30   0.00e+00   0.00e+00   7.71e-26  -7.72e-25  -4.14e-25  -4.25e-26   0.00e+00   0.00e+00  -1.20e-04   2.82e-04  -6.87e-06   1.59e-04   4.39e-06   5.31e-04  
+078   9.77e-01  -2.80e-26   6.16e-29  -4.74e-28  -2.49e-28   0.00e+00   0.00e+00  -6.97e-23   4.40e-24  -2.30e-25   8.66e-26   0.00e+00   0.00e+00  -6.78e-05   1.56e-04  -6.72e-05   1.38e-04  -1.79e-05   4.85e-04  
+079   9.79e-01  -1.53e-25  -3.32e-26   2.47e-27  -1.01e-27   0.00e+00   0.00e+00  -7.60e-25   6.08e-24  -1.23e-25   1.74e-24   0.00e+00   0.00e+00  -6.84e-05   1.19e-04  -2.66e-05   1.27e-04  -7.67e-06   4.86e-04  
+080   9.80e-01   5.52e-30   3.61e-30   4.47e-33  -3.81e-31   0.00e+00   0.00e+00  -6.74e-27   6.75e-27  -5.52e-27  -1.02e-26   0.00e+00   0.00e+00  -4.43e-05   1.32e-04  -4.04e-05   9.44e-05  -7.16e-05   4.16e-04  
+081   9.81e-01   2.83e-25  -3.90e-24  -1.77e-26  -7.93e-28   0.00e+00   0.00e+00   1.53e-20   1.22e-21   2.24e-19   1.78e-23   0.00e+00   0.00e+00  -4.50e-05   6.65e-05  -3.59e-05   7.09e-05   5.41e-06   3.42e-04  
+082   9.83e-01   4.57e-29  -3.80e-28  -1.87e-26   2.87e-28   0.00e+00   0.00e+00  -5.22e-24  -1.33e-24  -1.16e-21   1.18e-24   0.00e+00   0.00e+00  -3.31e-05   7.55e-05  -1.90e-05   8.30e-05   3.99e-05   3.39e-04  
+083   9.84e-01   1.91e-29   1.24e-29  -1.16e-30   3.03e-31   0.00e+00   0.00e+00  -7.89e-25   2.34e-24  -5.17e-25  -1.08e-25   0.00e+00   0.00e+00  -3.77e-05   2.35e-04  -4.79e-05   9.54e-05  -8.82e-05   3.78e-04  
+084   9.86e-01  -8.08e-27  -9.65e-27   6.99e-29   8.54e-28   0.00e+00   0.00e+00   1.55e-24  -2.38e-24  -5.10e-25   7.00e-25   0.00e+00   0.00e+00  -2.83e-05   2.61e-04  -4.24e-05   9.30e-05  -7.49e-05   3.88e-04  
+085   9.87e-01  -3.16e-29   7.10e-30   6.61e-31   1.86e-30   0.00e+00   0.00e+00  -9.32e-25  -1.03e-24  -4.45e-25  -2.80e-26   0.00e+00   0.00e+00  -1.49e-05   1.03e-04  -1.49e-05   7.78e-05   1.60e-05   3.45e-04  
+086   9.88e-01   6.01e-27   9.66e-28   1.68e-29  -6.17e-29   0.00e+00   0.00e+00  -1.94e-24  -2.87e-24  -5.95e-26   1.01e-26   0.00e+00   0.00e+00  -1.26e-05   1.55e-04  -3.35e-05   7.40e-05  -1.75e-05   3.35e-04  
+087   9.90e-01   8.77e-30   3.50e-30  -9.45e-31  -1.40e-31   0.00e+00   0.00e+00  -9.99e-25  -3.19e-25  -6.93e-26   5.97e-26   0.00e+00   0.00e+00  -5.53e-06   1.53e-04  -3.33e-05   9.03e-05   7.76e-05   3.23e-04  
+088   9.91e-01  -1.50e-30  -2.09e-30  -2.86e-30   1.60e-30   0.00e+00   0.00e+00   1.53e-27   3.54e-26  -8.18e-27  -6.39e-27   0.00e+00   0.00e+00  -4.10e-06   5.97e-05  -8.90e-06   8.56e-05   1.38e-04   2.67e-04  
+089   9.93e-01   8.33e-27  -8.53e-27  -4.89e-28  -1.06e-28   0.00e+00   0.00e+00  -4.12e-24  -1.25e-23  -1.95e-25  -5.31e-24   0.00e+00   0.00e+00   2.89e-06   8.91e-05  -4.27e-05   3.76e-05  -6.00e-05   2.33e-04  
+090   9.94e-01   2.17e-25   1.37e-25   6.00e-28   5.66e-27   0.00e+00   0.00e+00   6.81e-24  -8.54e-23  -4.62e-24   2.84e-25   0.00e+00   0.00e+00   2.22e-06   4.82e-05  -4.01e-05   1.85e-05   1.00e-06   2.11e-04  
+091   9.95e-01  -1.43e-29   1.86e-29   6.98e-30   8.45e-31   0.00e+00   0.00e+00   1.27e-24  -1.42e-24   1.57e-26   8.69e-26   0.00e+00   0.00e+00   1.04e-05  -2.02e-06  -2.87e-05   1.46e-06   1.29e-04   1.36e-04  
+092   9.97e-01  -6.01e-29   3.37e-28   5.61e-28  -5.98e-29   0.00e+00   0.00e+00   0.00e+00   0.00e+00   4.79e-28   6.87e-28   0.00e+00   0.00e+00   2.02e-05  -3.44e-05  -1.49e-05   4.53e-05   6.77e-05   2.12e-04  
+093   9.98e-01   4.12e-30  -3.08e-30  -1.79e-30  -5.68e-31   0.00e+00   0.00e+00   7.65e-27  -1.28e-26   6.48e-27   1.09e-26   0.00e+00   0.00e+00   1.91e-05   3.51e-04  -1.90e-05   8.22e-05   1.32e-05   3.78e-04  
+094   1.00e+00   1.75e-30   6.89e-31   6.52e-31   7.81e-31   0.00e+00   0.00e+00   1.43e-27   1.08e-26   7.77e-27   9.34e-27   0.00e+00   0.00e+00   5.94e-07   6.22e-04   6.38e-06   2.71e-04  -3.51e-05   7.30e-04  
+095   1.00e+00  -2.04e-30  -7.18e-30  -1.28e-31  -1.70e-31   0.00e+00   0.00e+00  -7.00e-29   1.68e-28   2.09e-29   7.32e-29   0.00e+00   0.00e+00  -5.25e-05   1.13e-03   4.25e-05   4.66e-04  -8.82e-05   1.04e-03  
+096   1.00e+00   9.39e-28  -5.75e-29   5.17e-28  -2.52e-29   0.00e+00   0.00e+00   0.00e+00   1.03e-27   9.24e-28  -2.24e-28   0.00e+00   0.00e+00  -1.79e-04   1.69e-03   6.87e-05   6.52e-04   1.18e-04   1.27e-03  
+097   1.00e+00   3.01e-30   2.38e-29  -1.19e-31   1.36e-30   0.00e+00   0.00e+00   1.14e-28   3.18e-29   4.75e-29   2.64e-27   0.00e+00   0.00e+00  -2.94e-04   1.33e-03   1.28e-05   7.03e-04  -3.10e-04   1.94e-03  
+098   1.01e+00   1.08e-27  -3.59e-27  -1.38e-27  -1.81e-28   0.00e+00   0.00e+00   0.00e+00  -2.75e-27   6.58e-28  -8.34e-29   0.00e+00   0.00e+00  -2.57e-04  -2.65e-03  -1.03e-04  -1.74e-03  -4.24e-04   7.03e-04  
+099   1.01e+00  -2.11e-30  -2.55e-30   1.47e-32  -1.28e-30   0.00e+00   0.00e+00   2.48e-29   3.68e-28  -2.71e-30   4.82e-28   0.00e+00   0.00e+00  -3.11e-04  -1.36e-02  -1.63e-04  -1.27e-02  -1.16e-03   4.10e-04  
+100   1.01e+00   1.14e-26   7.51e-28   2.23e-27  -1.78e-27   0.00e+00   0.00e+00   0.00e+00  -4.69e-27  -6.62e-28  -4.34e-27   0.00e+00   0.00e+00   2.42e-04  -1.63e-02  -4.23e-04  -5.71e-02  -6.30e-04  -1.41e-03  
 
 Path constraints: none
 -------------------------------------------------------------------------------
-Elapsed real time: 2190 second(s) (36 minute(s), 30 second(s)).
-Mon Sep 14 17:38:28 2020
+Elapsed real time: 31110 second(s) (8 hour(s), 38 minute(s), 30 second(s)).
+Tue Sep 15 07:30:25 2020
 MocoCasADiSolver did NOT succeed:
   User_Requested_Stop
 ===============================================================================
