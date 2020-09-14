@@ -724,17 +724,21 @@ model2D = osim.Model('scaledModelMuscle.osim')
 lockList = ['pelvis_list', 'pelvis_rotation', 'pelvis_tz',
             'hip_adduction_r', 'hip_rotation_r', 'hip_adduction_l', 'hip_rotation_l',
             'lumbar_bending', 'lumbar_rotation']
-for kk in range(0,len(lockList)):
-    model2D.getCoordinateSet().get(lockList[kk]).set_locked(True)
+# for kk in range(0,len(lockList)):
+#     model2D.getCoordinateSet().get(lockList[kk]).set_locked(True)
+
+#Unlock everything
+for kk in range(0,model2D.getCoordinateSet().getSize()):
+    model2D.getCoordinateSet().get(kk).set_locked(False)    
     
-#Set lumbar bending and rotational torques to non-existent values
-#Removing or disabling them generates errors from problem to solver
-osim.CoordinateActuator.safeDownCast(model2D.getForceSet().get('tau_lumbar_bend')).setMinControl(-1e-10)
-osim.CoordinateActuator.safeDownCast(model2D.getForceSet().get('tau_lumbar_bend')).setMaxControl(1e-10)
-osim.CoordinateActuator.safeDownCast(model2D.getForceSet().get('tau_lumbar_bend')).setOptimalForce(1)
-osim.CoordinateActuator.safeDownCast(model2D.getForceSet().get('tau_lumbar_rot')).setMinControl(-1e-10)
-osim.CoordinateActuator.safeDownCast(model2D.getForceSet().get('tau_lumbar_rot')).setMaxControl(1e-10)
-osim.CoordinateActuator.safeDownCast(model2D.getForceSet().get('tau_lumbar_rot')).setOptimalForce(1)
+# #Set lumbar bending and rotational torques to non-existent values
+# #Removing or disabling them generates errors from problem to solver
+# osim.CoordinateActuator.safeDownCast(model2D.getForceSet().get('tau_lumbar_bend')).setMinControl(-1e-10)
+# osim.CoordinateActuator.safeDownCast(model2D.getForceSet().get('tau_lumbar_bend')).setMaxControl(1e-10)
+# osim.CoordinateActuator.safeDownCast(model2D.getForceSet().get('tau_lumbar_bend')).setOptimalForce(1)
+# osim.CoordinateActuator.safeDownCast(model2D.getForceSet().get('tau_lumbar_rot')).setMinControl(-1e-10)
+# osim.CoordinateActuator.safeDownCast(model2D.getForceSet().get('tau_lumbar_rot')).setMaxControl(1e-10)
+# osim.CoordinateActuator.safeDownCast(model2D.getForceSet().get('tau_lumbar_rot')).setOptimalForce(1)
       
 #Export model for processing
 model2D.finalizeConnections()
@@ -770,30 +774,57 @@ track.set_final_time(osim.Storage('refQ.sto').getLastTime())
 
 #Specify tracking weights as mean standard deviations from Miller et al. (2014)
 #Pelvis and lumbar targets have arbitrarily large weights
+#Set 'locked' coordinates to zero weight
 stateWeights = osim.MocoWeightSet()
 #Joint values
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_tx/value',(1/(1*0.1000))**2))
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_ty/value',(1/(2*0.1000))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_tz/value',0))
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_tilt/value',(1/(1*0.1745))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_list/value',0))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_rotation/value',0))                    
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/back/lumbar_extension/value',(1/(1*0.1745))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/back/lumbar_bending/value',0))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/back/lumbar_rotation/value',0))
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_r/hip_flexion_r/value',(1/(1*0.0647))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_r/hip_adduction_r/value',0))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_r/hip_rotation_r/value',0))
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/walker_knee_r/knee_angle_r/value',(1/(1*0.0889))**2))
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ankle_r/ankle_angle_r/value',(1/(1*0.0574))**2))
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_l/hip_flexion_l/value',(1/(1*0.0647))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_l/hip_adduction_l/value',0))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_l/hip_rotation_l/value',0))
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/walker_knee_l/knee_angle_l/value',(1/(1*0.0889))**2))
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ankle_l/ankle_angle_l/value',(1/(1*0.0574))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/subtalar_r/subtalar_angle_r/value',0))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/subtalar_l/subtalar_angle_l/value',0))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/mtp_r/mtp_angle_r/value',0))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/mtp_l/mtp_angle_l/value',0))
 #Joint speeds
 w = 0.001 #Scale the generalized speed tracking errors by this constant
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_tx/speed',w*(1/(1*0.1000))**2))
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_ty/speed',w*(1/(2*0.1000))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_tz/speed',0))
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_tilt/speed',w*(1/(1*0.0585))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_list/speed',0))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_rotation/speed',0))    
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/back/lumbar_extension/speed',w*(1/(1*0.1745))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/back/lumbar_bending/speed',0))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/back/lumbar_rotation/speed',0))
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_r/hip_flexion_r/speed',w*(1/(1*0.0647))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_r/hip_adduction_r/speed',0))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_r/hip_rotation_r/speed',0))
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/walker_knee_r/knee_angle_r/speed',w*(1/(1*0.0889))**2))
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ankle_r/ankle_angle_r/speed',w*(1/(1*0.0574))**2))
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_l/hip_flexion_l/speed',w*(1/(1*0.0647))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_l/hip_adduction_l/speed',0))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_l/hip_rotation_l/speed',0))
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/walker_knee_l/knee_angle_l/speed',w*(1/(1*0.0889))**2))
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ankle_l/ankle_angle_l/speed',w*(1/(1*0.0574))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/subtalar_r/subtalar_angle_r/speed',0))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/subtalar_l/subtalar_angle_l/speed',0))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/mtp_r/mtp_angle_r/speed',0))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/mtp_l/mtp_angle_l/speed',0))
 #Add to tracking problem
 track.set_states_weight_set(stateWeights)
 
@@ -902,7 +933,7 @@ forcesLeftFoot.append('/forceset/contactHallux_l')
 forcesLeftFoot.append('/forceset/contactOtherToes_l')
 trackLeftGRF = osim.MocoContactTrackingGoalGroup(forcesLeftFoot,'LeftGRF')
 trackLeftGRF.append_alternative_frame_paths('/bodyset/toes_l')
-#ADd to problem
+#Add to problem
 contactTracking.addContactGroup(trackRightGRF)
 contactTracking.addContactGroup(trackLeftGRF)
 #Set parameters in problem
@@ -912,21 +943,97 @@ contactTracking.setProjectionVector(osim.Vec3(0, 0, 1))
 problem.addGoal(contactTracking)
 
 #Set joint coordinate bounds
+#This includes artificially 'locking' certain joints
 problem.setStateInfo('/jointset/ground_pelvis/pelvis_tx/value', [0, 5])
 problem.setStateInfo('/jointset/ground_pelvis/pelvis_ty/value', [0.75, 1.25])
-problem.setStateInfo('/jointset/ground_pelvis/pelvis_tilt/value', [math.radians(-20), math.radians(10)])
-problem.setStateInfo('/jointset/back/lumbar_extension/value', [math.radians(-30), math.radians(5)])
+problem.setStateInfo('/jointset/ground_pelvis/pelvis_tz/value', [0])
+problem.setStateInfo('/jointset/ground_pelvis/pelvis_tilt/value', [math.radians(-15), math.radians(5)])
+problem.setStateInfo('/jointset/ground_pelvis/pelvis_list/value', [0])
+problem.setStateInfo('/jointset/ground_pelvis/pelvis_rotation/value', [0])
+problem.setStateInfo('/jointset/back/lumbar_extension/value', [math.radians(-25), math.radians(5)])
+problem.setStateInfo('/jointset/back/lumbar_bending/value', [0])
+problem.setStateInfo('/jointset/back/lumbar_rotation/value', [0])
 problem.setStateInfo('/jointset/hip_r/hip_flexion_r/value', [math.radians(-30), math.radians(90)])
+problem.setStateInfo('/jointset/hip_r/hip_adduction_r/value', [0])
+problem.setStateInfo('/jointset/hip_r/hip_rotation_r/value', [0])
 problem.setStateInfo('/jointset/hip_l/hip_flexion_l/value', [math.radians(-30), math.radians(90)])
+problem.setStateInfo('/jointset/hip_l/hip_adduction_l/value', [0])
+problem.setStateInfo('/jointset/hip_l/hip_rotation_l/value', [0])
 problem.setStateInfo('/jointset/walker_knee_r/knee_angle_r/value', [math.radians(0), math.radians(140)])
 problem.setStateInfo('/jointset/walker_knee_l/knee_angle_l/value', [math.radians(0), math.radians(140)])
 problem.setStateInfo('/jointset/ankle_r/ankle_angle_r/value', [math.radians(-40), math.radians(30)])
 problem.setStateInfo('/jointset/ankle_l/ankle_angle_l/value', [math.radians(-40), math.radians(30)])
+problem.setStateInfo('/jointset/subtalar_r/subtalar_angle_r/value', [0])
+problem.setStateInfo('/jointset/mtp_r/mtp_angle_r/value', [0])
+problem.setStateInfo('/jointset/subtalar_l/subtalar_angle_l/value', [0])
+problem.setStateInfo('/jointset/mtp_l/mtp_angle_l/value', [0])
 
 #Set muscle limits in problem
 #### TODO: these may need to be adjusted for sprinting (from walking data)
 # problem.setStateInfoPattern('/forceset/.*/normalized_tendon_force', [0, 1.8], [], [])
 problem.setStateInfoPattern('/forceset/.*/activation',   [0.001, 1.0], [], [])
+
+
+######
+
+# #Create rotation time series table
+# rotTable = osim.TimeSeriesTableRotation()
+
+# #Set column labels for pelvis bodyset
+# rotLabels = osim.StdVectorString()
+# rotLabels.append('/bodyset/pelvis')
+# rotTable.setColumnLabels(rotLabels)
+
+# #Create a zero rotation value
+# zeroRot = osim.Rotation()
+# zeroRot.setToZero()
+
+# #Set the data to zeros
+# #Use length of reference kinematic data as a reference
+# nrows = len(osim.TimeSeriesTable('refQ.sto').getIndependentColumn())
+# for ii in range(nrows):
+#     #Get an opensim row vector rotation with a zero value
+#     row = osim.RowVectorRotation(1,zeroRot)
+#     #Append to the table
+#     rotTable.appendRow(ii,row)
+    
+# #Set the time data
+# for ii in range(nrows):
+#     rotTable.setIndependentValueAtIndex(ii,osim.TimeSeriesTable('refQ.sto').getIndependentColumn()[ii])
+
+# # Add rotation table of zeros to goal
+# pelvisGoal.setRotationReference(rotTable)   ###TABLE WON'T WORK!!!! )
+
+
+######
+
+
+#Add low weight goal to keep pelvis orientation vertical
+#Create goal
+pelvisGoal = osim.MocoOrientationTrackingGoal('pelvisOrientation',0.1)
+#Set path to pelvis frame
+framePaths = osim.StdVectorString()
+framePaths.append('/bodyset/pelvis')
+pelvisGoal.setFramePaths(framePaths)
+
+#Create a states rotation reference table of default values for neutral pelvis orientation
+#Start with the previous solution base
+pelvisO = osim.MocoTrajectory('sprintTracking3D_noContact_solution.sto')
+#Set all states data to zero
+numRows = pelvisO.getNumTimes()
+stateNames = model.getStateVariableNames()
+for ii in range(0,model.getNumStateVariables()):
+    currState = stateNames.get(ii)
+    if 'jointset' in currState:
+        pelvisO.setState(currState, np.linspace(0.0,0.0,numRows))
+    elif 'forceset' in currState:
+        pelvisO.setState(currState, np.linspace(0.02,0.02,numRows))
+#Export to states file and set as reference file
+pelvisSTO = osim.STOFileAdapter()
+pelvisSTO.write(pelvisO.exportToStatesTable(),'neutralOrientationStates.sto')
+pelvisGoal.setStatesReference(osim.TableProcessor('neutralOrientationStates.sto'))
+#Add to problem
+problem.addGoal(pelvisGoal)
 
 #Define the solver and set its options
 solver = osim.MocoCasADiSolver.safeDownCast(study.updSolver())
@@ -934,12 +1041,17 @@ solver = osim.MocoCasADiSolver.safeDownCast(study.updSolver())
 #solver.set_minimize_implicit_multibody_accelerations(true)
 #solver.set_implicit_multibody_accelerations_weight(0.00001)
 solver.set_optim_max_iterations(1000)
-solver.set_num_mesh_intervals(25) ####TODO: might need to be upped, low for speed right now
+solver.set_num_mesh_intervals(50) ####TODO: upped from 25
 solver.set_optim_constraint_tolerance(1e-2) ####TODO: might need to be lower
 solver.set_optim_convergence_tolerance(1e-2) ####TODO: might need to be lower
 solver.set_minimize_implicit_auxiliary_derivatives(True)
 solver.set_implicit_auxiliary_derivatives_weight(0.001)
 solver.resetProblem(problem)
+
+# ##### Use existing try guess for now...
+# solver.setGuessFile('sprintTracking_2D_withContact_solution_try1.sto')
+
+##### guess won't work with 'unlocked' approach...
 
 #Create a blank guess to fill with relevant 3D tracking info
 guess = solver.getGuess()
@@ -971,13 +1083,15 @@ guessControls = guess.getControlNames()
 #Loop through and fill controls from solution
 #Ensure that locked lumbar controls drop to zero
 for cc in range(0,len(guessControls)):
-    #Check for lumbar controls
-    if 'lumbar_bend' in guessControls[cc] or 'lumbar_rot' in guessControls[cc]:
-        #Set as zeros
-        guess.setControl(guessControls[cc], np.linspace(0.0,0.0,traj.getNumTimes()))
-    else:
-        #Copy the control from the trajectory
-        guess.setControl(guessControls[cc], traj.getControlMat(guessControls[cc]))
+    #Copy the control from the trajectory
+    guess.setControl(guessControls[cc], traj.getControlMat(guessControls[cc]))
+    # #Check for lumbar controls
+    # if 'lumbar_bend' in guessControls[cc] or 'lumbar_rot' in guessControls[cc]:
+    #     #Set as zeros
+    #     guess.setControl(guessControls[cc], np.linspace(0.0,0.0,traj.getNumTimes()))
+    # else:
+    #     #Copy the control from the trajectory
+    #     guess.setControl(guessControls[cc], traj.getControlMat(guessControls[cc]))
 
 #Save the edited guess to file
 guess.write('initialGuess_2D_tracking.sto')
@@ -1016,10 +1130,10 @@ sprintTrackingSolution.unseal()
 
 #Unlock a model to get GRFs
 
-# grfModel = osim.Model('model2D.osim')
-for kk in range(0,model.getCoordinateSet().getSize()):
-    model.getCoordinateSet().get(kk).set_locked(False)
-model.finalizeConnections()
+# # grfModel = osim.Model('model2D.osim')
+# for kk in range(0,model.getCoordinateSet().getSize()):
+#     model.getCoordinateSet().get(kk).set_locked(False)
+# model.finalizeConnections()
 
 #Write solution's GRF to a file
 contact_r = osim.StdVectorString()
@@ -1040,8 +1154,6 @@ externalForcesTableFlat = osim.createExternalLoadsTableForGait(model,sprintTrack
 osim.writeTableToFile(externalForcesTableFlat,'sprintTracking_2D_withContact_solution_GRF.sto')
 
 ##### still get some z axis forces (check UMocoD paramteters)
-##### noisy, double grid density
-##### tighten up bounds on pelvis tilt, maybe on lumbar too...
 
 # %% DON'T THINK RRA IS NECESSARY GIVEN CHANGES TO KINEMATICS WILL OCCUR DURING TRACKING SIM...?
 
