@@ -1,6 +1,25 @@
+[BTK WARNING] Origin for the force platform #1 seems to be located from the center of the working surface instead of the inverse. Data are inverted to locate the center of the working surface from the platform's origin.
+[BTK WARNING] Origin for the force platform #1 seems to be located from the center of the working surface instead of the inverse. Data are inverted to locate the center of the working surface from the platform's origin.
+[BTK WARNING] Origin for the force platform #1 seems to be located from the center of the working surface instead of the inverse. Data are inverted to locate the center of the working surface from the platform's origin.
+[BTK WARNING] Origin for the force platform #1 seems to be located from the center of the working surface instead of the inverse. Data are inverted to locate the center of the working surface from the platform's origin.
+[BTK WARNING] Origin for the force platform #1 seems to be located from the center of the working surface instead of the inverse. Data are inverted to locate the center of the working surface from the platform's origin.
+[BTK WARNING] Origin for the force platform #1 seems to be located from the center of the working surface instead of the inverse. Data are inverted to locate the center of the working surface from the platform's origin.
+[BTK WARNING] Origin for the force platform #1 seems to be located from the center of the working surface instead of the inverse. Data are inverted to locate the center of the working surface from the platform's origin.
+[BTK WARNING] Origin for the force platform #1 seems to be located from the center of the working surface instead of the inverse. Data are inverted to locate the center of the working surface from the platform's origin.
+[BTK WARNING] Origin for the force platform #1 seems to be located from the center of the working surface instead of the inverse. Data are inverted to locate the center of the working surface from the platform's origin.
+[BTK WARNING] Origin for the force platform #1 seems to be located from the center of the working surface instead of the inverse. Data are inverted to locate the center of the working surface from the platform's origin.
+[BTK WARNING] Origin for the force platform #1 seems to be located from the center of the working surface instead of the inverse. Data are inverted to locate the center of the working surface from the platform's origin.
+[BTK WARNING] Origin for the force platform #1 seems to be located from the center of the working surface instead of the inverse. Data are inverted to locate the center of the working surface from the platform's origin.
+[BTK WARNING] Origin for the force platform #1 seems to be located from the center of the working surface instead of the inverse. Data are inverted to locate the center of the working surface from the platform's origin.
+[BTK WARNING] Origin for the force platform #1 seems to be located from the center of the working surface instead of the inverse. Data are inverted to locate the center of the working surface from the platform's origin.
+[BTK WARNING] Origin for the force platform #1 seems to be located from the center of the working surface instead of the inverse. Data are inverted to locate the center of the working surface from the platform's origin.
+[BTK WARNING] Origin for the force platform #1 seems to be located from the center of the working surface instead of the inverse. Data are inverted to locate the center of the working surface from the platform's origin.
+[BTK WARNING] Origin for the force platform #1 seems to be located from the center of the working surface instead of the inverse. Data are inverted to locate the center of the working surface from the platform's origin.
+[BTK WARNING] Origin for the force platform #2 seems to be located from the center of the working surface instead of the inverse. Data are inverted to locate the center of the working surface from the platform's origin.
+[BTK WARNING] Origin for the force platform #3 seems to be located from the center of the working surface instead of the inverse. Data are inverted to locate the center of the working surface from the platform's origin.
+[BTK WARNING] Origin for the force platform #4 seems to be located from the center of the working surface instead of the inverse. Data are inverted to locate the center of the working surface from the platform's origin.
+[BTK WARNING] Origin for the force platform #5 seems to be located from the center of the working surface instead of the inverse. Data are inverted to locate the center of the working surface from the platform's origin.
+[BTK WARNING] Origin for the force platform #6 seems to be located from the center of the working surface instead of the inverse. Data are inverted to locate the center of the working surface from the platform's origin.
+[BTK WARNING] Origin for the force platform #7 seems to be located from the center of the working surface instead of the inverse. Data are inverted to locate the center of the working surface from the platform's origin.
+[BTK WARNING] Origin for the force platform #8 seems to be located from the center of the working surface instead of the inverse. Data are inverted to locate the center of the working surface from the platform's origin.
 Warning: intermediate_callback is disfunctional in your installation. You will only be able to use stats(). See https://github.com/casadi/casadi/wiki/enableIpoptCallback to enable it.
-intermediate_callback: Error in Function::operator() for 'NlpsolCallback' [CallbackInternal] at D:\a\opensim-moco\opensim-moco\dependencies\casadi\casadi\core\function.cpp:1319:
-D:\a\opensim-moco\opensim-moco\dependencies\casadi\casadi\core\function_internal.cpp:3119: Failed to evaluate 'eval_dm' for NlpsolCallback:
-D:\a\opensim-moco\opensim-moco\dependencies\casadi\casadi\core\callback_internal.cpp:104: Error calling "eval" for object NlpsolCallback:
-File 'delete_this_to_stop_optimization__2020-09-14T225204.510505.txt' deleted.
-	Thrown at MocoUtilities.h:814 in throwIfDeleted().

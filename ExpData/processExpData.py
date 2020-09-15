@@ -478,6 +478,178 @@ osimHelper.scaleOptimalForceSubjectSpecific(genericModelFileName = 'genericModel
 #Load in new scaled model
 scaledModelMuscle = osim.Model('scaledModelMuscle.osim')
 
+#Adapt model to create a 2D version
+    
+#Set a new copy of the model
+model2D = osim.Model('scaledModelMuscle.osim')
+
+#Get hip joints from scaled model to work from
+origHip_r = scaledModelMuscle.getJointSet().get('hip_r')
+origHip_l = scaledModelMuscle.getJointSet().get('hip_l')
+    
+#Create pin joint for right hip
+#Set parent and child locations
+locationInParent = origHip_r.get_frames(0).get_translation()
+orientationInParent = origHip_r.get_frames(0).get_orientation()
+locationInChild = origHip_r.get_frames(1).get_translation()
+orientationInChild = origHip_r.get_frames(1).get_orientation()
+#Get bodies for joint
+pelvisBody = model2D.getBodySet().get('pelvis')
+femurBody = model2D.getBodySet().get('femur_r')
+#Create joint
+hipJoint_r = osim.PinJoint('hip_r', pelvisBody, locationInParent,
+                           orientationInParent, femurBody, locationInChild,
+                           orientationInChild)
+#Update additional joint parameters
+hipJoint_r.getCoordinate().setName('hip_flexion_r') #set coordinate name
+hipJoint_r.getCoordinate().setRangeMin(origHip_r.get_coordinates(0).getRangeMin()) #get min from old joint
+hipJoint_r.getCoordinate().setRangeMax(origHip_r.get_coordinates(0).getRangeMax()) #get max from old joint
+hipJoint_r.getCoordinate().setDefaultValue(0) #set default value to zero
+hipJoint_r.getCoordinate().setDefaultSpeedValue(0) #set default speed to zero
+hipJoint_r.getCoordinate().set_clamped(True) #set joint to clamped
+hipJoint_r.getCoordinate().set_locked(False) #set locked to false
+hipJoint_r.getCoordinate().set_prescribed(False) #set prescribed to false
+
+#Create pin joint for left hip
+#Set parent and child locations
+locationInParent = origHip_l.get_frames(0).get_translation()
+orientationInParent = origHip_l.get_frames(0).get_orientation()
+locationInChild = origHip_l.get_frames(1).get_translation()
+orientationInChild = origHip_l.get_frames(1).get_orientation()
+#Get bodies for joint
+pelvisBody = model2D.getBodySet().get('pelvis')
+femurBody = model2D.getBodySet().get('femur_l')
+#Create joint
+hipJoint_l = osim.PinJoint('hip_l', pelvisBody, locationInParent,
+                           orientationInParent, femurBody, locationInChild,
+                           orientationInChild)
+#Update additional joint parameters
+hipJoint_l.getCoordinate().setName('hip_flexion_l') #set coordinate name
+hipJoint_l.getCoordinate().setRangeMin(origHip_l.get_coordinates(0).getRangeMin()) #get min from old joint
+hipJoint_l.getCoordinate().setRangeMax(origHip_l.get_coordinates(0).getRangeMax()) #get max from old joint
+hipJoint_l.getCoordinate().setDefaultValue(0) #set default value to zero
+hipJoint_l.getCoordinate().setDefaultSpeedValue(0) #set default speed to zero
+hipJoint_l.getCoordinate().set_clamped(True) #set joint to clamped
+hipJoint_l.getCoordinate().set_locked(False) #set locked to false
+hipJoint_l.getCoordinate().set_prescribed(False) #set prescribed to false
+
+#Remove existing hip joints from model
+model2D.getJointSet().remove(model2D.getJointSet().get('hip_r'))
+model2D.getJointSet().remove(model2D.getJointSet().get('hip_l'))
+
+#Add new hip joints
+model2D.addJoint(hipJoint_r)
+model2D.addJoint(hipJoint_l)
+
+#Get back joint from scaled model to work from
+origLumbar = scaledModelMuscle.getJointSet().get('back')
+    
+#Create pin joint for back
+#Set parent and child locations
+locationInParent = origLumbar.get_frames(0).get_translation()
+orientationInParent = origLumbar.get_frames(0).get_orientation()
+locationInChild = origLumbar.get_frames(1).get_translation()
+orientationInChild = origLumbar.get_frames(1).get_orientation()
+#Get bodies for joint
+pelvisBody = model2D.getBodySet().get('pelvis')
+torsoBody = model2D.getBodySet().get('torso')
+#Create joint
+lumbarJoint = osim.PinJoint('back', pelvisBody, locationInParent,
+                            orientationInParent, torsoBody, locationInChild,
+                            orientationInChild)
+#Update additional joint parameters
+lumbarJoint.getCoordinate().setName('lumbar_extension') #set coordinate name
+lumbarJoint.getCoordinate().setRangeMin(origLumbar.get_coordinates(0).getRangeMin()) #get min from old joint
+lumbarJoint.getCoordinate().setRangeMax(origLumbar.get_coordinates(0).getRangeMax()) #get max from old joint
+lumbarJoint.getCoordinate().setDefaultValue(0) #set default value to zero
+lumbarJoint.getCoordinate().setDefaultSpeedValue(0) #set default speed to zero
+lumbarJoint.getCoordinate().set_clamped(True) #set joint to clamped
+lumbarJoint.getCoordinate().set_locked(False) #set locked to false
+lumbarJoint.getCoordinate().set_prescribed(False) #set prescribed to false
+
+#Remove existing back joint from model
+model2D.getJointSet().remove(model2D.getJointSet().get('back'))
+
+#Add new back joint
+model2D.addJoint(lumbarJoint)
+
+#Remove existing lumbar coordinate actuators
+#Get force names
+forceNames = list()
+for ff in range(model2D.getForceSet().getSize()):
+    forceNames.append(model2D.getForceSet().get(ff).getName())
+#Find indices of actuators to remove
+indRemove = list()
+indRemove.append(forceNames.index('tau_lumbar_bend'))
+indRemove.append(forceNames.index('tau_lumbar_rot'))
+#Sort descending to avoid changing index values
+indRemove.sort(reverse = True)
+#Remove forces
+for ff in range(0,len(indRemove)):
+    model2D.getForceSet().remove(indRemove[ff])
+    
+#Get original pelvis from scaled model to work from
+origPelvis = scaledModelMuscle.getJointSet().get('ground_pelvis')
+
+#Create planar joint for ground-pelvis
+pelvisJoint = osim.PlanarJoint('ground_pelvis',
+                               model2D.getGround(), osim.Vec3(0,0,0), osim.Vec3(0,0,0),
+                               model2D.getBodySet().get('pelvis'), osim.Vec3(0,0,0), osim.Vec3(0,0,0))
+#Update additional joint parameters
+#Pelvis tilt
+pelvisJoint.getCoordinate(0).setName('pelvis_tilt') #set coordinate name
+pelvisJoint.getCoordinate(0).setRangeMin(origPelvis.get_coordinates(0).getRangeMin()) #get min from old joint
+pelvisJoint.getCoordinate(0).setRangeMax(origPelvis.get_coordinates(0).getRangeMax()) #get max from old joint
+pelvisJoint.getCoordinate(0).setDefaultValue(0) #set default value to zero
+pelvisJoint.getCoordinate(0).setDefaultSpeedValue(0) #set default speed to zero
+pelvisJoint.getCoordinate(0).set_clamped(True) #set joint to clamped
+pelvisJoint.getCoordinate(0).set_locked(False) #set locked to false
+pelvisJoint.getCoordinate(0).set_prescribed(False) #set prescribed to false
+#Pelvis tx
+pelvisJoint.getCoordinate(1).setName('pelvis_tx') #set coordinate name
+pelvisJoint.getCoordinate(1).setRangeMin(origPelvis.get_coordinates(3).getRangeMin()) #get min from old joint
+pelvisJoint.getCoordinate(1).setRangeMax(origPelvis.get_coordinates(3).getRangeMax()) #get max from old joint
+pelvisJoint.getCoordinate(1).setDefaultValue(0) #set default value to zero
+pelvisJoint.getCoordinate(1).setDefaultSpeedValue(0) #set default speed to zero
+pelvisJoint.getCoordinate(1).set_clamped(True) #set joint to clamped
+pelvisJoint.getCoordinate(1).set_locked(False) #set locked to false
+pelvisJoint.getCoordinate(1).set_prescribed(False) #set prescribed to false
+#Pelvis ty
+pelvisJoint.getCoordinate(2).setName('pelvis_ty') #set coordinate name
+pelvisJoint.getCoordinate(2).setRangeMin(origPelvis.get_coordinates(4).getRangeMin()) #get min from old joint
+pelvisJoint.getCoordinate(2).setRangeMax(origPelvis.get_coordinates(4).getRangeMax()) #get max from old joint
+pelvisJoint.getCoordinate(2).setDefaultValue(0.95) #set default value to zero
+pelvisJoint.getCoordinate(2).setDefaultSpeedValue(0) #set default speed to zero
+pelvisJoint.getCoordinate(2).set_clamped(True) #set joint to clamped
+pelvisJoint.getCoordinate(2).set_locked(False) #set locked to false
+pelvisJoint.getCoordinate(2).set_prescribed(False) #set prescribed to false
+
+#Remove existing pelvis joint from model
+model2D.getJointSet().remove(model2D.getJointSet().get('ground_pelvis'))
+
+#Add new pelvis joint
+model2D.addJoint(pelvisJoint)
+
+#Finalize model connections
+model2D.finalizeConnections()
+
+#Dump into a model processor to weld the subtalar and mtp joints
+#Create the processor
+editProcessor = osim.ModelProcessor(model2D)
+#Create the string array of joints to weld
+weldJoints = osim.StdVectorString()
+weldJoints.append('subtalar_r')
+weldJoints.append('subtalar_l')
+weldJoints.append('mtp_r')
+weldJoints.append('mtp_l')
+#Append model operator for welding
+editProcessor.append(osim.ModOpReplaceJointsWithWelds(weldJoints))
+#Process model output
+model2D_final = editProcessor.process()
+
+#Print 2D model output
+model2D_final.printToXML('model2D.osim')
+
 # %% Set simulation parameters
 
 #Identify time parameters for simulation
@@ -583,9 +755,12 @@ osimHelper.kinematicsToStates(kinematicsFileName = 'ikResults.mot',
 # inverseSolution.getMocoSolution().write('stopped_MocoInverse_solution.sto')
 
 # %% Run a torque driven tracking problem to get consistent kinematics with contact
+# At this point we convert to a 2D problem.
+# Following this step we should have 2D kinematics that match the experimental 
+# 2D GRFs coming from contact sphere estimation
 
 #Get a new instance of the model to edit
-torqueModel = osim.Model('scaledModelMuscle.osim')
+torqueModel = osim.Model('model2D.osim')
 
 #Set model and parameters
 #Create a model processor
@@ -597,7 +772,7 @@ modelProcessor.append(osim.ModOpAddReserves(1000))
 
 #Define the motion tracking problem
 track = osim.MocoTrack()
-track.setName('torqueDriven_GRFtracking')
+track.setName('torqueDriven_GRFtracking_2D')
 
 #Set model
 track.setModel(modelProcessor)
@@ -620,23 +795,14 @@ track.set_final_time(osim.Storage('refQ.sto').getLastTime())
 #Pelvis and lumbar targets have arbitrarily large weights
 stateWeights = osim.MocoWeightSet()
 #Joint values
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_tx/value',10))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_ty/value',10))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_tz/value',10))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_tx/value',1))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_ty/value',1))
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_tilt/value',50))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_list/value',50))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_rotation/value',50))
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/back/lumbar_extension/value',5))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/back/lumbar_bending/value',5))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/back/lumbar_rotation/value',5))
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_r/hip_flexion_r/value',25))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_r/hip_adduction_r/value',10))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_r/hip_rotation_r/value',5))
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/walker_knee_r/knee_angle_r/value',50))
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ankle_r/ankle_angle_r/value',25))
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_l/hip_flexion_l/value',25))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_l/hip_adduction_l/value',10))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_l/hip_rotation_l/value',5))
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/walker_knee_l/knee_angle_l/value',50))
 stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ankle_l/ankle_angle_l/value',25))
 #Add to tracking problem
@@ -648,23 +814,14 @@ problem = study.updProblem()
 
 #Regularization term on MocoTrack problem (minimize squared muscle excitations)
 effort = osim.MocoControlGoal.safeDownCast(problem.updGoal('control_effort'))
-effort.setWeight(0.1)
+effort.setWeight(0.01)
 
 #Set joint coordinate bounds
 problem.setStateInfo('/jointset/ground_pelvis/pelvis_tx/value', [0, 5])
 problem.setStateInfo('/jointset/ground_pelvis/pelvis_ty/value', [0.75, 1.25])
-problem.setStateInfo('/jointset/ground_pelvis/pelvis_tz/value', [0, 0.3])
 problem.setStateInfo('/jointset/ground_pelvis/pelvis_tilt/value', [math.radians(-20), math.radians(10)])
-problem.setStateInfo('/jointset/ground_pelvis/pelvis_list/value', [math.radians(-20), math.radians(20)])
-problem.setStateInfo('/jointset/ground_pelvis/pelvis_rotation/value', [math.radians(-20), math.radians(20)])
 problem.setStateInfo('/jointset/back/lumbar_extension/value', [math.radians(-30), math.radians(5)])
-problem.setStateInfo('/jointset/back/lumbar_bending/value', [math.radians(-20), math.radians(20)])
-problem.setStateInfo('/jointset/back/lumbar_rotation/value', [math.radians(-10), math.radians(25)])
 problem.setStateInfo('/jointset/hip_r/hip_flexion_r/value', [math.radians(-30), math.radians(90)])
-problem.setStateInfo('/jointset/hip_r/hip_adduction_r/value', [math.radians(-20), math.radians(15)])
-problem.setStateInfo('/jointset/hip_r/hip_rotation_r/value', [math.radians(-30), math.radians(15)])
-problem.setStateInfo('/jointset/hip_l/hip_adduction_l/value', [math.radians(-20), math.radians(15)])
-problem.setStateInfo('/jointset/hip_l/hip_rotation_l/value', [math.radians(-30), math.radians(15)])
 problem.setStateInfo('/jointset/hip_l/hip_flexion_l/value', [math.radians(-30), math.radians(90)])
 problem.setStateInfo('/jointset/walker_knee_r/knee_angle_r/value', [math.radians(0), math.radians(140)])
 problem.setStateInfo('/jointset/walker_knee_l/knee_angle_l/value', [math.radians(0), math.radians(140)])
@@ -675,7 +832,7 @@ problem.setStateInfo('/jointset/ankle_l/ankle_angle_l/value', [math.radians(-40)
 #Create GRF tracking goal
 contactTracking = osim.MocoContactTrackingGoal('contact',1.0)
 #Set external loads
-contactTracking.setExternalLoadsFile('refGRF.xml')
+contactTracking.setExternalLoadsFile('refGRF_2D.xml')
 #Set right foot tracking
 forcesRightFoot = osim.StdVectorString()
 forcesRightFoot.append('/forceset/contactHeel_r')
@@ -721,18 +878,8 @@ solver.resetProblem(problem)
 #Solve!
 grfTorqueSolution = study.solve()
 
-#Unlock model
-grfModel = modelProcessor.process()
-for kk in range(0,grfModel.getCoordinateSet().getSize()):
-    grfModel.getCoordinateSet().get(kk).set_locked(False)    
-#Update others?
-grfModel.getCoordinateSet().get('subtalar_angle_r').set_locked(False)
-grfModel.getCoordinateSet().get('subtalar_angle_l').set_locked(False)
-grfModel.getCoordinateSet().get('mtp_angle_r').set_locked(False)
-grfModel.getCoordinateSet().get('mtp_angle_l').set_locked(False)
-grfModel.finalizeConnections()
-
-#Calculate GRFs
+#Calculate predicted GRFs from 2D tracking simulation
+#Add contact elements to extract from
 contact_r = osim.StdVectorString()
 contact_l = osim.StdVectorString()
 contact_r.append('/forceset/contactHeel_r')
@@ -747,8 +894,13 @@ contact_l.append('/forceset/contactMH3_l')
 contact_l.append('/forceset/contactMH5_l')
 contact_l.append('/forceset/contactHallux_l')
 contact_l.append('/forceset/contactOtherToes_l')
-externalForcesTableFlat = osim.createExternalLoadsTableForGait(grfModel,grfTorqueSolution,contact_r,contact_l)
-osim.writeTableToFile(externalForcesTableFlat,'torqueDrive_GRFtracking_solution_GRF.sto')
+#Crate forces table
+externalForcesTableFlat = osim.createExternalLoadsTableForGait(modelProcessor.process(),
+                                                               grfTorqueSolution,
+                                                               contact_r,
+                                                               contact_l)
+#WRite table to file
+osim.writeTableToFile(externalForcesTableFlat,'predictGRF_2D.sto')
 
 
 # %% Run a 3D tracking simulation without GRF tracking
