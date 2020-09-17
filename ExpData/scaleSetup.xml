@@ -289,10 +289,6 @@
 									<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales along all three axes, and 'Y' scales just along the Y axis.-->
 									<axes> X Z</axes>
 								</BodyScale>
-								<BodyScale name="calcn_r">
-									<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales along all three axes, and 'Y' scales just along the Y axis.-->
-									<axes> Z</axes>
-								</BodyScale>
 							</objects>
 							<groups />
 						</BodyScaleSet>
@@ -373,6 +369,10 @@
 						<!--Set of bodies to be scaled by this measurement.-->
 						<BodyScaleSet>
 							<objects>
+								<BodyScale name="calcn_r">
+									<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales along all three axes, and 'Y' scales just along the Y axis.-->
+									<axes> Z</axes>
+								</BodyScale>
 								<BodyScale name="toes_r">
 									<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales along all three axes, and 'Y' scales just along the Y axis.-->
 									<axes> Z</axes>
@@ -485,10 +485,6 @@
 									<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales along all three axes, and 'Y' scales just along the Y axis.-->
 									<axes> X Z</axes>
 								</BodyScale>
-								<BodyScale name="calcn_l">
-									<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales along all three axes, and 'Y' scales just along the Y axis.-->
-									<axes> Z</axes>
-								</BodyScale>
 							</objects>
 							<groups />
 						</BodyScaleSet>
@@ -569,6 +565,10 @@
 						<!--Set of bodies to be scaled by this measurement.-->
 						<BodyScaleSet>
 							<objects>
+								<BodyScale name="calcn_l">
+									<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales along all three axes, and 'Y' scales just along the Y axis.-->
+									<axes> Z</axes>
+								</BodyScale>
 								<BodyScale name="toes_l">
 									<!--Axes (X Y Z) along which to scale a body. For example, 'X Y Z' scales along all three axes, and 'Y' scales just along the Y axis.-->
 									<axes> Z</axes>

@@ -541,6 +541,64 @@ model2D.getJointSet().remove(model2D.getJointSet().get('hip_l'))
 model2D.addJoint(hipJoint_r)
 model2D.addJoint(hipJoint_l)
 
+#Get knee joints from scaled model to work from
+origKnee_r = scaledModelMuscle.getJointSet().get('walker_knee_r')
+origKnee_l = scaledModelMuscle.getJointSet().get('walker_knee_l')
+    
+#Create pin joint for right knee
+#Set parent and child locations
+locationInParent = origKnee_r.get_frames(0).get_translation()
+orientationInParent = osim.Vec3(0,math.radians(180),0)
+locationInChild = origKnee_r.get_frames(1).get_translation()
+orientationInChild = osim.Vec3(0,math.radians(180),0)
+#Get bodies for joint
+femurBody = model2D.getBodySet().get('femur_r')
+tibiaBody = model2D.getBodySet().get('tibia_r')
+#Create joint
+kneeJoint_r = osim.PinJoint('walker_knee_r', femurBody, locationInParent,
+                            orientationInParent, tibiaBody, locationInChild,
+                            orientationInChild)
+#Update additional joint parameters
+kneeJoint_r.getCoordinate().setName('knee_angle_r') #set coordinate name
+kneeJoint_r.getCoordinate().setRangeMin(origKnee_r.get_coordinates(0).getRangeMin()) #get min from old joint
+kneeJoint_r.getCoordinate().setRangeMax(origKnee_r.get_coordinates(0).getRangeMax()) #get max from old joint
+kneeJoint_r.getCoordinate().setDefaultValue(0) #set default value to zero
+kneeJoint_r.getCoordinate().setDefaultSpeedValue(0) #set default speed to zero
+kneeJoint_r.getCoordinate().set_clamped(True) #set joint to clamped
+kneeJoint_r.getCoordinate().set_locked(False) #set locked to false
+kneeJoint_r.getCoordinate().set_prescribed(False) #set prescribed to false
+
+#Create pin joint for left knee
+#Set parent and child locations
+locationInParent = origKnee_l.get_frames(0).get_translation()
+orientationInParent = osim.Vec3(0,math.radians(180),0)
+locationInChild = origKnee_l.get_frames(1).get_translation()
+orientationInChild = osim.Vec3(0,math.radians(180),0)
+#Get bodies for joint
+femurBody = model2D.getBodySet().get('femur_l')
+tibiaBody = model2D.getBodySet().get('tibia_l')
+#Create joint
+kneeJoint_l = osim.PinJoint('walker_knee_l', femurBody, locationInParent,
+                            orientationInParent, tibiaBody, locationInChild,
+                            orientationInChild)
+#Update additional joint parameters
+kneeJoint_l.getCoordinate().setName('knee_angle_l') #set coordinate name
+kneeJoint_l.getCoordinate().setRangeMin(origKnee_l.get_coordinates(0).getRangeMin()) #get min from old joint
+kneeJoint_l.getCoordinate().setRangeMax(origKnee_l.get_coordinates(0).getRangeMax()) #get max from old joint
+kneeJoint_l.getCoordinate().setDefaultValue(0) #set default value to zero
+kneeJoint_l.getCoordinate().setDefaultSpeedValue(0) #set default speed to zero
+kneeJoint_l.getCoordinate().set_clamped(True) #set joint to clamped
+kneeJoint_l.getCoordinate().set_locked(False) #set locked to false
+kneeJoint_l.getCoordinate().set_prescribed(False) #set prescribed to false
+
+#Remove existing hip joints from model
+model2D.getJointSet().remove(model2D.getJointSet().get('walker_knee_r'))
+model2D.getJointSet().remove(model2D.getJointSet().get('walker_knee_l'))
+
+#Add new hip joints
+model2D.addJoint(kneeJoint_r)
+model2D.addJoint(kneeJoint_l)
+
 #Get back joint from scaled model to work from
 origLumbar = scaledModelMuscle.getJointSet().get('back')
     
@@ -630,6 +688,24 @@ model2D.getJointSet().remove(model2D.getJointSet().get('ground_pelvis'))
 #Add new pelvis joint
 model2D.addJoint(pelvisJoint)
 
+#Update ankle joints orientation to planar
+model2D.getJointSet().get('ankle_r').get_frames(0).set_orientation(osim.Vec3(0,0,0))
+model2D.getJointSet().get('ankle_l').get_frames(0).set_orientation(osim.Vec3(0,0,0))
+model2D.getJointSet().get('ankle_r').get_frames(1).set_orientation(osim.Vec3(0,0,0))
+model2D.getJointSet().get('ankle_l').get_frames(1).set_orientation(osim.Vec3(0,0,0))
+
+#Update mtp joints orientation to planar
+model2D.getJointSet().get('mtp_r').get_frames(0).set_orientation(osim.Vec3(0,math.radians(180),0))
+model2D.getJointSet().get('mtp_l').get_frames(0).set_orientation(osim.Vec3(0,math.radians(180),0))
+model2D.getJointSet().get('mtp_r').get_frames(1).set_orientation(osim.Vec3(0,math.radians(180),0))
+model2D.getJointSet().get('mtp_l').get_frames(1).set_orientation(osim.Vec3(0,math.radians(180),0))
+
+#Update subtalar joints orientation to planar
+model2D.getJointSet().get('subtalar_r').get_frames(0).set_orientation(osim.Vec3(0,math.radians(180),0))
+model2D.getJointSet().get('subtalar_l').get_frames(0).set_orientation(osim.Vec3(0,math.radians(180),0))
+model2D.getJointSet().get('subtalar_r').get_frames(1).set_orientation(osim.Vec3(0,math.radians(180),0))
+model2D.getJointSet().get('subtalar_l').get_frames(1).set_orientation(osim.Vec3(0,math.radians(180),0))
+
 #Finalize model connections
 model2D.finalizeConnections()
 
@@ -640,8 +716,8 @@ editProcessor = osim.ModelProcessor(model2D)
 weldJoints = osim.StdVectorString()
 weldJoints.append('subtalar_r')
 weldJoints.append('subtalar_l')
-weldJoints.append('mtp_r')
-weldJoints.append('mtp_l')
+# weldJoints.append('mtp_r')
+# weldJoints.append('mtp_l')
 #Append model operator for welding
 editProcessor.append(osim.ModOpReplaceJointsWithWelds(weldJoints))
 #Process model output
@@ -759,30 +835,44 @@ osimHelper.kinematicsToStates(kinematicsFileName = 'ikResults.mot',
 # Following this step we should have 2D kinematics that match the experimental 
 # 2D GRFs coming from contact sphere estimation
 
-#Get a new instance of the model to edit
-torqueModel = osim.Model('model2D.osim')
-
 #Set model and parameters
 #Create a model processor
-modelProcessor = osim.ModelProcessor(torqueModel)
+modelProcessor = osim.ModelProcessor(osim.Model('model2D.osim'))
 #Delete muscles
 modelProcessor.append(osim.ModOpRemoveMuscles())
+
+#Get model from the processor
+torqueModel = modelProcessor.process()
+
 #Add reserves for torque actuation
-modelProcessor.append(osim.ModOpAddReserves(1000))
+#Set list of coordinates to actuate
+actuateList = ['hip_flexion_r', 'hip_flexion_l',
+               'knee_angle_r', 'knee_angle_l',
+               'ankle_angle_r', 'ankle_angle_l',
+               'mtp_angle_r', 'mtp_angle_l']
+               #'lumbar_extension'] # not needed - already there
+#Add actuators
+for aa in range(0,len(actuateList)):
+    osimHelper.addCoordinateActuator(osimModel = torqueModel,
+                                     coordName = actuateList[aa],
+                                     optForce = 10)
+
+#Finalise model connections
+torqueModel.finalizeConnections()
 
 #Define the motion tracking problem
 track = osim.MocoTrack()
 track.setName('torqueDriven_GRFtracking_2D')
 
 #Set model
-track.setModel(modelProcessor)
+track.setModel(osim.ModelProcessor(torqueModel))
 
 #Set kinematics
 tableProcessor = osim.TableProcessor('refQ.sto')
 
 #Set states reference details
 track.setStatesReference(tableProcessor) # Apply the target data to the tracking problem
-track.set_states_global_tracking_weight(5) # Default tracking weight (is changed below)
+track.set_states_global_tracking_weight(1) # Default tracking weight (is changed below)
 track.set_allow_unused_references(True) # Target data can include DoF not in this model
 track.set_track_reference_position_derivatives(True) # Track speed trajectories
 track.set_apply_tracked_states_to_guess(True) # Use target data in initial guess
@@ -795,22 +885,84 @@ track.set_final_time(osim.Storage('refQ.sto').getLastTime())
 #Pelvis and lumbar targets have arbitrarily large weights
 stateWeights = osim.MocoWeightSet()
 #Joint values
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_tx/value',1))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_ty/value',1))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_tilt/value',50))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/back/lumbar_extension/value',5))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_r/hip_flexion_r/value',25))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/walker_knee_r/knee_angle_r/value',50))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ankle_r/ankle_angle_r/value',25))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_l/hip_flexion_l/value',25))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/walker_knee_l/knee_angle_l/value',50))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ankle_l/ankle_angle_l/value',25))
-#Add to tracking problem
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_tx/value',  (1/(1*0.1000))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_ty/value',  (1/(2*0.1000))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_tilt/value',(1/(1*0.1745))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/back/lumbar_extension/value',           (1/(1*0.1745))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_r/hip_flexion_r/value',     (1/(1*0.0647))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/walker_knee_r/knee_angle_r/value',     (1/(1*0.0889))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ankle_r/ankle_angle_r/value',   (1/(1*0.0574))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/mtp_r/mtp_angle_r/value',       (1/(2*0.0873))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_l/hip_flexion_l/value',     (1/(1*0.0647))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/walker_knee_l/knee_angle_l/value',     (1/(1*0.0889))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ankle_l/ankle_angle_l/value',   (1/(1*0.0574))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/mtp_l/mtp_angle_l/value',       (1/(2*0.0873))**2))
+#Joint speeds
+w = 0.001 #Scale the generalized speed tracking errors by this constant
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_tx/speed',  w*(0/(1*0.1000))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_ty/speed',  w*(0/(2*0.1000))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_tilt/speed',w*(0/(1*0.0585))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/back/lumbar_extension/speed',           w*(0/(1*0.1745))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_r/hip_flexion_r/speed',     w*(1/(1*0.0647))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/walker_knee_r/knee_angle_r/speed',     w*(1/(1*0.0889))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ankle_r/ankle_angle_r/speed',   w*(1/(1*0.0574))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/mtp_r/mtp_angle_r/speed',       w*(1/(1*0.0873))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_l/hip_flexion_l/speed',     w*(1/(1*0.0647))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/walker_knee_l/knee_angle_l/speed',     w*(1/(1*0.0889))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ankle_l/ankle_angle_l/speed',   w*(1/(1*0.0574))**2))
+stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/mtp_l/mtp_angle_l/speed',       w*(1/(1*0.0873))**2))
+# #Add to tracking problem
 track.set_states_weight_set(stateWeights)
 
 #Define the Moco study and problem
 study = track.initialize()
 problem = study.updProblem()
+
+#Define the periodicity goal
+#Keeping in mind that the simulation is of a half gait cycle, similar to that
+#proposed in Umberger's Moco examples
+periodicityGoal = osim.MocoPeriodicityGoal('symmetryGoal')
+problem.addGoal(periodicityGoal)
+torqueModel.initSystem()
+
+#Set symmetric coordinate values
+#Set symmetry pairs
+symPairs = [['hip_flexion_r','hip_flexion_l'],
+            ['knee_angle_r','knee_angle_l'],
+            ['ankle_angle_r','ankle_angle_l'],
+            ['mtp_angle_r','mtp_angle_l']]
+for ii in range(0,len(symPairs)):
+    #Set the jointsets depending on current pair
+    if 'hip' in symPairs[ii][0]:
+        jointName = ['/jointset/hip_r/','/jointset/hip_l/']
+    elif 'knee' in symPairs[ii][0]:
+        jointName = ['/jointset/walker_knee_r/','/jointset/walker_knee_l/']
+    elif 'ankle' in symPairs[ii][0]:
+        jointName = ['/jointset/ankle_r/','/jointset/ankle_l/']
+    elif 'mtp' in symPairs[ii][0]:
+        jointName = ['/jointset/mtp_r/','/jointset/mtp_l/']
+    
+    #Set the pair for coordinate value
+    pair = osim.MocoPeriodicityGoalPair(jointName[0]+symPairs[ii][0]+'/value',
+                                        jointName[1]+symPairs[ii][1]+'/value')
+    #Add to the goal
+    periodicityGoal.addStatePair(pair)
+    
+    #Set the pair for coordinate speed
+    pair = osim.MocoPeriodicityGoalPair(jointName[0]+symPairs[ii][0]+'/speed',
+                                        jointName[1]+symPairs[ii][1]+'/speed')
+    #Add to the goal
+    periodicityGoal.addStatePair(pair)
+
+#Singular periodic kinematics
+periodicityGoal.addStatePair(osim.MocoPeriodicityGoalPair('/jointset/ground_pelvis/pelvis_ty/value'))
+periodicityGoal.addStatePair(osim.MocoPeriodicityGoalPair('/jointset/ground_pelvis/pelvis_tilt/value'))
+periodicityGoal.addStatePair(osim.MocoPeriodicityGoalPair('/jointset/back/lumbar_extension/value'))
+        
+#Symmetric coordinate actuator controls
+periodicityGoal.addControlPair(osim.MocoPeriodicityGoalPair('/forceset/tau_lumbar_ext'))
+for aa in range(0,len(actuateList)):
+    periodicityGoal.addControlPair(osim.MocoPeriodicityGoalPair('/forceset/tau_'+actuateList[aa]))
 
 #Regularization term on MocoTrack problem (minimize squared muscle excitations)
 effort = osim.MocoControlGoal.safeDownCast(problem.updGoal('control_effort'))
@@ -827,10 +979,12 @@ problem.setStateInfo('/jointset/walker_knee_r/knee_angle_r/value', [math.radians
 problem.setStateInfo('/jointset/walker_knee_l/knee_angle_l/value', [math.radians(0), math.radians(140)])
 problem.setStateInfo('/jointset/ankle_r/ankle_angle_r/value', [math.radians(-40), math.radians(30)])
 problem.setStateInfo('/jointset/ankle_l/ankle_angle_l/value', [math.radians(-40), math.radians(30)])
+problem.setStateInfo('/jointset/mtp_r/mtp_angle_r/value', [math.radians(-60), math.radians(60)])
+problem.setStateInfo('/jointset/mtp_l/mtp_angle_l/value', [math.radians(-60), math.radians(60)])
 
 #Add contact tracking goal
 #Create GRF tracking goal
-contactTracking = osim.MocoContactTrackingGoal('contact',1.0)
+contactTracking = osim.MocoContactTrackingGoal('contact',1)
 #Set external loads
 contactTracking.setExternalLoadsFile('refGRF_2D.xml')
 #Set right foot tracking
@@ -894,13 +1048,123 @@ contact_l.append('/forceset/contactMH3_l')
 contact_l.append('/forceset/contactMH5_l')
 contact_l.append('/forceset/contactHallux_l')
 contact_l.append('/forceset/contactOtherToes_l')
-#Crate forces table
-externalForcesTableFlat = osim.createExternalLoadsTableForGait(modelProcessor.process(),
+#Create forces table
+externalForcesTableFlat = osim.createExternalLoadsTableForGait(torqueModel,
                                                                grfTorqueSolution,
                                                                contact_r,
                                                                contact_l)
-#WRite table to file
+#Write table to file
 osim.writeTableToFile(externalForcesTableFlat,'predictGRF_2D.sto')
+
+##### TODO: compare kinematics and GRFs in figure
+
+# %% Torque driven predictive at higher speeds
+
+#Define the study
+study = osim.MocoStudy()
+study.setName('torqueDriven_prediction')
+
+#Get problem
+problem = study.updProblem()
+
+#Set the model
+problem.setModelProcessor(osim.ModelProcessor(torqueModel))
+
+#Define the periodicity goal
+#Keeping in mind that the simulation is of a half gait cycle, similar to that
+#proposed in Umberger's Moco examples
+periodicityGoal = osim.MocoPeriodicityGoal('symmetryGoal')
+problem.addGoal(periodicityGoal)
+torqueModel.initSystem()
+
+#Set symmetric coordinate values
+#Set symmetry pairs
+symPairs = [['hip_flexion_r','hip_flexion_l'],
+            ['knee_angle_r','knee_angle_l'],
+            ['ankle_angle_r','ankle_angle_l'],
+            ['mtp_angle_r','mtp_angle_l']]
+for ii in range(0,len(symPairs)):
+    #Set the jointsets depending on current pair
+    if 'hip' in symPairs[ii][0]:
+        jointName = ['/jointset/hip_r/','/jointset/hip_l/']
+    elif 'knee' in symPairs[ii][0]:
+        jointName = ['/jointset/walker_knee_r/','/jointset/walker_knee_l/']
+    elif 'ankle' in symPairs[ii][0]:
+        jointName = ['/jointset/ankle_r/','/jointset/ankle_l/']
+    elif 'mtp' in symPairs[ii][0]:
+        jointName = ['/jointset/mtp_r/','/jointset/mtp_l/']
+    
+    #Set the pair for coordinate value
+    pair = osim.MocoPeriodicityGoalPair(jointName[0]+symPairs[ii][0]+'/value',
+                                        jointName[1]+symPairs[ii][1]+'/value')
+    #Add to the goal
+    periodicityGoal.addStatePair(pair)
+    
+    #Set the pair for coordinate speed
+    pair = osim.MocoPeriodicityGoalPair(jointName[0]+symPairs[ii][0]+'/speed',
+                                        jointName[1]+symPairs[ii][1]+'/speed')
+    #Add to the goal
+    periodicityGoal.addStatePair(pair)
+
+#Singular periodic kinematics
+periodicityGoal.addStatePair(osim.MocoPeriodicityGoalPair('/jointset/ground_pelvis/pelvis_ty/value'))
+periodicityGoal.addStatePair(osim.MocoPeriodicityGoalPair('/jointset/ground_pelvis/pelvis_tilt/value'))
+periodicityGoal.addStatePair(osim.MocoPeriodicityGoalPair('/jointset/back/lumbar_extension/value'))
+        
+#Symmetric coordinate actuator controls
+periodicityGoal.addControlPair(osim.MocoPeriodicityGoalPair('/forceset/tau_lumbar_ext'))
+for aa in range(0,len(actuateList)):
+    periodicityGoal.addControlPair(osim.MocoPeriodicityGoalPair('/forceset/tau_'+actuateList[aa]))
+
+#Prescribed average gait speed
+#Note this is upped from trial which is ~6.6
+speedGoal = osim.MocoAverageSpeedGoal('speed')
+problem.addGoal(speedGoal)
+speedGoal.set_desired_average_speed(8.0)
+
+#Set for effort over distance
+effortGoal = osim.MocoControlGoal('effort', 10)
+problem.addGoal(effortGoal)
+effortGoal.setExponent(2)
+effortGoal.setDivideByDisplacement(True)
+
+#Set joint coordinate bounds
+problem.setStateInfo('/jointset/ground_pelvis/pelvis_tx/value', [0, 5])
+problem.setStateInfo('/jointset/ground_pelvis/pelvis_ty/value', [0.75, 1.25])
+problem.setStateInfo('/jointset/ground_pelvis/pelvis_tilt/value', [math.radians(-20), math.radians(10)])
+problem.setStateInfo('/jointset/back/lumbar_extension/value', [math.radians(-30), math.radians(5)])
+problem.setStateInfo('/jointset/hip_r/hip_flexion_r/value', [math.radians(-30), math.radians(90)])
+problem.setStateInfo('/jointset/hip_l/hip_flexion_l/value', [math.radians(-30), math.radians(90)])
+problem.setStateInfo('/jointset/walker_knee_r/knee_angle_r/value', [math.radians(0), math.radians(140)])
+problem.setStateInfo('/jointset/walker_knee_l/knee_angle_l/value', [math.radians(0), math.radians(140)])
+problem.setStateInfo('/jointset/ankle_r/ankle_angle_r/value', [math.radians(-40), math.radians(30)])
+problem.setStateInfo('/jointset/ankle_l/ankle_angle_l/value', [math.radians(-40), math.radians(30)])
+problem.setStateInfo('/jointset/mtp_r/mtp_angle_r/value', [math.radians(-60), math.radians(60)])
+problem.setStateInfo('/jointset/mtp_l/mtp_angle_l/value', [math.radians(-60), math.radians(60)])
+
+#Define the solver and set its options
+solver = osim.MocoCasADiSolver.safeDownCast(study.updSolver())
+#solver.set_multibody_dynamics_mode('implicit')
+#solver.set_minimize_implicit_multibody_accelerations(true)
+#solver.set_implicit_multibody_accelerations_weight(0.00001)
+solver.set_optim_max_iterations(1000)
+solver.set_num_mesh_intervals(100)
+solver.set_optim_constraint_tolerance(1e-2) ####TODO: might need to be lower
+solver.set_optim_convergence_tolerance(1e-2) ####TODO: might need to be lower
+# solver.set_minimize_implicit_auxiliary_derivatives(True)
+# solver.set_implicit_auxiliary_derivatives_weight(0.001)
+solver.resetProblem(problem)
+solver.setGuess(grfTorqueSolution) #Use tracking solution as initial guess
+
+#Solve!
+torquePredictionSolution = study.solve()
+
+#### Torque prediction does what it's meant to, but is
+#### not that realistic
+
+#### Try muscle driven tracking sim of torque driven kinematics...
+
+##### TODO: ensure unlocking speeds for joint coordinates and + actuator forces
 
 
 # %% Run a 3D tracking simulation without GRF tracking

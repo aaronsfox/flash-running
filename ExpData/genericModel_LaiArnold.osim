@@ -2823,11 +2823,11 @@
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-							<range>-0.52359878000000004 0.52359878000000004</range>
+							<range>-1.0472 1.0472</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
 							<clamped>true</clamped>
 							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-							<locked>true</locked>
+							<locked>false</locked>
 							<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
 							<prescribed_function />
 							<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
@@ -3406,11 +3406,11 @@
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-							<range>-0.52359878000000004 0.52359878000000004</range>
+							<range>-1.0472 1.0472</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
 							<clamped>true</clamped>
 							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-							<locked>true</locked>
+							<locked>false</locked>
 							<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
 							<prescribed_function />
 							<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
@@ -12637,49 +12637,49 @@
 				</Marker>
 				<Marker name="RMT5">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
+					<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.17877499999999999 0.033578999999999998 0.047355000000000001</location>
+					<location>-2.4999999999941735e-05 0.035578999999999993 0.046274999999999976</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
 				<Marker name="fRMT5">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
+					<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.17877499999999999 -0.0034920699999999999 0.047355000000000001</location>
+					<location>-2.4999999999941735e-05 -0.0014920699999999955 0.046274999999999976</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
 				<Marker name="RMT1">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
+					<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.19786400000000001 0.033578999999999998 -0.0261885</location>
+					<location>0.019064000000000081 0.035578999999999993 -0.027268499999999973</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
 				<Marker name="fRMT1">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
+					<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.19786300000000001 -0.0034920699999999999 -0.0261885</location>
+					<location>0.01906300000000008 -0.0014920699999999994 -0.027268499999999977</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
 				<Marker name="RMT3">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
+					<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.18831899999999999 0.033578999999999998 0.0105833</location>
+					<location>0.0095190000000000552 0.035578999999999986 0.0095033000000000045</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
 				<Marker name="fRMT3">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
+					<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.18831899999999999 -0.0034920699999999999 0.010583250000000001</location>
+					<location>0.0095190000000000552 -0.0014920699999999977 0.0095032500000000013</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
@@ -12813,49 +12813,49 @@
 				</Marker>
 				<Marker name="LMT5">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
+					<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.17877499999999999 0.033578999999999998 -0.047355000000000001</location>
+					<location>-2.4999999999997247e-05 0.035578999999999986 -0.046274999999999969</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
 				<Marker name="fLMT5">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
+					<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.17877499999999999 -0.0034920699999999999 -0.047355000000000001</location>
+					<location>-2.4999999999997247e-05 -0.0014920699999999964 -0.046274999999999962</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
+					<fixed>false</fixed>
 				</Marker>
 				<Marker name="LMT1">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
+					<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.19786300000000001 0.033578999999999998 0.0261885</location>
+					<location>0.019063000000000024 0.035578999999999993 0.027268499999999966</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
 				<Marker name="fLMT1">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
+					<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.19786300000000001 -0.0034920699999999999 0.0261885</location>
+					<location>0.019063000000000024 -0.0014920699999999986 0.027268499999999966</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
 				<Marker name="LMT3">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
+					<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.18831899999999999 0.033578999999999998 -0.0105833</location>
+					<location>0.0095189999999999997 0.035578999999999993 -0.0095032999999999992</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
 				<Marker name="fLMT3">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
+					<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.18831899999999999 -0.0034920699999999999 -0.010583250000000001</location>
+					<location>0.0095189999999999997 -0.0014920699999999973 -0.0095032499999999978</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
@@ -12871,7 +12871,7 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.031307527581931796 0.010435842527310599 0</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.035000000000000003</radius>
+					<radius>0.040</radius>
 				</ContactSphere>
 				<ContactSphere name="mh1_r">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
@@ -12879,7 +12879,7 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.182 -0.0080999999999999996 -0.023</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.014999999999999999</radius>
+					<radius>0.020</radius>
 				</ContactSphere>
 				<ContactSphere name="mh3_r">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
@@ -12887,7 +12887,7 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.1658 -0.0080999999999999996 0.011599999999999999</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.014999999999999999</radius>
+					<radius>0.020</radius>
 				</ContactSphere>
 				<ContactSphere name="mh5_r">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
@@ -12895,7 +12895,7 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.14299999999999999 -0.0080999999999999996 0.036999999999999998</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.014999999999999999</radius>
+					<radius>0.020</radius>
 				</ContactSphere>
 				<ContactSphere name="hallux_r">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
@@ -12903,7 +12903,7 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.0562 -0.010200000000000001 -0.018100000000000002</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.014999999999999999</radius>
+					<radius>0.020</radius>
 				</ContactSphere>
 				<ContactSphere name="othertoes_r">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
@@ -12911,7 +12911,7 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.0441 -0.0060000000000000001 0.024199999999999999</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.014999999999999999</radius>
+					<radius>0.020</radius>
 				</ContactSphere>
 				<ContactSphere name="heel_l">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
@@ -12919,7 +12919,7 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.031307527581931796 0.010435842527310599 0</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.035000000000000003</radius>
+					<radius>0.040</radius>
 				</ContactSphere>
 				<ContactSphere name="mh1_l">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
@@ -12927,7 +12927,7 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.182 -0.0080999999999999996 0.023</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.014999999999999999</radius>
+					<radius>0.020</radius>
 				</ContactSphere>
 				<ContactSphere name="mh3_l">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
@@ -12935,7 +12935,7 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.1658 -0.0080999999999999996 -0.011599999999999999</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.014999999999999999</radius>
+					<radius>0.020</radius>
 				</ContactSphere>
 				<ContactSphere name="mh5_l">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
@@ -12943,7 +12943,7 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.14299999999999999 -0.0080999999999999996 -0.036999999999999998</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.014999999999999999</radius>
+					<radius>0.020</radius>
 				</ContactSphere>
 				<ContactSphere name="hallux_l">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
@@ -12951,7 +12951,7 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.0562 -0.010200000000000001 0.018100000000000002</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.014999999999999999</radius>
+					<radius>0.020</radius>
 				</ContactSphere>
 				<ContactSphere name="othertoes_l">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
@@ -12959,7 +12959,7 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.0441 -0.0060000000000000001 -0.024199999999999999</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.014999999999999999</radius>
+					<radius>0.020</radius>
 				</ContactSphere>
 				<ContactHalfSpace name="floor">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->

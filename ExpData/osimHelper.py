@@ -847,6 +847,53 @@ def kinematicsToStates(kinematicsFileName = None, osimModelFileName = None,
     #Write the states storage object to file
     statesStorage.printToXML(outputFileName)
     
+# %% addCoordinateActuator
+
+def addCoordinateActuator(osimModel = None,
+                          coordName = None,
+                          optForce = 1000,
+                          controlVals = None):
+    
+    # Convenience function for adding torque coordinate actuators to model
+    #
+    # Input:    osimModel - model object to add actuator to
+    #           coordName - name of coordinate to actuate
+    #           optForce - optimal force value for coordinate actuator
+    #           controlVals - min and maximum control values for actuator (if None Inf is used)
+    
+    #Input checks
+    if osimModel is None:
+        raise ValueError('A model object is required.')
+        
+    if coordName is None:
+        raise ValueError('A coordinate name is required.')
+    
+    #Get coordinate set from model
+    coordSet = osimModel.updCoordinateSet()
+    
+    #Create actuator
+    actu = osim.CoordinateActuator()
+    
+    #Set actuator name
+    actu.setName('tau_'+coordName)
+    
+    #Set coordinate for actuator
+    actu.setCoordinate(coordSet.get(coordName))
+    
+    #Set optimal force for actuator
+    actu.setOptimalForce(optForce)
+    
+    #Set max and min controls
+    if controlVals is None:
+        actu.setMinControl(np.inf*-1)
+        actu.setMaxControl(np.inf)
+    else:
+        actu.setMinControl(controlVals[0])
+        actu.setMaxControl(controlVals[1])
+        
+    #Add actuator to model
+    osimModel.updForceSet().cloneAndAppend(actu)
+    
 # %% mm_to_m
 
 def mm_to_m(table, label):
@@ -893,7 +940,7 @@ def osimArrayToList(array):
 
     return temp
 
-# %% 
+# %% inverseSolutionToTrackGuess
     
 def inverseSolutionToTrackGuess(guessFile = None, mocoSolver = None):
         

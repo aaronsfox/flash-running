@@ -1184,7 +1184,7 @@
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
 							<socket_frame>..</socket_frame>
 							<!--Scale factors in X, Y, Z directions respectively.-->
-							<scale_factors>0.94285410165277728 1.4466690646233262 1.0229644088418914</scale_factors>
+							<scale_factors>0.94285410165277705 1.4466690646233262 1.4427268687382455</scale_factors>
 							<!--Default appearance attributes for this Geometry-->
 							<Appearance>
 								<!--Flag indicating whether the associated Geometry is visible or hidden.-->
@@ -1206,7 +1206,7 @@
 					<!--The mass of the body (kg)-->
 					<mass>1.1560063792955193</mass>
 					<!--The location (Vec3) of the mass center in the body frame.-->
-					<mass_center>0.094285410165277736 0.043400071938699783 0</mass_center>
+					<mass_center>0.094285410165277708 0.043400071938699783 0</mass_center>
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
 					<inertia>0.0012947271448109816 0.0036067399034020202 0.0037917009240893036 0 0 0</inertia>
 				</Body>
@@ -1224,7 +1224,7 @@
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
 							<socket_frame>..</socket_frame>
 							<!--Scale factors in X, Y, Z directions respectively.-->
-							<scale_factors>0.94285410165277728 1.4466690646233262 1.4427268687382444</scale_factors>
+							<scale_factors>0.94285410165277705 1.4466690646233262 1.4427268687382455</scale_factors>
 							<!--Default appearance attributes for this Geometry-->
 							<Appearance>
 								<!--Flag indicating whether the associated Geometry is visible or hidden.-->
@@ -1246,7 +1246,7 @@
 					<!--The mass of the body (kg)-->
 					<mass>0.20031278540432756</mass>
 					<!--The location (Vec3) of the mass center in the body frame.-->
-					<mass_center>0.032622751917186089 0.008680014387739958 -0.02524772020291928</mass_center>
+					<mass_center>0.032622751917186082 0.008680014387739958 -0.025247720202919297</mass_center>
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
 					<inertia>9.2480510343641542e-05 0.00018496102068728308 0.00092480510343641547 0 0 0</inertia>
 				</Body>
@@ -1919,7 +1919,7 @@
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
 							<socket_frame>..</socket_frame>
 							<!--Scale factors in X, Y, Z directions respectively.-->
-							<scale_factors>0.94821833977203651 1.4562734623411704 1.0183489740942635</scale_factors>
+							<scale_factors>0.94821833977203629 1.4562734623411704 1.4532661080418965</scale_factors>
 							<!--Default appearance attributes for this Geometry-->
 							<Appearance>
 								<!--Flag indicating whether the associated Geometry is visible or hidden.-->
@@ -1941,7 +1941,7 @@
 					<!--The mass of the body (kg)-->
 					<mass>1.1560063792955193</mass>
 					<!--The location (Vec3) of the mass center in the body frame.-->
-					<mass_center>0.094821833977203659 0.043688203870235108 0</mass_center>
+					<mass_center>0.094821833977203632 0.043688203870235108 0</mass_center>
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
 					<inertia>0.0012947271448109816 0.0036067399034020202 0.0037917009240893036 0 0 0</inertia>
 				</Body>
@@ -1959,7 +1959,7 @@
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
 							<socket_frame>..</socket_frame>
 							<!--Scale factors in X, Y, Z directions respectively.-->
-							<scale_factors>0.94821833977203651 1.4562734623411704 1.4532661080418949</scale_factors>
+							<scale_factors>0.94821833977203629 1.4562734623411704 1.4532661080418965</scale_factors>
 							<!--Default appearance attributes for this Geometry-->
 							<Appearance>
 								<!--Flag indicating whether the associated Geometry is visible or hidden.-->
@@ -1981,7 +1981,7 @@
 					<!--The mass of the body (kg)-->
 					<mass>0.20031278540432756</mass>
 					<!--The location (Vec3) of the mass center in the body frame.-->
-					<mass_center>0.03280835455611246 0.0087376407740470223 0.025432156890733165</mass_center>
+					<mass_center>0.032808354556112453 0.0087376407740470223 0.025432156890733189</mass_center>
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
 					<inertia>9.2480510343641542e-05 0.00018496102068728308 0.00092480510343641547 0 0 0</inertia>
 				</Body>
@@ -2868,11 +2868,11 @@
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-							<range>-0.52359878000000004 0.52359878000000004</range>
+							<range>-1.0471999999999999 1.0471999999999999</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
 							<clamped>true</clamped>
 							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-							<locked>true</locked>
+							<locked>false</locked>
 							<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
 							<prescribed_function />
 							<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
@@ -2892,7 +2892,7 @@
 							<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
 							<socket_parent>/bodyset/calcn_r</socket_parent>
 							<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
-							<translation>0.16858231337551657 -0.0028933381292466525 0.0011048015615492427</translation>
+							<translation>0.16858231337551652 -0.0028933381292466525 0.0015581450182373053</translation>
 							<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
 							<orientation>-3.1415899999999999 0.61990100000000004 0</orientation>
 						</PhysicalOffsetFrame>
@@ -3496,11 +3496,11 @@
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-							<range>-0.52359878000000004 0.52359878000000004</range>
+							<range>-1.0471999999999999 1.0471999999999999</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
 							<clamped>true</clamped>
 							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-							<locked>true</locked>
+							<locked>false</locked>
 							<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
 							<prescribed_function />
 							<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
@@ -3520,7 +3520,7 @@
 							<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
 							<socket_parent>/bodyset/calcn_l</socket_parent>
 							<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
-							<translation>0.16954143915124012 -0.0029125469246823409 -0.0010998168920218045</translation>
+							<translation>0.16954143915124006 -0.0029125469246823409 -0.0015695273966852483</translation>
 							<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
 							<orientation>-3.1415899999999999 -0.61990100000000004 0</orientation>
 						</PhysicalOffsetFrame>
@@ -4834,25 +4834,25 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.086648291941890221 0.052080086326439741 0.00081837152707351323</location>
+									<location>0.086648291941890207 0.052080086326439741 0.0011541814949905965</location>
 								</PathPoint>
 								<PathPoint name="edl_r-P4">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.15236522282708881 0.0079566798554282937 0.013298537314944589</location>
+									<location>0.15236522282708875 0.0079566798554282937 0.018755449293597192</location>
 								</PathPoint>
 								<PathPoint name="edl_r-P5">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.00028285623049583314 0.0067993446037296337 0.022073721091695139</location>
+									<location>0.00028285623049583309 0.0067993446037296337 0.022073721091695156</location>
 								</PathPoint>
 								<PathPoint name="edl_r-P6">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.041768436703218031 -0.00057866762584933052 0.03606817171845611</location>
+									<location>0.041768436703218025 -0.00057866762584933052 0.036068171718456138</location>
 								</PathPoint>
 							</objects>
 							<groups />
@@ -4873,9 +4873,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>603.49815560000002</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.073050121190874284</optimal_fiber_length>
+					<optimal_fiber_length>0.072882813826290749</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.38883667223013257</tendon_slack_length>
+					<tendon_slack_length>0.38794611602264495</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.21825824999999999</pennation_angle_at_optimal>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
@@ -4954,31 +4954,31 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.091456847860319393 0.056275426613847386 -0.021584549026563909</location>
+									<location>0.091456847860319379 0.056275426613847386 -0.030441536930376982</location>
 								</PathPoint>
 								<PathPoint name="ehl_r-P5">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.12191103534370409 0.044702074096860778 -0.026290185307236612</location>
+									<location>0.12191103534370407 0.044702074096860778 -0.03707808052657291</location>
 								</PathPoint>
 								<PathPoint name="ehl_r-P6">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.16349090122659157 0.020108699998264232 -0.028643003447572962</location>
+									<location>0.16349090122659155 0.020108699998264232 -0.040396352324670877</location>
 								</PathPoint>
 								<PathPoint name="ehl_r-P7">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.028097052229252763 0.0059313431649556381 -0.03534680828408699</location>
+									<location>0.028097052229252757 0.0059313431649556381 -0.035346808284087018</location>
 								</PathPoint>
 								<PathPoint name="ehl_r-P8">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.053082685923051362 0.0049186748197193085 -0.026834719758531345</location>
+									<location>0.053082685923051348 0.0049186748197193085 -0.026834719758531366</location>
 								</PathPoint>
 							</objects>
 							<groups />
@@ -4999,9 +4999,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>285.86754739999998</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.077442610480209603</optimal_fiber_length>
+					<optimal_fiber_length>0.078331390324120329</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.33834063556109067</tendon_slack_length>
+					<tendon_slack_length>0.34222364435170333</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.19726811</pennation_angle_at_optimal>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
@@ -5074,37 +5074,37 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.041108438832061091 0.045570075535634774 -0.028643003447572962</location>
+									<location>0.041108438832061077 0.045570075535634774 -0.040396352324670877</location>
 								</PathPoint>
 								<PathPoint name="fdl_r-P4">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.066754070397016627 0.025461375537370542 -0.026903963952541746</location>
+									<location>0.066754070397016613 0.025461375537370542 -0.037943716647815859</location>
 								</PathPoint>
 								<PathPoint name="fdl_r-P5">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.15632521005403047 -0.011718019423448942 0.011866387142565939</location>
+									<location>0.15632521005403044 -0.011718019423448942 0.016735631677363645</location>
 								</PathPoint>
 								<PathPoint name="fdl_r-P6">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.0017914227931402767 -0.011284018704061944 0.021208084970452193</location>
+									<location>-0.0017914227931402763 -0.011284018704061944 0.021208084970452207</location>
 								</PathPoint>
 								<PathPoint name="fdl_r-P7">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.026871341897104155 -0.010271350358825617 0.031018627677872251</location>
+									<location>0.026871341897104148 -0.010271350358825617 0.031018627677872276</location>
 								</PathPoint>
 								<PathPoint name="fdl_r-P8">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.041579865882887479 -0.008680014387739958 0.034913990223465516</location>
+									<location>0.041579865882887465 -0.008680014387739958 0.034913990223465544</location>
 								</PathPoint>
 							</objects>
 							<groups />
@@ -5125,9 +5125,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>423.17704918032803</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.046594050591263321</optimal_fiber_length>
+					<optimal_fiber_length>0.047432970531889058</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.39570766035985672</tendon_slack_length>
+					<tendon_slack_length>0.40283232633591348</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.22483914999999999</pennation_angle_at_optimal>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
@@ -5200,31 +5200,31 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.035262743401813873 0.039928066183603804 -0.024653442253089585</location>
+									<location>0.035262743401813866 0.039928066183603804 -0.034769717536591714</location>
 								</PathPoint>
 								<PathPoint name="fhl_r-P4">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.097868255751558289 0.0098373496394386171 -0.026187888866352423</location>
+									<location>0.097868255751558261 0.0098373496394386171 -0.036933807839699087</location>
 								</PathPoint>
 								<PathPoint name="fhl_r-P5">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.16273661794526936 -0.0076673460425036293 -0.027517742597846881</location>
+									<location>0.16273661794526934 -0.0076673460425036293 -0.038809352769058808</location>
 								</PathPoint>
 								<PathPoint name="fhl_r-P6">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.014614238575618048 -0.0092586820135892884 -0.038232262021563476</location>
+									<location>0.014614238575618044 -0.0092586820135892884 -0.038232262021563504</location>
 								</PathPoint>
 								<PathPoint name="fhl_r-P7">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.052988400512886086 -0.014756024459157928 -0.026113356324162226</location>
+									<location>0.052988400512886072 -0.014756024459157928 -0.026113356324162246</location>
 								</PathPoint>
 							</objects>
 							<groups />
@@ -5245,9 +5245,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>907.83934426229405</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.05416090398227822</optimal_fiber_length>
+					<optimal_fiber_length>0.054300809925537027</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.36416237598236045</tendon_slack_length>
+					<tendon_slack_length>0.36510306339643778</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.25802551000000001</pennation_angle_at_optimal>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
@@ -5314,7 +5314,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.0041485580472722201 0.044846741003323115 -0.0054217113668620243</location>
+									<location>0.0041485580472722192 0.044846741003323115 -0.0076464524043127011</location>
 								</PathPoint>
 							</objects>
 							<groups />
@@ -5352,9 +5352,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>1575.0590163934401</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.075535774025167882</optimal_fiber_length>
+					<optimal_fiber_length>0.07556274761224295</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.40942578964366355</tendon_slack_length>
+					<tendon_slack_length>0.40957199430404151</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.21022682000000001</pennation_angle_at_optimal>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
@@ -5421,7 +5421,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.0041485580472722201 0.044846741003323115 -0.0054217113668620243</location>
+									<location>0.0041485580472722192 0.044846741003323115 -0.0076464524043127011</location>
 								</PathPoint>
 							</objects>
 							<groups />
@@ -5459,9 +5459,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>3115.5147540983598</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.064550347116165793</optimal_fiber_length>
+					<optimal_fiber_length>0.064529761202672675</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.42340651413485025</tendon_slack_length>
+					<tendon_slack_length>0.42327148449888696</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.16568155000000001</pennation_angle_at_optimal>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
@@ -6629,13 +6629,13 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.044408428187845815 0.039060064744829807 0.02383507072601607</location>
+									<location>0.044408428187845801 0.039060064744829807 0.03361553604160112</location>
 								</PathPoint>
 								<PathPoint name="perbrev_r-P5">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.063831222681893021 0.031682052515250844 0.035087679223276873</location>
+									<location>0.063831222681893007 0.031682052515250844 0.049485531597721816</location>
 								</PathPoint>
 							</objects>
 							<groups />
@@ -6656,9 +6656,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>521.20159880000006</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.047807300322602636</optimal_fiber_length>
+					<optimal_fiber_length>0.049663730337748624</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.15535006876020199</tendon_slack_length>
+					<tendon_slack_length>0.16138254766102547</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.20523611999999999</pennation_angle_at_optimal>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
@@ -6737,25 +6737,25 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.041297009652391643 0.0332733884863365 0.022607513435405801</location>
+									<location>0.041297009652391636 0.0332733884863365 0.031884263799115228</location>
 								</PathPoint>
 								<PathPoint name="perlong_r-P5">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.064208364322554126 0.015334692085007259 0.029052189211109719</location>
+									<location>0.064208364322554112 0.015334692085007259 0.040973443072166174</location>
 								</PathPoint>
 								<PathPoint name="perlong_r-P6">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.080331169460816629 0.009982016545900951 0.01207098002433432</location>
+									<location>0.080331169460816601 0.009982016545900951 0.017024177051111297</location>
 								</PathPoint>
 								<PathPoint name="perlong_r-P7">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.11342534842882911 0.012296687049298274 -0.018822545122690802</location>
+									<location>0.11342534842882908 0.012296687049298274 -0.026546174384783718</location>
 								</PathPoint>
 							</objects>
 							<groups />
@@ -6776,9 +6776,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>1115.3714213999999</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.05418351328596481</optimal_fiber_length>
+					<optimal_fiber_length>0.056915389134461244</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.35434819106827248</tendon_slack_length>
+					<tendon_slack_length>0.37221405480488196</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.24795247000000001</pennation_angle_at_optimal>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
@@ -7481,7 +7481,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.0041485580472722201 0.044846741003323115 -0.0054217113668620243</location>
+									<location>0.0041485580472722192 0.044846741003323115 -0.0076464524043127011</location>
 								</PathPoint>
 							</objects>
 							<groups />
@@ -7502,9 +7502,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>6194.8426229508204</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.047714972690195825</optimal_fiber_length>
+					<optimal_fiber_length>0.047722296903122643</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.3051047174178772</tendon_slack_length>
+					<tendon_slack_length>0.30515155076576267</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.38142888000000003</pennation_angle_at_optimal>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
@@ -7685,7 +7685,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.10993678825271383 0.025750709350295206 -0.031200414469677688</location>
+									<location>0.1099367882527138 0.025750709350295206 -0.044003169496516489</location>
 								</PathPoint>
 							</objects>
 							<groups />
@@ -7706,9 +7706,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>1227.4524590163901</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.073757675655599306</optimal_fiber_length>
+					<optimal_fiber_length>0.074441019380643833</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.25967564266053572</tendon_slack_length>
+					<tendon_slack_length>0.26208146306338503</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.19518281000000001</pennation_angle_at_optimal>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
@@ -7781,13 +7781,13 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.039317016038920814 0.048318746758419094 -0.029256782092878096</location>
+									<location>0.039317016038920807 0.048318746758419094 -0.041261988445913819</location>
 								</PathPoint>
 								<PathPoint name="tibpost_r-P4">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.072788336647594404 0.02300203812751089 -0.02874529988845715</location>
+									<location>0.07278833664759439 0.02300203812751089 -0.040540625011544699</location>
 								</PathPoint>
 							</objects>
 							<groups />
@@ -7808,9 +7808,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>1730.1540983606501</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.040660546313934121</optimal_fiber_length>
+					<optimal_fiber_length>0.040998489667513995</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.30202784376553043</tendon_slack_length>
+					<tendon_slack_length>0.30453809784840891</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.22648906999999999</pennation_angle_at_optimal>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
@@ -9023,25 +9023,25 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.087141265425050157 0.052425844644282127 -0.00081467917927541083</location>
+									<location>0.08714126542505013 0.052425844644282127 -0.0011626128864335172</location>
 								</PathPoint>
 								<PathPoint name="edl_l-P4">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.1532320837071611 0.0080095040428764374 -0.013238536663225425</location>
+									<location>0.15323208370716107 0.0080095040428764374 -0.018892459404544655</location>
 								</PathPoint>
 								<PathPoint name="edl_l-P5">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.00028446550193161093 0.0068444852730035009 -0.022234971453040993</location>
+									<location>0.00028446550193161088 0.0068444852730035009 -0.022234971453041014</location>
 								</PathPoint>
 								<PathPoint name="edl_l-P6">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.042006072451901216 -0.00058250938493646816 -0.036331652701047372</location>
+									<location>0.042006072451901209 -0.00058250938493646816 -0.036331652701047414</location>
 								</PathPoint>
 							</objects>
 							<groups />
@@ -9062,9 +9062,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>603.49815560000002</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.072726652200824971</optimal_fiber_length>
+					<optimal_fiber_length>0.072549748423077973</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.38711488719254483</tendon_slack_length>
+					<tendon_slack_length>0.38617325047623674</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.21825824999999999</pennation_angle_at_optimal>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
@@ -9143,31 +9143,31 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.09197717895788754 0.056649037685071527 0.021487163353388961</location>
+									<location>0.091977178957887526 0.056649037685071527 0.030663914879684017</location>
 								</PathPoint>
 								<PathPoint name="ehl_l-P5">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.12260463133252432 0.044998849986342168 0.026171568634222573</location>
+									<location>0.12260463133252429 0.044998849986342168 0.037348938976676738</location>
 								</PathPoint>
 								<PathPoint name="ehl_l-P6">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.16442106011647112 0.020242201126542268 0.028513771274639377</location>
+									<location>0.16442106011647109 0.020242201126542268 0.040691451025173103</location>
 								</PathPoint>
 								<PathPoint name="ehl_l-P7">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.028256906525206689 0.0059707211955987993 0.035605019647026427</location>
+									<location>0.028256906525206682 0.0059707211955987993 0.035605019647026469</location>
 								</PathPoint>
 								<PathPoint name="ehl_l-P8">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.05338469252916566 0.0049513297719599794 0.027030749609579244</location>
+									<location>0.053384692529165646 0.0049513297719599794 0.027030749609579272</location>
 								</PathPoint>
 							</objects>
 							<groups />
@@ -9188,9 +9188,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>285.86754739999998</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.077131839450876691</optimal_fiber_length>
+					<optimal_fiber_length>0.078059417572417814</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.33698290153164007</tendon_slack_length>
+					<tendon_slack_length>0.34103541692631395</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.19726811</pennation_angle_at_optimal>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
@@ -9263,37 +9263,37 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.041342319614060791 0.045872614063746868 0.028513771274639377</location>
+									<location>0.041342319614060784 0.045872614063746868 0.040691451025173103</location>
 								</PathPoint>
 								<PathPoint name="fdl_l-P4">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.067133858455860188 0.0256304129372046 0.026782578018679129</location>
+									<location>0.067133858455860174 0.0256304129372046 0.038220898641501876</location>
 								</PathPoint>
 								<PathPoint name="fdl_l-P5">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.15721460073420365 -0.01179581504496348 -0.011812848099493456</location>
+									<location>0.15721460073420362 -0.01179581504496348 -0.016857886853285996</location>
 								</PathPoint>
 								<PathPoint name="fdl_l-P6">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.0018016148455668693 -0.011358933006261129 -0.021363011788215855</location>
+									<location>-0.0018016148455668689 -0.011358933006261129 -0.021363011788215879</location>
 								</PathPoint>
 								<PathPoint name="fdl_l-P7">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.027024222683503043 -0.01033954158262231 -0.031245221322900738</location>
+									<location>0.027024222683503036 -0.01033954158262231 -0.031245221322900772</location>
 								</PathPoint>
 								<PathPoint name="fdl_l-P8">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.041816428783946813 -0.0087376407740470223 -0.035169039814613855</location>
+									<location>0.041816428783946799 -0.0087376407740470223 -0.035169039814613896</location>
 								</PathPoint>
 							</objects>
 							<groups />
@@ -9314,9 +9314,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>423.17704918032803</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.046423268436111866</optimal_fiber_length>
+					<optimal_fiber_length>0.047302469590334004</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.3942572647366252</tendon_slack_length>
+					<tendon_slack_length>0.40172402556355707</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.22483914999999999</pennation_angle_at_optimal>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
@@ -9389,31 +9389,31 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.035463365907474169 0.040193147560616302 0.024542210275671751</location>
+									<location>0.035463365907474162 0.040193147560616302 0.035023713203809703</location>
 								</PathPoint>
 								<PathPoint name="fhl_l-P4">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.098425063668337393 0.0099026595439199588 0.026069733736813146</location>
+									<location>0.098425063668337365 0.0099026595439199588 0.037203612365872551</location>
 								</PathPoint>
 								<PathPoint name="fhl_l-P5">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.1636624854446535 -0.0077182493504082033 0.027393587403135689</location>
+									<location>0.16366248544465348 -0.0077182493504082033 0.039092858306327014</location>
 								</PathPoint>
 								<PathPoint name="fhl_l-P6">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.014697384266466567 -0.0093201501589834906 0.038511551863110213</location>
+									<location>0.014697384266466563 -0.0093201501589834906 0.038511551863110255</location>
 								</PathPoint>
 								<PathPoint name="fhl_l-P7">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.053289870695188452 -0.014853989315879938 0.0263041165555583</location>
+									<location>0.053289870695188438 -0.014853989315879938 0.026304116555558327</location>
 								</PathPoint>
 							</objects>
 							<groups />
@@ -9434,9 +9434,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>907.83934426229405</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.054022280393649036</optimal_fiber_length>
+					<optimal_fiber_length>0.054167727186763062</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.36323031075281914</tendon_slack_length>
+					<tendon_slack_length>0.3642082532512817</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.25802551000000001</pennation_angle_at_optimal>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
@@ -9503,7 +9503,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.0041721606949969613 0.045144477332576281 0.0053972495626995968</location>
+									<location>0.0041721606949969596 0.045144477332576281 0.0077023103726220517</location>
 								</PathPoint>
 							</objects>
 							<groups />
@@ -9541,9 +9541,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>1575.0590163934401</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.074941020096682548</optimal_fiber_length>
+					<optimal_fiber_length>0.074969337563735097</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.40620205095883005</tendon_slack_length>
+					<tendon_slack_length>0.40635553983821632</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.21022682000000001</pennation_angle_at_optimal>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
@@ -9610,7 +9610,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.0041721606949969613 0.045144477332576281 0.0053972495626995968</location>
+									<location>0.0041721606949969596 0.045144477332576281 0.0077023103726220517</location>
 								</PathPoint>
 							</objects>
 							<groups />
@@ -9648,9 +9648,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>3115.5147540983598</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.064022271105525844</optimal_fiber_length>
+					<optimal_fiber_length>0.064000849133996715</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.41994269352268654</tendon_slack_length>
+					<tendon_slack_length>0.41980217991282598</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.16568155000000001</pennation_angle_at_optimal>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
@@ -10818,13 +10818,13 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.044661083803262926 0.039319383483211602 -0.023727531096396342</location>
+									<location>0.044661083803262912 0.039319383483211602 -0.033861100317376193</location>
 								</PathPoint>
 								<PathPoint name="perbrev_l-P5">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.064194381602566866 0.031892388825271629 -0.034929369811433235</location>
+									<location>0.064194381602566852 0.031892388825271629 -0.049847027505837048</location>
 								</PathPoint>
 							</objects>
 							<groups />
@@ -10845,9 +10845,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>521.20159880000006</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.047513404659535907</optimal_fiber_length>
+					<optimal_fiber_length>0.049443118049500544</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.15439505328855538</tendon_slack_length>
+					<tendon_slack_length>0.16066566689349798</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.20523611999999999</pennation_angle_at_optimal>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
@@ -10926,25 +10926,25 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.041531963282015201 0.033494289633846916 -0.022505512327483226</location>
+									<location>0.041531963282015187 0.033494289633846916 -0.032117180987725917</location>
 								</PathPoint>
 								<PathPoint name="perlong_l-P5">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.064573668938475687 0.015436498700816407 -0.028921110864277084</location>
+									<location>0.064573668938475659 0.015436498700816407 -0.041272757468389862</location>
 								</PathPoint>
 								<PathPoint name="perlong_l-P6">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.080788202548577506 0.010048286890154075 -0.012016517894312309</location>
+									<location>0.080788202548577492 0.010048286890154075 -0.017148540074894379</location>
 								</PathPoint>
 								<PathPoint name="perlong_l-P7">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.114070666274576 0.012378324429899949 0.01873762112333445</location>
+									<location>0.11407066627457597 0.012378324429899949 0.026740096387970896</location>
 								</PathPoint>
 							</objects>
 							<groups />
@@ -10965,9 +10965,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>1115.3714213999999</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.053855419337492771</optimal_fiber_length>
+					<optimal_fiber_length>0.056695007579124046</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.35220252922224327</tendon_slack_length>
+					<tendon_slack_length>0.37077280818312075</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.24795247000000001</pennation_angle_at_optimal>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
@@ -11670,7 +11670,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.0041721606949969613 0.045144477332576281 0.0053972495626995968</location>
+									<location>0.0041721606949969596 0.045144477332576281 0.0077023103726220517</location>
 								</PathPoint>
 							</objects>
 							<groups />
@@ -11691,9 +11691,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>6194.8426229508204</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.047224954074093606</optimal_fiber_length>
+					<optimal_fiber_length>0.047232627785487778</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.3019713824715054</tendon_slack_length>
+					<tendon_slack_length>0.30202045062379512</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.38142888000000003</pennation_angle_at_optimal>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
@@ -11874,7 +11874,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.11056225841741946 0.025921667629672834 0.031059643709875035</location>
+									<location>0.11056225841741943 0.025921667629672834 0.044324616295277841</location>
 								</PathPoint>
 							</objects>
 							<groups />
@@ -11895,9 +11895,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>1227.4524590163901</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.073175389423545956</optimal_fiber_length>
+					<optimal_fiber_length>0.073895119057652517</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.25762561125462663</tendon_slack_length>
+					<tendon_slack_length>0.26015953404459002</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.19518281000000001</pennation_angle_at_optimal>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
@@ -11970,13 +11970,13 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.039540704768493924 0.048639533642195087 0.029124780659095937</location>
+									<location>0.039540704768493917 0.048639533642195087 0.041563410689998241</location>
 								</PathPoint>
 								<PathPoint name="tibpost_l-P4">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.07320245583040122 0.023154748051224611 0.028615606172048804</location>
+									<location>0.073202455830401206 0.023154748051224611 0.040836777635977289</location>
 								</PathPoint>
 							</objects>
 							<groups />
@@ -11997,9 +11997,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>1730.1540983606501</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.040301838657750187</optimal_fiber_length>
+					<optimal_fiber_length>0.040668593120172521</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.29936335177609807</tendon_slack_length>
+					<tendon_slack_length>0.30208761570067905</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.22648906999999999</pennation_angle_at_optimal>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
@@ -12728,7 +12728,7 @@
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
 					<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.032636423301660056 0.048577700520986665 -0.0074595485360718682</location>
+					<location>-0.032636423301660049 0.048577700520986665 -0.010520494172257472</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
@@ -12736,55 +12736,55 @@
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
 					<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.032636423301660056 -0.0050518696404991785 -0.0074595485360718682</location>
+					<location>-0.032636423301660049 -0.0050518696404991785 -0.010520494172257472</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
 				<Marker name="RMT5">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
+					<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.16855874202297524 0.048577700520986665 0.04844247958070777</location>
+					<location>-2.357135254126449e-05 0.051471038650233315 0.066762185850862271</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
 				<Marker name="fRMT5">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
+					<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.16855874202297524 -0.0050518696404991785 0.04844247958070777</location>
+					<location>-2.357135254126449e-05 -0.0021585315112525199 0.066762185850862271</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
 				<Marker name="RMT1">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
+					<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.18655688396942513 0.048577700520986665 -0.026789903420955875</location>
+					<location>0.017974570593908619 0.051471038650233315 -0.039340997620188813</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
 				<Marker name="fRMT1">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
+					<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.18655594111532348 -0.0050518696404991785 -0.026789903420955875</location>
+					<location>0.017973627739806965 -0.0021585315112525255 -0.039340997620188813</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
 				<Marker name="RMT3">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
+					<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.17755734156914935 0.048577700520986665 0.01082633922809639</location>
+					<location>0.0089750281936328367 0.051471038650233301 0.013710666251680175</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
 				<Marker name="fRMT3">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
+					<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.17755734156914935 -0.0050518696404991785 0.010826288079875948</location>
+					<location>0.0089750281936328367 -0.0021585315112525229 0.013710594115336733</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
@@ -12904,7 +12904,7 @@
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
 					<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.034498079637586228 0.048900206591954154 0.0023556346633851095</location>
+					<location>-0.034498079637586221 0.048900206591954154 0.0033616806284614345</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
@@ -12912,55 +12912,55 @@
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
 					<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.034498079637586228 -0.0050854088696377303 0.0023556346633851095</location>
+					<location>-0.034498079637586221 -0.0050854088696377303 0.0033616806284614345</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
 				<Marker name="LMT5">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
+					<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.16951773369274581 0.048900206591954154 -0.048223915668233849</location>
+					<location>-2.3705458494298298e-05 0.05181275351663648 -0.067249889149638711</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
 				<Marker name="fLMT5">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
+					<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.16951773369274581 -0.0050854088696377303 -0.048223915668233849</location>
+					<location>-2.3705458494298298e-05 -0.0021728619449553847 -0.067249889149638711</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
+					<fixed>false</fixed>
 				</Marker>
 				<Marker name="LMT1">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
+					<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.18761732536231446 0.048900206591954154 0.02666903210806762</location>
+					<location>0.018075886211074352 0.051812753516636494 0.039628386867140403</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
 				<Marker name="fLMT1">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
+					<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.18761732536231446 -0.0050854088696377303 0.02666903210806762</location>
+					<location>0.018075886211074352 -0.0021728619449553881 0.039628386867140403</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
 				<Marker name="LMT3">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
+					<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.17856752952753013 0.048900206591954154 -0.01077749269753182</location>
+					<location>0.0090260903762900135 0.051812753516636494 -0.013810823804554553</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
 				<Marker name="fLMT3">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
+					<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.17856752952753013 -0.0050854088696377303 -0.010777441780083115</location>
+					<location>0.0090260903762900135 -0.002172861944955386 -0.013810751141249149</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
@@ -12976,7 +12976,7 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.031307527581931796 0.010435842527310599 0</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.035000000000000003</radius>
+					<radius>0.040000000000000001</radius>
 				</ContactSphere>
 				<ContactSphere name="mh1_r">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
@@ -12984,7 +12984,7 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.182 -0.0080999999999999996 -0.023</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.014999999999999999</radius>
+					<radius>0.02</radius>
 				</ContactSphere>
 				<ContactSphere name="mh3_r">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
@@ -12992,7 +12992,7 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.1658 -0.0080999999999999996 0.011599999999999999</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.014999999999999999</radius>
+					<radius>0.02</radius>
 				</ContactSphere>
 				<ContactSphere name="mh5_r">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
@@ -13000,7 +13000,7 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.14299999999999999 -0.0080999999999999996 0.036999999999999998</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.014999999999999999</radius>
+					<radius>0.02</radius>
 				</ContactSphere>
 				<ContactSphere name="hallux_r">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
@@ -13008,7 +13008,7 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.0562 -0.010200000000000001 -0.018100000000000002</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.014999999999999999</radius>
+					<radius>0.02</radius>
 				</ContactSphere>
 				<ContactSphere name="othertoes_r">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
@@ -13016,7 +13016,7 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.0441 -0.0060000000000000001 0.024199999999999999</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.014999999999999999</radius>
+					<radius>0.02</radius>
 				</ContactSphere>
 				<ContactSphere name="heel_l">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
@@ -13024,7 +13024,7 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.031307527581931796 0.010435842527310599 0</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.035000000000000003</radius>
+					<radius>0.040000000000000001</radius>
 				</ContactSphere>
 				<ContactSphere name="mh1_l">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
@@ -13032,7 +13032,7 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.182 -0.0080999999999999996 0.023</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.014999999999999999</radius>
+					<radius>0.02</radius>
 				</ContactSphere>
 				<ContactSphere name="mh3_l">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
@@ -13040,7 +13040,7 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.1658 -0.0080999999999999996 -0.011599999999999999</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.014999999999999999</radius>
+					<radius>0.02</radius>
 				</ContactSphere>
 				<ContactSphere name="mh5_l">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
@@ -13048,7 +13048,7 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.14299999999999999 -0.0080999999999999996 -0.036999999999999998</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.014999999999999999</radius>
+					<radius>0.02</radius>
 				</ContactSphere>
 				<ContactSphere name="hallux_l">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
@@ -13056,7 +13056,7 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.0562 -0.010200000000000001 0.018100000000000002</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.014999999999999999</radius>
+					<radius>0.02</radius>
 				</ContactSphere>
 				<ContactSphere name="othertoes_l">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
@@ -13064,7 +13064,7 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.0441 -0.0060000000000000001 -0.024199999999999999</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.014999999999999999</radius>
+					<radius>0.02</radius>
 				</ContactSphere>
 				<ContactHalfSpace name="floor">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
