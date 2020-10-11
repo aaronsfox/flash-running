@@ -3,6 +3,7 @@
 import opensim as osim
 import numpy as np
 import pandas as pd
+import os
 
 # %% addVirtualMarkersStatic
 
@@ -335,10 +336,10 @@ def getHalfGaitCycle(grfFile = None):
             grfArray[iRow,iLabel] = grfTable.getDependentColumn(currLabel).getElt(0,iRow)
     
     #Create a logical for where the right & left foot is in contact with the ground
-    #based on 50N threshold (which is what was originally used)
+    #based on 10N threshold
     #Identify columns for right and left vertical GRF
-    rightGrfOn = grfArray[:,rightGrfCol] > 50
-    leftGrfOn = grfArray[:,leftGrfCol] > 50
+    rightGrfOn = grfArray[:,rightGrfCol] > 10
+    leftGrfOn = grfArray[:,leftGrfCol] > 10
     
     #Identify the index where right and left GRF starts
     #Identify where change in boolean value is present
@@ -355,14 +356,90 @@ def getHalfGaitCycle(grfFile = None):
             leftGrfOnInd.append(leftGrfDiff[gg]+1)
     
     #Find the middle right foot strike
-    rightStartInd = rightGrfOnInd[int(len(rightGrfOnInd)/2)]
+    rightStartInd = rightGrfOnInd[int(len(rightGrfOnInd)/2)] - 1
     
     #Find the next left foot strike after the right foot strike
-    leftStartInd = leftGrfOnInd[np.where(leftGrfOnInd > rightStartInd)[0][0]]
+    leftStartInd = leftGrfOnInd[np.where(leftGrfOnInd > rightStartInd)[0][0]] - 1
     
     #Identify the times corresponding to these foot strikes
     startTime = list(grfTable.getIndependentColumn())[rightStartInd]
     endTime = list(grfTable.getIndependentColumn())[leftStartInd]
+    
+    #Print outputs
+    print('Start Time: '+str(startTime))
+    print('End Time: '+str(endTime))
+    
+    return startTime,endTime
+
+# %% getFullGaitCycle
+
+def getFullGaitCycle(grfFile = None):
+    
+    # Convenience function for getting the first full gait cycle based on GRF
+    # data. Note that this function is only applicable to the way the current
+    # data is structured, but could easily be edited (e.g. for getting a full
+    # gait cycle, or right to right foot strike etc.)
+    #
+    # This function is currently only applicable to going from right contact
+    # to another right contact. This could easily be edited with an input 
+    # variable asking for limb.
+    #
+    # Input:    grfFile - .mot file containing GRF time history
+    
+    #Check for input
+    if grfFile is None:
+        raise ValueError('A GRF file in .mot format is required')
+        
+    #Load the GRF data
+    grfTable = osim.TimeSeriesTable(grfFile)
+    
+    #Convert to more easily readable object for easier manipulation
+    #Get number of column labels and data rows
+    nLabels = grfTable.getNumColumns()
+    nRows = grfTable.getNumRows()
+    #Pre-allocate numpy array based on data size
+    grfArray = np.zeros((nRows,nLabels))
+    #Loop through labels and rows and get data
+    for iLabel in range(0,nLabels):
+        #Get current column label
+        currLabel = grfTable.getColumnLabel(iLabel)
+        #Store column index value if one of the vertical GRF data
+        if currLabel == 'ground_force_r_vy':
+            rightGrfCol = int(iLabel)
+        elif  currLabel == 'ground_force_l_vy':
+            leftGrfCol = int(iLabel)
+        for iRow in range(0,nRows):
+            grfArray[iRow,iLabel] = grfTable.getDependentColumn(currLabel).getElt(0,iRow)
+    
+    #Create a logical for where the right & left foot is in contact with the ground
+    #based on 10N threshold
+    #Identify columns for right and left vertical GRF
+    rightGrfOn = grfArray[:,rightGrfCol] > 10
+    leftGrfOn = grfArray[:,leftGrfCol] > 10
+    
+    #Identify the index where right and left GRF starts
+    #Identify where change in boolean value is present
+    rightGrfDiff = np.where(rightGrfOn[:-1] != rightGrfOn[1:])[0]
+    leftGrfDiff = np.where(leftGrfOn[:-1] != leftGrfOn[1:])[0]
+    #Identify where the index one above the change is true for foot strikes
+    rightGrfOnInd = list()
+    for gg in range(0,len(rightGrfDiff)):
+        if rightGrfOn[rightGrfDiff[gg]+1]:
+            rightGrfOnInd.append(rightGrfDiff[gg]+1)
+    leftGrfOnInd = list()
+    for gg in range(0,len(leftGrfDiff)):
+        if leftGrfOn[leftGrfDiff[gg]+1]:
+            leftGrfOnInd.append(leftGrfDiff[gg]+1)
+    
+    #Instead of finding the middle foot strike like in the half gait cycle,
+    #find the first and then get the next. With sprint trials there are generally
+    #only two anyway
+    rightStartInd = rightGrfOnInd[0] - 1
+    rightStopInd = rightGrfOnInd[1] - 1
+    
+    #Identify the times corresponding to these foot strikes
+    startTime = list(grfTable.getIndependentColumn())[rightStartInd]
+    endTime = list(grfTable.getIndependentColumn())[rightStopInd]
     
     #Print outputs
     print('Start Time: '+str(startTime))
@@ -784,9 +861,7 @@ def kinematicsToStates(kinematicsFileName = None, osimModelFileName = None,
                        outputFileName = 'coordinates.sto',
                        inDegrees = True, outDegrees = False):
     
-    # Convenience function for scaling muscle strength based on height/mass relationship.
-    # The scaling is based on the Handsfield et al. equations, and this function
-    # is adapted from that which comes with the Rajagopal et al. model
+    # Convenience function for converting IK results to a states storage.
     #
     # Input:    kinematicsFileName - file containing kinematic data. Header should only be coordinates name, rather than path to state
     #           osimModelFileName - opensim model filename that corresponds to kinematic data
@@ -846,7 +921,87 @@ def kinematicsToStates(kinematicsFileName = None, osimModelFileName = None,
     
     #Write the states storage object to file
     statesStorage.printToXML(outputFileName)
+
+# %% statesTo2D
+
+def statesTo2D(statesFileName = None, outputFileName = 'coordinates.sto'):
     
+    # Convenience function for converting the created states from IK to match
+    # up to the 2D model. Note that this function requires the input states file
+    # to be in radians, as there is no process for converting these.
+    #
+    # Input:    statesFileName - file containing states data from kinematic conversion
+    #           outputFileName - optional filename to output to (defaults to coordinates.sto)
+
+    if statesFileName is None:
+        raise ValueError('Filename for states is required')
+
+    #Load in the kinematic data
+    origStorage = osim.TimeSeriesTable(statesFileName)
+    
+    #Set column labels to remove
+    removeLabels = ['/jointset/ground_pelvis/pelvis_list/value',
+                    '/jointset/ground_pelvis/pelvis_rotation/value',
+                    '/jointset/ground_pelvis/pelvis_tz/value',
+                    '/jointset/hip_r/hip_adduction_r/value',
+                    '/jointset/hip_r/hip_rotation_r/value',
+                    '/jointset/patellofemoral_r/knee_angle_r_beta/value',
+                    '/jointset/hip_l/hip_adduction_l/value',
+                    '/jointset/hip_l/hip_rotation_l/value',
+                    '/jointset/patellofemoral_l/knee_angle_l_beta/value',
+                    '/jointset/back/lumbar_bending/value',
+                    '/jointset/back/lumbar_rotation/value',
+                    '/jointset/subtalar_l/subtalar_angle_l/value',
+                    '/jointset/subtalar_r/subtalar_angle_r/value',
+                    '/jointset/mtp_l/mtp_angle_l/value',
+                    '/jointset/mtp_r/mtp_angle_r/value']
+    
+    #Loop through and remove values
+    for rr in range(0,len(removeLabels)):
+        origStorage.removeColumn(removeLabels[rr])
+        
+    #Get current column labels 
+    angleNames = list(origStorage.getColumnLabels())
+    
+    #Rename walker knee to standard knee joint
+    angleNames = [sub.replace('walker_knee_', 'knee_') for sub in angleNames] 
+    
+    #Output as temp .sto to get back as storage
+    stoAdapter = osim.STOFileAdapter()
+    stoAdapter.write(origStorage,'temp.sto')
+    newStorage = osim.Storage('temp.sto')
+    
+    #Rename column labels in storage
+    #Create array string
+    colLabels = osim.ArrayStr()
+    #Append time label
+    colLabels.append('time')
+    #Append the state labels
+    for aa in range(0,len(angleNames)):
+        colLabels.append(angleNames[aa])
+    #Rename labels in storage
+    newStorage.setColumnLabels(colLabels)
+    
+    #Figure out the state index of the knee angles
+    rKneeInd = angleNames.index('/jointset/knee_r/knee_angle_r/value')
+    lKneeInd = angleNames.index('/jointset/knee_l/knee_angle_l/value')
+
+    #Invert knee angles to match different model
+    #Loop through the length of the data
+    for cc in range(0,newStorage.getSize()):
+        #Get the current knee angle values
+        rKneeVal = newStorage.getStateVector(cc).getData().getitem(rKneeInd)
+        lKneeVal = newStorage.getStateVector(cc).getData().getitem(lKneeInd)
+        #Replace with inverted value
+        newStorage.getStateVector(cc).getData().setitem(rKneeInd,rKneeVal*-1)
+        newStorage.getStateVector(cc).getData().setitem(lKneeInd,lKneeVal*-1)
+    
+    #Cleanup temp.sto
+    os.remove('temp.sto')
+
+    #Write the states storage object to file
+    newStorage.printToXML(outputFileName)
+
 # %% addCoordinateActuator
 
 def addCoordinateActuator(osimModel = None,

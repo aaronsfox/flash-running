@@ -731,7 +731,9 @@ model2D_final.printToXML('model2D.osim')
 #Identify time parameters for simulation
 #This will be based off a half gait cycle of the right limb, that being from
 #right foot heel strike to left foot heel strike
-[startTime,endTime] = osimHelper.getHalfGaitCycle('refGRF.mot')
+# [startTime,endTime] = osimHelper.getHalfGaitCycle('refGRF.mot')
+#Or a full gait cycle
+[startTime,endTime] = osimHelper.getFullGaitCycle('refGRF.mot')
 
 #Add the virtual torso, pelvis and hip joint markers to the .trc file
 osimHelper.addVirtualMarkersDynamic(staticTRC = 'staticVirtualMarkers.trc',
@@ -767,6 +769,10 @@ osimHelper.kinematicsToStates(kinematicsFileName = 'ikResults.mot',
                               osimModelFileName = 'scaledModelMuscle.osim',
                               outputFileName = 'refQ.sto',
                               inDegrees = True, outDegrees = False)
+
+#Convert states to 2D new model format
+osimHelper.statesTo2D(statesFileName = 'refQ.sto',
+                      outputFileName = 'refQ_converted.sto')
 
 ###### TODO: check IK errors - some look high???
 
