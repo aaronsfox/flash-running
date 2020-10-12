@@ -4226,3 +4226,431 @@
 [2020-10-09 17:35:33.565] [info] DeGrooteFregly2016Muscle 'hamstrings_l' is exceeding maximum contraction velocity at time 0.486667 s.
 [2020-10-09 17:35:33.565] [info] DeGrooteFregly2016Muscle 'hamstrings_r' is exceeding maximum contraction velocity at time 0.49 s.
 [2020-10-09 17:35:33.566] [info] DeGrooteFregly2016Muscle 'hamstrings_l' is exceeding maximum contraction velocity at time 0.49 s.
+[2020-10-12 15:47:57.026] [info] Updating Model file from 30000 to latest format...
+[2020-10-12 15:47:57.046] [info] Loaded model gait9dof18musc_Ong_et_al from file gait9dof18musc_Ong_et_al_Moco.osim
+[2020-10-12 15:48:30.404] [info] Updating Model file from 30000 to latest format...
+[2020-10-12 15:48:30.421] [info] Loaded model gait9dof18musc_Ong_et_al from file gait9dof18musc_Ong_et_al_Moco.osim
+[2020-10-12 15:48:51.768] [info] Storage: read data file = refQ_converted.sto (nr=132 nc=11)
+[2020-10-12 15:48:51.770] [info] Storage: read data file = refQ_converted.sto (nr=132 nc=11)
+[2020-10-12 15:55:41.768] [info] ========================================================================
+[2020-10-12 15:55:41.768] [info] MocoCasADiSolver starting.
+[2020-10-12 15:55:41.768] [info] Mon Oct 12 15:55:41 2020
+[2020-10-12 15:55:41.769] [info] ------------------------------------------------------------------------
+[2020-10-12 15:55:41.769] [cout] [info] Costs: (total: 3)
+[2020-10-12 15:55:41.769] [cout] [info]   state_tracking. MocoStateTrackingGoal, enabled: true, mode: cost, weight: 10.0
+[2020-10-12 15:55:41.769] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tilt/value, weight: 25.0
+[2020-10-12 15:55:41.769] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tx/value, weight: 100.0
+[2020-10-12 15:55:41.770] [cout] [info]         state: /jointset/ground_pelvis/pelvis_ty/value, weight: 25.0
+[2020-10-12 15:55:41.770] [cout] [info]         state: /jointset/hip_r/hip_flexion_r/value, weight: 250.0
+[2020-10-12 15:55:41.770] [cout] [info]         state: /jointset/knee_r/knee_angle_r/value, weight: 500.0
+[2020-10-12 15:55:41.770] [cout] [info]         state: /jointset/ankle_r/ankle_angle_r/value, weight: 75.0
+[2020-10-12 15:55:41.770] [cout] [info]         state: /jointset/hip_l/hip_flexion_l/value, weight: 250.0
+[2020-10-12 15:55:41.770] [cout] [info]         state: /jointset/knee_l/knee_angle_l/value, weight: 500.0
+[2020-10-12 15:55:41.770] [cout] [info]         state: /jointset/ankle_l/ankle_angle_l/value, weight: 75.0
+[2020-10-12 15:55:41.771] [cout] [info]         state: /jointset/back/lumbar_extension/value, weight: 150.0
+[2020-10-12 15:55:41.771] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tilt/speed, weight: 1.0
+[2020-10-12 15:55:41.771] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tx/speed, weight: 1.0
+[2020-10-12 15:55:41.771] [cout] [info]         state: /jointset/ground_pelvis/pelvis_ty/speed, weight: 1.0
+[2020-10-12 15:55:41.771] [cout] [info]         state: /jointset/hip_r/hip_flexion_r/speed, weight: 1.0
+[2020-10-12 15:55:41.771] [cout] [info]         state: /jointset/knee_r/knee_angle_r/speed, weight: 1.0
+[2020-10-12 15:55:41.771] [cout] [info]         state: /jointset/ankle_r/ankle_angle_r/speed, weight: 1.0
+[2020-10-12 15:55:41.771] [cout] [info]         state: /jointset/hip_l/hip_flexion_l/speed, weight: 1.0
+[2020-10-12 15:55:41.771] [cout] [info]         state: /jointset/knee_l/knee_angle_l/speed, weight: 1.0
+[2020-10-12 15:55:41.771] [cout] [info]         state: /jointset/ankle_l/ankle_angle_l/speed, weight: 1.0
+[2020-10-12 15:55:41.772] [cout] [info]         state: /jointset/back/lumbar_extension/speed, weight: 1.0
+[2020-10-12 15:55:41.772] [cout] [info]   control_effort. MocoControlGoal, enabled: true, mode: cost, weight: 0.1
+[2020-10-12 15:55:41.772] [cout] [info]         control: /lumbarAct, weight: 1.0
+[2020-10-12 15:55:41.772] [cout] [info]         control: /hamstrings_r, weight: 1.0
+[2020-10-12 15:55:41.772] [cout] [info]         control: /bifemsh_r, weight: 1.0
+[2020-10-12 15:55:41.772] [cout] [info]         control: /glut_max_r, weight: 1.0
+[2020-10-12 15:55:41.772] [cout] [info]         control: /iliopsoas_r, weight: 1.0
+[2020-10-12 15:55:41.772] [cout] [info]         control: /rect_fem_r, weight: 1.0
+[2020-10-12 15:55:41.773] [cout] [info]         control: /vasti_r, weight: 1.0
+[2020-10-12 15:55:41.773] [cout] [info]         control: /gastroc_r, weight: 1.0
+[2020-10-12 15:55:41.773] [cout] [info]         control: /soleus_r, weight: 1.0
+[2020-10-12 15:55:41.773] [cout] [info]         control: /tib_ant_r, weight: 1.0
+[2020-10-12 15:55:41.773] [cout] [info]         control: /hamstrings_l, weight: 1.0
+[2020-10-12 15:55:41.773] [cout] [info]         control: /bifemsh_l, weight: 1.0
+[2020-10-12 15:55:41.773] [cout] [info]         control: /glut_max_l, weight: 1.0
+[2020-10-12 15:55:41.773] [cout] [info]         control: /iliopsoas_l, weight: 1.0
+[2020-10-12 15:55:41.773] [cout] [info]         control: /rect_fem_l, weight: 1.0
+[2020-10-12 15:55:41.773] [cout] [info]         control: /vasti_l, weight: 1.0
+[2020-10-12 15:55:41.774] [cout] [info]         control: /gastroc_l, weight: 1.0
+[2020-10-12 15:55:41.774] [cout] [info]         control: /soleus_l, weight: 1.0
+[2020-10-12 15:55:41.774] [cout] [info]         control: /tib_ant_l, weight: 1.0
+[2020-10-12 15:55:41.774] [cout] [info]   met. MocoOutputGoal, enabled: true, mode: cost, weight: 0.1
+[2020-10-12 15:55:41.774] [cout] [info] Endpoint constraints: none
+[2020-10-12 15:55:41.774] [cout] [info] Kinematic constraints: none
+[2020-10-12 15:55:41.774] [cout] [info] Path constraints: none
+[2020-10-12 15:55:41.774] [cout] [info] States: (total: 38)
+[2020-10-12 15:55:41.774] [cout] [info]   /jointset/knee_r/knee_angle_r/speed. bounds: [-50, 50]
+[2020-10-12 15:55:41.774] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/value. bounds: [0.75, 1.25]
+[2020-10-12 15:55:41.774] [cout] [info]   /jointset/ankle_l/ankle_angle_l/value. bounds: [-0.523599, 0.523599]
+[2020-10-12 15:55:41.775] [cout] [info]   /jointset/back/lumbar_extension/speed. bounds: [-50, 50]
+[2020-10-12 15:55:41.775] [cout] [info]   /jointset/knee_l/knee_angle_l/speed. bounds: [-50, 50]
+[2020-10-12 15:55:41.775] [cout] [info]   /jointset/hip_l/hip_flexion_l/value. bounds: [-0.698132, 1.39626]
+[2020-10-12 15:55:41.775] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/value. bounds: [-0.349066, 0]
+[2020-10-12 15:55:41.775] [cout] [info]   /glut_max_l/activation. bounds: [0.01, 1]
+[2020-10-12 15:55:41.775] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/value. bounds: [-5, 5]
+[2020-10-12 15:55:41.775] [cout] [info]   /jointset/ankle_r/ankle_angle_r/value. bounds: [-0.523599, 0.523599]
+[2020-10-12 15:55:41.775] [cout] [info]   /jointset/hip_r/hip_flexion_r/value. bounds: [-0.698132, 1.39626]
+[2020-10-12 15:55:41.775] [cout] [info]   /jointset/knee_r/knee_angle_r/value. bounds: [-2.44346, 0]
+[2020-10-12 15:55:41.775] [cout] [info]   /jointset/back/lumbar_extension/value. bounds: [-30, 0]
+[2020-10-12 15:55:41.775] [cout] [info]   /jointset/knee_l/knee_angle_l/value. bounds: [-2.44346, 0]
+[2020-10-12 15:55:41.776] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/speed. bounds: [-50, 50]
+[2020-10-12 15:55:41.776] [cout] [info]   /gastroc_l/activation. bounds: [0.01, 1]
+[2020-10-12 15:55:41.776] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/speed. bounds: [-50, 50]
+[2020-10-12 15:55:41.776] [cout] [info]   /jointset/ankle_l/ankle_angle_l/speed. bounds: [-50, 50]
+[2020-10-12 15:55:41.776] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/speed. bounds: [-50, 50]
+[2020-10-12 15:55:41.776] [cout] [info]   /jointset/ankle_r/ankle_angle_r/speed. bounds: [-50, 50]
+[2020-10-12 15:55:41.776] [cout] [info]   /jointset/hip_r/hip_flexion_r/speed. bounds: [-50, 50]
+[2020-10-12 15:55:41.776] [cout] [info]   /jointset/hip_l/hip_flexion_l/speed. bounds: [-50, 50]
+[2020-10-12 15:55:41.777] [cout] [info]   /hamstrings_r/activation. bounds: [0.01, 1]
+[2020-10-12 15:55:41.777] [cout] [info]   /bifemsh_r/activation. bounds: [0.01, 1]
+[2020-10-12 15:55:41.777] [cout] [info]   /glut_max_r/activation. bounds: [0.01, 1]
+[2020-10-12 15:55:41.777] [cout] [info]   /iliopsoas_r/activation. bounds: [0.01, 1]
+[2020-10-12 15:55:41.777] [cout] [info]   /rect_fem_r/activation. bounds: [0.01, 1]
+[2020-10-12 15:55:41.777] [cout] [info]   /tib_ant_r/activation. bounds: [0.01, 1]
+[2020-10-12 15:55:41.777] [cout] [info]   /vasti_r/activation. bounds: [0.01, 1]
+[2020-10-12 15:55:41.777] [cout] [info]   /gastroc_r/activation. bounds: [0.01, 1]
+[2020-10-12 15:55:41.777] [cout] [info]   /soleus_r/activation. bounds: [0.01, 1]
+[2020-10-12 15:55:41.777] [cout] [info]   /hamstrings_l/activation. bounds: [0.01, 1]
+[2020-10-12 15:55:41.778] [cout] [info]   /bifemsh_l/activation. bounds: [0.01, 1]
+[2020-10-12 15:55:41.778] [cout] [info]   /iliopsoas_l/activation. bounds: [0.01, 1]
+[2020-10-12 15:55:41.778] [cout] [info]   /rect_fem_l/activation. bounds: [0.01, 1]
+[2020-10-12 15:55:41.778] [cout] [info]   /tib_ant_l/activation. bounds: [0.01, 1]
+[2020-10-12 15:55:41.778] [cout] [info]   /vasti_l/activation. bounds: [0.01, 1]
+[2020-10-12 15:55:41.778] [cout] [info]   /soleus_l/activation. bounds: [0.01, 1]
+[2020-10-12 15:55:41.778] [cout] [info] Controls: (total: 19)
+[2020-10-12 15:55:41.778] [cout] [info]   /hamstrings_r. bounds: [0.01, 1]
+[2020-10-12 15:55:41.778] [cout] [info]   /lumbarAct. bounds: [-inf, inf]
+[2020-10-12 15:55:41.778] [cout] [info]   /bifemsh_r. bounds: [0.01, 1]
+[2020-10-12 15:55:41.779] [cout] [info]   /glut_max_r. bounds: [0.01, 1]
+[2020-10-12 15:55:41.779] [cout] [info]   /tib_ant_r. bounds: [0.01, 1]
+[2020-10-12 15:55:41.779] [cout] [info]   /vasti_r. bounds: [0.01, 1]
+[2020-10-12 15:55:41.779] [cout] [info]   /rect_fem_r. bounds: [0.01, 1]
+[2020-10-12 15:55:41.779] [cout] [info]   /iliopsoas_r. bounds: [0.01, 1]
+[2020-10-12 15:55:41.779] [cout] [info]   /gastroc_r. bounds: [0.01, 1]
+[2020-10-12 15:55:41.779] [cout] [info]   /soleus_r. bounds: [0.01, 1]
+[2020-10-12 15:55:41.779] [cout] [info]   /hamstrings_l. bounds: [0.01, 1]
+[2020-10-12 15:55:41.779] [cout] [info]   /bifemsh_l. bounds: [0.01, 1]
+[2020-10-12 15:55:41.779] [cout] [info]   /glut_max_l. bounds: [0.01, 1]
+[2020-10-12 15:55:41.779] [cout] [info]   /iliopsoas_l. bounds: [0.01, 1]
+[2020-10-12 15:55:41.779] [cout] [info]   /rect_fem_l. bounds: [0.01, 1]
+[2020-10-12 15:55:41.780] [cout] [info]   /tib_ant_l. bounds: [0.01, 1]
+[2020-10-12 15:55:41.780] [cout] [info]   /vasti_l. bounds: [0.01, 1]
+[2020-10-12 15:55:41.780] [cout] [info]   /gastroc_l. bounds: [0.01, 1]
+[2020-10-12 15:55:41.780] [cout] [info]   /soleus_l. bounds: [0.01, 1]
+[2020-10-12 15:55:41.780] [cout] [info] Parameters: none
+[2020-10-12 15:55:42.130] [info] Number of threads: 8
+[2020-10-12 16:23:50.334] [info] Set log level to Info.
+[2020-10-12 16:23:50.342] [info] ------------------------------------------------------------------------
+[2020-10-12 16:23:50.343] [info] Elapsed real time: 1689 second(s) (28 minute(s), 9 second(s)).
+[2020-10-12 16:23:50.343] [info] Mon Oct 12 16:23:50 2020
+[2020-10-12 16:23:50.343] [info] MocoCasADiSolver succeeded!
+[2020-10-12 16:23:50.343] [info] ========================================================================
+[2020-10-12 16:26:37.234] [info] Exiting visualization.
+[2020-10-12 16:29:21.262] [info] Exiting visualization.
+[2020-10-12 16:30:40.714] [info] Updating Model file from 30000 to latest format...
+[2020-10-12 16:30:40.734] [info] Loaded model gait9dof18musc_Ong_et_al from file gait9dof18musc_Ong_et_al_Moco.osim
+[2020-10-12 16:37:36.641] [info] Updating Model file from 30000 to latest format...
+[2020-10-12 16:37:36.658] [info] Loaded model gait9dof18musc_Ong_et_al from file gait9dof18musc_Ong_et_al_Moco.osim
+[2020-10-12 16:37:47.354] [info] ========================================================================
+[2020-10-12 16:37:47.354] [info] MocoCasADiSolver starting.
+[2020-10-12 16:37:47.355] [info] Mon Oct 12 16:37:47 2020
+[2020-10-12 16:37:47.355] [info] ------------------------------------------------------------------------
+[2020-10-12 16:37:47.355] [cout] [info] Costs: (total: 2)
+[2020-10-12 16:37:47.355] [cout] [info]   met. MocoOutputGoal, enabled: true, mode: cost, weight: 1.0
+[2020-10-12 16:37:47.356] [cout] [info]   effort. MocoControlGoal, enabled: true, mode: cost, weight: 10.0
+[2020-10-12 16:37:47.356] [cout] [info]         control: /lumbarAct, weight: 1.0
+[2020-10-12 16:37:47.356] [cout] [info]         control: /hamstrings_r, weight: 1.0
+[2020-10-12 16:37:47.357] [cout] [info]         control: /bifemsh_r, weight: 1.0
+[2020-10-12 16:37:47.357] [cout] [info]         control: /glut_max_r, weight: 1.0
+[2020-10-12 16:37:47.357] [cout] [info]         control: /iliopsoas_r, weight: 1.0
+[2020-10-12 16:37:47.358] [cout] [info]         control: /rect_fem_r, weight: 1.0
+[2020-10-12 16:37:47.358] [cout] [info]         control: /vasti_r, weight: 1.0
+[2020-10-12 16:37:47.358] [cout] [info]         control: /gastroc_r, weight: 1.0
+[2020-10-12 16:37:47.358] [cout] [info]         control: /soleus_r, weight: 1.0
+[2020-10-12 16:37:47.359] [cout] [info]         control: /tib_ant_r, weight: 1.0
+[2020-10-12 16:37:47.359] [cout] [info]         control: /hamstrings_l, weight: 1.0
+[2020-10-12 16:37:47.359] [cout] [info]         control: /bifemsh_l, weight: 1.0
+[2020-10-12 16:37:47.360] [cout] [info]         control: /glut_max_l, weight: 1.0
+[2020-10-12 16:37:47.360] [cout] [info]         control: /iliopsoas_l, weight: 1.0
+[2020-10-12 16:37:47.360] [cout] [info]         control: /rect_fem_l, weight: 1.0
+[2020-10-12 16:37:47.360] [cout] [info]         control: /vasti_l, weight: 1.0
+[2020-10-12 16:37:47.361] [cout] [info]         control: /gastroc_l, weight: 1.0
+[2020-10-12 16:37:47.361] [cout] [info]         control: /soleus_l, weight: 1.0
+[2020-10-12 16:37:47.362] [cout] [info]         control: /tib_ant_l, weight: 1.0
+[2020-10-12 16:37:47.362] [cout] [info] Endpoint constraints: (total: 2)
+[2020-10-12 16:37:47.362] [cout] [info]   symmetryGoal. MocoPeriodicityGoal, enabled: true, mode: endpoint_constraint
+[2020-10-12 16:37:47.363] [cout] [info]         state periodicity pairs:
+[2020-10-12 16:37:47.364] [cout] [info]                 initial: /jointset/ground_pelvis/pelvis_ty/value, final: /jointset/ground_pelvis/pelvis_ty/value
+[2020-10-12 16:37:47.365] [cout] [info]                 initial: /jointset/ground_pelvis/pelvis_ty/speed, final: /jointset/ground_pelvis/pelvis_ty/speed
+[2020-10-12 16:37:47.365] [cout] [info]                 initial: /jointset/ground_pelvis/pelvis_tilt/value, final: /jointset/ground_pelvis/pelvis_tilt/value
+[2020-10-12 16:37:47.365] [cout] [info]                 initial: /jointset/ground_pelvis/pelvis_tilt/speed, final: /jointset/ground_pelvis/pelvis_tilt/speed
+[2020-10-12 16:37:47.365] [cout] [info]                 initial: /jointset/back/lumbar_extension/value, final: /jointset/back/lumbar_extension/value
+[2020-10-12 16:37:47.366] [cout] [info]                 initial: /jointset/back/lumbar_extension/speed, final: /jointset/back/lumbar_extension/speed
+[2020-10-12 16:37:47.366] [cout] [info]                 initial: /jointset/hip_r/hip_flexion_r/value, final: /jointset/hip_r/hip_flexion_r/value
+[2020-10-12 16:37:47.366] [cout] [info]                 initial: /jointset/hip_r/hip_flexion_r/speed, final: /jointset/hip_r/hip_flexion_r/speed
+[2020-10-12 16:37:47.366] [cout] [info]                 initial: /jointset/knee_r/knee_angle_r/value, final: /jointset/knee_r/knee_angle_r/value
+[2020-10-12 16:37:47.367] [cout] [info]                 initial: /jointset/knee_r/knee_angle_r/speed, final: /jointset/knee_r/knee_angle_r/speed
+[2020-10-12 16:37:47.367] [cout] [info]                 initial: /jointset/ankle_r/ankle_angle_r/value, final: /jointset/ankle_r/ankle_angle_r/value
+[2020-10-12 16:37:47.367] [cout] [info]                 initial: /jointset/ankle_r/ankle_angle_r/speed, final: /jointset/ankle_r/ankle_angle_r/speed
+[2020-10-12 16:37:47.367] [cout] [info]                 initial: /jointset/hip_l/hip_flexion_l/value, final: /jointset/hip_l/hip_flexion_l/value
+[2020-10-12 16:37:47.368] [cout] [info]                 initial: /jointset/hip_l/hip_flexion_l/speed, final: /jointset/hip_l/hip_flexion_l/speed
+[2020-10-12 16:37:47.368] [cout] [info]                 initial: /jointset/knee_l/knee_angle_l/value, final: /jointset/knee_l/knee_angle_l/value
+[2020-10-12 16:37:47.368] [cout] [info]                 initial: /jointset/knee_l/knee_angle_l/speed, final: /jointset/knee_l/knee_angle_l/speed
+[2020-10-12 16:37:47.368] [cout] [info]                 initial: /jointset/ankle_l/ankle_angle_l/value, final: /jointset/ankle_l/ankle_angle_l/value
+[2020-10-12 16:37:47.369] [cout] [info]                 initial: /jointset/ankle_l/ankle_angle_l/speed, final: /jointset/ankle_l/ankle_angle_l/speed
+[2020-10-12 16:37:47.369] [cout] [info]                 initial: /hamstrings_r/activation, final: /hamstrings_r/activation
+[2020-10-12 16:37:47.369] [cout] [info]                 initial: /bifemsh_r/activation, final: /bifemsh_r/activation
+[2020-10-12 16:37:47.369] [cout] [info]                 initial: /glut_max_r/activation, final: /glut_max_r/activation
+[2020-10-12 16:37:47.370] [cout] [info]                 initial: /iliopsoas_r/activation, final: /iliopsoas_r/activation
+[2020-10-12 16:37:47.370] [cout] [info]                 initial: /rect_fem_r/activation, final: /rect_fem_r/activation
+[2020-10-12 16:37:47.370] [cout] [info]                 initial: /vasti_r/activation, final: /vasti_r/activation
+[2020-10-12 16:37:47.371] [cout] [info]                 initial: /gastroc_r/activation, final: /gastroc_r/activation
+[2020-10-12 16:37:47.371] [cout] [info]                 initial: /soleus_r/activation, final: /soleus_r/activation
+[2020-10-12 16:37:47.371] [cout] [info]                 initial: /tib_ant_r/activation, final: /tib_ant_r/activation
+[2020-10-12 16:37:47.371] [cout] [info]                 initial: /hamstrings_l/activation, final: /hamstrings_l/activation
+[2020-10-12 16:37:47.372] [cout] [info]                 initial: /bifemsh_l/activation, final: /bifemsh_l/activation
+[2020-10-12 16:37:47.372] [cout] [info]                 initial: /glut_max_l/activation, final: /glut_max_l/activation
+[2020-10-12 16:37:47.372] [cout] [info]                 initial: /iliopsoas_l/activation, final: /iliopsoas_l/activation
+[2020-10-12 16:37:47.372] [cout] [info]                 initial: /rect_fem_l/activation, final: /rect_fem_l/activation
+[2020-10-12 16:37:47.372] [cout] [info]                 initial: /vasti_l/activation, final: /vasti_l/activation
+[2020-10-12 16:37:47.374] [cout] [info]                 initial: /gastroc_l/activation, final: /gastroc_l/activation
+[2020-10-12 16:37:47.374] [cout] [info]                 initial: /soleus_l/activation, final: /soleus_l/activation
+[2020-10-12 16:37:47.375] [cout] [info]                 initial: /tib_ant_l/activation, final: /tib_ant_l/activation
+[2020-10-12 16:37:47.375] [cout] [info]         control periodicity pairs:
+[2020-10-12 16:37:47.375] [cout] [info]                 initial: /lumbarAct, final: /lumbarAct
+[2020-10-12 16:37:47.376] [cout] [info]   speed. MocoAverageSpeedGoal, enabled: true, mode: endpoint_constraint
+[2020-10-12 16:37:47.376] [cout] [info] Kinematic constraints: none
+[2020-10-12 16:37:47.376] [cout] [info] Path constraints: none
+[2020-10-12 16:37:47.376] [cout] [info] States: (total: 38)
+[2020-10-12 16:37:47.377] [cout] [info]   /jointset/knee_r/knee_angle_r/speed. bounds: [-50, 50]
+[2020-10-12 16:37:47.377] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/value. bounds: [0.75, 1.25]
+[2020-10-12 16:37:47.377] [cout] [info]   /jointset/ankle_l/ankle_angle_l/value. bounds: [-0.523599, 0.523599]
+[2020-10-12 16:37:47.377] [cout] [info]   /jointset/back/lumbar_extension/speed. bounds: [-50, 50]
+[2020-10-12 16:37:47.378] [cout] [info]   /jointset/knee_l/knee_angle_l/speed. bounds: [-50, 50]
+[2020-10-12 16:37:47.378] [cout] [info]   /jointset/hip_l/hip_flexion_l/value. bounds: [-0.698132, 1.39626]
+[2020-10-12 16:37:47.378] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/value. bounds: [-0.349066, 0.0872665]
+[2020-10-12 16:37:47.378] [cout] [info]   /glut_max_l/activation. bounds: [0.01, 1]
+[2020-10-12 16:37:47.379] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/value. bounds: [0, 5]
+[2020-10-12 16:37:47.379] [cout] [info]   /jointset/ankle_r/ankle_angle_r/value. bounds: [-0.523599, 0.523599]
+[2020-10-12 16:37:47.379] [cout] [info]   /jointset/hip_r/hip_flexion_r/value. bounds: [-0.698132, 1.39626]
+[2020-10-12 16:37:47.379] [cout] [info]   /jointset/knee_r/knee_angle_r/value. bounds: [-2.44346, 0]
+[2020-10-12 16:37:47.380] [cout] [info]   /jointset/back/lumbar_extension/value. bounds: 0
+[2020-10-12 16:37:47.380] [cout] [info]   /jointset/knee_l/knee_angle_l/value. bounds: [-2.44346, 0]
+[2020-10-12 16:37:47.380] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/speed. bounds: [-50, 50]
+[2020-10-12 16:37:47.380] [cout] [info]   /gastroc_l/activation. bounds: [0.01, 1]
+[2020-10-12 16:37:47.381] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/speed. bounds: [-50, 50]
+[2020-10-12 16:37:47.381] [cout] [info]   /jointset/ankle_l/ankle_angle_l/speed. bounds: [-50, 50]
+[2020-10-12 16:37:47.381] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/speed. bounds: [-50, 50]
+[2020-10-12 16:37:47.382] [cout] [info]   /jointset/ankle_r/ankle_angle_r/speed. bounds: [-50, 50]
+[2020-10-12 16:37:47.382] [cout] [info]   /jointset/hip_r/hip_flexion_r/speed. bounds: [-50, 50]
+[2020-10-12 16:37:47.382] [cout] [info]   /jointset/hip_l/hip_flexion_l/speed. bounds: [-50, 50]
+[2020-10-12 16:37:47.382] [cout] [info]   /hamstrings_r/activation. bounds: [0.01, 1]
+[2020-10-12 16:37:47.384] [cout] [info]   /bifemsh_r/activation. bounds: [0.01, 1]
+[2020-10-12 16:37:47.384] [cout] [info]   /glut_max_r/activation. bounds: [0.01, 1]
+[2020-10-12 16:37:47.385] [cout] [info]   /iliopsoas_r/activation. bounds: [0.01, 1]
+[2020-10-12 16:37:47.385] [cout] [info]   /rect_fem_r/activation. bounds: [0.01, 1]
+[2020-10-12 16:37:47.385] [cout] [info]   /tib_ant_r/activation. bounds: [0.01, 1]
+[2020-10-12 16:37:47.385] [cout] [info]   /vasti_r/activation. bounds: [0.01, 1]
+[2020-10-12 16:37:47.385] [cout] [info]   /gastroc_r/activation. bounds: [0.01, 1]
+[2020-10-12 16:37:47.386] [cout] [info]   /soleus_r/activation. bounds: [0.01, 1]
+[2020-10-12 16:37:47.386] [cout] [info]   /hamstrings_l/activation. bounds: [0.01, 1]
+[2020-10-12 16:37:47.386] [cout] [info]   /bifemsh_l/activation. bounds: [0.01, 1]
+[2020-10-12 16:37:47.386] [cout] [info]   /iliopsoas_l/activation. bounds: [0.01, 1]
+[2020-10-12 16:37:47.387] [cout] [info]   /rect_fem_l/activation. bounds: [0.01, 1]
+[2020-10-12 16:37:47.387] [cout] [info]   /tib_ant_l/activation. bounds: [0.01, 1]
+[2020-10-12 16:37:47.387] [cout] [info]   /vasti_l/activation. bounds: [0.01, 1]
+[2020-10-12 16:37:47.388] [cout] [info]   /soleus_l/activation. bounds: [0.01, 1]
+[2020-10-12 16:37:47.388] [cout] [info] Controls: (total: 19)
+[2020-10-12 16:37:47.388] [cout] [info]   /hamstrings_r. bounds: [0.01, 1]
+[2020-10-12 16:37:47.389] [cout] [info]   /lumbarAct. bounds: [-inf, inf]
+[2020-10-12 16:37:47.389] [cout] [info]   /bifemsh_r. bounds: [0.01, 1]
+[2020-10-12 16:37:47.389] [cout] [info]   /glut_max_r. bounds: [0.01, 1]
+[2020-10-12 16:37:47.390] [cout] [info]   /tib_ant_r. bounds: [0.01, 1]
+[2020-10-12 16:37:47.390] [cout] [info]   /vasti_r. bounds: [0.01, 1]
+[2020-10-12 16:37:47.390] [cout] [info]   /rect_fem_r. bounds: [0.01, 1]
+[2020-10-12 16:37:47.390] [cout] [info]   /iliopsoas_r. bounds: [0.01, 1]
+[2020-10-12 16:37:47.391] [cout] [info]   /gastroc_r. bounds: [0.01, 1]
+[2020-10-12 16:37:47.391] [cout] [info]   /soleus_r. bounds: [0.01, 1]
+[2020-10-12 16:37:47.392] [cout] [info]   /hamstrings_l. bounds: [0.01, 1]
+[2020-10-12 16:37:47.392] [cout] [info]   /bifemsh_l. bounds: [0.01, 1]
+[2020-10-12 16:37:47.392] [cout] [info]   /glut_max_l. bounds: [0.01, 1]
+[2020-10-12 16:37:47.392] [cout] [info]   /iliopsoas_l. bounds: [0.01, 1]
+[2020-10-12 16:37:47.394] [cout] [info]   /rect_fem_l. bounds: [0.01, 1]
+[2020-10-12 16:37:47.396] [cout] [info]   /tib_ant_l. bounds: [0.01, 1]
+[2020-10-12 16:37:47.396] [cout] [info]   /vasti_l. bounds: [0.01, 1]
+[2020-10-12 16:37:47.396] [cout] [info]   /gastroc_l. bounds: [0.01, 1]
+[2020-10-12 16:37:47.397] [cout] [info]   /soleus_l. bounds: [0.01, 1]
+[2020-10-12 16:37:47.398] [cout] [info] Parameters: none
+[2020-10-12 16:37:47.809] [info] Number of threads: 8
+[2020-10-12 16:43:34.932] [info] Set log level to Info.
+[2020-10-12 16:43:34.944] [info] ------------------------------------------------------------------------
+[2020-10-12 16:43:34.944] [info] Elapsed real time: 348 second(s) (5 minute(s), 48 second(s)).
+[2020-10-12 16:43:34.945] [info] Mon Oct 12 16:43:34 2020
+[2020-10-12 16:43:34.945] [warning] MocoCasADiSolver did NOT succeed:
+[2020-10-12 16:43:34.946] [warning]   User_Requested_Stop
+[2020-10-12 16:43:34.946] [info] ========================================================================
+[2020-10-12 16:43:47.829] [info] DeGrooteFregly2016Muscle 'gastroc_l' is exceeding maximum contraction velocity at time 0.186667 s.
+[2020-10-12 16:43:47.830] [info] DeGrooteFregly2016Muscle 'soleus_l' is exceeding maximum contraction velocity at time 0.186667 s.
+[2020-10-12 16:43:47.832] [info] DeGrooteFregly2016Muscle 'tib_ant_l' is exceeding maximum contraction velocity at time 0.193333 s.
+[2020-10-12 16:43:47.838] [info] DeGrooteFregly2016Muscle 'gastroc_l' is exceeding maximum contraction velocity at time 0.246667 s.
+[2020-10-12 16:43:47.839] [info] DeGrooteFregly2016Muscle 'soleus_l' is exceeding maximum contraction velocity at time 0.246667 s.
+[2020-10-12 16:44:36.183] [info] Exiting visualization.
+[2020-10-12 16:55:44.272] [info] Processing subject ...
+[2020-10-12 16:55:44.272] [info] Step 1: Loading generic model
+[2020-10-12 16:55:44.281] [info] Updating Model file from 30000 to latest format...
+[2020-10-12 16:55:44.299] [info] Loaded model gait9dof18musc_Ong_et_al from file gait9dof18musc_Ong_et_al_Moco.osim
+[2020-10-12 16:55:44.307] [info] Step 2: Scaling generic model
+[2020-10-12 16:55:44.344] [info] Wrote model file 'expData_2Dmodel.osim' from model.
+[2020-10-12 16:55:44.344] [info] Step 3: Placing markers on model
+[2020-10-12 17:00:01.721] [info] Processing subject ...
+[2020-10-12 17:00:01.721] [info] Step 1: Loading generic model
+[2020-10-12 17:00:01.729] [info] Updating Model file from 30000 to latest format...
+[2020-10-12 17:00:01.747] [info] Loaded model gait9dof18musc_Ong_et_al from file gait9dof18musc_Ong_et_al_Moco.osim
+[2020-10-12 17:00:01.755] [info] Step 2: Scaling generic model
+[2020-10-12 17:00:01.791] [info] Wrote model file 'expData_2Dmodel.osim' from model.
+[2020-10-12 17:00:01.791] [info] Step 3: Placing markers on model
+[2020-10-12 17:01:19.830] [info] Processing subject ...
+[2020-10-12 17:01:19.830] [info] Step 1: Loading generic model
+[2020-10-12 17:01:19.838] [info] Updating Model file from 30000 to latest format...
+[2020-10-12 17:01:19.856] [info] Loaded model gait9dof18musc_Ong_et_al from file gait9dof18musc_Ong_et_al_Moco.osim
+[2020-10-12 17:01:19.863] [info] Step 2: Scaling generic model
+[2020-10-12 17:01:19.902] [info] Wrote model file 'expData_2Dmodel.osim' from model.
+[2020-10-12 17:05:22.416] [info] Loaded model model from file expData_2Dmodel.osim
+[2020-10-12 17:05:42.423] [info] Storage: read data file = refQ_converted.sto (nr=132 nc=11)
+[2020-10-12 17:05:42.425] [info] Storage: read data file = refQ_converted.sto (nr=132 nc=11)
+[2020-10-12 17:06:23.731] [info] ========================================================================
+[2020-10-12 17:06:23.731] [info] MocoCasADiSolver starting.
+[2020-10-12 17:06:23.732] [info] Mon Oct 12 17:06:23 2020
+[2020-10-12 17:06:23.732] [info] ------------------------------------------------------------------------
+[2020-10-12 17:06:23.733] [cout] [info] Costs: (total: 4)
+[2020-10-12 17:06:23.750] [cout] [info]   state_tracking. MocoStateTrackingGoal, enabled: true, mode: cost, weight: 10.0
+[2020-10-12 17:06:23.752] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tilt/value, weight: 25.0
+[2020-10-12 17:06:23.753] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tx/value, weight: 100.0
+[2020-10-12 17:06:23.753] [cout] [info]         state: /jointset/ground_pelvis/pelvis_ty/value, weight: 25.0
+[2020-10-12 17:06:23.753] [cout] [info]         state: /jointset/hip_r/hip_flexion_r/value, weight: 250.0
+[2020-10-12 17:06:23.754] [cout] [info]         state: /jointset/knee_r/knee_angle_r/value, weight: 500.0
+[2020-10-12 17:06:23.754] [cout] [info]         state: /jointset/ankle_r/ankle_angle_r/value, weight: 75.0
+[2020-10-12 17:06:23.754] [cout] [info]         state: /jointset/hip_l/hip_flexion_l/value, weight: 250.0
+[2020-10-12 17:06:23.755] [cout] [info]         state: /jointset/knee_l/knee_angle_l/value, weight: 500.0
+[2020-10-12 17:06:23.755] [cout] [info]         state: /jointset/ankle_l/ankle_angle_l/value, weight: 75.0
+[2020-10-12 17:06:23.755] [cout] [info]         state: /jointset/back/lumbar_extension/value, weight: 150.0
+[2020-10-12 17:06:23.755] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tilt/speed, weight: 1.0
+[2020-10-12 17:06:23.756] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tx/speed, weight: 1.0
+[2020-10-12 17:06:23.756] [cout] [info]         state: /jointset/ground_pelvis/pelvis_ty/speed, weight: 1.0
+[2020-10-12 17:06:23.756] [cout] [info]         state: /jointset/hip_r/hip_flexion_r/speed, weight: 1.0
+[2020-10-12 17:06:23.756] [cout] [info]         state: /jointset/knee_r/knee_angle_r/speed, weight: 1.0
+[2020-10-12 17:06:23.757] [cout] [info]         state: /jointset/ankle_r/ankle_angle_r/speed, weight: 1.0
+[2020-10-12 17:06:23.757] [cout] [info]         state: /jointset/hip_l/hip_flexion_l/speed, weight: 1.0
+[2020-10-12 17:06:23.757] [cout] [info]         state: /jointset/knee_l/knee_angle_l/speed, weight: 1.0
+[2020-10-12 17:06:23.758] [cout] [info]         state: /jointset/ankle_l/ankle_angle_l/speed, weight: 1.0
+[2020-10-12 17:06:23.758] [cout] [info]         state: /jointset/back/lumbar_extension/speed, weight: 1.0
+[2020-10-12 17:06:23.758] [cout] [info]   control_effort. MocoControlGoal, enabled: true, mode: cost, weight: 0.1
+[2020-10-12 17:06:23.758] [cout] [info]         control: /lumbarAct, weight: 1.0
+[2020-10-12 17:06:23.758] [cout] [info]         control: /hamstrings_r, weight: 1.0
+[2020-10-12 17:06:23.759] [cout] [info]         control: /bifemsh_r, weight: 1.0
+[2020-10-12 17:06:23.759] [cout] [info]         control: /glut_max_r, weight: 1.0
+[2020-10-12 17:06:23.759] [cout] [info]         control: /iliopsoas_r, weight: 1.0
+[2020-10-12 17:06:23.759] [cout] [info]         control: /rect_fem_r, weight: 1.0
+[2020-10-12 17:06:23.760] [cout] [info]         control: /vasti_r, weight: 1.0
+[2020-10-12 17:06:23.760] [cout] [info]         control: /gastroc_r, weight: 1.0
+[2020-10-12 17:06:23.762] [cout] [info]         control: /soleus_r, weight: 1.0
+[2020-10-12 17:06:23.762] [cout] [info]         control: /tib_ant_r, weight: 1.0
+[2020-10-12 17:06:23.762] [cout] [info]         control: /hamstrings_l, weight: 1.0
+[2020-10-12 17:06:23.762] [cout] [info]         control: /bifemsh_l, weight: 1.0
+[2020-10-12 17:06:23.763] [cout] [info]         control: /glut_max_l, weight: 1.0
+[2020-10-12 17:06:23.763] [cout] [info]         control: /iliopsoas_l, weight: 1.0
+[2020-10-12 17:06:23.764] [cout] [info]         control: /rect_fem_l, weight: 1.0
+[2020-10-12 17:06:23.764] [cout] [info]         control: /vasti_l, weight: 1.0
+[2020-10-12 17:06:23.764] [cout] [info]         control: /gastroc_l, weight: 1.0
+[2020-10-12 17:06:23.765] [cout] [info]         control: /soleus_l, weight: 1.0
+[2020-10-12 17:06:23.765] [cout] [info]         control: /tib_ant_l, weight: 1.0
+[2020-10-12 17:06:23.765] [cout] [info]   met. MocoOutputGoal, enabled: true, mode: cost, weight: 0.1
+[2020-10-12 17:06:23.765] [cout] [info]   contact. MocoContactTrackingGoal, enabled: true, mode: cost, weight: 1.0
+[2020-10-12 17:06:23.765] [cout] [info]         projection type: plane
+[2020-10-12 17:06:23.766] [cout] [info]         projection vector: ~[0,0,1]
+[2020-10-12 17:06:23.766] [cout] [info]         group 0: ExternalForce: RightGRF
+[2020-10-12 17:06:23.766] [cout] [info]             forces:
+[2020-10-12 17:06:23.766] [cout] [info]                 contactHeel_r
+[2020-10-12 17:06:23.767] [cout] [info]                 contactToe1_r
+[2020-10-12 17:06:23.767] [cout] [info]                 contactToe2_r
+[2020-10-12 17:06:23.767] [cout] [info]         group 1: ExternalForce: LeftGRF
+[2020-10-12 17:06:23.767] [cout] [info]             forces:
+[2020-10-12 17:06:23.767] [cout] [info]                 contactHeel_l
+[2020-10-12 17:06:23.768] [cout] [info]                 contactToe1_l
+[2020-10-12 17:06:23.768] [cout] [info]                 contactToe2_l
+[2020-10-12 17:06:23.768] [cout] [info] Endpoint constraints: none
+[2020-10-12 17:06:23.768] [cout] [info] Kinematic constraints: none
+[2020-10-12 17:06:23.769] [cout] [info] Path constraints: none
+[2020-10-12 17:06:23.769] [cout] [info] States: (total: 38)
+[2020-10-12 17:06:23.769] [cout] [info]   /jointset/knee_r/knee_angle_r/speed. bounds: [-50, 50]
+[2020-10-12 17:06:23.769] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/value. bounds: [0.75, 1.25]
+[2020-10-12 17:06:23.770] [cout] [info]   /jointset/ankle_l/ankle_angle_l/value. bounds: [-0.523599, 0.523599]
+[2020-10-12 17:06:23.770] [cout] [info]   /jointset/back/lumbar_extension/speed. bounds: [-50, 50]
+[2020-10-12 17:06:23.772] [cout] [info]   /jointset/knee_l/knee_angle_l/speed. bounds: [-50, 50]
+[2020-10-12 17:06:23.772] [cout] [info]   /jointset/hip_l/hip_flexion_l/value. bounds: [-0.698132, 1.39626]
+[2020-10-12 17:06:23.772] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/value. bounds: [-0.349066, 0]
+[2020-10-12 17:06:23.772] [cout] [info]   /glut_max_l/activation. bounds: [0.01, 1]
+[2020-10-12 17:06:23.773] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/value. bounds: [-5, 5]
+[2020-10-12 17:06:23.773] [cout] [info]   /jointset/ankle_r/ankle_angle_r/value. bounds: [-0.523599, 0.523599]
+[2020-10-12 17:06:23.773] [cout] [info]   /jointset/hip_r/hip_flexion_r/value. bounds: [-0.698132, 1.39626]
+[2020-10-12 17:06:23.774] [cout] [info]   /jointset/knee_r/knee_angle_r/value. bounds: [-2.44346, 0]
+[2020-10-12 17:06:23.775] [cout] [info]   /jointset/back/lumbar_extension/value. bounds: [-30, 0]
+[2020-10-12 17:06:23.775] [cout] [info]   /jointset/knee_l/knee_angle_l/value. bounds: [-2.44346, 0]
+[2020-10-12 17:06:23.775] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/speed. bounds: [-50, 50]
+[2020-10-12 17:06:23.775] [cout] [info]   /gastroc_l/activation. bounds: [0.01, 1]
+[2020-10-12 17:06:23.775] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/speed. bounds: [-50, 50]
+[2020-10-12 17:06:23.776] [cout] [info]   /jointset/ankle_l/ankle_angle_l/speed. bounds: [-50, 50]
+[2020-10-12 17:06:23.776] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/speed. bounds: [-50, 50]
+[2020-10-12 17:06:23.776] [cout] [info]   /jointset/ankle_r/ankle_angle_r/speed. bounds: [-50, 50]
+[2020-10-12 17:06:23.776] [cout] [info]   /jointset/hip_r/hip_flexion_r/speed. bounds: [-50, 50]
+[2020-10-12 17:06:23.777] [cout] [info]   /jointset/hip_l/hip_flexion_l/speed. bounds: [-50, 50]
+[2020-10-12 17:06:23.777] [cout] [info]   /hamstrings_r/activation. bounds: [0.01, 1]
+[2020-10-12 17:06:23.777] [cout] [info]   /bifemsh_r/activation. bounds: [0.01, 1]
+[2020-10-12 17:06:23.777] [cout] [info]   /glut_max_r/activation. bounds: [0.01, 1]
+[2020-10-12 17:06:23.777] [cout] [info]   /iliopsoas_r/activation. bounds: [0.01, 1]
+[2020-10-12 17:06:23.778] [cout] [info]   /rect_fem_r/activation. bounds: [0.01, 1]
+[2020-10-12 17:06:23.778] [cout] [info]   /tib_ant_r/activation. bounds: [0.01, 1]
+[2020-10-12 17:06:23.778] [cout] [info]   /vasti_r/activation. bounds: [0.01, 1]
+[2020-10-12 17:06:23.778] [cout] [info]   /gastroc_r/activation. bounds: [0.01, 1]
+[2020-10-12 17:06:23.779] [cout] [info]   /soleus_r/activation. bounds: [0.01, 1]
+[2020-10-12 17:06:23.779] [cout] [info]   /hamstrings_l/activation. bounds: [0.01, 1]
+[2020-10-12 17:06:23.779] [cout] [info]   /bifemsh_l/activation. bounds: [0.01, 1]
+[2020-10-12 17:06:23.779] [cout] [info]   /iliopsoas_l/activation. bounds: [0.01, 1]
+[2020-10-12 17:06:23.779] [cout] [info]   /rect_fem_l/activation. bounds: [0.01, 1]
+[2020-10-12 17:06:23.780] [cout] [info]   /tib_ant_l/activation. bounds: [0.01, 1]
+[2020-10-12 17:06:23.780] [cout] [info]   /vasti_l/activation. bounds: [0.01, 1]
+[2020-10-12 17:06:23.780] [cout] [info]   /soleus_l/activation. bounds: [0.01, 1]
+[2020-10-12 17:06:23.782] [cout] [info] Controls: (total: 19)
+[2020-10-12 17:06:23.782] [cout] [info]   /hamstrings_r. bounds: [0.01, 1]
+[2020-10-12 17:06:23.782] [cout] [info]   /lumbarAct. bounds: [-inf, inf]
+[2020-10-12 17:06:23.782] [cout] [info]   /bifemsh_r. bounds: [0.01, 1]
+[2020-10-12 17:06:23.783] [cout] [info]   /glut_max_r. bounds: [0.01, 1]
+[2020-10-12 17:06:23.783] [cout] [info]   /tib_ant_r. bounds: [0.01, 1]
+[2020-10-12 17:06:23.783] [cout] [info]   /vasti_r. bounds: [0.01, 1]
+[2020-10-12 17:06:23.784] [cout] [info]   /rect_fem_r. bounds: [0.01, 1]
+[2020-10-12 17:06:23.784] [cout] [info]   /iliopsoas_r. bounds: [0.01, 1]
+[2020-10-12 17:06:23.784] [cout] [info]   /gastroc_r. bounds: [0.01, 1]
+[2020-10-12 17:06:23.784] [cout] [info]   /soleus_r. bounds: [0.01, 1]
+[2020-10-12 17:06:23.784] [cout] [info]   /hamstrings_l. bounds: [0.01, 1]
+[2020-10-12 17:06:23.784] [cout] [info]   /bifemsh_l. bounds: [0.01, 1]
+[2020-10-12 17:06:23.785] [cout] [info]   /glut_max_l. bounds: [0.01, 1]
+[2020-10-12 17:06:23.785] [cout] [info]   /iliopsoas_l. bounds: [0.01, 1]
+[2020-10-12 17:06:23.785] [cout] [info]   /rect_fem_l. bounds: [0.01, 1]
+[2020-10-12 17:06:23.785] [cout] [info]   /tib_ant_l. bounds: [0.01, 1]
+[2020-10-12 17:06:23.785] [cout] [info]   /vasti_l. bounds: [0.01, 1]
+[2020-10-12 17:06:23.786] [cout] [info]   /gastroc_l. bounds: [0.01, 1]
+[2020-10-12 17:06:23.786] [cout] [info]   /soleus_l. bounds: [0.01, 1]
+[2020-10-12 17:06:23.786] [cout] [info] Parameters: none
+[2020-10-12 17:06:24.243] [info] Number of threads: 8
+[2020-10-12 18:07:10.366] [info] Set log level to Info.
+[2020-10-12 18:07:10.377] [info] ------------------------------------------------------------------------
+[2020-10-12 18:07:10.377] [info] Elapsed real time: 3647 second(s) (1 hour(s), 0 minute(s), 47 second(s)).
+[2020-10-12 18:07:10.377] [info] Mon Oct 12 18:07:10 2020
+[2020-10-12 18:07:10.378] [warning] MocoCasADiSolver did NOT succeed:
+[2020-10-12 18:07:10.378] [warning]   Maximum_Iterations_Exceeded
+[2020-10-12 18:07:10.379] [info] ========================================================================
+[2020-10-12 18:57:17.733] [info] Exiting visualization.
