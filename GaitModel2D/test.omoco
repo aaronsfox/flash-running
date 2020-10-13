@@ -1,0 +1,1627 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSimDocument Version="40000">
+	<MocoStudy name="torque_driven_rra_tracking">
+		<!--The optimal control problem to solve.-->
+		<MocoProblem name="problem">
+			<!--List of 1 or more MocoPhases.-->
+			<MocoPhase name="phases">
+				<!--OpenSim Model to provide dynamics.-->
+				<ModelProcessor name="model">
+					<!--Base model to process.-->
+					<model>
+						<Model name="model">
+							<!--List of components that this component owns and serializes.-->
+							<components />
+							<!--The model's ground reference frame.-->
+							<Ground name="ground">
+								<!--The geometry used to display the axes of this Frame.-->
+								<FrameGeometry name="frame_geometry">
+									<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+									<socket_frame>..</socket_frame>
+									<!--Scale factors in X, Y, Z directions respectively.-->
+									<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+								</FrameGeometry>
+							</Ground>
+							<!--Acceleration due to gravity, expressed in ground.-->
+							<gravity>0 -9.8066499999999994 0</gravity>
+							<!--Credits (e.g., model author names) associated with the model.-->
+							<credits>A planar reduced gait model with 9 degrees of freedom and 18 muscles by Ajay Seth. Adjusted by Carmichael Ong to follow muscle strengths of Handsfield/Rajagopal and changed hamstrings to follow semimembranosus. Ankle passive mechanics based on Weiss, Kearney, and Hunter 1986. Closely based on Delp S.L., Loan J.P., Hoy M.G., Zajac F.E., Topp E.L., Rosen J.M., Thelen D.G., Anderson F.C., Seth A. Notes: 3D, 23 DOF gait model created by D.G. Thelen, Univ. of Wisconsin-Madison, and Ajay Seth, Frank C. Anderson, and Scott L. Delp, Stanford University. Lower extremity joint defintions based on Delp et al. (1990). Low back joint and anthropometry based on Anderson and Pandy (1999, 2001). Planar knee model of Yamaguchi and Zajac (1989). Seth replaced tibia translation constraints with a CustomJoint for the knee and removed the patella to eliminate all kinematic constraints; insertions of the quadrucepts are handled with moving points in the tibia frame as defined by Delp 1990. Number of muscles was reduced by Anderson to improve simulation speed for demonstrations and is not intended to be used in research. License: Creative Commons (CCBY 3.0). You are free to distribute, remix, tweak, and build upon this work, even commercially, as long as you credit us for the original creation. http://creativecommons.org/licenses/by/3.0/ More Information: http://simtk-confluence.stanford.edu:8080/display/OpenSim/Gait+2392+and+2354+Models</credits>
+							<!--Publications and references associated with the model.-->
+							<publications>Delp, S.L., Loan, J.P., Hoy, M.G., Zajac, F.E., Topp E.L., Rosen, J.M.: An interactive graphics-based model of the lower extremity to study orthopaedic surgical procedures, IEEE Transactions on Biomedical Engineering, vol. 37, pp. 757-767, 1990. Yamaguchi G.T., Zajac F.E.: A planar model of the knee joint to characterize the knee extensor mechanism." J . Biomech. vol. 22. pp. 1-10. 1989. Anderson F.C., Pandy M.G.: A dynamic optimization solution for vertical jumping in three dimensions. Computer Methods in Biomechanics and Biomedical Engineering 2:201-231, 1999. Anderson F.C., Pandy M.G.: Dynamic optimization of human walking. Journal of Biomechanical Engineering 123:381-390, 2001.</publications>
+							<!--Units for all lengths.-->
+							<length_units>meters</length_units>
+							<!--Units for all forces.-->
+							<force_units>N</force_units>
+							<!--List of bodies that make up this model.-->
+							<BodySet name="bodyset">
+								<objects>
+									<Body name="pelvis">
+										<!--The geometry used to display the axes of this Frame.-->
+										<FrameGeometry name="frame_geometry">
+											<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+											<socket_frame>..</socket_frame>
+											<!--Scale factors in X, Y, Z directions respectively.-->
+											<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+										</FrameGeometry>
+										<!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+										<attached_geometry>
+											<Mesh name="pelvis_geom_1">
+												<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+												<socket_frame>..</socket_frame>
+												<!--Scale factors in X, Y, Z directions respectively.-->
+												<scale_factors>0.92462458524000002 0.78682217890000006 0.92341680587200003</scale_factors>
+												<!--Default appearance attributes for this Geometry-->
+												<Appearance>
+													<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+													<opacity>1</opacity>
+													<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+													<color>1 1 1</color>
+												</Appearance>
+												<!--Name of geometry file.-->
+												<mesh_file>r_pelvis.vtp</mesh_file>
+											</Mesh>
+											<Mesh name="pelvis_geom_2">
+												<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+												<socket_frame>..</socket_frame>
+												<!--Scale factors in X, Y, Z directions respectively.-->
+												<scale_factors>0.92462458524000002 0.78682217890000006 0.92341680587200003</scale_factors>
+												<!--Default appearance attributes for this Geometry-->
+												<Appearance>
+													<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+													<opacity>1</opacity>
+													<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+													<color>1 1 1</color>
+												</Appearance>
+												<!--Name of geometry file.-->
+												<mesh_file>l_pelvis.vtp</mesh_file>
+											</Mesh>
+											<Mesh name="pelvis_geom_3">
+												<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+												<socket_frame>..</socket_frame>
+												<!--Scale factors in X, Y, Z directions respectively.-->
+												<scale_factors>0.92462458524000002 0.78682217890000006 0.92341680587200003</scale_factors>
+												<!--Default appearance attributes for this Geometry-->
+												<Appearance>
+													<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+													<opacity>1</opacity>
+													<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+													<color>1 1 1</color>
+												</Appearance>
+												<!--Name of geometry file.-->
+												<mesh_file>sacrum.vtp</mesh_file>
+											</Mesh>
+										</attached_geometry>
+										<!--The mass of the body (kg)-->
+										<mass>10.867519018261245</mass>
+										<!--The location (Vec3) of the mass center in the body frame.-->
+										<mass_center>-0.065370940942799993 0 0</mass_center>
+										<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+										<inertia>0.091166878648466426 0.091166878648466426 0.049830415723495232 0 0 0</inertia>
+									</Body>
+									<Body name="femur_l">
+										<!--The geometry used to display the axes of this Frame.-->
+										<FrameGeometry name="frame_geometry">
+											<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+											<socket_frame>..</socket_frame>
+											<!--Scale factors in X, Y, Z directions respectively.-->
+											<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+										</FrameGeometry>
+										<!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+										<attached_geometry>
+											<Mesh name="femur_l_geom_1">
+												<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+												<socket_frame>..</socket_frame>
+												<!--Scale factors in X, Y, Z directions respectively.-->
+												<scale_factors>1.1610340875 1.21914345 1.1610340875</scale_factors>
+												<!--Default appearance attributes for this Geometry-->
+												<Appearance>
+													<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+													<opacity>1</opacity>
+													<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+													<color>1 1 1</color>
+												</Appearance>
+												<!--Name of geometry file.-->
+												<mesh_file>femur_l.vtp</mesh_file>
+											</Mesh>
+										</attached_geometry>
+										<!--The mass of the body (kg)-->
+										<mass>8.5830976816213997</mass>
+										<!--The location (Vec3) of the mass center in the body frame.-->
+										<mass_center>0 -0.20725377859999999 0</mass_center>
+										<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+										<inertia>0.12423883225258124 0.032567460881744503 0.13101212183767369 0 0 0</inertia>
+									</Body>
+									<Body name="femur_r">
+										<!--The geometry used to display the axes of this Frame.-->
+										<FrameGeometry name="frame_geometry">
+											<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+											<socket_frame>..</socket_frame>
+											<!--Scale factors in X, Y, Z directions respectively.-->
+											<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+										</FrameGeometry>
+										<!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+										<attached_geometry>
+											<Mesh name="femur_r_geom_1">
+												<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+												<socket_frame>..</socket_frame>
+												<!--Scale factors in X, Y, Z directions respectively.-->
+												<scale_factors>1.1564715750000001 1.1868548999999999 1.1564715750000001</scale_factors>
+												<!--Default appearance attributes for this Geometry-->
+												<Appearance>
+													<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+													<opacity>1</opacity>
+													<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+													<color>1 1 1</color>
+												</Appearance>
+												<!--Name of geometry file.-->
+												<mesh_file>femur_r.vtp</mesh_file>
+											</Mesh>
+										</attached_geometry>
+										<!--The mass of the body (kg)-->
+										<mass>8.5830976816213997</mass>
+										<!--The location (Vec3) of the mass center in the body frame.-->
+										<mass_center>0 -0.20176474120000001 0</mass_center>
+										<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+										<inertia>0.12423883225258124 0.032567460881744503 0.13101212183767369 0 0 0</inertia>
+									</Body>
+									<Body name="tibia_l">
+										<!--The geometry used to display the axes of this Frame.-->
+										<FrameGeometry name="frame_geometry">
+											<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+											<socket_frame>..</socket_frame>
+											<!--Scale factors in X, Y, Z directions respectively.-->
+											<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+										</FrameGeometry>
+										<!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+										<attached_geometry>
+											<Mesh name="tibia_l_geom_1">
+												<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+												<socket_frame>..</socket_frame>
+												<!--Scale factors in X, Y, Z directions respectively.-->
+												<scale_factors>0.98447153220000017 1.0712647311600001 0.98447153220000017</scale_factors>
+												<!--Default appearance attributes for this Geometry-->
+												<Appearance>
+													<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+													<opacity>1</opacity>
+													<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+													<color>1 1 1</color>
+												</Appearance>
+												<!--Name of geometry file.-->
+												<mesh_file>tibia_l.vtp</mesh_file>
+											</Mesh>
+											<Mesh name="fibula_l_geom_1">
+												<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+												<socket_frame>..</socket_frame>
+												<!--Scale factors in X, Y, Z directions respectively.-->
+												<scale_factors>0.98447153220000017 1.0712647311600001 0.98447153220000017</scale_factors>
+												<!--Default appearance attributes for this Geometry-->
+												<Appearance>
+													<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+													<opacity>1</opacity>
+													<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+													<color>1 1 1</color>
+												</Appearance>
+												<!--Name of geometry file.-->
+												<mesh_file>l_fibula.vtp</mesh_file>
+											</Mesh>
+										</attached_geometry>
+										<!--The mass of the body (kg)-->
+										<mass>3.4211876335402533</mass>
+										<!--The location (Vec3) of the mass center in the body frame.-->
+										<mass_center>0 -0.20000527557000003 0</mass_center>
+										<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+										<inertia>0.043464891103213645 0.0043982330283013835 0.0440685701463139 0 0 0</inertia>
+									</Body>
+									<Body name="tibia_r">
+										<!--The geometry used to display the axes of this Frame.-->
+										<FrameGeometry name="frame_geometry">
+											<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+											<socket_frame>..</socket_frame>
+											<!--Scale factors in X, Y, Z directions respectively.-->
+											<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+										</FrameGeometry>
+										<!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+										<attached_geometry>
+											<Mesh name="tibia_r_geom_1">
+												<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+												<socket_frame>..</socket_frame>
+												<!--Scale factors in X, Y, Z directions respectively.-->
+												<scale_factors>0.98892816672000017 1.0803616792799999 0.98892816672000017</scale_factors>
+												<!--Default appearance attributes for this Geometry-->
+												<Appearance>
+													<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+													<opacity>1</opacity>
+													<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+													<color>1 1 1</color>
+												</Appearance>
+												<!--Name of geometry file.-->
+												<mesh_file>tibia_r.vtp</mesh_file>
+											</Mesh>
+											<Mesh name="fibula_r_geom_1">
+												<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+												<socket_frame>..</socket_frame>
+												<!--Scale factors in X, Y, Z directions respectively.-->
+												<scale_factors>0.98892816672000017 1.0803616792799999 0.98892816672000017</scale_factors>
+												<!--Default appearance attributes for this Geometry-->
+												<Appearance>
+													<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+													<opacity>1</opacity>
+													<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+													<color>1 1 1</color>
+												</Appearance>
+												<!--Name of geometry file.-->
+												<mesh_file>r_fibula.vtp</mesh_file>
+											</Mesh>
+										</attached_geometry>
+										<!--The mass of the body (kg)-->
+										<mass>3.4211876335402533</mass>
+										<!--The location (Vec3) of the mass center in the body frame.-->
+										<mass_center>0 -0.20170367706 0</mass_center>
+										<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+										<inertia>0.043464891103213645 0.0043982330283013835 0.0440685701463139 0 0 0</inertia>
+									</Body>
+									<Body name="talus_l">
+										<!--The geometry used to display the axes of this Frame.-->
+										<FrameGeometry name="frame_geometry">
+											<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+											<socket_frame>..</socket_frame>
+											<!--Scale factors in X, Y, Z directions respectively.-->
+											<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+										</FrameGeometry>
+										<!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+										<attached_geometry>
+											<Mesh name="talus_l_geom_1">
+												<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+												<socket_frame>..</socket_frame>
+												<!--Scale factors in X, Y, Z directions respectively.-->
+												<scale_factors>0.93069450540000009 1.01274660212 0.93069450540000009</scale_factors>
+												<!--Default appearance attributes for this Geometry-->
+												<Appearance>
+													<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+													<opacity>1</opacity>
+													<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+													<color>1 1 1</color>
+												</Appearance>
+												<!--Name of geometry file.-->
+												<mesh_file>l_talus.vtp</mesh_file>
+											</Mesh>
+										</attached_geometry>
+										<!--The mass of the body (kg)-->
+										<mass>0.092277481686857857</mass>
+										<!--The location (Vec3) of the mass center in the body frame.-->
+										<mass_center>0 0 0</mass_center>
+										<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+										<inertia>0.00077075483443758371 0.00077075483443758371 0.00077075483443758371 0 0 0</inertia>
+									</Body>
+									<Body name="talus_r">
+										<!--The geometry used to display the axes of this Frame.-->
+										<FrameGeometry name="frame_geometry">
+											<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+											<socket_frame>..</socket_frame>
+											<!--Scale factors in X, Y, Z directions respectively.-->
+											<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+										</FrameGeometry>
+										<!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+										<attached_geometry>
+											<Mesh name="talus_r_geom_1">
+												<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+												<socket_frame>..</socket_frame>
+												<!--Scale factors in X, Y, Z directions respectively.-->
+												<scale_factors>0.93490769504000004 1.02134662696 0.93490769504000004</scale_factors>
+												<!--Default appearance attributes for this Geometry-->
+												<Appearance>
+													<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+													<opacity>1</opacity>
+													<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+													<color>1 1 1</color>
+												</Appearance>
+												<!--Name of geometry file.-->
+												<mesh_file>r_talus.vtp</mesh_file>
+											</Mesh>
+										</attached_geometry>
+										<!--The mass of the body (kg)-->
+										<mass>0.092277481686857857</mass>
+										<!--The location (Vec3) of the mass center in the body frame.-->
+										<mass_center>0 0 0</mass_center>
+										<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+										<inertia>0.00077075483443758371 0.00077075483443758371 0.00077075483443758371 0 0 0</inertia>
+									</Body>
+									<Body name="calcn_l">
+										<!--The geometry used to display the axes of this Frame.-->
+										<FrameGeometry name="frame_geometry">
+											<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+											<socket_frame>..</socket_frame>
+											<!--Scale factors in X, Y, Z directions respectively.-->
+											<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+										</FrameGeometry>
+										<!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+										<attached_geometry>
+											<Mesh name="calc_l_geom_1">
+												<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+												<socket_frame>..</socket_frame>
+												<!--Scale factors in X, Y, Z directions respectively.-->
+												<scale_factors>0.86659918743199993 1.33092010348 1.32817833148</scale_factors>
+												<!--Default appearance attributes for this Geometry-->
+												<Appearance>
+													<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+													<opacity>1</opacity>
+													<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+													<color>1 1 1</color>
+												</Appearance>
+												<!--Name of geometry file.-->
+												<mesh_file>l_foot.vtp</mesh_file>
+											</Mesh>
+										</attached_geometry>
+										<!--The mass of the body (kg)-->
+										<mass>1.1534685210857205</mass>
+										<!--The location (Vec3) of the mass center in the body frame.-->
+										<mass_center>0.086659918743200004 0.039927573979 0</mass_center>
+										<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+										<inertia>0.0010790567682126165 0.0030059438543065765 0.003160094821194098 0 0 0</inertia>
+									</Body>
+									<Body name="calcn_r">
+										<!--The geometry used to display the axes of this Frame.-->
+										<FrameGeometry name="frame_geometry">
+											<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+											<socket_frame>..</socket_frame>
+											<!--Scale factors in X, Y, Z directions respectively.-->
+											<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+										</FrameGeometry>
+										<!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+										<attached_geometry>
+											<Mesh name="calc_r_geom_1">
+												<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+												<socket_frame>..</socket_frame>
+												<!--Scale factors in X, Y, Z directions respectively.-->
+												<scale_factors>0.86169689909599989 1.3221464330799999 1.3185455725199999</scale_factors>
+												<!--Default appearance attributes for this Geometry-->
+												<Appearance>
+													<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+													<opacity>1</opacity>
+													<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+													<color>1 1 1</color>
+												</Appearance>
+												<!--Name of geometry file.-->
+												<mesh_file>r_foot.vtp</mesh_file>
+											</Mesh>
+										</attached_geometry>
+										<!--The mass of the body (kg)-->
+										<mass>1.1534685210857205</mass>
+										<!--The location (Vec3) of the mass center in the body frame.-->
+										<mass_center>0.0861696899096 0.039664364059 0</mass_center>
+										<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+										<inertia>0.0010790567682126165 0.0030059438543065765 0.003160094821194098 0 0 0</inertia>
+									</Body>
+									<Body name="toes_l">
+										<!--The geometry used to display the axes of this Frame.-->
+										<FrameGeometry name="frame_geometry">
+											<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+											<socket_frame>..</socket_frame>
+											<!--Scale factors in X, Y, Z directions respectively.-->
+											<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+										</FrameGeometry>
+										<!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+										<attached_geometry>
+											<Mesh name="toes_l_geom_1">
+												<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+												<socket_frame>..</socket_frame>
+												<!--Scale factors in X, Y, Z directions respectively.-->
+												<scale_factors>0.86659918743199993 1.33092010348 1.32817833148</scale_factors>
+												<!--Default appearance attributes for this Geometry-->
+												<Appearance>
+													<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+													<opacity>1</opacity>
+													<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+													<color>1 1 1</color>
+												</Appearance>
+												<!--Name of geometry file.-->
+												<mesh_file>l_bofoot.vtp</mesh_file>
+											</Mesh>
+										</attached_geometry>
+										<!--The mass of the body (kg)-->
+										<mass>0.19987302533373397</mass>
+										<!--The location (Vec3) of the mass center in the body frame.-->
+										<mass_center>0.029984359952399998 0.0079855293585000004 0.023243164399</mass_center>
+										<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+										<inertia>7.7075483443758377e-05 0.00015415096688751629 7.7075483443758377e-05 0 0 0</inertia>
+									</Body>
+									<Body name="toes_r">
+										<!--The geometry used to display the axes of this Frame.-->
+										<FrameGeometry name="frame_geometry">
+											<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+											<socket_frame>..</socket_frame>
+											<!--Scale factors in X, Y, Z directions respectively.-->
+											<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+										</FrameGeometry>
+										<!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+										<attached_geometry>
+											<Mesh name="toes_r_geom_1">
+												<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+												<socket_frame>..</socket_frame>
+												<!--Scale factors in X, Y, Z directions respectively.-->
+												<scale_factors>0.86169689909599989 1.3221464330799999 1.3185455725199999</scale_factors>
+												<!--Default appearance attributes for this Geometry-->
+												<Appearance>
+													<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+													<opacity>1</opacity>
+													<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+													<color>1 1 1</color>
+												</Appearance>
+												<!--Name of geometry file.-->
+												<mesh_file>r_bofoot.vtp</mesh_file>
+											</Mesh>
+										</attached_geometry>
+										<!--The mass of the body (kg)-->
+										<mass>0.19987302533373397</mass>
+										<!--The location (Vec3) of the mass center in the body frame.-->
+										<mass_center>0.029814740617199999 0.0079328872785000004 -0.023074590801000001</mass_center>
+										<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+										<inertia>7.7075483443758377e-05 0.00015415096688751629 7.7075483443758377e-05 0 0 0</inertia>
+									</Body>
+									<Body name="torso">
+										<!--The geometry used to display the axes of this Frame.-->
+										<FrameGeometry name="frame_geometry">
+											<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+											<socket_frame>..</socket_frame>
+											<!--Scale factors in X, Y, Z directions respectively.-->
+											<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+										</FrameGeometry>
+										<!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+										<attached_geometry>
+											<Mesh name="torso_geom_1">
+												<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+												<socket_frame>..</socket_frame>
+												<!--Scale factors in X, Y, Z directions respectively.-->
+												<scale_factors>1.0108883450000001 0.96188766314000007 1.2037926564400001</scale_factors>
+												<!--Default appearance attributes for this Geometry-->
+												<Appearance>
+													<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+													<opacity>1</opacity>
+													<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+													<color>1 1 1</color>
+												</Appearance>
+												<!--Name of geometry file.-->
+												<mesh_file>hat_spine.vtp</mesh_file>
+											</Mesh>
+											<Mesh name="torso_geom_2">
+												<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+												<socket_frame>..</socket_frame>
+												<!--Scale factors in X, Y, Z directions respectively.-->
+												<scale_factors>1.0108883450000001 0.96188766314000007 1.2037926564400001</scale_factors>
+												<!--Default appearance attributes for this Geometry-->
+												<Appearance>
+													<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+													<opacity>1</opacity>
+													<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+													<color>1 1 1</color>
+												</Appearance>
+												<!--Name of geometry file.-->
+												<mesh_file>hat_jaw.vtp</mesh_file>
+											</Mesh>
+											<Mesh name="torso_geom_3">
+												<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+												<socket_frame>..</socket_frame>
+												<!--Scale factors in X, Y, Z directions respectively.-->
+												<scale_factors>1.0108883450000001 0.96188766314000007 1.2037926564400001</scale_factors>
+												<!--Default appearance attributes for this Geometry-->
+												<Appearance>
+													<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+													<opacity>1</opacity>
+													<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+													<color>1 1 1</color>
+												</Appearance>
+												<!--Name of geometry file.-->
+												<mesh_file>hat_skull.vtp</mesh_file>
+											</Mesh>
+											<Mesh name="torso_geom_4">
+												<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+												<socket_frame>..</socket_frame>
+												<!--Scale factors in X, Y, Z directions respectively.-->
+												<scale_factors>1.0108883450000001 0.96188766314000007 1.2037926564400001</scale_factors>
+												<!--Default appearance attributes for this Geometry-->
+												<Appearance>
+													<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+													<opacity>1</opacity>
+													<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+													<color>1 1 1</color>
+												</Appearance>
+												<!--Name of geometry file.-->
+												<mesh_file>hat_ribs.vtp</mesh_file>
+											</Mesh>
+										</attached_geometry>
+										<!--The mass of the body (kg)-->
+										<mass>31.592672295202821</mass>
+										<!--The location (Vec3) of the mass center in the body frame.-->
+										<mass_center>-0.030326650350000001 0.30780425140700002 0</mass_center>
+										<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
+										<inertia>1.2758164672891068 0.66384335099467406 1.2758164672891068 0 0 0</inertia>
+									</Body>
+								</objects>
+								<groups />
+							</BodySet>
+							<!--List of joints that connect the bodies.-->
+							<JointSet name="jointset">
+								<objects>
+									<PlanarJoint name="ground_pelvis">
+										<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+										<socket_parent_frame>ground_offset</socket_parent_frame>
+										<!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+										<socket_child_frame>pelvis_offset</socket_child_frame>
+										<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
+										<coordinates>
+											<Coordinate name="pelvis_tilt">
+												<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+												<range>-1.570796326794897 1.570796326794897</range>
+											</Coordinate>
+											<Coordinate name="pelvis_tx">
+												<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+												<range>-5 5</range>
+											</Coordinate>
+											<Coordinate name="pelvis_ty">
+												<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+												<range>-3 3</range>
+											</Coordinate>
+										</coordinates>
+										<!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+										<frames>
+											<PhysicalOffsetFrame name="ground_offset">
+												<!--The geometry used to display the axes of this Frame.-->
+												<FrameGeometry name="frame_geometry">
+													<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+													<socket_frame>..</socket_frame>
+													<!--Scale factors in X, Y, Z directions respectively.-->
+													<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+												</FrameGeometry>
+												<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+												<socket_parent>/ground</socket_parent>
+												<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+												<translation>0 0 0</translation>
+												<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+												<orientation>0 0 0</orientation>
+											</PhysicalOffsetFrame>
+											<PhysicalOffsetFrame name="pelvis_offset">
+												<!--The geometry used to display the axes of this Frame.-->
+												<FrameGeometry name="frame_geometry">
+													<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+													<socket_frame>..</socket_frame>
+													<!--Scale factors in X, Y, Z directions respectively.-->
+													<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+												</FrameGeometry>
+												<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+												<socket_parent>/bodyset/pelvis</socket_parent>
+												<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+												<translation>0 0 0</translation>
+												<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+												<orientation>0 0 0</orientation>
+											</PhysicalOffsetFrame>
+										</frames>
+									</PlanarJoint>
+									<PinJoint name="hip_l">
+										<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+										<socket_parent_frame>pelvis_offset</socket_parent_frame>
+										<!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+										<socket_child_frame>femur_l_offset</socket_child_frame>
+										<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
+										<coordinates>
+											<Coordinate name="hip_flexion_l">
+												<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+												<range>-2.0943950999999998 2.0943950999999998</range>
+											</Coordinate>
+										</coordinates>
+										<!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+										<frames>
+											<PhysicalOffsetFrame name="pelvis_offset">
+												<!--The geometry used to display the axes of this Frame.-->
+												<FrameGeometry name="frame_geometry">
+													<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+													<socket_frame>..</socket_frame>
+													<!--Scale factors in X, Y, Z directions respectively.-->
+													<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+												</FrameGeometry>
+												<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+												<socket_parent>/bodyset/pelvis</socket_parent>
+												<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+												<translation>-0.065370941106632718 -0.052008932444578278 -0.07710532951870433</translation>
+												<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+												<orientation>0 0 0</orientation>
+											</PhysicalOffsetFrame>
+											<PhysicalOffsetFrame name="femur_l_offset">
+												<!--The geometry used to display the axes of this Frame.-->
+												<FrameGeometry name="frame_geometry">
+													<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+													<socket_frame>..</socket_frame>
+													<!--Scale factors in X, Y, Z directions respectively.-->
+													<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+												</FrameGeometry>
+												<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+												<socket_parent>/bodyset/femur_l</socket_parent>
+												<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+												<translation>0 0 0</translation>
+												<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+												<orientation>0 0 0</orientation>
+											</PhysicalOffsetFrame>
+										</frames>
+									</PinJoint>
+									<PinJoint name="hip_r">
+										<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+										<socket_parent_frame>pelvis_offset</socket_parent_frame>
+										<!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+										<socket_child_frame>femur_r_offset</socket_child_frame>
+										<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
+										<coordinates>
+											<Coordinate name="hip_flexion_r">
+												<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+												<range>-2.0943950999999998 2.0943950999999998</range>
+											</Coordinate>
+										</coordinates>
+										<!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+										<frames>
+											<PhysicalOffsetFrame name="pelvis_offset">
+												<!--The geometry used to display the axes of this Frame.-->
+												<FrameGeometry name="frame_geometry">
+													<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+													<socket_frame>..</socket_frame>
+													<!--Scale factors in X, Y, Z directions respectively.-->
+													<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+												</FrameGeometry>
+												<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+												<socket_parent>/bodyset/pelvis</socket_parent>
+												<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+												<translation>-0.065370941106632718 -0.052008932444578278 0.07710532951870433</translation>
+												<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+												<orientation>0 0 0</orientation>
+											</PhysicalOffsetFrame>
+											<PhysicalOffsetFrame name="femur_r_offset">
+												<!--The geometry used to display the axes of this Frame.-->
+												<FrameGeometry name="frame_geometry">
+													<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+													<socket_frame>..</socket_frame>
+													<!--Scale factors in X, Y, Z directions respectively.-->
+													<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+												</FrameGeometry>
+												<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+												<socket_parent>/bodyset/femur_r</socket_parent>
+												<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+												<translation>0 0 0</translation>
+												<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+												<orientation>0 0 0</orientation>
+											</PhysicalOffsetFrame>
+										</frames>
+									</PinJoint>
+									<PinJoint name="knee_l">
+										<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+										<socket_parent_frame>femur_l_offset</socket_parent_frame>
+										<!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+										<socket_child_frame>tibia_l_offset</socket_child_frame>
+										<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
+										<coordinates>
+											<Coordinate name="knee_angle_l">
+												<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+												<range>-2.0943951023931948 0.174532925199433</range>
+											</Coordinate>
+										</coordinates>
+										<!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+										<frames>
+											<PhysicalOffsetFrame name="femur_l_offset">
+												<!--The geometry used to display the axes of this Frame.-->
+												<FrameGeometry name="frame_geometry">
+													<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+													<socket_frame>..</socket_frame>
+													<!--Scale factors in X, Y, Z directions respectively.-->
+													<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+												</FrameGeometry>
+												<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+												<socket_parent>/bodyset/femur_l</socket_parent>
+												<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+												<translation>-0.0052244650364117002 -0.48255982959129523 0</translation>
+												<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+												<orientation>0 0 0</orientation>
+											</PhysicalOffsetFrame>
+											<PhysicalOffsetFrame name="tibia_l_offset">
+												<!--The geometry used to display the axes of this Frame.-->
+												<FrameGeometry name="frame_geometry">
+													<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+													<socket_frame>..</socket_frame>
+													<!--Scale factors in X, Y, Z directions respectively.-->
+													<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+												</FrameGeometry>
+												<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+												<socket_parent>/bodyset/tibia_l</socket_parent>
+												<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+												<translation>0 0 0</translation>
+												<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+												<orientation>0 0 0</orientation>
+											</PhysicalOffsetFrame>
+										</frames>
+									</PinJoint>
+									<PinJoint name="knee_r">
+										<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+										<socket_parent_frame>femur_r_offset</socket_parent_frame>
+										<!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+										<socket_child_frame>tibia_r_offset</socket_child_frame>
+										<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
+										<coordinates>
+											<Coordinate name="knee_angle_r">
+												<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+												<range>-2.0943951023931948 0.174532925199433</range>
+											</Coordinate>
+										</coordinates>
+										<!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+										<frames>
+											<PhysicalOffsetFrame name="femur_r_offset">
+												<!--The geometry used to display the axes of this Frame.-->
+												<FrameGeometry name="frame_geometry">
+													<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+													<socket_frame>..</socket_frame>
+													<!--Scale factors in X, Y, Z directions respectively.-->
+													<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+												</FrameGeometry>
+												<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+												<socket_parent>/bodyset/femur_r</socket_parent>
+												<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+												<translation>-0.0052039344703490205 -0.46977941627262465 0</translation>
+												<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+												<orientation>0 0 0</orientation>
+											</PhysicalOffsetFrame>
+											<PhysicalOffsetFrame name="tibia_r_offset">
+												<!--The geometry used to display the axes of this Frame.-->
+												<FrameGeometry name="frame_geometry">
+													<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+													<socket_frame>..</socket_frame>
+													<!--Scale factors in X, Y, Z directions respectively.-->
+													<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+												</FrameGeometry>
+												<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+												<socket_parent>/bodyset/tibia_r</socket_parent>
+												<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+												<translation>0 0 0</translation>
+												<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+												<orientation>0 0 0</orientation>
+											</PhysicalOffsetFrame>
+										</frames>
+									</PinJoint>
+									<PinJoint name="ankle_l">
+										<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+										<socket_parent_frame>tibia_l_offset</socket_parent_frame>
+										<!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+										<socket_child_frame>talus_l_offset</socket_child_frame>
+										<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
+										<coordinates>
+											<Coordinate name="ankle_angle_l">
+												<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+												<range>-1.0471975499999999 1.0471975499999999</range>
+											</Coordinate>
+										</coordinates>
+										<!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+										<frames>
+											<PhysicalOffsetFrame name="tibia_l_offset">
+												<!--The geometry used to display the axes of this Frame.-->
+												<FrameGeometry name="frame_geometry">
+													<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+													<socket_frame>..</socket_frame>
+													<!--Scale factors in X, Y, Z directions respectively.-->
+													<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+												</FrameGeometry>
+												<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+												<socket_parent>/bodyset/tibia_l</socket_parent>
+												<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+												<translation>0 -0.46064390684269346 0</translation>
+												<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+												<orientation>0 0 0</orientation>
+											</PhysicalOffsetFrame>
+											<PhysicalOffsetFrame name="talus_l_offset">
+												<!--The geometry used to display the axes of this Frame.-->
+												<FrameGeometry name="frame_geometry">
+													<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+													<socket_frame>..</socket_frame>
+													<!--Scale factors in X, Y, Z directions respectively.-->
+													<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+												</FrameGeometry>
+												<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+												<socket_parent>/bodyset/talus_l</socket_parent>
+												<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+												<translation>0 0 0</translation>
+												<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+												<orientation>0 0 0</orientation>
+											</PhysicalOffsetFrame>
+										</frames>
+									</PinJoint>
+									<PinJoint name="ankle_r">
+										<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+										<socket_parent_frame>tibia_r_offset</socket_parent_frame>
+										<!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+										<socket_child_frame>talus_r_offset</socket_child_frame>
+										<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
+										<coordinates>
+											<Coordinate name="ankle_angle_r">
+												<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+												<range>-1.0471975499999999 1.0471975499999999</range>
+											</Coordinate>
+										</coordinates>
+										<!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+										<frames>
+											<PhysicalOffsetFrame name="tibia_r_offset">
+												<!--The geometry used to display the axes of this Frame.-->
+												<FrameGeometry name="frame_geometry">
+													<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+													<socket_frame>..</socket_frame>
+													<!--Scale factors in X, Y, Z directions respectively.-->
+													<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+												</FrameGeometry>
+												<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+												<socket_parent>/bodyset/tibia_r</socket_parent>
+												<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+												<translation>0 -0.46455559514947131 0</translation>
+												<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+												<orientation>0 0 0</orientation>
+											</PhysicalOffsetFrame>
+											<PhysicalOffsetFrame name="talus_r_offset">
+												<!--The geometry used to display the axes of this Frame.-->
+												<FrameGeometry name="frame_geometry">
+													<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+													<socket_frame>..</socket_frame>
+													<!--Scale factors in X, Y, Z directions respectively.-->
+													<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+												</FrameGeometry>
+												<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+												<socket_parent>/bodyset/talus_r</socket_parent>
+												<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+												<translation>0 0 0</translation>
+												<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+												<orientation>0 0 0</orientation>
+											</PhysicalOffsetFrame>
+										</frames>
+									</PinJoint>
+									<WeldJoint name="subtalar_l">
+										<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+										<socket_parent_frame>talus_l_offset</socket_parent_frame>
+										<!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+										<socket_child_frame>calcn_l_offset</socket_child_frame>
+										<!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+										<frames>
+											<PhysicalOffsetFrame name="talus_l_offset">
+												<!--The geometry used to display the axes of this Frame.-->
+												<FrameGeometry name="frame_geometry">
+													<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+													<socket_frame>..</socket_frame>
+													<!--Scale factors in X, Y, Z directions respectively.-->
+													<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+												</FrameGeometry>
+												<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+												<socket_parent>/bodyset/talus_l</socket_parent>
+												<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+												<translation>-0.045389989798312387 -0.042484737527490095 -0.0073711035309131393</translation>
+												<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+												<orientation>0 0 0</orientation>
+											</PhysicalOffsetFrame>
+											<PhysicalOffsetFrame name="calcn_l_offset">
+												<!--The geometry used to display the axes of this Frame.-->
+												<FrameGeometry name="frame_geometry">
+													<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+													<socket_frame>..</socket_frame>
+													<!--Scale factors in X, Y, Z directions respectively.-->
+													<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+												</FrameGeometry>
+												<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+												<socket_parent>/bodyset/calcn_l</socket_parent>
+												<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+												<translation>0 0 0</translation>
+												<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+												<orientation>0 0 0</orientation>
+											</PhysicalOffsetFrame>
+										</frames>
+									</WeldJoint>
+									<WeldJoint name="subtalar_r">
+										<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+										<socket_parent_frame>talus_r_offset</socket_parent_frame>
+										<!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+										<socket_child_frame>calcn_r_offset</socket_child_frame>
+										<!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+										<frames>
+											<PhysicalOffsetFrame name="talus_r_offset">
+												<!--The geometry used to display the axes of this Frame.-->
+												<FrameGeometry name="frame_geometry">
+													<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+													<socket_frame>..</socket_frame>
+													<!--Scale factors in X, Y, Z directions respectively.-->
+													<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+												</FrameGeometry>
+												<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+												<socket_parent>/bodyset/talus_r</socket_parent>
+												<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+												<translation>-0.045595467142025475 -0.042845508718716466 0.0074044720066606812</translation>
+												<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+												<orientation>0 0 0</orientation>
+											</PhysicalOffsetFrame>
+											<PhysicalOffsetFrame name="calcn_r_offset">
+												<!--The geometry used to display the axes of this Frame.-->
+												<FrameGeometry name="frame_geometry">
+													<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+													<socket_frame>..</socket_frame>
+													<!--Scale factors in X, Y, Z directions respectively.-->
+													<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+												</FrameGeometry>
+												<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+												<socket_parent>/bodyset/calcn_r</socket_parent>
+												<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+												<translation>0 0 0</translation>
+												<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+												<orientation>0 0 0</orientation>
+											</PhysicalOffsetFrame>
+										</frames>
+									</WeldJoint>
+									<WeldJoint name="mtp_l">
+										<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+										<socket_parent_frame>calcn_l_offset</socket_parent_frame>
+										<!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+										<socket_child_frame>toes_l_offset</socket_child_frame>
+										<!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+										<frames>
+											<PhysicalOffsetFrame name="calcn_l_offset">
+												<!--The geometry used to display the axes of this Frame.-->
+												<FrameGeometry name="frame_geometry">
+													<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+													<socket_frame>..</socket_frame>
+													<!--Scale factors in X, Y, Z directions respectively.-->
+													<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+												</FrameGeometry>
+												<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+												<socket_parent>/bodyset/calcn_l</socket_parent>
+												<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+												<translation>0.15494799878791343 -0.0026618413077013682 -0.001434433191174243</translation>
+												<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+												<orientation>0 0 0</orientation>
+											</PhysicalOffsetFrame>
+											<PhysicalOffsetFrame name="toes_l_offset">
+												<!--The geometry used to display the axes of this Frame.-->
+												<FrameGeometry name="frame_geometry">
+													<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+													<socket_frame>..</socket_frame>
+													<!--Scale factors in X, Y, Z directions respectively.-->
+													<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+												</FrameGeometry>
+												<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+												<socket_parent>/bodyset/toes_l</socket_parent>
+												<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+												<translation>0 0 0</translation>
+												<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+												<orientation>0 0 0</orientation>
+											</PhysicalOffsetFrame>
+										</frames>
+									</WeldJoint>
+									<WeldJoint name="mtp_r">
+										<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+										<socket_parent_frame>calcn_r_offset</socket_parent_frame>
+										<!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+										<socket_child_frame>toes_r_offset</socket_child_frame>
+										<!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+										<frames>
+											<PhysicalOffsetFrame name="calcn_r_offset">
+												<!--The geometry used to display the axes of this Frame.-->
+												<FrameGeometry name="frame_geometry">
+													<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+													<socket_frame>..</socket_frame>
+													<!--Scale factors in X, Y, Z directions respectively.-->
+													<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+												</FrameGeometry>
+												<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+												<socket_parent>/bodyset/calcn_r</socket_parent>
+												<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+												<translation>0.15407146927096863 -0.0026442939596450781 0.0014240298071953703</translation>
+												<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+												<orientation>0 0 0</orientation>
+											</PhysicalOffsetFrame>
+											<PhysicalOffsetFrame name="toes_r_offset">
+												<!--The geometry used to display the axes of this Frame.-->
+												<FrameGeometry name="frame_geometry">
+													<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+													<socket_frame>..</socket_frame>
+													<!--Scale factors in X, Y, Z directions respectively.-->
+													<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+												</FrameGeometry>
+												<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+												<socket_parent>/bodyset/toes_r</socket_parent>
+												<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+												<translation>0 0 0</translation>
+												<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+												<orientation>0 0 0</orientation>
+											</PhysicalOffsetFrame>
+										</frames>
+									</WeldJoint>
+									<PinJoint name="back">
+										<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The parent frame for the joint.).-->
+										<socket_parent_frame>pelvis_offset</socket_parent_frame>
+										<!--Path to a Component that satisfies the Socket 'child_frame' of type PhysicalFrame (description: The child frame for the joint.).-->
+										<socket_child_frame>torso_offset</socket_child_frame>
+										<!--List containing the generalized coordinates (q's) that parameterize this joint.-->
+										<coordinates>
+											<Coordinate name="lumbar_extension">
+												<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+												<range>-1.570796326794897 1.570796326794897</range>
+											</Coordinate>
+										</coordinates>
+										<!--Physical offset frames owned by the Joint that are typically used to satisfy the owning Joint's parent and child frame connections (sockets). PhysicalOffsetFrames are often used to describe the fixed transformation from a Body's origin to another location of interest on the Body (e.g., the joint center). When the joint is deleted, so are the PhysicalOffsetFrame components in this list.-->
+										<frames>
+											<PhysicalOffsetFrame name="pelvis_offset">
+												<!--The geometry used to display the axes of this Frame.-->
+												<FrameGeometry name="frame_geometry">
+													<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+													<socket_frame>..</socket_frame>
+													<!--Scale factors in X, Y, Z directions respectively.-->
+													<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+												</FrameGeometry>
+												<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+												<socket_parent>/bodyset/pelvis</socket_parent>
+												<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+												<translation>-0.093109671420621154 0.064125990835599514 0</translation>
+												<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+												<orientation>0 0 0</orientation>
+											</PhysicalOffsetFrame>
+											<PhysicalOffsetFrame name="torso_offset">
+												<!--The geometry used to display the axes of this Frame.-->
+												<FrameGeometry name="frame_geometry">
+													<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+													<socket_frame>..</socket_frame>
+													<!--Scale factors in X, Y, Z directions respectively.-->
+													<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+												</FrameGeometry>
+												<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+												<socket_parent>/bodyset/torso</socket_parent>
+												<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+												<translation>0 0 0</translation>
+												<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+												<orientation>0 0 0</orientation>
+											</PhysicalOffsetFrame>
+										</frames>
+									</PinJoint>
+								</objects>
+								<groups />
+							</JointSet>
+							<!--Controllers that provide the control inputs for Actuators.-->
+							<ControllerSet name="controllerset">
+								<objects />
+								<groups />
+							</ControllerSet>
+							<!--Forces in the model (includes Actuators).-->
+							<ForceSet name="forceset">
+								<objects>
+									<SmoothSphereHalfSpaceForce name="contactHeel_r">
+										<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
+										<socket_sphere>/contactgeometryset/heel_r</socket_sphere>
+										<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
+										<socket_half_space>/contactgeometryset/floor</socket_half_space>
+										<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
+										<stiffness>3067776</stiffness>
+										<!--The dissipation coefficient, default is 0 (s/m).-->
+										<dissipation>2</dissipation>
+										<!--The coefficient of static friction, default is 0.-->
+										<static_friction>0.80000000000000004</static_friction>
+										<!--The coefficient of dynamic friction, default is 0.-->
+										<dynamic_friction>0.80000000000000004</dynamic_friction>
+										<!--The coefficient of viscous friction, default is 0.-->
+										<viscous_friction>0.5</viscous_friction>
+										<!--The transition velocity, default is 0.01 (m/s).-->
+										<transition_velocity>0.20000000000000001</transition_velocity>
+										<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
+										<hertz_smoothing>300</hertz_smoothing>
+										<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
+										<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
+									</SmoothSphereHalfSpaceForce>
+									<SmoothSphereHalfSpaceForce name="contactHeel_l">
+										<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
+										<socket_sphere>/contactgeometryset/heel_l</socket_sphere>
+										<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
+										<socket_half_space>/contactgeometryset/floor</socket_half_space>
+										<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
+										<stiffness>3067776</stiffness>
+										<!--The dissipation coefficient, default is 0 (s/m).-->
+										<dissipation>2</dissipation>
+										<!--The coefficient of static friction, default is 0.-->
+										<static_friction>0.80000000000000004</static_friction>
+										<!--The coefficient of dynamic friction, default is 0.-->
+										<dynamic_friction>0.80000000000000004</dynamic_friction>
+										<!--The coefficient of viscous friction, default is 0.-->
+										<viscous_friction>0.5</viscous_friction>
+										<!--The transition velocity, default is 0.01 (m/s).-->
+										<transition_velocity>0.20000000000000001</transition_velocity>
+										<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
+										<hertz_smoothing>300</hertz_smoothing>
+										<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
+										<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
+									</SmoothSphereHalfSpaceForce>
+									<SmoothSphereHalfSpaceForce name="contactToe1_r">
+										<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
+										<socket_sphere>/contactgeometryset/toe1_r</socket_sphere>
+										<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
+										<socket_half_space>/contactgeometryset/floor</socket_half_space>
+										<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
+										<stiffness>3067776</stiffness>
+										<!--The dissipation coefficient, default is 0 (s/m).-->
+										<dissipation>2</dissipation>
+										<!--The coefficient of static friction, default is 0.-->
+										<static_friction>0.80000000000000004</static_friction>
+										<!--The coefficient of dynamic friction, default is 0.-->
+										<dynamic_friction>0.80000000000000004</dynamic_friction>
+										<!--The coefficient of viscous friction, default is 0.-->
+										<viscous_friction>0.5</viscous_friction>
+										<!--The transition velocity, default is 0.01 (m/s).-->
+										<transition_velocity>0.20000000000000001</transition_velocity>
+										<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
+										<hertz_smoothing>300</hertz_smoothing>
+										<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
+										<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
+									</SmoothSphereHalfSpaceForce>
+									<SmoothSphereHalfSpaceForce name="contactToe1_l">
+										<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
+										<socket_sphere>/contactgeometryset/toe1_l</socket_sphere>
+										<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
+										<socket_half_space>/contactgeometryset/floor</socket_half_space>
+										<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
+										<stiffness>3067776</stiffness>
+										<!--The dissipation coefficient, default is 0 (s/m).-->
+										<dissipation>2</dissipation>
+										<!--The coefficient of static friction, default is 0.-->
+										<static_friction>0.80000000000000004</static_friction>
+										<!--The coefficient of dynamic friction, default is 0.-->
+										<dynamic_friction>0.80000000000000004</dynamic_friction>
+										<!--The coefficient of viscous friction, default is 0.-->
+										<viscous_friction>0.5</viscous_friction>
+										<!--The transition velocity, default is 0.01 (m/s).-->
+										<transition_velocity>0.20000000000000001</transition_velocity>
+										<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
+										<hertz_smoothing>300</hertz_smoothing>
+										<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
+										<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
+									</SmoothSphereHalfSpaceForce>
+									<SmoothSphereHalfSpaceForce name="contactToe2_r">
+										<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
+										<socket_sphere>/contactgeometryset/toe2_r</socket_sphere>
+										<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
+										<socket_half_space>/contactgeometryset/floor</socket_half_space>
+										<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
+										<stiffness>3067776</stiffness>
+										<!--The dissipation coefficient, default is 0 (s/m).-->
+										<dissipation>2</dissipation>
+										<!--The coefficient of static friction, default is 0.-->
+										<static_friction>0.80000000000000004</static_friction>
+										<!--The coefficient of dynamic friction, default is 0.-->
+										<dynamic_friction>0.80000000000000004</dynamic_friction>
+										<!--The coefficient of viscous friction, default is 0.-->
+										<viscous_friction>0.5</viscous_friction>
+										<!--The transition velocity, default is 0.01 (m/s).-->
+										<transition_velocity>0.20000000000000001</transition_velocity>
+										<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
+										<hertz_smoothing>300</hertz_smoothing>
+										<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
+										<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
+									</SmoothSphereHalfSpaceForce>
+									<SmoothSphereHalfSpaceForce name="contactToe2_l">
+										<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
+										<socket_sphere>/contactgeometryset/toe2_l</socket_sphere>
+										<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
+										<socket_half_space>/contactgeometryset/floor</socket_half_space>
+										<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
+										<stiffness>3067776</stiffness>
+										<!--The dissipation coefficient, default is 0 (s/m).-->
+										<dissipation>2</dissipation>
+										<!--The coefficient of static friction, default is 0.-->
+										<static_friction>0.80000000000000004</static_friction>
+										<!--The coefficient of dynamic friction, default is 0.-->
+										<dynamic_friction>0.80000000000000004</dynamic_friction>
+										<!--The coefficient of viscous friction, default is 0.-->
+										<viscous_friction>0.5</viscous_friction>
+										<!--The transition velocity, default is 0.01 (m/s).-->
+										<transition_velocity>0.20000000000000001</transition_velocity>
+										<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
+										<hertz_smoothing>300</hertz_smoothing>
+										<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
+										<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
+									</SmoothSphereHalfSpaceForce>
+									<CoordinateActuator name="lumbarAct">
+										<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
+										<min_control>-Inf</min_control>
+										<!--Maximum allowed value for control signal. Used primarily when solving for control values.-->
+										<max_control>Inf</max_control>
+										<!--Name of the generalized coordinate to which the actuator applies.-->
+										<coordinate>lumbar_extension</coordinate>
+										<!--The maximum generalized force produced by this actuator.-->
+										<optimal_force>10</optimal_force>
+									</CoordinateActuator>
+									<CoordinateActuator name="tau_pelvis_tx">
+										<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
+										<min_control>-Inf</min_control>
+										<!--Maximum allowed value for control signal. Used primarily when solving for control values.-->
+										<max_control>Inf</max_control>
+										<!--Name of the generalized coordinate to which the actuator applies.-->
+										<coordinate>pelvis_tx</coordinate>
+										<!--The maximum generalized force produced by this actuator.-->
+										<optimal_force>1</optimal_force>
+									</CoordinateActuator>
+									<CoordinateActuator name="tau_pelvis_ty">
+										<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
+										<min_control>-Inf</min_control>
+										<!--Maximum allowed value for control signal. Used primarily when solving for control values.-->
+										<max_control>Inf</max_control>
+										<!--Name of the generalized coordinate to which the actuator applies.-->
+										<coordinate>pelvis_ty</coordinate>
+										<!--The maximum generalized force produced by this actuator.-->
+										<optimal_force>1</optimal_force>
+									</CoordinateActuator>
+									<CoordinateActuator name="tau_pelvis_tilt">
+										<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
+										<min_control>-Inf</min_control>
+										<!--Maximum allowed value for control signal. Used primarily when solving for control values.-->
+										<max_control>Inf</max_control>
+										<!--Name of the generalized coordinate to which the actuator applies.-->
+										<coordinate>pelvis_tilt</coordinate>
+										<!--The maximum generalized force produced by this actuator.-->
+										<optimal_force>1</optimal_force>
+									</CoordinateActuator>
+									<CoordinateActuator name="tau_hip_flexion_l">
+										<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
+										<min_control>-Inf</min_control>
+										<!--Maximum allowed value for control signal. Used primarily when solving for control values.-->
+										<max_control>Inf</max_control>
+										<!--Name of the generalized coordinate to which the actuator applies.-->
+										<coordinate>hip_flexion_l</coordinate>
+										<!--The maximum generalized force produced by this actuator.-->
+										<optimal_force>250</optimal_force>
+									</CoordinateActuator>
+									<CoordinateActuator name="tau_hip_flexion_r">
+										<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
+										<min_control>-Inf</min_control>
+										<!--Maximum allowed value for control signal. Used primarily when solving for control values.-->
+										<max_control>Inf</max_control>
+										<!--Name of the generalized coordinate to which the actuator applies.-->
+										<coordinate>hip_flexion_r</coordinate>
+										<!--The maximum generalized force produced by this actuator.-->
+										<optimal_force>250</optimal_force>
+									</CoordinateActuator>
+									<CoordinateActuator name="tau_knee_angle_l">
+										<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
+										<min_control>-Inf</min_control>
+										<!--Maximum allowed value for control signal. Used primarily when solving for control values.-->
+										<max_control>Inf</max_control>
+										<!--Name of the generalized coordinate to which the actuator applies.-->
+										<coordinate>knee_angle_l</coordinate>
+										<!--The maximum generalized force produced by this actuator.-->
+										<optimal_force>150</optimal_force>
+									</CoordinateActuator>
+									<CoordinateActuator name="tau_knee_angle_r">
+										<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
+										<min_control>-Inf</min_control>
+										<!--Maximum allowed value for control signal. Used primarily when solving for control values.-->
+										<max_control>Inf</max_control>
+										<!--Name of the generalized coordinate to which the actuator applies.-->
+										<coordinate>knee_angle_r</coordinate>
+										<!--The maximum generalized force produced by this actuator.-->
+										<optimal_force>150</optimal_force>
+									</CoordinateActuator>
+									<CoordinateActuator name="tau_ankle_angle_l">
+										<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
+										<min_control>-Inf</min_control>
+										<!--Maximum allowed value for control signal. Used primarily when solving for control values.-->
+										<max_control>Inf</max_control>
+										<!--Name of the generalized coordinate to which the actuator applies.-->
+										<coordinate>ankle_angle_l</coordinate>
+										<!--The maximum generalized force produced by this actuator.-->
+										<optimal_force>100</optimal_force>
+									</CoordinateActuator>
+									<CoordinateActuator name="tau_ankle_angle_r">
+										<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
+										<min_control>-Inf</min_control>
+										<!--Maximum allowed value for control signal. Used primarily when solving for control values.-->
+										<max_control>Inf</max_control>
+										<!--Name of the generalized coordinate to which the actuator applies.-->
+										<coordinate>ankle_angle_r</coordinate>
+										<!--The maximum generalized force produced by this actuator.-->
+										<optimal_force>100</optimal_force>
+									</CoordinateActuator>
+								</objects>
+								<groups />
+							</ForceSet>
+							<!--Geometry to be used in contact forces.-->
+							<ContactGeometrySet name="contactgeometryset">
+								<objects>
+									<ContactHalfSpace name="floor">
+										<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
+										<socket_frame>/ground</socket_frame>
+										<!--Orientation of geometry in the PhysicalFrame (body-fixed XYZ Euler angles).-->
+										<orientation>0 0 -1.5707963267949001</orientation>
+									</ContactHalfSpace>
+									<ContactSphere name="heel_r">
+										<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
+										<socket_frame>/bodyset/calcn_r</socket_frame>
+										<!--Location of geometry center in the PhysicalFrame.-->
+										<location>0.029999999999999999 0.02 0</location>
+										<!--Orientation of geometry in the PhysicalFrame (body-fixed XYZ Euler angles).-->
+										<orientation>0 0 0</orientation>
+										<!--Radius of the sphere (default: 0).-->
+										<radius>0.050000000000000003</radius>
+									</ContactSphere>
+									<ContactSphere name="toe1_r">
+										<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
+										<socket_frame>/bodyset/toes_r</socket_frame>
+										<!--Location of geometry center in the PhysicalFrame.-->
+										<location>0.02 -0.0050000000000000001 -0.025999999999999999</location>
+										<!--Orientation of geometry in the PhysicalFrame (body-fixed XYZ Euler angles).-->
+										<orientation>0 0 0</orientation>
+										<!--Radius of the sphere (default: 0).-->
+										<radius>0.025000000000000001</radius>
+									</ContactSphere>
+									<ContactSphere name="toe2_r">
+										<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
+										<socket_frame>/bodyset/toes_r</socket_frame>
+										<!--Location of geometry center in the PhysicalFrame.-->
+										<location>0.02 -0.0050000000000000001 0.025999999999999999</location>
+										<!--Orientation of geometry in the PhysicalFrame (body-fixed XYZ Euler angles).-->
+										<orientation>0 0 0</orientation>
+										<!--Radius of the sphere (default: 0).-->
+										<radius>0.025000000000000001</radius>
+									</ContactSphere>
+									<ContactSphere name="heel_l">
+										<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
+										<socket_frame>/bodyset/calcn_l</socket_frame>
+										<!--Location of geometry center in the PhysicalFrame.-->
+										<location>0.029999999999999999 0.02 0</location>
+										<!--Orientation of geometry in the PhysicalFrame (body-fixed XYZ Euler angles).-->
+										<orientation>0 0 0</orientation>
+										<!--Radius of the sphere (default: 0).-->
+										<radius>0.050000000000000003</radius>
+									</ContactSphere>
+									<ContactSphere name="toe1_l">
+										<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
+										<socket_frame>/bodyset/toes_l</socket_frame>
+										<!--Location of geometry center in the PhysicalFrame.-->
+										<location>0.02 -0.0050000000000000001 -0.025999999999999999</location>
+										<!--Orientation of geometry in the PhysicalFrame (body-fixed XYZ Euler angles).-->
+										<orientation>0 0 0</orientation>
+										<!--Radius of the sphere (default: 0).-->
+										<radius>0.025000000000000001</radius>
+									</ContactSphere>
+									<ContactSphere name="toe2_l">
+										<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
+										<socket_frame>/bodyset/toes_l</socket_frame>
+										<!--Location of geometry center in the PhysicalFrame.-->
+										<location>0.02 -0.0050000000000000001 0.025999999999999999</location>
+										<!--Orientation of geometry in the PhysicalFrame (body-fixed XYZ Euler angles).-->
+										<orientation>0 0 0</orientation>
+										<!--Radius of the sphere (default: 0).-->
+										<radius>0.025000000000000001</radius>
+									</ContactSphere>
+								</objects>
+								<groups />
+							</ContactGeometrySet>
+						</Model>
+					</model>
+				</ModelProcessor>
+				<!--Bounds on initial value.-->
+				<MocoInitialBounds name="time_initial_bounds">
+					<!--1 value: required value. 2 values: lower, upper bounds on value.-->
+					<bounds>0.34399999999999997</bounds>
+				</MocoInitialBounds>
+				<!--Bounds on final value.-->
+				<MocoFinalBounds name="time_final_bounds">
+					<!--1 value: required value. 2 values: lower, upper bounds on value.-->
+					<bounds>0.86799999999999999</bounds>
+				</MocoFinalBounds>
+				<!--The state variables' bounds.-->
+				<state_infos>
+					<MocoVariableInfo name="/jointset/ground_pelvis/pelvis_tilt/value">
+						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
+						<bounds>-0.3490658503988659 0.087266462599716474</bounds>
+						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
+						<initial_bounds></initial_bounds>
+						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
+						<final_bounds></final_bounds>
+					</MocoVariableInfo>
+					<MocoVariableInfo name="/jointset/ground_pelvis/pelvis_tx/value">
+						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
+						<bounds>-5 5</bounds>
+						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
+						<initial_bounds></initial_bounds>
+						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
+						<final_bounds></final_bounds>
+					</MocoVariableInfo>
+					<MocoVariableInfo name="/jointset/ground_pelvis/pelvis_ty/value">
+						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
+						<bounds>0.75 1.25</bounds>
+						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
+						<initial_bounds></initial_bounds>
+						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
+						<final_bounds></final_bounds>
+					</MocoVariableInfo>
+					<MocoVariableInfo name="/jointset/hip_l/hip_flexion_l/value">
+						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
+						<bounds>-0.69813170079773179 1.3962634015954636</bounds>
+						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
+						<initial_bounds></initial_bounds>
+						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
+						<final_bounds></final_bounds>
+					</MocoVariableInfo>
+					<MocoVariableInfo name="/jointset/hip_r/hip_flexion_r/value">
+						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
+						<bounds>-0.69813170079773179 1.3962634015954636</bounds>
+						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
+						<initial_bounds></initial_bounds>
+						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
+						<final_bounds></final_bounds>
+					</MocoVariableInfo>
+					<MocoVariableInfo name="/jointset/knee_l/knee_angle_l/value">
+						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
+						<bounds>-2.4434609527920612 0</bounds>
+						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
+						<initial_bounds></initial_bounds>
+						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
+						<final_bounds></final_bounds>
+					</MocoVariableInfo>
+					<MocoVariableInfo name="/jointset/knee_r/knee_angle_r/value">
+						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
+						<bounds>-2.4434609527920612 0</bounds>
+						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
+						<initial_bounds></initial_bounds>
+						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
+						<final_bounds></final_bounds>
+					</MocoVariableInfo>
+					<MocoVariableInfo name="/jointset/ankle_l/ankle_angle_l/value">
+						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
+						<bounds>-0.52359877559829882 0.52359877559829882</bounds>
+						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
+						<initial_bounds></initial_bounds>
+						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
+						<final_bounds></final_bounds>
+					</MocoVariableInfo>
+					<MocoVariableInfo name="/jointset/ankle_r/ankle_angle_r/value">
+						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
+						<bounds>-0.52359877559829882 0.52359877559829882</bounds>
+						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
+						<initial_bounds></initial_bounds>
+						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
+						<final_bounds></final_bounds>
+					</MocoVariableInfo>
+					<MocoVariableInfo name="/jointset/back/lumbar_extension/value">
+						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
+						<bounds>-30 0</bounds>
+						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
+						<initial_bounds></initial_bounds>
+						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
+						<final_bounds></final_bounds>
+					</MocoVariableInfo>
+				</state_infos>
+				<!--Integral/endpoint quantities to minimize or constrain.-->
+				<goals>
+					<MocoStateTrackingGoal name="state_tracking">
+						<!--In cost mode, the goal is multiplied by this weight (default: 1).-->
+						<weight>10</weight>
+						<!--Trajectories of states (coordinates, speeds, activation, etc.) to track. Column labels should be state variable paths, e.g., 'knee/flexion/value'-->
+						<TableProcessor name="reference">
+							<!--All properties of this object have their default values.-->
+						</TableProcessor>
+						<!--Set of weight objects to weight the tracking of individual state variables in the cost.-->
+						<MocoWeightSet name="state_weights">
+							<objects>
+								<MocoWeight name="/jointset/ground_pelvis/pelvis_tilt/value">
+									<!--Weight (default: 1)-->
+									<weight>25</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/ground_pelvis/pelvis_tx/value">
+									<!--Weight (default: 1)-->
+									<weight>250</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/ground_pelvis/pelvis_ty/value">
+									<!--Weight (default: 1)-->
+									<weight>100</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/hip_l/hip_flexion_l/value">
+									<!--Weight (default: 1)-->
+									<weight>250</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/hip_r/hip_flexion_r/value">
+									<!--Weight (default: 1)-->
+									<weight>250</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/knee_l/knee_angle_l/value">
+									<!--Weight (default: 1)-->
+									<weight>500</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/knee_r/knee_angle_r/value">
+									<!--Weight (default: 1)-->
+									<weight>500</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/ankle_l/ankle_angle_l/value">
+									<!--Weight (default: 1)-->
+									<weight>50</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/ankle_r/ankle_angle_r/value">
+									<!--Weight (default: 1)-->
+									<weight>50</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/back/lumbar_extension/value">
+									<!--Weight (default: 1)-->
+									<weight>150</weight>
+								</MocoWeight>
+							</objects>
+							<groups />
+						</MocoWeightSet>
+						<!--Flag to determine whether or not references contained in the reference_file are allowed to be ignored by the cost.-->
+						<allow_unused_references>true</allow_unused_references>
+						<!--Use the range, or the distance between the maximum and minimum value, of each reference quantity to scale the weight for the associated tracking error in the cost. The scale is computed by the inverse of the range, so a reference quantity that changes less across the trajectory has a larger weight. -->
+						<scale_weights_with_range>false</scale_weights_with_range>
+					</MocoStateTrackingGoal>
+					<MocoControlGoal name="control_effort">
+						<!--In cost mode, the goal is multiplied by this weight (default: 1).-->
+						<weight>0.01</weight>
+						<!--The weights for each control; the weight for unspecified controls is 1.-->
+						<MocoWeightSet name="control_weights">
+							<objects>
+								<MocoWeight name="/forceset/tau_pelvis_tx">
+									<!--Weight (default: 1)-->
+									<weight>10</weight>
+								</MocoWeight>
+								<MocoWeight name="/forceset/tau_pelvis_ty">
+									<!--Weight (default: 1)-->
+									<weight>10</weight>
+								</MocoWeight>
+								<MocoWeight name="/forceset/tau_pelvis_tilt">
+									<!--Weight (default: 1)-->
+									<weight>10</weight>
+								</MocoWeight>
+							</objects>
+							<groups />
+						</MocoWeightSet>
+					</MocoControlGoal>
+					<MocoContactTrackingGoal name="contact">
+						<!--In cost mode, the goal is multiplied by this weight (default: 1).-->
+						<weight>2.5</weight>
+						<!--Associate contact elements in the model with force data.-->
+						<contact_groups>
+							<MocoContactTrackingGoalGroup>
+								<!--Paths to SmoothSphereHalfSpaceForce objects in the model whose forces are summed and compared to an single ExternalForce.-->
+								<contact_force_paths>/forceset/contactHeel_r /forceset/contactToe1_r /forceset/contactToe2_r</contact_force_paths>
+								<!--The name of an ExternalForce object in the ExternalLoads set.-->
+								<external_force_name>RightGRF</external_force_name>
+								<!--If neither of the two bodies/frames of a contact force match ExternalForce's applied_to_body, then one of the bodies/frames must match one of these alternative frame paths.-->
+								<alternative_frame_paths>/bodyset/toes_r</alternative_frame_paths>
+							</MocoContactTrackingGoalGroup>
+							<MocoContactTrackingGoalGroup>
+								<!--Paths to SmoothSphereHalfSpaceForce objects in the model whose forces are summed and compared to an single ExternalForce.-->
+								<contact_force_paths>/forceset/contactHeel_l /forceset/contactToe1_l /forceset/contactToe2_l</contact_force_paths>
+								<!--The name of an ExternalForce object in the ExternalLoads set.-->
+								<external_force_name>LeftGRF</external_force_name>
+								<!--If neither of the two bodies/frames of a contact force match ExternalForce's applied_to_body, then one of the bodies/frames must match one of these alternative frame paths.-->
+								<alternative_frame_paths>/bodyset/toes_l</alternative_frame_paths>
+							</MocoContactTrackingGoalGroup>
+						</contact_groups>
+						<!--Experimental contact force data as an ExternalLoads XML file.-->
+						<external_loads_file>refGRF_2D.xml</external_loads_file>
+						<!--'none' (default): use full 3-D force error; 'vector': project force error onto projection_vector; 'plane': project force error onto the plane perpendicular to projection_vector.-->
+						<projection>plane</projection>
+						<!--(optional) If provided, the force error is projected onto the plane perpendicular to this vector. The vector is expressed in ground. The vector can have any length.-->
+						<projection_vector>0 0 1</projection_vector>
+					</MocoContactTrackingGoal>
+				</goals>
+			</MocoPhase>
+		</MocoProblem>
+		<!--The optimal control algorithm for solving the problem.-->
+		<MocoCasADiSolver name="solver">
+			<!--The number of uniformly-sized mesh intervals for the problem (default: 100). If a non-uniform mesh exists, the non-uniform mesh is used instead.-->
+			<num_mesh_intervals>100</num_mesh_intervals>
+			<!--0 for silent. 1 for only Moco's own output. 2 for output from CasADi and the underlying solver (default: 2).-->
+			<verbosity>2</verbosity>
+			<!--Multibody dynamics are expressed as 'explicit' (default) or 'implicit' differential equations.-->
+			<multibody_dynamics_mode>explicit</multibody_dynamics_mode>
+			<!--The optimization solver to use (default: ipopt).-->
+			<optim_solver>ipopt</optim_solver>
+			<!--Maximum number of iterations in the optimization solver (-1 for solver's default).-->
+			<optim_max_iterations>2000</optim_max_iterations>
+			<!--Tolerance used to determine if the objective is minimized (-1 for solver's default)-->
+			<optim_convergence_tolerance>0.0001</optim_convergence_tolerance>
+			<!--Tolerance used to determine if the constraints are satisfied (-1 for solver's default)-->
+			<optim_constraint_tolerance>0.0001</optim_constraint_tolerance>
+			<!--A MocoTrajectory file storing an initial guess.-->
+			<guess_file></guess_file>
+			<!--The finite difference scheme CasADi will use to calculate problem derivatives (default: 'central').-->
+			<optim_finite_difference_scheme>forward</optim_finite_difference_scheme>
+		</MocoCasADiSolver>
+	</MocoStudy>
+</OpenSimDocument>

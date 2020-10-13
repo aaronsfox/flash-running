@@ -67,10 +67,15 @@ Created on Wed Oct  7 22:40:53 2020
 
 import opensim as osim
 import math
+import xml.etree.ElementTree as et
 # import numpy as np
 
 
 # %% Scale the 2D model to match the experimental data
+
+#### TODO: adjust model properties to be original Ong et al. size
+
+#Spheres are maybe quite large in the first place?
 
 #The models essentially have the same geometry, so the same scale set can be applied
 
@@ -86,7 +91,7 @@ scaleTool.getGenericModelMaker().setModelFileName(genModelFileName)
 
 #Set options
 scaleTool.getModelScaler().setPreserveMassDist(True)
-scaleOrder = osim.ArrayStr(); scaleOrder.set(0,'measurements')
+scaleOrder = osim.ArrayStr(); scaleOrder.set(0,'manualScale')
 scaleTool.getModelScaler().setScalingOrder(scaleOrder)
 
 #Set the previous scale set for scaling
@@ -101,7 +106,249 @@ scaleTool.getMarkerPlacer().setApply(False)
 #Run scale tool
 scaleTool.run()
 
-##### May have altered mass - maybe didn't alter muscle paths or segment lengths?
+#### fails trying to adjust markers?
+
+#The locations and size of the contact sphere parameters go unchanged with
+#standard model scaling, so these need to be edited to ensure they are in
+#an appropriate place. This can be done based on the scale set parameters
+#for the representative bodies.
+
+#Load in the scale set, parsed from the XML tree
+xmlTree = et.parse('..\\ExpData\\scaleSet.xml')
+xmlRoot = xmlTree.getroot()
+
+#Load in the scaled model
+scaledModel = osim.Model('expData_2Dmodel.osim')
+
+#Create a dictionary with segments and scale factors to access for calculations
+scaleFactors = {}
+
+#Loop through segments and place  in dictionary
+for segment in range(0,len(xmlRoot.findall('./ScaleSet/objects/Scale/segment'))):
+    #Get current segment name
+    currSegment = xmlRoot.findall('./ScaleSet/objects/Scale/segment')[segment].text
+    #Get current scale name and parse to 0 x 3 array
+    currScale = xmlRoot.findall('./ScaleSet/objects/Scale/scales')[segment].text
+    currScale = str.split(currScale)
+    scaleFactors[currSegment] = [float(currScale[0]),float(currScale[1]),float(currScale[2])]
+    
+#Get the 3D scale factors for the relevant bodies and average to scale the
+#sphere radii. Note that these scale factors for each foot will be the same
+#for heel and toes as it looks like same scale factors are applied.
+heelSphereScale_r = sum(scaleFactors['calcn_r']) / 3
+heelSphereScale_l = sum(scaleFactors['calcn_l']) / 3
+toesSphereScale_r = sum(scaleFactors['toes_r']) / 3
+toesSphereScale_l = sum(scaleFactors['toes_l']) / 3
+
+#Scale the radii to each of their respective factors
+#While accessing the spheres, also adjust their position based on the scale
+#factor for the respective axes
+#Create a list of the sheres to loop through and edit
+sphereList = ['heel_r','toe1_r','toe2_r','heel_l','toe1_l','toe2_l']
+#Loop through sphere list
+for ss in range(0,len(sphereList)):
+    #Get the current sphere
+    currSphere = osim.ContactSphere.safeDownCast(scaledModel.getContactGeometrySet().get(sphereList[ss]))
+    #Set the current scaling factor based on sphere name
+    if '_r' in sphereList[ss]:
+        if 'hallux' in sphereList[ss] or 'othertoes' in sphereList[ss]:
+            scaleFac = toesSphereScale_r
+            scaleBod = 'toes_r'
+        else:
+            scaleFac = heelSphereScale_r
+            scaleBod = 'calcn_r'
+    elif '_l' in sphereList[ss]:
+        if 'hallux' in sphereList[ss] or 'othertoes' in sphereList[ss]:
+            scaleFac = toesSphereScale_l
+            scaleBod = 'toes_l'
+        else:
+            scaleFac = heelSphereScale_l
+            scaleBod = 'calcn_l'
+    #Rescale the radius
+    currSphere.setRadius(currSphere.getRadius() * scaleFac)
+    #Set new location
+    newLoc = []
+    newLoc.append(currSphere.getLocation().get(0) * scaleFactors[scaleBod][0])
+    newLoc.append(currSphere.getLocation().get(1) * scaleFactors[scaleBod][1])
+    newLoc.append(currSphere.getLocation().get(2) * scaleFactors[scaleBod][2])
+    currSphere.setLocation(osim.Vec3(newLoc[0],newLoc[1],newLoc[2]))    
+    
+#Reset model name
+scaledModel.setName('scaledModel_expData')
+
+#Finalise connections and update scaled model
+scaledModel.finalizeConnections()
+scaledModel.printToXML('expData_2Dmodel.osim')
+
+# %% Make shift RRA tracking simulation
+
+# This section uses a torque driven simulation to adjust the kinematics so that
+# the GRFs from the contact spheres match the experimental data
+
+##### TODO: could try and incorporate mass and CoM parameters in this?
+
+#Create and name an instance of the MocoTrack tool.
+track = osim.MocoTrack()
+track.setName('torque_driven_rra_tracking')
+
+##### Model processor with muscles removed, DON'T add actuators
+##### Process model
+##### Use a pre-specified actuator set (like RRAactiators) to add torque actuators to model
+##### Set this model with the new actuators in the problem
+##### Use a state and GRF tracking problem w/out pelvis actuators
+
+#Construct a ModelProcessor and add it to the tool.
+modelProcessor = osim.ModelProcessor('expData_2Dmodel.osim')
+#Remove the muscles
+modelProcessor.append(osim.ModOpRemoveMuscles())
+# #Add CoordinateActuators to the model degrees-of-freedom. This
+# modelProcessor.append(osim.ModOpAddReserves(500))
+
+#Process to get model object
+osimModel = modelProcessor.process()
+
+#Append torque actuators to model
+#Load in predefined force set
+forceSet = osim.ForceSet('torque_actuators.xml')
+#Loop through and append forces to model
+for ff in range(0,forceSet.getSize()):
+    osimModel.updForceSet().cloneAndAppend(osim.CoordinateActuator.safeDownCast(forceSet.get(ff)))
+
+#Finalize model connections
+osimModel.finalizeConnections()    
+
+#Set model processor
+track.setModel(osim.ModelProcessor(osimModel))
+
+#Setup of MocoTrack
+tabProcessor = osim.TableProcessor('refQ_converted.sto')
+tabProcessor.append(osim.TabOpLowPassFilter(12))
+track.setStatesReference(tabProcessor)
+track.set_states_global_tracking_weight(10)
+track.set_allow_unused_references(True)
+track.set_track_reference_position_derivatives(True)
+track.set_apply_tracked_states_to_guess(True)
+track.set_initial_time(osim.Storage('refQ_converted.sto').getFirstTime())
+track.set_final_time(osim.Storage('refQ_converted.sto').getLastTime())
+
+#Set individual state weights
+#Set each weight in a dictionary
+weights = {'/jointset/ground_pelvis/pelvis_tx/value': 250,
+           '/jointset/ground_pelvis/pelvis_ty/value': 50,
+           '/jointset/ground_pelvis/pelvis_tilt/value': 25,
+           '/jointset/back/lumbar_extension/value': 150,
+           '/jointset/hip_r/hip_flexion_r/value': 100,
+           '/jointset/knee_r/knee_angle_r/value': 250,
+           '/jointset/ankle_r/ankle_angle_r/value': 25,
+           '/jointset/hip_l/hip_flexion_l/value': 150,
+           '/jointset/knee_l/knee_angle_l/value': 250,
+           '/jointset/ankle_l/ankle_angle_l/value': 25}
+#Initialise state weights object
+stateWeights = osim.MocoWeightSet()
+#Loop through and set weights
+for kk in range(0,len(list(weights.keys()))):
+    stateWeights.cloneAndAppend(osim.MocoWeight(list(weights.keys())[kk],weights[list(weights.keys())[kk]]))
+#Set weights in tracking object
+track.set_states_weight_set(stateWeights)
+
+#Initialise study and problem
+study = track.initialize()
+problem = study.updProblem()
+
+#Goals
+
+#Effort
+effort = osim.MocoControlGoal.safeDownCast(problem.updGoal('control_effort'))
+effort.setWeight(0.01)
+
+# #Put a large weight on the pelvis CoordinateActuators, which act as the
+# #residual, or 'hand-of-god', forces which we would like to keep as small
+# #as possible.
+# forceSet = osimModel.getForceSet()
+# for ii in range(0,forceSet.getSize()):
+#     forcePath = forceSet.get(ii).getAbsolutePathString()
+#     if 'pelvis' in forcePath:
+#         effort.setWeightForControl(forcePath,10)
+
+#GRF contact tracking goal
+contactTracking = osim.MocoContactTrackingGoal('contact',1)
+contactTracking.setExternalLoadsFile('refGRF_2D.xml')
+#Right foot
+forceNamesRightFoot = osim.StdVectorString()
+forceNamesRightFoot.append('/forceset/contactHeel_r')
+forceNamesRightFoot.append('/forceset/contactToe1_r')
+forceNamesRightFoot.append('/forceset/contactToe2_r')
+trackRightGRF = osim.MocoContactTrackingGoalGroup(forceNamesRightFoot,'RightGRF')
+trackRightGRF.append_alternative_frame_paths('/bodyset/toes_r')
+contactTracking.addContactGroup(trackRightGRF)
+#Left foot
+forceNamesLeftFoot = osim.StdVectorString()
+forceNamesLeftFoot.append('/forceset/contactHeel_l')
+forceNamesLeftFoot.append('/forceset/contactToe1_l')
+forceNamesLeftFoot.append('/forceset/contactToe2_l')
+trackLeftGRF = osim.MocoContactTrackingGoalGroup(forceNamesLeftFoot,'LeftGRF')
+trackLeftGRF.append_alternative_frame_paths('/bodyset/toes_l')
+contactTracking.addContactGroup(trackLeftGRF)
+#Properties
+contactTracking.setProjection('plane')
+contactTracking.setProjectionVector(osim.Vec3(0, 0, 1))
+problem.addGoal(contactTracking)
+
+#Bounds
+problem.setStateInfo('/jointset/ground_pelvis/pelvis_tilt/value', [-20*math.pi/180, 5*math.pi/180])
+problem.setStateInfo('/jointset/ground_pelvis/pelvis_tx/value', [-5, 5])
+problem.setStateInfo('/jointset/ground_pelvis/pelvis_ty/value', [0.75, 1.25])
+problem.setStateInfo('/jointset/hip_l/hip_flexion_l/value', [-40*math.pi/180, 80*math.pi/180])
+problem.setStateInfo('/jointset/hip_r/hip_flexion_r/value', [-40*math.pi/180, 80*math.pi/180])
+problem.setStateInfo('/jointset/knee_l/knee_angle_l/value', [-140*math.pi/180, 0])
+problem.setStateInfo('/jointset/knee_r/knee_angle_r/value', [-140*math.pi/180, 0])
+problem.setStateInfo('/jointset/ankle_l/ankle_angle_l/value', [-30*math.pi/180, 30*math.pi/180])
+problem.setStateInfo('/jointset/ankle_r/ankle_angle_r/value', [-30*math.pi/180, 30*math.pi/180])
+problem.setStateInfo('/jointset/back/lumbar_extension/value', [-30, 0*math.pi/180])
+
+#Configure the solver
+solver = osim.MocoCasADiSolver.safeDownCast(study.updSolver())
+solver.set_num_mesh_intervals(100)
+solver.set_verbosity(2)
+solver.set_optim_solver('ipopt')
+solver.set_optim_convergence_tolerance(1e-4)
+solver.set_optim_constraint_tolerance(1e-4)
+solver.set_optim_max_iterations(2000)
+# solver.setGuessFile('torque_driven_rra_tracking_solution.sto')
+
+#Solve
+solution = study.solve()
+
+#Visualise solution
+study.visualize(solution)
+
+#Write tracked GRF to file
+contact_r = osim.StdVectorString()
+contact_l = osim.StdVectorString()
+contact_r.append('/forceset/contactHeel_r')
+contact_r.append('/forceset/contactToe1_r')
+contact_r.append('/forceset/contactToe2_r')
+contact_l.append('/forceset/contactHeel_l')
+contact_l.append('/forceset/contactToe1_l')
+contact_l.append('/forceset/contactToe2_l')
+externalForcesTableFlat = osim.createExternalLoadsTableForGait(osimModel,
+                                                               solution,
+                                                               contact_r,
+                                                               contact_l)
+osim.writeTableToFile(externalForcesTableFlat,
+                      'torque_driven_rra_tracking_GRF.sto')
+
+
+####Solution looks good but doesn't solve in 1000 iterations
+####Needed ~1770 iterations - GRFs are mostly good, although still seem to drop
+#### off quite quickly rather than a smooth tail off at toe-off
+
+#### Could filter ground reaction forces a little more - AP is noisy?
+
+#Get kinematic states of the solution
+outputTable = solution.exportToStatesTable()
+fileAdapter = osim.STOFileAdapter()
+fileAdapter.write(outputTable,'torque_drive_rra_tracking_kinematics.sto')
 
 # %% Tracking simulation with experimental 2D model
 
@@ -116,26 +363,26 @@ baseModel = osim.Model('expData_2Dmodel.osim')
 metabolics = osim.Bhargava2004Metabolics()
 metabolics.setName('metabolics')
 metabolics.set_use_smoothing(True)
-metabolics.addMuscle('hamstrings_r',baseModel.getComponent('hamstrings_r'))
-metabolics.addMuscle('hamstrings_l',baseModel.getComponent('hamstrings_l'))
-metabolics.addMuscle('bifemsh_r',baseModel.getComponent('bifemsh_r'))
-metabolics.addMuscle('bifemsh_l',baseModel.getComponent('bifemsh_l'))
-metabolics.addMuscle('glut_max_r',baseModel.getComponent('glut_max_r'))
-metabolics.addMuscle('glut_max_l',baseModel.getComponent('glut_max_l'))
-metabolics.addMuscle('iliopsoas_r',baseModel.getComponent('iliopsoas_r'))
-metabolics.addMuscle('iliopsoas_l',baseModel.getComponent('iliopsoas_l'))
-metabolics.addMuscle('rect_fem_r',baseModel.getComponent('rect_fem_r'))
-metabolics.addMuscle('rect_fem_l',baseModel.getComponent('rect_fem_l'))
-metabolics.addMuscle('vasti_r',baseModel.getComponent('vasti_r'))
-metabolics.addMuscle('vasti_l',baseModel.getComponent('vasti_l'))
-metabolics.addMuscle('gastroc_r',baseModel.getComponent('gastroc_r'))
-metabolics.addMuscle('gastroc_l',baseModel.getComponent('gastroc_l'))
-metabolics.addMuscle('soleus_r',baseModel.getComponent('soleus_r'))
-metabolics.addMuscle('soleus_l',baseModel.getComponent('soleus_l'))
-metabolics.addMuscle('tib_ant_r',baseModel.getComponent('tib_ant_r'))
-metabolics.addMuscle('tib_ant_l',baseModel.getComponent('tib_ant_l'))
+metabolics.addMuscle('hamstrings_r',osim.DeGrooteFregly2016Muscle.safeDownCast(baseModel.getForceSet().get('hamstrings_r')))
+metabolics.addMuscle('hamstrings_l',osim.DeGrooteFregly2016Muscle.safeDownCast(baseModel.getForceSet().get('hamstrings_l')))
+metabolics.addMuscle('bifemsh_r',osim.DeGrooteFregly2016Muscle.safeDownCast(baseModel.getForceSet().get('bifemsh_r')))
+metabolics.addMuscle('bifemsh_l',osim.DeGrooteFregly2016Muscle.safeDownCast(baseModel.getForceSet().get('bifemsh_l')))
+metabolics.addMuscle('glut_max_r',osim.DeGrooteFregly2016Muscle.safeDownCast(baseModel.getForceSet().get('glut_max_r')))
+metabolics.addMuscle('glut_max_l',osim.DeGrooteFregly2016Muscle.safeDownCast(baseModel.getForceSet().get('glut_max_l')))
+metabolics.addMuscle('iliopsoas_r',osim.DeGrooteFregly2016Muscle.safeDownCast(baseModel.getForceSet().get('iliopsoas_r')))
+metabolics.addMuscle('iliopsoas_l',osim.DeGrooteFregly2016Muscle.safeDownCast(baseModel.getForceSet().get('iliopsoas_l')))
+metabolics.addMuscle('rect_fem_r',osim.DeGrooteFregly2016Muscle.safeDownCast(baseModel.getForceSet().get('rect_fem_r')))
+metabolics.addMuscle('rect_fem_l',osim.DeGrooteFregly2016Muscle.safeDownCast(baseModel.getForceSet().get('rect_fem_l')))
+metabolics.addMuscle('vasti_r',osim.DeGrooteFregly2016Muscle.safeDownCast(baseModel.getForceSet().get('vasti_r')))
+metabolics.addMuscle('vasti_l',osim.DeGrooteFregly2016Muscle.safeDownCast(baseModel.getForceSet().get('vasti_l')))
+metabolics.addMuscle('gastroc_r',osim.DeGrooteFregly2016Muscle.safeDownCast(baseModel.getForceSet().get('gastroc_r')))
+metabolics.addMuscle('gastroc_l',osim.DeGrooteFregly2016Muscle.safeDownCast(baseModel.getForceSet().get('gastroc_l')))
+metabolics.addMuscle('soleus_r',osim.DeGrooteFregly2016Muscle.safeDownCast(baseModel.getForceSet().get('soleus_r')))
+metabolics.addMuscle('soleus_l',osim.DeGrooteFregly2016Muscle.safeDownCast(baseModel.getForceSet().get('soleus_l')))
+metabolics.addMuscle('tib_ant_r',osim.DeGrooteFregly2016Muscle.safeDownCast(baseModel.getForceSet().get('tib_ant_r')))
+metabolics.addMuscle('tib_ant_l',osim.DeGrooteFregly2016Muscle.safeDownCast(baseModel.getForceSet().get('tib_ant_l')))
 baseModel.addComponent(metabolics)
-# baseModel.finalizeConnections()
+baseModel.finalizeConnections()
 
 #Turn off contact forces to make it standard simulation
 # baseModel.getComponent('contactHeel_r').set_appliesForce(False)
@@ -144,7 +391,7 @@ baseModel.addComponent(metabolics)
 # baseModel.getComponent('contactHeel_l').set_appliesForce(False)
 # baseModel.getComponent('contactToe1_l').set_appliesForce(False)
 # baseModel.getComponent('contactToe2_l').set_appliesForce(False)
-baseModel.finalizeConnections()
+# baseModel.finalizeConnections()
 
 #Process model
 modelProcessor = osim.ModelProcessor(baseModel)
@@ -161,28 +408,28 @@ modelProcessor.append(osim.ModOpIgnoreTendonCompliance())
 
 #Setup of MocoTrack
 track.setModel(modelProcessor)
-tabProcessor = osim.TableProcessor('refQ_converted.sto')
+tabProcessor = osim.TableProcessor('torque_drive_rra_tracking_kinematics.sto')
 tabProcessor.append(osim.TabOpLowPassFilter(12))
 track.setStatesReference(tabProcessor)
 track.set_states_global_tracking_weight(10)
 track.set_allow_unused_references(True)
 track.set_track_reference_position_derivatives(True)
 track.set_apply_tracked_states_to_guess(True)
-track.set_initial_time(osim.Storage('refQ_converted.sto').getFirstTime())
-track.set_final_time(osim.Storage('refQ_converted.sto').getLastTime())
+track.set_initial_time(osim.Storage('torque_drive_rra_tracking_kinematics.sto').getFirstTime())
+track.set_final_time(osim.Storage('torque_drive_rra_tracking_kinematics.sto').getLastTime())
 
 #Set individual state weights
 #Set each weight in a dictionary
-weights = {'/jointset/ground_pelvis/pelvis_tx/value': 100,
-           '/jointset/ground_pelvis/pelvis_ty/value': 25,
+weights = {'/jointset/ground_pelvis/pelvis_tx/value': 250,
+           '/jointset/ground_pelvis/pelvis_ty/value': 250,
            '/jointset/ground_pelvis/pelvis_tilt/value': 25,
            '/jointset/back/lumbar_extension/value': 150,
-           '/jointset/hip_r/hip_flexion_r/value': 250,
-           '/jointset/knee_r/knee_angle_r/value': 500,
-           '/jointset/ankle_r/ankle_angle_r/value': 75,
-           '/jointset/hip_l/hip_flexion_l/value': 250,
-           '/jointset/knee_l/knee_angle_l/value': 500,
-           '/jointset/ankle_l/ankle_angle_l/value': 75}
+           '/jointset/hip_r/hip_flexion_r/value': 100,
+           '/jointset/knee_r/knee_angle_r/value': 250,
+           '/jointset/ankle_r/ankle_angle_r/value': 25,
+           '/jointset/hip_l/hip_flexion_l/value': 150,
+           '/jointset/knee_l/knee_angle_l/value': 250,
+           '/jointset/ankle_l/ankle_angle_l/value': 25}
 #Initialise state weights object
 stateWeights = osim.MocoWeightSet()
 #Loop through and set weights
@@ -225,8 +472,8 @@ problem = study.updProblem()
 # #Symmetry
 # periodicityGoal = osim.MocoPeriodicityGoal('symmetryGoal')
 # problem.addGoal(periodicityGoal)
-model = modelProcessor.process()
-model.initSystem()
+# model = modelProcessor.process()
+# model.initSystem()
 
 #Set symmetric coordinate values
 
@@ -341,7 +588,7 @@ model.initSystem()
 
 #Effort
 effort = osim.MocoControlGoal.safeDownCast(problem.updGoal('control_effort'))
-effort.setWeight(0.1)
+effort.setWeight(0.01)
 
 #Metabolics
 metGoal = osim.MocoOutputGoal('met',0.1)
@@ -350,29 +597,29 @@ metGoal.setDivideByDisplacement(True)
 metGoal.setDivideByMass(True)
 problem.addGoal(metGoal)
 
-#GRF contact tracking goal
-contactTracking = osim.MocoContactTrackingGoal('contact',1)
-contactTracking.setExternalLoadsFile('refGRF_2D.xml')
-#Right foot
-forceNamesRightFoot = osim.StdVectorString()
-forceNamesRightFoot.append('contactHeel_r')
-forceNamesRightFoot.append('contactToe1_r')
-forceNamesRightFoot.append('contactToe2_r')
-trackRightGRF = osim.MocoContactTrackingGoalGroup(forceNamesRightFoot,'RightGRF')
-trackRightGRF.append_alternative_frame_paths('/bodyset/toes_r')
-contactTracking.addContactGroup(trackRightGRF)
-#Left foot
-forceNamesLeftFoot = osim.StdVectorString()
-forceNamesLeftFoot.append('contactHeel_l')
-forceNamesLeftFoot.append('contactToe1_l')
-forceNamesLeftFoot.append('contactToe2_l')
-trackLeftGRF = osim.MocoContactTrackingGoalGroup(forceNamesLeftFoot,'LeftGRF')
-trackLeftGRF.append_alternative_frame_paths('/bodyset/toes_l')
-contactTracking.addContactGroup(trackLeftGRF)
-#Properties
-contactTracking.setProjection('plane')
-contactTracking.setProjectionVector(osim.Vec3(0, 0, 1))
-problem.addGoal(contactTracking)
+# #GRF contact tracking goal
+# contactTracking = osim.MocoContactTrackingGoal('contact',1)
+# contactTracking.setExternalLoadsFile('refGRF_2D.xml')
+# #Right foot
+# forceNamesRightFoot = osim.StdVectorString()
+# forceNamesRightFoot.append('/forceset/contactHeel_r')
+# forceNamesRightFoot.append('/forceset/contactToe1_r')
+# forceNamesRightFoot.append('/forceset/contactToe2_r')
+# trackRightGRF = osim.MocoContactTrackingGoalGroup(forceNamesRightFoot,'RightGRF')
+# trackRightGRF.append_alternative_frame_paths('/bodyset/toes_r')
+# contactTracking.addContactGroup(trackRightGRF)
+# #Left foot
+# forceNamesLeftFoot = osim.StdVectorString()
+# forceNamesLeftFoot.append('/forceset/contactHeel_l')
+# forceNamesLeftFoot.append('/forceset/contactToe1_l')
+# forceNamesLeftFoot.append('/forceset/contactToe2_l')
+# trackLeftGRF = osim.MocoContactTrackingGoalGroup(forceNamesLeftFoot,'LeftGRF')
+# trackLeftGRF.append_alternative_frame_paths('/bodyset/toes_l')
+# contactTracking.addContactGroup(trackLeftGRF)
+# #Properties
+# contactTracking.setProjection('plane')
+# contactTracking.setProjectionVector(osim.Vec3(0, 0, 1))
+# problem.addGoal(contactTracking)
 
 #Bounds
 problem.setStateInfo('/jointset/ground_pelvis/pelvis_tilt/value', [-20*math.pi/180, 0*math.pi/180])
@@ -434,131 +681,6 @@ externalForcesTableFlat = osim.createExternalLoadsTableForGait(model,
                                                                contact_l)
 osim.writeTableToFile(externalForcesTableFlat,
                       'solutionGRF_fullStride.sto')
-
-# %% Make shift RRA tracking simulation
-#    Align kinematics with torque driven simulation w/ GRF tracking
-
-##### NOTE: it makes sense that this wouldn't work that well given the model
-##### doesn't match the mass/body of the experimental data...
-
-#Create and name an instance of the MocoTrack tool.
-track = osim.MocoTrack()
-track.setName('torque_driven_tracking')
-
-#Construct a ModelProcessor and add it to the tool.
-modelProcessor = osim.ModelProcessor('testModel.osim')
-#Add CoordinateActuators to the model degrees-of-freedom. This
-modelProcessor.append(osim.ModOpAddReserves(1000))
-#Ste model processor
-track.setModel(modelProcessor)
-
-#Setup of MocoTrack
-tabProcessor = osim.TableProcessor('refQ_converted.sto')
-tabProcessor.append(osim.TabOpLowPassFilter(12))
-track.setStatesReference(tabProcessor)
-track.set_states_global_tracking_weight(10)
-track.set_allow_unused_references(True)
-track.set_track_reference_position_derivatives(True)
-track.set_apply_tracked_states_to_guess(True)
-track.set_initial_time(osim.Storage('refQ_converted.sto').getFirstTime())
-track.set_final_time(osim.Storage('refQ_converted.sto').getLastTime())
-
-#Set individual state weights
-#These are based off Ross Miller's UMocoD project for now
-stateWeights = osim.MocoWeightSet()
-#elevated pelvis_tx weight to try and account for weirdness? (100 > 200)
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_tx/value',(1/(1*0.2000))**2))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_ty/value',(1/(2*0.1000))**2))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_tilt/value',(1/(1*0.1745))**2))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/back/lumbar_extension/value',(1/(1*0.1745))**2))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_r/hip_flexion_r/value',(1/(1*0.0647))**2))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/knee_r/knee_angle_r/value',(1/(1*0.0889))**2))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ankle_r/ankle_angle_r/value',(1/(1*0.0574))**2))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_l/hip_flexion_l/value',(1/(1*0.0647))**2))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/knee_l/knee_angle_l/value',(1/(1*0.0889))**2))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ankle_l/ankle_angle_l/value',(1/(1*0.0574))**2))
-w = 0.001 #Scale the generalized speed tracking errors by this constant
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_tx/speed',w*(0/(1*0.1000))**2))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_ty/speed',w*(0/(2*0.1000))**2))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ground_pelvis/pelvis_tilt/speed',w*(0/(1*0.0585))**2))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/back/lumbar_extension/speed',w*(0/(1*0.1745))**2))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_r/hip_flexion_r/speed',w*(1/(1*0.0647))**2))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/knee_r/knee_angle_r/speed',w*(1/(1*0.0889))**2))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ankle_r/ankle_angle_r/speed',w*(1/(1*0.0574))**2))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/hip_l/hip_flexion_l/speed',w*(1/(1*0.0647))**2))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/knee_l/knee_angle_l/speed',w*(1/(1*0.0889))**2))
-stateWeights.cloneAndAppend(osim.MocoWeight('/jointset/ankle_l/ankle_angle_l/speed',w*(1/(1*0.0574))**2))
-track.set_states_weight_set(stateWeights)
-
-#Initialise study and problem
-study = track.initialize()
-problem = study.updProblem()
-
-#Goals
-
-#Effort
-effort = osim.MocoControlGoal.safeDownCast(problem.updGoal('control_effort'))
-effort.setWeight(1)
-
-#Put a large weight on the pelvis CoordinateActuators, which act as the
-#residual, or 'hand-of-god', forces which we would like to keep as small
-#as possible.
-model = modelProcessor.process()
-model.initSystem()
-forceSet = model.getForceSet()
-for ii in range(0,forceSet.getSize()):
-   forcePath = forceSet.get(ii).getAbsolutePathString()
-   if 'pelvis' in forcePath:
-       effort.setWeightForControl(forcePath,10)
-
-#GRF contact tracking goal
-contactTracking = osim.MocoContactTrackingGoal('contact',1)
-contactTracking.setExternalLoadsFile('refGRF_2D.xml')
-#Right foot
-forceNamesRightFoot = osim.StdVectorString()
-forceNamesRightFoot.append('contactHeel_r')
-forceNamesRightFoot.append('contactToe1_r')
-forceNamesRightFoot.append('contactToe2_r')
-trackRightGRF = osim.MocoContactTrackingGoalGroup(forceNamesRightFoot,'RightGRF')
-trackRightGRF.append_alternative_frame_paths('/bodyset/toes_r')
-contactTracking.addContactGroup(trackRightGRF)
-#Left foot
-forceNamesLeftFoot = osim.StdVectorString()
-forceNamesLeftFoot.append('contactHeel_l')
-forceNamesLeftFoot.append('contactToe1_l')
-forceNamesLeftFoot.append('contactToe2_l')
-trackLeftGRF = osim.MocoContactTrackingGoalGroup(forceNamesLeftFoot,'LeftGRF')
-trackLeftGRF.append_alternative_frame_paths('/bodyset/toes_l')
-contactTracking.addContactGroup(trackLeftGRF)
-#Properties
-contactTracking.setProjection('plane')
-contactTracking.setProjectionVector(osim.Vec3(0, 0, 1))
-problem.addGoal(contactTracking)
-
-#Bounds
-problem.setStateInfo('/jointset/ground_pelvis/pelvis_tilt/value', [-20*math.pi/180, 5*math.pi/180])
-problem.setStateInfo('/jointset/ground_pelvis/pelvis_tx/value', [-5, 5])
-problem.setStateInfo('/jointset/ground_pelvis/pelvis_ty/value', [0.75, 1.25])
-problem.setStateInfo('/jointset/hip_l/hip_flexion_l/value', [-40*math.pi/180, 80*math.pi/180])
-problem.setStateInfo('/jointset/hip_r/hip_flexion_r/value', [-40*math.pi/180, 80*math.pi/180])
-problem.setStateInfo('/jointset/knee_l/knee_angle_l/value', [-140*math.pi/180, 0])
-problem.setStateInfo('/jointset/knee_r/knee_angle_r/value', [-140*math.pi/180, 0])
-problem.setStateInfo('/jointset/ankle_l/ankle_angle_l/value', [-30*math.pi/180, 30*math.pi/180])
-problem.setStateInfo('/jointset/ankle_r/ankle_angle_r/value', [-30*math.pi/180, 30*math.pi/180])
-problem.setStateInfo('/jointset/back/lumbar_extension/value', [-30, 0*math.pi/180])
-
-#Configure the solver
-solver = osim.MocoCasADiSolver.safeDownCast(study.updSolver())
-solver.set_num_mesh_intervals(50)
-solver.set_verbosity(2)
-solver.set_optim_solver('ipopt')
-solver.set_optim_convergence_tolerance(1e-4)
-solver.set_optim_constraint_tolerance(1e-4)
-solver.set_optim_max_iterations(1000)
-# solver.setGuessFile('MocoStudy_solution.sto')
-
-#Solve
-solution = study.solve()
 
 # %% Tracking simulation
 

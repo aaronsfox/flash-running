@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSimDocument Version="20302">
+	<ForceSet name="gait2392_RRA">
+		<objects>
+			<CoordinateActuator name="tau_pelvis_tx">
+				<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
+				<min_control>-Inf</min_control>
+				<!--Maximum allowed value for control signal. Used primarily when solving for control values.-->
+				<max_control>Inf</max_control>
+				<!--Name of the generalized coordinate to which the actuator applies.-->
+				<coordinate>pelvis_tx</coordinate>
+				<!--The maximum generalized force produced by this actuator.-->
+				<optimal_force>1</optimal_force>
+			</CoordinateActuator>
+			<CoordinateActuator name="tau_pelvis_ty">
+				<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
+				<min_control>-Inf</min_control>
+				<!--Maximum allowed value for control signal. Used primarily when solving for control values.-->
+				<max_control>Inf</max_control>
+				<!--Name of the generalized coordinate to which the actuator applies.-->
+				<coordinate>pelvis_ty</coordinate>
+				<!--The maximum generalized force produced by this actuator.-->
+				<optimal_force>1</optimal_force>
+			</CoordinateActuator>	
+			<CoordinateActuator name="tau_pelvis_tilt">
+				<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
+				<min_control>-Inf</min_control>
+				<!--Maximum allowed value for control signal. Used primarily when solving for control values.-->
+				<max_control>Inf</max_control>
+				<!--Name of the generalized coordinate to which the actuator applies.-->
+				<coordinate>pelvis_tilt</coordinate>
+				<!--The maximum generalized force produced by this actuator.-->
+				<optimal_force>1</optimal_force>
+			</CoordinateActuator>			
+			<CoordinateActuator name="tau_hip_flexion_l">
+				<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
+				<min_control>-Inf</min_control>
+				<!--Maximum allowed value for control signal. Used primarily when solving for control values.-->
+				<max_control>Inf</max_control>
+				<!--Name of the generalized coordinate to which the actuator applies.-->
+				<coordinate>hip_flexion_l</coordinate>
+				<!--The maximum generalized force produced by this actuator.-->
+				<optimal_force>250</optimal_force>
+			</CoordinateActuator>
+			<CoordinateActuator name="tau_hip_flexion_r">
+				<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
+				<min_control>-Inf</min_control>
+				<!--Maximum allowed value for control signal. Used primarily when solving for control values.-->
+				<max_control>Inf</max_control>
+				<!--Name of the generalized coordinate to which the actuator applies.-->
+				<coordinate>hip_flexion_r</coordinate>
+				<!--The maximum generalized force produced by this actuator.-->
+				<optimal_force>250</optimal_force>
+			</CoordinateActuator>
+			<CoordinateActuator name="tau_knee_angle_l">
+				<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
+				<min_control>-Inf</min_control>
+				<!--Maximum allowed value for control signal. Used primarily when solving for control values.-->
+				<max_control>Inf</max_control>
+				<!--Name of the generalized coordinate to which the actuator applies.-->
+				<coordinate>knee_angle_l</coordinate>
+				<!--The maximum generalized force produced by this actuator.-->
+				<optimal_force>150</optimal_force>
+			</CoordinateActuator>
+			<CoordinateActuator name="tau_knee_angle_r">
+				<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
+				<min_control>-Inf</min_control>
+				<!--Maximum allowed value for control signal. Used primarily when solving for control values.-->
+				<max_control>Inf</max_control>
+				<!--Name of the generalized coordinate to which the actuator applies.-->
+				<coordinate>knee_angle_r</coordinate>
+				<!--The maximum generalized force produced by this actuator.-->
+				<optimal_force>150</optimal_force>
+			</CoordinateActuator>
+			<CoordinateActuator name="tau_ankle_angle_l">
+				<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
+				<min_control>-Inf</min_control>
+				<!--Maximum allowed value for control signal. Used primarily when solving for control values.-->
+				<max_control>Inf</max_control>
+				<!--Name of the generalized coordinate to which the actuator applies.-->
+				<coordinate>ankle_angle_l</coordinate>
+				<!--The maximum generalized force produced by this actuator.-->
+				<optimal_force>100</optimal_force>
+			</CoordinateActuator>
+			<CoordinateActuator name="tau_ankle_angle_r">
+				<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
+				<min_control>-Inf</min_control>
+				<!--Maximum allowed value for control signal. Used primarily when solving for control values.-->
+				<max_control>Inf</max_control>
+				<!--Name of the generalized coordinate to which the actuator applies.-->
+				<coordinate>ankle_angle_r</coordinate>
+				<!--The maximum generalized force produced by this actuator.-->
+				<optimal_force>100</optimal_force>
+			</CoordinateActuator>	
+		</objects>
+		<groups/>
+	</ForceSet>
+</OpenSimDocument>
+
