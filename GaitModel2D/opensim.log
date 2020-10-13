@@ -6038,3 +6038,1279 @@
 [2020-10-13 19:11:13.136] [info] DeGrooteFregly2016Muscle 'gastroc_r' is exceeding maximum contraction velocity at time 0.787333 s.
 [2020-10-13 19:11:13.136] [info] DeGrooteFregly2016Muscle 'soleus_r' is exceeding maximum contraction velocity at time 0.787333 s.
 [2020-10-13 19:11:27.654] [info] Exiting visualization.
+[2020-10-13 20:10:39.050] [info] Loaded model scaledModel_expData from file expData_2Dmodel.osim
+[2020-10-13 20:11:35.005] [info] Loaded model scaledModel_expData from file expData_2Dmodel.osim
+[2020-10-13 20:20:09.316] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:20:09.336] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:09.337] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:09.355] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:20:09.371] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:09.371] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:09.484] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:20:09.503] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:09.503] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:09.595] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:20:09.612] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:09.613] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:09.676] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:20:09.694] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:09.695] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:09.733] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:20:09.754] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:09.754] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:09.792] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:20:09.810] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:09.811] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:09.844] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:20:09.862] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:09.862] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:15.858] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:20:15.875] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:15.876] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:15.895] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:20:15.912] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:15.912] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:16.046] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:20:16.065] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:16.065] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:16.125] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:20:16.144] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:16.144] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:16.200] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:20:16.223] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:16.223] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:16.272] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:20:16.306] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:16.306] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:16.347] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:20:16.388] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:16.388] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:16.420] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:20:16.439] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:20:16.440] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:23.978] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:24.001] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.001] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.022] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:24.037] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.038] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.172] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:24.213] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.213] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.271] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:24.287] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.288] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.344] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:24.380] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.380] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.407] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:24.423] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.423] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.453] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:24.472] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.472] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.501] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:24.516] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.516] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.602] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:24.618] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.618] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.646] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:24.665] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.666] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.702] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:24.718] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.718] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.750] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:24.771] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.771] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.782] [info] ========================================================================
+[2020-10-13 20:22:24.783] [info] MocoCasADiSolver starting.
+[2020-10-13 20:22:24.783] [info] Tue Oct 13 20:22:24 2020
+[2020-10-13 20:22:24.783] [info] ------------------------------------------------------------------------
+[2020-10-13 20:22:24.783] [cout] [info] Costs: (total: 1)
+[2020-10-13 20:22:24.783] [cout] [info]   excitation_effort. MocoControlGoal, enabled: true, mode: cost, weight: 1.0
+[2020-10-13 20:22:24.784] [cout] [info]         control: /forceset/lumbarAct, weight: 1.0
+[2020-10-13 20:22:24.784] [cout] [info]         control: /forceset/hamstrings_r, weight: 1.0
+[2020-10-13 20:22:24.784] [cout] [info]         control: /forceset/bifemsh_r, weight: 1.0
+[2020-10-13 20:22:24.784] [cout] [info]         control: /forceset/glut_max_r, weight: 1.0
+[2020-10-13 20:22:24.784] [cout] [info]         control: /forceset/iliopsoas_r, weight: 1.0
+[2020-10-13 20:22:24.784] [cout] [info]         control: /forceset/rect_fem_r, weight: 1.0
+[2020-10-13 20:22:24.785] [cout] [info]         control: /forceset/vasti_r, weight: 1.0
+[2020-10-13 20:22:24.785] [cout] [info]         control: /forceset/gastroc_r, weight: 1.0
+[2020-10-13 20:22:24.785] [cout] [info]         control: /forceset/soleus_r, weight: 1.0
+[2020-10-13 20:22:24.785] [cout] [info]         control: /forceset/tib_ant_r, weight: 1.0
+[2020-10-13 20:22:24.785] [cout] [info]         control: /forceset/hamstrings_l, weight: 1.0
+[2020-10-13 20:22:24.785] [cout] [info]         control: /forceset/bifemsh_l, weight: 1.0
+[2020-10-13 20:22:24.786] [cout] [info]         control: /forceset/glut_max_l, weight: 1.0
+[2020-10-13 20:22:24.786] [cout] [info]         control: /forceset/iliopsoas_l, weight: 1.0
+[2020-10-13 20:22:24.786] [cout] [info]         control: /forceset/rect_fem_l, weight: 1.0
+[2020-10-13 20:22:24.787] [cout] [info]         control: /forceset/vasti_l, weight: 1.0
+[2020-10-13 20:22:24.788] [cout] [info]         control: /forceset/gastroc_l, weight: 1.0
+[2020-10-13 20:22:24.788] [cout] [info]         control: /forceset/soleus_l, weight: 1.0
+[2020-10-13 20:22:24.788] [cout] [info]         control: /forceset/tib_ant_l, weight: 1.0
+[2020-10-13 20:22:24.788] [cout] [info] Endpoint constraints: (total: 1)
+[2020-10-13 20:22:24.788] [cout] [info]   initial_activation. MocoInitialActivationGoal, enabled: true, mode: endpoint_constraint
+[2020-10-13 20:22:24.788] [cout] [info] Kinematic constraints: none
+[2020-10-13 20:22:24.788] [cout] [info] Path constraints: none
+[2020-10-13 20:22:24.788] [cout] [info] States: (total: 18)
+[2020-10-13 20:22:24.788] [cout] [info]   /forceset/bifemsh_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:22:24.789] [cout] [info]   /forceset/hamstrings_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:22:24.789] [cout] [info]   /forceset/glut_max_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:22:24.789] [cout] [info]   /forceset/vasti_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:22:24.789] [cout] [info]   /forceset/gastroc_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:22:24.789] [cout] [info]   /forceset/iliopsoas_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:22:24.789] [cout] [info]   /forceset/soleus_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:22:24.789] [cout] [info]   /forceset/rect_fem_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:22:24.789] [cout] [info]   /forceset/tib_ant_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:22:24.790] [cout] [info]   /forceset/hamstrings_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:22:24.790] [cout] [info]   /forceset/bifemsh_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:22:24.790] [cout] [info]   /forceset/glut_max_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:22:24.790] [cout] [info]   /forceset/iliopsoas_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:22:24.790] [cout] [info]   /forceset/rect_fem_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:22:24.790] [cout] [info]   /forceset/gastroc_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:22:24.790] [cout] [info]   /forceset/vasti_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:22:24.790] [cout] [info]   /forceset/soleus_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:22:24.791] [cout] [info]   /forceset/tib_ant_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:22:24.791] [cout] [info] Controls: (total: 19)
+[2020-10-13 20:22:24.791] [cout] [info]   /forceset/lumbarAct. bounds: [-inf, inf]
+[2020-10-13 20:22:24.791] [cout] [info]   /forceset/bifemsh_r. bounds: [0.01, 1]
+[2020-10-13 20:22:24.791] [cout] [info]   /forceset/hamstrings_r. bounds: [0.01, 1]
+[2020-10-13 20:22:24.791] [cout] [info]   /forceset/glut_max_r. bounds: [0.01, 1]
+[2020-10-13 20:22:24.791] [cout] [info]   /forceset/vasti_r. bounds: [0.01, 1]
+[2020-10-13 20:22:24.791] [cout] [info]   /forceset/gastroc_r. bounds: [0.01, 1]
+[2020-10-13 20:22:24.791] [cout] [info]   /forceset/iliopsoas_r. bounds: [0.01, 1]
+[2020-10-13 20:22:24.792] [cout] [info]   /forceset/rect_fem_r. bounds: [0.01, 1]
+[2020-10-13 20:22:24.792] [cout] [info]   /forceset/soleus_r. bounds: [0.01, 1]
+[2020-10-13 20:22:24.792] [cout] [info]   /forceset/tib_ant_r. bounds: [0.01, 1]
+[2020-10-13 20:22:24.792] [cout] [info]   /forceset/hamstrings_l. bounds: [0.01, 1]
+[2020-10-13 20:22:24.792] [cout] [info]   /forceset/bifemsh_l. bounds: [0.01, 1]
+[2020-10-13 20:22:24.792] [cout] [info]   /forceset/glut_max_l. bounds: [0.01, 1]
+[2020-10-13 20:22:24.792] [cout] [info]   /forceset/iliopsoas_l. bounds: [0.01, 1]
+[2020-10-13 20:22:24.792] [cout] [info]   /forceset/rect_fem_l. bounds: [0.01, 1]
+[2020-10-13 20:22:24.793] [cout] [info]   /forceset/gastroc_l. bounds: [0.01, 1]
+[2020-10-13 20:22:24.793] [cout] [info]   /forceset/vasti_l. bounds: [0.01, 1]
+[2020-10-13 20:22:24.793] [cout] [info]   /forceset/soleus_l. bounds: [0.01, 1]
+[2020-10-13 20:22:24.793] [cout] [info]   /forceset/tib_ant_l. bounds: [0.01, 1]
+[2020-10-13 20:22:24.793] [cout] [info] Parameters: none
+[2020-10-13 20:22:24.816] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:24.831] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.832] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.858] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:24.873] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.874] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.904] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:24.930] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.930] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.958] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:24.975] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:24.975] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.016] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:25.037] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.038] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.074] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:25.089] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.090] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.122] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:25.152] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.152] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.184] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:25.199] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.199] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.245] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:25.265] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.266] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.306] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:25.329] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.329] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.372] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:25.399] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.400] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.455] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:25.472] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.473] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.508] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:25.524] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.524] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.557] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:25.576] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.576] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.621] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:25.644] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.644] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.684] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:22:25.702] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.702] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:22:25.712] [info] Number of threads: 8
+[2020-10-13 20:26:12.609] [info] Set log level to Info.
+[2020-10-13 20:26:12.618] [info] ------------------------------------------------------------------------
+[2020-10-13 20:26:12.619] [info] Elapsed real time: 228 second(s) (3 minute(s), 48 second(s)).
+[2020-10-13 20:26:12.619] [info] Tue Oct 13 20:26:12 2020
+[2020-10-13 20:26:12.620] [warning] MocoCasADiSolver did NOT succeed:
+[2020-10-13 20:26:12.621] [warning]   User_Requested_Stop
+[2020-10-13 20:26:12.621] [info] ========================================================================
+[2020-10-13 20:30:13.628] [info] Loaded model scaledModel_expData from file expData_2Dmodel.osim
+[2020-10-13 20:32:16.427] [info] Storage: read data file = refQ_converted.sto (nr=132 nc=11)
+[2020-10-13 20:32:16.431] [info] Storage: read data file = refQ_converted.sto (nr=132 nc=11)
+[2020-10-13 20:34:07.545] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:07.560] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:07.561] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:07.563] [info] Adding reserve actuators with an optimal force of 1.0...
+[2020-10-13 20:34:07.590] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:07.616] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:07.617] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:07.654] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:07.671] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:07.671] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:07.674] [info] Added 9 reserve actuator(s), for each of the following coordinates:
+[2020-10-13 20:34:07.674] [info]   /jointset/ground_pelvis/pelvis_tilt
+[2020-10-13 20:34:07.674] [info]   /jointset/ground_pelvis/pelvis_tx
+[2020-10-13 20:34:07.675] [info]   /jointset/ground_pelvis/pelvis_ty
+[2020-10-13 20:34:07.675] [info]   /jointset/hip_l/hip_flexion_l
+[2020-10-13 20:34:07.678] [info]   /jointset/hip_r/hip_flexion_r
+[2020-10-13 20:34:07.679] [info]   /jointset/knee_l/knee_angle_l
+[2020-10-13 20:34:07.682] [info]   /jointset/knee_r/knee_angle_r
+[2020-10-13 20:34:07.683] [info]   /jointset/ankle_l/ankle_angle_l
+[2020-10-13 20:34:07.684] [info]   /jointset/ankle_r/ankle_angle_r
+[2020-10-13 20:34:07.704] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:07.738] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:07.738] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:07.808] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:07.832] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:07.833] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:07.891] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:07.911] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:07.911] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:07.948] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:07.964] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:07.965] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.005] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:08.024] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.025] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.059] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:08.077] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.078] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.116] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:08.133] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.134] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.170] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:08.187] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.188] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.225] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:08.243] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.243] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.281] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:08.303] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.304] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.346] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:08.368] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.368] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.424] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:08.442] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.442] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.477] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:08.493] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.493] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.537] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:08.554] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.554] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.587] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:08.604] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.604] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.640] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:08.656] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.657] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.693] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:08.714] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.714] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.754] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:08.774] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.775] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.819] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:08.838] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.838] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.873] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:08.888] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.888] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.923] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:08.942] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.943] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.980] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:34:08.996] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:34:08.996] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:35.743] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:35:35.762] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:35.762] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:35.795] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:35:35.810] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:35.811] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:35.847] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:35:35.866] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:35.866] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:35.903] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:35:35.931] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:35.931] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:35.946] [info] ========================================================================
+[2020-10-13 20:35:35.946] [info] MocoCasADiSolver starting.
+[2020-10-13 20:35:35.947] [info] Tue Oct 13 20:35:35 2020
+[2020-10-13 20:35:35.951] [info] ------------------------------------------------------------------------
+[2020-10-13 20:35:35.952] [cout] [info] Costs: (total: 2)
+[2020-10-13 20:35:35.954] [cout] [info]   state_tracking. MocoStateTrackingGoal, enabled: true, mode: cost, weight: 10.0
+[2020-10-13 20:35:35.958] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tilt/value, weight: 25.0
+[2020-10-13 20:35:35.958] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tx/value, weight: 250.0
+[2020-10-13 20:35:35.959] [cout] [info]         state: /jointset/ground_pelvis/pelvis_ty/value, weight: 100.0
+[2020-10-13 20:35:35.959] [cout] [info]         state: /jointset/hip_r/hip_flexion_r/value, weight: 100.0
+[2020-10-13 20:35:35.960] [cout] [info]         state: /jointset/knee_r/knee_angle_r/value, weight: 250.0
+[2020-10-13 20:35:35.960] [cout] [info]         state: /jointset/ankle_r/ankle_angle_r/value, weight: 25.0
+[2020-10-13 20:35:35.961] [cout] [info]         state: /jointset/hip_l/hip_flexion_l/value, weight: 150.0
+[2020-10-13 20:35:35.962] [cout] [info]         state: /jointset/knee_l/knee_angle_l/value, weight: 250.0
+[2020-10-13 20:35:35.962] [cout] [info]         state: /jointset/ankle_l/ankle_angle_l/value, weight: 25.0
+[2020-10-13 20:35:35.962] [cout] [info]         state: /jointset/back/lumbar_extension/value, weight: 150.0
+[2020-10-13 20:35:35.966] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tilt/speed, weight: 1.0
+[2020-10-13 20:35:35.969] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tx/speed, weight: 1.0
+[2020-10-13 20:35:35.970] [cout] [info]         state: /jointset/ground_pelvis/pelvis_ty/speed, weight: 1.0
+[2020-10-13 20:35:35.970] [cout] [info]         state: /jointset/hip_l/hip_flexion_l/speed, weight: 1.0
+[2020-10-13 20:35:35.971] [cout] [info]         state: /jointset/hip_r/hip_flexion_r/speed, weight: 1.0
+[2020-10-13 20:35:35.972] [cout] [info]         state: /jointset/knee_l/knee_angle_l/speed, weight: 1.0
+[2020-10-13 20:35:35.973] [cout] [info]         state: /jointset/knee_r/knee_angle_r/speed, weight: 1.0
+[2020-10-13 20:35:35.974] [cout] [info]         state: /jointset/ankle_l/ankle_angle_l/speed, weight: 1.0
+[2020-10-13 20:35:35.977] [cout] [info]         state: /jointset/ankle_r/ankle_angle_r/speed, weight: 1.0
+[2020-10-13 20:35:35.980] [cout] [info]         state: /jointset/back/lumbar_extension/speed, weight: 1.0
+[2020-10-13 20:35:35.981] [cout] [info]   control_effort. MocoControlGoal, enabled: true, mode: cost, weight: 1.0
+[2020-10-13 20:35:35.983] [cout] [info]         control: /forceset/lumbarAct, weight: 1.0
+[2020-10-13 20:35:35.983] [cout] [info]         control: /forceset/hamstrings_r, weight: 1.0
+[2020-10-13 20:35:35.984] [cout] [info]         control: /forceset/bifemsh_r, weight: 1.0
+[2020-10-13 20:35:35.987] [cout] [info]         control: /forceset/glut_max_r, weight: 1.0
+[2020-10-13 20:35:35.988] [cout] [info]         control: /forceset/iliopsoas_r, weight: 1.0
+[2020-10-13 20:35:35.991] [cout] [info]         control: /forceset/rect_fem_r, weight: 1.0
+[2020-10-13 20:35:35.992] [cout] [info]         control: /forceset/vasti_r, weight: 1.0
+[2020-10-13 20:35:35.993] [cout] [info]         control: /forceset/gastroc_r, weight: 1.0
+[2020-10-13 20:35:35.994] [cout] [info]         control: /forceset/soleus_r, weight: 1.0
+[2020-10-13 20:35:35.994] [cout] [info]         control: /forceset/tib_ant_r, weight: 1.0
+[2020-10-13 20:35:35.995] [cout] [info]         control: /forceset/hamstrings_l, weight: 1.0
+[2020-10-13 20:35:35.996] [cout] [info]         control: /forceset/bifemsh_l, weight: 1.0
+[2020-10-13 20:35:35.997] [cout] [info]         control: /forceset/glut_max_l, weight: 1.0
+[2020-10-13 20:35:36.000] [cout] [info]         control: /forceset/iliopsoas_l, weight: 1.0
+[2020-10-13 20:35:36.004] [cout] [info]         control: /forceset/rect_fem_l, weight: 1.0
+[2020-10-13 20:35:36.005] [cout] [info]         control: /forceset/vasti_l, weight: 1.0
+[2020-10-13 20:35:36.006] [cout] [info]         control: /forceset/gastroc_l, weight: 1.0
+[2020-10-13 20:35:36.007] [cout] [info]         control: /forceset/soleus_l, weight: 1.0
+[2020-10-13 20:35:36.008] [cout] [info]         control: /forceset/tib_ant_l, weight: 1.0
+[2020-10-13 20:35:36.009] [cout] [info]         control: /forceset/reserve_jointset_ground_pelvis_pelvis_tilt, weight: 1.0
+[2020-10-13 20:35:36.009] [cout] [info]         control: /forceset/reserve_jointset_ground_pelvis_pelvis_tx, weight: 1.0
+[2020-10-13 20:35:36.012] [cout] [info]         control: /forceset/reserve_jointset_ground_pelvis_pelvis_ty, weight: 1.0
+[2020-10-13 20:35:36.013] [cout] [info]         control: /forceset/reserve_jointset_hip_l_hip_flexion_l, weight: 1.0
+[2020-10-13 20:35:36.017] [cout] [info]         control: /forceset/reserve_jointset_hip_r_hip_flexion_r, weight: 1.0
+[2020-10-13 20:35:36.018] [cout] [info]         control: /forceset/reserve_jointset_knee_l_knee_angle_l, weight: 1.0
+[2020-10-13 20:35:36.019] [cout] [info]         control: /forceset/reserve_jointset_knee_r_knee_angle_r, weight: 1.0
+[2020-10-13 20:35:36.020] [cout] [info]         control: /forceset/reserve_jointset_ankle_l_ankle_angle_l, weight: 1.0
+[2020-10-13 20:35:36.020] [cout] [info]         control: /forceset/reserve_jointset_ankle_r_ankle_angle_r, weight: 1.0
+[2020-10-13 20:35:36.021] [cout] [info] Endpoint constraints: none
+[2020-10-13 20:35:36.024] [cout] [info] Kinematic constraints: none
+[2020-10-13 20:35:36.025] [cout] [info] Path constraints: none
+[2020-10-13 20:35:36.028] [cout] [info] States: (total: 38)
+[2020-10-13 20:35:36.029] [cout] [info]   /jointset/knee_r/knee_angle_r/speed. bounds: [-50, 50]
+[2020-10-13 20:35:36.030] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/value. bounds: [0.75, 1.25]
+[2020-10-13 20:35:36.031] [cout] [info]   /jointset/ankle_l/ankle_angle_l/value. bounds: [-0.523599, 0.523599]
+[2020-10-13 20:35:36.032] [cout] [info]   /jointset/back/lumbar_extension/speed. bounds: [-50, 50]
+[2020-10-13 20:35:36.032] [cout] [info]   /jointset/knee_l/knee_angle_l/speed. bounds: [-50, 50]
+[2020-10-13 20:35:36.036] [cout] [info]   /jointset/hip_l/hip_flexion_l/value. bounds: [-0.698132, 1.39626]
+[2020-10-13 20:35:36.037] [cout] [info]   /forceset/hamstrings_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:35:36.040] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/value. bounds: [-0.349066, 0]
+[2020-10-13 20:35:36.041] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/value. bounds: [-5, 5]
+[2020-10-13 20:35:36.042] [cout] [info]   /jointset/ankle_r/ankle_angle_r/value. bounds: [-0.523599, 0.523599]
+[2020-10-13 20:35:36.043] [cout] [info]   /jointset/hip_r/hip_flexion_r/value. bounds: [-0.698132, 1.39626]
+[2020-10-13 20:35:36.044] [cout] [info]   /jointset/knee_r/knee_angle_r/value. bounds: [-2.44346, 0]
+[2020-10-13 20:35:36.045] [cout] [info]   /forceset/bifemsh_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:35:36.050] [cout] [info]   /jointset/back/lumbar_extension/value. bounds: [-30, 0]
+[2020-10-13 20:35:36.050] [cout] [info]   /jointset/knee_l/knee_angle_l/value. bounds: [-2.44346, 0]
+[2020-10-13 20:35:36.054] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/speed. bounds: [-50, 50]
+[2020-10-13 20:35:36.055] [cout] [info]   /forceset/glut_max_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:35:36.055] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/speed. bounds: [-50, 50]
+[2020-10-13 20:35:36.056] [cout] [info]   /jointset/ankle_l/ankle_angle_l/speed. bounds: [-50, 50]
+[2020-10-13 20:35:36.057] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/speed. bounds: [-50, 50]
+[2020-10-13 20:35:36.058] [cout] [info]   /jointset/hip_l/hip_flexion_l/speed. bounds: [-50, 50]
+[2020-10-13 20:35:36.059] [cout] [info]   /jointset/ankle_r/ankle_angle_r/speed. bounds: [-50, 50]
+[2020-10-13 20:35:36.062] [cout] [info]   /jointset/hip_r/hip_flexion_r/speed. bounds: [-50, 50]
+[2020-10-13 20:35:36.065] [cout] [info]   /forceset/hamstrings_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:35:36.066] [cout] [info]   /forceset/glut_max_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:35:36.067] [cout] [info]   /forceset/iliopsoas_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:35:36.068] [cout] [info]   /forceset/rect_fem_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:35:36.069] [cout] [info]   /forceset/gastroc_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:35:36.069] [cout] [info]   /forceset/vasti_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:35:36.070] [cout] [info]   /forceset/soleus_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:35:36.073] [cout] [info]   /forceset/tib_ant_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:35:36.074] [cout] [info]   /forceset/bifemsh_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:35:36.077] [cout] [info]   /forceset/iliopsoas_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:35:36.078] [cout] [info]   /forceset/rect_fem_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:35:36.079] [cout] [info]   /forceset/gastroc_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:35:36.080] [cout] [info]   /forceset/vasti_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:35:36.080] [cout] [info]   /forceset/soleus_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:35:36.081] [cout] [info]   /forceset/tib_ant_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:35:36.082] [cout] [info] Controls: (total: 28)
+[2020-10-13 20:35:36.083] [cout] [info]   /forceset/lumbarAct. bounds: [-inf, inf]
+[2020-10-13 20:35:36.084] [cout] [info]   /forceset/reserve_jointset_hip_r_hip_flexion_r. bounds: [-inf, inf]
+[2020-10-13 20:35:36.087] [cout] [info]   /forceset/reserve_jointset_ground_pelvis_pelvis_ty. bounds: [-inf, inf]
+[2020-10-13 20:35:36.088] [cout] [info]   /forceset/bifemsh_r. bounds: [0.01, 1]
+[2020-10-13 20:35:36.091] [cout] [info]   /forceset/reserve_jointset_ankle_l_ankle_angle_l. bounds: [-inf, inf]
+[2020-10-13 20:35:36.092] [cout] [info]   /forceset/hamstrings_r. bounds: [0.01, 1]
+[2020-10-13 20:35:36.093] [cout] [info]   /forceset/glut_max_r. bounds: [0.01, 1]
+[2020-10-13 20:35:36.093] [cout] [info]   /forceset/vasti_r. bounds: [0.01, 1]
+[2020-10-13 20:35:36.094] [cout] [info]   /forceset/gastroc_r. bounds: [0.01, 1]
+[2020-10-13 20:35:36.095] [cout] [info]   /forceset/iliopsoas_r. bounds: [0.01, 1]
+[2020-10-13 20:35:36.096] [cout] [info]   /forceset/rect_fem_r. bounds: [0.01, 1]
+[2020-10-13 20:35:36.099] [cout] [info]   /forceset/soleus_r. bounds: [0.01, 1]
+[2020-10-13 20:35:36.103] [cout] [info]   /forceset/tib_ant_r. bounds: [0.01, 1]
+[2020-10-13 20:35:36.104] [cout] [info]   /forceset/hamstrings_l. bounds: [0.01, 1]
+[2020-10-13 20:35:36.106] [cout] [info]   /forceset/bifemsh_l. bounds: [0.01, 1]
+[2020-10-13 20:35:36.106] [cout] [info]   /forceset/glut_max_l. bounds: [0.01, 1]
+[2020-10-13 20:35:36.107] [cout] [info]   /forceset/iliopsoas_l. bounds: [0.01, 1]
+[2020-10-13 20:35:36.111] [cout] [info]   /forceset/reserve_jointset_ground_pelvis_pelvis_tx. bounds: [-inf, inf]
+[2020-10-13 20:35:36.112] [cout] [info]   /forceset/rect_fem_l. bounds: [0.01, 1]
+[2020-10-13 20:35:36.116] [cout] [info]   /forceset/gastroc_l. bounds: [0.01, 1]
+[2020-10-13 20:35:36.117] [cout] [info]   /forceset/vasti_l. bounds: [0.01, 1]
+[2020-10-13 20:35:36.117] [cout] [info]   /forceset/soleus_l. bounds: [0.01, 1]
+[2020-10-13 20:35:36.118] [cout] [info]   /forceset/tib_ant_l. bounds: [0.01, 1]
+[2020-10-13 20:35:36.119] [cout] [info]   /forceset/reserve_jointset_ground_pelvis_pelvis_tilt. bounds: [-inf, inf]
+[2020-10-13 20:35:36.120] [cout] [info]   /forceset/reserve_jointset_hip_l_hip_flexion_l. bounds: [-inf, inf]
+[2020-10-13 20:35:36.120] [cout] [info]   /forceset/reserve_jointset_knee_l_knee_angle_l. bounds: [-inf, inf]
+[2020-10-13 20:35:36.121] [cout] [info]   /forceset/reserve_jointset_knee_r_knee_angle_r. bounds: [-inf, inf]
+[2020-10-13 20:35:36.122] [cout] [info]   /forceset/reserve_jointset_ankle_r_ankle_angle_r. bounds: [-inf, inf]
+[2020-10-13 20:35:36.123] [cout] [info] Parameters: none
+[2020-10-13 20:35:36.162] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:35:36.183] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.183] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.226] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:35:36.243] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.243] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.275] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:35:36.291] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.292] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.330] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:35:36.356] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.356] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.409] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:35:36.427] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.427] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.462] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:35:36.478] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.479] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.529] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:35:36.562] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.562] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.614] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:35:36.635] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.636] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.676] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:35:36.699] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.699] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.748] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:35:36.765] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.765] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.804] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:35:36.821] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.822] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.856] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:35:36.872] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.872] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.906] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:35:36.923] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.923] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.959] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:35:36.975] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:36.975] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:37.015] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:35:37.038] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:37.038] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:37.112] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:35:37.132] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:37.132] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:35:37.157] [info] Number of threads: 8
+[2020-10-13 20:41:39.867] [info] Set log level to Info.
+[2020-10-13 20:41:39.884] [info] ------------------------------------------------------------------------
+[2020-10-13 20:41:39.885] [info] Elapsed real time: 364 second(s) (6 minute(s), 4 second(s)).
+[2020-10-13 20:41:39.885] [info] Tue Oct 13 20:41:39 2020
+[2020-10-13 20:41:39.886] [info] MocoCasADiSolver succeeded!
+[2020-10-13 20:41:39.887] [info] ========================================================================
+[2020-10-13 20:49:11.056] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:49:11.077] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:49:11.077] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:49:11.157] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:49:11.187] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:49:11.188] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:02.301] [info] Loaded model scaledModel_expData from file expData_2Dmodel.osim
+[2020-10-13 20:50:11.351] [info] Storage: read data file = refQ_converted.sto (nr=132 nc=11)
+[2020-10-13 20:50:11.352] [info] Storage: read data file = refQ_converted.sto (nr=132 nc=11)
+[2020-10-13 20:50:26.526] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:26.543] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:26.544] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:26.605] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:26.649] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:26.649] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:26.733] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:26.752] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:26.752] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:26.789] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:26.806] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:26.807] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:26.842] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:26.859] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:26.859] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:26.897] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:26.921] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:26.921] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:26.967] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:26.984] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:26.984] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:27.032] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:27.058] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:27.058] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:27.098] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:27.117] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:27.117] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:27.155] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:27.191] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:27.192] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:27.254] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:27.279] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:27.279] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:27.339] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:27.359] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:27.359] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:27.402] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:27.425] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:27.425] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:27.481] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:27.520] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:27.520] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:27.578] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:27.595] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:27.595] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:27.639] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:27.661] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:27.662] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:27.709] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:27.735] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:27.736] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:27.810] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:27.838] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:27.839] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:27.921] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:27.954] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:27.954] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:28.020] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:28.037] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:28.037] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:28.074] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:28.091] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:28.092] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:28.131] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:28.148] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:28.148] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:53.506] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:53.524] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:53.525] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:53.560] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:53.586] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:53.586] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:53.633] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:53.669] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:53.670] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:53.723] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:53.740] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:53.740] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:53.751] [info] ========================================================================
+[2020-10-13 20:50:53.751] [info] MocoCasADiSolver starting.
+[2020-10-13 20:50:53.755] [info] Tue Oct 13 20:50:53 2020
+[2020-10-13 20:50:53.755] [info] ------------------------------------------------------------------------
+[2020-10-13 20:50:53.756] [cout] [info] Costs: (total: 2)
+[2020-10-13 20:50:53.757] [cout] [info]   state_tracking. MocoStateTrackingGoal, enabled: true, mode: cost, weight: 10.0
+[2020-10-13 20:50:53.758] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tilt/value, weight: 25.0
+[2020-10-13 20:50:53.758] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tx/value, weight: 250.0
+[2020-10-13 20:50:53.759] [cout] [info]         state: /jointset/ground_pelvis/pelvis_ty/value, weight: 50.0
+[2020-10-13 20:50:53.759] [cout] [info]         state: /jointset/hip_r/hip_flexion_r/value, weight: 100.0
+[2020-10-13 20:50:53.763] [cout] [info]         state: /jointset/knee_r/knee_angle_r/value, weight: 250.0
+[2020-10-13 20:50:53.766] [cout] [info]         state: /jointset/ankle_r/ankle_angle_r/value, weight: 25.0
+[2020-10-13 20:50:53.767] [cout] [info]         state: /jointset/hip_l/hip_flexion_l/value, weight: 150.0
+[2020-10-13 20:50:53.768] [cout] [info]         state: /jointset/knee_l/knee_angle_l/value, weight: 250.0
+[2020-10-13 20:50:53.769] [cout] [info]         state: /jointset/ankle_l/ankle_angle_l/value, weight: 25.0
+[2020-10-13 20:50:53.769] [cout] [info]         state: /jointset/back/lumbar_extension/value, weight: 150.0
+[2020-10-13 20:50:53.770] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tilt/speed, weight: 1.0
+[2020-10-13 20:50:53.771] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tx/speed, weight: 1.0
+[2020-10-13 20:50:53.774] [cout] [info]         state: /jointset/ground_pelvis/pelvis_ty/speed, weight: 1.0
+[2020-10-13 20:50:53.775] [cout] [info]         state: /jointset/hip_l/hip_flexion_l/speed, weight: 1.0
+[2020-10-13 20:50:53.778] [cout] [info]         state: /jointset/hip_r/hip_flexion_r/speed, weight: 1.0
+[2020-10-13 20:50:53.779] [cout] [info]         state: /jointset/knee_l/knee_angle_l/speed, weight: 1.0
+[2020-10-13 20:50:53.780] [cout] [info]         state: /jointset/knee_r/knee_angle_r/speed, weight: 1.0
+[2020-10-13 20:50:53.781] [cout] [info]         state: /jointset/ankle_l/ankle_angle_l/speed, weight: 1.0
+[2020-10-13 20:50:53.782] [cout] [info]         state: /jointset/ankle_r/ankle_angle_r/speed, weight: 1.0
+[2020-10-13 20:50:53.783] [cout] [info]         state: /jointset/back/lumbar_extension/speed, weight: 1.0
+[2020-10-13 20:50:53.783] [cout] [info]   control_effort. MocoControlGoal, enabled: true, mode: cost, weight: 1.0
+[2020-10-13 20:50:53.787] [cout] [info]         control: /forceset/lumbarAct, weight: 1.0
+[2020-10-13 20:50:53.790] [cout] [info]         control: /forceset/hamstrings_r, weight: 1.0
+[2020-10-13 20:50:53.791] [cout] [info]         control: /forceset/bifemsh_r, weight: 1.0
+[2020-10-13 20:50:53.792] [cout] [info]         control: /forceset/glut_max_r, weight: 1.0
+[2020-10-13 20:50:53.795] [cout] [info]         control: /forceset/iliopsoas_r, weight: 1.0
+[2020-10-13 20:50:53.796] [cout] [info]         control: /forceset/rect_fem_r, weight: 1.0
+[2020-10-13 20:50:53.799] [cout] [info]         control: /forceset/vasti_r, weight: 1.0
+[2020-10-13 20:50:53.799] [cout] [info]         control: /forceset/gastroc_r, weight: 1.0
+[2020-10-13 20:50:53.803] [cout] [info]         control: /forceset/soleus_r, weight: 1.0
+[2020-10-13 20:50:53.803] [cout] [info]         control: /forceset/tib_ant_r, weight: 1.0
+[2020-10-13 20:50:53.804] [cout] [info]         control: /forceset/hamstrings_l, weight: 1.0
+[2020-10-13 20:50:53.805] [cout] [info]         control: /forceset/bifemsh_l, weight: 1.0
+[2020-10-13 20:50:53.806] [cout] [info]         control: /forceset/glut_max_l, weight: 1.0
+[2020-10-13 20:50:53.806] [cout] [info]         control: /forceset/iliopsoas_l, weight: 1.0
+[2020-10-13 20:50:53.807] [cout] [info]         control: /forceset/rect_fem_l, weight: 1.0
+[2020-10-13 20:50:53.808] [cout] [info]         control: /forceset/vasti_l, weight: 1.0
+[2020-10-13 20:50:53.812] [cout] [info]         control: /forceset/gastroc_l, weight: 1.0
+[2020-10-13 20:50:53.815] [cout] [info]         control: /forceset/soleus_l, weight: 1.0
+[2020-10-13 20:50:53.816] [cout] [info]         control: /forceset/tib_ant_l, weight: 1.0
+[2020-10-13 20:50:53.817] [cout] [info] Endpoint constraints: none
+[2020-10-13 20:50:53.817] [cout] [info] Kinematic constraints: none
+[2020-10-13 20:50:53.818] [cout] [info] Path constraints: none
+[2020-10-13 20:50:53.819] [cout] [info] States: (total: 38)
+[2020-10-13 20:50:53.820] [cout] [info]   /jointset/knee_r/knee_angle_r/speed. bounds: [-50, 50]
+[2020-10-13 20:50:53.823] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/value. bounds: [0.75, 1.25]
+[2020-10-13 20:50:53.824] [cout] [info]   /jointset/ankle_l/ankle_angle_l/value. bounds: [-0.523599, 0.523599]
+[2020-10-13 20:50:53.827] [cout] [info]   /jointset/back/lumbar_extension/speed. bounds: [-50, 50]
+[2020-10-13 20:50:53.828] [cout] [info]   /jointset/knee_l/knee_angle_l/speed. bounds: [-50, 50]
+[2020-10-13 20:50:53.828] [cout] [info]   /jointset/hip_l/hip_flexion_l/value. bounds: [-0.698132, 1.39626]
+[2020-10-13 20:50:53.829] [cout] [info]   /forceset/hamstrings_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:50:53.830] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/value. bounds: [-0.349066, 0]
+[2020-10-13 20:50:53.831] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/value. bounds: [-5, 5]
+[2020-10-13 20:50:53.831] [cout] [info]   /jointset/ankle_r/ankle_angle_r/value. bounds: [-0.523599, 0.523599]
+[2020-10-13 20:50:53.835] [cout] [info]   /jointset/hip_r/hip_flexion_r/value. bounds: [-0.698132, 1.39626]
+[2020-10-13 20:50:53.838] [cout] [info]   /jointset/knee_r/knee_angle_r/value. bounds: [-2.44346, 0]
+[2020-10-13 20:50:53.839] [cout] [info]   /forceset/bifemsh_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:50:53.840] [cout] [info]   /jointset/back/lumbar_extension/value. bounds: [-30, 0]
+[2020-10-13 20:50:53.841] [cout] [info]   /jointset/knee_l/knee_angle_l/value. bounds: [-2.44346, 0]
+[2020-10-13 20:50:53.841] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/speed. bounds: [-50, 50]
+[2020-10-13 20:50:53.842] [cout] [info]   /forceset/glut_max_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:50:53.843] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/speed. bounds: [-50, 50]
+[2020-10-13 20:50:53.846] [cout] [info]   /jointset/ankle_l/ankle_angle_l/speed. bounds: [-50, 50]
+[2020-10-13 20:50:53.850] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/speed. bounds: [-50, 50]
+[2020-10-13 20:50:53.851] [cout] [info]   /jointset/hip_l/hip_flexion_l/speed. bounds: [-50, 50]
+[2020-10-13 20:50:53.851] [cout] [info]   /jointset/ankle_r/ankle_angle_r/speed. bounds: [-50, 50]
+[2020-10-13 20:50:53.852] [cout] [info]   /jointset/hip_r/hip_flexion_r/speed. bounds: [-50, 50]
+[2020-10-13 20:50:53.853] [cout] [info]   /forceset/hamstrings_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:50:53.854] [cout] [info]   /forceset/glut_max_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:50:53.854] [cout] [info]   /forceset/iliopsoas_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:50:53.858] [cout] [info]   /forceset/rect_fem_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:50:53.859] [cout] [info]   /forceset/gastroc_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:50:53.861] [cout] [info]   /forceset/vasti_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:50:53.862] [cout] [info]   /forceset/soleus_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:50:53.863] [cout] [info]   /forceset/tib_ant_r/activation. bounds: [0.01, 1]
+[2020-10-13 20:50:53.863] [cout] [info]   /forceset/bifemsh_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:50:53.864] [cout] [info]   /forceset/iliopsoas_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:50:53.865] [cout] [info]   /forceset/rect_fem_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:50:53.869] [cout] [info]   /forceset/gastroc_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:50:53.869] [cout] [info]   /forceset/vasti_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:50:53.873] [cout] [info]   /forceset/soleus_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:50:53.874] [cout] [info]   /forceset/tib_ant_l/activation. bounds: [0.01, 1]
+[2020-10-13 20:50:53.875] [cout] [info] Controls: (total: 19)
+[2020-10-13 20:50:53.875] [cout] [info]   /forceset/lumbarAct. bounds: [-inf, inf]
+[2020-10-13 20:50:53.876] [cout] [info]   /forceset/bifemsh_r. bounds: [0.01, 1]
+[2020-10-13 20:50:53.879] [cout] [info]   /forceset/hamstrings_r. bounds: [0.01, 1]
+[2020-10-13 20:50:53.880] [cout] [info]   /forceset/glut_max_r. bounds: [0.01, 1]
+[2020-10-13 20:50:53.883] [cout] [info]   /forceset/vasti_r. bounds: [0.01, 1]
+[2020-10-13 20:50:53.884] [cout] [info]   /forceset/gastroc_r. bounds: [0.01, 1]
+[2020-10-13 20:50:53.885] [cout] [info]   /forceset/iliopsoas_r. bounds: [0.01, 1]
+[2020-10-13 20:50:53.886] [cout] [info]   /forceset/rect_fem_r. bounds: [0.01, 1]
+[2020-10-13 20:50:53.887] [cout] [info]   /forceset/soleus_r. bounds: [0.01, 1]
+[2020-10-13 20:50:53.888] [cout] [info]   /forceset/tib_ant_r. bounds: [0.01, 1]
+[2020-10-13 20:50:53.889] [cout] [info]   /forceset/hamstrings_l. bounds: [0.01, 1]
+[2020-10-13 20:50:53.893] [cout] [info]   /forceset/bifemsh_l. bounds: [0.01, 1]
+[2020-10-13 20:50:53.893] [cout] [info]   /forceset/glut_max_l. bounds: [0.01, 1]
+[2020-10-13 20:50:53.897] [cout] [info]   /forceset/iliopsoas_l. bounds: [0.01, 1]
+[2020-10-13 20:50:53.898] [cout] [info]   /forceset/rect_fem_l. bounds: [0.01, 1]
+[2020-10-13 20:50:53.898] [cout] [info]   /forceset/gastroc_l. bounds: [0.01, 1]
+[2020-10-13 20:50:53.899] [cout] [info]   /forceset/vasti_l. bounds: [0.01, 1]
+[2020-10-13 20:50:53.900] [cout] [info]   /forceset/soleus_l. bounds: [0.01, 1]
+[2020-10-13 20:50:53.901] [cout] [info]   /forceset/tib_ant_l. bounds: [0.01, 1]
+[2020-10-13 20:50:53.902] [cout] [info] Parameters: none
+[2020-10-13 20:50:53.946] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:53.965] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:53.965] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.001] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:54.021] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.022] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.060] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:54.080] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.080] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.120] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:54.146] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.147] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.193] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:54.212] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.213] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.254] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:54.279] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.279] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.316] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:54.332] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.332] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.369] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:54.391] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.392] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.437] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:54.453] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.454] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.504] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:54.530] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.531] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.588] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:54.619] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.620] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.686] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:54.721] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.721] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.766] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:54.790] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.790] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.837] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:54.862] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.862] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:54.990] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:55.070] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:55.070] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:55.134] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 20:50:55.161] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:55.162] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 20:50:55.180] [info] Number of threads: 8
+[2020-10-13 20:54:56.644] [info] Set log level to Info.
+[2020-10-13 20:54:56.658] [info] ------------------------------------------------------------------------
+[2020-10-13 20:54:56.659] [info] Elapsed real time: 243 second(s) (4 minute(s), 3 second(s)).
+[2020-10-13 20:54:56.659] [info] Tue Oct 13 20:54:56 2020
+[2020-10-13 20:54:56.660] [info] MocoCasADiSolver succeeded!
+[2020-10-13 20:54:56.661] [info] ========================================================================
+[2020-10-13 21:07:54.297] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 21:07:54.318] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 21:07:54.319] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 21:07:54.366] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2020-10-13 21:07:54.406] [info] ExternalForce::RightGRF Data source being set to refGRF_2D
+[2020-10-13 21:07:54.407] [info] ExternalForce::LeftGRF Data source being set to refGRF_2D
+[2020-10-13 21:09:16.405] [info] Loaded model scaledModel_expData from file expData_2Dmodel.osim
+[2020-10-13 21:11:39.023] [info] ========================================================================
+[2020-10-13 21:11:39.023] [info] MocoCasADiSolver starting.
+[2020-10-13 21:11:39.024] [info] Tue Oct 13 21:11:39 2020
+[2020-10-13 21:11:39.024] [info] ------------------------------------------------------------------------
+[2020-10-13 21:11:39.029] [cout] [info] Costs: (total: 3)
+[2020-10-13 21:11:39.029] [cout] [info]   state_tracking. MocoStateTrackingGoal, enabled: true, mode: cost, weight: 10.0
+[2020-10-13 21:11:39.030] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tilt/value, weight: 1.0
+[2020-10-13 21:11:39.031] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tx/value, weight: 1.0
+[2020-10-13 21:11:39.031] [cout] [info]         state: /jointset/ground_pelvis/pelvis_ty/value, weight: 1.0
+[2020-10-13 21:11:39.031] [cout] [info]         state: /jointset/hip_l/hip_flexion_l/value, weight: 1.0
+[2020-10-13 21:11:39.032] [cout] [info]         state: /jointset/hip_r/hip_flexion_r/value, weight: 1.0
+[2020-10-13 21:11:39.032] [cout] [info]         state: /jointset/back/lumbar_extension/value, weight: 1.0
+[2020-10-13 21:11:39.033] [cout] [info]         state: /jointset/knee_l/knee_angle_l/value, weight: 1.0
+[2020-10-13 21:11:39.033] [cout] [info]         state: /jointset/knee_r/knee_angle_r/value, weight: 1.0
+[2020-10-13 21:11:39.033] [cout] [info]         state: /jointset/ankle_l/ankle_angle_l/value, weight: 1.0
+[2020-10-13 21:11:39.034] [cout] [info]         state: /jointset/ankle_r/ankle_angle_r/value, weight: 1.0
+[2020-10-13 21:11:39.034] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tilt/speed, weight: 1.0
+[2020-10-13 21:11:39.035] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tx/speed, weight: 1.0
+[2020-10-13 21:11:39.039] [cout] [info]         state: /jointset/ground_pelvis/pelvis_ty/speed, weight: 1.0
+[2020-10-13 21:11:39.041] [cout] [info]         state: /jointset/hip_l/hip_flexion_l/speed, weight: 1.0
+[2020-10-13 21:11:39.042] [cout] [info]         state: /jointset/hip_r/hip_flexion_r/speed, weight: 1.0
+[2020-10-13 21:11:39.042] [cout] [info]         state: /jointset/back/lumbar_extension/speed, weight: 1.0
+[2020-10-13 21:11:39.043] [cout] [info]         state: /jointset/knee_l/knee_angle_l/speed, weight: 1.0
+[2020-10-13 21:11:39.044] [cout] [info]         state: /jointset/knee_r/knee_angle_r/speed, weight: 1.0
+[2020-10-13 21:11:39.044] [cout] [info]         state: /jointset/ankle_l/ankle_angle_l/speed, weight: 1.0
+[2020-10-13 21:11:39.047] [cout] [info]         state: /jointset/ankle_r/ankle_angle_r/speed, weight: 1.0
+[2020-10-13 21:11:39.047] [cout] [info]   control_effort. MocoControlGoal, enabled: true, mode: cost, weight: 1.0
+[2020-10-13 21:11:39.051] [cout] [info]         control: /forceset/lumbarAct, weight: 1.0
+[2020-10-13 21:11:39.054] [cout] [info]         control: /forceset/hamstrings_r, weight: 1.0
+[2020-10-13 21:11:39.055] [cout] [info]         control: /forceset/bifemsh_r, weight: 1.0
+[2020-10-13 21:11:39.056] [cout] [info]         control: /forceset/glut_max_r, weight: 1.0
+[2020-10-13 21:11:39.056] [cout] [info]         control: /forceset/iliopsoas_r, weight: 1.0
+[2020-10-13 21:11:39.057] [cout] [info]         control: /forceset/rect_fem_r, weight: 1.0
+[2020-10-13 21:11:39.058] [cout] [info]         control: /forceset/vasti_r, weight: 1.0
+[2020-10-13 21:11:39.059] [cout] [info]         control: /forceset/gastroc_r, weight: 1.0
+[2020-10-13 21:11:39.063] [cout] [info]         control: /forceset/soleus_r, weight: 1.0
+[2020-10-13 21:11:39.066] [cout] [info]         control: /forceset/tib_ant_r, weight: 1.0
+[2020-10-13 21:11:39.067] [cout] [info]         control: /forceset/hamstrings_l, weight: 1.0
+[2020-10-13 21:11:39.068] [cout] [info]         control: /forceset/bifemsh_l, weight: 1.0
+[2020-10-13 21:11:39.069] [cout] [info]         control: /forceset/glut_max_l, weight: 1.0
+[2020-10-13 21:11:39.069] [cout] [info]         control: /forceset/iliopsoas_l, weight: 1.0
+[2020-10-13 21:11:39.070] [cout] [info]         control: /forceset/rect_fem_l, weight: 1.0
+[2020-10-13 21:11:39.071] [cout] [info]         control: /forceset/vasti_l, weight: 1.0
+[2020-10-13 21:11:39.074] [cout] [info]         control: /forceset/gastroc_l, weight: 1.0
+[2020-10-13 21:11:39.078] [cout] [info]         control: /forceset/soleus_l, weight: 1.0
+[2020-10-13 21:11:39.078] [cout] [info]         control: /forceset/tib_ant_l, weight: 1.0
+[2020-10-13 21:11:39.079] [cout] [info]   contact. MocoContactTrackingGoal, enabled: true, mode: cost, weight: 5.0
+[2020-10-13 21:11:39.080] [cout] [info]         projection type: plane
+[2020-10-13 21:11:39.081] [cout] [info]         projection vector: ~[0,0,1]
+[2020-10-13 21:11:39.081] [cout] [info]         group 0: ExternalForce: RightGRF
+[2020-10-13 21:11:39.082] [cout] [info]             forces:
+[2020-10-13 21:11:39.083] [cout] [info]                 /forceset/contactHeel_r
+[2020-10-13 21:11:39.084] [cout] [info]                 /forceset/contactToe1_r
+[2020-10-13 21:11:39.088] [cout] [info]                 /forceset/contactToe2_r
+[2020-10-13 21:11:39.089] [cout] [info]         group 1: ExternalForce: LeftGRF
+[2020-10-13 21:11:39.092] [cout] [info]             forces:
+[2020-10-13 21:11:39.093] [cout] [info]                 /forceset/contactHeel_l
+[2020-10-13 21:11:39.094] [cout] [info]                 /forceset/contactToe1_l
+[2020-10-13 21:11:39.094] [cout] [info]                 /forceset/contactToe2_l
+[2020-10-13 21:11:39.095] [cout] [info] Endpoint constraints: none
+[2020-10-13 21:11:39.096] [cout] [info] Kinematic constraints: none
+[2020-10-13 21:11:39.097] [cout] [info] Path constraints: none
+[2020-10-13 21:11:39.098] [cout] [info] States: (total: 38)
+[2020-10-13 21:11:39.101] [cout] [info]   /jointset/knee_r/knee_angle_r/speed. bounds: [-50, 50]
+[2020-10-13 21:11:39.104] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/value. bounds: [0.75, 1.25]
+[2020-10-13 21:11:39.105] [cout] [info]   /jointset/ankle_l/ankle_angle_l/value. bounds: [-0.523599, 0.523599]
+[2020-10-13 21:11:39.106] [cout] [info]   /jointset/back/lumbar_extension/speed. bounds: [-50, 50]
+[2020-10-13 21:11:39.107] [cout] [info]   /jointset/knee_l/knee_angle_l/speed. bounds: [-50, 50]
+[2020-10-13 21:11:39.108] [cout] [info]   /jointset/hip_l/hip_flexion_l/value. bounds: [-0.698132, 1.39626]
+[2020-10-13 21:11:39.109] [cout] [info]   /forceset/hamstrings_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:11:39.110] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/value. bounds: [-0.349066, 0]
+[2020-10-13 21:11:39.114] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/value. bounds: [-5, 5]
+[2020-10-13 21:11:39.117] [cout] [info]   /jointset/ankle_r/ankle_angle_r/value. bounds: [-0.523599, 0.523599]
+[2020-10-13 21:11:39.119] [cout] [info]   /jointset/hip_r/hip_flexion_r/value. bounds: [-0.698132, 1.39626]
+[2020-10-13 21:11:39.119] [cout] [info]   /jointset/knee_r/knee_angle_r/value. bounds: [-2.44346, 0]
+[2020-10-13 21:11:39.120] [cout] [info]   /forceset/bifemsh_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:11:39.121] [cout] [info]   /jointset/back/lumbar_extension/value. bounds: [-30, 0]
+[2020-10-13 21:11:39.124] [cout] [info]   /jointset/knee_l/knee_angle_l/value. bounds: [-2.44346, 0]
+[2020-10-13 21:11:39.125] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/speed. bounds: [-50, 50]
+[2020-10-13 21:11:39.128] [cout] [info]   /forceset/glut_max_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:11:39.129] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/speed. bounds: [-50, 50]
+[2020-10-13 21:11:39.129] [cout] [info]   /jointset/ankle_l/ankle_angle_l/speed. bounds: [-50, 50]
+[2020-10-13 21:11:39.130] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/speed. bounds: [-50, 50]
+[2020-10-13 21:11:39.130] [cout] [info]   /jointset/hip_l/hip_flexion_l/speed. bounds: [-50, 50]
+[2020-10-13 21:11:39.131] [cout] [info]   /jointset/ankle_r/ankle_angle_r/speed. bounds: [-50, 50]
+[2020-10-13 21:11:39.131] [cout] [info]   /jointset/hip_r/hip_flexion_r/speed. bounds: [-50, 50]
+[2020-10-13 21:11:39.132] [cout] [info]   /forceset/hamstrings_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:11:39.132] [cout] [info]   /forceset/glut_max_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:11:39.133] [cout] [info]   /forceset/iliopsoas_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:11:39.133] [cout] [info]   /forceset/rect_fem_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:11:39.133] [cout] [info]   /forceset/gastroc_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:11:39.134] [cout] [info]   /forceset/vasti_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:11:39.137] [cout] [info]   /forceset/soleus_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:11:39.138] [cout] [info]   /forceset/tib_ant_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:11:39.139] [cout] [info]   /forceset/bifemsh_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:11:39.139] [cout] [info]   /forceset/iliopsoas_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:11:39.140] [cout] [info]   /forceset/rect_fem_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:11:39.140] [cout] [info]   /forceset/gastroc_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:11:39.140] [cout] [info]   /forceset/vasti_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:11:39.141] [cout] [info]   /forceset/soleus_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:11:39.141] [cout] [info]   /forceset/tib_ant_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:11:39.141] [cout] [info] Controls: (total: 19)
+[2020-10-13 21:11:39.142] [cout] [info]   /forceset/lumbarAct. bounds: [-inf, inf]
+[2020-10-13 21:11:39.142] [cout] [info]   /forceset/bifemsh_r. bounds: [0.01, 1]
+[2020-10-13 21:11:39.143] [cout] [info]   /forceset/hamstrings_r. bounds: [0.01, 1]
+[2020-10-13 21:11:39.143] [cout] [info]   /forceset/glut_max_r. bounds: [0.01, 1]
+[2020-10-13 21:11:39.143] [cout] [info]   /forceset/vasti_r. bounds: [0.01, 1]
+[2020-10-13 21:11:39.144] [cout] [info]   /forceset/gastroc_r. bounds: [0.01, 1]
+[2020-10-13 21:11:39.144] [cout] [info]   /forceset/iliopsoas_r. bounds: [0.01, 1]
+[2020-10-13 21:11:39.144] [cout] [info]   /forceset/rect_fem_r. bounds: [0.01, 1]
+[2020-10-13 21:11:39.145] [cout] [info]   /forceset/soleus_r. bounds: [0.01, 1]
+[2020-10-13 21:11:39.145] [cout] [info]   /forceset/tib_ant_r. bounds: [0.01, 1]
+[2020-10-13 21:11:39.146] [cout] [info]   /forceset/hamstrings_l. bounds: [0.01, 1]
+[2020-10-13 21:11:39.146] [cout] [info]   /forceset/bifemsh_l. bounds: [0.01, 1]
+[2020-10-13 21:11:39.149] [cout] [info]   /forceset/glut_max_l. bounds: [0.01, 1]
+[2020-10-13 21:11:39.149] [cout] [info]   /forceset/iliopsoas_l. bounds: [0.01, 1]
+[2020-10-13 21:11:39.150] [cout] [info]   /forceset/rect_fem_l. bounds: [0.01, 1]
+[2020-10-13 21:11:39.151] [cout] [info]   /forceset/gastroc_l. bounds: [0.01, 1]
+[2020-10-13 21:11:39.151] [cout] [info]   /forceset/vasti_l. bounds: [0.01, 1]
+[2020-10-13 21:11:39.151] [cout] [info]   /forceset/soleus_l. bounds: [0.01, 1]
+[2020-10-13 21:11:39.152] [cout] [info]   /forceset/tib_ant_l. bounds: [0.01, 1]
+[2020-10-13 21:11:39.152] [cout] [info] Parameters: none
+[2020-10-13 21:11:39.768] [info] Number of threads: 8
+[2020-10-13 21:47:44.804] [info] Set log level to Info.
+[2020-10-13 21:47:44.818] [info] ------------------------------------------------------------------------
+[2020-10-13 21:47:44.819] [info] Elapsed real time: 2166 second(s) (36 minute(s), 6 second(s)).
+[2020-10-13 21:47:44.819] [info] Tue Oct 13 21:47:44 2020
+[2020-10-13 21:47:44.819] [info] MocoCasADiSolver succeeded!
+[2020-10-13 21:47:44.820] [info] ========================================================================
+[2020-10-13 21:52:38.495] [info] Exiting visualization.
+[2020-10-13 21:54:54.632] [info] Loaded model scaledModel_expData from file expData_2Dmodel.osim
+[2020-10-13 21:56:34.087] [info] ========================================================================
+[2020-10-13 21:56:34.087] [info] MocoCasADiSolver starting.
+[2020-10-13 21:56:34.090] [info] Tue Oct 13 21:56:34 2020
+[2020-10-13 21:56:34.094] [info] ------------------------------------------------------------------------
+[2020-10-13 21:56:34.094] [cout] [info] Costs: (total: 3)
+[2020-10-13 21:56:34.095] [cout] [info]   state_tracking. MocoStateTrackingGoal, enabled: true, mode: cost, weight: 10.0
+[2020-10-13 21:56:34.096] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tilt/value, weight: 25.0
+[2020-10-13 21:56:34.096] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tx/value, weight: 250.0
+[2020-10-13 21:56:34.097] [cout] [info]         state: /jointset/ground_pelvis/pelvis_ty/value, weight: 250.0
+[2020-10-13 21:56:34.098] [cout] [info]         state: /jointset/hip_l/hip_flexion_l/value, weight: 150.0
+[2020-10-13 21:56:34.101] [cout] [info]         state: /jointset/hip_r/hip_flexion_r/value, weight: 100.0
+[2020-10-13 21:56:34.104] [cout] [info]         state: /jointset/back/lumbar_extension/value, weight: 150.0
+[2020-10-13 21:56:34.105] [cout] [info]         state: /jointset/knee_l/knee_angle_l/value, weight: 250.0
+[2020-10-13 21:56:34.106] [cout] [info]         state: /jointset/knee_r/knee_angle_r/value, weight: 250.0
+[2020-10-13 21:56:34.108] [cout] [info]         state: /jointset/ankle_l/ankle_angle_l/value, weight: 25.0
+[2020-10-13 21:56:34.109] [cout] [info]         state: /jointset/ankle_r/ankle_angle_r/value, weight: 25.0
+[2020-10-13 21:56:34.110] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tilt/speed, weight: 1.0
+[2020-10-13 21:56:34.113] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tx/speed, weight: 1.0
+[2020-10-13 21:56:34.116] [cout] [info]         state: /jointset/ground_pelvis/pelvis_ty/speed, weight: 1.0
+[2020-10-13 21:56:34.117] [cout] [info]         state: /jointset/hip_l/hip_flexion_l/speed, weight: 1.0
+[2020-10-13 21:56:34.118] [cout] [info]         state: /jointset/hip_r/hip_flexion_r/speed, weight: 1.0
+[2020-10-13 21:56:34.119] [cout] [info]         state: /jointset/back/lumbar_extension/speed, weight: 1.0
+[2020-10-13 21:56:34.119] [cout] [info]         state: /jointset/knee_l/knee_angle_l/speed, weight: 1.0
+[2020-10-13 21:56:34.120] [cout] [info]         state: /jointset/knee_r/knee_angle_r/speed, weight: 1.0
+[2020-10-13 21:56:34.121] [cout] [info]         state: /jointset/ankle_l/ankle_angle_l/speed, weight: 1.0
+[2020-10-13 21:56:34.125] [cout] [info]         state: /jointset/ankle_r/ankle_angle_r/speed, weight: 1.0
+[2020-10-13 21:56:34.125] [cout] [info]   control_effort. MocoControlGoal, enabled: true, mode: cost, weight: 0.1
+[2020-10-13 21:56:34.129] [cout] [info]         control: /forceset/lumbarAct, weight: 1.0
+[2020-10-13 21:56:34.130] [cout] [info]         control: /forceset/hamstrings_r, weight: 1.0
+[2020-10-13 21:56:34.130] [cout] [info]         control: /forceset/bifemsh_r, weight: 1.0
+[2020-10-13 21:56:34.131] [cout] [info]         control: /forceset/glut_max_r, weight: 1.0
+[2020-10-13 21:56:34.132] [cout] [info]         control: /forceset/iliopsoas_r, weight: 1.0
+[2020-10-13 21:56:34.132] [cout] [info]         control: /forceset/rect_fem_r, weight: 1.0
+[2020-10-13 21:56:34.135] [cout] [info]         control: /forceset/vasti_r, weight: 1.0
+[2020-10-13 21:56:34.136] [cout] [info]         control: /forceset/gastroc_r, weight: 1.0
+[2020-10-13 21:56:34.140] [cout] [info]         control: /forceset/soleus_r, weight: 1.0
+[2020-10-13 21:56:34.141] [cout] [info]         control: /forceset/tib_ant_r, weight: 1.0
+[2020-10-13 21:56:34.142] [cout] [info]         control: /forceset/hamstrings_l, weight: 1.0
+[2020-10-13 21:56:34.143] [cout] [info]         control: /forceset/bifemsh_l, weight: 1.0
+[2020-10-13 21:56:34.143] [cout] [info]         control: /forceset/glut_max_l, weight: 1.0
+[2020-10-13 21:56:34.144] [cout] [info]         control: /forceset/iliopsoas_l, weight: 1.0
+[2020-10-13 21:56:34.145] [cout] [info]         control: /forceset/rect_fem_l, weight: 1.0
+[2020-10-13 21:56:34.148] [cout] [info]         control: /forceset/vasti_l, weight: 1.0
+[2020-10-13 21:56:34.149] [cout] [info]         control: /forceset/gastroc_l, weight: 1.0
+[2020-10-13 21:56:34.152] [cout] [info]         control: /forceset/soleus_l, weight: 1.0
+[2020-10-13 21:56:34.154] [cout] [info]         control: /forceset/tib_ant_l, weight: 1.0
+[2020-10-13 21:56:34.154] [cout] [info]   contact. MocoContactTrackingGoal, enabled: true, mode: cost, weight: 5.0
+[2020-10-13 21:56:34.155] [cout] [info]         projection type: plane
+[2020-10-13 21:56:34.156] [cout] [info]         projection vector: ~[0,0,1]
+[2020-10-13 21:56:34.160] [cout] [info]         group 0: ExternalForce: RightGRF
+[2020-10-13 21:56:34.161] [cout] [info]             forces:
+[2020-10-13 21:56:34.164] [cout] [info]                 /forceset/contactHeel_r
+[2020-10-13 21:56:34.165] [cout] [info]                 /forceset/contactToe1_r
+[2020-10-13 21:56:34.166] [cout] [info]                 /forceset/contactToe2_r
+[2020-10-13 21:56:34.166] [cout] [info]         group 1: ExternalForce: LeftGRF
+[2020-10-13 21:56:34.167] [cout] [info]             forces:
+[2020-10-13 21:56:34.168] [cout] [info]                 /forceset/contactHeel_l
+[2020-10-13 21:56:34.169] [cout] [info]                 /forceset/contactToe1_l
+[2020-10-13 21:56:34.173] [cout] [info]                 /forceset/contactToe2_l
+[2020-10-13 21:56:34.176] [cout] [info] Endpoint constraints: none
+[2020-10-13 21:56:34.177] [cout] [info] Kinematic constraints: none
+[2020-10-13 21:56:34.178] [cout] [info] Path constraints: none
+[2020-10-13 21:56:34.178] [cout] [info] States: (total: 38)
+[2020-10-13 21:56:34.179] [cout] [info]   /jointset/knee_r/knee_angle_r/speed. bounds: [-50, 50]
+[2020-10-13 21:56:34.180] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/value. bounds: [0.75, 1.25]
+[2020-10-13 21:56:34.181] [cout] [info]   /jointset/ankle_l/ankle_angle_l/value. bounds: [-0.523599, 0.523599]
+[2020-10-13 21:56:34.184] [cout] [info]   /jointset/back/lumbar_extension/speed. bounds: [-50, 50]
+[2020-10-13 21:56:34.189] [cout] [info]   /jointset/knee_l/knee_angle_l/speed. bounds: [-50, 50]
+[2020-10-13 21:56:34.189] [cout] [info]   /jointset/hip_l/hip_flexion_l/value. bounds: [-0.698132, 1.39626]
+[2020-10-13 21:56:34.190] [cout] [info]   /forceset/hamstrings_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:56:34.191] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/value. bounds: [-0.349066, 0]
+[2020-10-13 21:56:34.191] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/value. bounds: [-5, 5]
+[2020-10-13 21:56:34.192] [cout] [info]   /jointset/ankle_r/ankle_angle_r/value. bounds: [-0.523599, 0.523599]
+[2020-10-13 21:56:34.192] [cout] [info]   /jointset/hip_r/hip_flexion_r/value. bounds: [-0.698132, 1.39626]
+[2020-10-13 21:56:34.193] [cout] [info]   /jointset/knee_r/knee_angle_r/value. bounds: [-2.44346, 0]
+[2020-10-13 21:56:34.196] [cout] [info]   /forceset/bifemsh_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:56:34.196] [cout] [info]   /jointset/back/lumbar_extension/value. bounds: [-30, 0]
+[2020-10-13 21:56:34.200] [cout] [info]   /jointset/knee_l/knee_angle_l/value. bounds: [-2.44346, 0]
+[2020-10-13 21:56:34.201] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/speed. bounds: [-50, 50]
+[2020-10-13 21:56:34.201] [cout] [info]   /forceset/glut_max_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:56:34.202] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/speed. bounds: [-50, 50]
+[2020-10-13 21:56:34.203] [cout] [info]   /jointset/ankle_l/ankle_angle_l/speed. bounds: [-50, 50]
+[2020-10-13 21:56:34.203] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/speed. bounds: [-50, 50]
+[2020-10-13 21:56:34.204] [cout] [info]   /jointset/hip_l/hip_flexion_l/speed. bounds: [-50, 50]
+[2020-10-13 21:56:34.205] [cout] [info]   /jointset/ankle_r/ankle_angle_r/speed. bounds: [-50, 50]
+[2020-10-13 21:56:34.208] [cout] [info]   /jointset/hip_r/hip_flexion_r/speed. bounds: [-50, 50]
+[2020-10-13 21:56:34.211] [cout] [info]   /forceset/hamstrings_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:56:34.212] [cout] [info]   /forceset/glut_max_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:56:34.212] [cout] [info]   /forceset/iliopsoas_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:56:34.213] [cout] [info]   /forceset/rect_fem_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:56:34.214] [cout] [info]   /forceset/gastroc_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:56:34.214] [cout] [info]   /forceset/vasti_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:56:34.215] [cout] [info]   /forceset/soleus_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:56:34.215] [cout] [info]   /forceset/tib_ant_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:56:34.215] [cout] [info]   /forceset/bifemsh_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:56:34.216] [cout] [info]   /forceset/iliopsoas_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:56:34.216] [cout] [info]   /forceset/rect_fem_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:56:34.217] [cout] [info]   /forceset/gastroc_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:56:34.220] [cout] [info]   /forceset/vasti_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:56:34.221] [cout] [info]   /forceset/soleus_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:56:34.224] [cout] [info]   /forceset/tib_ant_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:56:34.225] [cout] [info] Controls: (total: 19)
+[2020-10-13 21:56:34.225] [cout] [info]   /forceset/lumbarAct. bounds: [-inf, inf]
+[2020-10-13 21:56:34.226] [cout] [info]   /forceset/bifemsh_r. bounds: [0.01, 1]
+[2020-10-13 21:56:34.226] [cout] [info]   /forceset/hamstrings_r. bounds: [0.01, 1]
+[2020-10-13 21:56:34.227] [cout] [info]   /forceset/glut_max_r. bounds: [0.01, 1]
+[2020-10-13 21:56:34.227] [cout] [info]   /forceset/vasti_r. bounds: [0.01, 1]
+[2020-10-13 21:56:34.228] [cout] [info]   /forceset/gastroc_r. bounds: [0.01, 1]
+[2020-10-13 21:56:34.228] [cout] [info]   /forceset/iliopsoas_r. bounds: [0.01, 1]
+[2020-10-13 21:56:34.229] [cout] [info]   /forceset/rect_fem_r. bounds: [0.01, 1]
+[2020-10-13 21:56:34.229] [cout] [info]   /forceset/soleus_r. bounds: [0.01, 1]
+[2020-10-13 21:56:34.232] [cout] [info]   /forceset/tib_ant_r. bounds: [0.01, 1]
+[2020-10-13 21:56:34.232] [cout] [info]   /forceset/hamstrings_l. bounds: [0.01, 1]
+[2020-10-13 21:56:34.235] [cout] [info]   /forceset/bifemsh_l. bounds: [0.01, 1]
+[2020-10-13 21:56:34.236] [cout] [info]   /forceset/glut_max_l. bounds: [0.01, 1]
+[2020-10-13 21:56:34.236] [cout] [info]   /forceset/iliopsoas_l. bounds: [0.01, 1]
+[2020-10-13 21:56:34.237] [cout] [info]   /forceset/rect_fem_l. bounds: [0.01, 1]
+[2020-10-13 21:56:34.237] [cout] [info]   /forceset/gastroc_l. bounds: [0.01, 1]
+[2020-10-13 21:56:34.238] [cout] [info]   /forceset/vasti_l. bounds: [0.01, 1]
+[2020-10-13 21:56:34.238] [cout] [info]   /forceset/soleus_l. bounds: [0.01, 1]
+[2020-10-13 21:56:34.239] [cout] [info]   /forceset/tib_ant_l. bounds: [0.01, 1]
+[2020-10-13 21:56:34.239] [cout] [info] Parameters: none
+[2020-10-13 21:56:34.859] [info] Number of threads: 8
+[2020-10-13 21:58:04.626] [info] Set log level to Info.
+[2020-10-13 21:58:04.641] [info] ------------------------------------------------------------------------
+[2020-10-13 21:58:04.641] [info] Elapsed real time: 91 second(s) (1 minute(s), 31 second(s)).
+[2020-10-13 21:58:04.642] [info] Tue Oct 13 21:58:04 2020
+[2020-10-13 21:58:04.644] [warning] MocoCasADiSolver did NOT succeed:
+[2020-10-13 21:58:04.645] [warning]   User_Requested_Stop
+[2020-10-13 21:58:04.648] [info] ========================================================================
+[2020-10-13 21:59:01.643] [info] Loaded model scaledModel_expData from file expData_2Dmodel.osim
+[2020-10-13 21:59:18.603] [info] ========================================================================
+[2020-10-13 21:59:18.603] [info] MocoCasADiSolver starting.
+[2020-10-13 21:59:18.604] [info] Tue Oct 13 21:59:18 2020
+[2020-10-13 21:59:18.604] [info] ------------------------------------------------------------------------
+[2020-10-13 21:59:18.608] [cout] [info] Costs: (total: 3)
+[2020-10-13 21:59:18.610] [cout] [info]   state_tracking. MocoStateTrackingGoal, enabled: true, mode: cost, weight: 10.0
+[2020-10-13 21:59:18.610] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tilt/value, weight: 25.0
+[2020-10-13 21:59:18.612] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tx/value, weight: 250.0
+[2020-10-13 21:59:18.613] [cout] [info]         state: /jointset/ground_pelvis/pelvis_ty/value, weight: 250.0
+[2020-10-13 21:59:18.616] [cout] [info]         state: /jointset/hip_l/hip_flexion_l/value, weight: 150.0
+[2020-10-13 21:59:18.619] [cout] [info]         state: /jointset/hip_r/hip_flexion_r/value, weight: 100.0
+[2020-10-13 21:59:18.620] [cout] [info]         state: /jointset/back/lumbar_extension/value, weight: 150.0
+[2020-10-13 21:59:18.621] [cout] [info]         state: /jointset/knee_l/knee_angle_l/value, weight: 250.0
+[2020-10-13 21:59:18.621] [cout] [info]         state: /jointset/knee_r/knee_angle_r/value, weight: 250.0
+[2020-10-13 21:59:18.622] [cout] [info]         state: /jointset/ankle_l/ankle_angle_l/value, weight: 25.0
+[2020-10-13 21:59:18.623] [cout] [info]         state: /jointset/ankle_r/ankle_angle_r/value, weight: 25.0
+[2020-10-13 21:59:18.623] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tilt/speed, weight: 1.0
+[2020-10-13 21:59:18.624] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tx/speed, weight: 1.0
+[2020-10-13 21:59:18.625] [cout] [info]         state: /jointset/ground_pelvis/pelvis_ty/speed, weight: 1.0
+[2020-10-13 21:59:18.632] [cout] [info]         state: /jointset/hip_l/hip_flexion_l/speed, weight: 1.0
+[2020-10-13 21:59:18.633] [cout] [info]         state: /jointset/hip_r/hip_flexion_r/speed, weight: 1.0
+[2020-10-13 21:59:18.634] [cout] [info]         state: /jointset/back/lumbar_extension/speed, weight: 1.0
+[2020-10-13 21:59:18.634] [cout] [info]         state: /jointset/knee_l/knee_angle_l/speed, weight: 1.0
+[2020-10-13 21:59:18.635] [cout] [info]         state: /jointset/knee_r/knee_angle_r/speed, weight: 1.0
+[2020-10-13 21:59:18.636] [cout] [info]         state: /jointset/ankle_l/ankle_angle_l/speed, weight: 1.0
+[2020-10-13 21:59:18.636] [cout] [info]         state: /jointset/ankle_r/ankle_angle_r/speed, weight: 1.0
+[2020-10-13 21:59:18.637] [cout] [info]   control_effort. MocoControlGoal, enabled: true, mode: cost, weight: 0.1
+[2020-10-13 21:59:18.640] [cout] [info]         control: /forceset/lumbarAct, weight: 1.0
+[2020-10-13 21:59:18.644] [cout] [info]         control: /forceset/hamstrings_r, weight: 1.0
+[2020-10-13 21:59:18.645] [cout] [info]         control: /forceset/bifemsh_r, weight: 1.0
+[2020-10-13 21:59:18.645] [cout] [info]         control: /forceset/glut_max_r, weight: 1.0
+[2020-10-13 21:59:18.646] [cout] [info]         control: /forceset/iliopsoas_r, weight: 1.0
+[2020-10-13 21:59:18.647] [cout] [info]         control: /forceset/rect_fem_r, weight: 1.0
+[2020-10-13 21:59:18.648] [cout] [info]         control: /forceset/vasti_r, weight: 1.0
+[2020-10-13 21:59:18.648] [cout] [info]         control: /forceset/gastroc_r, weight: 1.0
+[2020-10-13 21:59:18.649] [cout] [info]         control: /forceset/soleus_r, weight: 1.0
+[2020-10-13 21:59:18.653] [cout] [info]         control: /forceset/tib_ant_r, weight: 1.0
+[2020-10-13 21:59:18.656] [cout] [info]         control: /forceset/hamstrings_l, weight: 1.0
+[2020-10-13 21:59:18.657] [cout] [info]         control: /forceset/bifemsh_l, weight: 1.0
+[2020-10-13 21:59:18.658] [cout] [info]         control: /forceset/glut_max_l, weight: 1.0
+[2020-10-13 21:59:18.659] [cout] [info]         control: /forceset/iliopsoas_l, weight: 1.0
+[2020-10-13 21:59:18.660] [cout] [info]         control: /forceset/rect_fem_l, weight: 1.0
+[2020-10-13 21:59:18.660] [cout] [info]         control: /forceset/vasti_l, weight: 1.0
+[2020-10-13 21:59:18.661] [cout] [info]         control: /forceset/gastroc_l, weight: 1.0
+[2020-10-13 21:59:18.665] [cout] [info]         control: /forceset/soleus_l, weight: 1.0
+[2020-10-13 21:59:18.668] [cout] [info]         control: /forceset/tib_ant_l, weight: 1.0
+[2020-10-13 21:59:18.669] [cout] [info]   contact. MocoContactTrackingGoal, enabled: true, mode: cost, weight: 5.0
+[2020-10-13 21:59:18.670] [cout] [info]         projection type: plane
+[2020-10-13 21:59:18.671] [cout] [info]         projection vector: ~[0,0,1]
+[2020-10-13 21:59:18.672] [cout] [info]         group 0: ExternalForce: RightGRF
+[2020-10-13 21:59:18.673] [cout] [info]             forces:
+[2020-10-13 21:59:18.676] [cout] [info]                 /forceset/contactHeel_r
+[2020-10-13 21:59:18.676] [cout] [info]                 /forceset/contactToe1_r
+[2020-10-13 21:59:18.680] [cout] [info]                 /forceset/contactToe2_r
+[2020-10-13 21:59:18.681] [cout] [info]         group 1: ExternalForce: LeftGRF
+[2020-10-13 21:59:18.681] [cout] [info]             forces:
+[2020-10-13 21:59:18.682] [cout] [info]                 /forceset/contactHeel_l
+[2020-10-13 21:59:18.683] [cout] [info]                 /forceset/contactToe1_l
+[2020-10-13 21:59:18.684] [cout] [info]                 /forceset/contactToe2_l
+[2020-10-13 21:59:18.686] [cout] [info] Endpoint constraints: none
+[2020-10-13 21:59:18.689] [cout] [info] Kinematic constraints: none
+[2020-10-13 21:59:18.690] [cout] [info] Path constraints: none
+[2020-10-13 21:59:18.693] [cout] [info] States: (total: 38)
+[2020-10-13 21:59:18.694] [cout] [info]   /jointset/knee_r/knee_angle_r/speed. bounds: [-50, 50]
+[2020-10-13 21:59:18.696] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/value. bounds: [0.75, 1.25]
+[2020-10-13 21:59:18.698] [cout] [info]   /jointset/ankle_l/ankle_angle_l/value. bounds: [-0.523599, 0.523599]
+[2020-10-13 21:59:18.701] [cout] [info]   /jointset/back/lumbar_extension/speed. bounds: [-50, 50]
+[2020-10-13 21:59:18.702] [cout] [info]   /jointset/knee_l/knee_angle_l/speed. bounds: [-50, 50]
+[2020-10-13 21:59:18.705] [cout] [info]   /jointset/hip_l/hip_flexion_l/value. bounds: [-0.698132, 1.39626]
+[2020-10-13 21:59:18.706] [cout] [info]   /forceset/hamstrings_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:59:18.709] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/value. bounds: [-0.349066, 0]
+[2020-10-13 21:59:18.709] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/value. bounds: [-5, 5]
+[2020-10-13 21:59:18.710] [cout] [info]   /jointset/ankle_r/ankle_angle_r/value. bounds: [-0.523599, 0.523599]
+[2020-10-13 21:59:18.713] [cout] [info]   /jointset/hip_r/hip_flexion_r/value. bounds: [-0.698132, 1.39626]
+[2020-10-13 21:59:18.713] [cout] [info]   /jointset/knee_r/knee_angle_r/value. bounds: [-2.44346, 0]
+[2020-10-13 21:59:18.717] [cout] [info]   /forceset/bifemsh_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:59:18.718] [cout] [info]   /jointset/back/lumbar_extension/value. bounds: [-0.523599, 0]
+[2020-10-13 21:59:18.720] [cout] [info]   /jointset/knee_l/knee_angle_l/value. bounds: [-2.44346, 0]
+[2020-10-13 21:59:18.721] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/speed. bounds: [-50, 50]
+[2020-10-13 21:59:18.724] [cout] [info]   /forceset/glut_max_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:59:18.725] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/speed. bounds: [-50, 50]
+[2020-10-13 21:59:18.728] [cout] [info]   /jointset/ankle_l/ankle_angle_l/speed. bounds: [-50, 50]
+[2020-10-13 21:59:18.730] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/speed. bounds: [-50, 50]
+[2020-10-13 21:59:18.731] [cout] [info]   /jointset/hip_l/hip_flexion_l/speed. bounds: [-50, 50]
+[2020-10-13 21:59:18.732] [cout] [info]   /jointset/ankle_r/ankle_angle_r/speed. bounds: [-50, 50]
+[2020-10-13 21:59:18.732] [cout] [info]   /jointset/hip_r/hip_flexion_r/speed. bounds: [-50, 50]
+[2020-10-13 21:59:18.734] [cout] [info]   /forceset/hamstrings_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:59:18.737] [cout] [info]   /forceset/glut_max_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:59:18.738] [cout] [info]   /forceset/iliopsoas_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:59:18.742] [cout] [info]   /forceset/rect_fem_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:59:18.742] [cout] [info]   /forceset/gastroc_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:59:18.744] [cout] [info]   /forceset/vasti_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:59:18.744] [cout] [info]   /forceset/soleus_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:59:18.745] [cout] [info]   /forceset/tib_ant_r/activation. bounds: [0.01, 1]
+[2020-10-13 21:59:18.746] [cout] [info]   /forceset/bifemsh_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:59:18.750] [cout] [info]   /forceset/iliopsoas_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:59:18.753] [cout] [info]   /forceset/rect_fem_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:59:18.754] [cout] [info]   /forceset/gastroc_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:59:18.755] [cout] [info]   /forceset/vasti_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:59:18.755] [cout] [info]   /forceset/soleus_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:59:18.756] [cout] [info]   /forceset/tib_ant_l/activation. bounds: [0.01, 1]
+[2020-10-13 21:59:18.757] [cout] [info] Controls: (total: 19)
+[2020-10-13 21:59:18.758] [cout] [info]   /forceset/lumbarAct. bounds: [-inf, inf]
+[2020-10-13 21:59:18.759] [cout] [info]   /forceset/bifemsh_r. bounds: [0.01, 1]
+[2020-10-13 21:59:18.760] [cout] [info]   /forceset/hamstrings_r. bounds: [0.01, 1]
+[2020-10-13 21:59:18.763] [cout] [info]   /forceset/glut_max_r. bounds: [0.01, 1]
+[2020-10-13 21:59:18.767] [cout] [info]   /forceset/vasti_r. bounds: [0.01, 1]
+[2020-10-13 21:59:18.768] [cout] [info]   /forceset/gastroc_r. bounds: [0.01, 1]
+[2020-10-13 21:59:18.768] [cout] [info]   /forceset/iliopsoas_r. bounds: [0.01, 1]
+[2020-10-13 21:59:18.769] [cout] [info]   /forceset/rect_fem_r. bounds: [0.01, 1]
+[2020-10-13 21:59:18.770] [cout] [info]   /forceset/soleus_r. bounds: [0.01, 1]
+[2020-10-13 21:59:18.771] [cout] [info]   /forceset/tib_ant_r. bounds: [0.01, 1]
+[2020-10-13 21:59:18.774] [cout] [info]   /forceset/hamstrings_l. bounds: [0.01, 1]
+[2020-10-13 21:59:18.777] [cout] [info]   /forceset/bifemsh_l. bounds: [0.01, 1]
+[2020-10-13 21:59:18.780] [cout] [info]   /forceset/glut_max_l. bounds: [0.01, 1]
+[2020-10-13 21:59:18.781] [cout] [info]   /forceset/iliopsoas_l. bounds: [0.01, 1]
+[2020-10-13 21:59:18.782] [cout] [info]   /forceset/rect_fem_l. bounds: [0.01, 1]
+[2020-10-13 21:59:18.783] [cout] [info]   /forceset/gastroc_l. bounds: [0.01, 1]
+[2020-10-13 21:59:18.788] [cout] [info]   /forceset/vasti_l. bounds: [0.01, 1]
+[2020-10-13 21:59:18.791] [cout] [info]   /forceset/soleus_l. bounds: [0.01, 1]
+[2020-10-13 21:59:18.792] [cout] [info]   /forceset/tib_ant_l. bounds: [0.01, 1]
+[2020-10-13 21:59:18.792] [cout] [info] Parameters: none
+[2020-10-13 21:59:19.453] [info] Number of threads: 8
+[2020-10-13 22:23:26.977] [info] Set log level to Info.
+[2020-10-13 22:23:26.991] [info] ------------------------------------------------------------------------
+[2020-10-13 22:23:26.991] [info] Elapsed real time: 1448 second(s) (24 minute(s), 8 second(s)).
+[2020-10-13 22:23:26.992] [info] Tue Oct 13 22:23:26 2020
+[2020-10-13 22:23:26.994] [warning] MocoCasADiSolver did NOT succeed:
+[2020-10-13 22:23:26.995] [warning]   User_Requested_Stop
+[2020-10-13 22:23:26.998] [info] ========================================================================
+[2020-10-13 22:24:16.939] [info] Exiting visualization.
+[2020-10-13 22:25:05.034] [info] Loaded model scaledModel_expData from file expData_2Dmodel.osim
+[2020-10-13 22:25:12.748] [info] ========================================================================
+[2020-10-13 22:25:12.748] [info] MocoCasADiSolver starting.
+[2020-10-13 22:25:12.749] [info] Tue Oct 13 22:25:12 2020
+[2020-10-13 22:25:12.754] [info] ------------------------------------------------------------------------
+[2020-10-13 22:25:12.754] [cout] [info] Costs: (total: 3)
+[2020-10-13 22:25:12.755] [cout] [info]   state_tracking. MocoStateTrackingGoal, enabled: true, mode: cost, weight: 10.0
+[2020-10-13 22:25:12.755] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tilt/value, weight: 25.0
+[2020-10-13 22:25:12.756] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tx/value, weight: 250.0
+[2020-10-13 22:25:12.756] [cout] [info]         state: /jointset/ground_pelvis/pelvis_ty/value, weight: 250.0
+[2020-10-13 22:25:12.756] [cout] [info]         state: /jointset/hip_l/hip_flexion_l/value, weight: 150.0
+[2020-10-13 22:25:12.757] [cout] [info]         state: /jointset/hip_r/hip_flexion_r/value, weight: 100.0
+[2020-10-13 22:25:12.758] [cout] [info]         state: /jointset/back/lumbar_extension/value, weight: 150.0
+[2020-10-13 22:25:12.758] [cout] [info]         state: /jointset/knee_l/knee_angle_l/value, weight: 250.0
+[2020-10-13 22:25:12.759] [cout] [info]         state: /jointset/knee_r/knee_angle_r/value, weight: 250.0
+[2020-10-13 22:25:12.759] [cout] [info]         state: /jointset/ankle_l/ankle_angle_l/value, weight: 25.0
+[2020-10-13 22:25:12.759] [cout] [info]         state: /jointset/ankle_r/ankle_angle_r/value, weight: 25.0
+[2020-10-13 22:25:12.759] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tilt/speed, weight: 1.0
+[2020-10-13 22:25:12.759] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tx/speed, weight: 1.0
+[2020-10-13 22:25:12.760] [cout] [info]         state: /jointset/ground_pelvis/pelvis_ty/speed, weight: 1.0
+[2020-10-13 22:25:12.760] [cout] [info]         state: /jointset/hip_l/hip_flexion_l/speed, weight: 1.0
+[2020-10-13 22:25:12.760] [cout] [info]         state: /jointset/hip_r/hip_flexion_r/speed, weight: 1.0
+[2020-10-13 22:25:12.760] [cout] [info]         state: /jointset/back/lumbar_extension/speed, weight: 1.0
+[2020-10-13 22:25:12.761] [cout] [info]         state: /jointset/knee_l/knee_angle_l/speed, weight: 1.0
+[2020-10-13 22:25:12.764] [cout] [info]         state: /jointset/knee_r/knee_angle_r/speed, weight: 1.0
+[2020-10-13 22:25:12.764] [cout] [info]         state: /jointset/ankle_l/ankle_angle_l/speed, weight: 1.0
+[2020-10-13 22:25:12.765] [cout] [info]         state: /jointset/ankle_r/ankle_angle_r/speed, weight: 1.0
+[2020-10-13 22:25:12.765] [cout] [info]   control_effort. MocoControlGoal, enabled: true, mode: cost, weight: 0.1
+[2020-10-13 22:25:12.766] [cout] [info]         control: /forceset/lumbarAct, weight: 1.0
+[2020-10-13 22:25:12.766] [cout] [info]         control: /forceset/hamstrings_r, weight: 1.0
+[2020-10-13 22:25:12.767] [cout] [info]         control: /forceset/bifemsh_r, weight: 1.0
+[2020-10-13 22:25:12.767] [cout] [info]         control: /forceset/glut_max_r, weight: 1.0
+[2020-10-13 22:25:12.767] [cout] [info]         control: /forceset/iliopsoas_r, weight: 1.0
+[2020-10-13 22:25:12.768] [cout] [info]         control: /forceset/rect_fem_r, weight: 1.0
+[2020-10-13 22:25:12.768] [cout] [info]         control: /forceset/vasti_r, weight: 1.0
+[2020-10-13 22:25:12.768] [cout] [info]         control: /forceset/gastroc_r, weight: 1.0
+[2020-10-13 22:25:12.769] [cout] [info]         control: /forceset/soleus_r, weight: 1.0
+[2020-10-13 22:25:12.770] [cout] [info]         control: /forceset/tib_ant_r, weight: 1.0
+[2020-10-13 22:25:12.770] [cout] [info]         control: /forceset/hamstrings_l, weight: 1.0
+[2020-10-13 22:25:12.770] [cout] [info]         control: /forceset/bifemsh_l, weight: 1.0
+[2020-10-13 22:25:12.771] [cout] [info]         control: /forceset/glut_max_l, weight: 1.0
+[2020-10-13 22:25:12.771] [cout] [info]         control: /forceset/iliopsoas_l, weight: 1.0
+[2020-10-13 22:25:12.772] [cout] [info]         control: /forceset/rect_fem_l, weight: 1.0
+[2020-10-13 22:25:12.772] [cout] [info]         control: /forceset/vasti_l, weight: 1.0
+[2020-10-13 22:25:12.772] [cout] [info]         control: /forceset/gastroc_l, weight: 1.0
+[2020-10-13 22:25:12.772] [cout] [info]         control: /forceset/soleus_l, weight: 1.0
+[2020-10-13 22:25:12.773] [cout] [info]         control: /forceset/tib_ant_l, weight: 1.0
+[2020-10-13 22:25:12.773] [cout] [info]   contact. MocoContactTrackingGoal, enabled: true, mode: cost, weight: 5.0
+[2020-10-13 22:25:12.773] [cout] [info]         projection type: plane
+[2020-10-13 22:25:12.776] [cout] [info]         projection vector: ~[0,0,1]
+[2020-10-13 22:25:12.778] [cout] [info]         group 0: ExternalForce: RightGRF
+[2020-10-13 22:25:12.778] [cout] [info]             forces:
+[2020-10-13 22:25:12.779] [cout] [info]                 /forceset/contactHeel_r
+[2020-10-13 22:25:12.780] [cout] [info]                 /forceset/contactToe1_r
+[2020-10-13 22:25:12.781] [cout] [info]                 /forceset/contactToe2_r
+[2020-10-13 22:25:12.781] [cout] [info]         group 1: ExternalForce: LeftGRF
+[2020-10-13 22:25:12.782] [cout] [info]             forces:
+[2020-10-13 22:25:12.783] [cout] [info]                 /forceset/contactHeel_l
+[2020-10-13 22:25:12.784] [cout] [info]                 /forceset/contactToe1_l
+[2020-10-13 22:25:12.785] [cout] [info]                 /forceset/contactToe2_l
+[2020-10-13 22:25:12.788] [cout] [info] Endpoint constraints: none
+[2020-10-13 22:25:12.789] [cout] [info] Kinematic constraints: none
+[2020-10-13 22:25:12.792] [cout] [info] Path constraints: none
+[2020-10-13 22:25:12.793] [cout] [info] States: (total: 38)
+[2020-10-13 22:25:12.793] [cout] [info]   /jointset/knee_r/knee_angle_r/speed. bounds: [-50, 50]
+[2020-10-13 22:25:12.794] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/value. bounds: [0.75, 1.25]
+[2020-10-13 22:25:12.795] [cout] [info]   /jointset/ankle_l/ankle_angle_l/value. bounds: [-0.523599, 0.523599]
+[2020-10-13 22:25:12.796] [cout] [info]   /jointset/back/lumbar_extension/speed. bounds: [-50, 50]
+[2020-10-13 22:25:12.796] [cout] [info]   /jointset/knee_l/knee_angle_l/speed. bounds: [-50, 50]
+[2020-10-13 22:25:12.800] [cout] [info]   /jointset/hip_l/hip_flexion_l/value. bounds: [-0.698132, 1.39626]
+[2020-10-13 22:25:12.800] [cout] [info]   /forceset/hamstrings_l/activation. bounds: [0.01, 1]
+[2020-10-13 22:25:12.804] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/value. bounds: [-0.349066, 0]
+[2020-10-13 22:25:12.805] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/value. bounds: [-5, 5]
+[2020-10-13 22:25:12.805] [cout] [info]   /jointset/ankle_r/ankle_angle_r/value. bounds: [-0.523599, 0.523599]
+[2020-10-13 22:25:12.806] [cout] [info]   /jointset/hip_r/hip_flexion_r/value. bounds: [-0.698132, 1.39626]
+[2020-10-13 22:25:12.807] [cout] [info]   /jointset/knee_r/knee_angle_r/value. bounds: [-2.44346, 0]
+[2020-10-13 22:25:12.808] [cout] [info]   /forceset/bifemsh_r/activation. bounds: [0.01, 1]
+[2020-10-13 22:25:12.809] [cout] [info]   /jointset/back/lumbar_extension/value. bounds: [-0.523599, 0]
+[2020-10-13 22:25:12.812] [cout] [info]   /jointset/knee_l/knee_angle_l/value. bounds: [-2.44346, 0]
+[2020-10-13 22:25:12.813] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/speed. bounds: [-50, 50]
+[2020-10-13 22:25:12.816] [cout] [info]   /forceset/glut_max_l/activation. bounds: [0.01, 1]
+[2020-10-13 22:25:12.817] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/speed. bounds: [-50, 50]
+[2020-10-13 22:25:12.818] [cout] [info]   /jointset/ankle_l/ankle_angle_l/speed. bounds: [-50, 50]
+[2020-10-13 22:25:12.819] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/speed. bounds: [-50, 50]
+[2020-10-13 22:25:12.820] [cout] [info]   /jointset/hip_l/hip_flexion_l/speed. bounds: [-50, 50]
+[2020-10-13 22:25:12.820] [cout] [info]   /jointset/ankle_r/ankle_angle_r/speed. bounds: [-50, 50]
+[2020-10-13 22:25:12.824] [cout] [info]   /jointset/hip_r/hip_flexion_r/speed. bounds: [-50, 50]
+[2020-10-13 22:25:12.824] [cout] [info]   /forceset/hamstrings_r/activation. bounds: [0.01, 1]
+[2020-10-13 22:25:12.828] [cout] [info]   /forceset/glut_max_r/activation. bounds: [0.01, 1]
+[2020-10-13 22:25:12.829] [cout] [info]   /forceset/iliopsoas_r/activation. bounds: [0.01, 1]
+[2020-10-13 22:25:12.832] [cout] [info]   /forceset/rect_fem_r/activation. bounds: [0.01, 1]
+[2020-10-13 22:25:12.832] [cout] [info]   /forceset/gastroc_r/activation. bounds: [0.01, 1]
+[2020-10-13 22:25:12.833] [cout] [info]   /forceset/vasti_r/activation. bounds: [0.01, 1]
+[2020-10-13 22:25:12.836] [cout] [info]   /forceset/soleus_r/activation. bounds: [0.01, 1]
+[2020-10-13 22:25:12.839] [cout] [info]   /forceset/tib_ant_r/activation. bounds: [0.01, 1]
+[2020-10-13 22:25:12.840] [cout] [info]   /forceset/bifemsh_l/activation. bounds: [0.01, 1]
+[2020-10-13 22:25:12.841] [cout] [info]   /forceset/iliopsoas_l/activation. bounds: [0.01, 1]
+[2020-10-13 22:25:12.842] [cout] [info]   /forceset/rect_fem_l/activation. bounds: [0.01, 1]
+[2020-10-13 22:25:12.843] [cout] [info]   /forceset/gastroc_l/activation. bounds: [0.01, 1]
+[2020-10-13 22:25:12.844] [cout] [info]   /forceset/vasti_l/activation. bounds: [0.01, 1]
+[2020-10-13 22:25:12.847] [cout] [info]   /forceset/soleus_l/activation. bounds: [0.01, 1]
+[2020-10-13 22:25:12.851] [cout] [info]   /forceset/tib_ant_l/activation. bounds: [0.01, 1]
+[2020-10-13 22:25:12.851] [cout] [info] Controls: (total: 19)
+[2020-10-13 22:25:12.852] [cout] [info]   /forceset/lumbarAct. bounds: [-inf, inf]
+[2020-10-13 22:25:12.853] [cout] [info]   /forceset/bifemsh_r. bounds: [0.01, 1]
+[2020-10-13 22:25:12.854] [cout] [info]   /forceset/hamstrings_r. bounds: [0.01, 1]
+[2020-10-13 22:25:12.854] [cout] [info]   /forceset/glut_max_r. bounds: [0.01, 1]
+[2020-10-13 22:25:12.855] [cout] [info]   /forceset/vasti_r. bounds: [0.01, 1]
+[2020-10-13 22:25:12.859] [cout] [info]   /forceset/gastroc_r. bounds: [0.01, 1]
+[2020-10-13 22:25:12.860] [cout] [info]   /forceset/iliopsoas_r. bounds: [0.01, 1]
+[2020-10-13 22:25:12.863] [cout] [info]   /forceset/rect_fem_r. bounds: [0.01, 1]
+[2020-10-13 22:25:12.864] [cout] [info]   /forceset/soleus_r. bounds: [0.01, 1]
+[2020-10-13 22:25:12.865] [cout] [info]   /forceset/tib_ant_r. bounds: [0.01, 1]
+[2020-10-13 22:25:12.866] [cout] [info]   /forceset/hamstrings_l. bounds: [0.01, 1]
+[2020-10-13 22:25:12.867] [cout] [info]   /forceset/bifemsh_l. bounds: [0.01, 1]
+[2020-10-13 22:25:12.867] [cout] [info]   /forceset/glut_max_l. bounds: [0.01, 1]
+[2020-10-13 22:25:12.871] [cout] [info]   /forceset/iliopsoas_l. bounds: [0.01, 1]
+[2020-10-13 22:25:12.871] [cout] [info]   /forceset/rect_fem_l. bounds: [0.01, 1]
+[2020-10-13 22:25:12.875] [cout] [info]   /forceset/gastroc_l. bounds: [0.01, 1]
+[2020-10-13 22:25:12.876] [cout] [info]   /forceset/vasti_l. bounds: [0.01, 1]
+[2020-10-13 22:25:12.877] [cout] [info]   /forceset/soleus_l. bounds: [0.01, 1]
+[2020-10-13 22:25:12.878] [cout] [info]   /forceset/tib_ant_l. bounds: [0.01, 1]
+[2020-10-13 22:25:12.878] [cout] [info] Parameters: none
+[2020-10-13 22:25:13.512] [info] Number of threads: 8
+[2020-10-13 22:40:18.480] [info] Set log level to Info.
+[2020-10-13 22:40:18.494] [info] ------------------------------------------------------------------------
+[2020-10-13 22:40:18.494] [info] Elapsed real time: 906 second(s) (15 minute(s), 6 second(s)).
+[2020-10-13 22:40:18.496] [info] Tue Oct 13 22:40:18 2020
+[2020-10-13 22:40:18.497] [warning] MocoCasADiSolver did NOT succeed:
+[2020-10-13 22:40:18.497] [warning]   User_Requested_Stop
+[2020-10-13 22:40:18.497] [info] ========================================================================
