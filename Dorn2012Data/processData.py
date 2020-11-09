@@ -22,9 +22,18 @@ import opensim as osim
 #Load model
 osimModel = osim.Model('JA1_SCALED_Osim40.osim')
 
+#Lock the coordinates that we don't need data from for the Falisse pipeline
+lockCoordinates = ['mtp_angle_r', 'mtp_angle_l',
+                   'pro_sup_r', 'pro_sup_l',
+                   'wrist_flex_r', 'wrist_flex_l',
+                   'wrist_dev_r', 'wrist_dev_l']
+for cc in range(len(lockCoordinates)):
+    osimModel.getCoordinateSet().get(lockCoordinates[cc]).set_locked(True)
+osimModel.finalizeConnections()
+
 #Initialise IK tool
 ikTool = osim.InverseKinematicsTool()
-ikTool.setName('sprint_ik')
+ikTool.setName('sprint')
 
 #Set model
 ikTool.setModel(osimModel)
@@ -55,9 +64,10 @@ for mm in range(len(markerLabels)):
 ikTool.set_IKTaskSet(ikTaskSet)
 
 #Set times
-#Start and end time of .trc file
-ikTool.setStartTime(trcData.getIndependentColumn()[0])
-ikTool.setEndTime(trcData.getIndependentColumn()[-1])
+#Manually identified times from experimental data signifying first to second
+#right foot strike
+ikTool.setStartTime(0.359)
+ikTool.setEndTime(0.819)
 
 #Set output filename
 ikTool.set_output_motion_file('sprint_ik.mot')
@@ -65,5 +75,33 @@ ikTool.set_output_motion_file('sprint_ik.mot')
 #Run IK
 ikTool.run()
 
-###### Things seem to be working up to here...
+# %% Inverse dynamics
 
+#Initialise ID tool
+idTool = osim.InverseDynamicsTool()
+idTool.setName('sprint')
+
+#Set model
+idTool.setModel(osimModel)
+
+#Set external loads file
+idTool.setExternalLoadsFileName('grf.xml')
+
+#Set coordinates file
+idTool.setCoordinatesFileName('sprint_ik.mot')
+
+#Set filter of 12Hz for coordinates (matches some sprinting studies)
+idTool.setLowpassCutoffFrequency(12)
+
+#Set times
+#Start and end of IK
+idTool.setStartTime(osim.Storage('sprint_ik.mot').getFirstTime())
+idTool.setEndTime(osim.Storage('sprint_ik.mot').getLastTime())
+
+#Set output file
+idTool.setOutputGenForceFileName('sprint_id.sto')
+
+#Run ID
+idTool.run()
+
+# %% ----- End of processData.py ----- %% #

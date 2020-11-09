@@ -19,7 +19,6 @@ import opensim as osim
 import btk
 import numpy as np
 import os
-import math
 import pandas as pd
 from scipy.signal import butter, lfilter
 from scipy.spatial.transform import Rotation as R
@@ -161,7 +160,7 @@ for fp in range(0,8):
     colNo = colNo+9
 
 #Define filter for forces data (50N Low-pass 4th Order Butterworth)
-fs = 2000
+fs = dynamicAcq.GetAnalogFrequency()
 nyq = 0.5 * fs
 normCutoff = 50 / nyq
 b, a = butter(4, normCutoff, btype = 'low', analog = False)
