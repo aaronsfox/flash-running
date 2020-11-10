@@ -132,6 +132,11 @@ bounds.Qs.lower(jointi.elb.r) = bounds.Qs.lower(jointi.elb.l);
 Qs_range = abs(bounds.Qs.upper - bounds.Qs.lower);
 bounds.Qs.lower = bounds.Qs.lower - Qs_range;
 bounds.Qs.upper = bounds.Qs.upper + Qs_range;
+% % % % CHANGED:
+% % % %Allow 25% either way on bounds
+% % % bounds.Qs.lower = bounds.Qs.lower - (abs(bounds.Qs.lower)*0.25);
+% % % bounds.Qs.upper = bounds.Qs.upper + (abs(bounds.Qs.upper)*0.25);
+
 
 %% Qdots
 % The extreme values are selected as upper/lower bounds, which are then
@@ -238,6 +243,10 @@ bounds.Qdots.lower(jointi.elb.r) = bounds.Qdots.lower(jointi.elb.l);
 Qdots_range = abs(bounds.Qdots.upper - bounds.Qdots.lower);
 bounds.Qdots.lower = bounds.Qdots.lower - Qdots_range;
 bounds.Qdots.upper = bounds.Qdots.upper + Qdots_range;
+% % % % CHANGED:
+% % % %Allow 25% either way on bounds
+% % % bounds.Qdots.lower = bounds.Qdots.lower - (abs(bounds.Qdots.lower)*0.25);
+% % % bounds.Qdots.upper = bounds.Qdots.upper + (abs(bounds.Qdots.upper)*0.25);
 
 %% Qdotdots
 % The extreme values are selected as upper/lower bounds, which are then
@@ -344,6 +353,10 @@ bounds.Qdotdots.lower(jointi.elb.r) = bounds.Qdotdots.lower(jointi.elb.l);
 Qdotdots_range = abs(bounds.Qdotdots.upper - bounds.Qdotdots.lower);
 bounds.Qdotdots.lower = bounds.Qdotdots.lower - Qdotdots_range;
 bounds.Qdotdots.upper = bounds.Qdotdots.upper + Qdotdots_range;
+% % % % CHANGED:
+% % % %Allow 25% either way on bounds
+% % % bounds.Qdotdots.lower = bounds.Qdotdots.lower - (abs(bounds.Qdotdots.lower)*0.25);
+% % % bounds.Qdotdots.upper = bounds.Qdotdots.upper + (abs(bounds.Qdotdots.upper)*0.25);
 
 %% Muscle activations
 bounds.a.lower = zeros(1,NMuscle);

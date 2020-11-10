@@ -30,6 +30,34 @@
 %%%%%
 %%%%% Should perhaps test out one of the slower running speeds from the
 %%%%% Dorn dataset to probe some of these issues...
+%%%%%
+%%%%% Still having issues with accuracy of simulation (even when converged)
+%%%%% with the jogging data --- too high of a weight on states tracking,
+%%%%% not wide enough bounds to alter kinematics to match GRF?????
+%%%%%
+%%%%%   bounds on things like GRM that aren't being tracked causing issues?
+%%%%%
+%%%%% Relevant to note model mass doesn't match the data --- i.e. mass ---
+%%%%% but it shouldn't make that much of a difference
+%%%%%
+%%%%% Altering the pelvis_ty coordinate to ensure the body was closer to
+%%%%% the ground allowed the simulation to converge to an appropriate
+%%%%% looking solution (still not exactly the same). This was also combined
+%%%%% with smoother GRFs though...
+%%%%%
+%%%%%   The main difference with kinematics is that pelvis_ty changes a
+%%%%%   little, which makes sense given this was an estimate in the first
+%%%%%   place. pelvis_tx doesn't travel as far either --- might have to do
+%%%%%   with the smoothing of the GRF and the braking/acceleration being
+%%%%%   diminished?
+%%%%%
+%%%%%   GRFs look OK. There is a bit of noisiness in the medial/lateral
+%%%%%   GRFs, and a little bit in the anterior-posterior. The biggest
+%%%%%   difference is the vertical ground reaction forces being lower than
+%%%%%   the experimental data --- again this is not surprising given that
+%%%%%   the model's mass is a bit lower (~10kg) than the experimental
+%%%%%   model. It would make sense that with the closely tracked kinematics
+%%%%%   that this model would produce lower GRFs
 
 %% Settings
 
@@ -367,6 +395,19 @@ PassiveMomentsData
 
 %% Experimental data
 
+%%%%% NOTE: To get some alignment/potentially better data with the original
+%%%%% simulation data, GRFs are smoothed using a strict low-pass filter.
+%%%%% The pelvis_ty coordinate is also reduced by 0.15 to get it more
+%%%%% closely aligned with the ground given the differences in model
+%%%%% heights. The start point of the vertical ground reaction forces also
+%%%%% looks a little high, at least in the jogging data (i.e. initial
+%%%%% contact has higher forces than you'd expect)
+
+%%%%% NOTE: there are also still some differences with original data. Non Y
+%%%%% axis moments are all zero for the Falisse data, whereas they have
+%%%%% values in the running data. The MorGF data is also much higher for
+%%%%% running, but this could be expected with the higher forces?
+
 %Set path to experimental data
 pathExpData = [pwd,'\..\..\Dorn2012Data'];
 
@@ -387,21 +428,30 @@ addpath(genpath(pathHelperFunctions));
 
 %Set IK filename
 %%%%% TODO: currently uses a 6Hz filter
-fileIK = 'sprint_ik.mot';
+% % % fileIK = 'sprint_ik.mot';
+fileIK = 'jog_ik.mot';
 
 %Extract joint kinematics
 Qs = getIK(pathExpData,fileIK,joints);
 
+%%%%% Subtract 0.15 from the pelvis ty data
+Qs.pelvis_ty(:,1) = Qs.pelvis_ty - 0.15;
+Qs.all(:,6) = Qs.all(:,6) - 0.15;
+Qs.allfilt(:,6) = Qs.allfilt(:,6) - 0.15;
+
 %%%%% TODO: check GRFs are extracted correctly? Units for moments?
 
 %Set GRF filename
-fileGRF = 'grf.mot';
+% % % fileGRF = 'sprint_grf.mot';
+fileGRF = 'jog_grf.mot';
 
 %Extract ground reaction forces and moments
+%Includes a filter on the GRF data
 GRF = getGRF(pathExpData,fileGRF);
 
 %Set ID filename
-fileID = 'sprint_id.sto';
+% % % fileID = 'sprint_id.sto';
+fileID = 'jog_id.sto';
 
 %Extract dynamics data
 ID = getID(pathExpData,fileID,joints);
@@ -410,7 +460,8 @@ ID = getID(pathExpData,fileID,joints);
 
 %Set time for optimisation
 %This is set from the first to the second right heel strike in the Dorn data
-time_opt = [0.36,0.82];
+% % % time_opt = [0.36,0.82]; %%%%% for sprinting
+time_opt = [0.908,1.660]; %%%%% for jogging
 
 %Extract indices and create steps relative to mesh interval
 time_expi.ID(1) = find(round(ID.time,4) == time_opt(1));
@@ -1661,17 +1712,11 @@ write_motionFile(JointAngle, filenameJointAngles)
 %% Optimal cost and CPU time
 
 %Read info from diary
-pathDiary = [pathResults,'\',saveName,'\',saveFileName];
+pathDiary = [pathResults,'\',saveName,'\jog_',saveFileName];
 [CPU_IPOPT,CPU_NLP,~,~,~,~,~,~,OptSol] = readDiary(pathDiary);
 
-%% Save results [NOT EDITED]
-if saveResults
-    if (exist([pathresults,'/',namescript,'/Results_tracking.mat'],...
-        'file')==2) 
-    load([pathresults,'/',namescript,'/Results_tracking.mat']);
-else
-    Results_tracking = struct('Qs_opt',[]);
-    end
+%% Save results
+
 % Structure results
 Results_tracking.Qs_opt = q_opt_unsc.deg;
 Results_tracking.Acts_opt = a_opt_unsc;
@@ -1702,8 +1747,55 @@ Results_tracking.colheaders.paramsCM = {'loc_s1_r_x','loc_s1_r_z',...
     'loc_s4_r_x','loc_s4_r_z','loc_s5_r_x','loc_s5_r_z',...
     'loc_s6_r_x','loc_s6_r_z','radius_s1','radius_s2','radius_s3',...
     'radius_s4','radius_s5','radius_s6'};
-% Save data
-save([pathresults,'/',namescript,'/Results_tracking.mat'],...
+
+%Save data
+save([pathResults,'\',saveName,'\jog_',saveFileName,'_results.mat'],...
     'Results_tracking');
+
+%% Compare data
+
+%Kinematic data
+figure
+for jj = 1:length(joints)
+    subplot(5,ceil(length(joints)/5),jj)
+    hold on
+    %Original data (convert to degrees for accurate comparison --- unless translation)
+    if strcmp(joints{jj},'pelvis_tx') || ...
+            strcmp(joints{jj},'pelvis_ty') || ...
+            strcmp(joints{jj},'pelvis_tz')
+        plot(0:N-1,Results_tracking.Qs_toTrack(:,jj+1),'k')
+    else
+        plot(0:N-1,rad2deg(Results_tracking.Qs_toTrack(:,jj+1)),'k')
+    end
+    %Tracked data
+    plot(0:N-1,Results_tracking.Qs_opt(:,jj),'r')
+    %Title
+    title(strrep(joints{jj},'_',' '))
 end
 
+%GRFs
+%Set titles for GRF plots
+grfTitles = [{'Right A/P'}, {'Right V'}, {'Right M/L'}, ...
+    {'Left A/P'}, {'Left V'}, {'Left M/L'}];
+figure
+for jj = 1:6
+    subplot(2,3,jj)
+    hold on
+    %Original data
+    plot(0:N-1,Results_tracking.GRFs_toTrack(:,jj+1),'k')
+    %Tracked data
+    plot(0:N-1,Results_tracking.GRFs_opt(:,jj),'r')
+    %Title
+    title(grfTitles{jj})
+end
+
+%GRMs (untracked) --- but still look appropriate
+figure
+for jj = 1:6
+    subplot(2,3,jj)
+    hold on
+    %Original data
+    plot(0:N-1,Results_tracking.GRMs_toTrack(:,jj+1),'k')
+    %Tracked data
+    plot(0:N-1,Results_tracking.GRMs_opt(:,jj),'r')
+end

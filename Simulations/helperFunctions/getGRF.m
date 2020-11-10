@@ -56,7 +56,26 @@ function GRF = getGRF(pathGRF,fileGRF)
         clear aa
     end
     clear kk
-
+    
+    %Filter GRF data with 12Hz filter to smooth
+    %Filter settings
+    order = 4;
+    %%%%% TODO: 6Hz vs. 12Hz filter
+    cutoff_low = 6;% 12;
+    fs = 1/mean(diff(GRF.time(:,1)));
+    [af,bf] = butter(order/2,cutoff_low./(0.5*fs),'low');
+    %Loop through legs
+    for kk = 1:length(leg)
+        %Loop through axis
+        for aa = 1:length(axis)
+            GRF.val.(leg{kk})(:,aa) = filtfilt(af,bf,GRF.val.(leg{kk})(:,aa));
+            GRF.pos.(leg{kk})(:,aa) = filtfilt(af,bf,GRF.pos.(leg{kk})(:,aa));
+            GRF.Mcop.(leg{kk})(:,aa) = filtfilt(af,bf,GRF.Mcop.(leg{kk})(:,aa));
+        end
+        clear aa
+    end
+    clear kk
+    
     %Set data in the 'all' structures
     GRF.val.all = [GRF.time,GRF.val.(leg{1}),GRF.val.(leg{2})];
     GRF.pos.all = [GRF.time,GRF.pos.(leg{1}),GRF.pos.(leg{2})];
