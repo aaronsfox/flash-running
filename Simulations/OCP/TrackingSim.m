@@ -59,6 +59,10 @@
 %%%%%   model. It would make sense that with the closely tracked kinematics
 %%%%%   that this model would produce lower GRFs
 
+%% 
+
+%%%%% TODO: add checks for analysing / saving jog vs. sprint results
+
 %% Settings
 
 %%%%% NOTE: some weights and settings changed...
@@ -1714,6 +1718,10 @@ write_motionFile(JointAngle, filenameJointAngles)
 %Read info from diary
 pathDiary = [pathResults,'\',saveName,'\jog_',saveFileName];
 [CPU_IPOPT,CPU_NLP,~,~,~,~,~,~,OptSol] = readDiary(pathDiary);
+
+%% Decompose cost
+
+%%%%% TODO: add code from predictive simulation example
 
 %% Save results
 
