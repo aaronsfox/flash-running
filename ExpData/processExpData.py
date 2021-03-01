@@ -9,7 +9,7 @@ Created on Thu Sep 10 11:31:10 2020
     aaron.f@deakin.edu.au
     
     This code processes the experimental max sprinting trial contained in this
-    folder for use as an initial guess in future predictive simulations.
+    folder for use in future optimal control simulations.
     
 """
 
@@ -24,7 +24,7 @@ import numpy as np
 import pandas as pd
 from scipy.signal import butter, lfilter
 from scipy.spatial.transform import Rotation as R
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import xml.etree.ElementTree as et
 
 # %% Participant details
@@ -409,7 +409,7 @@ xmlRoot = xmlTree.getroot()
 #Create a dictionary with segments and scale factors to access for calculations
 scaleFactors = {}
 
-#Loop through segments and place  in dictionary
+#Loop through segments and place in dictionary
 for segment in range(0,len(xmlRoot.findall('./ScaleSet/objects/Scale/segment'))):
     #Get current segment name
     currSegment = xmlRoot.findall('./ScaleSet/objects/Scale/segment')[segment].text
@@ -772,9 +772,262 @@ osimHelper.kinematicsToStates(kinematicsFileName = 'ikResults.mot',
 
 #Convert states to 2D new model format
 osimHelper.statesTo2D(statesFileName = 'refQ.sto',
-                      outputFileName = 'refQ_converted.sto')
+                      outputFileName = 'refQ_2D.sto')
 
-###### TODO: check IK errors - some look high???
+# %% Extract scaled model parameters for building external functions
+
+##### TODO: check appropriateness of this against the TrackSim_1/2 variants for tracking...
+
+# This extracts model values for a 2D model. It's important to note that these
+# extracted parameters are related to the models used in the Falisse et al.
+# algorithmic differentiation pipelines external functions.
+#
+# These external functions contain construction of a model that is effectively
+# in OpenSim 3.3 format --- which differs to the 4.x versions used for extracting
+# experimental data here. Hopefully it works anyway...
+#
+# The end of this section prints the outputs to a text file that theoretically
+# can be copied into an external function template
+
+#Set a dictionary to store the body values
+bodyVals = {'bodyName': [], 'bodyMass': [], 'massCentre': [], 'inertia': []}
+
+#Set a dictionary to store the joint values
+jointVals = {'jointName': [], 'locInParent': []}
+
+#Set a list for the bodies to extract
+extractBodies = ['pelvis', 'femur_l', 'femur_r', 'tibia_l', 'tibia_r',
+                 'talus_l', 'talus_r', 'calcn_l', 'calcn_r',
+                 'toes_l', 'toes_r', 'torso']
+
+#Set a list for the joints to extract
+extractJoints = ['ground_pelvis', 'hip_l', 'hip_r',
+                 'walker_knee_l', 'walker_knee_r',
+                 'ankle_l', 'ankle_r', 'subtalar_l', 'subtalar_r',
+                 'mtp_l', 'mtp_r', 'back']
+nameJoints = ['ground_pelvis', 'hip_l', 'hip_r',
+              'knee_l', 'knee_r',
+              'ankle_l', 'ankle_r', 'subtalar_l', 'subtalar_r',
+              'mtp_l', 'mtp_r', 'back']
+
+#Get the body parameters
+#Loop through bodies
+for bb in range(len(extractBodies)):
+    
+    #Set body name in dictionary
+    bodyVals['bodyName'].append(extractBodies[bb])
+    
+    #Get body mass
+    bodyVals['bodyMass'].append(model2D_final.getBodySet().get(extractBodies[bb]).getMass())
+    
+    #Get mass centre
+    bodyVals['massCentre'].append(np.array([model2D_final.getBodySet().get(extractBodies[bb]).getMassCenter().get(0),
+                                            model2D_final.getBodySet().get(extractBodies[bb]).getMassCenter().get(1),
+                                            model2D_final.getBodySet().get(extractBodies[bb]).getMassCenter().get(2)]))
+    
+    #Get inertia
+    bodyVals['inertia'].append(np.array([model2D_final.getBodySet().get(extractBodies[bb]).getInertia().getMoments().get(0),
+                                         model2D_final.getBodySet().get(extractBodies[bb]).getInertia().getMoments().get(1),
+                                         model2D_final.getBodySet().get(extractBodies[bb]).getInertia().getMoments().get(2),
+                                         model2D_final.getBodySet().get(extractBodies[bb]).getInertia().getProducts().get(0),
+                                         model2D_final.getBodySet().get(extractBodies[bb]).getInertia().getProducts().get(1),
+                                         model2D_final.getBodySet().get(extractBodies[bb]).getInertia().getProducts().get(2)]))
+
+#Get the joint parameters
+#Loop through bodies
+for jj in range(len(extractJoints)):
+    
+    #Set joint name
+    jointVals['jointName'].append(nameJoints[jj])
+    
+    #Get location in parent
+    jointVals['locInParent'].append(np.array([model2D_final.getJointSet().get(extractJoints[jj]).get_frames(0).get_translation().get(0),
+                                              model2D_final.getJointSet().get(extractJoints[jj]).get_frames(0).get_translation().get(1),
+                                              model2D_final.getJointSet().get(extractJoints[jj]).get_frames(0).get_translation().get(2)]))
+
+#Write body set specifications to text file
+#Open file to write body set to
+bodySetExtFile = open('bodySet_externalFunction_2D.txt', 'w')
+#Loop through bodies
+for bb in range(len(extractBodies)):
+    
+    #Create current text string for line
+    txtString = extractBodies[bb]+' = new OpenSim::Body("'+extractBodies[bb]+'" , '+\
+        str(bodyVals['bodyMass'][bb])+', Vec3('+str(bodyVals['massCentre'][bb][0])+\
+            ', '+str(bodyVals['massCentre'][bb][1])+', '+str(bodyVals['massCentre'][bb][2])+\
+                '), Inertia('+str(bodyVals['inertia'][bb][0])+', '+str(bodyVals['inertia'][bb][1])+\
+                    ', '+str(bodyVals['inertia'][bb][2])+', '+str(bodyVals['inertia'][bb][3])+\
+                        ', '+str(bodyVals['inertia'][bb][4])+', '+str(bodyVals['inertia'][bb][5])+\
+                            '));'
+        
+    #Write the line to file
+    bodySetExtFile.write('%s\n' % txtString)
+    
+#Close file
+bodySetExtFile.close()
+
+#Write joint set specifications to text file
+jj = 0
+#Open file to write joint set to
+jointSetExtFile = open('jointSet_externalFunction_2D.txt', 'w')
+
+#These are relatively manual don't work well with a loop
+#Text string for ground to pelvis
+txtString = 'ground_pelvis = new PlanarJoint("ground_pelvis'+\
+    '", model->getGround(), Vec3(0), Vec3(0), *pelvis'+\
+        ', Vec3(0), Vec3(0));'
+jointSetExtFile.write('%s\n' % txtString)        
+jj = jj + 1 #increment on joint value index
+
+#Text string for custom hip joints
+txtString = 'hip_l = new CustomJoint("hip_l", *pelvis, Vec3('+\
+    str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
+        ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *femur_l,'+\
+            ' Vec3(0), Vec3(0), st_hip_l);'
+jointSetExtFile.write('%s\n' % txtString)            
+jj = jj + 1 #increment on joint value index
+txtString = 'hip_r = new CustomJoint("hip_r", *pelvis, Vec3('+\
+    str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
+        ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *femur_r,'+\
+            ' Vec3(0), Vec3(0), st_hip_r);'
+jointSetExtFile.write('%s\n' % txtString)            
+jj = jj + 1 #increment on joint value index
+                
+#Text string for custom knee joints
+txtString = 'knee_l = new CustomJoint("knee_l", *femur_l, Vec3('+\
+    str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
+        ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *tibia_l,'+\
+            ' Vec3(0), Vec3(0), st_knee_l);'
+jointSetExtFile.write('%s\n' % txtString)            
+jj = jj + 1 #increment on joint value index
+txtString = 'knee_r = new CustomJoint("knee_l", *femur_r, Vec3('+\
+    str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
+        ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *tibia_r,'+\
+            ' Vec3(0), Vec3(0), st_knee_r);'
+jointSetExtFile.write('%s\n' % txtString)            
+jj = jj + 1 #increment on joint value index 
+
+#Text string for pin ankle joints            
+txtString = 'ankle_l = new PinJoint("ankle_l", *tibia_l, Vec3('+\
+    str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
+        ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *talus_l,'+\
+            ' Vec3(0), Vec3(0));'
+jointSetExtFile.write('%s\n' % txtString)            
+jj = jj + 1 #increment on joint value index
+txtString = 'ankle_r = new PinJoint("ankle_r", *tibia_r, Vec3('+\
+    str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
+        ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *talus_r,'+\
+            ' Vec3(0), Vec3(0));'
+jointSetExtFile.write('%s\n' % txtString)            
+jj = jj + 1 #increment on joint value index
+
+#Text string for weld subtalar joints
+txtString = 'subtalar_l = new WeldJoint("subtalar_l", *talus_l, Vec3('+\
+    str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
+        ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *calcn_l,'+\
+            ' Vec3(0), Vec3(0));'
+jointSetExtFile.write('%s\n' % txtString)            
+jj = jj + 1 #increment on joint value index
+txtString = 'subtalar_r = new WeldJoint("subtalar_r", *talus_r, Vec3('+\
+    str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
+        ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *calcn_r,'+\
+            ' Vec3(0), Vec3(0));'
+jointSetExtFile.write('%s\n' % txtString)            
+jj = jj + 1 #increment on joint value index
+
+#Text string for weld mtp joints
+txtString = 'mtp_l = new WeldJoint("mtp_l", *calcn_l, Vec3('+\
+    str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
+        ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *toes_l,'+\
+            ' Vec3(0), Vec3(0));'
+jointSetExtFile.write('%s\n' % txtString)            
+jj = jj + 1 #increment on joint value index
+txtString = 'mtp_r = new WeldJoint("mtp_r", *calcn_r, Vec3('+\
+    str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
+        ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *toes_r,'+\
+            ' Vec3(0), Vec3(0));'
+jointSetExtFile.write('%s\n' % txtString)            
+jj = jj + 1 #increment on joint value index
+
+#text string for back pin joint
+txtString = 'back = new PinJoint("back", *pelvis, Vec3('+\
+    str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
+        ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *torso,'+\
+            ' Vec3(0), Vec3(0));'
+jointSetExtFile.write('%s\n' % txtString)            
+
+#Close file
+jointSetExtFile.close()
+
+#Convert Falisse et al. 2D contact parameter sizes and locations to present
+#model based on variations in body size from scaling. This relates to spheres
+#placed at the heel and the toe in the 2D model
+
+#Set the original parameters from the PredSim_2D model
+radiusSphere_heel = 0.035
+radiusSphere_front = 0.015
+locSphere_heel_l = np.array([0.031307527581931796, 0.010435842527310599, 0])
+locSphere_front_l = np.array([0.1774093229642802, -0.015653763790965898, -0.005217921263655299])
+locSphere_heel_r = np.array([0.031307527581931796, 0.010435842527310599, 0])
+locSphere_front_r = np.array([0.1774093229642802, -0.015653763790965898, 0.005217921263655299])
+
+#Our generic model is a relatively similar size (not so much mass) to the 2D
+#model from Falisse et al., so we'll scale these parameters based on the original
+#scaling factors. Sphere size and placement doesn't matter so much as optimising
+#kinematics when trying to track GRFs --- so the placement here doesn't need to
+#be super refined
+
+#Use the same scale factors as before to scale the size and location of the 2D spheres
+#Left heel location
+locSphereNew_heel_l = np.array([locSphere_heel_l[0] * scaleFactors['calcn_l'][0],
+                                locSphere_heel_l[1] * scaleFactors['calcn_l'][1],
+                                locSphere_heel_l[2] * scaleFactors['calcn_l'][2]])
+#Right heel location
+locSphereNew_heel_r = np.array([locSphere_heel_r[0] * scaleFactors['calcn_r'][0],
+                                locSphere_heel_r[1] * scaleFactors['calcn_r'][1],
+                                locSphere_heel_r[2] * scaleFactors['calcn_r'][2]])
+#Left front location
+locSphereNew_front_l = np.array([locSphere_front_l[0] * scaleFactors['toes_l'][0],
+                                 locSphere_front_l[1] * scaleFactors['toes_l'][1],
+                                 locSphere_front_l[2] * scaleFactors['toes_l'][2]])
+#Right front location
+locSphereNew_front_r = np.array([locSphere_front_r[0] * scaleFactors['toes_r'][0],
+                                 locSphere_front_r[1] * scaleFactors['toes_r'][1],
+                                 locSphere_front_r[2] * scaleFactors['toes_r'][2]])
+#Heel size
+radiusSphereNew_heel = radiusSphere_heel * ((heelSphereScale_l + heelSphereScale_r) / 2)
+#Front size
+radiusSphereNew_front = radiusSphere_front * ((toesSphereScale_l + toesSphereScale_r) / 2)
+
+#Write this contact sphere parameters section to a text file
+contactParamsExtFile = open('contactParameters_externalFunction_2D.txt', 'w')
+contactParamsExtFile.write('osim_double_adouble radiusSphere_heel = '+str(radiusSphereNew_heel)+';\n')
+contactParamsExtFile.write('osim_double_adouble radiusSphere_front = '+str(radiusSphereNew_front)+';\n')
+contactParamsExtFile.write('osim_double_adouble stiffness_heel = 3067776;\n')          
+contactParamsExtFile.write('osim_double_adouble stiffness_front = 3067776;\n')
+contactParamsExtFile.write('osim_double_adouble dissipation = 2.0;\n')
+contactParamsExtFile.write('osim_double_adouble staticFriction = 0.8;\n')
+contactParamsExtFile.write('osim_double_adouble dynamicFriction = 0.8;\n')
+contactParamsExtFile.write('osim_double_adouble viscousFriction = 0.5;\n')
+contactParamsExtFile.write('osim_double_adouble transitionVelocity = 0.2;\n')
+contactParamsExtFile.write('Vec3 halfSpaceLocation(0);\n')
+contactParamsExtFile.write('Vec3 halfSpaceOrientation(0, 0, -0.5*SimTK::Pi);\n')
+contactParamsExtFile.write('Vec3 locSphere_heel_l = Vec3('+\
+                               str(locSphereNew_heel_l[0])+', '+str(locSphereNew_heel_l[1])+\
+                                   ', '+str(locSphereNew_heel_l[2])+');\n')
+contactParamsExtFile.write('Vec3 locSphere_front_l = Vec3('+\
+                               str(locSphereNew_front_l[0])+', '+str(locSphereNew_front_l[1])+\
+                                   ', '+str(locSphereNew_front_l[2])+');\n')
+contactParamsExtFile.write('Vec3 locSphere_heel_r = Vec3('+\
+                               str(locSphereNew_heel_r[0])+', '+str(locSphereNew_heel_r[1])+\
+                                   ', '+str(locSphereNew_heel_r[2])+');\n')
+contactParamsExtFile.write('Vec3 locSphere_front_r = Vec3('+\
+                               str(locSphereNew_front_r[0])+', '+str(locSphereNew_front_r[1])+\
+                                   ', '+str(locSphereNew_front_r[2])+');\n')
+#Close file
+contactParamsExtFile.close()
+
+# %% OLD BELOW...
 
 # %% Run an inverse simulation to on experimental data
 

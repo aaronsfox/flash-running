@@ -1,0 +1,15 @@
+osim_double_adouble radiusSphere_heel = 0.04485840333333333;
+osim_double_adouble radiusSphere_front = 0.019225029999999997;
+osim_double_adouble stiffness_heel = 3067776;
+osim_double_adouble stiffness_front = 3067776;
+osim_double_adouble dissipation = 2.0;
+osim_double_adouble staticFriction = 0.8;
+osim_double_adouble dynamicFriction = 0.8;
+osim_double_adouble viscousFriction = 0.5;
+osim_double_adouble transitionVelocity = 0.2;
+Vec3 halfSpaceLocation(0);
+Vec3 halfSpaceOrientation(0, 0, -0.5*SimTK::Pi);
+Vec3 locSphere_heel_l = Vec3(0.029686361188684205, 0.0151974043972466050.0);
+Vec3 locSphere_front_l = Vec3(0.16822271340254383, -0.02279610659586991-0.007583048434832337);
+Vec3 locSphere_heel_r = Vec3(0.02951842761073472, 0.0150972203089844230.0);
+Vec3 locSphere_front_r = Vec3(0.16727108979416344, -0.0226458304634766340.007528051544713411);

@@ -963,8 +963,8 @@ def statesTo2D(statesFileName = None, outputFileName = 'coordinates.sto'):
     #Get current column labels 
     angleNames = list(origStorage.getColumnLabels())
     
-    #Rename walker knee to standard knee joint
-    angleNames = [sub.replace('walker_knee_', 'knee_') for sub in angleNames] 
+    # #Rename walker knee to standard knee joint
+    # angleNames = [sub.replace('walker_knee_', 'knee_') for sub in angleNames] 
     
     #Output as temp .sto to get back as storage
     stoAdapter = osim.STOFileAdapter()
@@ -982,19 +982,19 @@ def statesTo2D(statesFileName = None, outputFileName = 'coordinates.sto'):
     #Rename labels in storage
     newStorage.setColumnLabels(colLabels)
     
-    #Figure out the state index of the knee angles
-    rKneeInd = angleNames.index('/jointset/knee_r/knee_angle_r/value')
-    lKneeInd = angleNames.index('/jointset/knee_l/knee_angle_l/value')
+    # #Figure out the state index of the knee angles
+    # rKneeInd = angleNames.index('/jointset/knee_r/knee_angle_r/value')
+    # lKneeInd = angleNames.index('/jointset/knee_l/knee_angle_l/value')
 
-    #Invert knee angles to match different model
-    #Loop through the length of the data
-    for cc in range(0,newStorage.getSize()):
-        #Get the current knee angle values
-        rKneeVal = newStorage.getStateVector(cc).getData().getitem(rKneeInd)
-        lKneeVal = newStorage.getStateVector(cc).getData().getitem(lKneeInd)
-        #Replace with inverted value
-        newStorage.getStateVector(cc).getData().setitem(rKneeInd,rKneeVal*-1)
-        newStorage.getStateVector(cc).getData().setitem(lKneeInd,lKneeVal*-1)
+    # #Invert knee angles to match different model
+    # #Loop through the length of the data
+    # for cc in range(0,newStorage.getSize()):
+    #     #Get the current knee angle values
+    #     rKneeVal = newStorage.getStateVector(cc).getData().getitem(rKneeInd)
+    #     lKneeVal = newStorage.getStateVector(cc).getData().getitem(lKneeInd)
+    #     #Replace with inverted value
+    #     newStorage.getStateVector(cc).getData().setitem(rKneeInd,rKneeVal*-1)
+    #     newStorage.getStateVector(cc).getData().setitem(lKneeInd,lKneeVal*-1)
     
     #Cleanup temp.sto
     os.remove('temp.sto')

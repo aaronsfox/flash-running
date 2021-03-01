@@ -1,89 +1,89 @@
-[2020-10-07 20:56:16.901] [info] Processing subject ...
-[2020-10-07 20:56:16.901] [info] Step 1: Loading generic model
-[2020-10-07 20:56:16.959] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
-[2020-10-07 20:56:17.285] [info] Step 2: Scaling generic model
-[2020-10-07 20:56:17.419] [info] Loaded marker file staticVirtualMarkers.trc (58 markers, 483 frames)
-[2020-10-07 20:56:17.420] [info] Measurement 'torso_height'
-[2020-10-07 20:56:17.420] [info] 	pair 0 (MTOR, MPEL): model = 0.468396, experimental = 0.466528
-[2020-10-07 20:56:17.420] [info] 	overall scale factor = 0.996011
-[2020-10-07 20:56:17.420] [info] Measurement 'torso_breadth'
-[2020-10-07 20:56:17.420] [info] 	pair 0 (C7, CLAV): model = 0.146032, experimental = 0.146906
-[2020-10-07 20:56:17.421] [info] 	pair 1 (T10, STRN): model = 0.222121, experimental = 0.241562
-[2020-10-07 20:56:17.421] [info] 	overall scale factor = 1.04675
-[2020-10-07 20:56:17.421] [info] Measurement 'torso_width'
-[2020-10-07 20:56:17.421] [info] 	pair 0 (RACR, LACR): model = 0.283321, experimental = 0.345905
-[2020-10-07 20:56:17.421] [info] 	overall scale factor = 1.22089
-[2020-10-07 20:56:17.422] [info] Measurement 'pelvis_w'
-[2020-10-07 20:56:17.422] [info] 	pair 0 (RASI, LASI): model = 0.25789, experimental = 0.216053
-[2020-10-07 20:56:17.422] [info] 	pair 1 (RPSI, LPSI): model = 0.092731, experimental = 0.0960037
-[2020-10-07 20:56:17.422] [info] 	overall scale factor = 0.936532
-[2020-10-07 20:56:17.422] [info] Measurement 'pelvis_d'
-[2020-10-07 20:56:17.422] [info] 	pair 0 (RASI, RPSI): model = 0.201128, experimental = 0.188603
-[2020-10-07 20:56:17.423] [info] 	pair 1 (LASI, LPSI): model = 0.192488, experimental = 0.188085
-[2020-10-07 20:56:17.423] [info] 	overall scale factor = 0.957426
-[2020-10-07 20:56:17.423] [info] Measurement 'pelvis_h'
-[2020-10-07 20:56:17.423] [info] 	pair 0 (MPEL, RHJC): model = 0.131542, experimental = 0.105614
-[2020-10-07 20:56:17.423] [info] 	pair 1 (MPEL, LHJC): model = 0.131025, experimental = 0.108303
-[2020-10-07 20:56:17.423] [info] 	overall scale factor = 0.814735
-[2020-10-07 20:56:17.424] [info] Measurement 'r_thigh_length'
-[2020-10-07 20:56:17.424] [info] 	pair 0 (RHJC, RKJC): model = 0.390494, experimental = 0.46219
-[2020-10-07 20:56:17.424] [info] 	overall scale factor = 1.1836
-[2020-10-07 20:56:17.424] [info] Measurement 'r_thigh_breadth'
-[2020-10-07 20:56:17.424] [info] 	pair 0 (RLFC, RMFC): model = 0.108539, experimental = 0.125179
-[2020-10-07 20:56:17.424] [info] 	overall scale factor = 1.1533
-[2020-10-07 20:56:17.424] [info] Measurement 'r_tibia_length'
-[2020-10-07 20:56:17.425] [info] 	pair 0 (RKJC, RAJC): model = 0.391627, experimental = 0.437658
-[2020-10-07 20:56:17.425] [info] 	overall scale factor = 1.11754
-[2020-10-07 20:56:17.425] [info] Measurement 'r_tibia_breadth'
-[2020-10-07 20:56:17.425] [info] 	pair 0 (RLMAL, RMMAL): model = 0.093372, experimental = 0.0955162
-[2020-10-07 20:56:17.425] [info] 	overall scale factor = 1.02296
-[2020-10-07 20:56:17.425] [info] Measurement 'r_foot_length'
-[2020-10-07 20:56:17.426] [info] 	pair 0 (fRCAL, fRAJC): model = 0.0941763, experimental = 0.0694764
-[2020-10-07 20:56:17.426] [info] 	pair 1 (fRAJC, fRMT3): model = 0.129502, experimental = 0.148666
-[2020-10-07 20:56:17.426] [info] 	overall scale factor = 0.942854
-[2020-10-07 20:56:17.426] [info] Measurement 'r_foot_height'
-[2020-10-07 20:56:17.426] [info] 	pair 0 (RAJC, fRAJC): model = 0.0696915, experimental = 0.100821
-[2020-10-07 20:56:17.426] [info] 	overall scale factor = 1.44667
-[2020-10-07 20:56:17.426] [info] Measurement 'r_foot_width'
-[2020-10-07 20:56:17.427] [info] 	pair 0 (fRMT1, fRMT5): model = 0.0759802, experimental = 0.109619
-[2020-10-07 20:56:17.427] [info] 	overall scale factor = 1.44273
-[2020-10-07 20:56:17.427] [info] Measurement 'l_thigh_length'
-[2020-10-07 20:56:17.427] [info] 	pair 0 (LHJC, LKJC): model = 0.390494, experimental = 0.474762
-[2020-10-07 20:56:17.427] [info] 	overall scale factor = 1.2158
-[2020-10-07 20:56:17.427] [info] Measurement 'l_thigh_breadth'
-[2020-10-07 20:56:17.427] [info] 	pair 0 (LLFC, LMFC): model = 0.108539, experimental = 0.125672
-[2020-10-07 20:56:17.427] [info] 	overall scale factor = 1.15785
-[2020-10-07 20:56:17.428] [info] Measurement 'l_tibia_length'
-[2020-10-07 20:56:17.428] [info] 	pair 0 (LKJC, LAJC): model = 0.391627, experimental = 0.433973
-[2020-10-07 20:56:17.428] [info] 	overall scale factor = 1.10813
-[2020-10-07 20:56:17.428] [info] Measurement 'l_tibia_breadth'
-[2020-10-07 20:56:17.428] [info] 	pair 0 (LLMAL, LMMAL): model = 0.093372, experimental = 0.0950852
-[2020-10-07 20:56:17.428] [info] 	overall scale factor = 1.01835
-[2020-10-07 20:56:17.428] [info] Measurement 'l_foot_length'
-[2020-10-07 20:56:17.428] [info] 	pair 0 (fLCAL, fLAJC): model = 0.0954936, experimental = 0.068191
-[2020-10-07 20:56:17.428] [info] 	pair 1 (fLAJC, fLMT3): model = 0.129723, experimental = 0.153377
-[2020-10-07 20:56:17.428] [info] 	overall scale factor = 0.948218
-[2020-10-07 20:56:17.429] [info] Measurement 'l_foot_height'
-[2020-10-07 20:56:17.429] [info] 	pair 0 (LAJC, fLAJC): model = 0.0696334, experimental = 0.101405
-[2020-10-07 20:56:17.429] [info] 	overall scale factor = 1.45627
-[2020-10-07 20:56:17.429] [info] Measurement 'l_foot_width'
-[2020-10-07 20:56:17.429] [info] 	pair 0 (fLMT1, fLMT5): model = 0.0759802, experimental = 0.110420
-[2020-10-07 20:56:17.429] [info] 	overall scale factor = 1.45327
-[2020-10-07 20:56:17.694] [info] Wrote model file 'scaledModel.osim' from model.
-[2020-10-07 20:56:17.699] [info] Wrote scale file 'scaleSet.xml' for model model.
-[2020-10-07 20:56:17.699] [info] Step 3: Placing markers on model
-[2020-10-07 20:56:17.797] [info] Loaded marker file staticVirtualMarkers.trc (58 markers, 483 frames)
-[2020-10-07 20:56:17.798] [info] Averaged frames from time 0.5 to 1.5 in staticVirtualMarkers.trc (frames 126 to 376)
-[2020-10-07 20:56:17.799] [info] Deleted 0 unused markers from model model.
-[2020-10-07 20:56:17.927] [info] Frame at (t = 0.5):	 total squared error = 0.0573014, marker error: RMS = 0.0322776, max = 0.0574159 (LTH2)
-[2020-10-07 20:56:17.928] [info] Moved markers in model model to match locations in marker file 'staticVirtualMarkers.trc'.
-[2020-10-07 20:56:17.981] [info] Wrote model file 'scaledModelAdjusted.osim' from model model.
-[2020-10-07 20:56:18.094] [info] Loaded model model from file scaledModelAdjusted.osim
-[2020-10-07 20:56:18.289] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
-[2020-10-07 20:56:18.447] [info] Loaded model scaledModel from file scaledModelAdjusted.osim
-[2020-10-07 20:56:18.721] [info] Loaded model scaledModel from file scaledModelMuscle.osim
-[2020-10-07 20:56:25.540] [info] Loaded model scaledModel from file scaledModelMuscle.osim
-[2020-10-07 20:56:35.954] [cout] [info] 
+[2021-02-23 11:21:27.028] [info] Processing subject ...
+[2021-02-23 11:21:27.028] [info] Step 1: Loading generic model
+[2021-02-23 11:21:27.093] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
+[2021-02-23 11:21:27.583] [info] Step 2: Scaling generic model
+[2021-02-23 11:21:27.694] [info] Loaded marker file staticVirtualMarkers.trc (58 markers, 483 frames)
+[2021-02-23 11:21:27.695] [info] Measurement 'torso_height'
+[2021-02-23 11:21:27.696] [info] 	pair 0 (MTOR, MPEL): model = 0.468396, experimental = 0.466528
+[2021-02-23 11:21:27.696] [info] 	overall scale factor = 0.996011
+[2021-02-23 11:21:27.696] [info] Measurement 'torso_breadth'
+[2021-02-23 11:21:27.696] [info] 	pair 0 (C7, CLAV): model = 0.146032, experimental = 0.146906
+[2021-02-23 11:21:27.697] [info] 	pair 1 (T10, STRN): model = 0.222121, experimental = 0.241562
+[2021-02-23 11:21:27.697] [info] 	overall scale factor = 1.04675
+[2021-02-23 11:21:27.697] [info] Measurement 'torso_width'
+[2021-02-23 11:21:27.697] [info] 	pair 0 (RACR, LACR): model = 0.283321, experimental = 0.345905
+[2021-02-23 11:21:27.698] [info] 	overall scale factor = 1.22089
+[2021-02-23 11:21:27.698] [info] Measurement 'pelvis_w'
+[2021-02-23 11:21:27.698] [info] 	pair 0 (RASI, LASI): model = 0.25789, experimental = 0.216053
+[2021-02-23 11:21:27.698] [info] 	pair 1 (RPSI, LPSI): model = 0.092731, experimental = 0.0960037
+[2021-02-23 11:21:27.698] [info] 	overall scale factor = 0.936532
+[2021-02-23 11:21:27.698] [info] Measurement 'pelvis_d'
+[2021-02-23 11:21:27.699] [info] 	pair 0 (RASI, RPSI): model = 0.201128, experimental = 0.188603
+[2021-02-23 11:21:27.699] [info] 	pair 1 (LASI, LPSI): model = 0.192488, experimental = 0.188085
+[2021-02-23 11:21:27.699] [info] 	overall scale factor = 0.957426
+[2021-02-23 11:21:27.699] [info] Measurement 'pelvis_h'
+[2021-02-23 11:21:27.700] [info] 	pair 0 (MPEL, RHJC): model = 0.131542, experimental = 0.105614
+[2021-02-23 11:21:27.700] [info] 	pair 1 (MPEL, LHJC): model = 0.131025, experimental = 0.108303
+[2021-02-23 11:21:27.700] [info] 	overall scale factor = 0.814735
+[2021-02-23 11:21:27.700] [info] Measurement 'r_thigh_length'
+[2021-02-23 11:21:27.701] [info] 	pair 0 (RHJC, RKJC): model = 0.390494, experimental = 0.46219
+[2021-02-23 11:21:27.701] [info] 	overall scale factor = 1.1836
+[2021-02-23 11:21:27.701] [info] Measurement 'r_thigh_breadth'
+[2021-02-23 11:21:27.701] [info] 	pair 0 (RLFC, RMFC): model = 0.108539, experimental = 0.125179
+[2021-02-23 11:21:27.702] [info] 	overall scale factor = 1.1533
+[2021-02-23 11:21:27.702] [info] Measurement 'r_tibia_length'
+[2021-02-23 11:21:27.702] [info] 	pair 0 (RKJC, RAJC): model = 0.391627, experimental = 0.437658
+[2021-02-23 11:21:27.702] [info] 	overall scale factor = 1.11754
+[2021-02-23 11:21:27.703] [info] Measurement 'r_tibia_breadth'
+[2021-02-23 11:21:27.703] [info] 	pair 0 (RLMAL, RMMAL): model = 0.093372, experimental = 0.0955162
+[2021-02-23 11:21:27.703] [info] 	overall scale factor = 1.02296
+[2021-02-23 11:21:27.703] [info] Measurement 'r_foot_length'
+[2021-02-23 11:21:27.704] [info] 	pair 0 (fRCAL, fRAJC): model = 0.0941763, experimental = 0.0694764
+[2021-02-23 11:21:27.704] [info] 	pair 1 (fRAJC, fRMT3): model = 0.129502, experimental = 0.148666
+[2021-02-23 11:21:27.704] [info] 	overall scale factor = 0.942854
+[2021-02-23 11:21:27.704] [info] Measurement 'r_foot_height'
+[2021-02-23 11:21:27.706] [info] 	pair 0 (RAJC, fRAJC): model = 0.0696915, experimental = 0.100821
+[2021-02-23 11:21:27.707] [info] 	overall scale factor = 1.44667
+[2021-02-23 11:21:27.707] [info] Measurement 'r_foot_width'
+[2021-02-23 11:21:27.707] [info] 	pair 0 (fRMT1, fRMT5): model = 0.0759802, experimental = 0.109619
+[2021-02-23 11:21:27.707] [info] 	overall scale factor = 1.44273
+[2021-02-23 11:21:27.709] [info] Measurement 'l_thigh_length'
+[2021-02-23 11:21:27.709] [info] 	pair 0 (LHJC, LKJC): model = 0.390494, experimental = 0.474762
+[2021-02-23 11:21:27.709] [info] 	overall scale factor = 1.2158
+[2021-02-23 11:21:27.709] [info] Measurement 'l_thigh_breadth'
+[2021-02-23 11:21:27.710] [info] 	pair 0 (LLFC, LMFC): model = 0.108539, experimental = 0.125672
+[2021-02-23 11:21:27.710] [info] 	overall scale factor = 1.15785
+[2021-02-23 11:21:27.710] [info] Measurement 'l_tibia_length'
+[2021-02-23 11:21:27.710] [info] 	pair 0 (LKJC, LAJC): model = 0.391627, experimental = 0.433973
+[2021-02-23 11:21:27.710] [info] 	overall scale factor = 1.10813
+[2021-02-23 11:21:27.711] [info] Measurement 'l_tibia_breadth'
+[2021-02-23 11:21:27.711] [info] 	pair 0 (LLMAL, LMMAL): model = 0.093372, experimental = 0.0950852
+[2021-02-23 11:21:27.711] [info] 	overall scale factor = 1.01835
+[2021-02-23 11:21:27.712] [info] Measurement 'l_foot_length'
+[2021-02-23 11:21:27.712] [info] 	pair 0 (fLCAL, fLAJC): model = 0.0954936, experimental = 0.068191
+[2021-02-23 11:21:27.712] [info] 	pair 1 (fLAJC, fLMT3): model = 0.129723, experimental = 0.153377
+[2021-02-23 11:21:27.712] [info] 	overall scale factor = 0.948218
+[2021-02-23 11:21:27.712] [info] Measurement 'l_foot_height'
+[2021-02-23 11:21:27.713] [info] 	pair 0 (LAJC, fLAJC): model = 0.0696334, experimental = 0.101405
+[2021-02-23 11:21:27.713] [info] 	overall scale factor = 1.45627
+[2021-02-23 11:21:27.713] [info] Measurement 'l_foot_width'
+[2021-02-23 11:21:27.714] [info] 	pair 0 (fLMT1, fLMT5): model = 0.0759802, experimental = 0.110420
+[2021-02-23 11:21:27.714] [info] 	overall scale factor = 1.45327
+[2021-02-23 11:21:27.966] [info] Wrote model file 'scaledModel.osim' from model.
+[2021-02-23 11:21:27.987] [info] Wrote scale file 'scaleSet.xml' for model model.
+[2021-02-23 11:21:27.988] [info] Step 3: Placing markers on model
+[2021-02-23 11:21:28.119] [info] Loaded marker file staticVirtualMarkers.trc (58 markers, 483 frames)
+[2021-02-23 11:21:28.120] [info] Averaged frames from time 0.5 to 1.5 in staticVirtualMarkers.trc (frames 126 to 376)
+[2021-02-23 11:21:28.120] [info] Deleted 0 unused markers from model model.
+[2021-02-23 11:21:28.247] [info] Frame at (t = 0.5):	 total squared error = 0.0573014, marker error: RMS = 0.0322776, max = 0.0574159 (LTH2)
+[2021-02-23 11:21:28.247] [info] Moved markers in model model to match locations in marker file 'staticVirtualMarkers.trc'.
+[2021-02-23 11:21:28.306] [info] Wrote model file 'scaledModelAdjusted.osim' from model model.
+[2021-02-23 11:21:28.408] [info] Loaded model model from file scaledModelAdjusted.osim
+[2021-02-23 11:21:28.664] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
+[2021-02-23 11:21:28.816] [info] Loaded model scaledModel from file scaledModelAdjusted.osim
+[2021-02-23 11:21:29.099] [info] Loaded model scaledModel from file scaledModelMuscle.osim
+[2021-02-23 11:21:29.217] [info] Loaded model scaledModel from file scaledModelMuscle.osim
+[2021-02-23 11:23:31.167] [cout] [info] 
                MODEL: scaledModel
          coordinates: 25
               forces: 95
@@ -98,1306 +98,141 @@
          controllers: 0
   contact geometries: 13
 misc modelcomponents: 0
-[2020-10-07 20:56:35.955] [info] Running tool .
-[2020-10-07 20:56:36.172] [info] Frame 217 (t = 0.868):	 total squared error = 0.0328875, marker error: RMS = 0.0320583, max = 0.104913 (LTH1)
-[2020-10-07 20:56:36.195] [info] Frame 218 (t = 0.872):	 total squared error = 0.033116, marker error: RMS = 0.0321695, max = 0.104834 (LTH1)
-[2020-10-07 20:56:36.223] [info] Frame 219 (t = 0.876):	 total squared error = 0.0334595, marker error: RMS = 0.0323359, max = 0.104779 (LTH1)
-[2020-10-07 20:56:36.258] [info] Frame 220 (t = 0.88):	 total squared error = 0.0339779, marker error: RMS = 0.0325854, max = 0.105155 (LTH1)
-[2020-10-07 20:56:36.282] [info] Frame 221 (t = 0.884):	 total squared error = 0.0347077, marker error: RMS = 0.0329335, max = 0.105486 (LTH1)
-[2020-10-07 20:56:36.304] [info] Frame 222 (t = 0.888):	 total squared error = 0.0359696, marker error: RMS = 0.0335268, max = 0.106692 (LTH1)
-[2020-10-07 20:56:36.323] [info] Frame 223 (t = 0.892):	 total squared error = 0.0370993, marker error: RMS = 0.0340493, max = 0.107958 (LTH1)
-[2020-10-07 20:56:36.359] [info] Frame 224 (t = 0.896):	 total squared error = 0.0380041, marker error: RMS = 0.034462, max = 0.109226 (LTH1)
-[2020-10-07 20:56:36.407] [info] Frame 225 (t = 0.9):	 total squared error = 0.0386653, marker error: RMS = 0.0347605, max = 0.110772 (LTH1)
-[2020-10-07 20:56:36.437] [info] Frame 226 (t = 0.904000):	 total squared error = 0.0392445, marker error: RMS = 0.0350198, max = 0.112044 (LTH1)
-[2020-10-07 20:56:36.458] [info] Frame 227 (t = 0.908000):	 total squared error = 0.0395479, marker error: RMS = 0.035155, max = 0.11311 (LTH1)
-[2020-10-07 20:56:36.488] [info] Frame 228 (t = 0.912):	 total squared error = 0.0397872, marker error: RMS = 0.0352612, max = 0.113095 (LTH1)
-[2020-10-07 20:56:36.515] [info] Frame 229 (t = 0.916):	 total squared error = 0.0400162, marker error: RMS = 0.0353625, max = 0.112446 (LTH1)
-[2020-10-07 20:56:36.564] [info] Frame 230 (t = 0.92):	 total squared error = 0.0404042, marker error: RMS = 0.0355335, max = 0.111995 (LTH1)
-[2020-10-07 20:56:36.585] [info] Frame 231 (t = 0.924):	 total squared error = 0.0406623, marker error: RMS = 0.0356468, max = 0.111525 (LTH1)
-[2020-10-07 20:56:36.614] [info] Frame 232 (t = 0.928):	 total squared error = 0.0410683, marker error: RMS = 0.0358244, max = 0.111121 (LTH1)
-[2020-10-07 20:56:36.637] [info] Frame 233 (t = 0.932):	 total squared error = 0.0412699, marker error: RMS = 0.0359122, max = 0.110527 (LTH1)
-[2020-10-07 20:56:36.689] [info] Frame 234 (t = 0.936):	 total squared error = 0.0414255, marker error: RMS = 0.0359798, max = 0.109364 (LTH1)
-[2020-10-07 20:56:36.718] [info] Frame 235 (t = 0.94):	 total squared error = 0.0415966, marker error: RMS = 0.0360540, max = 0.108450 (LTH1)
-[2020-10-07 20:56:36.748] [info] Frame 236 (t = 0.944):	 total squared error = 0.0418838, marker error: RMS = 0.0361783, max = 0.107430 (LTH1)
-[2020-10-07 20:56:36.781] [info] Frame 237 (t = 0.948):	 total squared error = 0.0420861, marker error: RMS = 0.0362656, max = 0.106502 (LTH1)
-[2020-10-07 20:56:36.801] [info] Frame 238 (t = 0.952):	 total squared error = 0.0420011, marker error: RMS = 0.0362289, max = 0.105271 (LTH1)
-[2020-10-07 20:56:36.826] [info] Frame 239 (t = 0.956):	 total squared error = 0.0419794, marker error: RMS = 0.0362196, max = 0.104395 (LTH1)
-[2020-10-07 20:56:36.851] [info] Frame 240 (t = 0.96):	 total squared error = 0.0418491, marker error: RMS = 0.0361633, max = 0.103389 (LTH1)
-[2020-10-07 20:56:36.869] [info] Frame 241 (t = 0.964):	 total squared error = 0.0417692, marker error: RMS = 0.0361288, max = 0.102354 (LTH1)
-[2020-10-07 20:56:36.894] [info] Frame 242 (t = 0.968):	 total squared error = 0.0414742, marker error: RMS = 0.0360010, max = 0.101276 (LTH1)
-[2020-10-07 20:56:36.920] [info] Frame 243 (t = 0.972):	 total squared error = 0.0412375, marker error: RMS = 0.0358981, max = 0.100691 (LTH2)
-[2020-10-07 20:56:36.941] [info] Frame 244 (t = 0.976):	 total squared error = 0.0408629, marker error: RMS = 0.0357347, max = 0.101772 (LTH2)
-[2020-10-07 20:56:36.970] [info] Frame 245 (t = 0.98):	 total squared error = 0.0404235, marker error: RMS = 0.035542, max = 0.102866 (LTH2)
-[2020-10-07 20:56:37.002] [info] Frame 246 (t = 0.984):	 total squared error = 0.0402470, marker error: RMS = 0.0354643, max = 0.104147 (LTH2)
-[2020-10-07 20:56:37.028] [info] Frame 247 (t = 0.988):	 total squared error = 0.0399672, marker error: RMS = 0.0353409, max = 0.105363 (LTH2)
-[2020-10-07 20:56:37.067] [info] Frame 248 (t = 0.992):	 total squared error = 0.0399433, marker error: RMS = 0.0353303, max = 0.106614 (LTH2)
-[2020-10-07 20:56:37.097] [info] Frame 249 (t = 0.996):	 total squared error = 0.0398292, marker error: RMS = 0.0352798, max = 0.107834 (LTH2)
-[2020-10-07 20:56:37.127] [info] Frame 250 (t = 1.0):	 total squared error = 0.0396294, marker error: RMS = 0.0351912, max = 0.108619 (LTH2)
-[2020-10-07 20:56:37.153] [info] Frame 251 (t = 1.00400):	 total squared error = 0.0392618, marker error: RMS = 0.0350276, max = 0.109529 (LTH2)
-[2020-10-07 20:56:37.177] [info] Frame 252 (t = 1.00800):	 total squared error = 0.0388135, marker error: RMS = 0.034827, max = 0.110283 (LTH2)
-[2020-10-07 20:56:37.201] [info] Frame 253 (t = 1.012):	 total squared error = 0.0382311, marker error: RMS = 0.0345647, max = 0.111144 (LTH2)
-[2020-10-07 20:56:37.231] [info] Frame 254 (t = 1.016):	 total squared error = 0.0374656, marker error: RMS = 0.0342169, max = 0.111876 (LTH2)
-[2020-10-07 20:56:37.278] [info] Frame 255 (t = 1.02):	 total squared error = 0.036744, marker error: RMS = 0.0338858, max = 0.112973 (LTH2)
-[2020-10-07 20:56:37.306] [info] Frame 256 (t = 1.024):	 total squared error = 0.0359648, marker error: RMS = 0.0335246, max = 0.113848 (LTH2)
-[2020-10-07 20:56:37.334] [info] Frame 257 (t = 1.028):	 total squared error = 0.0351497, marker error: RMS = 0.0331425, max = 0.114957 (LTH2)
-[2020-10-07 20:56:37.367] [info] Frame 258 (t = 1.032):	 total squared error = 0.0345295, marker error: RMS = 0.0328488, max = 0.115392 (LTH2)
-[2020-10-07 20:56:37.408] [info] Frame 259 (t = 1.036):	 total squared error = 0.0339143, marker error: RMS = 0.0325549, max = 0.115563 (LTH2)
-[2020-10-07 20:56:37.439] [info] Frame 260 (t = 1.04):	 total squared error = 0.0333573, marker error: RMS = 0.0322865, max = 0.115832 (LTH2)
-[2020-10-07 20:56:37.473] [info] Frame 261 (t = 1.044):	 total squared error = 0.0328257, marker error: RMS = 0.0320282, max = 0.115876 (LTH2)
-[2020-10-07 20:56:37.520] [info] Frame 262 (t = 1.048):	 total squared error = 0.0322552, marker error: RMS = 0.0317486, max = 0.115627 (LTH2)
-[2020-10-07 20:56:37.549] [info] Frame 263 (t = 1.052):	 total squared error = 0.0317134, marker error: RMS = 0.0314809, max = 0.115376 (LTH2)
-[2020-10-07 20:56:37.576] [info] Frame 264 (t = 1.056):	 total squared error = 0.031245, marker error: RMS = 0.0312475, max = 0.115002 (LTH2)
-[2020-10-07 20:56:37.617] [info] Frame 265 (t = 1.06):	 total squared error = 0.0307974, marker error: RMS = 0.0310229, max = 0.114137 (LTH2)
-[2020-10-07 20:56:37.644] [info] Frame 266 (t = 1.064):	 total squared error = 0.0304766, marker error: RMS = 0.0308609, max = 0.113342 (LTH2)
-[2020-10-07 20:56:37.674] [info] Frame 267 (t = 1.068):	 total squared error = 0.0302962, marker error: RMS = 0.0307694, max = 0.112535 (LTH2)
-[2020-10-07 20:56:37.702] [info] Frame 268 (t = 1.072):	 total squared error = 0.0301951, marker error: RMS = 0.0307180, max = 0.111559 (LTH2)
-[2020-10-07 20:56:37.727] [info] Frame 269 (t = 1.076):	 total squared error = 0.0302206, marker error: RMS = 0.0307310, max = 0.110527 (LTH2)
-[2020-10-07 20:56:37.770] [info] Frame 270 (t = 1.08):	 total squared error = 0.0302348, marker error: RMS = 0.0307382, max = 0.109266 (LTH2)
-[2020-10-07 20:56:37.797] [info] Frame 271 (t = 1.084):	 total squared error = 0.0302807, marker error: RMS = 0.0307615, max = 0.107960 (LTH2)
-[2020-10-07 20:56:37.828] [info] Frame 272 (t = 1.088):	 total squared error = 0.0303756, marker error: RMS = 0.0308097, max = 0.106864 (LTH2)
-[2020-10-07 20:56:37.859] [info] Frame 273 (t = 1.092):	 total squared error = 0.0304304, marker error: RMS = 0.0308375, max = 0.105740 (LTH2)
-[2020-10-07 20:56:37.888] [info] Frame 274 (t = 1.096):	 total squared error = 0.0305093, marker error: RMS = 0.0308774, max = 0.104445 (LTH2)
-[2020-10-07 20:56:37.913] [info] Frame 275 (t = 1.1):	 total squared error = 0.0306322, marker error: RMS = 0.0309395, max = 0.103393 (LTH2)
-[2020-10-07 20:56:37.934] [info] Frame 276 (t = 1.10400):	 total squared error = 0.0308117, marker error: RMS = 0.0310301, max = 0.102750 (LTH2)
-[2020-10-07 20:56:37.959] [info] Frame 277 (t = 1.10800):	 total squared error = 0.0310014, marker error: RMS = 0.0311255, max = 0.101952 (LTH2)
-[2020-10-07 20:56:37.986] [info] Frame 278 (t = 1.112):	 total squared error = 0.0312127, marker error: RMS = 0.0312313, max = 0.101260 (LTH2)
-[2020-10-07 20:56:38.010] [info] Frame 279 (t = 1.116):	 total squared error = 0.031371, marker error: RMS = 0.0313104, max = 0.100604 (LTH2)
-[2020-10-07 20:56:38.033] [info] Frame 280 (t = 1.12):	 total squared error = 0.0316101, marker error: RMS = 0.0314295, max = 0.100687 (LTH1)
-[2020-10-07 20:56:38.059] [info] Frame 281 (t = 1.124):	 total squared error = 0.0319274, marker error: RMS = 0.0315869, max = 0.100902 (LTH1)
-[2020-10-07 20:56:38.082] [info] Frame 282 (t = 1.128):	 total squared error = 0.0320965, marker error: RMS = 0.0316704, max = 0.100754 (LTH1)
-[2020-10-07 20:56:38.109] [info] Frame 283 (t = 1.132):	 total squared error = 0.0322798, marker error: RMS = 0.0317607, max = 0.100536 (LTH1)
-[2020-10-07 20:56:38.135] [info] Frame 284 (t = 1.136):	 total squared error = 0.0324562, marker error: RMS = 0.0318474, max = 0.100228 (LTH1)
-[2020-10-07 20:56:38.158] [info] Frame 285 (t = 1.14):	 total squared error = 0.0326225, marker error: RMS = 0.0319289, max = 0.0999466 (LTH1)
-[2020-10-07 20:56:38.184] [info] Frame 286 (t = 1.144):	 total squared error = 0.0328041, marker error: RMS = 0.0320176, max = 0.100118 (LTH1)
-[2020-10-07 20:56:38.233] [info] Frame 287 (t = 1.148):	 total squared error = 0.032794, marker error: RMS = 0.0320127, max = 0.0997541 (LTH1)
-[2020-10-07 20:56:38.241] [info] InverseKinematicsTool completed 71 frames in 2 second(s).
-[2020-10-07 20:56:48.436] [info] Storage: read data file = ikResults.mot (nr=71 nc=26)
-[2020-10-07 20:56:48.440] [info] Storage: read data file = ikResults.mot (nr=71 nc=26)
-[2020-10-07 20:56:48.501] [info] Loaded model scaledModel from file scaledModelMuscle.osim
-[2020-10-07 21:04:44.573] [info] Storage: read data file = refQ.sto (nr=71 nc=26)
-[2020-10-07 21:11:24.382] [info] Updating Model file from 30000 to latest format...
-[2020-10-07 21:11:24.398] [info] Loaded model gait9dof18musc_Ong_et_al from file gait9dof18musc_Ong_et_al.osim
-[2020-10-07 22:35:35.485] [info] Processing subject ...
-[2020-10-07 22:35:35.485] [info] Step 1: Loading generic model
-[2020-10-07 22:35:35.638] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
-[2020-10-07 22:35:35.987] [info] Step 2: Scaling generic model
-[2020-10-07 22:35:36.294] [info] Loaded marker file staticVirtualMarkers.trc (58 markers, 483 frames)
-[2020-10-07 22:35:36.294] [info] Measurement 'torso_height'
-[2020-10-07 22:35:36.297] [info] 	pair 0 (MTOR, MPEL): model = 0.468396, experimental = 0.466528
-[2020-10-07 22:35:36.301] [info] 	overall scale factor = 0.996011
-[2020-10-07 22:35:36.301] [info] Measurement 'torso_breadth'
-[2020-10-07 22:35:36.302] [info] 	pair 0 (C7, CLAV): model = 0.146032, experimental = 0.146906
-[2020-10-07 22:35:36.303] [info] 	pair 1 (T10, STRN): model = 0.222121, experimental = 0.241562
-[2020-10-07 22:35:36.304] [info] 	overall scale factor = 1.04675
-[2020-10-07 22:35:36.304] [info] Measurement 'torso_width'
-[2020-10-07 22:35:36.305] [info] 	pair 0 (RACR, LACR): model = 0.283321, experimental = 0.345905
-[2020-10-07 22:35:36.306] [info] 	overall scale factor = 1.22089
-[2020-10-07 22:35:36.306] [info] Measurement 'pelvis_w'
-[2020-10-07 22:35:36.307] [info] 	pair 0 (RASI, LASI): model = 0.25789, experimental = 0.216053
-[2020-10-07 22:35:36.308] [info] 	pair 1 (RPSI, LPSI): model = 0.092731, experimental = 0.0960037
-[2020-10-07 22:35:36.309] [info] 	overall scale factor = 0.936532
-[2020-10-07 22:35:36.313] [info] Measurement 'pelvis_d'
-[2020-10-07 22:35:36.314] [info] 	pair 0 (RASI, RPSI): model = 0.201128, experimental = 0.188603
-[2020-10-07 22:35:36.317] [info] 	pair 1 (LASI, LPSI): model = 0.192488, experimental = 0.188085
-[2020-10-07 22:35:36.318] [info] 	overall scale factor = 0.957426
-[2020-10-07 22:35:36.318] [info] Measurement 'pelvis_h'
-[2020-10-07 22:35:36.319] [info] 	pair 0 (MPEL, RHJC): model = 0.131542, experimental = 0.105614
-[2020-10-07 22:35:36.319] [info] 	pair 1 (MPEL, LHJC): model = 0.131025, experimental = 0.108303
-[2020-10-07 22:35:36.320] [info] 	overall scale factor = 0.814735
-[2020-10-07 22:35:36.320] [info] Measurement 'r_thigh_length'
-[2020-10-07 22:35:36.321] [info] 	pair 0 (RHJC, RKJC): model = 0.390494, experimental = 0.46219
-[2020-10-07 22:35:36.321] [info] 	overall scale factor = 1.1836
-[2020-10-07 22:35:36.322] [info] Measurement 'r_thigh_breadth'
-[2020-10-07 22:35:36.322] [info] 	pair 0 (RLFC, RMFC): model = 0.108539, experimental = 0.125179
-[2020-10-07 22:35:36.323] [info] 	overall scale factor = 1.1533
-[2020-10-07 22:35:36.324] [info] Measurement 'r_tibia_length'
-[2020-10-07 22:35:36.325] [info] 	pair 0 (RKJC, RAJC): model = 0.391627, experimental = 0.437658
-[2020-10-07 22:35:36.329] [info] 	overall scale factor = 1.11754
-[2020-10-07 22:35:36.329] [info] Measurement 'r_tibia_breadth'
-[2020-10-07 22:35:36.330] [info] 	pair 0 (RLMAL, RMMAL): model = 0.093372, experimental = 0.0955162
-[2020-10-07 22:35:36.331] [info] 	overall scale factor = 1.02296
-[2020-10-07 22:35:36.331] [info] Measurement 'r_foot_length'
-[2020-10-07 22:35:36.332] [info] 	pair 0 (fRCAL, fRAJC): model = 0.0941763, experimental = 0.0694764
-[2020-10-07 22:35:36.333] [info] 	pair 1 (fRAJC, fRMT3): model = 0.129502, experimental = 0.148666
-[2020-10-07 22:35:36.334] [info] 	overall scale factor = 0.942854
-[2020-10-07 22:35:36.334] [info] Measurement 'r_foot_height'
-[2020-10-07 22:35:36.335] [info] 	pair 0 (RAJC, fRAJC): model = 0.0696915, experimental = 0.100821
-[2020-10-07 22:35:36.335] [info] 	overall scale factor = 1.44667
-[2020-10-07 22:35:36.336] [info] Measurement 'r_foot_width'
-[2020-10-07 22:35:36.337] [info] 	pair 0 (fRMT1, fRMT5): model = 0.0759802, experimental = 0.109619
-[2020-10-07 22:35:36.337] [info] 	overall scale factor = 1.44273
-[2020-10-07 22:35:36.338] [info] Measurement 'l_thigh_length'
-[2020-10-07 22:35:36.338] [info] 	pair 0 (LHJC, LKJC): model = 0.390494, experimental = 0.474762
-[2020-10-07 22:35:36.339] [info] 	overall scale factor = 1.2158
-[2020-10-07 22:35:36.339] [info] Measurement 'l_thigh_breadth'
-[2020-10-07 22:35:36.340] [info] 	pair 0 (LLFC, LMFC): model = 0.108539, experimental = 0.125672
-[2020-10-07 22:35:36.344] [info] 	overall scale factor = 1.15785
-[2020-10-07 22:35:36.344] [info] Measurement 'l_tibia_length'
-[2020-10-07 22:35:36.345] [info] 	pair 0 (LKJC, LAJC): model = 0.391627, experimental = 0.433973
-[2020-10-07 22:35:36.346] [info] 	overall scale factor = 1.10813
-[2020-10-07 22:35:36.346] [info] Measurement 'l_tibia_breadth'
-[2020-10-07 22:35:36.347] [info] 	pair 0 (LLMAL, LMMAL): model = 0.093372, experimental = 0.0950852
-[2020-10-07 22:35:36.348] [info] 	overall scale factor = 1.01835
-[2020-10-07 22:35:36.348] [info] Measurement 'l_foot_length'
-[2020-10-07 22:35:36.349] [info] 	pair 0 (fLCAL, fLAJC): model = 0.0954936, experimental = 0.068191
-[2020-10-07 22:35:36.350] [info] 	pair 1 (fLAJC, fLMT3): model = 0.129723, experimental = 0.153377
-[2020-10-07 22:35:36.350] [info] 	overall scale factor = 0.948218
-[2020-10-07 22:35:36.351] [info] Measurement 'l_foot_height'
-[2020-10-07 22:35:36.352] [info] 	pair 0 (LAJC, fLAJC): model = 0.0696334, experimental = 0.101405
-[2020-10-07 22:35:36.353] [info] 	overall scale factor = 1.45627
-[2020-10-07 22:35:36.356] [info] Measurement 'l_foot_width'
-[2020-10-07 22:35:36.356] [info] 	pair 0 (fLMT1, fLMT5): model = 0.0759802, experimental = 0.110420
-[2020-10-07 22:35:36.359] [info] 	overall scale factor = 1.45327
-[2020-10-07 22:35:37.012] [info] Wrote model file 'scaledModel.osim' from model.
-[2020-10-07 22:35:37.018] [info] Wrote scale file 'scaleSet.xml' for model model.
-[2020-10-07 22:35:37.018] [info] Step 3: Placing markers on model
-[2020-10-07 22:35:37.283] [info] Loaded marker file staticVirtualMarkers.trc (58 markers, 483 frames)
-[2020-10-07 22:35:37.284] [info] Averaged frames from time 0.5 to 1.5 in staticVirtualMarkers.trc (frames 126 to 376)
-[2020-10-07 22:35:37.288] [info] Deleted 0 unused markers from model model.
-[2020-10-07 22:35:37.597] [info] Frame at (t = 0.5):	 total squared error = 0.0573014, marker error: RMS = 0.0322776, max = 0.0574159 (LTH2)
-[2020-10-07 22:35:37.597] [info] Moved markers in model model to match locations in marker file 'staticVirtualMarkers.trc'.
-[2020-10-07 22:35:37.718] [info] Wrote model file 'scaledModelAdjusted.osim' from model model.
-[2020-10-07 22:35:37.910] [info] Loaded model model from file scaledModelAdjusted.osim
-[2020-10-07 22:35:38.270] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
-[2020-10-07 22:35:38.636] [info] Loaded model scaledModel from file scaledModelAdjusted.osim
-[2020-10-07 22:35:39.261] [info] Loaded model scaledModel from file scaledModelMuscle.osim
-[2020-10-07 22:35:39.589] [info] Loaded model scaledModel from file scaledModelMuscle.osim
-[2020-10-07 22:35:46.064] [cout] [info] 
-               MODEL: scaledModel
-         coordinates: 25
-              forces: 95
-           actuators: 83
-             muscles: 80
-            analyses: 0
-              probes: 0
-              bodies: 14
-              joints: 14
-         constraints: 2
-             markers: 56
-         controllers: 0
-  contact geometries: 13
-misc modelcomponents: 0
-[2020-10-07 22:35:46.065] [info] Running tool .
-[2020-10-07 22:35:46.579] [info] Frame 217 (t = 0.868):	 total squared error = 0.0328875, marker error: RMS = 0.0320583, max = 0.104913 (LTH1)
-[2020-10-07 22:35:46.645] [info] Frame 218 (t = 0.872):	 total squared error = 0.033116, marker error: RMS = 0.0321695, max = 0.104834 (LTH1)
-[2020-10-07 22:35:46.727] [info] Frame 219 (t = 0.876):	 total squared error = 0.0334595, marker error: RMS = 0.0323359, max = 0.104779 (LTH1)
-[2020-10-07 22:35:46.802] [info] Frame 220 (t = 0.88):	 total squared error = 0.0339779, marker error: RMS = 0.0325854, max = 0.105155 (LTH1)
-[2020-10-07 22:35:46.877] [info] Frame 221 (t = 0.884):	 total squared error = 0.0347077, marker error: RMS = 0.0329335, max = 0.105486 (LTH1)
-[2020-10-07 22:35:46.944] [info] Frame 222 (t = 0.888):	 total squared error = 0.0359696, marker error: RMS = 0.0335268, max = 0.106692 (LTH1)
-[2020-10-07 22:35:47.000] [info] Frame 223 (t = 0.892):	 total squared error = 0.0370993, marker error: RMS = 0.0340493, max = 0.107958 (LTH1)
-[2020-10-07 22:35:47.080] [info] Frame 224 (t = 0.896):	 total squared error = 0.0380041, marker error: RMS = 0.034462, max = 0.109226 (LTH1)
-[2020-10-07 22:35:47.152] [info] Frame 225 (t = 0.9):	 total squared error = 0.0386653, marker error: RMS = 0.0347605, max = 0.110772 (LTH1)
-[2020-10-07 22:35:47.187] [info] Frame 226 (t = 0.904000):	 total squared error = 0.0392445, marker error: RMS = 0.0350198, max = 0.112044 (LTH1)
-[2020-10-07 22:35:47.214] [info] Frame 227 (t = 0.908000):	 total squared error = 0.0395479, marker error: RMS = 0.035155, max = 0.11311 (LTH1)
-[2020-10-07 22:35:47.252] [info] Frame 228 (t = 0.912):	 total squared error = 0.0397872, marker error: RMS = 0.0352612, max = 0.113095 (LTH1)
-[2020-10-07 22:35:47.290] [info] Frame 229 (t = 0.916):	 total squared error = 0.0400162, marker error: RMS = 0.0353625, max = 0.112446 (LTH1)
-[2020-10-07 22:35:47.350] [info] Frame 230 (t = 0.92):	 total squared error = 0.0404042, marker error: RMS = 0.0355335, max = 0.111995 (LTH1)
-[2020-10-07 22:35:47.382] [info] Frame 231 (t = 0.924):	 total squared error = 0.0406623, marker error: RMS = 0.0356468, max = 0.111525 (LTH1)
-[2020-10-07 22:35:47.422] [info] Frame 232 (t = 0.928):	 total squared error = 0.0410683, marker error: RMS = 0.0358244, max = 0.111121 (LTH1)
-[2020-10-07 22:35:47.450] [info] Frame 233 (t = 0.932):	 total squared error = 0.0412699, marker error: RMS = 0.0359122, max = 0.110527 (LTH1)
-[2020-10-07 22:35:47.515] [info] Frame 234 (t = 0.936):	 total squared error = 0.0414255, marker error: RMS = 0.0359798, max = 0.109364 (LTH1)
-[2020-10-07 22:35:47.546] [info] Frame 235 (t = 0.94):	 total squared error = 0.0415966, marker error: RMS = 0.0360540, max = 0.108450 (LTH1)
-[2020-10-07 22:35:47.600] [info] Frame 236 (t = 0.944):	 total squared error = 0.0418838, marker error: RMS = 0.0361783, max = 0.107430 (LTH1)
-[2020-10-07 22:35:47.668] [info] Frame 237 (t = 0.948):	 total squared error = 0.0420861, marker error: RMS = 0.0362656, max = 0.106502 (LTH1)
-[2020-10-07 22:35:47.726] [info] Frame 238 (t = 0.952):	 total squared error = 0.0420011, marker error: RMS = 0.0362289, max = 0.105271 (LTH1)
-[2020-10-07 22:35:47.803] [info] Frame 239 (t = 0.956):	 total squared error = 0.0419794, marker error: RMS = 0.0362196, max = 0.104395 (LTH1)
-[2020-10-07 22:35:47.876] [info] Frame 240 (t = 0.96):	 total squared error = 0.0418491, marker error: RMS = 0.0361633, max = 0.103389 (LTH1)
-[2020-10-07 22:35:47.929] [info] Frame 241 (t = 0.964):	 total squared error = 0.0417692, marker error: RMS = 0.0361288, max = 0.102354 (LTH1)
-[2020-10-07 22:35:48.002] [info] Frame 242 (t = 0.968):	 total squared error = 0.0414742, marker error: RMS = 0.0360010, max = 0.101276 (LTH1)
-[2020-10-07 22:35:48.058] [info] Frame 243 (t = 0.972):	 total squared error = 0.0412375, marker error: RMS = 0.0358981, max = 0.100691 (LTH2)
-[2020-10-07 22:35:48.127] [info] Frame 244 (t = 0.976):	 total squared error = 0.0408629, marker error: RMS = 0.0357347, max = 0.101772 (LTH2)
-[2020-10-07 22:35:48.211] [info] Frame 245 (t = 0.98):	 total squared error = 0.0404235, marker error: RMS = 0.035542, max = 0.102866 (LTH2)
-[2020-10-07 22:35:48.307] [info] Frame 246 (t = 0.984):	 total squared error = 0.0402470, marker error: RMS = 0.0354643, max = 0.104147 (LTH2)
-[2020-10-07 22:35:48.385] [info] Frame 247 (t = 0.988):	 total squared error = 0.0399672, marker error: RMS = 0.0353409, max = 0.105363 (LTH2)
-[2020-10-07 22:35:48.476] [info] Frame 248 (t = 0.992):	 total squared error = 0.0399433, marker error: RMS = 0.0353303, max = 0.106614 (LTH2)
-[2020-10-07 22:35:48.568] [info] Frame 249 (t = 0.996):	 total squared error = 0.0398292, marker error: RMS = 0.0352798, max = 0.107834 (LTH2)
-[2020-10-07 22:35:48.657] [info] Frame 250 (t = 1.0):	 total squared error = 0.0396294, marker error: RMS = 0.0351912, max = 0.108619 (LTH2)
-[2020-10-07 22:35:48.740] [info] Frame 251 (t = 1.00400):	 total squared error = 0.0392618, marker error: RMS = 0.0350276, max = 0.109529 (LTH2)
-[2020-10-07 22:35:48.817] [info] Frame 252 (t = 1.00800):	 total squared error = 0.0388135, marker error: RMS = 0.034827, max = 0.110283 (LTH2)
-[2020-10-07 22:35:48.891] [info] Frame 253 (t = 1.012):	 total squared error = 0.0382311, marker error: RMS = 0.0345647, max = 0.111144 (LTH2)
-[2020-10-07 22:35:48.996] [info] Frame 254 (t = 1.016):	 total squared error = 0.0374656, marker error: RMS = 0.0342169, max = 0.111876 (LTH2)
-[2020-10-07 22:35:49.143] [info] Frame 255 (t = 1.02):	 total squared error = 0.036744, marker error: RMS = 0.0338858, max = 0.112973 (LTH2)
-[2020-10-07 22:35:49.213] [info] Frame 256 (t = 1.024):	 total squared error = 0.0359648, marker error: RMS = 0.0335246, max = 0.113848 (LTH2)
-[2020-10-07 22:35:49.293] [info] Frame 257 (t = 1.028):	 total squared error = 0.0351497, marker error: RMS = 0.0331425, max = 0.114957 (LTH2)
-[2020-10-07 22:35:49.394] [info] Frame 258 (t = 1.032):	 total squared error = 0.0345295, marker error: RMS = 0.0328488, max = 0.115392 (LTH2)
-[2020-10-07 22:35:49.521] [info] Frame 259 (t = 1.036):	 total squared error = 0.0339143, marker error: RMS = 0.0325549, max = 0.115563 (LTH2)
-[2020-10-07 22:35:49.608] [info] Frame 260 (t = 1.04):	 total squared error = 0.0333573, marker error: RMS = 0.0322865, max = 0.115832 (LTH2)
-[2020-10-07 22:35:49.704] [info] Frame 261 (t = 1.044):	 total squared error = 0.0328257, marker error: RMS = 0.0320282, max = 0.115876 (LTH2)
-[2020-10-07 22:35:49.847] [info] Frame 262 (t = 1.048):	 total squared error = 0.0322552, marker error: RMS = 0.0317486, max = 0.115627 (LTH2)
-[2020-10-07 22:35:49.935] [info] Frame 263 (t = 1.052):	 total squared error = 0.0317134, marker error: RMS = 0.0314809, max = 0.115376 (LTH2)
-[2020-10-07 22:35:50.014] [info] Frame 264 (t = 1.056):	 total squared error = 0.031245, marker error: RMS = 0.0312475, max = 0.115002 (LTH2)
-[2020-10-07 22:35:50.136] [info] Frame 265 (t = 1.06):	 total squared error = 0.0307974, marker error: RMS = 0.0310229, max = 0.114137 (LTH2)
-[2020-10-07 22:35:50.216] [info] Frame 266 (t = 1.064):	 total squared error = 0.0304766, marker error: RMS = 0.0308609, max = 0.113342 (LTH2)
-[2020-10-07 22:35:50.305] [info] Frame 267 (t = 1.068):	 total squared error = 0.0302962, marker error: RMS = 0.0307694, max = 0.112535 (LTH2)
-[2020-10-07 22:35:50.389] [info] Frame 268 (t = 1.072):	 total squared error = 0.0301951, marker error: RMS = 0.0307180, max = 0.111559 (LTH2)
-[2020-10-07 22:35:50.463] [info] Frame 269 (t = 1.076):	 total squared error = 0.0302206, marker error: RMS = 0.0307310, max = 0.110527 (LTH2)
-[2020-10-07 22:35:50.592] [info] Frame 270 (t = 1.08):	 total squared error = 0.0302348, marker error: RMS = 0.0307382, max = 0.109266 (LTH2)
-[2020-10-07 22:35:50.663] [info] Frame 271 (t = 1.084):	 total squared error = 0.0302807, marker error: RMS = 0.0307615, max = 0.107960 (LTH2)
-[2020-10-07 22:35:50.757] [info] Frame 272 (t = 1.088):	 total squared error = 0.0303756, marker error: RMS = 0.0308097, max = 0.106864 (LTH2)
-[2020-10-07 22:35:50.850] [info] Frame 273 (t = 1.092):	 total squared error = 0.0304304, marker error: RMS = 0.0308375, max = 0.105740 (LTH2)
-[2020-10-07 22:35:50.940] [info] Frame 274 (t = 1.096):	 total squared error = 0.0305093, marker error: RMS = 0.0308774, max = 0.104445 (LTH2)
-[2020-10-07 22:35:51.016] [info] Frame 275 (t = 1.1):	 total squared error = 0.0306322, marker error: RMS = 0.0309395, max = 0.103393 (LTH2)
-[2020-10-07 22:35:51.083] [info] Frame 276 (t = 1.10400):	 total squared error = 0.0308117, marker error: RMS = 0.0310301, max = 0.102750 (LTH2)
-[2020-10-07 22:35:51.162] [info] Frame 277 (t = 1.10800):	 total squared error = 0.0310014, marker error: RMS = 0.0311255, max = 0.101952 (LTH2)
-[2020-10-07 22:35:51.239] [info] Frame 278 (t = 1.112):	 total squared error = 0.0312127, marker error: RMS = 0.0312313, max = 0.101260 (LTH2)
-[2020-10-07 22:35:51.308] [info] Frame 279 (t = 1.116):	 total squared error = 0.031371, marker error: RMS = 0.0313104, max = 0.100604 (LTH2)
-[2020-10-07 22:35:51.379] [info] Frame 280 (t = 1.12):	 total squared error = 0.0316101, marker error: RMS = 0.0314295, max = 0.100687 (LTH1)
-[2020-10-07 22:35:51.448] [info] Frame 281 (t = 1.124):	 total squared error = 0.0319274, marker error: RMS = 0.0315869, max = 0.100902 (LTH1)
-[2020-10-07 22:35:51.517] [info] Frame 282 (t = 1.128):	 total squared error = 0.0320965, marker error: RMS = 0.0316704, max = 0.100754 (LTH1)
-[2020-10-07 22:35:51.597] [info] Frame 283 (t = 1.132):	 total squared error = 0.0322798, marker error: RMS = 0.0317607, max = 0.100536 (LTH1)
-[2020-10-07 22:35:51.676] [info] Frame 284 (t = 1.136):	 total squared error = 0.0324562, marker error: RMS = 0.0318474, max = 0.100228 (LTH1)
-[2020-10-07 22:35:51.745] [info] Frame 285 (t = 1.14):	 total squared error = 0.0326225, marker error: RMS = 0.0319289, max = 0.0999466 (LTH1)
-[2020-10-07 22:35:51.821] [info] Frame 286 (t = 1.144):	 total squared error = 0.0328041, marker error: RMS = 0.0320176, max = 0.100118 (LTH1)
-[2020-10-07 22:35:51.969] [info] Frame 287 (t = 1.148):	 total squared error = 0.032794, marker error: RMS = 0.0320127, max = 0.0997541 (LTH1)
-[2020-10-07 22:35:51.978] [info] InverseKinematicsTool completed 71 frames in 5 second(s).
-[2020-10-07 22:37:48.423] [info] Storage: read data file = ikResults.mot (nr=71 nc=26)
-[2020-10-07 22:37:48.427] [info] Storage: read data file = ikResults.mot (nr=71 nc=26)
-[2020-10-07 22:37:48.488] [info] Loaded model scaledModel from file scaledModelMuscle.osim
-[2020-10-07 22:42:25.283] [info] Updating Model file from 30000 to latest format...
-[2020-10-07 22:42:25.303] [info] Loaded model gait9dof18musc_Ong_et_al from file gait9dof18musc_Ong_et_al_Moco.osim
-[2020-10-08 21:01:03.018] [info] Processing subject ...
-[2020-10-08 21:01:03.019] [info] Step 1: Loading generic model
-[2020-10-08 21:01:03.073] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
-[2020-10-08 21:01:03.515] [info] Step 2: Scaling generic model
-[2020-10-08 21:01:03.661] [info] Loaded marker file staticVirtualMarkers.trc (58 markers, 483 frames)
-[2020-10-08 21:01:03.662] [info] Measurement 'torso_height'
-[2020-10-08 21:01:03.663] [info] 	pair 0 (MTOR, MPEL): model = 0.468396, experimental = 0.466528
-[2020-10-08 21:01:03.663] [info] 	overall scale factor = 0.996011
-[2020-10-08 21:01:03.664] [info] Measurement 'torso_breadth'
-[2020-10-08 21:01:03.664] [info] 	pair 0 (C7, CLAV): model = 0.146032, experimental = 0.146906
-[2020-10-08 21:01:03.664] [info] 	pair 1 (T10, STRN): model = 0.222121, experimental = 0.241562
-[2020-10-08 21:01:03.665] [info] 	overall scale factor = 1.04675
-[2020-10-08 21:01:03.665] [info] Measurement 'torso_width'
-[2020-10-08 21:01:03.665] [info] 	pair 0 (RACR, LACR): model = 0.283321, experimental = 0.345905
-[2020-10-08 21:01:03.665] [info] 	overall scale factor = 1.22089
-[2020-10-08 21:01:03.666] [info] Measurement 'pelvis_w'
-[2020-10-08 21:01:03.666] [info] 	pair 0 (RASI, LASI): model = 0.25789, experimental = 0.216053
-[2020-10-08 21:01:03.666] [info] 	pair 1 (RPSI, LPSI): model = 0.092731, experimental = 0.0960037
-[2020-10-08 21:01:03.666] [info] 	overall scale factor = 0.936532
-[2020-10-08 21:01:03.667] [info] Measurement 'pelvis_d'
-[2020-10-08 21:01:03.667] [info] 	pair 0 (RASI, RPSI): model = 0.201128, experimental = 0.188603
-[2020-10-08 21:01:03.667] [info] 	pair 1 (LASI, LPSI): model = 0.192488, experimental = 0.188085
-[2020-10-08 21:01:03.667] [info] 	overall scale factor = 0.957426
-[2020-10-08 21:01:03.668] [info] Measurement 'pelvis_h'
-[2020-10-08 21:01:03.668] [info] 	pair 0 (MPEL, RHJC): model = 0.131542, experimental = 0.105614
-[2020-10-08 21:01:03.668] [info] 	pair 1 (MPEL, LHJC): model = 0.131025, experimental = 0.108303
-[2020-10-08 21:01:03.669] [info] 	overall scale factor = 0.814735
-[2020-10-08 21:01:03.670] [info] Measurement 'r_thigh_length'
-[2020-10-08 21:01:03.670] [info] 	pair 0 (RHJC, RKJC): model = 0.390494, experimental = 0.46219
-[2020-10-08 21:01:03.671] [info] 	overall scale factor = 1.1836
-[2020-10-08 21:01:03.671] [info] Measurement 'r_thigh_breadth'
-[2020-10-08 21:01:03.672] [info] 	pair 0 (RLFC, RMFC): model = 0.108539, experimental = 0.125179
-[2020-10-08 21:01:03.673] [info] 	overall scale factor = 1.1533
-[2020-10-08 21:01:03.685] [info] Measurement 'r_tibia_length'
-[2020-10-08 21:01:03.689] [info] 	pair 0 (RKJC, RAJC): model = 0.391627, experimental = 0.437658
-[2020-10-08 21:01:03.689] [info] 	overall scale factor = 1.11754
-[2020-10-08 21:01:03.690] [info] Measurement 'r_tibia_breadth'
-[2020-10-08 21:01:03.691] [info] 	pair 0 (RLMAL, RMMAL): model = 0.093372, experimental = 0.0955162
-[2020-10-08 21:01:03.692] [info] 	overall scale factor = 1.02296
-[2020-10-08 21:01:03.693] [info] Measurement 'r_foot_length'
-[2020-10-08 21:01:03.694] [info] 	pair 0 (fRCAL, fRAJC): model = 0.0941763, experimental = 0.0694764
-[2020-10-08 21:01:03.694] [info] 	pair 1 (fRAJC, fRMT3): model = 0.129502, experimental = 0.148666
-[2020-10-08 21:01:03.698] [info] 	overall scale factor = 0.942854
-[2020-10-08 21:01:03.699] [info] Measurement 'r_foot_height'
-[2020-10-08 21:01:03.702] [info] 	pair 0 (RAJC, fRAJC): model = 0.0696915, experimental = 0.100821
-[2020-10-08 21:01:03.704] [info] 	overall scale factor = 1.44667
-[2020-10-08 21:01:03.705] [info] Measurement 'r_foot_width'
-[2020-10-08 21:01:03.706] [info] 	pair 0 (fRMT1, fRMT5): model = 0.0759802, experimental = 0.109619
-[2020-10-08 21:01:03.706] [info] 	overall scale factor = 1.44273
-[2020-10-08 21:01:03.707] [info] Measurement 'l_thigh_length'
-[2020-10-08 21:01:03.711] [info] 	pair 0 (LHJC, LKJC): model = 0.390494, experimental = 0.474762
-[2020-10-08 21:01:03.714] [info] 	overall scale factor = 1.2158
-[2020-10-08 21:01:03.715] [info] Measurement 'l_thigh_breadth'
-[2020-10-08 21:01:03.716] [info] 	pair 0 (LLFC, LMFC): model = 0.108539, experimental = 0.125672
-[2020-10-08 21:01:03.717] [info] 	overall scale factor = 1.15785
-[2020-10-08 21:01:03.717] [info] Measurement 'l_tibia_length'
-[2020-10-08 21:01:03.719] [info] 	pair 0 (LKJC, LAJC): model = 0.391627, experimental = 0.433973
-[2020-10-08 21:01:03.722] [info] 	overall scale factor = 1.10813
-[2020-10-08 21:01:03.726] [info] Measurement 'l_tibia_breadth'
-[2020-10-08 21:01:03.727] [info] 	pair 0 (LLMAL, LMMAL): model = 0.093372, experimental = 0.0950852
-[2020-10-08 21:01:03.728] [info] 	overall scale factor = 1.01835
-[2020-10-08 21:01:03.728] [info] Measurement 'l_foot_length'
-[2020-10-08 21:01:03.729] [info] 	pair 0 (fLCAL, fLAJC): model = 0.0954936, experimental = 0.068191
-[2020-10-08 21:01:03.732] [info] 	pair 1 (fLAJC, fLMT3): model = 0.129723, experimental = 0.153377
-[2020-10-08 21:01:03.734] [info] 	overall scale factor = 0.948218
-[2020-10-08 21:01:03.739] [info] Measurement 'l_foot_height'
-[2020-10-08 21:01:03.739] [info] 	pair 0 (LAJC, fLAJC): model = 0.0696334, experimental = 0.101405
-[2020-10-08 21:01:03.740] [info] 	overall scale factor = 1.45627
-[2020-10-08 21:01:03.745] [info] Measurement 'l_foot_width'
-[2020-10-08 21:01:03.746] [info] 	pair 0 (fLMT1, fLMT5): model = 0.0759802, experimental = 0.110420
-[2020-10-08 21:01:03.750] [info] 	overall scale factor = 1.45327
-[2020-10-08 21:01:04.081] [info] Wrote model file 'scaledModel.osim' from model.
-[2020-10-08 21:01:04.092] [info] Wrote scale file 'scaleSet.xml' for model model.
-[2020-10-08 21:01:04.093] [info] Step 3: Placing markers on model
-[2020-10-08 21:01:04.188] [info] Loaded marker file staticVirtualMarkers.trc (58 markers, 483 frames)
-[2020-10-08 21:01:04.189] [info] Averaged frames from time 0.5 to 1.5 in staticVirtualMarkers.trc (frames 126 to 376)
-[2020-10-08 21:01:04.189] [info] Deleted 0 unused markers from model model.
-[2020-10-08 21:01:04.349] [info] Frame at (t = 0.5):	 total squared error = 0.0573014, marker error: RMS = 0.0322776, max = 0.0574159 (LTH2)
-[2020-10-08 21:01:04.350] [info] Moved markers in model model to match locations in marker file 'staticVirtualMarkers.trc'.
-[2020-10-08 21:01:04.462] [info] Wrote model file 'scaledModelAdjusted.osim' from model model.
-[2020-10-08 21:01:04.580] [info] Loaded model model from file scaledModelAdjusted.osim
-[2020-10-08 21:01:04.781] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
-[2020-10-08 21:01:04.973] [info] Loaded model scaledModel from file scaledModelAdjusted.osim
-[2020-10-08 21:01:05.314] [info] Loaded model scaledModel from file scaledModelMuscle.osim
-[2020-10-08 21:01:05.427] [info] Loaded model scaledModel from file scaledModelMuscle.osim
-[2020-10-08 21:13:36.265] [info] Processing subject ...
-[2020-10-08 21:13:36.265] [info] Step 1: Loading generic model
-[2020-10-08 21:13:36.329] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
-[2020-10-08 21:13:36.458] [info] Step 2: Scaling generic model
-[2020-10-08 21:13:36.602] [info] Loaded marker file staticVirtualMarkers.trc (58 markers, 483 frames)
-[2020-10-08 21:13:36.602] [info] Measurement 'torso_height'
-[2020-10-08 21:13:36.604] [info] 	pair 0 (MTOR, MPEL): model = 0.468396, experimental = 0.466528
-[2020-10-08 21:13:36.608] [info] 	overall scale factor = 0.996011
-[2020-10-08 21:13:36.610] [info] Measurement 'torso_breadth'
-[2020-10-08 21:13:36.610] [info] 	pair 0 (C7, CLAV): model = 0.146032, experimental = 0.146906
-[2020-10-08 21:13:36.611] [info] 	pair 1 (T10, STRN): model = 0.222121, experimental = 0.241562
-[2020-10-08 21:13:36.612] [info] 	overall scale factor = 1.04675
-[2020-10-08 21:13:36.614] [info] Measurement 'torso_width'
-[2020-10-08 21:13:36.618] [info] 	pair 0 (RACR, LACR): model = 0.283321, experimental = 0.345905
-[2020-10-08 21:13:36.619] [info] 	overall scale factor = 1.22089
-[2020-10-08 21:13:36.619] [info] Measurement 'pelvis_w'
-[2020-10-08 21:13:36.620] [info] 	pair 0 (RASI, LASI): model = 0.25789, experimental = 0.216053
-[2020-10-08 21:13:36.621] [info] 	pair 1 (RPSI, LPSI): model = 0.092731, experimental = 0.0960037
-[2020-10-08 21:13:36.622] [info] 	overall scale factor = 0.936532
-[2020-10-08 21:13:36.623] [info] Measurement 'pelvis_d'
-[2020-10-08 21:13:36.626] [info] 	pair 0 (RASI, RPSI): model = 0.201128, experimental = 0.188603
-[2020-10-08 21:13:36.629] [info] 	pair 1 (LASI, LPSI): model = 0.192488, experimental = 0.188085
-[2020-10-08 21:13:36.630] [info] 	overall scale factor = 0.957426
-[2020-10-08 21:13:36.631] [info] Measurement 'pelvis_h'
-[2020-10-08 21:13:36.631] [info] 	pair 0 (MPEL, RHJC): model = 0.131542, experimental = 0.105614
-[2020-10-08 21:13:36.632] [info] 	pair 1 (MPEL, LHJC): model = 0.131025, experimental = 0.108303
-[2020-10-08 21:13:36.633] [info] 	overall scale factor = 0.814735
-[2020-10-08 21:13:36.633] [info] Measurement 'r_thigh_length'
-[2020-10-08 21:13:36.634] [info] 	pair 0 (RHJC, RKJC): model = 0.390494, experimental = 0.46219
-[2020-10-08 21:13:36.637] [info] 	overall scale factor = 1.1836
-[2020-10-08 21:13:36.638] [info] Measurement 'r_thigh_breadth'
-[2020-10-08 21:13:36.641] [info] 	pair 0 (RLFC, RMFC): model = 0.108539, experimental = 0.125179
-[2020-10-08 21:13:36.642] [info] 	overall scale factor = 1.1533
-[2020-10-08 21:13:36.643] [info] Measurement 'r_tibia_length'
-[2020-10-08 21:13:36.644] [info] 	pair 0 (RKJC, RAJC): model = 0.391627, experimental = 0.437658
-[2020-10-08 21:13:36.645] [info] 	overall scale factor = 1.11754
-[2020-10-08 21:13:36.646] [info] Measurement 'r_tibia_breadth'
-[2020-10-08 21:13:36.647] [info] 	pair 0 (RLMAL, RMMAL): model = 0.093372, experimental = 0.0955162
-[2020-10-08 21:13:36.650] [info] 	overall scale factor = 1.02296
-[2020-10-08 21:13:36.653] [info] Measurement 'r_foot_length'
-[2020-10-08 21:13:36.654] [info] 	pair 0 (fRCAL, fRAJC): model = 0.0941763, experimental = 0.0694764
-[2020-10-08 21:13:36.656] [info] 	pair 1 (fRAJC, fRMT3): model = 0.129502, experimental = 0.148666
-[2020-10-08 21:13:36.657] [info] 	overall scale factor = 0.942854
-[2020-10-08 21:13:36.657] [info] Measurement 'r_foot_height'
-[2020-10-08 21:13:36.658] [info] 	pair 0 (RAJC, fRAJC): model = 0.0696915, experimental = 0.100821
-[2020-10-08 21:13:36.661] [info] 	overall scale factor = 1.44667
-[2020-10-08 21:13:36.665] [info] Measurement 'r_foot_width'
-[2020-10-08 21:13:36.665] [info] 	pair 0 (fRMT1, fRMT5): model = 0.0759802, experimental = 0.109619
-[2020-10-08 21:13:36.666] [info] 	overall scale factor = 1.44273
-[2020-10-08 21:13:36.667] [info] Measurement 'l_thigh_length'
-[2020-10-08 21:13:36.668] [info] 	pair 0 (LHJC, LKJC): model = 0.390494, experimental = 0.474762
-[2020-10-08 21:13:36.669] [info] 	overall scale factor = 1.2158
-[2020-10-08 21:13:36.671] [info] Measurement 'l_thigh_breadth'
-[2020-10-08 21:13:36.674] [info] 	pair 0 (LLFC, LMFC): model = 0.108539, experimental = 0.125672
-[2020-10-08 21:13:36.677] [info] 	overall scale factor = 1.15785
-[2020-10-08 21:13:36.678] [info] Measurement 'l_tibia_length'
-[2020-10-08 21:13:36.679] [info] 	pair 0 (LKJC, LAJC): model = 0.391627, experimental = 0.433973
-[2020-10-08 21:13:36.680] [info] 	overall scale factor = 1.10813
-[2020-10-08 21:13:36.681] [info] Measurement 'l_tibia_breadth'
-[2020-10-08 21:13:36.681] [info] 	pair 0 (LLMAL, LMMAL): model = 0.093372, experimental = 0.0950852
-[2020-10-08 21:13:36.684] [info] 	overall scale factor = 1.01835
-[2020-10-08 21:13:36.685] [info] Measurement 'l_foot_length'
-[2020-10-08 21:13:36.689] [info] 	pair 0 (fLCAL, fLAJC): model = 0.0954936, experimental = 0.068191
-[2020-10-08 21:13:36.690] [info] 	pair 1 (fLAJC, fLMT3): model = 0.129723, experimental = 0.153377
-[2020-10-08 21:13:36.691] [info] 	overall scale factor = 0.948218
-[2020-10-08 21:13:36.692] [info] Measurement 'l_foot_height'
-[2020-10-08 21:13:36.693] [info] 	pair 0 (LAJC, fLAJC): model = 0.0696334, experimental = 0.101405
-[2020-10-08 21:13:36.694] [info] 	overall scale factor = 1.45627
-[2020-10-08 21:13:36.698] [info] Measurement 'l_foot_width'
-[2020-10-08 21:13:36.701] [info] 	pair 0 (fLMT1, fLMT5): model = 0.0759802, experimental = 0.110420
-[2020-10-08 21:13:36.702] [info] 	overall scale factor = 1.45327
-[2020-10-08 21:13:36.978] [info] Wrote model file 'scaledModel.osim' from model.
-[2020-10-08 21:13:36.981] [info] Wrote scale file 'scaleSet.xml' for model model.
-[2020-10-08 21:13:36.982] [info] Step 3: Placing markers on model
-[2020-10-08 21:13:37.075] [info] Loaded marker file staticVirtualMarkers.trc (58 markers, 483 frames)
-[2020-10-08 21:13:37.075] [info] Averaged frames from time 0.5 to 1.5 in staticVirtualMarkers.trc (frames 126 to 376)
-[2020-10-08 21:13:37.077] [info] Deleted 0 unused markers from model model.
-[2020-10-08 21:13:37.207] [info] Frame at (t = 0.5):	 total squared error = 0.0573014, marker error: RMS = 0.0322776, max = 0.0574159 (LTH2)
-[2020-10-08 21:13:37.208] [info] Moved markers in model model to match locations in marker file 'staticVirtualMarkers.trc'.
-[2020-10-08 21:13:37.256] [info] Wrote model file 'scaledModelAdjusted.osim' from model model.
-[2020-10-08 21:13:37.389] [info] Loaded model model from file scaledModelAdjusted.osim
-[2020-10-08 21:13:37.568] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
-[2020-10-08 21:13:37.754] [info] Loaded model scaledModel from file scaledModelAdjusted.osim
-[2020-10-08 21:13:38.049] [info] Loaded model scaledModel from file scaledModelMuscle.osim
-[2020-10-08 21:13:38.171] [info] Loaded model scaledModel from file scaledModelMuscle.osim
-[2020-10-08 21:14:08.156] [cout] [info] 
-               MODEL: scaledModel
-         coordinates: 25
-              forces: 95
-           actuators: 83
-             muscles: 80
-            analyses: 0
-              probes: 0
-              bodies: 14
-              joints: 14
-         constraints: 2
-             markers: 56
-         controllers: 0
-  contact geometries: 13
-misc modelcomponents: 0
-[2020-10-08 21:14:08.157] [info] Running tool .
-[2020-10-08 21:14:08.443] [info] Frame 87 (t = 0.348):	 total squared error = 0.0342911, marker error: RMS = 0.0327352, max = 0.109425 (LTH1)
-[2020-10-08 21:14:08.471] [info] Frame 88 (t = 0.352):	 total squared error = 0.0346125, marker error: RMS = 0.0328883, max = 0.109099 (LTH1)
-[2020-10-08 21:14:08.501] [info] Frame 89 (t = 0.356):	 total squared error = 0.0350438, marker error: RMS = 0.0330926, max = 0.108784 (LTH1)
-[2020-10-08 21:14:08.561] [info] Frame 90 (t = 0.36):	 total squared error = 0.0356205, marker error: RMS = 0.0333637, max = 0.109051 (LTH1)
-[2020-10-08 21:14:08.645] [info] Frame 91 (t = 0.364):	 total squared error = 0.0362548, marker error: RMS = 0.0336595, max = 0.109320 (LTH1)
-[2020-10-08 21:14:08.686] [info] Frame 92 (t = 0.368):	 total squared error = 0.0370548, marker error: RMS = 0.0340289, max = 0.109752 (LTH1)
-[2020-10-08 21:14:08.725] [info] Frame 93 (t = 0.372):	 total squared error = 0.0377719, marker error: RMS = 0.0343565, max = 0.110365 (LTH1)
-[2020-10-08 21:14:08.773] [info] Frame 94 (t = 0.376):	 total squared error = 0.0386395, marker error: RMS = 0.0347489, max = 0.110830 (LTH1)
-[2020-10-08 21:14:08.801] [info] Frame 95 (t = 0.38):	 total squared error = 0.0393429, marker error: RMS = 0.0350637, max = 0.11122 (LTH1)
-[2020-10-08 21:14:08.832] [info] Frame 96 (t = 0.384):	 total squared error = 0.0399898, marker error: RMS = 0.0353508, max = 0.110797 (LTH1)
-[2020-10-08 21:14:08.876] [info] Frame 97 (t = 0.388):	 total squared error = 0.0405194, marker error: RMS = 0.0355842, max = 0.109757 (LTH1)
-[2020-10-08 21:14:08.912] [info] Frame 98 (t = 0.392):	 total squared error = 0.041255, marker error: RMS = 0.0359057, max = 0.110171 (LTH1)
-[2020-10-08 21:14:08.935] [info] Frame 99 (t = 0.396):	 total squared error = 0.0415867, marker error: RMS = 0.0360497, max = 0.109636 (LTH1)
-[2020-10-08 21:14:08.973] [info] Frame 100 (t = 0.4):	 total squared error = 0.0419425, marker error: RMS = 0.0362037, max = 0.108649 (LTH1)
-[2020-10-08 21:14:09.011] [info] Frame 101 (t = 0.404000):	 total squared error = 0.0422122, marker error: RMS = 0.0363198, max = 0.108163 (LTH1)
-[2020-10-08 21:14:09.033] [info] Frame 102 (t = 0.408000):	 total squared error = 0.0423777, marker error: RMS = 0.036391, max = 0.107638 (LTH1)
-[2020-10-08 21:14:09.084] [info] Frame 103 (t = 0.412):	 total squared error = 0.0424655, marker error: RMS = 0.0364286, max = 0.107054 (LTH1)
-[2020-10-08 21:14:09.104] [info] Frame 104 (t = 0.416):	 total squared error = 0.0424804, marker error: RMS = 0.036435, max = 0.106280 (LTH1)
-[2020-10-08 21:14:09.123] [info] Frame 105 (t = 0.42):	 total squared error = 0.0424899, marker error: RMS = 0.0364391, max = 0.105638 (LTH1)
-[2020-10-08 21:14:09.152] [info] Frame 106 (t = 0.424):	 total squared error = 0.0423813, marker error: RMS = 0.0363925, max = 0.104556 (LTH1)
-[2020-10-08 21:14:09.184] [info] Frame 107 (t = 0.428):	 total squared error = 0.0420962, marker error: RMS = 0.0362699, max = 0.103835 (LTH1)
-[2020-10-08 21:14:09.205] [info] Frame 108 (t = 0.432):	 total squared error = 0.0418369, marker error: RMS = 0.036158, max = 0.103112 (LTH1)
-[2020-10-08 21:14:09.236] [info] Frame 109 (t = 0.436):	 total squared error = 0.0414465, marker error: RMS = 0.0359889, max = 0.102089 (LTH1)
-[2020-10-08 21:14:09.265] [info] Frame 110 (t = 0.44):	 total squared error = 0.0410735, marker error: RMS = 0.0358266, max = 0.100904 (LTH1)
-[2020-10-08 21:14:09.296] [info] Frame 111 (t = 0.444):	 total squared error = 0.0406453, marker error: RMS = 0.0356394, max = 0.101265 (LTH2)
-[2020-10-08 21:14:09.328] [info] Frame 112 (t = 0.448):	 total squared error = 0.0403667, marker error: RMS = 0.0355171, max = 0.102429 (LTH2)
-[2020-10-08 21:14:09.355] [info] Frame 113 (t = 0.452):	 total squared error = 0.0400683, marker error: RMS = 0.0353855, max = 0.103684 (LTH2)
-[2020-10-08 21:14:09.390] [info] Frame 114 (t = 0.456):	 total squared error = 0.0397032, marker error: RMS = 0.0352239, max = 0.104480 (LTH2)
-[2020-10-08 21:14:09.446] [info] Frame 115 (t = 0.46):	 total squared error = 0.039875, marker error: RMS = 0.0353001, max = 0.105905 (LTH2)
-[2020-10-08 21:14:09.469] [info] Frame 116 (t = 0.464):	 total squared error = 0.0393332, marker error: RMS = 0.0350594, max = 0.106160 (LTH2)
-[2020-10-08 21:14:09.507] [info] Frame 117 (t = 0.468):	 total squared error = 0.0393295, marker error: RMS = 0.0350578, max = 0.107282 (LTH2)
-[2020-10-08 21:14:09.554] [info] Frame 118 (t = 0.472):	 total squared error = 0.0391749, marker error: RMS = 0.0349888, max = 0.107783 (LTH2)
-[2020-10-08 21:14:09.586] [info] Frame 119 (t = 0.476):	 total squared error = 0.0384687, marker error: RMS = 0.034672, max = 0.108334 (LTH2)
-[2020-10-08 21:14:09.608] [info] Frame 120 (t = 0.48):	 total squared error = 0.0381672, marker error: RMS = 0.0345359, max = 0.109388 (LTH2)
-[2020-10-08 21:14:09.657] [info] Frame 121 (t = 0.484):	 total squared error = 0.0373172, marker error: RMS = 0.0341491, max = 0.109731 (LTH2)
-[2020-10-08 21:14:09.683] [info] Frame 122 (t = 0.488):	 total squared error = 0.0365127, marker error: RMS = 0.033779, max = 0.111311 (LTH2)
-[2020-10-08 21:14:09.713] [info] Frame 123 (t = 0.492):	 total squared error = 0.035784, marker error: RMS = 0.0334403, max = 0.112747 (LTH2)
-[2020-10-08 21:14:09.817] [info] Frame 124 (t = 0.496):	 total squared error = 0.0351284, marker error: RMS = 0.0331325, max = 0.114017 (LTH2)
-[2020-10-08 21:14:09.876] [info] Frame 125 (t = 0.5):	 total squared error = 0.0346571, marker error: RMS = 0.0329095, max = 0.115188 (LTH2)
-[2020-10-08 21:14:09.898] [info] Frame 126 (t = 0.504000):	 total squared error = 0.0341652, marker error: RMS = 0.0326751, max = 0.115563 (LTH2)
-[2020-10-08 21:14:09.938] [info] Frame 127 (t = 0.508000):	 total squared error = 0.0334258, marker error: RMS = 0.0323196, max = 0.115818 (LTH2)
-[2020-10-08 21:14:10.012] [info] Frame 128 (t = 0.512):	 total squared error = 0.0327537, marker error: RMS = 0.031993, max = 0.115408 (LTH2)
-[2020-10-08 21:14:10.058] [info] Frame 129 (t = 0.516):	 total squared error = 0.0323973, marker error: RMS = 0.0318185, max = 0.115945 (LTH2)
-[2020-10-08 21:14:10.096] [info] Frame 130 (t = 0.52):	 total squared error = 0.0317695, marker error: RMS = 0.0315087, max = 0.115193 (LTH2)
-[2020-10-08 21:14:10.125] [info] Frame 131 (t = 0.524):	 total squared error = 0.0313532, marker error: RMS = 0.0313015, max = 0.115104 (LTH2)
-[2020-10-08 21:14:10.156] [info] Frame 132 (t = 0.528):	 total squared error = 0.0307356, marker error: RMS = 0.0309917, max = 0.114249 (LTH2)
-[2020-10-08 21:14:10.186] [info] Frame 133 (t = 0.532):	 total squared error = 0.0304164, marker error: RMS = 0.0308304, max = 0.113636 (LTH2)
-[2020-10-08 21:14:10.213] [info] Frame 134 (t = 0.536):	 total squared error = 0.0301917, marker error: RMS = 0.0307163, max = 0.112994 (LTH2)
-[2020-10-08 21:14:10.311] [info] Frame 135 (t = 0.54):	 total squared error = 0.0300025, marker error: RMS = 0.0306199, max = 0.112705 (LTH2)
-[2020-10-08 21:14:10.373] [info] Frame 136 (t = 0.544):	 total squared error = 0.0297052, marker error: RMS = 0.0304678, max = 0.11181 (LTH2)
-[2020-10-08 21:14:10.425] [info] Frame 137 (t = 0.548):	 total squared error = 0.0296759, marker error: RMS = 0.0304528, max = 0.110850 (LTH2)
-[2020-10-08 21:14:10.451] [info] Frame 138 (t = 0.552):	 total squared error = 0.0298030, marker error: RMS = 0.0305179, max = 0.110361 (LTH2)
-[2020-10-08 21:14:10.475] [info] Frame 139 (t = 0.556):	 total squared error = 0.0299309, marker error: RMS = 0.0305833, max = 0.109750 (LTH2)
-[2020-10-08 21:14:10.540] [info] Frame 140 (t = 0.56):	 total squared error = 0.0301814, marker error: RMS = 0.0307111, max = 0.109079 (LTH2)
-[2020-10-08 21:14:10.585] [info] Frame 141 (t = 0.564):	 total squared error = 0.0301075, marker error: RMS = 0.0306734, max = 0.107374 (LTH2)
-[2020-10-08 21:14:10.612] [info] Frame 142 (t = 0.568):	 total squared error = 0.0302824, marker error: RMS = 0.0307624, max = 0.105838 (LTH2)
-[2020-10-08 21:14:10.636] [info] Frame 143 (t = 0.572):	 total squared error = 0.0304025, marker error: RMS = 0.0308233, max = 0.104550 (LTH2)
-[2020-10-08 21:14:10.667] [info] Frame 144 (t = 0.576):	 total squared error = 0.0304376, marker error: RMS = 0.0308411, max = 0.103088 (LTH2)
-[2020-10-08 21:14:10.687] [info] Frame 145 (t = 0.58):	 total squared error = 0.0306633, marker error: RMS = 0.0309553, max = 0.101956 (LTH2)
-[2020-10-08 21:14:10.723] [info] Frame 146 (t = 0.584):	 total squared error = 0.0308858, marker error: RMS = 0.0310674, max = 0.101259 (LTH2)
-[2020-10-08 21:14:10.758] [info] Frame 147 (t = 0.588):	 total squared error = 0.0311834, marker error: RMS = 0.0312167, max = 0.100529 (LTH1)
-[2020-10-08 21:14:10.775] [info] Frame 148 (t = 0.592):	 total squared error = 0.0313648, marker error: RMS = 0.0313074, max = 0.101048 (LTH1)
-[2020-10-08 21:14:10.800] [info] Frame 149 (t = 0.596):	 total squared error = 0.0315351, marker error: RMS = 0.0313922, max = 0.101271 (LTH1)
-[2020-10-08 21:14:10.825] [info] Frame 150 (t = 0.6):	 total squared error = 0.0316857, marker error: RMS = 0.0314671, max = 0.101324 (LTH1)
-[2020-10-08 21:14:10.849] [info] Frame 151 (t = 0.604000):	 total squared error = 0.0317877, marker error: RMS = 0.0315177, max = 0.102273 (LTH1)
-[2020-10-08 21:14:10.879] [info] Frame 152 (t = 0.608000):	 total squared error = 0.0318997, marker error: RMS = 0.0315732, max = 0.102483 (LTH1)
-[2020-10-08 21:14:10.956] [info] Frame 153 (t = 0.612):	 total squared error = 0.031989, marker error: RMS = 0.0316173, max = 0.102518 (LTH1)
-[2020-10-08 21:14:10.999] [info] Frame 154 (t = 0.616):	 total squared error = 0.0326699, marker error: RMS = 0.0319521, max = 0.102618 (LTH1)
-[2020-10-08 21:14:11.058] [info] Frame 155 (t = 0.62):	 total squared error = 0.0330747, marker error: RMS = 0.0321494, max = 0.101264 (LTH1)
-[2020-10-08 21:14:11.103] [info] Frame 156 (t = 0.624):	 total squared error = 0.0335742, marker error: RMS = 0.0323913, max = 0.0994275 (LTH1)
-[2020-10-08 21:14:11.172] [info] Frame 157 (t = 0.628):	 total squared error = 0.0344705, marker error: RMS = 0.0328208, max = 0.101708 (LTH2)
-[2020-10-08 21:14:11.199] [info] Frame 158 (t = 0.632):	 total squared error = 0.0357681, marker error: RMS = 0.0334328, max = 0.104255 (LTH2)
-[2020-10-08 21:14:11.242] [info] Frame 159 (t = 0.636):	 total squared error = 0.0366959, marker error: RMS = 0.0338636, max = 0.106228 (LTH2)
-[2020-10-08 21:14:11.282] [info] Frame 160 (t = 0.64):	 total squared error = 0.0374707, marker error: RMS = 0.0342193, max = 0.106513 (LTH2)
-[2020-10-08 21:14:11.317] [info] Frame 161 (t = 0.644):	 total squared error = 0.038154, marker error: RMS = 0.0345299, max = 0.107092 (LTH2)
-[2020-10-08 21:14:11.386] [info] Frame 162 (t = 0.648):	 total squared error = 0.038873, marker error: RMS = 0.0348537, max = 0.107365 (LTH2)
-[2020-10-08 21:14:11.430] [info] Frame 163 (t = 0.652):	 total squared error = 0.039151, marker error: RMS = 0.0349781, max = 0.107191 (LTH2)
-[2020-10-08 21:14:11.460] [info] Frame 164 (t = 0.656):	 total squared error = 0.0395029, marker error: RMS = 0.035135, max = 0.106873 (LTH2)
-[2020-10-08 21:14:11.500] [info] Frame 165 (t = 0.66):	 total squared error = 0.039795, marker error: RMS = 0.0352646, max = 0.106302 (LTH2)
-[2020-10-08 21:14:11.519] [info] Frame 166 (t = 0.664):	 total squared error = 0.039936, marker error: RMS = 0.035327, max = 0.105715 (LTH2)
-[2020-10-08 21:14:11.542] [info] Frame 167 (t = 0.668):	 total squared error = 0.0401506, marker error: RMS = 0.0354218, max = 0.105267 (LTH2)
-[2020-10-08 21:14:11.588] [info] Frame 168 (t = 0.672):	 total squared error = 0.0402473, marker error: RMS = 0.0354645, max = 0.104991 (LTH2)
-[2020-10-08 21:14:11.619] [info] Frame 169 (t = 0.676):	 total squared error = 0.0401586, marker error: RMS = 0.0354254, max = 0.104767 (LTH2)
-[2020-10-08 21:14:11.649] [info] Frame 170 (t = 0.68):	 total squared error = 0.0401994, marker error: RMS = 0.0354434, max = 0.104398 (LTH2)
-[2020-10-08 21:14:11.678] [info] Frame 171 (t = 0.684):	 total squared error = 0.0400044, marker error: RMS = 0.0353573, max = 0.104154 (LTH2)
-[2020-10-08 21:14:11.699] [info] Frame 172 (t = 0.688):	 total squared error = 0.0398883, marker error: RMS = 0.0353059, max = 0.103668 (LTH2)
-[2020-10-08 21:14:11.729] [info] Frame 173 (t = 0.692):	 total squared error = 0.0398848, marker error: RMS = 0.0353044, max = 0.102930 (LTH2)
-[2020-10-08 21:14:11.759] [info] Frame 174 (t = 0.696):	 total squared error = 0.0397576, marker error: RMS = 0.0352481, max = 0.101900 (LTH2)
-[2020-10-08 21:14:11.786] [info] Frame 175 (t = 0.7):	 total squared error = 0.0396588, marker error: RMS = 0.0352042, max = 0.100532 (LTH2)
-[2020-10-08 21:14:11.815] [info] Frame 176 (t = 0.704000):	 total squared error = 0.0395708, marker error: RMS = 0.0351651, max = 0.0985825 (LTH2)
-[2020-10-08 21:14:11.846] [info] Frame 177 (t = 0.708000):	 total squared error = 0.0395469, marker error: RMS = 0.0351545, max = 0.100419 (LTH1)
-[2020-10-08 21:14:11.888] [info] Frame 178 (t = 0.712):	 total squared error = 0.0394959, marker error: RMS = 0.0351318, max = 0.101778 (LTH1)
-[2020-10-08 21:14:11.931] [info] Frame 179 (t = 0.716):	 total squared error = 0.0394691, marker error: RMS = 0.0351199, max = 0.102307 (LTH1)
-[2020-10-08 21:14:11.963] [info] Frame 180 (t = 0.72):	 total squared error = 0.039541, marker error: RMS = 0.0351519, max = 0.102191 (LTH1)
-[2020-10-08 21:14:11.992] [info] Frame 181 (t = 0.724):	 total squared error = 0.0396728, marker error: RMS = 0.0352104, max = 0.101892 (LTH1)
-[2020-10-08 21:14:12.029] [info] Frame 182 (t = 0.728):	 total squared error = 0.0398415, marker error: RMS = 0.0352852, max = 0.101797 (LTH1)
-[2020-10-08 21:14:12.102] [info] Frame 183 (t = 0.732):	 total squared error = 0.0400543, marker error: RMS = 0.0353793, max = 0.101353 (LTH1)
-[2020-10-08 21:14:12.138] [info] Frame 184 (t = 0.736):	 total squared error = 0.0400297, marker error: RMS = 0.0353685, max = 0.101206 (LTH1)
-[2020-10-08 21:14:12.196] [info] Frame 185 (t = 0.74):	 total squared error = 0.0399689, marker error: RMS = 0.0353416, max = 0.101568 (LTH1)
-[2020-10-08 21:14:12.242] [info] Frame 186 (t = 0.744):	 total squared error = 0.0398784, marker error: RMS = 0.0353015, max = 0.101182 (LTH1)
-[2020-10-08 21:14:12.271] [info] Frame 187 (t = 0.748):	 total squared error = 0.0395357, marker error: RMS = 0.0351496, max = 0.100848 (LTH1)
-[2020-10-08 21:14:12.325] [info] Frame 188 (t = 0.752):	 total squared error = 0.0394595, marker error: RMS = 0.0351157, max = 0.100694 (LTH1)
-[2020-10-08 21:14:12.357] [info] Frame 189 (t = 0.756):	 total squared error = 0.0393236, marker error: RMS = 0.0350552, max = 0.100018 (LTH1)
-[2020-10-08 21:14:12.406] [info] Frame 190 (t = 0.76):	 total squared error = 0.0391079, marker error: RMS = 0.0349589, max = 0.100702 (LTH2)
-[2020-10-08 21:14:12.436] [info] Frame 191 (t = 0.764):	 total squared error = 0.0390566, marker error: RMS = 0.0349359, max = 0.103420 (LTH2)
-[2020-10-08 21:14:12.470] [info] Frame 192 (t = 0.768):	 total squared error = 0.0390848, marker error: RMS = 0.0349485, max = 0.106510 (LTH2)
-[2020-10-08 21:14:12.502] [info] Frame 193 (t = 0.772):	 total squared error = 0.0387028, marker error: RMS = 0.0347773, max = 0.108631 (LTH2)
-[2020-10-08 21:14:12.531] [info] Frame 194 (t = 0.776):	 total squared error = 0.0380488, marker error: RMS = 0.0344822, max = 0.109979 (LTH2)
-[2020-10-08 21:14:12.565] [info] Frame 195 (t = 0.78):	 total squared error = 0.0372034, marker error: RMS = 0.0340970, max = 0.110849 (LTH2)
-[2020-10-08 21:14:12.625] [info] Frame 196 (t = 0.784):	 total squared error = 0.0361397, marker error: RMS = 0.0336061, max = 0.111090 (LTH2)
-[2020-10-08 21:14:12.669] [info] Frame 197 (t = 0.788):	 total squared error = 0.0352912, marker error: RMS = 0.0332092, max = 0.111034 (LTH2)
-[2020-10-08 21:14:12.703] [info] Frame 198 (t = 0.792):	 total squared error = 0.034789, marker error: RMS = 0.0329721, max = 0.110310 (LTH2)
-[2020-10-08 21:14:12.755] [info] Frame 199 (t = 0.796):	 total squared error = 0.0345528, marker error: RMS = 0.0328599, max = 0.109187 (LTH2)
-[2020-10-08 21:14:12.808] [info] Frame 200 (t = 0.8):	 total squared error = 0.0344953, marker error: RMS = 0.0328326, max = 0.107594 (LTH2)
-[2020-10-08 21:14:12.847] [info] Frame 201 (t = 0.804000):	 total squared error = 0.0347804, marker error: RMS = 0.032968, max = 0.105588 (LTH2)
-[2020-10-08 21:14:12.880] [info] Frame 202 (t = 0.808000):	 total squared error = 0.0351253, marker error: RMS = 0.033131, max = 0.103353 (LTH2)
-[2020-10-08 21:14:12.926] [info] Frame 203 (t = 0.812):	 total squared error = 0.0352464, marker error: RMS = 0.0331881, max = 0.101654 (LTH2)
-[2020-10-08 21:14:12.951] [info] Frame 204 (t = 0.816):	 total squared error = 0.0352511, marker error: RMS = 0.0331903, max = 0.100426 (LTH1)
-[2020-10-08 21:14:12.989] [info] Frame 205 (t = 0.82):	 total squared error = 0.0349135, marker error: RMS = 0.0330310, max = 0.101772 (LTH1)
-[2020-10-08 21:14:13.025] [info] Frame 206 (t = 0.824):	 total squared error = 0.0343665, marker error: RMS = 0.0327712, max = 0.102814 (LTH1)
-[2020-10-08 21:14:13.055] [info] Frame 207 (t = 0.828):	 total squared error = 0.0336987, marker error: RMS = 0.0324513, max = 0.103447 (LTH1)
-[2020-10-08 21:14:13.081] [info] Frame 208 (t = 0.832):	 total squared error = 0.032993, marker error: RMS = 0.0321097, max = 0.103919 (LTH1)
-[2020-10-08 21:14:13.103] [info] Frame 209 (t = 0.836):	 total squared error = 0.0324613, marker error: RMS = 0.0318499, max = 0.104504 (LTH1)
-[2020-10-08 21:14:13.129] [info] Frame 210 (t = 0.84):	 total squared error = 0.0321082, marker error: RMS = 0.0316762, max = 0.104984 (LTH1)
-[2020-10-08 21:14:13.159] [info] Frame 211 (t = 0.844):	 total squared error = 0.0319629, marker error: RMS = 0.0316045, max = 0.105262 (LTH1)
-[2020-10-08 21:14:13.206] [info] Frame 212 (t = 0.848):	 total squared error = 0.0319912, marker error: RMS = 0.0316184, max = 0.105271 (LTH1)
-[2020-10-08 21:14:13.230] [info] Frame 213 (t = 0.852):	 total squared error = 0.0322249, marker error: RMS = 0.0317337, max = 0.105373 (LTH1)
-[2020-10-08 21:14:13.284] [info] Frame 214 (t = 0.856):	 total squared error = 0.0324988, marker error: RMS = 0.0318683, max = 0.105467 (LTH1)
-[2020-10-08 21:14:13.317] [info] Frame 215 (t = 0.86):	 total squared error = 0.0328314, marker error: RMS = 0.0320309, max = 0.105336 (LTH1)
-[2020-10-08 21:14:13.362] [info] Frame 216 (t = 0.864):	 total squared error = 0.032823, marker error: RMS = 0.0320268, max = 0.105199 (LTH1)
-[2020-10-08 21:14:13.404] [info] Frame 217 (t = 0.868):	 total squared error = 0.0328732, marker error: RMS = 0.0320513, max = 0.104887 (LTH1)
-[2020-10-08 21:14:13.416] [info] InverseKinematicsTool completed 131 frames in 5 second(s).
-[2020-10-08 21:14:13.427] [info] Storage: read data file = ikResults.mot (nr=131 nc=26)
-[2020-10-08 21:14:13.435] [info] Storage: read data file = ikResults.mot (nr=131 nc=26)
-[2020-10-08 21:14:13.522] [info] Loaded model scaledModel from file scaledModelMuscle.osim
-[2020-10-09 12:12:26.540] [info] Processing subject ...
-[2020-10-09 12:12:26.541] [info] Step 1: Loading generic model
-[2020-10-09 12:12:26.617] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
-[2020-10-09 12:12:26.884] [info] Step 2: Scaling generic model
-[2020-10-09 12:12:26.999] [info] Loaded marker file staticVirtualMarkers.trc (58 markers, 483 frames)
-[2020-10-09 12:12:26.999] [info] Measurement 'torso_height'
-[2020-10-09 12:12:27.000] [info] 	pair 0 (MTOR, MPEL): model = 0.468396, experimental = 0.466528
-[2020-10-09 12:12:27.001] [info] 	overall scale factor = 0.996011
-[2020-10-09 12:12:27.001] [info] Measurement 'torso_breadth'
-[2020-10-09 12:12:27.001] [info] 	pair 0 (C7, CLAV): model = 0.146032, experimental = 0.146906
-[2020-10-09 12:12:27.002] [info] 	pair 1 (T10, STRN): model = 0.222121, experimental = 0.241562
-[2020-10-09 12:12:27.003] [info] 	overall scale factor = 1.04675
-[2020-10-09 12:12:27.004] [info] Measurement 'torso_width'
-[2020-10-09 12:12:27.004] [info] 	pair 0 (RACR, LACR): model = 0.283321, experimental = 0.345905
-[2020-10-09 12:12:27.004] [info] 	overall scale factor = 1.22089
-[2020-10-09 12:12:27.005] [info] Measurement 'pelvis_w'
-[2020-10-09 12:12:27.005] [info] 	pair 0 (RASI, LASI): model = 0.25789, experimental = 0.216053
-[2020-10-09 12:12:27.005] [info] 	pair 1 (RPSI, LPSI): model = 0.092731, experimental = 0.0960037
-[2020-10-09 12:12:27.006] [info] 	overall scale factor = 0.936532
-[2020-10-09 12:12:27.006] [info] Measurement 'pelvis_d'
-[2020-10-09 12:12:27.006] [info] 	pair 0 (RASI, RPSI): model = 0.201128, experimental = 0.188603
-[2020-10-09 12:12:27.006] [info] 	pair 1 (LASI, LPSI): model = 0.192488, experimental = 0.188085
-[2020-10-09 12:12:27.007] [info] 	overall scale factor = 0.957426
-[2020-10-09 12:12:27.007] [info] Measurement 'pelvis_h'
-[2020-10-09 12:12:27.007] [info] 	pair 0 (MPEL, RHJC): model = 0.131542, experimental = 0.105614
-[2020-10-09 12:12:27.008] [info] 	pair 1 (MPEL, LHJC): model = 0.131025, experimental = 0.108303
-[2020-10-09 12:12:27.008] [info] 	overall scale factor = 0.814735
-[2020-10-09 12:12:27.008] [info] Measurement 'r_thigh_length'
-[2020-10-09 12:12:27.008] [info] 	pair 0 (RHJC, RKJC): model = 0.390494, experimental = 0.46219
-[2020-10-09 12:12:27.010] [info] 	overall scale factor = 1.1836
-[2020-10-09 12:12:27.010] [info] Measurement 'r_thigh_breadth'
-[2020-10-09 12:12:27.011] [info] 	pair 0 (RLFC, RMFC): model = 0.108539, experimental = 0.125179
-[2020-10-09 12:12:27.011] [info] 	overall scale factor = 1.1533
-[2020-10-09 12:12:27.011] [info] Measurement 'r_tibia_length'
-[2020-10-09 12:12:27.011] [info] 	pair 0 (RKJC, RAJC): model = 0.391627, experimental = 0.437658
-[2020-10-09 12:12:27.012] [info] 	overall scale factor = 1.11754
-[2020-10-09 12:12:27.012] [info] Measurement 'r_tibia_breadth'
-[2020-10-09 12:12:27.012] [info] 	pair 0 (RLMAL, RMMAL): model = 0.093372, experimental = 0.0955162
-[2020-10-09 12:12:27.012] [info] 	overall scale factor = 1.02296
-[2020-10-09 12:12:27.013] [info] Measurement 'r_foot_length'
-[2020-10-09 12:12:27.013] [info] 	pair 0 (fRCAL, fRAJC): model = 0.0941763, experimental = 0.0694764
-[2020-10-09 12:12:27.013] [info] 	pair 1 (fRAJC, fRMT3): model = 0.129502, experimental = 0.148666
-[2020-10-09 12:12:27.013] [info] 	overall scale factor = 0.942854
-[2020-10-09 12:12:27.014] [info] Measurement 'r_foot_height'
-[2020-10-09 12:12:27.014] [info] 	pair 0 (RAJC, fRAJC): model = 0.0696915, experimental = 0.100821
-[2020-10-09 12:12:27.014] [info] 	overall scale factor = 1.44667
-[2020-10-09 12:12:27.014] [info] Measurement 'r_foot_width'
-[2020-10-09 12:12:27.015] [info] 	pair 0 (fRMT1, fRMT5): model = 0.0759802, experimental = 0.109619
-[2020-10-09 12:12:27.015] [info] 	overall scale factor = 1.44273
-[2020-10-09 12:12:27.015] [info] Measurement 'l_thigh_length'
-[2020-10-09 12:12:27.016] [info] 	pair 0 (LHJC, LKJC): model = 0.390494, experimental = 0.474762
-[2020-10-09 12:12:27.016] [info] 	overall scale factor = 1.2158
-[2020-10-09 12:12:27.016] [info] Measurement 'l_thigh_breadth'
-[2020-10-09 12:12:27.017] [info] 	pair 0 (LLFC, LMFC): model = 0.108539, experimental = 0.125672
-[2020-10-09 12:12:27.017] [info] 	overall scale factor = 1.15785
-[2020-10-09 12:12:27.018] [info] Measurement 'l_tibia_length'
-[2020-10-09 12:12:27.021] [info] 	pair 0 (LKJC, LAJC): model = 0.391627, experimental = 0.433973
-[2020-10-09 12:12:27.021] [info] 	overall scale factor = 1.10813
-[2020-10-09 12:12:27.021] [info] Measurement 'l_tibia_breadth'
-[2020-10-09 12:12:27.021] [info] 	pair 0 (LLMAL, LMMAL): model = 0.093372, experimental = 0.0950852
-[2020-10-09 12:12:27.022] [info] 	overall scale factor = 1.01835
-[2020-10-09 12:12:27.022] [info] Measurement 'l_foot_length'
-[2020-10-09 12:12:27.022] [info] 	pair 0 (fLCAL, fLAJC): model = 0.0954936, experimental = 0.068191
-[2020-10-09 12:12:27.023] [info] 	pair 1 (fLAJC, fLMT3): model = 0.129723, experimental = 0.153377
-[2020-10-09 12:12:27.023] [info] 	overall scale factor = 0.948218
-[2020-10-09 12:12:27.023] [info] Measurement 'l_foot_height'
-[2020-10-09 12:12:27.023] [info] 	pair 0 (LAJC, fLAJC): model = 0.0696334, experimental = 0.101405
-[2020-10-09 12:12:27.024] [info] 	overall scale factor = 1.45627
-[2020-10-09 12:12:27.024] [info] Measurement 'l_foot_width'
-[2020-10-09 12:12:27.024] [info] 	pair 0 (fLMT1, fLMT5): model = 0.0759802, experimental = 0.110420
-[2020-10-09 12:12:27.024] [info] 	overall scale factor = 1.45327
-[2020-10-09 12:12:27.275] [info] Wrote model file 'scaledModel.osim' from model.
-[2020-10-09 12:12:27.280] [info] Wrote scale file 'scaleSet.xml' for model model.
-[2020-10-09 12:12:27.281] [info] Step 3: Placing markers on model
-[2020-10-09 12:12:27.387] [info] Loaded marker file staticVirtualMarkers.trc (58 markers, 483 frames)
-[2020-10-09 12:12:27.387] [info] Averaged frames from time 0.5 to 1.5 in staticVirtualMarkers.trc (frames 126 to 376)
-[2020-10-09 12:12:27.388] [info] Deleted 0 unused markers from model model.
-[2020-10-09 12:12:27.511] [info] Frame at (t = 0.5):	 total squared error = 0.0573014, marker error: RMS = 0.0322776, max = 0.0574159 (LTH2)
-[2020-10-09 12:12:27.511] [info] Moved markers in model model to match locations in marker file 'staticVirtualMarkers.trc'.
-[2020-10-09 12:12:27.564] [info] Wrote model file 'scaledModelAdjusted.osim' from model model.
-[2020-10-09 12:12:27.658] [info] Loaded model model from file scaledModelAdjusted.osim
-[2020-10-09 12:12:27.842] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
-[2020-10-09 12:12:27.978] [info] Loaded model scaledModel from file scaledModelAdjusted.osim
-[2020-10-09 12:12:28.228] [info] Loaded model scaledModel from file scaledModelMuscle.osim
-[2020-10-09 12:12:28.346] [info] Loaded model scaledModel from file scaledModelMuscle.osim
-[2020-10-09 12:17:13.405] [info] Processing subject ...
-[2020-10-09 12:17:13.405] [info] Step 1: Loading generic model
-[2020-10-09 12:17:13.469] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
-[2020-10-09 12:17:13.743] [info] Step 2: Scaling generic model
-[2020-10-09 12:17:13.879] [info] Loaded marker file staticVirtualMarkers.trc (58 markers, 483 frames)
-[2020-10-09 12:17:13.879] [info] Measurement 'torso_height'
-[2020-10-09 12:17:13.881] [info] 	pair 0 (MTOR, MPEL): model = 0.468396, experimental = 0.466528
-[2020-10-09 12:17:13.881] [info] 	overall scale factor = 0.996011
-[2020-10-09 12:17:13.883] [info] Measurement 'torso_breadth'
-[2020-10-09 12:17:13.883] [info] 	pair 0 (C7, CLAV): model = 0.146032, experimental = 0.146906
-[2020-10-09 12:17:13.884] [info] 	pair 1 (T10, STRN): model = 0.222121, experimental = 0.241562
-[2020-10-09 12:17:13.885] [info] 	overall scale factor = 1.04675
-[2020-10-09 12:17:13.885] [info] Measurement 'torso_width'
-[2020-10-09 12:17:13.885] [info] 	pair 0 (RACR, LACR): model = 0.283321, experimental = 0.345905
-[2020-10-09 12:17:13.885] [info] 	overall scale factor = 1.22089
-[2020-10-09 12:17:13.885] [info] Measurement 'pelvis_w'
-[2020-10-09 12:17:13.886] [info] 	pair 0 (RASI, LASI): model = 0.25789, experimental = 0.216053
-[2020-10-09 12:17:13.886] [info] 	pair 1 (RPSI, LPSI): model = 0.092731, experimental = 0.0960037
-[2020-10-09 12:17:13.886] [info] 	overall scale factor = 0.936532
-[2020-10-09 12:17:13.887] [info] Measurement 'pelvis_d'
-[2020-10-09 12:17:13.887] [info] 	pair 0 (RASI, RPSI): model = 0.201128, experimental = 0.188603
-[2020-10-09 12:17:13.887] [info] 	pair 1 (LASI, LPSI): model = 0.192488, experimental = 0.188085
-[2020-10-09 12:17:13.887] [info] 	overall scale factor = 0.957426
-[2020-10-09 12:17:13.887] [info] Measurement 'pelvis_h'
-[2020-10-09 12:17:13.888] [info] 	pair 0 (MPEL, RHJC): model = 0.131542, experimental = 0.105614
-[2020-10-09 12:17:13.888] [info] 	pair 1 (MPEL, LHJC): model = 0.131025, experimental = 0.108303
-[2020-10-09 12:17:13.888] [info] 	overall scale factor = 0.814735
-[2020-10-09 12:17:13.888] [info] Measurement 'r_thigh_length'
-[2020-10-09 12:17:13.889] [info] 	pair 0 (RHJC, RKJC): model = 0.390494, experimental = 0.46219
-[2020-10-09 12:17:13.889] [info] 	overall scale factor = 1.1836
-[2020-10-09 12:17:13.889] [info] Measurement 'r_thigh_breadth'
-[2020-10-09 12:17:13.891] [info] 	pair 0 (RLFC, RMFC): model = 0.108539, experimental = 0.125179
-[2020-10-09 12:17:13.891] [info] 	overall scale factor = 1.1533
-[2020-10-09 12:17:13.891] [info] Measurement 'r_tibia_length'
-[2020-10-09 12:17:13.891] [info] 	pair 0 (RKJC, RAJC): model = 0.391627, experimental = 0.437658
-[2020-10-09 12:17:13.892] [info] 	overall scale factor = 1.11754
-[2020-10-09 12:17:13.892] [info] Measurement 'r_tibia_breadth'
-[2020-10-09 12:17:13.892] [info] 	pair 0 (RLMAL, RMMAL): model = 0.093372, experimental = 0.0955162
-[2020-10-09 12:17:13.892] [info] 	overall scale factor = 1.02296
-[2020-10-09 12:17:13.893] [info] Measurement 'r_foot_length'
-[2020-10-09 12:17:13.893] [info] 	pair 0 (fRCAL, fRAJC): model = 0.0941763, experimental = 0.0694764
-[2020-10-09 12:17:13.893] [info] 	pair 1 (fRAJC, fRMT3): model = 0.129502, experimental = 0.148666
-[2020-10-09 12:17:13.893] [info] 	overall scale factor = 0.942854
-[2020-10-09 12:17:13.894] [info] Measurement 'r_foot_height'
-[2020-10-09 12:17:13.894] [info] 	pair 0 (RAJC, fRAJC): model = 0.0696915, experimental = 0.100821
-[2020-10-09 12:17:13.894] [info] 	overall scale factor = 1.44667
-[2020-10-09 12:17:13.895] [info] Measurement 'r_foot_width'
-[2020-10-09 12:17:13.895] [info] 	pair 0 (fRMT1, fRMT5): model = 0.0759802, experimental = 0.109619
-[2020-10-09 12:17:13.896] [info] 	overall scale factor = 1.44273
-[2020-10-09 12:17:13.896] [info] Measurement 'l_thigh_length'
-[2020-10-09 12:17:13.896] [info] 	pair 0 (LHJC, LKJC): model = 0.390494, experimental = 0.474762
-[2020-10-09 12:17:13.896] [info] 	overall scale factor = 1.2158
-[2020-10-09 12:17:13.897] [info] Measurement 'l_thigh_breadth'
-[2020-10-09 12:17:13.897] [info] 	pair 0 (LLFC, LMFC): model = 0.108539, experimental = 0.125672
-[2020-10-09 12:17:13.897] [info] 	overall scale factor = 1.15785
-[2020-10-09 12:17:13.898] [info] Measurement 'l_tibia_length'
-[2020-10-09 12:17:13.898] [info] 	pair 0 (LKJC, LAJC): model = 0.391627, experimental = 0.433973
-[2020-10-09 12:17:13.898] [info] 	overall scale factor = 1.10813
-[2020-10-09 12:17:13.899] [info] Measurement 'l_tibia_breadth'
-[2020-10-09 12:17:13.899] [info] 	pair 0 (LLMAL, LMMAL): model = 0.093372, experimental = 0.0950852
-[2020-10-09 12:17:13.901] [info] 	overall scale factor = 1.01835
-[2020-10-09 12:17:13.901] [info] Measurement 'l_foot_length'
-[2020-10-09 12:17:13.901] [info] 	pair 0 (fLCAL, fLAJC): model = 0.0954936, experimental = 0.068191
-[2020-10-09 12:17:13.902] [info] 	pair 1 (fLAJC, fLMT3): model = 0.129723, experimental = 0.153377
-[2020-10-09 12:17:13.902] [info] 	overall scale factor = 0.948218
-[2020-10-09 12:17:13.902] [info] Measurement 'l_foot_height'
-[2020-10-09 12:17:13.902] [info] 	pair 0 (LAJC, fLAJC): model = 0.0696334, experimental = 0.101405
-[2020-10-09 12:17:13.902] [info] 	overall scale factor = 1.45627
-[2020-10-09 12:17:13.903] [info] Measurement 'l_foot_width'
-[2020-10-09 12:17:13.903] [info] 	pair 0 (fLMT1, fLMT5): model = 0.0759802, experimental = 0.110420
-[2020-10-09 12:17:13.903] [info] 	overall scale factor = 1.45327
-[2020-10-09 12:17:14.146] [info] Wrote model file 'scaledModel.osim' from model.
-[2020-10-09 12:17:14.150] [info] Wrote scale file 'scaleSet.xml' for model model.
-[2020-10-09 12:17:14.150] [info] Step 3: Placing markers on model
-[2020-10-09 12:17:14.261] [info] Loaded marker file staticVirtualMarkers.trc (58 markers, 483 frames)
-[2020-10-09 12:17:14.262] [info] Averaged frames from time 0.5 to 1.5 in staticVirtualMarkers.trc (frames 126 to 376)
-[2020-10-09 12:17:14.262] [info] Deleted 0 unused markers from model model.
-[2020-10-09 12:17:14.398] [info] Frame at (t = 0.5):	 total squared error = 0.0573014, marker error: RMS = 0.0322776, max = 0.0574159 (LTH2)
-[2020-10-09 12:17:14.398] [info] Moved markers in model model to match locations in marker file 'staticVirtualMarkers.trc'.
-[2020-10-09 12:17:14.449] [info] Wrote model file 'scaledModelAdjusted.osim' from model model.
-[2020-10-09 12:17:14.543] [info] Loaded model model from file scaledModelAdjusted.osim
-[2020-10-09 12:17:14.731] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
-[2020-10-09 12:17:14.872] [info] Loaded model scaledModel from file scaledModelAdjusted.osim
-[2020-10-09 12:17:15.126] [info] Loaded model scaledModel from file scaledModelMuscle.osim
-[2020-10-09 12:17:15.248] [info] Loaded model scaledModel from file scaledModelMuscle.osim
-[2020-10-09 12:17:17.750] [cout] [info] 
-               MODEL: scaledModel
-         coordinates: 25
-              forces: 95
-           actuators: 83
-             muscles: 80
-            analyses: 0
-              probes: 0
-              bodies: 14
-              joints: 14
-         constraints: 2
-             markers: 56
-         controllers: 0
-  contact geometries: 13
-misc modelcomponents: 0
-[2020-10-09 12:17:17.750] [info] Running tool .
-[2020-10-09 12:17:17.957] [info] Frame 86 (t = 0.344):	 total squared error = 0.0339605, marker error: RMS = 0.0325771, max = 0.109725 (LTH1)
-[2020-10-09 12:17:17.983] [info] Frame 87 (t = 0.348):	 total squared error = 0.0342815, marker error: RMS = 0.0327307, max = 0.109367 (LTH1)
-[2020-10-09 12:17:18.027] [info] Frame 88 (t = 0.352):	 total squared error = 0.0346289, marker error: RMS = 0.0328961, max = 0.109232 (LTH1)
-[2020-10-09 12:17:18.055] [info] Frame 89 (t = 0.356):	 total squared error = 0.0350436, marker error: RMS = 0.0330925, max = 0.108759 (LTH1)
-[2020-10-09 12:17:18.115] [info] Frame 90 (t = 0.36):	 total squared error = 0.0356188, marker error: RMS = 0.033363, max = 0.109025 (LTH1)
-[2020-10-09 12:17:18.144] [info] Frame 91 (t = 0.364):	 total squared error = 0.0362317, marker error: RMS = 0.0336488, max = 0.109277 (LTH1)
-[2020-10-09 12:17:18.195] [info] Frame 92 (t = 0.368):	 total squared error = 0.0370818, marker error: RMS = 0.0340412, max = 0.109734 (LTH1)
-[2020-10-09 12:17:18.219] [info] Frame 93 (t = 0.372):	 total squared error = 0.037765, marker error: RMS = 0.0343534, max = 0.110343 (LTH1)
-[2020-10-09 12:17:18.246] [info] Frame 94 (t = 0.376):	 total squared error = 0.0386181, marker error: RMS = 0.0347393, max = 0.110844 (LTH1)
-[2020-10-09 12:17:18.273] [info] Frame 95 (t = 0.38):	 total squared error = 0.0393148, marker error: RMS = 0.0350512, max = 0.111205 (LTH1)
-[2020-10-09 12:17:18.305] [info] Frame 96 (t = 0.384):	 total squared error = 0.0399903, marker error: RMS = 0.0353511, max = 0.110811 (LTH1)
-[2020-10-09 12:17:18.333] [info] Frame 97 (t = 0.388):	 total squared error = 0.0404940, marker error: RMS = 0.035573, max = 0.109897 (LTH1)
-[2020-10-09 12:17:18.384] [info] Frame 98 (t = 0.392):	 total squared error = 0.0412457, marker error: RMS = 0.0359016, max = 0.110187 (LTH1)
-[2020-10-09 12:17:18.407] [info] Frame 99 (t = 0.396):	 total squared error = 0.0415876, marker error: RMS = 0.0360501, max = 0.109637 (LTH1)
-[2020-10-09 12:17:18.425] [info] Frame 100 (t = 0.4):	 total squared error = 0.0417958, marker error: RMS = 0.0361403, max = 0.108556 (LTH1)
-[2020-10-09 12:17:18.448] [info] Frame 101 (t = 0.404000):	 total squared error = 0.0420952, marker error: RMS = 0.0362695, max = 0.108168 (LTH1)
-[2020-10-09 12:17:18.472] [info] Frame 102 (t = 0.408000):	 total squared error = 0.0423382, marker error: RMS = 0.036374, max = 0.107700 (LTH1)
-[2020-10-09 12:17:18.514] [info] Frame 103 (t = 0.412):	 total squared error = 0.0424677, marker error: RMS = 0.0364296, max = 0.107068 (LTH1)
-[2020-10-09 12:17:18.549] [info] Frame 104 (t = 0.416):	 total squared error = 0.0424828, marker error: RMS = 0.0364361, max = 0.106308 (LTH1)
-[2020-10-09 12:17:18.568] [info] Frame 105 (t = 0.42):	 total squared error = 0.0424928, marker error: RMS = 0.0364403, max = 0.105625 (LTH1)
-[2020-10-09 12:17:18.597] [info] Frame 106 (t = 0.424):	 total squared error = 0.0423831, marker error: RMS = 0.0363933, max = 0.104551 (LTH1)
-[2020-10-09 12:17:18.641] [info] Frame 107 (t = 0.428):	 total squared error = 0.0421060, marker error: RMS = 0.0362741, max = 0.103850 (LTH1)
-[2020-10-09 12:17:18.665] [info] Frame 108 (t = 0.432):	 total squared error = 0.0418394, marker error: RMS = 0.0361591, max = 0.103100 (LTH1)
-[2020-10-09 12:17:18.695] [info] Frame 109 (t = 0.436):	 total squared error = 0.0414422, marker error: RMS = 0.0359871, max = 0.102084 (LTH1)
-[2020-10-09 12:17:18.724] [info] Frame 110 (t = 0.44):	 total squared error = 0.0410719, marker error: RMS = 0.0358259, max = 0.100916 (LTH1)
-[2020-10-09 12:17:18.754] [info] Frame 111 (t = 0.444):	 total squared error = 0.0406502, marker error: RMS = 0.0356415, max = 0.101258 (LTH2)
-[2020-10-09 12:17:18.803] [info] Frame 112 (t = 0.448):	 total squared error = 0.0403399, marker error: RMS = 0.0355052, max = 0.102532 (LTH2)
-[2020-10-09 12:17:18.831] [info] Frame 113 (t = 0.452):	 total squared error = 0.0400322, marker error: RMS = 0.0353696, max = 0.103774 (LTH2)
-[2020-10-09 12:17:18.856] [info] Frame 114 (t = 0.456):	 total squared error = 0.0397801, marker error: RMS = 0.035258, max = 0.104455 (LTH2)
-[2020-10-09 12:17:18.905] [info] Frame 115 (t = 0.46):	 total squared error = 0.0398746, marker error: RMS = 0.0352999, max = 0.105895 (LTH2)
-[2020-10-09 12:17:18.938] [info] Frame 116 (t = 0.464):	 total squared error = 0.0392937, marker error: RMS = 0.0350418, max = 0.106183 (LTH2)
-[2020-10-09 12:17:18.971] [info] Frame 117 (t = 0.468):	 total squared error = 0.0393283, marker error: RMS = 0.0350572, max = 0.107287 (LTH2)
-[2020-10-09 12:17:18.994] [info] Frame 118 (t = 0.472):	 total squared error = 0.0391248, marker error: RMS = 0.0349664, max = 0.107728 (LTH2)
-[2020-10-09 12:17:19.022] [info] Frame 119 (t = 0.476):	 total squared error = 0.0383977, marker error: RMS = 0.03464, max = 0.108246 (LTH2)
-[2020-10-09 12:17:19.073] [info] Frame 120 (t = 0.48):	 total squared error = 0.0382471, marker error: RMS = 0.034572, max = 0.109494 (LTH2)
-[2020-10-09 12:17:19.104] [info] Frame 121 (t = 0.484):	 total squared error = 0.0373258, marker error: RMS = 0.0341531, max = 0.109772 (LTH2)
-[2020-10-09 12:17:19.137] [info] Frame 122 (t = 0.488):	 total squared error = 0.0365052, marker error: RMS = 0.0337755, max = 0.111346 (LTH2)
-[2020-10-09 12:17:19.157] [info] Frame 123 (t = 0.492):	 total squared error = 0.0360350, marker error: RMS = 0.0335573, max = 0.113155 (LTH2)
-[2020-10-09 12:17:19.187] [info] Frame 124 (t = 0.496):	 total squared error = 0.0351806, marker error: RMS = 0.0331571, max = 0.114156 (LTH2)
-[2020-10-09 12:17:19.239] [info] Frame 125 (t = 0.5):	 total squared error = 0.0346121, marker error: RMS = 0.0328881, max = 0.115055 (LTH2)
-[2020-10-09 12:17:19.271] [info] Frame 126 (t = 0.504000):	 total squared error = 0.0340534, marker error: RMS = 0.0326216, max = 0.115304 (LTH2)
-[2020-10-09 12:17:19.307] [info] Frame 127 (t = 0.508000):	 total squared error = 0.0333906, marker error: RMS = 0.0323026, max = 0.115685 (LTH2)
-[2020-10-09 12:17:19.355] [info] Frame 128 (t = 0.512):	 total squared error = 0.0327523, marker error: RMS = 0.0319923, max = 0.115401 (LTH2)
-[2020-10-09 12:17:19.386] [info] Frame 129 (t = 0.516):	 total squared error = 0.0323911, marker error: RMS = 0.0318154, max = 0.115945 (LTH2)
-[2020-10-09 12:17:19.440] [info] Frame 130 (t = 0.52):	 total squared error = 0.0317371, marker error: RMS = 0.0314926, max = 0.115042 (LTH2)
-[2020-10-09 12:17:19.465] [info] Frame 131 (t = 0.524):	 total squared error = 0.0313457, marker error: RMS = 0.0312978, max = 0.115116 (LTH2)
-[2020-10-09 12:17:19.494] [info] Frame 132 (t = 0.528):	 total squared error = 0.0307161, marker error: RMS = 0.0309819, max = 0.114192 (LTH2)
-[2020-10-09 12:17:19.542] [info] Frame 133 (t = 0.532):	 total squared error = 0.0303151, marker error: RMS = 0.0307790, max = 0.113395 (LTH2)
-[2020-10-09 12:17:19.573] [info] Frame 134 (t = 0.536):	 total squared error = 0.0300974, marker error: RMS = 0.0306683, max = 0.112867 (LTH2)
-[2020-10-09 12:17:19.600] [info] Frame 135 (t = 0.54):	 total squared error = 0.0300870, marker error: RMS = 0.0306630, max = 0.113041 (LTH2)
-[2020-10-09 12:17:19.643] [info] Frame 136 (t = 0.544):	 total squared error = 0.0296726, marker error: RMS = 0.0304511, max = 0.111713 (LTH2)
-[2020-10-09 12:17:19.677] [info] Frame 137 (t = 0.548):	 total squared error = 0.0296617, marker error: RMS = 0.0304455, max = 0.110813 (LTH2)
-[2020-10-09 12:17:19.704] [info] Frame 138 (t = 0.552):	 total squared error = 0.0297884, marker error: RMS = 0.0305105, max = 0.110331 (LTH2)
-[2020-10-09 12:17:19.727] [info] Frame 139 (t = 0.556):	 total squared error = 0.0299238, marker error: RMS = 0.0305797, max = 0.109780 (LTH2)
-[2020-10-09 12:17:19.784] [info] Frame 140 (t = 0.56):	 total squared error = 0.0301807, marker error: RMS = 0.0307107, max = 0.109074 (LTH2)
-[2020-10-09 12:17:19.812] [info] Frame 141 (t = 0.564):	 total squared error = 0.0301225, marker error: RMS = 0.0306811, max = 0.107296 (LTH2)
-[2020-10-09 12:17:19.841] [info] Frame 142 (t = 0.568):	 total squared error = 0.0302868, marker error: RMS = 0.0307646, max = 0.105861 (LTH2)
-[2020-10-09 12:17:19.861] [info] Frame 143 (t = 0.572):	 total squared error = 0.0303841, marker error: RMS = 0.0308140, max = 0.104321 (LTH2)
-[2020-10-09 12:17:19.894] [info] Frame 144 (t = 0.576):	 total squared error = 0.0304255, marker error: RMS = 0.0308350, max = 0.103063 (LTH2)
-[2020-10-09 12:17:19.912] [info] Frame 145 (t = 0.58):	 total squared error = 0.0306603, marker error: RMS = 0.0309537, max = 0.101948 (LTH2)
-[2020-10-09 12:17:19.936] [info] Frame 146 (t = 0.584):	 total squared error = 0.0308857, marker error: RMS = 0.0310673, max = 0.101257 (LTH2)
-[2020-10-09 12:17:19.959] [info] Frame 147 (t = 0.588):	 total squared error = 0.0311636, marker error: RMS = 0.0312068, max = 0.100577 (LTH1)
-[2020-10-09 12:17:19.985] [info] Frame 148 (t = 0.592):	 total squared error = 0.0313906, marker error: RMS = 0.0313202, max = 0.100901 (LTH1)
-[2020-10-09 12:17:20.012] [info] Frame 149 (t = 0.596):	 total squared error = 0.0315315, marker error: RMS = 0.0313905, max = 0.101222 (LTH1)
-[2020-10-09 12:17:20.040] [info] Frame 150 (t = 0.6):	 total squared error = 0.0316905, marker error: RMS = 0.0314695, max = 0.101387 (LTH1)
-[2020-10-09 12:17:20.069] [info] Frame 151 (t = 0.604000):	 total squared error = 0.0317941, marker error: RMS = 0.0315209, max = 0.102285 (LTH1)
-[2020-10-09 12:17:20.093] [info] Frame 152 (t = 0.608000):	 total squared error = 0.0319010, marker error: RMS = 0.0315738, max = 0.102418 (LTH1)
-[2020-10-09 12:17:20.156] [info] Frame 153 (t = 0.612):	 total squared error = 0.0319919, marker error: RMS = 0.0316188, max = 0.102526 (LTH1)
-[2020-10-09 12:17:20.191] [info] Frame 154 (t = 0.616):	 total squared error = 0.0326707, marker error: RMS = 0.0319525, max = 0.102639 (LTH1)
-[2020-10-09 12:17:20.229] [info] Frame 155 (t = 0.62):	 total squared error = 0.0330745, marker error: RMS = 0.0321493, max = 0.101286 (LTH1)
-[2020-10-09 12:17:20.259] [info] Frame 156 (t = 0.624):	 total squared error = 0.0335824, marker error: RMS = 0.0323952, max = 0.0993871 (LTH1)
-[2020-10-09 12:17:20.291] [info] Frame 157 (t = 0.628):	 total squared error = 0.0344742, marker error: RMS = 0.0328226, max = 0.101840 (LTH2)
-[2020-10-09 12:17:20.316] [info] Frame 158 (t = 0.632):	 total squared error = 0.0357643, marker error: RMS = 0.0334311, max = 0.104259 (LTH2)
-[2020-10-09 12:17:20.365] [info] Frame 159 (t = 0.636):	 total squared error = 0.0367004, marker error: RMS = 0.0338657, max = 0.106259 (LTH2)
-[2020-10-09 12:17:20.392] [info] Frame 160 (t = 0.64):	 total squared error = 0.0374629, marker error: RMS = 0.0342157, max = 0.106490 (LTH2)
-[2020-10-09 12:17:20.424] [info] Frame 161 (t = 0.644):	 total squared error = 0.0382116, marker error: RMS = 0.0345559, max = 0.107054 (LTH2)
-[2020-10-09 12:17:20.456] [info] Frame 162 (t = 0.648):	 total squared error = 0.038863, marker error: RMS = 0.0348492, max = 0.107385 (LTH2)
-[2020-10-09 12:17:20.482] [info] Frame 163 (t = 0.652):	 total squared error = 0.0391031, marker error: RMS = 0.0349567, max = 0.107269 (LTH2)
-[2020-10-09 12:17:20.510] [info] Frame 164 (t = 0.656):	 total squared error = 0.0395003, marker error: RMS = 0.0351338, max = 0.106861 (LTH2)
-[2020-10-09 12:17:20.556] [info] Frame 165 (t = 0.66):	 total squared error = 0.0398065, marker error: RMS = 0.0352697, max = 0.106283 (LTH2)
-[2020-10-09 12:17:20.576] [info] Frame 166 (t = 0.664):	 total squared error = 0.039918, marker error: RMS = 0.0353191, max = 0.105733 (LTH2)
-[2020-10-09 12:17:20.598] [info] Frame 167 (t = 0.668):	 total squared error = 0.0401475, marker error: RMS = 0.0354205, max = 0.105286 (LTH2)
-[2020-10-09 12:17:20.623] [info] Frame 168 (t = 0.672):	 total squared error = 0.0402050, marker error: RMS = 0.0354458, max = 0.105041 (LTH2)
-[2020-10-09 12:17:20.655] [info] Frame 169 (t = 0.676):	 total squared error = 0.0401538, marker error: RMS = 0.0354232, max = 0.104796 (LTH2)
-[2020-10-09 12:17:20.674] [info] Frame 170 (t = 0.68):	 total squared error = 0.0401084, marker error: RMS = 0.0354032, max = 0.104341 (LTH2)
-[2020-10-09 12:17:20.704] [info] Frame 171 (t = 0.684):	 total squared error = 0.0400261, marker error: RMS = 0.0353669, max = 0.104217 (LTH2)
-[2020-10-09 12:17:20.724] [info] Frame 172 (t = 0.688):	 total squared error = 0.0398909, marker error: RMS = 0.0353071, max = 0.103718 (LTH2)
-[2020-10-09 12:17:20.772] [info] Frame 173 (t = 0.692):	 total squared error = 0.0399157, marker error: RMS = 0.0353181, max = 0.102938 (LTH2)
-[2020-10-09 12:17:20.805] [info] Frame 174 (t = 0.696):	 total squared error = 0.0397731, marker error: RMS = 0.0352549, max = 0.101918 (LTH2)
-[2020-10-09 12:17:20.834] [info] Frame 175 (t = 0.7):	 total squared error = 0.0396759, marker error: RMS = 0.0352118, max = 0.100524 (LTH2)
-[2020-10-09 12:17:20.864] [info] Frame 176 (t = 0.704000):	 total squared error = 0.0395766, marker error: RMS = 0.0351677, max = 0.0986727 (LTH2)
-[2020-10-09 12:17:20.896] [info] Frame 177 (t = 0.708000):	 total squared error = 0.0395565, marker error: RMS = 0.0351588, max = 0.100525 (LTH1)
-[2020-10-09 12:17:20.919] [info] Frame 178 (t = 0.712):	 total squared error = 0.0395052, marker error: RMS = 0.035136, max = 0.101637 (LTH1)
-[2020-10-09 12:17:20.952] [info] Frame 179 (t = 0.716):	 total squared error = 0.0394725, marker error: RMS = 0.0351215, max = 0.102343 (LTH1)
-[2020-10-09 12:17:20.983] [info] Frame 180 (t = 0.72):	 total squared error = 0.039551, marker error: RMS = 0.0351563, max = 0.102230 (LTH1)
-[2020-10-09 12:17:21.014] [info] Frame 181 (t = 0.724):	 total squared error = 0.039669, marker error: RMS = 0.0352088, max = 0.101894 (LTH1)
-[2020-10-09 12:17:21.049] [info] Frame 182 (t = 0.728):	 total squared error = 0.0398338, marker error: RMS = 0.0352818, max = 0.101803 (LTH1)
-[2020-10-09 12:17:21.086] [info] Frame 183 (t = 0.732):	 total squared error = 0.0399524, marker error: RMS = 0.0353343, max = 0.101549 (LTH1)
-[2020-10-09 12:17:21.144] [info] Frame 184 (t = 0.736):	 total squared error = 0.0401406, marker error: RMS = 0.0354174, max = 0.101092 (LTH1)
-[2020-10-09 12:17:21.177] [info] Frame 185 (t = 0.74):	 total squared error = 0.0400389, marker error: RMS = 0.0353725, max = 0.101400 (LTH1)
-[2020-10-09 12:17:21.208] [info] Frame 186 (t = 0.744):	 total squared error = 0.0399134, marker error: RMS = 0.035317, max = 0.101247 (LTH1)
-[2020-10-09 12:17:21.263] [info] Frame 187 (t = 0.748):	 total squared error = 0.0397005, marker error: RMS = 0.0352227, max = 0.100890 (LTH1)
-[2020-10-09 12:17:21.296] [info] Frame 188 (t = 0.752):	 total squared error = 0.0394409, marker error: RMS = 0.0351074, max = 0.100697 (LTH1)
-[2020-10-09 12:17:21.332] [info] Frame 189 (t = 0.756):	 total squared error = 0.0393163, marker error: RMS = 0.0350519, max = 0.100024 (LTH1)
-[2020-10-09 12:17:21.385] [info] Frame 190 (t = 0.76):	 total squared error = 0.0391080, marker error: RMS = 0.0349589, max = 0.100697 (LTH2)
-[2020-10-09 12:17:21.424] [info] Frame 191 (t = 0.764):	 total squared error = 0.0390566, marker error: RMS = 0.0349359, max = 0.103410 (LTH2)
-[2020-10-09 12:17:21.450] [info] Frame 192 (t = 0.768):	 total squared error = 0.0391012, marker error: RMS = 0.0349559, max = 0.106519 (LTH2)
-[2020-10-09 12:17:21.485] [info] Frame 193 (t = 0.772):	 total squared error = 0.0387006, marker error: RMS = 0.0347764, max = 0.108636 (LTH2)
-[2020-10-09 12:17:21.517] [info] Frame 194 (t = 0.776):	 total squared error = 0.0380536, marker error: RMS = 0.0344844, max = 0.109997 (LTH2)
-[2020-10-09 12:17:21.573] [info] Frame 195 (t = 0.78):	 total squared error = 0.037133, marker error: RMS = 0.0340647, max = 0.110749 (LTH2)
-[2020-10-09 12:17:21.609] [info] Frame 196 (t = 0.784):	 total squared error = 0.0361787, marker error: RMS = 0.0336242, max = 0.111132 (LTH2)
-[2020-10-09 12:17:21.662] [info] Frame 197 (t = 0.788):	 total squared error = 0.0352471, marker error: RMS = 0.0331884, max = 0.111048 (LTH2)
-[2020-10-09 12:17:21.690] [info] Frame 198 (t = 0.792):	 total squared error = 0.0347442, marker error: RMS = 0.0329508, max = 0.110258 (LTH2)
-[2020-10-09 12:17:21.718] [info] Frame 199 (t = 0.796):	 total squared error = 0.034512, marker error: RMS = 0.0328405, max = 0.109150 (LTH2)
-[2020-10-09 12:17:21.771] [info] Frame 200 (t = 0.8):	 total squared error = 0.0344962, marker error: RMS = 0.032833, max = 0.107588 (LTH2)
-[2020-10-09 12:17:21.801] [info] Frame 201 (t = 0.804000):	 total squared error = 0.0347823, marker error: RMS = 0.0329689, max = 0.105507 (LTH2)
-[2020-10-09 12:17:21.831] [info] Frame 202 (t = 0.808000):	 total squared error = 0.0351289, marker error: RMS = 0.0331327, max = 0.103283 (LTH2)
-[2020-10-09 12:17:21.864] [info] Frame 203 (t = 0.812):	 total squared error = 0.0353764, marker error: RMS = 0.0332492, max = 0.101564 (LTH2)
-[2020-10-09 12:17:21.892] [info] Frame 204 (t = 0.816):	 total squared error = 0.0353539, marker error: RMS = 0.0332387, max = 0.100348 (LTH1)
-[2020-10-09 12:17:21.926] [info] Frame 205 (t = 0.82):	 total squared error = 0.0349908, marker error: RMS = 0.0330676, max = 0.101711 (LTH1)
-[2020-10-09 12:17:21.960] [info] Frame 206 (t = 0.824):	 total squared error = 0.0344213, marker error: RMS = 0.0327973, max = 0.102781 (LTH1)
-[2020-10-09 12:17:21.986] [info] Frame 207 (t = 0.828):	 total squared error = 0.0337582, marker error: RMS = 0.0324799, max = 0.103397 (LTH1)
-[2020-10-09 12:17:22.019] [info] Frame 208 (t = 0.832):	 total squared error = 0.0330237, marker error: RMS = 0.0321246, max = 0.103887 (LTH1)
-[2020-10-09 12:17:22.049] [info] Frame 209 (t = 0.836):	 total squared error = 0.0324825, marker error: RMS = 0.0318603, max = 0.104568 (LTH1)
-[2020-10-09 12:17:22.096] [info] Frame 210 (t = 0.84):	 total squared error = 0.0321515, marker error: RMS = 0.0316976, max = 0.104760 (LTH1)
-[2020-10-09 12:17:22.121] [info] Frame 211 (t = 0.844):	 total squared error = 0.0319704, marker error: RMS = 0.0316081, max = 0.105042 (LTH1)
-[2020-10-09 12:17:22.152] [info] Frame 212 (t = 0.848):	 total squared error = 0.0319994, marker error: RMS = 0.0316225, max = 0.105357 (LTH1)
-[2020-10-09 12:17:22.204] [info] Frame 213 (t = 0.852):	 total squared error = 0.0322034, marker error: RMS = 0.0317231, max = 0.105362 (LTH1)
-[2020-10-09 12:17:22.232] [info] Frame 214 (t = 0.856):	 total squared error = 0.0325263, marker error: RMS = 0.0318818, max = 0.105497 (LTH1)
-[2020-10-09 12:17:22.259] [info] Frame 215 (t = 0.86):	 total squared error = 0.032858, marker error: RMS = 0.0320439, max = 0.105354 (LTH1)
-[2020-10-09 12:17:22.313] [info] Frame 216 (t = 0.864):	 total squared error = 0.0328141, marker error: RMS = 0.0320225, max = 0.105145 (LTH1)
-[2020-10-09 12:17:22.337] [info] Frame 217 (t = 0.868):	 total squared error = 0.0329774, marker error: RMS = 0.0321021, max = 0.104913 (LTH1)
-[2020-10-09 12:17:22.351] [info] InverseKinematicsTool completed 132 frames in 4 second(s).
-[2020-10-09 12:17:22.359] [info] Storage: read data file = ikResults.mot (nr=132 nc=26)
-[2020-10-09 12:17:22.362] [info] Storage: read data file = ikResults.mot (nr=132 nc=26)
-[2020-10-09 12:17:22.424] [info] Loaded model scaledModel from file scaledModelMuscle.osim
-[2020-10-09 12:19:48.114] [info] Updating Model file from 30000 to latest format...
-[2020-10-09 12:19:48.135] [info] Loaded model gait9dof18musc_Ong_et_al from file gait9dof18musc_Ong_et_al_Moco.osim
-[2020-10-09 12:19:55.981] [info] Storage: read data file = refQ_converted.sto (nr=132 nc=11)
-[2020-10-09 12:19:55.984] [info] Storage: read data file = refQ_converted.sto (nr=132 nc=11)
-[2020-10-09 12:20:45.034] [info] ========================================================================
-[2020-10-09 12:20:45.034] [info] MocoCasADiSolver starting.
-[2020-10-09 12:20:45.036] [info] Fri Oct  9 12:20:45 2020
-[2020-10-09 12:20:45.036] [info] ------------------------------------------------------------------------
-[2020-10-09 12:20:45.036] [cout] [info] Costs: (total: 4)
-[2020-10-09 12:20:45.037] [cout] [info]   state_tracking. MocoStateTrackingGoal, enabled: true, mode: cost, weight: 10.0
-[2020-10-09 12:20:45.037] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tilt/value, weight: 32.8405
-[2020-10-09 12:20:45.038] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tx/value, weight: 25.0
-[2020-10-09 12:20:45.038] [cout] [info]         state: /jointset/ground_pelvis/pelvis_ty/value, weight: 25.0
-[2020-10-09 12:20:45.039] [cout] [info]         state: /jointset/hip_r/hip_flexion_r/value, weight: 238.886
-[2020-10-09 12:20:45.040] [cout] [info]         state: /jointset/knee_r/knee_angle_r/value, weight: 126.531
-[2020-10-09 12:20:45.041] [cout] [info]         state: /jointset/ankle_r/ankle_angle_r/value, weight: 303.512
-[2020-10-09 12:20:45.041] [cout] [info]         state: /jointset/hip_l/hip_flexion_l/value, weight: 238.886
-[2020-10-09 12:20:45.041] [cout] [info]         state: /jointset/knee_l/knee_angle_l/value, weight: 126.531
-[2020-10-09 12:20:45.042] [cout] [info]         state: /jointset/ankle_l/ankle_angle_l/value, weight: 303.512
-[2020-10-09 12:20:45.042] [cout] [info]         state: /jointset/back/lumbar_extension/value, weight: 32.8405
-[2020-10-09 12:20:45.042] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tilt/speed, weight: 0.0
-[2020-10-09 12:20:45.043] [cout] [info]         state: /jointset/ground_pelvis/pelvis_tx/speed, weight: 0.0
-[2020-10-09 12:20:45.043] [cout] [info]         state: /jointset/ground_pelvis/pelvis_ty/speed, weight: 0.0
-[2020-10-09 12:20:45.043] [cout] [info]         state: /jointset/hip_r/hip_flexion_r/speed, weight: 0.238886
-[2020-10-09 12:20:45.043] [cout] [info]         state: /jointset/knee_r/knee_angle_r/speed, weight: 0.126531
-[2020-10-09 12:20:45.044] [cout] [info]         state: /jointset/ankle_r/ankle_angle_r/speed, weight: 0.303512
-[2020-10-09 12:20:45.045] [cout] [info]         state: /jointset/hip_l/hip_flexion_l/speed, weight: 0.238886
-[2020-10-09 12:20:45.045] [cout] [info]         state: /jointset/knee_l/knee_angle_l/speed, weight: 0.126531
-[2020-10-09 12:20:45.046] [cout] [info]         state: /jointset/ankle_l/ankle_angle_l/speed, weight: 0.303512
-[2020-10-09 12:20:45.046] [cout] [info]         state: /jointset/back/lumbar_extension/speed, weight: 0.0
-[2020-10-09 12:20:45.046] [cout] [info]   control_effort. MocoControlGoal, enabled: true, mode: cost, weight: 0.1
-[2020-10-09 12:20:45.047] [cout] [info]         control: /lumbarAct, weight: 1.0
-[2020-10-09 12:20:45.047] [cout] [info]         control: /hamstrings_r, weight: 1.0
-[2020-10-09 12:20:45.047] [cout] [info]         control: /bifemsh_r, weight: 1.0
-[2020-10-09 12:20:45.047] [cout] [info]         control: /glut_max_r, weight: 1.0
-[2020-10-09 12:20:45.047] [cout] [info]         control: /iliopsoas_r, weight: 1.0
-[2020-10-09 12:20:45.048] [cout] [info]         control: /rect_fem_r, weight: 1.0
-[2020-10-09 12:20:45.048] [cout] [info]         control: /vasti_r, weight: 1.0
-[2020-10-09 12:20:45.048] [cout] [info]         control: /gastroc_r, weight: 1.0
-[2020-10-09 12:20:45.048] [cout] [info]         control: /soleus_r, weight: 1.0
-[2020-10-09 12:20:45.049] [cout] [info]         control: /tib_ant_r, weight: 1.0
-[2020-10-09 12:20:45.049] [cout] [info]         control: /hamstrings_l, weight: 1.0
-[2020-10-09 12:20:45.049] [cout] [info]         control: /bifemsh_l, weight: 1.0
-[2020-10-09 12:20:45.049] [cout] [info]         control: /glut_max_l, weight: 1.0
-[2020-10-09 12:20:45.050] [cout] [info]         control: /iliopsoas_l, weight: 1.0
-[2020-10-09 12:20:45.050] [cout] [info]         control: /rect_fem_l, weight: 1.0
-[2020-10-09 12:20:45.050] [cout] [info]         control: /vasti_l, weight: 1.0
-[2020-10-09 12:20:45.050] [cout] [info]         control: /gastroc_l, weight: 1.0
-[2020-10-09 12:20:45.051] [cout] [info]         control: /soleus_l, weight: 1.0
-[2020-10-09 12:20:45.051] [cout] [info]         control: /tib_ant_l, weight: 1.0
-[2020-10-09 12:20:45.051] [cout] [info]   met. MocoOutputGoal, enabled: true, mode: cost, weight: 0.1
-[2020-10-09 12:20:45.052] [cout] [info]   contact. MocoContactTrackingGoal, enabled: true, mode: cost, weight: 1.0
-[2020-10-09 12:20:45.052] [cout] [info]         projection type: plane
-[2020-10-09 12:20:45.052] [cout] [info]         projection vector: ~[0,0,1]
-[2020-10-09 12:20:45.053] [cout] [info]         group 0: ExternalForce: RightGRF
-[2020-10-09 12:20:45.053] [cout] [info]             forces:
-[2020-10-09 12:20:45.053] [cout] [info]                 contactHeel_r
-[2020-10-09 12:20:45.053] [cout] [info]                 contactToe1_r
-[2020-10-09 12:20:45.054] [cout] [info]                 contactToe2_r
-[2020-10-09 12:20:45.054] [cout] [info]         group 1: ExternalForce: LeftGRF
-[2020-10-09 12:20:45.055] [cout] [info]             forces:
-[2020-10-09 12:20:45.056] [cout] [info]                 contactHeel_l
-[2020-10-09 12:20:45.056] [cout] [info]                 contactToe1_l
-[2020-10-09 12:20:45.056] [cout] [info]                 contactToe2_l
-[2020-10-09 12:20:45.056] [cout] [info] Endpoint constraints: none
-[2020-10-09 12:20:45.056] [cout] [info] Kinematic constraints: none
-[2020-10-09 12:20:45.057] [cout] [info] Path constraints: none
-[2020-10-09 12:20:45.057] [cout] [info] States: (total: 38)
-[2020-10-09 12:20:45.057] [cout] [info]   /jointset/knee_r/knee_angle_r/speed. bounds: [-50, 50]
-[2020-10-09 12:20:45.057] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/value. bounds: [0.75, 1.25]
-[2020-10-09 12:20:45.057] [cout] [info]   /jointset/ankle_l/ankle_angle_l/value. bounds: [-0.523599, 0.523599]
-[2020-10-09 12:20:45.058] [cout] [info]   /jointset/back/lumbar_extension/speed. bounds: [-50, 50]
-[2020-10-09 12:20:45.058] [cout] [info]   /jointset/knee_l/knee_angle_l/speed. bounds: [-50, 50]
-[2020-10-09 12:20:45.058] [cout] [info]   /jointset/hip_l/hip_flexion_l/value. bounds: [-0.698132, 1.39626]
-[2020-10-09 12:20:45.059] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/value. bounds: [-0.349066, 0]
-[2020-10-09 12:20:45.059] [cout] [info]   /glut_max_l/activation. bounds: [0.01, 1]
-[2020-10-09 12:20:45.059] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/value. bounds: [-5, 5]
-[2020-10-09 12:20:45.059] [cout] [info]   /jointset/ankle_r/ankle_angle_r/value. bounds: [-0.523599, 0.523599]
-[2020-10-09 12:20:45.060] [cout] [info]   /jointset/hip_r/hip_flexion_r/value. bounds: [-0.698132, 1.39626]
-[2020-10-09 12:20:45.060] [cout] [info]   /jointset/knee_r/knee_angle_r/value. bounds: [-2.44346, 0]
-[2020-10-09 12:20:45.061] [cout] [info]   /jointset/back/lumbar_extension/value. bounds: [-30, 0]
-[2020-10-09 12:20:45.061] [cout] [info]   /jointset/knee_l/knee_angle_l/value. bounds: [-2.44346, 0]
-[2020-10-09 12:20:45.061] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/speed. bounds: [-50, 50]
-[2020-10-09 12:20:45.062] [cout] [info]   /gastroc_l/activation. bounds: [0.01, 1]
-[2020-10-09 12:20:45.062] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/speed. bounds: [-50, 50]
-[2020-10-09 12:20:45.062] [cout] [info]   /jointset/ankle_l/ankle_angle_l/speed. bounds: [-50, 50]
-[2020-10-09 12:20:45.063] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/speed. bounds: [-50, 50]
-[2020-10-09 12:20:45.063] [cout] [info]   /jointset/ankle_r/ankle_angle_r/speed. bounds: [-50, 50]
-[2020-10-09 12:20:45.063] [cout] [info]   /jointset/hip_r/hip_flexion_r/speed. bounds: [-50, 50]
-[2020-10-09 12:20:45.064] [cout] [info]   /jointset/hip_l/hip_flexion_l/speed. bounds: [-50, 50]
-[2020-10-09 12:20:45.064] [cout] [info]   /hamstrings_r/activation. bounds: [0.01, 1]
-[2020-10-09 12:20:45.066] [cout] [info]   /bifemsh_r/activation. bounds: [0.01, 1]
-[2020-10-09 12:20:45.066] [cout] [info]   /glut_max_r/activation. bounds: [0.01, 1]
-[2020-10-09 12:20:45.066] [cout] [info]   /iliopsoas_r/activation. bounds: [0.01, 1]
-[2020-10-09 12:20:45.067] [cout] [info]   /rect_fem_r/activation. bounds: [0.01, 1]
-[2020-10-09 12:20:45.067] [cout] [info]   /tib_ant_r/activation. bounds: [0.01, 1]
-[2020-10-09 12:20:45.067] [cout] [info]   /vasti_r/activation. bounds: [0.01, 1]
-[2020-10-09 12:20:45.068] [cout] [info]   /gastroc_r/activation. bounds: [0.01, 1]
-[2020-10-09 12:20:45.068] [cout] [info]   /soleus_r/activation. bounds: [0.01, 1]
-[2020-10-09 12:20:45.068] [cout] [info]   /hamstrings_l/activation. bounds: [0.01, 1]
-[2020-10-09 12:20:45.069] [cout] [info]   /bifemsh_l/activation. bounds: [0.01, 1]
-[2020-10-09 12:20:45.069] [cout] [info]   /iliopsoas_l/activation. bounds: [0.01, 1]
-[2020-10-09 12:20:45.069] [cout] [info]   /rect_fem_l/activation. bounds: [0.01, 1]
-[2020-10-09 12:20:45.069] [cout] [info]   /tib_ant_l/activation. bounds: [0.01, 1]
-[2020-10-09 12:20:45.070] [cout] [info]   /vasti_l/activation. bounds: [0.01, 1]
-[2020-10-09 12:20:45.070] [cout] [info]   /soleus_l/activation. bounds: [0.01, 1]
-[2020-10-09 12:20:45.070] [cout] [info] Controls: (total: 19)
-[2020-10-09 12:20:45.071] [cout] [info]   /hamstrings_r. bounds: [0.01, 1]
-[2020-10-09 12:20:45.071] [cout] [info]   /lumbarAct. bounds: [-inf, inf]
-[2020-10-09 12:20:45.071] [cout] [info]   /bifemsh_r. bounds: [0.01, 1]
-[2020-10-09 12:20:45.072] [cout] [info]   /glut_max_r. bounds: [0.01, 1]
-[2020-10-09 12:20:45.072] [cout] [info]   /tib_ant_r. bounds: [0.01, 1]
-[2020-10-09 12:20:45.072] [cout] [info]   /vasti_r. bounds: [0.01, 1]
-[2020-10-09 12:20:45.073] [cout] [info]   /rect_fem_r. bounds: [0.01, 1]
-[2020-10-09 12:20:45.073] [cout] [info]   /iliopsoas_r. bounds: [0.01, 1]
-[2020-10-09 12:20:45.073] [cout] [info]   /gastroc_r. bounds: [0.01, 1]
-[2020-10-09 12:20:45.073] [cout] [info]   /soleus_r. bounds: [0.01, 1]
-[2020-10-09 12:20:45.074] [cout] [info]   /hamstrings_l. bounds: [0.01, 1]
-[2020-10-09 12:20:45.076] [cout] [info]   /bifemsh_l. bounds: [0.01, 1]
-[2020-10-09 12:20:45.076] [cout] [info]   /glut_max_l. bounds: [0.01, 1]
-[2020-10-09 12:20:45.077] [cout] [info]   /iliopsoas_l. bounds: [0.01, 1]
-[2020-10-09 12:20:45.077] [cout] [info]   /rect_fem_l. bounds: [0.01, 1]
-[2020-10-09 12:20:45.077] [cout] [info]   /tib_ant_l. bounds: [0.01, 1]
-[2020-10-09 12:20:45.078] [cout] [info]   /vasti_l. bounds: [0.01, 1]
-[2020-10-09 12:20:45.078] [cout] [info]   /gastroc_l. bounds: [0.01, 1]
-[2020-10-09 12:20:45.078] [cout] [info]   /soleus_l. bounds: [0.01, 1]
-[2020-10-09 12:20:45.078] [cout] [info] Parameters: none
-[2020-10-09 12:20:45.609] [info] Number of threads: 8
-[2020-10-09 13:13:55.204] [info] Set log level to Info.
-[2020-10-09 13:13:55.213] [info] ------------------------------------------------------------------------
-[2020-10-09 13:13:55.214] [info] Elapsed real time: 3190 second(s) (53 minute(s), 10 second(s)).
-[2020-10-09 13:13:55.215] [info] Fri Oct  9 13:13:55 2020
-[2020-10-09 13:13:55.215] [info] MocoCasADiSolver succeeded!
-[2020-10-09 13:13:55.216] [info] ========================================================================
-[2020-10-09 13:49:00.455] [info] Exiting visualization.
-[2020-10-09 13:49:32.842] [info] Exiting visualization.
-[2020-10-09 14:19:09.803] [info] Updating Model file from 30000 to latest format...
-[2020-10-09 14:19:09.825] [info] Loaded model gait9dof18musc_Ong_et_al from file gait9dof18musc_Ong_et_al_Moco.osim
-[2020-10-09 14:20:18.961] [info] Updating Model file from 30000 to latest format...
-[2020-10-09 14:20:18.982] [info] Loaded model gait9dof18musc_Ong_et_al from file gait9dof18musc_Ong_et_al_Moco.osim
-[2020-10-09 14:20:53.360] [info] Updating Model file from 30000 to latest format...
-[2020-10-09 14:20:53.384] [info] Loaded model gait9dof18musc_Ong_et_al from file gait9dof18musc_Ong_et_al_Moco.osim
-[2020-10-09 14:26:26.265] [info] Storage: read data file = refQ_converted.sto (nr=132 nc=11)
-[2020-10-09 14:26:26.267] [info] Storage: read data file = refQ_converted.sto (nr=132 nc=11)
-[2020-10-09 14:27:05.885] [info] Adding reserve actuators with an optimal force of 1000.0...
-[2020-10-09 14:27:05.933] [info] Added 9 reserve actuator(s), for each of the following coordinates:
-[2020-10-09 14:27:05.933] [info]   /jointset/ground_pelvis/pelvis_tilt
-[2020-10-09 14:27:05.934] [info]   /jointset/ground_pelvis/pelvis_tx
-[2020-10-09 14:27:05.934] [info]   /jointset/ground_pelvis/pelvis_ty
-[2020-10-09 14:27:05.934] [info]   /jointset/hip_r/hip_flexion_r
-[2020-10-09 14:27:05.935] [info]   /jointset/knee_r/knee_angle_r
-[2020-10-09 14:27:05.935] [info]   /jointset/ankle_r/ankle_angle_r
-[2020-10-09 14:27:05.936] [info]   /jointset/hip_l/hip_flexion_l
-[2020-10-09 14:27:05.937] [info]   /jointset/knee_l/knee_angle_l
-[2020-10-09 14:27:05.937] [info]   /jointset/ankle_l/ankle_angle_l
-[2020-10-09 14:28:08.103] [info] Adding reserve actuators with an optimal force of 1000.0...
-[2020-10-09 14:28:08.147] [info] Added 9 reserve actuator(s), for each of the following coordinates:
-[2020-10-09 14:28:08.148] [info]   /jointset/ground_pelvis/pelvis_tilt
-[2020-10-09 14:28:08.149] [info]   /jointset/ground_pelvis/pelvis_tx
-[2020-10-09 14:28:08.149] [info]   /jointset/ground_pelvis/pelvis_ty
-[2020-10-09 14:28:08.149] [info]   /jointset/hip_r/hip_flexion_r
-[2020-10-09 14:28:08.150] [info]   /jointset/knee_r/knee_angle_r
-[2020-10-09 14:28:08.150] [info]   /jointset/ankle_r/ankle_angle_r
-[2020-10-09 14:28:08.150] [info]   /jointset/hip_l/hip_flexion_l
-[2020-10-09 14:28:08.151] [info]   /jointset/knee_l/knee_angle_l
-[2020-10-09 14:28:08.151] [info]   /jointset/ankle_l/ankle_angle_l
-[2020-11-02 15:32:19.649] [info] Processing subject ...
-[2020-11-02 15:32:19.650] [info] Step 1: Loading generic model
-[2020-11-02 15:32:19.706] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
-[2020-11-02 15:32:20.219] [info] Step 2: Scaling generic model
-[2020-11-02 15:32:20.329] [info] Loaded marker file staticVirtualMarkers.trc (58 markers, 483 frames)
-[2020-11-02 15:32:20.330] [info] Measurement 'torso_height'
-[2020-11-02 15:32:20.330] [info] 	pair 0 (MTOR, MPEL): model = 0.468396, experimental = 0.466528
-[2020-11-02 15:32:20.330] [info] 	overall scale factor = 0.996011
-[2020-11-02 15:32:20.330] [info] Measurement 'torso_breadth'
-[2020-11-02 15:32:20.331] [info] 	pair 0 (C7, CLAV): model = 0.146032, experimental = 0.146906
-[2020-11-02 15:32:20.331] [info] 	pair 1 (T10, STRN): model = 0.222121, experimental = 0.241562
-[2020-11-02 15:32:20.331] [info] 	overall scale factor = 1.04675
-[2020-11-02 15:32:20.331] [info] Measurement 'torso_width'
-[2020-11-02 15:32:20.331] [info] 	pair 0 (RACR, LACR): model = 0.283321, experimental = 0.345905
-[2020-11-02 15:32:20.331] [info] 	overall scale factor = 1.22089
-[2020-11-02 15:32:20.331] [info] Measurement 'pelvis_w'
-[2020-11-02 15:32:20.332] [info] 	pair 0 (RASI, LASI): model = 0.25789, experimental = 0.216053
-[2020-11-02 15:32:20.332] [info] 	pair 1 (RPSI, LPSI): model = 0.092731, experimental = 0.0960037
-[2020-11-02 15:32:20.332] [info] 	overall scale factor = 0.936532
-[2020-11-02 15:32:20.332] [info] Measurement 'pelvis_d'
-[2020-11-02 15:32:20.332] [info] 	pair 0 (RASI, RPSI): model = 0.201128, experimental = 0.188603
-[2020-11-02 15:32:20.332] [info] 	pair 1 (LASI, LPSI): model = 0.192488, experimental = 0.188085
-[2020-11-02 15:32:20.332] [info] 	overall scale factor = 0.957426
-[2020-11-02 15:32:20.332] [info] Measurement 'pelvis_h'
-[2020-11-02 15:32:20.332] [info] 	pair 0 (MPEL, RHJC): model = 0.131542, experimental = 0.105614
-[2020-11-02 15:32:20.333] [info] 	pair 1 (MPEL, LHJC): model = 0.131025, experimental = 0.108303
-[2020-11-02 15:32:20.333] [info] 	overall scale factor = 0.814735
-[2020-11-02 15:32:20.333] [info] Measurement 'r_thigh_length'
-[2020-11-02 15:32:20.333] [info] 	pair 0 (RHJC, RKJC): model = 0.390494, experimental = 0.46219
-[2020-11-02 15:32:20.333] [info] 	overall scale factor = 1.1836
-[2020-11-02 15:32:20.333] [info] Measurement 'r_thigh_breadth'
-[2020-11-02 15:32:20.334] [info] 	pair 0 (RLFC, RMFC): model = 0.108539, experimental = 0.125179
-[2020-11-02 15:32:20.334] [info] 	overall scale factor = 1.1533
-[2020-11-02 15:32:20.334] [info] Measurement 'r_tibia_length'
-[2020-11-02 15:32:20.334] [info] 	pair 0 (RKJC, RAJC): model = 0.391627, experimental = 0.437658
-[2020-11-02 15:32:20.334] [info] 	overall scale factor = 1.11754
-[2020-11-02 15:32:20.335] [info] Measurement 'r_tibia_breadth'
-[2020-11-02 15:32:20.335] [info] 	pair 0 (RLMAL, RMMAL): model = 0.093372, experimental = 0.0955162
-[2020-11-02 15:32:20.335] [info] 	overall scale factor = 1.02296
-[2020-11-02 15:32:20.335] [info] Measurement 'r_foot_length'
-[2020-11-02 15:32:20.336] [info] 	pair 0 (fRCAL, fRAJC): model = 0.0941763, experimental = 0.0694764
-[2020-11-02 15:32:20.336] [info] 	pair 1 (fRAJC, fRMT3): model = 0.129502, experimental = 0.148666
-[2020-11-02 15:32:20.336] [info] 	overall scale factor = 0.942854
-[2020-11-02 15:32:20.336] [info] Measurement 'r_foot_height'
-[2020-11-02 15:32:20.336] [info] 	pair 0 (RAJC, fRAJC): model = 0.0696915, experimental = 0.100821
-[2020-11-02 15:32:20.337] [info] 	overall scale factor = 1.44667
-[2020-11-02 15:32:20.337] [info] Measurement 'r_foot_width'
-[2020-11-02 15:32:20.337] [info] 	pair 0 (fRMT1, fRMT5): model = 0.0759802, experimental = 0.109619
-[2020-11-02 15:32:20.337] [info] 	overall scale factor = 1.44273
-[2020-11-02 15:32:20.337] [info] Measurement 'l_thigh_length'
-[2020-11-02 15:32:20.337] [info] 	pair 0 (LHJC, LKJC): model = 0.390494, experimental = 0.474762
-[2020-11-02 15:32:20.338] [info] 	overall scale factor = 1.2158
-[2020-11-02 15:32:20.338] [info] Measurement 'l_thigh_breadth'
-[2020-11-02 15:32:20.338] [info] 	pair 0 (LLFC, LMFC): model = 0.108539, experimental = 0.125672
-[2020-11-02 15:32:20.338] [info] 	overall scale factor = 1.15785
-[2020-11-02 15:32:20.338] [info] Measurement 'l_tibia_length'
-[2020-11-02 15:32:20.339] [info] 	pair 0 (LKJC, LAJC): model = 0.391627, experimental = 0.433973
-[2020-11-02 15:32:20.339] [info] 	overall scale factor = 1.10813
-[2020-11-02 15:32:20.339] [info] Measurement 'l_tibia_breadth'
-[2020-11-02 15:32:20.341] [info] 	pair 0 (LLMAL, LMMAL): model = 0.093372, experimental = 0.0950852
-[2020-11-02 15:32:20.341] [info] 	overall scale factor = 1.01835
-[2020-11-02 15:32:20.341] [info] Measurement 'l_foot_length'
-[2020-11-02 15:32:20.341] [info] 	pair 0 (fLCAL, fLAJC): model = 0.0954936, experimental = 0.068191
-[2020-11-02 15:32:20.342] [info] 	pair 1 (fLAJC, fLMT3): model = 0.129723, experimental = 0.153377
-[2020-11-02 15:32:20.342] [info] 	overall scale factor = 0.948218
-[2020-11-02 15:32:20.342] [info] Measurement 'l_foot_height'
-[2020-11-02 15:32:20.342] [info] 	pair 0 (LAJC, fLAJC): model = 0.0696334, experimental = 0.101405
-[2020-11-02 15:32:20.342] [info] 	overall scale factor = 1.45627
-[2020-11-02 15:32:20.343] [info] Measurement 'l_foot_width'
-[2020-11-02 15:32:20.343] [info] 	pair 0 (fLMT1, fLMT5): model = 0.0759802, experimental = 0.110420
-[2020-11-02 15:32:20.343] [info] 	overall scale factor = 1.45327
-[2020-11-02 15:32:20.587] [info] Wrote model file 'scaledModel.osim' from model.
-[2020-11-02 15:32:20.604] [info] Wrote scale file 'scaleSet.xml' for model model.
-[2020-11-02 15:32:20.604] [info] Step 3: Placing markers on model
-[2020-11-02 15:32:20.705] [info] Loaded marker file staticVirtualMarkers.trc (58 markers, 483 frames)
-[2020-11-02 15:32:20.705] [info] Averaged frames from time 0.5 to 1.5 in staticVirtualMarkers.trc (frames 126 to 376)
-[2020-11-02 15:32:20.706] [info] Deleted 0 unused markers from model model.
-[2020-11-02 15:32:20.824] [info] Frame at (t = 0.5):	 total squared error = 0.0573014, marker error: RMS = 0.0322776, max = 0.0574159 (LTH2)
-[2020-11-02 15:32:20.825] [info] Moved markers in model model to match locations in marker file 'staticVirtualMarkers.trc'.
-[2020-11-02 15:32:20.914] [info] Wrote model file 'scaledModelAdjusted.osim' from model model.
-[2020-11-02 15:32:21.009] [info] Loaded model model from file scaledModelAdjusted.osim
-[2020-11-02 15:32:21.187] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
-[2020-11-02 15:32:21.315] [info] Loaded model scaledModel from file scaledModelAdjusted.osim
-[2020-11-02 15:32:21.562] [info] Loaded model scaledModel from file scaledModelMuscle.osim
-[2020-11-02 15:32:21.677] [info] Loaded model scaledModel from file scaledModelMuscle.osim
-[2020-11-02 15:32:33.633] [cout] [info] 
-               MODEL: scaledModel
-         coordinates: 25
-              forces: 95
-           actuators: 83
-             muscles: 80
-            analyses: 0
-              probes: 0
-              bodies: 14
-              joints: 14
-         constraints: 2
-             markers: 56
-         controllers: 0
-  contact geometries: 13
-misc modelcomponents: 0
-[2020-11-02 15:32:33.633] [info] Running tool .
-[2020-11-02 15:32:33.831] [info] Frame 86 (t = 0.344):	 total squared error = 0.0339605, marker error: RMS = 0.0325771, max = 0.109725 (LTH1)
-[2020-11-02 15:32:33.852] [info] Frame 87 (t = 0.348):	 total squared error = 0.0342815, marker error: RMS = 0.0327307, max = 0.109367 (LTH1)
-[2020-11-02 15:32:33.892] [info] Frame 88 (t = 0.352):	 total squared error = 0.0346289, marker error: RMS = 0.0328961, max = 0.109232 (LTH1)
-[2020-11-02 15:32:33.917] [info] Frame 89 (t = 0.356):	 total squared error = 0.0350436, marker error: RMS = 0.0330925, max = 0.108759 (LTH1)
-[2020-11-02 15:32:33.972] [info] Frame 90 (t = 0.36):	 total squared error = 0.0356188, marker error: RMS = 0.033363, max = 0.109025 (LTH1)
-[2020-11-02 15:32:33.997] [info] Frame 91 (t = 0.364):	 total squared error = 0.0362317, marker error: RMS = 0.0336488, max = 0.109277 (LTH1)
-[2020-11-02 15:32:34.043] [info] Frame 92 (t = 0.368):	 total squared error = 0.0370818, marker error: RMS = 0.0340412, max = 0.109734 (LTH1)
-[2020-11-02 15:32:34.066] [info] Frame 93 (t = 0.372):	 total squared error = 0.037765, marker error: RMS = 0.0343534, max = 0.110343 (LTH1)
-[2020-11-02 15:32:34.089] [info] Frame 94 (t = 0.376):	 total squared error = 0.0386181, marker error: RMS = 0.0347393, max = 0.110844 (LTH1)
-[2020-11-02 15:32:34.113] [info] Frame 95 (t = 0.38):	 total squared error = 0.0393148, marker error: RMS = 0.0350512, max = 0.111205 (LTH1)
-[2020-11-02 15:32:34.140] [info] Frame 96 (t = 0.384):	 total squared error = 0.0399903, marker error: RMS = 0.0353511, max = 0.110811 (LTH1)
-[2020-11-02 15:32:34.165] [info] Frame 97 (t = 0.388):	 total squared error = 0.0404940, marker error: RMS = 0.035573, max = 0.109897 (LTH1)
-[2020-11-02 15:32:34.206] [info] Frame 98 (t = 0.392):	 total squared error = 0.0412457, marker error: RMS = 0.0359016, max = 0.110187 (LTH1)
-[2020-11-02 15:32:34.225] [info] Frame 99 (t = 0.396):	 total squared error = 0.0415876, marker error: RMS = 0.0360501, max = 0.109637 (LTH1)
-[2020-11-02 15:32:34.243] [info] Frame 100 (t = 0.4):	 total squared error = 0.0417958, marker error: RMS = 0.0361403, max = 0.108556 (LTH1)
-[2020-11-02 15:32:34.268] [info] Frame 101 (t = 0.404000):	 total squared error = 0.0420952, marker error: RMS = 0.0362695, max = 0.108168 (LTH1)
-[2020-11-02 15:32:34.294] [info] Frame 102 (t = 0.408000):	 total squared error = 0.0423382, marker error: RMS = 0.036374, max = 0.107700 (LTH1)
-[2020-11-02 15:32:34.332] [info] Frame 103 (t = 0.412):	 total squared error = 0.0424677, marker error: RMS = 0.0364296, max = 0.107068 (LTH1)
-[2020-11-02 15:32:34.364] [info] Frame 104 (t = 0.416):	 total squared error = 0.0424828, marker error: RMS = 0.0364361, max = 0.106308 (LTH1)
-[2020-11-02 15:32:34.381] [info] Frame 105 (t = 0.42):	 total squared error = 0.0424928, marker error: RMS = 0.0364403, max = 0.105625 (LTH1)
-[2020-11-02 15:32:34.401] [info] Frame 106 (t = 0.424):	 total squared error = 0.0423831, marker error: RMS = 0.0363933, max = 0.104551 (LTH1)
-[2020-11-02 15:32:34.432] [info] Frame 107 (t = 0.428):	 total squared error = 0.0421060, marker error: RMS = 0.0362741, max = 0.103850 (LTH1)
-[2020-11-02 15:32:34.451] [info] Frame 108 (t = 0.432):	 total squared error = 0.0418394, marker error: RMS = 0.0361591, max = 0.103100 (LTH1)
-[2020-11-02 15:32:34.481] [info] Frame 109 (t = 0.436):	 total squared error = 0.0414422, marker error: RMS = 0.0359871, max = 0.102084 (LTH1)
-[2020-11-02 15:32:34.507] [info] Frame 110 (t = 0.44):	 total squared error = 0.0410719, marker error: RMS = 0.0358259, max = 0.100916 (LTH1)
-[2020-11-02 15:32:34.542] [info] Frame 111 (t = 0.444):	 total squared error = 0.0406502, marker error: RMS = 0.0356415, max = 0.101258 (LTH2)
-[2020-11-02 15:32:34.590] [info] Frame 112 (t = 0.448):	 total squared error = 0.0403399, marker error: RMS = 0.0355052, max = 0.102532 (LTH2)
-[2020-11-02 15:32:34.619] [info] Frame 113 (t = 0.452):	 total squared error = 0.0400322, marker error: RMS = 0.0353696, max = 0.103774 (LTH2)
-[2020-11-02 15:32:34.640] [info] Frame 114 (t = 0.456):	 total squared error = 0.0397801, marker error: RMS = 0.035258, max = 0.104455 (LTH2)
-[2020-11-02 15:32:34.684] [info] Frame 115 (t = 0.46):	 total squared error = 0.0398746, marker error: RMS = 0.0352999, max = 0.105895 (LTH2)
-[2020-11-02 15:32:34.716] [info] Frame 116 (t = 0.464):	 total squared error = 0.0392937, marker error: RMS = 0.0350418, max = 0.106183 (LTH2)
-[2020-11-02 15:32:34.745] [info] Frame 117 (t = 0.468):	 total squared error = 0.0393283, marker error: RMS = 0.0350572, max = 0.107287 (LTH2)
-[2020-11-02 15:32:34.766] [info] Frame 118 (t = 0.472):	 total squared error = 0.0391248, marker error: RMS = 0.0349664, max = 0.107728 (LTH2)
-[2020-11-02 15:32:34.792] [info] Frame 119 (t = 0.476):	 total squared error = 0.0383977, marker error: RMS = 0.03464, max = 0.108246 (LTH2)
-[2020-11-02 15:32:34.839] [info] Frame 120 (t = 0.48):	 total squared error = 0.0382471, marker error: RMS = 0.034572, max = 0.109494 (LTH2)
-[2020-11-02 15:32:34.872] [info] Frame 121 (t = 0.484):	 total squared error = 0.0373258, marker error: RMS = 0.0341531, max = 0.109772 (LTH2)
-[2020-11-02 15:32:34.905] [info] Frame 122 (t = 0.488):	 total squared error = 0.0365052, marker error: RMS = 0.0337755, max = 0.111346 (LTH2)
-[2020-11-02 15:32:34.923] [info] Frame 123 (t = 0.492):	 total squared error = 0.0360350, marker error: RMS = 0.0335573, max = 0.113155 (LTH2)
-[2020-11-02 15:32:34.951] [info] Frame 124 (t = 0.496):	 total squared error = 0.0351806, marker error: RMS = 0.0331571, max = 0.114156 (LTH2)
-[2020-11-02 15:32:34.998] [info] Frame 125 (t = 0.5):	 total squared error = 0.0346121, marker error: RMS = 0.0328881, max = 0.115055 (LTH2)
-[2020-11-02 15:32:35.029] [info] Frame 126 (t = 0.504000):	 total squared error = 0.0340534, marker error: RMS = 0.0326216, max = 0.115304 (LTH2)
-[2020-11-02 15:32:35.063] [info] Frame 127 (t = 0.508000):	 total squared error = 0.0333906, marker error: RMS = 0.0323026, max = 0.115685 (LTH2)
-[2020-11-02 15:32:35.107] [info] Frame 128 (t = 0.512):	 total squared error = 0.0327523, marker error: RMS = 0.0319923, max = 0.115401 (LTH2)
-[2020-11-02 15:32:35.136] [info] Frame 129 (t = 0.516):	 total squared error = 0.0323911, marker error: RMS = 0.0318154, max = 0.115945 (LTH2)
-[2020-11-02 15:32:35.186] [info] Frame 130 (t = 0.52):	 total squared error = 0.0317371, marker error: RMS = 0.0314926, max = 0.115042 (LTH2)
-[2020-11-02 15:32:35.209] [info] Frame 131 (t = 0.524):	 total squared error = 0.0313457, marker error: RMS = 0.0312978, max = 0.115116 (LTH2)
-[2020-11-02 15:32:35.235] [info] Frame 132 (t = 0.528):	 total squared error = 0.0307161, marker error: RMS = 0.0309819, max = 0.114192 (LTH2)
-[2020-11-02 15:32:35.278] [info] Frame 133 (t = 0.532):	 total squared error = 0.0303151, marker error: RMS = 0.0307790, max = 0.113395 (LTH2)
-[2020-11-02 15:32:35.312] [info] Frame 134 (t = 0.536):	 total squared error = 0.0300974, marker error: RMS = 0.0306683, max = 0.112867 (LTH2)
-[2020-11-02 15:32:35.346] [info] Frame 135 (t = 0.54):	 total squared error = 0.0300870, marker error: RMS = 0.0306630, max = 0.113041 (LTH2)
-[2020-11-02 15:32:35.414] [info] Frame 136 (t = 0.544):	 total squared error = 0.0296726, marker error: RMS = 0.0304511, max = 0.111713 (LTH2)
-[2020-11-02 15:32:35.451] [info] Frame 137 (t = 0.548):	 total squared error = 0.0296617, marker error: RMS = 0.0304455, max = 0.110813 (LTH2)
-[2020-11-02 15:32:35.477] [info] Frame 138 (t = 0.552):	 total squared error = 0.0297884, marker error: RMS = 0.0305105, max = 0.110331 (LTH2)
-[2020-11-02 15:32:35.499] [info] Frame 139 (t = 0.556):	 total squared error = 0.0299238, marker error: RMS = 0.0305797, max = 0.109780 (LTH2)
-[2020-11-02 15:32:35.553] [info] Frame 140 (t = 0.56):	 total squared error = 0.0301807, marker error: RMS = 0.0307107, max = 0.109074 (LTH2)
-[2020-11-02 15:32:35.580] [info] Frame 141 (t = 0.564):	 total squared error = 0.0301225, marker error: RMS = 0.0306811, max = 0.107296 (LTH2)
-[2020-11-02 15:32:35.605] [info] Frame 142 (t = 0.568):	 total squared error = 0.0302868, marker error: RMS = 0.0307646, max = 0.105861 (LTH2)
-[2020-11-02 15:32:35.624] [info] Frame 143 (t = 0.572):	 total squared error = 0.0303841, marker error: RMS = 0.0308140, max = 0.104321 (LTH2)
-[2020-11-02 15:32:35.653] [info] Frame 144 (t = 0.576):	 total squared error = 0.0304255, marker error: RMS = 0.0308350, max = 0.103063 (LTH2)
-[2020-11-02 15:32:35.669] [info] Frame 145 (t = 0.58):	 total squared error = 0.0306603, marker error: RMS = 0.0309537, max = 0.101948 (LTH2)
-[2020-11-02 15:32:35.692] [info] Frame 146 (t = 0.584):	 total squared error = 0.0308857, marker error: RMS = 0.0310673, max = 0.101257 (LTH2)
-[2020-11-02 15:32:35.713] [info] Frame 147 (t = 0.588):	 total squared error = 0.0311636, marker error: RMS = 0.0312068, max = 0.100577 (LTH1)
-[2020-11-02 15:32:35.738] [info] Frame 148 (t = 0.592):	 total squared error = 0.0313906, marker error: RMS = 0.0313202, max = 0.100901 (LTH1)
-[2020-11-02 15:32:35.763] [info] Frame 149 (t = 0.596):	 total squared error = 0.0315315, marker error: RMS = 0.0313905, max = 0.101222 (LTH1)
-[2020-11-02 15:32:35.789] [info] Frame 150 (t = 0.6):	 total squared error = 0.0316905, marker error: RMS = 0.0314695, max = 0.101387 (LTH1)
-[2020-11-02 15:32:35.817] [info] Frame 151 (t = 0.604000):	 total squared error = 0.0317941, marker error: RMS = 0.0315209, max = 0.102285 (LTH1)
-[2020-11-02 15:32:35.837] [info] Frame 152 (t = 0.608000):	 total squared error = 0.0319010, marker error: RMS = 0.0315738, max = 0.102418 (LTH1)
-[2020-11-02 15:32:35.896] [info] Frame 153 (t = 0.612):	 total squared error = 0.0319919, marker error: RMS = 0.0316188, max = 0.102526 (LTH1)
-[2020-11-02 15:32:35.927] [info] Frame 154 (t = 0.616):	 total squared error = 0.0326707, marker error: RMS = 0.0319525, max = 0.102639 (LTH1)
-[2020-11-02 15:32:35.960] [info] Frame 155 (t = 0.62):	 total squared error = 0.0330745, marker error: RMS = 0.0321493, max = 0.101286 (LTH1)
-[2020-11-02 15:32:35.988] [info] Frame 156 (t = 0.624):	 total squared error = 0.0335824, marker error: RMS = 0.0323952, max = 0.0993871 (LTH1)
-[2020-11-02 15:32:36.018] [info] Frame 157 (t = 0.628):	 total squared error = 0.0344742, marker error: RMS = 0.0328226, max = 0.101840 (LTH2)
-[2020-11-02 15:32:36.041] [info] Frame 158 (t = 0.632):	 total squared error = 0.0357643, marker error: RMS = 0.0334311, max = 0.104259 (LTH2)
-[2020-11-02 15:32:36.087] [info] Frame 159 (t = 0.636):	 total squared error = 0.0367004, marker error: RMS = 0.0338657, max = 0.106259 (LTH2)
-[2020-11-02 15:32:36.111] [info] Frame 160 (t = 0.64):	 total squared error = 0.0374629, marker error: RMS = 0.0342157, max = 0.106490 (LTH2)
-[2020-11-02 15:32:36.137] [info] Frame 161 (t = 0.644):	 total squared error = 0.0382116, marker error: RMS = 0.0345559, max = 0.107054 (LTH2)
-[2020-11-02 15:32:36.163] [info] Frame 162 (t = 0.648):	 total squared error = 0.038863, marker error: RMS = 0.0348492, max = 0.107385 (LTH2)
-[2020-11-02 15:32:36.186] [info] Frame 163 (t = 0.652):	 total squared error = 0.0391031, marker error: RMS = 0.0349567, max = 0.107269 (LTH2)
-[2020-11-02 15:32:36.211] [info] Frame 164 (t = 0.656):	 total squared error = 0.0395003, marker error: RMS = 0.0351338, max = 0.106861 (LTH2)
-[2020-11-02 15:32:36.254] [info] Frame 165 (t = 0.66):	 total squared error = 0.0398065, marker error: RMS = 0.0352697, max = 0.106283 (LTH2)
-[2020-11-02 15:32:36.274] [info] Frame 166 (t = 0.664):	 total squared error = 0.039918, marker error: RMS = 0.0353191, max = 0.105733 (LTH2)
-[2020-11-02 15:32:36.294] [info] Frame 167 (t = 0.668):	 total squared error = 0.0401475, marker error: RMS = 0.0354205, max = 0.105286 (LTH2)
-[2020-11-02 15:32:36.316] [info] Frame 168 (t = 0.672):	 total squared error = 0.0402050, marker error: RMS = 0.0354458, max = 0.105041 (LTH2)
-[2020-11-02 15:32:36.347] [info] Frame 169 (t = 0.676):	 total squared error = 0.0401538, marker error: RMS = 0.0354232, max = 0.104796 (LTH2)
-[2020-11-02 15:32:36.364] [info] Frame 170 (t = 0.68):	 total squared error = 0.0401084, marker error: RMS = 0.0354032, max = 0.104341 (LTH2)
-[2020-11-02 15:32:36.392] [info] Frame 171 (t = 0.684):	 total squared error = 0.0400261, marker error: RMS = 0.0353669, max = 0.104217 (LTH2)
-[2020-11-02 15:32:36.411] [info] Frame 172 (t = 0.688):	 total squared error = 0.0398909, marker error: RMS = 0.0353071, max = 0.103718 (LTH2)
-[2020-11-02 15:32:36.453] [info] Frame 173 (t = 0.692):	 total squared error = 0.0399157, marker error: RMS = 0.0353181, max = 0.102938 (LTH2)
-[2020-11-02 15:32:36.484] [info] Frame 174 (t = 0.696):	 total squared error = 0.0397731, marker error: RMS = 0.0352549, max = 0.101918 (LTH2)
-[2020-11-02 15:32:36.511] [info] Frame 175 (t = 0.7):	 total squared error = 0.0396759, marker error: RMS = 0.0352118, max = 0.100524 (LTH2)
-[2020-11-02 15:32:36.539] [info] Frame 176 (t = 0.704000):	 total squared error = 0.0395766, marker error: RMS = 0.0351677, max = 0.0986727 (LTH2)
-[2020-11-02 15:32:36.573] [info] Frame 177 (t = 0.708000):	 total squared error = 0.0395565, marker error: RMS = 0.0351588, max = 0.100525 (LTH1)
-[2020-11-02 15:32:36.596] [info] Frame 178 (t = 0.712):	 total squared error = 0.0395052, marker error: RMS = 0.035136, max = 0.101637 (LTH1)
-[2020-11-02 15:32:36.627] [info] Frame 179 (t = 0.716):	 total squared error = 0.0394725, marker error: RMS = 0.0351215, max = 0.102343 (LTH1)
-[2020-11-02 15:32:36.656] [info] Frame 180 (t = 0.72):	 total squared error = 0.039551, marker error: RMS = 0.0351563, max = 0.102230 (LTH1)
-[2020-11-02 15:32:36.685] [info] Frame 181 (t = 0.724):	 total squared error = 0.039669, marker error: RMS = 0.0352088, max = 0.101894 (LTH1)
-[2020-11-02 15:32:36.713] [info] Frame 182 (t = 0.728):	 total squared error = 0.0398338, marker error: RMS = 0.0352818, max = 0.101803 (LTH1)
-[2020-11-02 15:32:36.748] [info] Frame 183 (t = 0.732):	 total squared error = 0.0399524, marker error: RMS = 0.0353343, max = 0.101549 (LTH1)
-[2020-11-02 15:32:36.802] [info] Frame 184 (t = 0.736):	 total squared error = 0.0401406, marker error: RMS = 0.0354174, max = 0.101092 (LTH1)
-[2020-11-02 15:32:36.832] [info] Frame 185 (t = 0.74):	 total squared error = 0.0400389, marker error: RMS = 0.0353725, max = 0.101400 (LTH1)
-[2020-11-02 15:32:36.861] [info] Frame 186 (t = 0.744):	 total squared error = 0.0399134, marker error: RMS = 0.035317, max = 0.101247 (LTH1)
-[2020-11-02 15:32:36.914] [info] Frame 187 (t = 0.748):	 total squared error = 0.0397005, marker error: RMS = 0.0352227, max = 0.100890 (LTH1)
-[2020-11-02 15:32:36.944] [info] Frame 188 (t = 0.752):	 total squared error = 0.0394409, marker error: RMS = 0.0351074, max = 0.100697 (LTH1)
-[2020-11-02 15:32:36.976] [info] Frame 189 (t = 0.756):	 total squared error = 0.0393163, marker error: RMS = 0.0350519, max = 0.100024 (LTH1)
-[2020-11-02 15:32:37.026] [info] Frame 190 (t = 0.76):	 total squared error = 0.0391080, marker error: RMS = 0.0349589, max = 0.100697 (LTH2)
-[2020-11-02 15:32:37.057] [info] Frame 191 (t = 0.764):	 total squared error = 0.0390566, marker error: RMS = 0.0349359, max = 0.103410 (LTH2)
-[2020-11-02 15:32:37.080] [info] Frame 192 (t = 0.768):	 total squared error = 0.0391012, marker error: RMS = 0.0349559, max = 0.106519 (LTH2)
-[2020-11-02 15:32:37.111] [info] Frame 193 (t = 0.772):	 total squared error = 0.0387006, marker error: RMS = 0.0347764, max = 0.108636 (LTH2)
-[2020-11-02 15:32:37.139] [info] Frame 194 (t = 0.776):	 total squared error = 0.0380536, marker error: RMS = 0.0344844, max = 0.109997 (LTH2)
-[2020-11-02 15:32:37.187] [info] Frame 195 (t = 0.78):	 total squared error = 0.037133, marker error: RMS = 0.0340647, max = 0.110749 (LTH2)
-[2020-11-02 15:32:37.216] [info] Frame 196 (t = 0.784):	 total squared error = 0.0361787, marker error: RMS = 0.0336242, max = 0.111132 (LTH2)
-[2020-11-02 15:32:37.262] [info] Frame 197 (t = 0.788):	 total squared error = 0.0352471, marker error: RMS = 0.0331884, max = 0.111048 (LTH2)
-[2020-11-02 15:32:37.288] [info] Frame 198 (t = 0.792):	 total squared error = 0.0347442, marker error: RMS = 0.0329508, max = 0.110258 (LTH2)
-[2020-11-02 15:32:37.313] [info] Frame 199 (t = 0.796):	 total squared error = 0.034512, marker error: RMS = 0.0328405, max = 0.109150 (LTH2)
-[2020-11-02 15:32:37.359] [info] Frame 200 (t = 0.8):	 total squared error = 0.0344962, marker error: RMS = 0.032833, max = 0.107588 (LTH2)
-[2020-11-02 15:32:37.388] [info] Frame 201 (t = 0.804000):	 total squared error = 0.0347823, marker error: RMS = 0.0329689, max = 0.105507 (LTH2)
-[2020-11-02 15:32:37.417] [info] Frame 202 (t = 0.808000):	 total squared error = 0.0351289, marker error: RMS = 0.0331327, max = 0.103283 (LTH2)
-[2020-11-02 15:32:37.448] [info] Frame 203 (t = 0.812):	 total squared error = 0.0353764, marker error: RMS = 0.0332492, max = 0.101564 (LTH2)
-[2020-11-02 15:32:37.474] [info] Frame 204 (t = 0.816):	 total squared error = 0.0353539, marker error: RMS = 0.0332387, max = 0.100348 (LTH1)
-[2020-11-02 15:32:37.506] [info] Frame 205 (t = 0.82):	 total squared error = 0.0349908, marker error: RMS = 0.0330676, max = 0.101711 (LTH1)
-[2020-11-02 15:32:37.537] [info] Frame 206 (t = 0.824):	 total squared error = 0.0344213, marker error: RMS = 0.0327973, max = 0.102781 (LTH1)
-[2020-11-02 15:32:37.560] [info] Frame 207 (t = 0.828):	 total squared error = 0.0337582, marker error: RMS = 0.0324799, max = 0.103397 (LTH1)
-[2020-11-02 15:32:37.591] [info] Frame 208 (t = 0.832):	 total squared error = 0.0330237, marker error: RMS = 0.0321246, max = 0.103887 (LTH1)
-[2020-11-02 15:32:37.620] [info] Frame 209 (t = 0.836):	 total squared error = 0.0324825, marker error: RMS = 0.0318603, max = 0.104568 (LTH1)
-[2020-11-02 15:32:37.668] [info] Frame 210 (t = 0.84):	 total squared error = 0.0321515, marker error: RMS = 0.0316976, max = 0.104760 (LTH1)
-[2020-11-02 15:32:37.694] [info] Frame 211 (t = 0.844):	 total squared error = 0.0319704, marker error: RMS = 0.0316081, max = 0.105042 (LTH1)
-[2020-11-02 15:32:37.723] [info] Frame 212 (t = 0.848):	 total squared error = 0.0319994, marker error: RMS = 0.0316225, max = 0.105357 (LTH1)
-[2020-11-02 15:32:37.771] [info] Frame 213 (t = 0.852):	 total squared error = 0.0322034, marker error: RMS = 0.0317231, max = 0.105362 (LTH1)
-[2020-11-02 15:32:37.798] [info] Frame 214 (t = 0.856):	 total squared error = 0.0325263, marker error: RMS = 0.0318818, max = 0.105497 (LTH1)
-[2020-11-02 15:32:37.822] [info] Frame 215 (t = 0.86):	 total squared error = 0.032858, marker error: RMS = 0.0320439, max = 0.105354 (LTH1)
-[2020-11-02 15:32:37.871] [info] Frame 216 (t = 0.864):	 total squared error = 0.0328141, marker error: RMS = 0.0320225, max = 0.105145 (LTH1)
-[2020-11-02 15:32:37.894] [info] Frame 217 (t = 0.868):	 total squared error = 0.0329774, marker error: RMS = 0.0321021, max = 0.104913 (LTH1)
-[2020-11-02 15:32:37.907] [info] InverseKinematicsTool completed 132 frames in 4 second(s).
-[2020-11-02 15:32:37.914] [info] Storage: read data file = ikResults.mot (nr=132 nc=26)
-[2020-11-02 15:32:37.917] [info] Storage: read data file = ikResults.mot (nr=132 nc=26)
-[2020-11-02 15:32:37.974] [info] Loaded model scaledModel from file scaledModelMuscle.osim
+[2021-02-23 11:23:31.168] [info] Running tool .
+[2021-02-23 11:23:31.365] [info] Frame 86 (t = 0.344):	 total squared error = 0.0339605, marker error: RMS = 0.0325771, max = 0.109725 (LTH1)
+[2021-02-23 11:23:31.386] [info] Frame 87 (t = 0.348):	 total squared error = 0.0342815, marker error: RMS = 0.0327307, max = 0.109367 (LTH1)
+[2021-02-23 11:23:31.416] [info] Frame 88 (t = 0.352):	 total squared error = 0.0346289, marker error: RMS = 0.0328961, max = 0.109232 (LTH1)
+[2021-02-23 11:23:31.441] [info] Frame 89 (t = 0.356):	 total squared error = 0.0350436, marker error: RMS = 0.0330925, max = 0.108759 (LTH1)
+[2021-02-23 11:23:31.495] [info] Frame 90 (t = 0.36):	 total squared error = 0.0356188, marker error: RMS = 0.033363, max = 0.109025 (LTH1)
+[2021-02-23 11:23:31.519] [info] Frame 91 (t = 0.364):	 total squared error = 0.0362317, marker error: RMS = 0.0336488, max = 0.109277 (LTH1)
+[2021-02-23 11:23:31.565] [info] Frame 92 (t = 0.368):	 total squared error = 0.0370818, marker error: RMS = 0.0340412, max = 0.109734 (LTH1)
+[2021-02-23 11:23:31.586] [info] Frame 93 (t = 0.372):	 total squared error = 0.037765, marker error: RMS = 0.0343534, max = 0.110343 (LTH1)
+[2021-02-23 11:23:31.611] [info] Frame 94 (t = 0.376):	 total squared error = 0.0386181, marker error: RMS = 0.0347393, max = 0.110844 (LTH1)
+[2021-02-23 11:23:31.638] [info] Frame 95 (t = 0.38):	 total squared error = 0.0393148, marker error: RMS = 0.0350512, max = 0.111205 (LTH1)
+[2021-02-23 11:23:31.666] [info] Frame 96 (t = 0.384):	 total squared error = 0.0399903, marker error: RMS = 0.0353511, max = 0.110811 (LTH1)
+[2021-02-23 11:23:31.691] [info] Frame 97 (t = 0.388):	 total squared error = 0.0404940, marker error: RMS = 0.035573, max = 0.109897 (LTH1)
+[2021-02-23 11:23:31.734] [info] Frame 98 (t = 0.392):	 total squared error = 0.0412457, marker error: RMS = 0.0359016, max = 0.110187 (LTH1)
+[2021-02-23 11:23:31.755] [info] Frame 99 (t = 0.396):	 total squared error = 0.0415876, marker error: RMS = 0.0360501, max = 0.109637 (LTH1)
+[2021-02-23 11:23:31.775] [info] Frame 100 (t = 0.4):	 total squared error = 0.0417958, marker error: RMS = 0.0361403, max = 0.108556 (LTH1)
+[2021-02-23 11:23:31.796] [info] Frame 101 (t = 0.404000):	 total squared error = 0.0420952, marker error: RMS = 0.0362695, max = 0.108168 (LTH1)
+[2021-02-23 11:23:31.817] [info] Frame 102 (t = 0.408000):	 total squared error = 0.0423382, marker error: RMS = 0.036374, max = 0.107700 (LTH1)
+[2021-02-23 11:23:31.854] [info] Frame 103 (t = 0.412):	 total squared error = 0.0424677, marker error: RMS = 0.0364296, max = 0.107068 (LTH1)
+[2021-02-23 11:23:31.887] [info] Frame 104 (t = 0.416):	 total squared error = 0.0424828, marker error: RMS = 0.0364361, max = 0.106308 (LTH1)
+[2021-02-23 11:23:31.905] [info] Frame 105 (t = 0.42):	 total squared error = 0.0424928, marker error: RMS = 0.0364403, max = 0.105625 (LTH1)
+[2021-02-23 11:23:31.926] [info] Frame 106 (t = 0.424):	 total squared error = 0.0423831, marker error: RMS = 0.0363933, max = 0.104551 (LTH1)
+[2021-02-23 11:23:31.957] [info] Frame 107 (t = 0.428):	 total squared error = 0.0421060, marker error: RMS = 0.0362741, max = 0.103850 (LTH1)
+[2021-02-23 11:23:31.976] [info] Frame 108 (t = 0.432):	 total squared error = 0.0418394, marker error: RMS = 0.0361591, max = 0.103100 (LTH1)
+[2021-02-23 11:23:32.007] [info] Frame 109 (t = 0.436):	 total squared error = 0.0414422, marker error: RMS = 0.0359871, max = 0.102084 (LTH1)
+[2021-02-23 11:23:32.032] [info] Frame 110 (t = 0.44):	 total squared error = 0.0410719, marker error: RMS = 0.0358259, max = 0.100916 (LTH1)
+[2021-02-23 11:23:32.062] [info] Frame 111 (t = 0.444):	 total squared error = 0.0406502, marker error: RMS = 0.0356415, max = 0.101258 (LTH2)
+[2021-02-23 11:23:32.107] [info] Frame 112 (t = 0.448):	 total squared error = 0.0403399, marker error: RMS = 0.0355052, max = 0.102532 (LTH2)
+[2021-02-23 11:23:32.133] [info] Frame 113 (t = 0.452):	 total squared error = 0.0400322, marker error: RMS = 0.0353696, max = 0.103774 (LTH2)
+[2021-02-23 11:23:32.155] [info] Frame 114 (t = 0.456):	 total squared error = 0.0397801, marker error: RMS = 0.035258, max = 0.104455 (LTH2)
+[2021-02-23 11:23:32.204] [info] Frame 115 (t = 0.46):	 total squared error = 0.0398746, marker error: RMS = 0.0352999, max = 0.105895 (LTH2)
+[2021-02-23 11:23:32.237] [info] Frame 116 (t = 0.464):	 total squared error = 0.0392937, marker error: RMS = 0.0350418, max = 0.106183 (LTH2)
+[2021-02-23 11:23:32.267] [info] Frame 117 (t = 0.468):	 total squared error = 0.0393283, marker error: RMS = 0.0350572, max = 0.107287 (LTH2)
+[2021-02-23 11:23:32.289] [info] Frame 118 (t = 0.472):	 total squared error = 0.0391248, marker error: RMS = 0.0349664, max = 0.107728 (LTH2)
+[2021-02-23 11:23:32.314] [info] Frame 119 (t = 0.476):	 total squared error = 0.0383977, marker error: RMS = 0.03464, max = 0.108246 (LTH2)
+[2021-02-23 11:23:32.363] [info] Frame 120 (t = 0.48):	 total squared error = 0.0382471, marker error: RMS = 0.034572, max = 0.109494 (LTH2)
+[2021-02-23 11:23:32.393] [info] Frame 121 (t = 0.484):	 total squared error = 0.0373258, marker error: RMS = 0.0341531, max = 0.109772 (LTH2)
+[2021-02-23 11:23:32.425] [info] Frame 122 (t = 0.488):	 total squared error = 0.0365052, marker error: RMS = 0.0337755, max = 0.111346 (LTH2)
+[2021-02-23 11:23:32.443] [info] Frame 123 (t = 0.492):	 total squared error = 0.0360350, marker error: RMS = 0.0335573, max = 0.113155 (LTH2)
+[2021-02-23 11:23:32.471] [info] Frame 124 (t = 0.496):	 total squared error = 0.0351806, marker error: RMS = 0.0331571, max = 0.114156 (LTH2)
+[2021-02-23 11:23:32.518] [info] Frame 125 (t = 0.5):	 total squared error = 0.0346121, marker error: RMS = 0.0328881, max = 0.115055 (LTH2)
+[2021-02-23 11:23:32.549] [info] Frame 126 (t = 0.504000):	 total squared error = 0.0340534, marker error: RMS = 0.0326216, max = 0.115304 (LTH2)
+[2021-02-23 11:23:32.581] [info] Frame 127 (t = 0.508000):	 total squared error = 0.0333906, marker error: RMS = 0.0323026, max = 0.115685 (LTH2)
+[2021-02-23 11:23:32.625] [info] Frame 128 (t = 0.512):	 total squared error = 0.0327523, marker error: RMS = 0.0319923, max = 0.115401 (LTH2)
+[2021-02-23 11:23:32.667] [info] Frame 129 (t = 0.516):	 total squared error = 0.0323911, marker error: RMS = 0.0318154, max = 0.115945 (LTH2)
+[2021-02-23 11:23:32.730] [info] Frame 130 (t = 0.52):	 total squared error = 0.0317371, marker error: RMS = 0.0314926, max = 0.115042 (LTH2)
+[2021-02-23 11:23:32.757] [info] Frame 131 (t = 0.524):	 total squared error = 0.0313457, marker error: RMS = 0.0312978, max = 0.115116 (LTH2)
+[2021-02-23 11:23:32.792] [info] Frame 132 (t = 0.528):	 total squared error = 0.0307161, marker error: RMS = 0.0309819, max = 0.114192 (LTH2)
+[2021-02-23 11:23:32.845] [info] Frame 133 (t = 0.532):	 total squared error = 0.0303151, marker error: RMS = 0.0307790, max = 0.113395 (LTH2)
+[2021-02-23 11:23:32.880] [info] Frame 134 (t = 0.536):	 total squared error = 0.0300974, marker error: RMS = 0.0306683, max = 0.112867 (LTH2)
+[2021-02-23 11:23:32.904] [info] Frame 135 (t = 0.54):	 total squared error = 0.0300870, marker error: RMS = 0.0306630, max = 0.113041 (LTH2)
+[2021-02-23 11:23:32.942] [info] Frame 136 (t = 0.544):	 total squared error = 0.0296726, marker error: RMS = 0.0304511, max = 0.111713 (LTH2)
+[2021-02-23 11:23:32.972] [info] Frame 137 (t = 0.548):	 total squared error = 0.0296617, marker error: RMS = 0.0304455, max = 0.110813 (LTH2)
+[2021-02-23 11:23:32.999] [info] Frame 138 (t = 0.552):	 total squared error = 0.0297884, marker error: RMS = 0.0305105, max = 0.110331 (LTH2)
+[2021-02-23 11:23:33.019] [info] Frame 139 (t = 0.556):	 total squared error = 0.0299238, marker error: RMS = 0.0305797, max = 0.109780 (LTH2)
+[2021-02-23 11:23:33.073] [info] Frame 140 (t = 0.56):	 total squared error = 0.0301807, marker error: RMS = 0.0307107, max = 0.109074 (LTH2)
+[2021-02-23 11:23:33.100] [info] Frame 141 (t = 0.564):	 total squared error = 0.0301225, marker error: RMS = 0.0306811, max = 0.107296 (LTH2)
+[2021-02-23 11:23:33.128] [info] Frame 142 (t = 0.568):	 total squared error = 0.0302868, marker error: RMS = 0.0307646, max = 0.105861 (LTH2)
+[2021-02-23 11:23:33.150] [info] Frame 143 (t = 0.572):	 total squared error = 0.0303841, marker error: RMS = 0.0308140, max = 0.104321 (LTH2)
+[2021-02-23 11:23:33.196] [info] Frame 144 (t = 0.576):	 total squared error = 0.0304255, marker error: RMS = 0.0308350, max = 0.103063 (LTH2)
+[2021-02-23 11:23:33.213] [info] Frame 145 (t = 0.58):	 total squared error = 0.0306603, marker error: RMS = 0.0309537, max = 0.101948 (LTH2)
+[2021-02-23 11:23:33.235] [info] Frame 146 (t = 0.584):	 total squared error = 0.0308857, marker error: RMS = 0.0310673, max = 0.101257 (LTH2)
+[2021-02-23 11:23:33.258] [info] Frame 147 (t = 0.588):	 total squared error = 0.0311636, marker error: RMS = 0.0312068, max = 0.100577 (LTH1)
+[2021-02-23 11:23:33.281] [info] Frame 148 (t = 0.592):	 total squared error = 0.0313906, marker error: RMS = 0.0313202, max = 0.100901 (LTH1)
+[2021-02-23 11:23:33.307] [info] Frame 149 (t = 0.596):	 total squared error = 0.0315315, marker error: RMS = 0.0313905, max = 0.101222 (LTH1)
+[2021-02-23 11:23:33.339] [info] Frame 150 (t = 0.6):	 total squared error = 0.0316905, marker error: RMS = 0.0314695, max = 0.101387 (LTH1)
+[2021-02-23 11:23:33.378] [info] Frame 151 (t = 0.604000):	 total squared error = 0.0317941, marker error: RMS = 0.0315209, max = 0.102285 (LTH1)
+[2021-02-23 11:23:33.399] [info] Frame 152 (t = 0.608000):	 total squared error = 0.0319010, marker error: RMS = 0.0315738, max = 0.102418 (LTH1)
+[2021-02-23 11:23:33.460] [info] Frame 153 (t = 0.612):	 total squared error = 0.0319919, marker error: RMS = 0.0316188, max = 0.102526 (LTH1)
+[2021-02-23 11:23:33.491] [info] Frame 154 (t = 0.616):	 total squared error = 0.0326707, marker error: RMS = 0.0319525, max = 0.102639 (LTH1)
+[2021-02-23 11:23:33.525] [info] Frame 155 (t = 0.62):	 total squared error = 0.0330745, marker error: RMS = 0.0321493, max = 0.101286 (LTH1)
+[2021-02-23 11:23:33.552] [info] Frame 156 (t = 0.624):	 total squared error = 0.0335824, marker error: RMS = 0.0323952, max = 0.0993871 (LTH1)
+[2021-02-23 11:23:33.582] [info] Frame 157 (t = 0.628):	 total squared error = 0.0344742, marker error: RMS = 0.0328226, max = 0.101840 (LTH2)
+[2021-02-23 11:23:33.608] [info] Frame 158 (t = 0.632):	 total squared error = 0.0357643, marker error: RMS = 0.0334311, max = 0.104259 (LTH2)
+[2021-02-23 11:23:33.652] [info] Frame 159 (t = 0.636):	 total squared error = 0.0367004, marker error: RMS = 0.0338657, max = 0.106259 (LTH2)
+[2021-02-23 11:23:33.678] [info] Frame 160 (t = 0.64):	 total squared error = 0.0374629, marker error: RMS = 0.0342157, max = 0.106490 (LTH2)
+[2021-02-23 11:23:33.716] [info] Frame 161 (t = 0.644):	 total squared error = 0.0382116, marker error: RMS = 0.0345559, max = 0.107054 (LTH2)
+[2021-02-23 11:23:33.742] [info] Frame 162 (t = 0.648):	 total squared error = 0.038863, marker error: RMS = 0.0348492, max = 0.107385 (LTH2)
+[2021-02-23 11:23:33.766] [info] Frame 163 (t = 0.652):	 total squared error = 0.0391031, marker error: RMS = 0.0349567, max = 0.107269 (LTH2)
+[2021-02-23 11:23:33.792] [info] Frame 164 (t = 0.656):	 total squared error = 0.0395003, marker error: RMS = 0.0351338, max = 0.106861 (LTH2)
+[2021-02-23 11:23:33.835] [info] Frame 165 (t = 0.66):	 total squared error = 0.0398065, marker error: RMS = 0.0352697, max = 0.106283 (LTH2)
+[2021-02-23 11:23:33.857] [info] Frame 166 (t = 0.664):	 total squared error = 0.039918, marker error: RMS = 0.0353191, max = 0.105733 (LTH2)
+[2021-02-23 11:23:33.877] [info] Frame 167 (t = 0.668):	 total squared error = 0.0401475, marker error: RMS = 0.0354205, max = 0.105286 (LTH2)
+[2021-02-23 11:23:33.901] [info] Frame 168 (t = 0.672):	 total squared error = 0.0402050, marker error: RMS = 0.0354458, max = 0.105041 (LTH2)
+[2021-02-23 11:23:33.933] [info] Frame 169 (t = 0.676):	 total squared error = 0.0401538, marker error: RMS = 0.0354232, max = 0.104796 (LTH2)
+[2021-02-23 11:23:33.951] [info] Frame 170 (t = 0.68):	 total squared error = 0.0401084, marker error: RMS = 0.0354032, max = 0.104341 (LTH2)
+[2021-02-23 11:23:33.980] [info] Frame 171 (t = 0.684):	 total squared error = 0.0400261, marker error: RMS = 0.0353669, max = 0.104217 (LTH2)
+[2021-02-23 11:23:34.000] [info] Frame 172 (t = 0.688):	 total squared error = 0.0398909, marker error: RMS = 0.0353071, max = 0.103718 (LTH2)
+[2021-02-23 11:23:34.048] [info] Frame 173 (t = 0.692):	 total squared error = 0.0399157, marker error: RMS = 0.0353181, max = 0.102938 (LTH2)
+[2021-02-23 11:23:34.080] [info] Frame 174 (t = 0.696):	 total squared error = 0.0397731, marker error: RMS = 0.0352549, max = 0.101918 (LTH2)
+[2021-02-23 11:23:34.108] [info] Frame 175 (t = 0.7):	 total squared error = 0.0396759, marker error: RMS = 0.0352118, max = 0.100524 (LTH2)
+[2021-02-23 11:23:34.135] [info] Frame 176 (t = 0.704000):	 total squared error = 0.0395766, marker error: RMS = 0.0351677, max = 0.0986727 (LTH2)
+[2021-02-23 11:23:34.167] [info] Frame 177 (t = 0.708000):	 total squared error = 0.0395565, marker error: RMS = 0.0351588, max = 0.100525 (LTH1)
+[2021-02-23 11:23:34.189] [info] Frame 178 (t = 0.712):	 total squared error = 0.0395052, marker error: RMS = 0.035136, max = 0.101637 (LTH1)
+[2021-02-23 11:23:34.221] [info] Frame 179 (t = 0.716):	 total squared error = 0.0394725, marker error: RMS = 0.0351215, max = 0.102343 (LTH1)
+[2021-02-23 11:23:34.250] [info] Frame 180 (t = 0.72):	 total squared error = 0.039551, marker error: RMS = 0.0351563, max = 0.102230 (LTH1)
+[2021-02-23 11:23:34.280] [info] Frame 181 (t = 0.724):	 total squared error = 0.039669, marker error: RMS = 0.0352088, max = 0.101894 (LTH1)
+[2021-02-23 11:23:34.312] [info] Frame 182 (t = 0.728):	 total squared error = 0.0398338, marker error: RMS = 0.0352818, max = 0.101803 (LTH1)
+[2021-02-23 11:23:34.347] [info] Frame 183 (t = 0.732):	 total squared error = 0.0399524, marker error: RMS = 0.0353343, max = 0.101549 (LTH1)
+[2021-02-23 11:23:34.399] [info] Frame 184 (t = 0.736):	 total squared error = 0.0401406, marker error: RMS = 0.0354174, max = 0.101092 (LTH1)
+[2021-02-23 11:23:34.428] [info] Frame 185 (t = 0.74):	 total squared error = 0.0400389, marker error: RMS = 0.0353725, max = 0.101400 (LTH1)
+[2021-02-23 11:23:34.456] [info] Frame 186 (t = 0.744):	 total squared error = 0.0399134, marker error: RMS = 0.035317, max = 0.101247 (LTH1)
+[2021-02-23 11:23:34.508] [info] Frame 187 (t = 0.748):	 total squared error = 0.0397005, marker error: RMS = 0.0352227, max = 0.100890 (LTH1)
+[2021-02-23 11:23:34.538] [info] Frame 188 (t = 0.752):	 total squared error = 0.0394409, marker error: RMS = 0.0351074, max = 0.100697 (LTH1)
+[2021-02-23 11:23:34.571] [info] Frame 189 (t = 0.756):	 total squared error = 0.0393163, marker error: RMS = 0.0350519, max = 0.100024 (LTH1)
+[2021-02-23 11:23:34.620] [info] Frame 190 (t = 0.76):	 total squared error = 0.0391080, marker error: RMS = 0.0349589, max = 0.100697 (LTH2)
+[2021-02-23 11:23:34.652] [info] Frame 191 (t = 0.764):	 total squared error = 0.0390566, marker error: RMS = 0.0349359, max = 0.103410 (LTH2)
+[2021-02-23 11:23:34.676] [info] Frame 192 (t = 0.768):	 total squared error = 0.0391012, marker error: RMS = 0.0349559, max = 0.106519 (LTH2)
+[2021-02-23 11:23:34.707] [info] Frame 193 (t = 0.772):	 total squared error = 0.0387006, marker error: RMS = 0.0347764, max = 0.108636 (LTH2)
+[2021-02-23 11:23:34.736] [info] Frame 194 (t = 0.776):	 total squared error = 0.0380536, marker error: RMS = 0.0344844, max = 0.109997 (LTH2)
+[2021-02-23 11:23:34.786] [info] Frame 195 (t = 0.78):	 total squared error = 0.037133, marker error: RMS = 0.0340647, max = 0.110749 (LTH2)
+[2021-02-23 11:23:34.816] [info] Frame 196 (t = 0.784):	 total squared error = 0.0361787, marker error: RMS = 0.0336242, max = 0.111132 (LTH2)
+[2021-02-23 11:23:34.863] [info] Frame 197 (t = 0.788):	 total squared error = 0.0352471, marker error: RMS = 0.0331884, max = 0.111048 (LTH2)
+[2021-02-23 11:23:34.888] [info] Frame 198 (t = 0.792):	 total squared error = 0.0347442, marker error: RMS = 0.0329508, max = 0.110258 (LTH2)
+[2021-02-23 11:23:34.915] [info] Frame 199 (t = 0.796):	 total squared error = 0.034512, marker error: RMS = 0.0328405, max = 0.109150 (LTH2)
+[2021-02-23 11:23:34.964] [info] Frame 200 (t = 0.8):	 total squared error = 0.0344962, marker error: RMS = 0.032833, max = 0.107588 (LTH2)
+[2021-02-23 11:23:34.997] [info] Frame 201 (t = 0.804000):	 total squared error = 0.0347823, marker error: RMS = 0.0329689, max = 0.105507 (LTH2)
+[2021-02-23 11:23:35.026] [info] Frame 202 (t = 0.808000):	 total squared error = 0.0351289, marker error: RMS = 0.0331327, max = 0.103283 (LTH2)
+[2021-02-23 11:23:35.055] [info] Frame 203 (t = 0.812):	 total squared error = 0.0353764, marker error: RMS = 0.0332492, max = 0.101564 (LTH2)
+[2021-02-23 11:23:35.081] [info] Frame 204 (t = 0.816):	 total squared error = 0.0353539, marker error: RMS = 0.0332387, max = 0.100348 (LTH1)
+[2021-02-23 11:23:35.115] [info] Frame 205 (t = 0.82):	 total squared error = 0.0349908, marker error: RMS = 0.0330676, max = 0.101711 (LTH1)
+[2021-02-23 11:23:35.146] [info] Frame 206 (t = 0.824):	 total squared error = 0.0344213, marker error: RMS = 0.0327973, max = 0.102781 (LTH1)
+[2021-02-23 11:23:35.170] [info] Frame 207 (t = 0.828):	 total squared error = 0.0337582, marker error: RMS = 0.0324799, max = 0.103397 (LTH1)
+[2021-02-23 11:23:35.200] [info] Frame 208 (t = 0.832):	 total squared error = 0.0330237, marker error: RMS = 0.0321246, max = 0.103887 (LTH1)
+[2021-02-23 11:23:35.228] [info] Frame 209 (t = 0.836):	 total squared error = 0.0324825, marker error: RMS = 0.0318603, max = 0.104568 (LTH1)
+[2021-02-23 11:23:35.274] [info] Frame 210 (t = 0.84):	 total squared error = 0.0321515, marker error: RMS = 0.0316976, max = 0.104760 (LTH1)
+[2021-02-23 11:23:35.300] [info] Frame 211 (t = 0.844):	 total squared error = 0.0319704, marker error: RMS = 0.0316081, max = 0.105042 (LTH1)
+[2021-02-23 11:23:35.329] [info] Frame 212 (t = 0.848):	 total squared error = 0.0319994, marker error: RMS = 0.0316225, max = 0.105357 (LTH1)
+[2021-02-23 11:23:35.377] [info] Frame 213 (t = 0.852):	 total squared error = 0.0322034, marker error: RMS = 0.0317231, max = 0.105362 (LTH1)
+[2021-02-23 11:23:35.403] [info] Frame 214 (t = 0.856):	 total squared error = 0.0325263, marker error: RMS = 0.0318818, max = 0.105497 (LTH1)
+[2021-02-23 11:23:35.428] [info] Frame 215 (t = 0.86):	 total squared error = 0.032858, marker error: RMS = 0.0320439, max = 0.105354 (LTH1)
+[2021-02-23 11:23:35.476] [info] Frame 216 (t = 0.864):	 total squared error = 0.0328141, marker error: RMS = 0.0320225, max = 0.105145 (LTH1)
+[2021-02-23 11:23:35.500] [info] Frame 217 (t = 0.868):	 total squared error = 0.0329774, marker error: RMS = 0.0321021, max = 0.104913 (LTH1)
+[2021-02-23 11:23:35.522] [info] InverseKinematicsTool completed 132 frames in 4 second(s).
+[2021-02-23 11:23:44.194] [info] Storage: read data file = ikResults.mot (nr=132 nc=26)
+[2021-02-23 11:23:44.197] [info] Storage: read data file = ikResults.mot (nr=132 nc=26)
+[2021-02-23 11:23:44.254] [info] Loaded model scaledModel from file scaledModelMuscle.osim
+[2021-02-23 11:29:18.185] [error] IO.OpenFile(const string&,const string&): failed to open refQ_2D.sto.
