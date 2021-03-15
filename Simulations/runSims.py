@@ -108,11 +108,19 @@ grfWeight = 1
 speedWeight = 1
 symmetryWeight = 1
 
+#Model parameters
+complexModel = False
+
+#General parameters
+visualiseSolution = False
+
 #Create the model processor for the tracking problem
 
 #Load the model and create processor
-osimModel = osim.Model('gaitModel2D_doubleStrengthVel.osim')
-# osimModel = osim.Model('gaitModel2D_complex_doubleStrength.osim')
+if complexModel:
+    osimModel = osim.Model('gaitModel2D_complex.osim')
+else:
+    osimModel = osim.Model('gaitModel2D.osim')
 modelProcessor = osim.ModelProcessor(osimModel)
 
 #Add processing step to remove muscles
@@ -124,14 +132,17 @@ torqueModel.initSystem()
 
 #Add torque actuators to support model
 #Set list to add reserves to
-reserveList = ['pelvis_tilt',
-                'hip_flexion_l', 'hip_flexion_r',
-                'knee_angle_l','knee_angle_r',
-                'ankle_angle_l', 'ankle_angle_r']
+if complexModel:
+    print('TODO: add complex model coordinates...')
+else:
+    reserveList = ['pelvis_tilt',
+                    'hip_flexion_l', 'hip_flexion_r',
+                    'knee_angle_l','knee_angle_r',
+                    'ankle_angle_l', 'ankle_angle_r']
 #Set optimal force and max torque
 optimalForce = 100
 maxTorque = np.inf
-#Add reserves
+#Add torque actuators
 for tt in range(len(reserveList)):
     addReserve(torqueModel, reserveList[tt], optimalForce, maxTorque)
 
@@ -195,8 +206,10 @@ effort = osim.MocoControlGoal().safeDownCast(problem.updGoal('control_effort'))
 effort.setDivideByDisplacement(True)
 
 #Set to not highly penalise the lumbar actuator
-effort.setWeightForControl('/forceset/lumbarAct', 0.001)
-# effort.setWeightForControl('/forceset/tau_lumbar_ext', 0.001)
+if complexModel:
+    effort.setWeightForControl('/forceset/tau_lumbar_ext', 0.001)
+else:
+    effort.setWeightForControl('/forceset/lumbarAct', 0.001)
 
 #Set an average speed goal based on sprinting data
 df_kinematics = readSTO('refQ_2D.sto')
@@ -250,24 +263,39 @@ problem.addGoal(symmetryGoal)
 
 #Add contact tracking goal
 #Set force names
-forceNamesRightFoot = ['forceset/contactHeel_r',
-                        'forceset/contactToe1_r',
-                        'forceset/contactToe2_r']
-forceNamesLeftFoot = ['forceset/contactHeel_l',
-                      'forceset/contactToe1_l',
-                      'forceset/contactToe2_l']
+if complexModel:
+    forceNamesRightFoot = ['forceset/contactHeel_r',
+                           'forceset/contactMH1_r',
+                           'forceset/contactMH3_r',
+                           'forceset/contactMH5_r',
+                           'forceset/contactHallux_r',
+                           'forceset/contactOtherToes_r']
+    forceNamesLeftFoot = ['forceset/contactHeel_l',
+                            'forceset/contactMH1_l',
+                            'forceset/contactMH3_l',
+                            'forceset/contactMH5_l',
+                            'forceset/contactHallux_l',
+                            'forceset/contactOtherToes_l']
+else:
+    forceNamesRightFoot = ['forceset/contactHeel_r',
+                           'forceset/contactMH1_r',
+                           'forceset/contactMH3_r',
+                           'forceset/contactMH5_r',
+                           'forceset/contactToe1_r',
+                           'forceset/contactToe2_r']
+    forceNamesLeftFoot = ['forceset/contactHeel_l',
+                            'forceset/contactMH1_l',
+                            'forceset/contactMH3_l',
+                            'forceset/contactMH5_l',
+                            'forceset/contactToe1_l',
+                            'forceset/contactToe2_l']
 # forceNamesRightFoot = ['forceset/contactHeel_r',
-#                        'forceset/contactMH1_r',
-#                        'forceset/contactMH3_r',
-#                        'forceset/contactMH5_r',
-#                        'forceset/contactHallux_r',
-#                        'forceset/contactOtherToes_r']
+#                         'forceset/contactToe1_r',
+#                         'forceset/contactToe2_r']
 # forceNamesLeftFoot = ['forceset/contactHeel_l',
-#                        'forceset/contactMH1_l',
-#                        'forceset/contactMH3_l',
-#                        'forceset/contactMH5_l',
-#                        'forceset/contactHallux_l',
-#                        'forceset/contactOtherToes_l']
+#                       'forceset/contactToe1_l',
+#                       'forceset/contactToe2_l']
+
 #Create contact tracking goal
 contactGoal = osim.MocoContactTrackingGoal('contactGoal', grfWeight)
 #Set external loads
@@ -319,7 +347,8 @@ solver.set_optim_convergence_tolerance(1e-2)
 solution = study.solve()
 
 #Option to visualise
-# study.visualize(solution)
+if visualiseSolution:
+    study.visualize(solution)
 
 #Create a full gait cycle trajectory from the periodic solution.
 addPatterns = [".*pelvis_tx/value"]
@@ -524,8 +553,9 @@ complexModel = False
 #Muscle parameters
 passiveForces = False
 implicitTendonCompliance = True
-
-### TODO: conditional for tendons
+tendonDynamics = True
+contractVelScale = 2.5
+maxForceScale = 2
 
 #Weights (more generic weights used than Moco Paper example...)
 trackingWeight = 10
@@ -538,10 +568,27 @@ symmetryWeight = 1
 
 #Load the model and create processor
 if complexModel:
-    osimModel = osim.Model('gaitModel2D_complex_doubleStrengthVel.osim')
+    osimModel = osim.Model('gaitModel2D_complex.osim')
 else:
-    osimModel = osim.Model('gaitModel2D_doubleStrengthVel.osim')    
+    osimModel = osim.Model('gaitModel2D.osim')  
+
+#Update contractile velocity maximum to assist with sprinting sim
+for mm in range(osimModel.getMuscles().getSize()):
+    #Get the current muscle
+    currMusc = osimModel.getMuscles().get(mm)
+    #Get current max contraction velocity
+    currVel = currMusc.getMaxContractionVelocity()
+    #Set new max contraction velocity
+    currMusc.set_max_contraction_velocity(currVel*contractVelScale)
+    
+#Finalise connections
+osimModel.finalizeConnections()
+
+#Put the model in a processor
 modelProcessor = osim.ModelProcessor(osimModel)
+
+#Scale the maximum isometric force of muscles to assist with sprinting sim
+modelProcessor.append(osim.ModOpScaleMaxIsometricForce(maxForceScale))
 
 # #Convert muscles to DeGrooteFregley variant
 # modelProcessor.append(osim.ModOpReplaceMusclesWithDeGrooteFregly2016())
@@ -570,13 +617,14 @@ trackModel = modelProcessor.process()
 trackModel.initSystem()
 
 #Enable tendon compliance in the gastrocnemius and soleus
-muscles = trackModel.updMuscles()
-for mm in np.arange(muscles.getSize()):
-    currMusc = osim.DeGrooteFregly2016Muscle.safeDownCast(muscles.get(int(mm)))
-    muscName = currMusc.getName()
-    #Enable tendon compliance dynamics in the plantarflexors
-    if ('gastroc' in muscName) or ('soleus' in muscName):
-        currMusc.set_ignore_tendon_compliance(False)
+if tendonDynamics:
+    muscles = trackModel.updMuscles()
+    for mm in np.arange(muscles.getSize()):
+        currMusc = osim.DeGrooteFregly2016Muscle.safeDownCast(muscles.get(int(mm)))
+        muscName = currMusc.getName()
+        #Enable tendon compliance dynamics in the plantarflexors
+        if ('gastroc' in muscName) or ('soleus' in muscName):
+            currMusc.set_ignore_tendon_compliance(False)
         
 #Get the track model as a processor object
 trackModelProcessor = osim.ModelProcessor(trackModel)
@@ -735,18 +783,31 @@ if complexModel:
                            'forceset/contactHallux_r',
                            'forceset/contactOtherToes_r']
     forceNamesLeftFoot = ['forceset/contactHeel_l',
-                           'forceset/contactMH1_l',
-                           'forceset/contactMH3_l',
-                           'forceset/contactMH5_l',
-                           'forceset/contactHallux_l',
-                           'forceset/contactOtherToes_l']
-else:    
+                            'forceset/contactMH1_l',
+                            'forceset/contactMH3_l',
+                            'forceset/contactMH5_l',
+                            'forceset/contactHallux_l',
+                            'forceset/contactOtherToes_l']
+else:
     forceNamesRightFoot = ['forceset/contactHeel_r',
+                           'forceset/contactMH1_r',
+                           'forceset/contactMH3_r',
+                           'forceset/contactMH5_r',
                            'forceset/contactToe1_r',
                            'forceset/contactToe2_r']
     forceNamesLeftFoot = ['forceset/contactHeel_l',
-                          'forceset/contactToe1_l',
-                          'forceset/contactToe2_l']
+                            'forceset/contactMH1_l',
+                            'forceset/contactMH3_l',
+                            'forceset/contactMH5_l',
+                            'forceset/contactToe1_l',
+                            'forceset/contactToe2_l']
+# forceNamesRightFoot = ['forceset/contactHeel_r',
+#                         'forceset/contactToe1_r',
+#                         'forceset/contactToe2_r']
+# forceNamesLeftFoot = ['forceset/contactHeel_l',
+#                       'forceset/contactToe1_l',
+#                       'forceset/contactToe2_l']
+
 #Create contact tracking goal
 contactGoal = osim.MocoContactTrackingGoal('contactGoal', grfWeight)
 #Set external loads
@@ -778,9 +839,10 @@ problem.setStateInfo('/jointset/back/lumbar_extension/value', [np.deg2rad(-30),0
                      [np.deg2rad(-10),0])
 problem.setStateInfo('/jointset/ground_pelvis/pelvis_tilt/value', [-10*np.pi/180, 0*np.pi/180],
                      [np.deg2rad(-5),0])
-problem.setStateInfo('/jointset/ground_pelvis/pelvis_tx/value', [0, 3])
+problem.setStateInfo('/jointset/ground_pelvis/pelvis_tx/value', [0, 3],
+                     1.06261516975403) #tracking sim starting value
 problem.setStateInfo('/jointset/ground_pelvis/pelvis_ty/value', [0.8, 1.25],
-                     [0.95, 1.05]) #likely reasonable starting value
+                     [1.00, 1.02]) #likely reasonable starting value
 problem.setStateInfo('/jointset/hip_l/hip_flexion_l/value', [-25*np.pi/180, 75*np.pi/180])
 problem.setStateInfo('/jointset/hip_r/hip_flexion_r/value', [-25*np.pi/180, 75*np.pi/180])
 if complexModel:
@@ -817,17 +879,21 @@ solver.resetProblem(problem)
 #does this keep tracked states in guess though?
 
 #Set the normalized tendon forces if not loading initial guess from file
-#### TODO: conditional for tendons
-guess = solver.getGuess()
-numRows = guess.getNumTimes()
-stateNames = trackModel.getStateVariableNames()
-for ii in range(trackModel.getNumStateVariables()):
-    currState = stateNames.get(ii)
-    if 'normalized_tendon_force' in currState:
-        guess.setState(currState, np.linspace(0.2,0.2,numRows))
-
-#Set guess
-solver.setGuess(guess)
+if tendonDynamics:
+    
+    #Get the current default-ish guess
+    guess = solver.getGuess()
+    numRows = guess.getNumTimes()
+    
+    #Set the tendon force to reasonable values in initial guess to avoid a bad initial guess
+    stateNames = trackModel.getStateVariableNames()
+    for ii in range(trackModel.getNumStateVariables()):
+        currState = stateNames.get(ii)
+        if 'normalized_tendon_force' in currState:
+            guess.setState(currState, np.linspace(0.2,0.2,numRows))
+    
+    #Set guess
+    solver.setGuess(guess)
 
 #Solve
 solution = study.solve()
@@ -883,6 +949,10 @@ solution = study.solve()
     ##### looks pretty solid - could perhaps speed convergence up by constraining
     ##### initial bound of pelvix_tx to exp. data --- this moved around early
     ##### in iterations...
+    
+#### too much force with so many spheres --- perhaps just 3 spheres along foot
+#### for 3D model...
+    #### this was the main difference with new sims...
     
 
 #Option to visualise
