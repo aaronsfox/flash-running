@@ -10,7 +10,6 @@ import os
 def addVirtualMarkersStatic(staticTRC = None, outputTRC = 'static_withVirtualMarkers.trc'):
     
     # Convenience function for adding virtual markers to static trial.
-    #
     # Input:    staticTRC - .trc filename for static trial to add markers to
     #           outputTRC - optional input for filename for output .trc file
     #
@@ -855,6 +854,33 @@ def scaleOptimalForceSubjectSpecific(genericModelFileName = None, scaledModelFil
     scaledModel.finalizeConnections()
     scaledModel.printToXML(outputModelFileName)
     
+# %% getMassOfModel
+
+def getMassOfModel(osimModelFileName = None):
+    
+    # Convenience function for getting total mass of model.
+    #
+    # Input:    osimModelFileName - opensim model filename that corresponds to kinematic data
+    
+    if osimModelFileName is None:
+        raise ValueError('OpenSim model filename is required')
+        
+    #Set starting mass
+    totalMass = 0
+    
+    #Load in model
+    osimModel = osim.Model(osimModelFileName)
+    
+    #Get bodies
+    allBodies = osimModel.getBodySet()
+    
+    #Loop through bodies and get mass
+    for ii in range(allBodies.getSize()):
+        totalMass = totalMass + allBodies.get(ii).getMass()
+        
+    #Return total mass
+    return totalMass
+
 # %% kinematicsToStates
 
 def kinematicsToStates(kinematicsFileName = None, osimModelFileName = None,
@@ -924,7 +950,8 @@ def kinematicsToStates(kinematicsFileName = None, osimModelFileName = None,
 
 # %% statesTo2D
 
-def statesTo2D(statesFileName = None, outputFileName = 'coordinates.sto'):
+def statesTo2D(statesFileName = None, outputFileName = 'coordinates.sto',
+               renameWalkerKnee = False):
     
     # Convenience function for converting the created states from IK to match
     # up to the 2D model. Note that this function requires the input states file
@@ -932,6 +959,7 @@ def statesTo2D(statesFileName = None, outputFileName = 'coordinates.sto'):
     #
     # Input:    statesFileName - file containing states data from kinematic conversion
     #           outputFileName - optional filename to output to (defaults to coordinates.sto)
+    #           renameWalkerKnee - boolean for whether to change to standard knee_ label
 
     if statesFileName is None:
         raise ValueError('Filename for states is required')
@@ -963,8 +991,9 @@ def statesTo2D(statesFileName = None, outputFileName = 'coordinates.sto'):
     #Get current column labels 
     angleNames = list(origStorage.getColumnLabels())
     
-    # #Rename walker knee to standard knee joint
-    # angleNames = [sub.replace('walker_knee_', 'knee_') for sub in angleNames] 
+    #Rename walker knee to standard knee joint
+    if renameWalkerKnee:
+        angleNames = [sub.replace('walker_knee_', 'knee_') for sub in angleNames] 
     
     #Output as temp .sto to get back as storage
     stoAdapter = osim.STOFileAdapter()
@@ -982,19 +1011,20 @@ def statesTo2D(statesFileName = None, outputFileName = 'coordinates.sto'):
     #Rename labels in storage
     newStorage.setColumnLabels(colLabels)
     
-    # #Figure out the state index of the knee angles
-    # rKneeInd = angleNames.index('/jointset/knee_r/knee_angle_r/value')
-    # lKneeInd = angleNames.index('/jointset/knee_l/knee_angle_l/value')
-
-    # #Invert knee angles to match different model
-    # #Loop through the length of the data
-    # for cc in range(0,newStorage.getSize()):
-    #     #Get the current knee angle values
-    #     rKneeVal = newStorage.getStateVector(cc).getData().getitem(rKneeInd)
-    #     lKneeVal = newStorage.getStateVector(cc).getData().getitem(lKneeInd)
-    #     #Replace with inverted value
-    #     newStorage.getStateVector(cc).getData().setitem(rKneeInd,rKneeVal*-1)
-    #     newStorage.getStateVector(cc).getData().setitem(lKneeInd,lKneeVal*-1)
+    if renameWalkerKnee:
+        #Figure out the state index of the knee angles
+        rKneeInd = angleNames.index('/jointset/knee_r/knee_angle_r/value')
+        lKneeInd = angleNames.index('/jointset/knee_l/knee_angle_l/value')
+    
+        #Invert knee angles to match different model
+        #Loop through the length of the data
+        for cc in range(0,newStorage.getSize()):
+            #Get the current knee angle values
+            rKneeVal = newStorage.getStateVector(cc).getData().getitem(rKneeInd)
+            lKneeVal = newStorage.getStateVector(cc).getData().getitem(lKneeInd)
+            #Replace with inverted value
+            newStorage.getStateVector(cc).getData().setitem(rKneeInd,rKneeVal*-1)
+            newStorage.getStateVector(cc).getData().setitem(lKneeInd,lKneeVal*-1)
     
     #Cleanup temp.sto
     os.remove('temp.sto')

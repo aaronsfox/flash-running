@@ -26,10 +26,15 @@ from scipy.signal import butter, lfilter
 from scipy.spatial.transform import Rotation as R
 # import matplotlib.pyplot as plt
 import xml.etree.ElementTree as et
+import shutil
+from distutils.dir_util import copy_tree
 
 # %% Participant details
 
 #Get participant mass from static trial
+
+#Navigate to data directory
+os.chdir('Data')
 
 #Load in the c3d data
 staticC3D = btk.btkAcquisitionFileReader()
@@ -340,7 +345,10 @@ forceXML.printToXML('refGRF.xml')
 forceXML.setDataFileName('refGRF_2D.mot')
 forceXML.printToXML('refGRF_2D.xml')
 
-# %% Model scaling
+# %% Model scaling (3D Model)
+
+#Navigate to scaling directory
+os.chdir('..\\Scaling')
 
 #Set up the scale tool
 scaleTool = osim.ScaleTool()
@@ -365,11 +373,12 @@ for k in range(0,taskSet.getSize()-1):
 #Set marker file
 
 #Add the virtual markers and create a new .trc file to use in scaling
-osimHelper.addVirtualMarkersStatic('static.trc','staticVirtualMarkers.trc')
+osimHelper.addVirtualMarkersStatic('..\\Data\\static.trc',
+                                   '..\\Data\\staticVirtualMarkers.trc')
 
 #Place in scale tool
-scaleTool.getMarkerPlacer().setMarkerFileName('staticVirtualMarkers.trc')
-scaleTool.getModelScaler().setMarkerFileName('staticVirtualMarkers.trc')
+scaleTool.getMarkerPlacer().setMarkerFileName('..\\Data\\staticVirtualMarkers.trc')
+scaleTool.getModelScaler().setMarkerFileName('..\\Data\\staticVirtualMarkers.trc')
 
 #Set options
 scaleTool.getModelScaler().setPreserveMassDist(True)
@@ -478,7 +487,145 @@ osimHelper.scaleOptimalForceSubjectSpecific(genericModelFileName = 'genericModel
 #Load in new scaled model
 scaledModelMuscle = osim.Model('scaledModelMuscle.osim')
 
-#Adapt model to create a 2D version
+# %% Model scaling (2D Model)
+
+#Set up the scale tool
+scaleTool2D = osim.ScaleTool()
+
+#Set participant mass
+scaleTool2D.setSubjectMass(massKg)
+
+#Set generic model file
+genModelFileName2D = 'gait9dof18musc_Ong_et_al_Moco.osim'
+scaleTool2D.getGenericModelMaker().setModelFileName(genModelFileName2D)
+
+#Set the measurement set
+measurementSetObject = osim.OpenSimObject.makeObjectFromFile('scaleMeasurementSet.xml')
+measurementSet = osim.MeasurementSet.safeDownCast(measurementSetObject)
+scaleTool2D.getModelScaler().setMeasurementSet(measurementSet)
+
+#Set scale tasks
+taskSet = osim.IKTaskSet('scaleTasks.xml')
+for k in range(0,taskSet.getSize()-1):
+    scaleTool2D.getMarkerPlacer().getIKTaskSet().adoptAndAppend(taskSet.get(k))
+
+#Set marker file
+scaleTool2D.getMarkerPlacer().setMarkerFileName('..\\Data\\staticVirtualMarkers.trc')
+scaleTool2D.getModelScaler().setMarkerFileName('..\\Data\\staticVirtualMarkers.trc')
+
+#Set options
+scaleTool2D.getModelScaler().setPreserveMassDist(True)
+scaleOrder = osim.ArrayStr(); scaleOrder.set(0,'measurements')
+scaleTool2D.getModelScaler().setScalingOrder(scaleOrder)
+
+#Set time ranges
+timeRange = osim.ArrayDouble()
+timeRange.set(0,0.5); timeRange.set(1,1.5)
+scaleTool2D.getMarkerPlacer().setTimeRange(timeRange)
+scaleTool2D.getModelScaler().setTimeRange(timeRange)
+
+#Set output files
+scaleTool2D.getModelScaler().setOutputModelFileName('scaledModel2D.osim')
+scaleTool2D.getModelScaler().setOutputScaleFileName('scaleSet2D.xml')
+
+#Set marker adjuster parameters
+scaleTool2D.getMarkerPlacer().setOutputMotionFileName('static_motion_2D.mot')
+scaleTool2D.getMarkerPlacer().setOutputModelFileName('scaledModelAdjusted2D.osim')
+
+#Save and run scale tool
+scaleTool2D.printToXML('scaleSetup2D.xml')
+scaleTool2D.run()
+
+#Load in scaled model
+scaledModel2D = osim.Model('scaledModelAdjusted2D.osim')
+
+#The locations and size of the contact sphere parameters go unchanged with
+#standard model scaling, so these need to be edited to ensure they are in
+#an appropriate place. This can be done based on the scale set parameters
+#for the representative bodies.
+
+#Load in the scale set, parsed from the XML tree
+xmlTree2D = et.parse('scaleSet2D.xml')
+xmlRoot2D = xmlTree2D.getroot()
+
+#Create a dictionary with segments and scale factors to access for calculations
+scaleFactors2D = {}
+
+#Loop through segments and place in dictionary
+for segment in range(0,len(xmlRoot2D.findall('./ScaleSet/objects/Scale/segment'))):
+    #Get current segment name
+    currSegment = xmlRoot2D.findall('./ScaleSet/objects/Scale/segment')[segment].text
+    #Get current scale name and parse to 0 x 3 array
+    currScale = xmlRoot2D.findall('./ScaleSet/objects/Scale/scales')[segment].text
+    currScale = str.split(currScale)
+    scaleFactors2D[currSegment] = [float(currScale[0]),float(currScale[1]),float(currScale[2])]
+    
+#Get the 3D scale factors for the relevant bodies and average to scale the
+#sphere radii. Note that these scale factors for each foot will be the same
+#for heel and toes as it looks like same scale factors are applied.
+heelSphereScale_r_2D = sum(scaleFactors2D['calcn_r']) / 3
+heelSphereScale_l_2D = sum(scaleFactors2D['calcn_l']) / 3
+toesSphereScale_r_2D = sum(scaleFactors2D['toes_r']) / 3
+toesSphereScale_l_2D = sum(scaleFactors2D['toes_l']) / 3
+
+#Scale the radii to each of their respective factors
+#While accessing the spheres, also adjust their position based on the scale
+#factor for the respective axes
+#Create a list of the sheres to loop through and edit
+sphereList2D = ['heel_r','toe1_r','toe2_r',
+                'heel_l','toe1_l','toe2_l']
+#Loop through sphere list
+for ss in range(len(sphereList2D)):
+    #Get the current sphere
+    currSphere = osim.ContactSphere.safeDownCast(scaledModel2D.getContactGeometrySet().get(sphereList2D[ss]))
+    #Set the current scaling factor based on sphere name
+    if '_r' in sphereList2D[ss]:
+        if 'toe' in sphereList2D[ss]:
+            scaleFac = toesSphereScale_r
+            scaleBod = 'toes_r'
+        else:
+            scaleFac = heelSphereScale_r
+            scaleBod = 'calcn_r'
+    elif '_l' in sphereList2D[ss]:
+        if 'toe' in sphereList2D[ss]:
+            scaleFac = toesSphereScale_l
+            scaleBod = 'toes_l'
+        else:
+            scaleFac = heelSphereScale_l
+            scaleBod = 'calcn_l'
+    #Rescale the radius
+    currSphere.setRadius(currSphere.getRadius() * scaleFac)
+    #Set new location
+    newLoc = []
+    newLoc.append(currSphere.getLocation().get(0) * scaleFactors[scaleBod][0])
+    newLoc.append(currSphere.getLocation().get(1) * scaleFactors[scaleBod][1])
+    newLoc.append(currSphere.getLocation().get(2) * scaleFactors[scaleBod][2])
+    currSphere.setLocation(osim.Vec3(newLoc[0],newLoc[1],newLoc[2]))    
+    
+#Reset model name
+scaledModel2D.setName('scaledModel2D')
+
+#Finalise connections and update scaled model
+scaledModel2D.finalizeConnections()
+scaledModel2D.printToXML('scaledModelAdjusted2D.osim')
+
+# Note that the scaled 2D model's markers are not in an appropriate position given
+# the lack of ability to translate in all three dimensions. The 2D model is therfore
+# not applicable to inverse kinematics analysis or anything to do with the original
+# 3D marker data --- it is simply for Moco-based simulations
+
+#Scale muscle strength based on linear function presented in Handsfield
+#et al. (2014). This uses some convenience functions that are packaged
+#with the Rajagopal et al. (2016) gait model. Note that the height of
+#the generic model is 1.700; the current participant height is 1.79
+osimHelper.scaleOptimalForceSubjectSpecific(genericModelFileName = 'gait9dof18musc_Ong_et_al_Moco.osim',
+                                            scaledModelFileName = 'scaledModelAdjusted2D.osim',
+                                            genericHeight = 1.700, scaledHeight = 1.79,
+                                            outputModelFileName = 'scaledModelMuscle2D.osim')
+#Load in new scaled model
+scaledModelMuscle2D = osim.Model('scaledModelMuscle2D.osim')
+
+# %% Adapt 3D model to create a complex 2D version
     
 #Set a new copy of the model
 model2D = osim.Model('scaledModelMuscle.osim')
@@ -498,8 +645,8 @@ pelvisBody = model2D.getBodySet().get('pelvis')
 femurBody = model2D.getBodySet().get('femur_r')
 #Create joint
 hipJoint_r = osim.PinJoint('hip_r', pelvisBody, locationInParent,
-                           orientationInParent, femurBody, locationInChild,
-                           orientationInChild)
+                            orientationInParent, femurBody, locationInChild,
+                            orientationInChild)
 #Update additional joint parameters
 hipJoint_r.getCoordinate().setName('hip_flexion_r') #set coordinate name
 hipJoint_r.getCoordinate().setRangeMin(origHip_r.get_coordinates(0).getRangeMin()) #get min from old joint
@@ -521,8 +668,8 @@ pelvisBody = model2D.getBodySet().get('pelvis')
 femurBody = model2D.getBodySet().get('femur_l')
 #Create joint
 hipJoint_l = osim.PinJoint('hip_l', pelvisBody, locationInParent,
-                           orientationInParent, femurBody, locationInChild,
-                           orientationInChild)
+                            orientationInParent, femurBody, locationInChild,
+                            orientationInChild)
 #Update additional joint parameters
 hipJoint_l.getCoordinate().setName('hip_flexion_l') #set coordinate name
 hipJoint_l.getCoordinate().setRangeMin(origHip_l.get_coordinates(0).getRangeMin()) #get min from old joint
@@ -651,8 +798,8 @@ origPelvis = scaledModelMuscle.getJointSet().get('ground_pelvis')
 
 #Create planar joint for ground-pelvis
 pelvisJoint = osim.PlanarJoint('ground_pelvis',
-                               model2D.getGround(), osim.Vec3(0,0,0), osim.Vec3(0,0,0),
-                               model2D.getBodySet().get('pelvis'), osim.Vec3(0,0,0), osim.Vec3(0,0,0))
+                                model2D.getGround(), osim.Vec3(0,0,0), osim.Vec3(0,0,0),
+                                model2D.getBodySet().get('pelvis'), osim.Vec3(0,0,0), osim.Vec3(0,0,0))
 #Update additional joint parameters
 #Pelvis tilt
 pelvisJoint.getCoordinate(0).setName('pelvis_tilt') #set coordinate name
@@ -716,31 +863,36 @@ editProcessor = osim.ModelProcessor(model2D)
 weldJoints = osim.StdVectorString()
 weldJoints.append('subtalar_r')
 weldJoints.append('subtalar_l')
-# weldJoints.append('mtp_r')
-# weldJoints.append('mtp_l')
+weldJoints.append('mtp_r')
+weldJoints.append('mtp_l')
 #Append model operator for welding
 editProcessor.append(osim.ModOpReplaceJointsWithWelds(weldJoints))
+#Append model operator to convert muscles
+editProcessor.append(osim.ModOpReplaceMusclesWithDeGrooteFregly2016())
 #Process model output
 model2D_final = editProcessor.process()
 
 #Print 2D model output
-model2D_final.printToXML('model2D.osim')
+model2D_final.printToXML('scaledModelMuscle2D_complex.osim')
 
 # %% Set simulation parameters
 
 #Identify time parameters for simulation
 #This will be based off a half gait cycle of the right limb, that being from
 #right foot heel strike to left foot heel strike
-# [startTime,endTime] = osimHelper.getHalfGaitCycle('refGRF.mot')
+[startTime,endTime] = osimHelper.getHalfGaitCycle('..\\Data\\refGRF.mot')
 #Or a full gait cycle
-[startTime,endTime] = osimHelper.getFullGaitCycle('refGRF.mot')
+# [startTime,endTime] = osimHelper.getFullGaitCycle('refGRF.mot')
 
 #Add the virtual torso, pelvis and hip joint markers to the .trc file
-osimHelper.addVirtualMarkersDynamic(staticTRC = 'staticVirtualMarkers.trc',
-                                    dynamicTRC = 'maxSprint.trc',
-                                    outputTRC = 'maxSprintVirtualMarkers.trc')
+osimHelper.addVirtualMarkersDynamic(staticTRC = '..\\Data\\staticVirtualMarkers.trc',
+                                    dynamicTRC = '..\\Data\\maxSprint.trc',
+                                    outputTRC = '..\\Data\\maxSprintVirtualMarkers.trc')
 
 # %% Inverse kinematics
+
+#Navigate to IK directory
+os.chdir('..\\IK')
 
 #Initialise IK tool
 ikTool = osim.InverseKinematicsTool()
@@ -752,7 +904,7 @@ ikTool.setModel(scaledModelMuscle)
 ikTool.set_IKTaskSet(osim.IKTaskSet('ikTasks.xml'))
 
 #Set marker file
-ikTool.set_marker_file('maxSprintVirtualMarkers.trc')
+ikTool.set_marker_file('..\\Data\\maxSprintVirtualMarkers.trc')
 
 #Set times
 ikTool.setStartTime(startTime)
@@ -764,270 +916,520 @@ ikTool.set_output_motion_file('ikResults.mot')
 #Run IK
 ikTool.run()
 
-#Convert IK results to a states file
-osimHelper.kinematicsToStates(kinematicsFileName = 'ikResults.mot',
-                              osimModelFileName = 'scaledModelMuscle.osim',
-                              outputFileName = 'refQ.sto',
+# %% Residual reduction algorithm
+
+#Navigate to RRA directory
+os.chdir('..\\RRA')
+
+#Initialise list for RRA tool
+rraTool = []
+runRRA = []
+
+#Loop through and perform rra three times
+#Each time we'll adjust the mass specified by the RRA tool, and then re-use
+#this adjusted model in the next iteration. On the first iteration, we'll
+#use the IK motion data - but on subsequent iterations we'll use the
+#adjusted rra kinematics. Similarly, on the first iteration we'll set the
+#model to our scaled model - but then use the adjusted version on
+#subsequent iterations.
+for rr in range(1): ##### normally would do multiple iterations, but RRA bugging out with loop?
+    
+    #Make directory for current iteration
+    #Check if directory exists (errors if making when already there)
+    if not os.path.isdir('rra'+str(rr+1)):
+        os.mkdir('rra'+str(rr+1))
+    os.chdir('rra'+str(rr+1))
+    
+    #Create tool in list
+    rraTool.append(osim.RRATool())
+
+    #Set tool to replace model force set
+    rraTool[rr].setReplaceForceSet(True)
+    
+    #Set actuators file
+    forceSetFiles = osim.ArrayStr()
+    forceSetFiles.set(0,'..\\rraActuators.xml')
+    rraTool[rr].setForceSetFiles(forceSetFiles)
+    
+    #Set tracking tasks file
+    rraTool[rr].setTaskSetFileName('..\\rraTasks.xml')
+    
+    #Set a low pass filter frequency on the kinematics data
+    rraTool[rr].setLowpassCutoffFrequency(12)
+    
+    #Set to adjust the COM to reduce residuals
+    rraTool[rr].setAdjustCOMToReduceResiduals(True)
+    
+    #Set the torso body COM to be the one that gets adjusted
+    rraTool[rr].setAdjustedCOMBody('torso')
+    
+    #Set external loads file
+    rraTool[rr].setExternalLoadsFileName('..\\..\\Data\\refGRF.xml')
+
+    #Set tool name based on iteration
+    rraTool[rr].setName('rra'+str(rr+1))
+    
+    #Set desired kinematics file
+    if rr == 0:
+
+        #Use IK data
+        rraTool[rr].setDesiredKinematicsFileName('..\\..\\IK\\ikResults.mot')
+
+        #Set initial and final time
+        #You need to use the IK first and last times here as I don't think the tool
+        #likes if the IK data doesn't have the times you put in
+        rraTool[rr].setStartTime(osim.Storage('..\\..\\IK\\ikResults.mot').getFirstTime())
+        rraTool[rr].setFinalTime(osim.Storage('..\\..\\IK\\ikResults.mot').getLastTime())
+
+        #Set to original scaled model
+        rraTool[rr].setModelFilename('..\\..\\Scaling\\scaledModelMuscle.osim')
+        
+    else:
+        
+        #Use previous rra data
+        rraTool[rr].setDesiredKinematicsFileName('..\\rra'+str(rr)+'\\rra1_Kinematics_q.sto')
+        
+        #Set initial and final time
+        rraTool[rr].setStartTime(osim.Storage('..\\rra'+str(rr)+'\\rra1_Kinematics_q.sto').getFirstTime())
+        rraTool[rr].setFinalTime(osim.Storage('..\\rra'+str(rr)+'\\rra1_Kinematics_q.sto').getLastTime())
+        
+        #Set to last iteration rra model
+        rraTool[rr].setModelFilename('..\\rra'+str(rr)+'\\rraAdjustedModel_'+str(rr)+'.osim')
+        
+    #Set output model file
+    rraTool[rr].setOutputModelFileName('rraAdjustedModel_'+str(rr+1)+'.osim')
+
+    #Print out the tool
+    rraTool[rr].printToXML('setupRRA'+str(rr+1)+'.xml')
+
+    #Run RRA
+    #Reloading the setup tool seems to help with running the tool smoothly
+    runRRA.append(osim.RRATool('setupRRA'+str(rr+1)+'.xml'))
+    runRRA[rr].run()
+    
+    #Get the suggested mass change
+    #Read back through the file lines until getting to the total mass change
+    #Open text log and get lines
+    txtLog = open('..\\..\\opensim.log')
+    txtLine = txtLog.readlines()
+    #Loop through lines in reverse to identify last occurring mass change
+    for line in reversed(txtLine):
+        if line.startswith('*  Total mass change:'):
+            #Get the mass change recommendation
+            massChange = float(line.split(sep = ': ')[1])
+            break
+    #Set suggested new mass
+    if rr == 0:
+        currMass = osimHelper.getMassOfModel('..\\..\\Scaling\\scaledModelMuscle.osim') 
+        
+    #Set new mass and ratio
+    newMass = currMass + massChange
+    massScaleFac = newMass / currMass
+        
+    #Apply mass change to rra model
+    rraModel = osim.Model('rraAdjustedModel_'+str(rr+1)+'.osim')
+    allBodies = rraModel.getBodySet()
+    for ii in range(allBodies.getSize()):
+        currBodyMass = allBodies.get(ii).getMass()
+        newBodyMass = currBodyMass * massScaleFac
+        allBodies.get(ii).setMass(newBodyMass)
+    
+    #Print over model
+    rraModel.printToXML('rraAdjustedModel_'+str(rr+1)+'.osim')
+    
+    #Return to RRA directory
+    os.chdir('..')
+    
+#Get the final number of rra iterations
+finalRRA = rr+1
+
+#Get the filepath for the final RRA kinematics
+rraKinematics = os.getcwd()+'\\rra'+str(finalRRA)+'\\rra'+str(finalRRA)+'_Kinematics_q.sto'
+
+#Get the filepath to the final RRA model
+rraModel = os.getcwd()+'\\rra'+str(finalRRA)+'\\rraAdjustedModel_'+str(finalRRA)+'.osim'
+
+#Convert kinematic results to a states file and store in simulation directory
+osimHelper.kinematicsToStates(kinematicsFileName = rraKinematics,
+                              osimModelFileName = rraModel,
+                              outputFileName = '..\\..\\Simulations\\refQ.sto',
                               inDegrees = True, outDegrees = False)
 
-#Convert states to 2D new model format
-osimHelper.statesTo2D(statesFileName = 'refQ.sto',
-                      outputFileName = 'refQ_2D.sto')
+#Convert states to 2D model format
+osimHelper.statesTo2D(statesFileName = '..\\..\\Simulations\\refQ.sto',
+                      outputFileName = '..\\..\\Simulations\\refQ_2D.sto',
+                      renameWalkerKnee = True)
+
+#Copy final rra model to simulation directory
+shutil.copy(rraModel,'..\\..\\Simulations\\gaitModel3D.osim')
+
+#Adjust mass of 2D model coinciding with RRA changes
+#Get model masses and ratios
+rraMass = osimHelper.getMassOfModel(rraModel)
+mass2D = osimHelper.getMassOfModel(scaledModelMuscle2D)
+massRatio2D = rraMass / mass2D
+#Adjust body masses
+allBodies = scaledModelMuscle2D.getBodySet()
+for ii in range(allBodies.getSize()):
+    currBodyMass = allBodies.get(ii).getMass()
+    newBodyMass = currBodyMass * massRatio2D
+    allBodies.get(ii).setMass(newBodyMass)
+#Re-print adjusted mass model to simulation directory
+scaledModelMuscle2D.printToXML('..\\..\\Simulations\\gaitModel2D.osim')
+
+#Repeat for complex 2D model
+mass2D = osimHelper.getMassOfModel(model2D_final)
+massRatio2D = rraMass / mass2D
+#Adjust body masses
+allBodies = model2D_final.getBodySet()
+for ii in range(allBodies.getSize()):
+    currBodyMass = allBodies.get(ii).getMass()
+    newBodyMass = currBodyMass * massRatio2D
+    allBodies.get(ii).setMass(newBodyMass)
+#Re-print adjusted mass model to simulation directory
+model2D_final.printToXML('..\\..\\Simulations\\gaitModel2D_complex.osim')
+
+# %% Do some final data copies for subsequent simulations
+
+#Copy geometry folder across to simulations directory
+os.chdir('..\\..\\Simulations')
+if not os.path.isdir('Geometry'):
+    os.mkdir('Geometry')
+copy_tree('..\\ExpData\\Scaling\\Geometry',
+          os.getcwd()+'\\Geometry')
+
+#Copy GRF data files to simulations directory
+os.chdir('..\\ExpData\\Data')
+shutil.copy('refGRF_2D.mot', '..\\..\\Simulations')
+shutil.copy('refGRF_2D.xml', '..\\..\\Simulations')
+shutil.copy('refGRF.mot', '..\\..\\Simulations')
+shutil.copy('refGRF.xml', '..\\..\\Simulations')
+
+# %% Create double strength & velocity models for simulations
+
+#Navigate to directory
+os.chdir('..\\..\\Simulations')
+
+#2D model
+
+#Load model
+strengthModel2D = osim.Model('gaitModel2D.osim')
+
+#Loop through the muscles and double isometric force
+for mm in range(strengthModel2D.getMuscles().getSize()):
+    #Get the current muscle
+    currMusc = strengthModel2D.getMuscles().get(mm)
+    #Get current max isometric force
+    currForce = currMusc.getMaxIsometricForce()
+    #Set new force in muscle
+    currMusc.set_max_isometric_force(currForce*2)
+    #Get current max contraction velocity
+    currVel = currMusc.getMaxContractionVelocity()
+    #Set new max contraction velocity
+    currMusc.set_max_contraction_velocity(currVel*2)
+
+#Print new model to file
+strengthModel2D.printToXML('gaitModel2D_doubleStrengthVel.osim')
+
+#Complex 2D model
+
+#Load model
+strengthModel2D_complex = osim.Model('gaitModel2D_complex.osim')
+
+#Loop through the muscles and double isometric force
+for mm in range(strengthModel2D_complex.getMuscles().getSize()):
+    #Get the current muscle
+    currMusc = strengthModel2D_complex.getMuscles().get(mm)
+    #Get current max isometric force
+    currForce = currMusc.getMaxIsometricForce()
+    #Set new force in muscle
+    currMusc.set_max_isometric_force(currForce*2)
+    #Get current max contraction velocity
+    currVel = currMusc.getMaxContractionVelocity()
+    #Set new max contraction velocity
+    currMusc.set_max_contraction_velocity(currVel*2)
+
+#Print new model to file
+strengthModel2D_complex.printToXML('gaitModel2D_complex_doubleStrengthVel.osim')
+
+#3D model
+
+#Load model
+strengthModel3D = osim.Model('gaitModel3D.osim')
+
+#Loop through the muscles and double isometric force
+for mm in range(strengthModel3D.getMuscles().getSize()):
+    #Get the current muscle
+    currMusc = strengthModel3D.getMuscles().get(mm)
+    #Get current max isometric force
+    currForce = currMusc.getMaxIsometricForce()
+    #Set new force in muscle
+    currMusc.set_max_isometric_force(currForce*2)
+    #Get current max contraction velocity
+    currVel = currMusc.getMaxContractionVelocity()
+    #Set new max contraction velocity
+    currMusc.set_max_contraction_velocity(currVel*2)
+
+#Print new model to file
+strengthModel3D.printToXML('gaitModel3D_doubleStrengthVel.osim')
+
+# %% Finish up
+print('----- Processing of experimental data complete -----')
+
+# %% OLD CODE THAT CAN EVENTUALLY GO BELOW...
 
 # %% Extract scaled model parameters for building external functions
 
-##### TODO: check appropriateness of this against the TrackSim_1/2 variants for tracking...
+# ##### TODO: check appropriateness of this against the TrackSim_1/2 variants for tracking...
 
-# This extracts model values for a 2D model. It's important to note that these
-# extracted parameters are related to the models used in the Falisse et al.
-# algorithmic differentiation pipelines external functions.
-#
-# These external functions contain construction of a model that is effectively
-# in OpenSim 3.3 format --- which differs to the 4.x versions used for extracting
-# experimental data here. Hopefully it works anyway...
-#
-# The end of this section prints the outputs to a text file that theoretically
-# can be copied into an external function template
+# # This extracts model values for a 2D model. It's important to note that these
+# # extracted parameters are related to the models used in the Falisse et al.
+# # algorithmic differentiation pipelines external functions.
+# #
+# # These external functions contain construction of a model that is effectively
+# # in OpenSim 3.3 format --- which differs to the 4.x versions used for extracting
+# # experimental data here. Hopefully it works anyway...
+# #
+# # The end of this section prints the outputs to a text file that theoretically
+# # can be copied into an external function template
 
-#Set a dictionary to store the body values
-bodyVals = {'bodyName': [], 'bodyMass': [], 'massCentre': [], 'inertia': []}
+# #Set a dictionary to store the body values
+# bodyVals = {'bodyName': [], 'bodyMass': [], 'massCentre': [], 'inertia': []}
 
-#Set a dictionary to store the joint values
-jointVals = {'jointName': [], 'locInParent': []}
+# #Set a dictionary to store the joint values
+# jointVals = {'jointName': [], 'locInParent': []}
 
-#Set a list for the bodies to extract
-extractBodies = ['pelvis', 'femur_l', 'femur_r', 'tibia_l', 'tibia_r',
-                 'talus_l', 'talus_r', 'calcn_l', 'calcn_r',
-                 'toes_l', 'toes_r', 'torso']
+# #Set a list for the bodies to extract
+# extractBodies = ['pelvis', 'femur_l', 'femur_r', 'tibia_l', 'tibia_r',
+#                  'talus_l', 'talus_r', 'calcn_l', 'calcn_r',
+#                  'toes_l', 'toes_r', 'torso']
 
-#Set a list for the joints to extract
-extractJoints = ['ground_pelvis', 'hip_l', 'hip_r',
-                 'walker_knee_l', 'walker_knee_r',
-                 'ankle_l', 'ankle_r', 'subtalar_l', 'subtalar_r',
-                 'mtp_l', 'mtp_r', 'back']
-nameJoints = ['ground_pelvis', 'hip_l', 'hip_r',
-              'knee_l', 'knee_r',
-              'ankle_l', 'ankle_r', 'subtalar_l', 'subtalar_r',
-              'mtp_l', 'mtp_r', 'back']
+# #Set a list for the joints to extract
+# extractJoints = ['ground_pelvis', 'hip_l', 'hip_r',
+#                  'walker_knee_l', 'walker_knee_r',
+#                  'ankle_l', 'ankle_r', 'subtalar_l', 'subtalar_r',
+#                  'mtp_l', 'mtp_r', 'back']
+# nameJoints = ['ground_pelvis', 'hip_l', 'hip_r',
+#               'knee_l', 'knee_r',
+#               'ankle_l', 'ankle_r', 'subtalar_l', 'subtalar_r',
+#               'mtp_l', 'mtp_r', 'back']
 
-#Get the body parameters
-#Loop through bodies
-for bb in range(len(extractBodies)):
+# #Get the body parameters
+# #Loop through bodies
+# for bb in range(len(extractBodies)):
     
-    #Set body name in dictionary
-    bodyVals['bodyName'].append(extractBodies[bb])
+#     #Set body name in dictionary
+#     bodyVals['bodyName'].append(extractBodies[bb])
     
-    #Get body mass
-    bodyVals['bodyMass'].append(model2D_final.getBodySet().get(extractBodies[bb]).getMass())
+#     #Get body mass
+#     bodyVals['bodyMass'].append(model2D_final.getBodySet().get(extractBodies[bb]).getMass())
     
-    #Get mass centre
-    bodyVals['massCentre'].append(np.array([model2D_final.getBodySet().get(extractBodies[bb]).getMassCenter().get(0),
-                                            model2D_final.getBodySet().get(extractBodies[bb]).getMassCenter().get(1),
-                                            model2D_final.getBodySet().get(extractBodies[bb]).getMassCenter().get(2)]))
+#     #Get mass centre
+#     bodyVals['massCentre'].append(np.array([model2D_final.getBodySet().get(extractBodies[bb]).getMassCenter().get(0),
+#                                             model2D_final.getBodySet().get(extractBodies[bb]).getMassCenter().get(1),
+#                                             model2D_final.getBodySet().get(extractBodies[bb]).getMassCenter().get(2)]))
     
-    #Get inertia
-    bodyVals['inertia'].append(np.array([model2D_final.getBodySet().get(extractBodies[bb]).getInertia().getMoments().get(0),
-                                         model2D_final.getBodySet().get(extractBodies[bb]).getInertia().getMoments().get(1),
-                                         model2D_final.getBodySet().get(extractBodies[bb]).getInertia().getMoments().get(2),
-                                         model2D_final.getBodySet().get(extractBodies[bb]).getInertia().getProducts().get(0),
-                                         model2D_final.getBodySet().get(extractBodies[bb]).getInertia().getProducts().get(1),
-                                         model2D_final.getBodySet().get(extractBodies[bb]).getInertia().getProducts().get(2)]))
+#     #Get inertia
+#     bodyVals['inertia'].append(np.array([model2D_final.getBodySet().get(extractBodies[bb]).getInertia().getMoments().get(0),
+#                                          model2D_final.getBodySet().get(extractBodies[bb]).getInertia().getMoments().get(1),
+#                                          model2D_final.getBodySet().get(extractBodies[bb]).getInertia().getMoments().get(2),
+#                                          model2D_final.getBodySet().get(extractBodies[bb]).getInertia().getProducts().get(0),
+#                                          model2D_final.getBodySet().get(extractBodies[bb]).getInertia().getProducts().get(1),
+#                                          model2D_final.getBodySet().get(extractBodies[bb]).getInertia().getProducts().get(2)]))
 
-#Get the joint parameters
-#Loop through bodies
-for jj in range(len(extractJoints)):
+# #Get the joint parameters
+# #Loop through bodies
+# for jj in range(len(extractJoints)):
     
-    #Set joint name
-    jointVals['jointName'].append(nameJoints[jj])
+#     #Set joint name
+#     jointVals['jointName'].append(nameJoints[jj])
     
-    #Get location in parent
-    jointVals['locInParent'].append(np.array([model2D_final.getJointSet().get(extractJoints[jj]).get_frames(0).get_translation().get(0),
-                                              model2D_final.getJointSet().get(extractJoints[jj]).get_frames(0).get_translation().get(1),
-                                              model2D_final.getJointSet().get(extractJoints[jj]).get_frames(0).get_translation().get(2)]))
+#     #Get location in parent
+#     jointVals['locInParent'].append(np.array([model2D_final.getJointSet().get(extractJoints[jj]).get_frames(0).get_translation().get(0),
+#                                               model2D_final.getJointSet().get(extractJoints[jj]).get_frames(0).get_translation().get(1),
+#                                               model2D_final.getJointSet().get(extractJoints[jj]).get_frames(0).get_translation().get(2)]))
 
-#Write body set specifications to text file
-#Open file to write body set to
-bodySetExtFile = open('bodySet_externalFunction_2D.txt', 'w')
-#Loop through bodies
-for bb in range(len(extractBodies)):
+# #Write body set specifications to text file
+# #Open file to write body set to
+# bodySetExtFile = open('bodySet_externalFunction_2D.txt', 'w')
+# #Loop through bodies
+# for bb in range(len(extractBodies)):
     
-    #Create current text string for line
-    txtString = extractBodies[bb]+' = new OpenSim::Body("'+extractBodies[bb]+'" , '+\
-        str(bodyVals['bodyMass'][bb])+', Vec3('+str(bodyVals['massCentre'][bb][0])+\
-            ', '+str(bodyVals['massCentre'][bb][1])+', '+str(bodyVals['massCentre'][bb][2])+\
-                '), Inertia('+str(bodyVals['inertia'][bb][0])+', '+str(bodyVals['inertia'][bb][1])+\
-                    ', '+str(bodyVals['inertia'][bb][2])+', '+str(bodyVals['inertia'][bb][3])+\
-                        ', '+str(bodyVals['inertia'][bb][4])+', '+str(bodyVals['inertia'][bb][5])+\
-                            '));'
+#     #Create current text string for line
+#     txtString = extractBodies[bb]+' = new OpenSim::Body("'+extractBodies[bb]+'" , '+\
+#         str(bodyVals['bodyMass'][bb])+', Vec3('+str(bodyVals['massCentre'][bb][0])+\
+#             ', '+str(bodyVals['massCentre'][bb][1])+', '+str(bodyVals['massCentre'][bb][2])+\
+#                 '), Inertia('+str(bodyVals['inertia'][bb][0])+', '+str(bodyVals['inertia'][bb][1])+\
+#                     ', '+str(bodyVals['inertia'][bb][2])+', '+str(bodyVals['inertia'][bb][3])+\
+#                         ', '+str(bodyVals['inertia'][bb][4])+', '+str(bodyVals['inertia'][bb][5])+\
+#                             '));'
         
-    #Write the line to file
-    bodySetExtFile.write('%s\n' % txtString)
+#     #Write the line to file
+#     bodySetExtFile.write('%s\n' % txtString)
     
-#Close file
-bodySetExtFile.close()
+# #Close file
+# bodySetExtFile.close()
 
-#Write joint set specifications to text file
-jj = 0
-#Open file to write joint set to
-jointSetExtFile = open('jointSet_externalFunction_2D.txt', 'w')
+# #Write joint set specifications to text file
+# jj = 0
+# #Open file to write joint set to
+# jointSetExtFile = open('jointSet_externalFunction_2D.txt', 'w')
 
-#These are relatively manual don't work well with a loop
-#Text string for ground to pelvis
-txtString = 'ground_pelvis = new PlanarJoint("ground_pelvis'+\
-    '", model->getGround(), Vec3(0), Vec3(0), *pelvis'+\
-        ', Vec3(0), Vec3(0));'
-jointSetExtFile.write('%s\n' % txtString)        
-jj = jj + 1 #increment on joint value index
+# #These are relatively manual don't work well with a loop
+# #Text string for ground to pelvis
+# txtString = 'ground_pelvis = new PlanarJoint("ground_pelvis'+\
+#     '", model->getGround(), Vec3(0), Vec3(0), *pelvis'+\
+#         ', Vec3(0), Vec3(0));'
+# jointSetExtFile.write('%s\n' % txtString)        
+# jj = jj + 1 #increment on joint value index
 
-#Text string for custom hip joints
-txtString = 'hip_l = new CustomJoint("hip_l", *pelvis, Vec3('+\
-    str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
-        ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *femur_l,'+\
-            ' Vec3(0), Vec3(0), st_hip_l);'
-jointSetExtFile.write('%s\n' % txtString)            
-jj = jj + 1 #increment on joint value index
-txtString = 'hip_r = new CustomJoint("hip_r", *pelvis, Vec3('+\
-    str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
-        ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *femur_r,'+\
-            ' Vec3(0), Vec3(0), st_hip_r);'
-jointSetExtFile.write('%s\n' % txtString)            
-jj = jj + 1 #increment on joint value index
+# #Text string for custom hip joints
+# txtString = 'hip_l = new CustomJoint("hip_l", *pelvis, Vec3('+\
+#     str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
+#         ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *femur_l,'+\
+#             ' Vec3(0), Vec3(0), st_hip_l);'
+# jointSetExtFile.write('%s\n' % txtString)            
+# jj = jj + 1 #increment on joint value index
+# txtString = 'hip_r = new CustomJoint("hip_r", *pelvis, Vec3('+\
+#     str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
+#         ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *femur_r,'+\
+#             ' Vec3(0), Vec3(0), st_hip_r);'
+# jointSetExtFile.write('%s\n' % txtString)            
+# jj = jj + 1 #increment on joint value index
                 
-#Text string for custom knee joints
-txtString = 'knee_l = new CustomJoint("knee_l", *femur_l, Vec3('+\
-    str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
-        ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *tibia_l,'+\
-            ' Vec3(0), Vec3(0), st_knee_l);'
-jointSetExtFile.write('%s\n' % txtString)            
-jj = jj + 1 #increment on joint value index
-txtString = 'knee_r = new CustomJoint("knee_l", *femur_r, Vec3('+\
-    str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
-        ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *tibia_r,'+\
-            ' Vec3(0), Vec3(0), st_knee_r);'
-jointSetExtFile.write('%s\n' % txtString)            
-jj = jj + 1 #increment on joint value index 
+# #Text string for custom knee joints
+# txtString = 'knee_l = new CustomJoint("knee_l", *femur_l, Vec3('+\
+#     str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
+#         ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *tibia_l,'+\
+#             ' Vec3(0), Vec3(0), st_knee_l);'
+# jointSetExtFile.write('%s\n' % txtString)            
+# jj = jj + 1 #increment on joint value index
+# txtString = 'knee_r = new CustomJoint("knee_l", *femur_r, Vec3('+\
+#     str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
+#         ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *tibia_r,'+\
+#             ' Vec3(0), Vec3(0), st_knee_r);'
+# jointSetExtFile.write('%s\n' % txtString)            
+# jj = jj + 1 #increment on joint value index 
 
-#Text string for pin ankle joints            
-txtString = 'ankle_l = new PinJoint("ankle_l", *tibia_l, Vec3('+\
-    str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
-        ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *talus_l,'+\
-            ' Vec3(0), Vec3(0));'
-jointSetExtFile.write('%s\n' % txtString)            
-jj = jj + 1 #increment on joint value index
-txtString = 'ankle_r = new PinJoint("ankle_r", *tibia_r, Vec3('+\
-    str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
-        ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *talus_r,'+\
-            ' Vec3(0), Vec3(0));'
-jointSetExtFile.write('%s\n' % txtString)            
-jj = jj + 1 #increment on joint value index
+# #Text string for pin ankle joints            
+# txtString = 'ankle_l = new PinJoint("ankle_l", *tibia_l, Vec3('+\
+#     str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
+#         ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *talus_l,'+\
+#             ' Vec3(0), Vec3(0));'
+# jointSetExtFile.write('%s\n' % txtString)            
+# jj = jj + 1 #increment on joint value index
+# txtString = 'ankle_r = new PinJoint("ankle_r", *tibia_r, Vec3('+\
+#     str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
+#         ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *talus_r,'+\
+#             ' Vec3(0), Vec3(0));'
+# jointSetExtFile.write('%s\n' % txtString)            
+# jj = jj + 1 #increment on joint value index
 
-#Text string for weld subtalar joints
-txtString = 'subtalar_l = new WeldJoint("subtalar_l", *talus_l, Vec3('+\
-    str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
-        ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *calcn_l,'+\
-            ' Vec3(0), Vec3(0));'
-jointSetExtFile.write('%s\n' % txtString)            
-jj = jj + 1 #increment on joint value index
-txtString = 'subtalar_r = new WeldJoint("subtalar_r", *talus_r, Vec3('+\
-    str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
-        ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *calcn_r,'+\
-            ' Vec3(0), Vec3(0));'
-jointSetExtFile.write('%s\n' % txtString)            
-jj = jj + 1 #increment on joint value index
+# #Text string for weld subtalar joints
+# txtString = 'subtalar_l = new WeldJoint("subtalar_l", *talus_l, Vec3('+\
+#     str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
+#         ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *calcn_l,'+\
+#             ' Vec3(0), Vec3(0));'
+# jointSetExtFile.write('%s\n' % txtString)            
+# jj = jj + 1 #increment on joint value index
+# txtString = 'subtalar_r = new WeldJoint("subtalar_r", *talus_r, Vec3('+\
+#     str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
+#         ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *calcn_r,'+\
+#             ' Vec3(0), Vec3(0));'
+# jointSetExtFile.write('%s\n' % txtString)            
+# jj = jj + 1 #increment on joint value index
 
-#Text string for weld mtp joints
-txtString = 'mtp_l = new WeldJoint("mtp_l", *calcn_l, Vec3('+\
-    str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
-        ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *toes_l,'+\
-            ' Vec3(0), Vec3(0));'
-jointSetExtFile.write('%s\n' % txtString)            
-jj = jj + 1 #increment on joint value index
-txtString = 'mtp_r = new WeldJoint("mtp_r", *calcn_r, Vec3('+\
-    str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
-        ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *toes_r,'+\
-            ' Vec3(0), Vec3(0));'
-jointSetExtFile.write('%s\n' % txtString)            
-jj = jj + 1 #increment on joint value index
+# #Text string for weld mtp joints
+# txtString = 'mtp_l = new WeldJoint("mtp_l", *calcn_l, Vec3('+\
+#     str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
+#         ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *toes_l,'+\
+#             ' Vec3(0), Vec3(0));'
+# jointSetExtFile.write('%s\n' % txtString)            
+# jj = jj + 1 #increment on joint value index
+# txtString = 'mtp_r = new WeldJoint("mtp_r", *calcn_r, Vec3('+\
+#     str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
+#         ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *toes_r,'+\
+#             ' Vec3(0), Vec3(0));'
+# jointSetExtFile.write('%s\n' % txtString)            
+# jj = jj + 1 #increment on joint value index
 
-#text string for back pin joint
-txtString = 'back = new PinJoint("back", *pelvis, Vec3('+\
-    str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
-        ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *torso,'+\
-            ' Vec3(0), Vec3(0));'
-jointSetExtFile.write('%s\n' % txtString)            
+# #text string for back pin joint
+# txtString = 'back = new PinJoint("back", *pelvis, Vec3('+\
+#     str(jointVals['locInParent'][jj][0])+', '+str(jointVals['locInParent'][jj][1])+\
+#         ', '+str(jointVals['locInParent'][jj][2])+'), Vec3(0), *torso,'+\
+#             ' Vec3(0), Vec3(0));'
+# jointSetExtFile.write('%s\n' % txtString)            
 
-#Close file
-jointSetExtFile.close()
+# #Close file
+# jointSetExtFile.close()
 
-#Convert Falisse et al. 2D contact parameter sizes and locations to present
-#model based on variations in body size from scaling. This relates to spheres
-#placed at the heel and the toe in the 2D model
+# #Convert Falisse et al. 2D contact parameter sizes and locations to present
+# #model based on variations in body size from scaling. This relates to spheres
+# #placed at the heel and the toe in the 2D model
 
-#Set the original parameters from the PredSim_2D model
-radiusSphere_heel = 0.035
-radiusSphere_front = 0.015
-locSphere_heel_l = np.array([0.031307527581931796, 0.010435842527310599, 0])
-locSphere_front_l = np.array([0.1774093229642802, -0.015653763790965898, -0.005217921263655299])
-locSphere_heel_r = np.array([0.031307527581931796, 0.010435842527310599, 0])
-locSphere_front_r = np.array([0.1774093229642802, -0.015653763790965898, 0.005217921263655299])
+# #Set the original parameters from the PredSim_2D model
+# radiusSphere_heel = 0.035
+# radiusSphere_front = 0.015
+# locSphere_heel_l = np.array([0.031307527581931796, 0.010435842527310599, 0])
+# locSphere_front_l = np.array([0.1774093229642802, -0.015653763790965898, -0.005217921263655299])
+# locSphere_heel_r = np.array([0.031307527581931796, 0.010435842527310599, 0])
+# locSphere_front_r = np.array([0.1774093229642802, -0.015653763790965898, 0.005217921263655299])
 
-#Our generic model is a relatively similar size (not so much mass) to the 2D
-#model from Falisse et al., so we'll scale these parameters based on the original
-#scaling factors. Sphere size and placement doesn't matter so much as optimising
-#kinematics when trying to track GRFs --- so the placement here doesn't need to
-#be super refined
+# #Our generic model is a relatively similar size (not so much mass) to the 2D
+# #model from Falisse et al., so we'll scale these parameters based on the original
+# #scaling factors. Sphere size and placement doesn't matter so much as optimising
+# #kinematics when trying to track GRFs --- so the placement here doesn't need to
+# #be super refined
 
-#Use the same scale factors as before to scale the size and location of the 2D spheres
-#Left heel location
-locSphereNew_heel_l = np.array([locSphere_heel_l[0] * scaleFactors['calcn_l'][0],
-                                locSphere_heel_l[1] * scaleFactors['calcn_l'][1],
-                                locSphere_heel_l[2] * scaleFactors['calcn_l'][2]])
-#Right heel location
-locSphereNew_heel_r = np.array([locSphere_heel_r[0] * scaleFactors['calcn_r'][0],
-                                locSphere_heel_r[1] * scaleFactors['calcn_r'][1],
-                                locSphere_heel_r[2] * scaleFactors['calcn_r'][2]])
-#Left front location
-locSphereNew_front_l = np.array([locSphere_front_l[0] * scaleFactors['toes_l'][0],
-                                 locSphere_front_l[1] * scaleFactors['toes_l'][1],
-                                 locSphere_front_l[2] * scaleFactors['toes_l'][2]])
-#Right front location
-locSphereNew_front_r = np.array([locSphere_front_r[0] * scaleFactors['toes_r'][0],
-                                 locSphere_front_r[1] * scaleFactors['toes_r'][1],
-                                 locSphere_front_r[2] * scaleFactors['toes_r'][2]])
-#Heel size
-radiusSphereNew_heel = radiusSphere_heel * ((heelSphereScale_l + heelSphereScale_r) / 2)
-#Front size
-radiusSphereNew_front = radiusSphere_front * ((toesSphereScale_l + toesSphereScale_r) / 2)
+# #Use the same scale factors as before to scale the size and location of the 2D spheres
+# #Left heel location
+# locSphereNew_heel_l = np.array([locSphere_heel_l[0] * scaleFactors['calcn_l'][0],
+#                                 locSphere_heel_l[1] * scaleFactors['calcn_l'][1],
+#                                 locSphere_heel_l[2] * scaleFactors['calcn_l'][2]])
+# #Right heel location
+# locSphereNew_heel_r = np.array([locSphere_heel_r[0] * scaleFactors['calcn_r'][0],
+#                                 locSphere_heel_r[1] * scaleFactors['calcn_r'][1],
+#                                 locSphere_heel_r[2] * scaleFactors['calcn_r'][2]])
+# #Left front location
+# locSphereNew_front_l = np.array([locSphere_front_l[0] * scaleFactors['toes_l'][0],
+#                                  locSphere_front_l[1] * scaleFactors['toes_l'][1],
+#                                  locSphere_front_l[2] * scaleFactors['toes_l'][2]])
+# #Right front location
+# locSphereNew_front_r = np.array([locSphere_front_r[0] * scaleFactors['toes_r'][0],
+#                                  locSphere_front_r[1] * scaleFactors['toes_r'][1],
+#                                  locSphere_front_r[2] * scaleFactors['toes_r'][2]])
+# #Heel size
+# radiusSphereNew_heel = radiusSphere_heel * ((heelSphereScale_l + heelSphereScale_r) / 2)
+# #Front size
+# radiusSphereNew_front = radiusSphere_front * ((toesSphereScale_l + toesSphereScale_r) / 2)
 
-#Write this contact sphere parameters section to a text file
-contactParamsExtFile = open('contactParameters_externalFunction_2D.txt', 'w')
-contactParamsExtFile.write('osim_double_adouble radiusSphere_heel = '+str(radiusSphereNew_heel)+';\n')
-contactParamsExtFile.write('osim_double_adouble radiusSphere_front = '+str(radiusSphereNew_front)+';\n')
-contactParamsExtFile.write('osim_double_adouble stiffness_heel = 3067776;\n')          
-contactParamsExtFile.write('osim_double_adouble stiffness_front = 3067776;\n')
-contactParamsExtFile.write('osim_double_adouble dissipation = 2.0;\n')
-contactParamsExtFile.write('osim_double_adouble staticFriction = 0.8;\n')
-contactParamsExtFile.write('osim_double_adouble dynamicFriction = 0.8;\n')
-contactParamsExtFile.write('osim_double_adouble viscousFriction = 0.5;\n')
-contactParamsExtFile.write('osim_double_adouble transitionVelocity = 0.2;\n')
-contactParamsExtFile.write('Vec3 halfSpaceLocation(0);\n')
-contactParamsExtFile.write('Vec3 halfSpaceOrientation(0, 0, -0.5*SimTK::Pi);\n')
-contactParamsExtFile.write('Vec3 locSphere_heel_l = Vec3('+\
-                               str(locSphereNew_heel_l[0])+', '+str(locSphereNew_heel_l[1])+\
-                                   ', '+str(locSphereNew_heel_l[2])+');\n')
-contactParamsExtFile.write('Vec3 locSphere_front_l = Vec3('+\
-                               str(locSphereNew_front_l[0])+', '+str(locSphereNew_front_l[1])+\
-                                   ', '+str(locSphereNew_front_l[2])+');\n')
-contactParamsExtFile.write('Vec3 locSphere_heel_r = Vec3('+\
-                               str(locSphereNew_heel_r[0])+', '+str(locSphereNew_heel_r[1])+\
-                                   ', '+str(locSphereNew_heel_r[2])+');\n')
-contactParamsExtFile.write('Vec3 locSphere_front_r = Vec3('+\
-                               str(locSphereNew_front_r[0])+', '+str(locSphereNew_front_r[1])+\
-                                   ', '+str(locSphereNew_front_r[2])+');\n')
-#Close file
-contactParamsExtFile.close()
-
-# %% OLD BELOW...
+# #Write this contact sphere parameters section to a text file
+# contactParamsExtFile = open('contactParameters_externalFunction_2D.txt', 'w')
+# contactParamsExtFile.write('osim_double_adouble radiusSphere_heel = '+str(radiusSphereNew_heel)+';\n')
+# contactParamsExtFile.write('osim_double_adouble radiusSphere_front = '+str(radiusSphereNew_front)+';\n')
+# contactParamsExtFile.write('osim_double_adouble stiffness_heel = 3067776;\n')          
+# contactParamsExtFile.write('osim_double_adouble stiffness_front = 3067776;\n')
+# contactParamsExtFile.write('osim_double_adouble dissipation = 2.0;\n')
+# contactParamsExtFile.write('osim_double_adouble staticFriction = 0.8;\n')
+# contactParamsExtFile.write('osim_double_adouble dynamicFriction = 0.8;\n')
+# contactParamsExtFile.write('osim_double_adouble viscousFriction = 0.5;\n')
+# contactParamsExtFile.write('osim_double_adouble transitionVelocity = 0.2;\n')
+# contactParamsExtFile.write('Vec3 halfSpaceLocation(0);\n')
+# contactParamsExtFile.write('Vec3 halfSpaceOrientation(0, 0, -0.5*SimTK::Pi);\n')
+# contactParamsExtFile.write('Vec3 locSphere_heel_l = Vec3('+\
+#                                str(locSphereNew_heel_l[0])+', '+str(locSphereNew_heel_l[1])+\
+#                                    ', '+str(locSphereNew_heel_l[2])+');\n')
+# contactParamsExtFile.write('Vec3 locSphere_front_l = Vec3('+\
+#                                str(locSphereNew_front_l[0])+', '+str(locSphereNew_front_l[1])+\
+#                                    ', '+str(locSphereNew_front_l[2])+');\n')
+# contactParamsExtFile.write('Vec3 locSphere_heel_r = Vec3('+\
+#                                str(locSphereNew_heel_r[0])+', '+str(locSphereNew_heel_r[1])+\
+#                                    ', '+str(locSphereNew_heel_r[2])+');\n')
+# contactParamsExtFile.write('Vec3 locSphere_front_r = Vec3('+\
+#                                str(locSphereNew_front_r[0])+', '+str(locSphereNew_front_r[1])+\
+#                                    ', '+str(locSphereNew_front_r[2])+');\n')
+# #Close file
+# contactParamsExtFile.close()
 
 # %% Run an inverse simulation to on experimental data
 
@@ -1999,79 +2401,7 @@ osim.writeTableToFile(externalForcesTableFlat,'sprintTracking_2D_withContact_sol
 
 ##### still get some z axis forces (check UMocoD paramteters)
 
-# %% DON'T THINK RRA IS NECESSARY GIVEN CHANGES TO KINEMATICS WILL OCCUR DURING TRACKING SIM...?
 
-# # %% Residual reduction algorithm
-
-# #Initialise RRA tool
-# rraTool = osim.RRATool()
-
-# #Set general settings outside of loop
-
-# #Set tool to replace model force set
-# rraTool.setReplaceForceSet(True)
-
-# #Set actuators file
-# forceSetFiles = osim.ArrayStr()
-# forceSetFiles.set(0,'..\\rraActuators.xml')
-# rraTool.setForceSetFiles(forceSetFiles)
-
-# #Set tracking tasks file
-# rraTool.setTaskSetFileName('..\\rraTasks.xml')
-
-# #Set a low pass filter frequency on the kinematics data
-# rraTool.setLowpassCutoffFrequency(12)
-
-# #Set to adjust the COM to reduce residuals
-# rraTool.setAdjustCOMToReduceResiduals(True)
-
-# #Set the torso body COM to be the one that gets adjusted
-# rraTool.setAdjustedCOMBody('torso')
-
-# #Set external loads file
-# rraTool.setExternalLoadsFileName('..\\refGRF.xml')
-
-# #Loop through and perform rra three times
-# #Each time we'll adjust the mass specified by the RRA tool, and then re-use
-# #this adjusted model in the next iteration. On the first iteration, we'll
-# #use the IK motion data - but on subsequent iterations we'll use the
-# #adjusted rra kinematics. Similarly, on the first iteration we'll set the
-# #model to our scaled model - but then use the adjusted version on
-# #subsequent iterations.
-# for rr in range(3):
-    
-#     #Make directory for current iteration
-#     os.mkdir('rra'+str(rr+1))
-#     os.chdir('rra'+str(rr+1))
-
-#     #Set tool name based on iteration
-#     rraTool.setName('rra'+str(rr+1))
-    
-#     #Set desired kinematics file
-#     if rr == 0:
-
-#         #Use IK data
-#         rraTool.setDesiredKinematicsFileName('..\\ikResults.mot')
-
-#         #Set initial and final time
-#         #You need to use the IK first and last times here as I don't think the tool
-#         #likes if the IK data doesn't have the times you put in
-#         rraTool.setStartTime(osim.Storage('..\\ikResults.mot').getFirstTime())
-#         rraTool.setFinalTime(osim.Storage('..\\ikResults.mot').getLastTime())
-
-#         #Set to original scaled model
-#         rraTool.setModelFilename('..\\scaledModelMuscle.osim')
-        
-#     #Set output model file
-#     rraTool.setOutputModelFileName('rraAdjustedModel_'+str(rr+1)+'.osim')
-
-#     #Print out the tool
-#     rraTool.printToXML('setupRRA'+str(rr+1)+'.xml')
-
-#     #Run RRA
-#     #Reloading the setup tool seems to help with running the tool smoothly
-#     runRRA = osim.RRATool('setupRRA'+str(rr+1)+'.xml')
-#     runRRA.run()
     
 
 
