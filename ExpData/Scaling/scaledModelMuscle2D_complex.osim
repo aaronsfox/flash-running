@@ -2930,13 +2930,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.80000000000000004</static_friction>
+					<static_friction>0.94999999999999996</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.80000000000000004</dynamic_friction>
+					<dynamic_friction>0.29999999999999999</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.5</viscous_friction>
+					<viscous_friction>0.29999999999999999</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.20000000000000001</transition_velocity>
+					<transition_velocity>0.001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -2952,13 +2952,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.80000000000000004</static_friction>
+					<static_friction>0.94999999999999996</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.80000000000000004</dynamic_friction>
+					<dynamic_friction>0.29999999999999999</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.5</viscous_friction>
+					<viscous_friction>0.29999999999999999</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.20000000000000001</transition_velocity>
+					<transition_velocity>0.001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -2974,13 +2974,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.80000000000000004</static_friction>
+					<static_friction>0.94999999999999996</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.80000000000000004</dynamic_friction>
+					<dynamic_friction>0.29999999999999999</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.5</viscous_friction>
+					<viscous_friction>0.29999999999999999</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.20000000000000001</transition_velocity>
+					<transition_velocity>0.001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -2996,13 +2996,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.80000000000000004</static_friction>
+					<static_friction>0.94999999999999996</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.80000000000000004</dynamic_friction>
+					<dynamic_friction>0.29999999999999999</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.5</viscous_friction>
+					<viscous_friction>0.29999999999999999</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.20000000000000001</transition_velocity>
+					<transition_velocity>0.001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -3018,13 +3018,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.80000000000000004</static_friction>
+					<static_friction>0.94999999999999996</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.80000000000000004</dynamic_friction>
+					<dynamic_friction>0.29999999999999999</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.5</viscous_friction>
+					<viscous_friction>0.29999999999999999</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.20000000000000001</transition_velocity>
+					<transition_velocity>0.001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -3040,13 +3040,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.80000000000000004</static_friction>
+					<static_friction>0.94999999999999996</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.80000000000000004</dynamic_friction>
+					<dynamic_friction>0.29999999999999999</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.5</viscous_friction>
+					<viscous_friction>0.29999999999999999</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.20000000000000001</transition_velocity>
+					<transition_velocity>0.001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -3062,13 +3062,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.80000000000000004</static_friction>
+					<static_friction>0.94999999999999996</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.80000000000000004</dynamic_friction>
+					<dynamic_friction>0.29999999999999999</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.5</viscous_friction>
+					<viscous_friction>0.29999999999999999</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.20000000000000001</transition_velocity>
+					<transition_velocity>0.001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -3084,13 +3084,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.80000000000000004</static_friction>
+					<static_friction>0.94999999999999996</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.80000000000000004</dynamic_friction>
+					<dynamic_friction>0.29999999999999999</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.5</viscous_friction>
+					<viscous_friction>0.29999999999999999</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.20000000000000001</transition_velocity>
+					<transition_velocity>0.001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -3106,13 +3106,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.80000000000000004</static_friction>
+					<static_friction>0.94999999999999996</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.80000000000000004</dynamic_friction>
+					<dynamic_friction>0.29999999999999999</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.5</viscous_friction>
+					<viscous_friction>0.29999999999999999</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.20000000000000001</transition_velocity>
+					<transition_velocity>0.001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -3128,13 +3128,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.80000000000000004</static_friction>
+					<static_friction>0.94999999999999996</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.80000000000000004</dynamic_friction>
+					<dynamic_friction>0.29999999999999999</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.5</viscous_friction>
+					<viscous_friction>0.29999999999999999</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.20000000000000001</transition_velocity>
+					<transition_velocity>0.001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -3150,13 +3150,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.80000000000000004</static_friction>
+					<static_friction>0.94999999999999996</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.80000000000000004</dynamic_friction>
+					<dynamic_friction>0.29999999999999999</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.5</viscous_friction>
+					<viscous_friction>0.29999999999999999</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.20000000000000001</transition_velocity>
+					<transition_velocity>0.001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -3172,13 +3172,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.80000000000000004</static_friction>
+					<static_friction>0.94999999999999996</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.80000000000000004</dynamic_friction>
+					<dynamic_friction>0.29999999999999999</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.5</viscous_friction>
+					<viscous_friction>0.29999999999999999</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.20000000000000001</transition_velocity>
+					<transition_velocity>0.001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -9305,81 +9305,81 @@
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_r</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.02951842761073472 0.015097220308984423 0</location>
+					<location>0.02951842761073472 0.0051460460000000013 0</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.051096719999999998</radius>
+					<radius>0.040000000000000001</radius>
 				</ContactSphere>
 				<ContactSphere name="mh1_r">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_r</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.171599428 -0.011718026999999999 -0.033182790000000004</location>
+					<location>0.171599428 -0.014853954000000003 -0.033182790000000004</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.025548359999999999</radius>
+					<radius>0.02</radius>
 				</ContactSphere>
 				<ContactSphere name="mh3_r">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_r</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.15632519319999999 -0.011718026999999999 0.016735667999999999</location>
+					<location>0.15632519319999999 -0.014853954000000003 0.016735667999999999</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.025548359999999999</radius>
+					<radius>0.02</radius>
 				</ContactSphere>
 				<ContactSphere name="mh5_r">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_r</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.13482812199999999 -0.011718026999999999 0.05338101</location>
+					<location>0.13482812199999999 -0.014853954000000003 0.05338101</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.025548359999999999</radius>
+					<radius>0.02</radius>
 				</ContactSphere>
 				<ContactSphere name="hallux_r">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/toes_r</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.052988394799999998 -0.014756033999999999 -0.026113413000000002</location>
+					<location>0.052988394799999998 -0.014853954000000001 -0.026113413000000002</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.025548359999999999</radius>
+					<radius>0.02</radius>
 				</ContactSphere>
 				<ContactSphere name="othertoes_r">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/toes_r</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.041579861400000001 -0.0086800200000000001 0.034914066000000001</location>
+					<location>0.041579861400000001 -0.014853953999999999 0.034914066000000001</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.025548359999999999</radius>
+					<radius>0.02</radius>
 				</ContactSphere>
 				<ContactSphere name="heel_l">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_l</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.029686361188684205 0.015197404397246605 0</location>
+					<location>0.029686361188684205 0.0051460460000000013 0</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.051436773333333331</radius>
+					<radius>0.040000000000000001</radius>
 				</ContactSphere>
 				<ContactSphere name="mh1_l">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_l</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.17257567599999998 -0.011795786999999999 0.033425210000000004</location>
+					<location>0.17257567599999998 -0.014853953999999999 0.033425210000000004</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.025718386666666666</radius>
+					<radius>0.02</radius>
 				</ContactSphere>
 				<ContactSphere name="mh3_l">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_l</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.15721454440000002 -0.011795786999999999 -0.016857931999999999</location>
+					<location>0.15721454440000002 -0.014853953999999999 -0.016857931999999999</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.025718386666666666</radius>
+					<radius>0.02</radius>
 				</ContactSphere>
 				<ContactSphere name="mh5_l">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_l</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.13559517399999998 -0.011795786999999999 -0.053770989999999998</location>
+					<location>0.13559517399999998 -0.014853953999999999 -0.053770989999999998</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.025718386666666666</radius>
+					<radius>0.02</radius>
 				</ContactSphere>
 				<ContactSphere name="hallux_l">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
@@ -9387,15 +9387,15 @@
 					<!--Location of geometry center in the PhysicalFrame.-->
 					<location>0.0532898516 -0.014853954000000001 0.026304187000000003</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.025718386666666666</radius>
+					<radius>0.02</radius>
 				</ContactSphere>
 				<ContactSphere name="othertoes_l">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/toes_l</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.0418164138 -0.0087376199999999998 -0.035169133999999998</location>
+					<location>0.0418164138 -0.014853954000000001 -0.035169133999999998</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.025718386666666666</radius>
+					<radius>0.02</radius>
 				</ContactSphere>
 				<ContactHalfSpace name="floor">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
