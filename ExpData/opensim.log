@@ -3264,3 +3264,1024 @@ Assembly error tolerance achieved: 2.3970033513620592e-08 required: 1e-10..Model
 [2021-03-11 21:19:33.011] [info] Loaded model scaledModel2D from file gaitModel2D.osim
 [2021-03-11 21:19:33.086] [info] Loaded model scaledModel from file gaitModel2D_complex.osim
 [2021-03-11 21:19:33.322] [info] Loaded model scaledModel from file gaitModel3D.osim
+[2021-03-15 16:09:12.559] [info] Processing subject ...
+[2021-03-15 16:09:12.559] [info] Step 1: Loading generic model
+[2021-03-15 16:09:12.621] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
+[2021-03-15 16:09:12.772] [info] Step 2: Scaling generic model
+[2021-03-15 16:09:12.910] [info] Loaded marker file ..\Data\staticVirtualMarkers.trc (58 markers, 483 frames)
+[2021-03-15 16:09:12.911] [info] Measurement 'torso_height'
+[2021-03-15 16:09:12.912] [info] 	pair 0 (MTOR, MPEL): model = 0.468396, experimental = 0.466528
+[2021-03-15 16:09:12.912] [info] 	overall scale factor = 0.996011
+[2021-03-15 16:09:12.912] [info] Measurement 'torso_breadth'
+[2021-03-15 16:09:12.913] [info] 	pair 0 (C7, CLAV): model = 0.146032, experimental = 0.146906
+[2021-03-15 16:09:12.913] [info] 	pair 1 (T10, STRN): model = 0.222121, experimental = 0.241562
+[2021-03-15 16:09:12.914] [info] 	overall scale factor = 1.04675
+[2021-03-15 16:09:12.914] [info] Measurement 'torso_width'
+[2021-03-15 16:09:12.914] [info] 	pair 0 (RACR, LACR): model = 0.283321, experimental = 0.345905
+[2021-03-15 16:09:12.915] [info] 	overall scale factor = 1.22089
+[2021-03-15 16:09:12.915] [info] Measurement 'pelvis_w'
+[2021-03-15 16:09:12.915] [info] 	pair 0 (RASI, LASI): model = 0.25789, experimental = 0.216053
+[2021-03-15 16:09:12.916] [info] 	pair 1 (RPSI, LPSI): model = 0.092731, experimental = 0.0960037
+[2021-03-15 16:09:12.916] [info] 	overall scale factor = 0.936532
+[2021-03-15 16:09:12.916] [info] Measurement 'pelvis_d'
+[2021-03-15 16:09:12.917] [info] 	pair 0 (RASI, RPSI): model = 0.201128, experimental = 0.188603
+[2021-03-15 16:09:12.917] [info] 	pair 1 (LASI, LPSI): model = 0.192488, experimental = 0.188085
+[2021-03-15 16:09:12.917] [info] 	overall scale factor = 0.957426
+[2021-03-15 16:09:12.918] [info] Measurement 'pelvis_h'
+[2021-03-15 16:09:12.919] [info] 	pair 0 (MPEL, RHJC): model = 0.131542, experimental = 0.105614
+[2021-03-15 16:09:12.920] [info] 	pair 1 (MPEL, LHJC): model = 0.131025, experimental = 0.108303
+[2021-03-15 16:09:12.921] [info] 	overall scale factor = 0.814735
+[2021-03-15 16:09:12.922] [info] Measurement 'r_thigh_length'
+[2021-03-15 16:09:12.922] [info] 	pair 0 (RHJC, RKJC): model = 0.390494, experimental = 0.46219
+[2021-03-15 16:09:12.922] [info] 	overall scale factor = 1.1836
+[2021-03-15 16:09:12.923] [info] Measurement 'r_thigh_breadth'
+[2021-03-15 16:09:12.923] [info] 	pair 0 (RLFC, RMFC): model = 0.108539, experimental = 0.125179
+[2021-03-15 16:09:12.923] [info] 	overall scale factor = 1.1533
+[2021-03-15 16:09:12.924] [info] Measurement 'r_tibia_length'
+[2021-03-15 16:09:12.924] [info] 	pair 0 (RKJC, RAJC): model = 0.391627, experimental = 0.437658
+[2021-03-15 16:09:12.924] [info] 	overall scale factor = 1.11754
+[2021-03-15 16:09:12.925] [info] Measurement 'r_tibia_breadth'
+[2021-03-15 16:09:12.925] [info] 	pair 0 (RLMAL, RMMAL): model = 0.093372, experimental = 0.0955162
+[2021-03-15 16:09:12.925] [info] 	overall scale factor = 1.02296
+[2021-03-15 16:09:12.925] [info] Measurement 'r_foot_length'
+[2021-03-15 16:09:12.926] [info] 	pair 0 (fRCAL, fRAJC): model = 0.0941763, experimental = 0.0694764
+[2021-03-15 16:09:12.926] [info] 	pair 1 (fRAJC, fRMT3): model = 0.129502, experimental = 0.148666
+[2021-03-15 16:09:12.926] [info] 	overall scale factor = 0.942854
+[2021-03-15 16:09:12.927] [info] Measurement 'r_foot_height'
+[2021-03-15 16:09:12.927] [info] 	pair 0 (RAJC, fRAJC): model = 0.0696915, experimental = 0.100821
+[2021-03-15 16:09:12.927] [info] 	overall scale factor = 1.44667
+[2021-03-15 16:09:12.928] [info] Measurement 'r_foot_width'
+[2021-03-15 16:09:12.928] [info] 	pair 0 (fRMT1, fRMT5): model = 0.0759802, experimental = 0.109619
+[2021-03-15 16:09:12.928] [info] 	overall scale factor = 1.44273
+[2021-03-15 16:09:12.929] [info] Measurement 'l_thigh_length'
+[2021-03-15 16:09:12.929] [info] 	pair 0 (LHJC, LKJC): model = 0.390494, experimental = 0.474762
+[2021-03-15 16:09:12.929] [info] 	overall scale factor = 1.2158
+[2021-03-15 16:09:12.930] [info] Measurement 'l_thigh_breadth'
+[2021-03-15 16:09:12.932] [info] 	pair 0 (LLFC, LMFC): model = 0.108539, experimental = 0.125672
+[2021-03-15 16:09:12.932] [info] 	overall scale factor = 1.15785
+[2021-03-15 16:09:12.932] [info] Measurement 'l_tibia_length'
+[2021-03-15 16:09:12.933] [info] 	pair 0 (LKJC, LAJC): model = 0.391627, experimental = 0.433973
+[2021-03-15 16:09:12.933] [info] 	overall scale factor = 1.10813
+[2021-03-15 16:09:12.933] [info] Measurement 'l_tibia_breadth'
+[2021-03-15 16:09:12.934] [info] 	pair 0 (LLMAL, LMMAL): model = 0.093372, experimental = 0.0950852
+[2021-03-15 16:09:12.934] [info] 	overall scale factor = 1.01835
+[2021-03-15 16:09:12.934] [info] Measurement 'l_foot_length'
+[2021-03-15 16:09:12.934] [info] 	pair 0 (fLCAL, fLAJC): model = 0.0954936, experimental = 0.068191
+[2021-03-15 16:09:12.935] [info] 	pair 1 (fLAJC, fLMT3): model = 0.129723, experimental = 0.153377
+[2021-03-15 16:09:12.935] [info] 	overall scale factor = 0.948218
+[2021-03-15 16:09:12.935] [info] Measurement 'l_foot_height'
+[2021-03-15 16:09:12.935] [info] 	pair 0 (LAJC, fLAJC): model = 0.0696334, experimental = 0.101405
+[2021-03-15 16:09:12.936] [info] 	overall scale factor = 1.45627
+[2021-03-15 16:09:12.936] [info] Measurement 'l_foot_width'
+[2021-03-15 16:09:12.936] [info] 	pair 0 (fLMT1, fLMT5): model = 0.0759802, experimental = 0.110420
+[2021-03-15 16:09:12.936] [info] 	overall scale factor = 1.45327
+[2021-03-15 16:09:13.196] [info] Wrote model file 'scaledModel.osim' from model.
+[2021-03-15 16:09:13.201] [info] Wrote scale file 'scaleSet.xml' for model model.
+[2021-03-15 16:09:13.201] [info] Step 3: Placing markers on model
+[2021-03-15 16:09:13.309] [info] Loaded marker file ..\Data\staticVirtualMarkers.trc (58 markers, 483 frames)
+[2021-03-15 16:09:13.310] [info] Averaged frames from time 0.5 to 1.5 in ..\Data\staticVirtualMarkers.trc (frames 126 to 376)
+[2021-03-15 16:09:13.310] [info] Deleted 0 unused markers from model model.
+[2021-03-15 16:09:13.441] [info] Frame at (t = 0.5):	 total squared error = 0.0573014, marker error: RMS = 0.0322776, max = 0.0574159 (LTH2)
+[2021-03-15 16:09:13.442] [info] Moved markers in model model to match locations in marker file '..\Data\staticVirtualMarkers.trc'.
+[2021-03-15 16:09:13.492] [info] Wrote model file 'scaledModelAdjusted.osim' from model model.
+[2021-03-15 16:09:13.598] [info] Loaded model model from file scaledModelAdjusted.osim
+[2021-03-15 16:16:17.984] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
+[2021-03-15 16:16:18.141] [info] Loaded model scaledModel from file scaledModelAdjusted.osim
+[2021-03-15 16:16:18.411] [info] Loaded model scaledModel from file scaledModelMuscle.osim
+[2021-03-15 16:17:09.745] [info] Processing subject ...
+[2021-03-15 16:17:09.745] [info] Step 1: Loading generic model
+[2021-03-15 16:17:09.766] [info] Loaded model gait9dof18musc_Ong_et_al from file gait9dof18musc_Ong_et_al_Moco.osim
+[2021-03-15 16:17:09.778] [info] Step 2: Scaling generic model
+[2021-03-15 16:17:09.830] [info] Loaded marker file ..\Data\staticVirtualMarkers.trc (58 markers, 483 frames)
+[2021-03-15 16:17:09.831] [info] Measurement 'torso_height'
+[2021-03-15 16:17:09.832] [info] 	pair 0 (MTOR, MPEL): model = 0.465351, experimental = 0.466528
+[2021-03-15 16:17:09.832] [info] 	overall scale factor = 1.00253
+[2021-03-15 16:17:09.833] [info] Measurement 'torso_breadth'
+[2021-03-15 16:17:09.833] [info] 	pair 0 (C7, CLAV): model = 0.146032, experimental = 0.146906
+[2021-03-15 16:17:09.834] [info] 	pair 1 (T10, STRN): model = 0.222121, experimental = 0.241562
+[2021-03-15 16:17:09.834] [info] 	overall scale factor = 1.04675
+[2021-03-15 16:17:09.835] [info] Measurement 'torso_width'
+[2021-03-15 16:17:09.835] [info] 	pair 0 (RACR, LACR): model = 0.283321, experimental = 0.345905
+[2021-03-15 16:17:09.835] [info] 	overall scale factor = 1.22089
+[2021-03-15 16:17:09.836] [info] Measurement 'pelvis_w'
+[2021-03-15 16:17:09.836] [info] 	pair 0 (RASI, LASI): model = 0.25789, experimental = 0.216053
+[2021-03-15 16:17:09.837] [info] 	pair 1 (RPSI, LPSI): model = 0.092731, experimental = 0.0960037
+[2021-03-15 16:17:09.837] [info] 	overall scale factor = 0.936532
+[2021-03-15 16:17:09.837] [info] Measurement 'pelvis_d'
+[2021-03-15 16:17:09.838] [info] 	pair 0 (RASI, RPSI): model = 0.201128, experimental = 0.188603
+[2021-03-15 16:17:09.838] [info] 	pair 1 (LASI, LPSI): model = 0.192488, experimental = 0.188085
+[2021-03-15 16:17:09.838] [info] 	overall scale factor = 0.957426
+[2021-03-15 16:17:09.839] [info] Measurement 'pelvis_h'
+[2021-03-15 16:17:09.839] [info] 	pair 0 (MPEL, RHJC): model = 0.12213, experimental = 0.105614
+[2021-03-15 16:17:09.839] [info] 	pair 1 (MPEL, LHJC): model = 0.121537, experimental = 0.108303
+[2021-03-15 16:17:09.841] [info] 	overall scale factor = 0.877939
+[2021-03-15 16:17:09.843] [info] Measurement 'r_thigh_length'
+[2021-03-15 16:17:09.843] [info] 	pair 0 (RHJC, RKJC): model = 0.390494, experimental = 0.46219
+[2021-03-15 16:17:09.843] [info] 	overall scale factor = 1.1836
+[2021-03-15 16:17:09.843] [info] Measurement 'r_thigh_breadth'
+[2021-03-15 16:17:09.844] [info] 	pair 0 (RLFC, RMFC): model = 0.108539, experimental = 0.125179
+[2021-03-15 16:17:09.844] [info] 	overall scale factor = 1.1533
+[2021-03-15 16:17:09.844] [info] Measurement 'r_tibia_length'
+[2021-03-15 16:17:09.844] [info] 	pair 0 (RKJC, RAJC): model = 0.38269, experimental = 0.437658
+[2021-03-15 16:17:09.845] [info] 	overall scale factor = 1.14364
+[2021-03-15 16:17:09.845] [info] Measurement 'r_tibia_breadth'
+[2021-03-15 16:17:09.845] [info] 	pair 0 (RLMAL, RMMAL): model = 0.093372, experimental = 0.0955162
+[2021-03-15 16:17:09.846] [info] 	overall scale factor = 1.02296
+[2021-03-15 16:17:09.846] [info] Measurement 'r_foot_length'
+[2021-03-15 16:17:09.846] [info] 	pair 0 (fRCAL, fRAJC): model = 0.0810480, experimental = 0.0694764
+[2021-03-15 16:17:09.847] [info] 	pair 1 (fRAJC, fRMT3): model = 0.128814, experimental = 0.148666
+[2021-03-15 16:17:09.847] [info] 	overall scale factor = 1.00567
+[2021-03-15 16:17:09.847] [info] Measurement 'r_foot_height'
+[2021-03-15 16:17:09.847] [info] 	pair 0 (RAJC, fRAJC): model = 0.0696915, experimental = 0.100821
+[2021-03-15 16:17:09.848] [info] 	overall scale factor = 1.44667
+[2021-03-15 16:17:09.848] [info] Measurement 'r_foot_width'
+[2021-03-15 16:17:09.848] [info] 	pair 0 (fRMT1, fRMT5): model = 0.0759802, experimental = 0.109619
+[2021-03-15 16:17:09.848] [info] 	overall scale factor = 1.44273
+[2021-03-15 16:17:09.849] [info] Measurement 'l_thigh_length'
+[2021-03-15 16:17:09.849] [info] 	pair 0 (LHJC, LKJC): model = 0.390494, experimental = 0.474762
+[2021-03-15 16:17:09.849] [info] 	overall scale factor = 1.2158
+[2021-03-15 16:17:09.850] [info] Measurement 'l_thigh_breadth'
+[2021-03-15 16:17:09.850] [info] 	pair 0 (LLFC, LMFC): model = 0.108539, experimental = 0.125672
+[2021-03-15 16:17:09.851] [info] 	overall scale factor = 1.15785
+[2021-03-15 16:17:09.851] [info] Measurement 'l_tibia_length'
+[2021-03-15 16:17:09.851] [info] 	pair 0 (LKJC, LAJC): model = 0.38269, experimental = 0.433973
+[2021-03-15 16:17:09.852] [info] 	overall scale factor = 1.13401
+[2021-03-15 16:17:09.853] [info] Measurement 'l_tibia_breadth'
+[2021-03-15 16:17:09.853] [info] 	pair 0 (LLMAL, LMMAL): model = 0.093372, experimental = 0.0950852
+[2021-03-15 16:17:09.854] [info] 	overall scale factor = 1.01835
+[2021-03-15 16:17:09.854] [info] Measurement 'l_foot_length'
+[2021-03-15 16:17:09.854] [info] 	pair 0 (fLCAL, fLAJC): model = 0.0822059, experimental = 0.068191
+[2021-03-15 16:17:09.855] [info] 	pair 1 (fLAJC, fLMT3): model = 0.129019, experimental = 0.153377
+[2021-03-15 16:17:09.855] [info] 	overall scale factor = 1.00915
+[2021-03-15 16:17:09.855] [info] Measurement 'l_foot_height'
+[2021-03-15 16:17:09.855] [info] 	pair 0 (LAJC, fLAJC): model = 0.0696334, experimental = 0.101405
+[2021-03-15 16:17:09.856] [info] 	overall scale factor = 1.45627
+[2021-03-15 16:17:09.856] [info] Measurement 'l_foot_width'
+[2021-03-15 16:17:09.856] [info] 	pair 0 (fLMT1, fLMT5): model = 0.0759802, experimental = 0.110420
+[2021-03-15 16:17:09.856] [info] 	overall scale factor = 1.45327
+[2021-03-15 16:17:09.893] [info] Wrote model file 'scaledModel2D.osim' from model.
+[2021-03-15 16:17:09.898] [info] Wrote scale file 'scaleSet2D.xml' for model model.
+[2021-03-15 16:17:09.898] [info] Step 3: Placing markers on model
+[2021-03-15 16:17:09.997] [info] Loaded marker file ..\Data\staticVirtualMarkers.trc (58 markers, 483 frames)
+[2021-03-15 16:17:09.998] [info] Averaged frames from time 0.5 to 1.5 in ..\Data\staticVirtualMarkers.trc (frames 126 to 376)
+[2021-03-15 16:17:09.998] [info] Deleted 0 unused markers from model model.
+[2021-03-15 16:17:10.008] [info] Frame at (t = 0.5):	 total squared error = 5.34968, marker error: RMS = 0.311876, max = 0.402405 (RMT5)
+[2021-03-15 16:17:10.008] [info] Moved markers in model model to match locations in marker file '..\Data\staticVirtualMarkers.trc'.
+[2021-03-15 16:17:10.024] [info] Wrote model file 'scaledModelAdjusted2D.osim' from model model.
+[2021-03-15 16:17:10.060] [info] Loaded model model from file scaledModelAdjusted2D.osim
+[2021-03-16 11:08:16.939] [info] Processing subject ...
+[2021-03-16 11:08:16.940] [info] Step 1: Loading generic model
+[2021-03-16 11:08:17.075] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
+[2021-03-16 11:08:17.400] [info] Step 2: Scaling generic model
+[2021-03-16 11:08:17.600] [info] Loaded marker file ..\Data\staticVirtualMarkers.trc (58 markers, 483 frames)
+[2021-03-16 11:08:17.600] [info] Measurement 'torso_height'
+[2021-03-16 11:08:17.601] [info] 	pair 0 (MTOR, MPEL): model = 0.468396, experimental = 0.466528
+[2021-03-16 11:08:17.601] [info] 	overall scale factor = 0.996011
+[2021-03-16 11:08:17.601] [info] Measurement 'torso_breadth'
+[2021-03-16 11:08:17.601] [info] 	pair 0 (C7, CLAV): model = 0.146032, experimental = 0.146906
+[2021-03-16 11:08:17.602] [info] 	pair 1 (T10, STRN): model = 0.222121, experimental = 0.241562
+[2021-03-16 11:08:17.602] [info] 	overall scale factor = 1.04675
+[2021-03-16 11:08:17.602] [info] Measurement 'torso_width'
+[2021-03-16 11:08:17.602] [info] 	pair 0 (RACR, LACR): model = 0.283321, experimental = 0.345905
+[2021-03-16 11:08:17.603] [info] 	overall scale factor = 1.22089
+[2021-03-16 11:08:17.603] [info] Measurement 'pelvis_w'
+[2021-03-16 11:08:17.603] [info] 	pair 0 (RASI, LASI): model = 0.25789, experimental = 0.216053
+[2021-03-16 11:08:17.603] [info] 	pair 1 (RPSI, LPSI): model = 0.092731, experimental = 0.0960037
+[2021-03-16 11:08:17.603] [info] 	overall scale factor = 0.936532
+[2021-03-16 11:08:17.604] [info] Measurement 'pelvis_d'
+[2021-03-16 11:08:17.605] [info] 	pair 0 (RASI, RPSI): model = 0.201128, experimental = 0.188603
+[2021-03-16 11:08:17.605] [info] 	pair 1 (LASI, LPSI): model = 0.192488, experimental = 0.188085
+[2021-03-16 11:08:17.606] [info] 	overall scale factor = 0.957426
+[2021-03-16 11:08:17.606] [info] Measurement 'pelvis_h'
+[2021-03-16 11:08:17.607] [info] 	pair 0 (MPEL, RHJC): model = 0.131542, experimental = 0.105614
+[2021-03-16 11:08:17.607] [info] 	pair 1 (MPEL, LHJC): model = 0.131025, experimental = 0.108303
+[2021-03-16 11:08:17.607] [info] 	overall scale factor = 0.814735
+[2021-03-16 11:08:17.608] [info] Measurement 'r_thigh_length'
+[2021-03-16 11:08:17.608] [info] 	pair 0 (RHJC, RKJC): model = 0.390494, experimental = 0.46219
+[2021-03-16 11:08:17.609] [info] 	overall scale factor = 1.1836
+[2021-03-16 11:08:17.612] [info] Measurement 'r_thigh_breadth'
+[2021-03-16 11:08:17.613] [info] 	pair 0 (RLFC, RMFC): model = 0.108539, experimental = 0.125179
+[2021-03-16 11:08:17.613] [info] 	overall scale factor = 1.1533
+[2021-03-16 11:08:17.613] [info] Measurement 'r_tibia_length'
+[2021-03-16 11:08:17.614] [info] 	pair 0 (RKJC, RAJC): model = 0.391627, experimental = 0.437658
+[2021-03-16 11:08:17.614] [info] 	overall scale factor = 1.11754
+[2021-03-16 11:08:17.614] [info] Measurement 'r_tibia_breadth'
+[2021-03-16 11:08:17.615] [info] 	pair 0 (RLMAL, RMMAL): model = 0.093372, experimental = 0.0955162
+[2021-03-16 11:08:17.615] [info] 	overall scale factor = 1.02296
+[2021-03-16 11:08:17.616] [info] Measurement 'r_foot_length'
+[2021-03-16 11:08:17.616] [info] 	pair 0 (fRCAL, fRAJC): model = 0.0941763, experimental = 0.0694764
+[2021-03-16 11:08:17.616] [info] 	pair 1 (fRAJC, fRMT3): model = 0.129502, experimental = 0.148666
+[2021-03-16 11:08:17.617] [info] 	overall scale factor = 0.942854
+[2021-03-16 11:08:17.617] [info] Measurement 'r_foot_height'
+[2021-03-16 11:08:17.618] [info] 	pair 0 (RAJC, fRAJC): model = 0.0696915, experimental = 0.100821
+[2021-03-16 11:08:17.618] [info] 	overall scale factor = 1.44667
+[2021-03-16 11:08:17.618] [info] Measurement 'r_foot_width'
+[2021-03-16 11:08:17.619] [info] 	pair 0 (fRMT1, fRMT5): model = 0.0759802, experimental = 0.109619
+[2021-03-16 11:08:17.620] [info] 	overall scale factor = 1.44273
+[2021-03-16 11:08:17.622] [info] Measurement 'l_thigh_length'
+[2021-03-16 11:08:17.623] [info] 	pair 0 (LHJC, LKJC): model = 0.390494, experimental = 0.474762
+[2021-03-16 11:08:17.623] [info] 	overall scale factor = 1.2158
+[2021-03-16 11:08:17.624] [info] Measurement 'l_thigh_breadth'
+[2021-03-16 11:08:17.624] [info] 	pair 0 (LLFC, LMFC): model = 0.108539, experimental = 0.125672
+[2021-03-16 11:08:17.624] [info] 	overall scale factor = 1.15785
+[2021-03-16 11:08:17.625] [info] Measurement 'l_tibia_length'
+[2021-03-16 11:08:17.625] [info] 	pair 0 (LKJC, LAJC): model = 0.391627, experimental = 0.433973
+[2021-03-16 11:08:17.626] [info] 	overall scale factor = 1.10813
+[2021-03-16 11:08:17.626] [info] Measurement 'l_tibia_breadth'
+[2021-03-16 11:08:17.627] [info] 	pair 0 (LLMAL, LMMAL): model = 0.093372, experimental = 0.0950852
+[2021-03-16 11:08:17.628] [info] 	overall scale factor = 1.01835
+[2021-03-16 11:08:17.629] [info] Measurement 'l_foot_length'
+[2021-03-16 11:08:17.629] [info] 	pair 0 (fLCAL, fLAJC): model = 0.0954936, experimental = 0.068191
+[2021-03-16 11:08:17.630] [info] 	pair 1 (fLAJC, fLMT3): model = 0.129723, experimental = 0.153377
+[2021-03-16 11:08:17.630] [info] 	overall scale factor = 0.948218
+[2021-03-16 11:08:17.633] [info] Measurement 'l_foot_height'
+[2021-03-16 11:08:17.633] [info] 	pair 0 (LAJC, fLAJC): model = 0.0696334, experimental = 0.101405
+[2021-03-16 11:08:17.634] [info] 	overall scale factor = 1.45627
+[2021-03-16 11:08:17.634] [info] Measurement 'l_foot_width'
+[2021-03-16 11:08:17.635] [info] 	pair 0 (fLMT1, fLMT5): model = 0.0759802, experimental = 0.110420
+[2021-03-16 11:08:17.635] [info] 	overall scale factor = 1.45327
+[2021-03-16 11:08:18.101] [info] Wrote model file 'scaledModel.osim' from model.
+[2021-03-16 11:08:18.108] [info] Wrote scale file 'scaleSet.xml' for model model.
+[2021-03-16 11:08:18.108] [info] Step 3: Placing markers on model
+[2021-03-16 11:08:18.297] [info] Loaded marker file ..\Data\staticVirtualMarkers.trc (58 markers, 483 frames)
+[2021-03-16 11:08:18.298] [info] Averaged frames from time 0.5 to 1.5 in ..\Data\staticVirtualMarkers.trc (frames 126 to 376)
+[2021-03-16 11:08:18.299] [info] Deleted 0 unused markers from model model.
+[2021-03-16 11:08:18.582] [info] Frame at (t = 0.5):	 total squared error = 0.0573014, marker error: RMS = 0.0322776, max = 0.0574159 (LTH2)
+[2021-03-16 11:08:18.583] [info] Moved markers in model model to match locations in marker file '..\Data\staticVirtualMarkers.trc'.
+[2021-03-16 11:08:18.687] [info] Wrote model file 'scaledModelAdjusted.osim' from model model.
+[2021-03-16 11:08:18.860] [info] Loaded model model from file scaledModelAdjusted.osim
+[2021-03-16 11:08:19.269] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
+[2021-03-16 11:08:19.570] [info] Loaded model scaledModel from file scaledModelAdjusted.osim
+[2021-03-16 11:08:20.020] [info] Loaded model scaledModel from file scaledModelMuscle.osim
+[2021-03-16 11:08:30.673] [info] Processing subject ...
+[2021-03-16 11:08:30.673] [info] Step 1: Loading generic model
+[2021-03-16 11:08:30.701] [info] Loaded model gait9dof18musc_Ong_et_al from file gait9dof18musc_Ong_et_al_Moco.osim
+[2021-03-16 11:08:30.822] [info] Step 2: Scaling generic model
+[2021-03-16 11:08:31.006] [info] Loaded marker file ..\Data\staticVirtualMarkers.trc (58 markers, 483 frames)
+[2021-03-16 11:08:31.006] [info] Measurement 'torso_height'
+[2021-03-16 11:08:31.008] [info] 	pair 0 (MTOR, MPEL): model = 0.465351, experimental = 0.466528
+[2021-03-16 11:08:31.008] [info] 	overall scale factor = 1.00253
+[2021-03-16 11:08:31.008] [info] Measurement 'torso_breadth'
+[2021-03-16 11:08:31.009] [info] 	pair 0 (C7, CLAV): model = 0.146032, experimental = 0.146906
+[2021-03-16 11:08:31.009] [info] 	pair 1 (T10, STRN): model = 0.222121, experimental = 0.241562
+[2021-03-16 11:08:31.010] [info] 	overall scale factor = 1.04675
+[2021-03-16 11:08:31.010] [info] Measurement 'torso_width'
+[2021-03-16 11:08:31.010] [info] 	pair 0 (RACR, LACR): model = 0.283321, experimental = 0.345905
+[2021-03-16 11:08:31.011] [info] 	overall scale factor = 1.22089
+[2021-03-16 11:08:31.011] [info] Measurement 'pelvis_w'
+[2021-03-16 11:08:31.012] [info] 	pair 0 (RASI, LASI): model = 0.25789, experimental = 0.216053
+[2021-03-16 11:08:31.012] [info] 	pair 1 (RPSI, LPSI): model = 0.092731, experimental = 0.0960037
+[2021-03-16 11:08:31.013] [info] 	overall scale factor = 0.936532
+[2021-03-16 11:08:31.013] [info] Measurement 'pelvis_d'
+[2021-03-16 11:08:31.013] [info] 	pair 0 (RASI, RPSI): model = 0.201128, experimental = 0.188603
+[2021-03-16 11:08:31.014] [info] 	pair 1 (LASI, LPSI): model = 0.192488, experimental = 0.188085
+[2021-03-16 11:08:31.014] [info] 	overall scale factor = 0.957426
+[2021-03-16 11:08:31.015] [info] Measurement 'pelvis_h'
+[2021-03-16 11:08:31.016] [info] 	pair 0 (MPEL, RHJC): model = 0.12213, experimental = 0.105614
+[2021-03-16 11:08:31.017] [info] 	pair 1 (MPEL, LHJC): model = 0.121537, experimental = 0.108303
+[2021-03-16 11:08:31.017] [info] 	overall scale factor = 0.877939
+[2021-03-16 11:08:31.018] [info] Measurement 'r_thigh_length'
+[2021-03-16 11:08:31.018] [info] 	pair 0 (RHJC, RKJC): model = 0.390494, experimental = 0.46219
+[2021-03-16 11:08:31.018] [info] 	overall scale factor = 1.1836
+[2021-03-16 11:08:31.019] [info] Measurement 'r_thigh_breadth'
+[2021-03-16 11:08:31.020] [info] 	pair 0 (RLFC, RMFC): model = 0.108539, experimental = 0.125179
+[2021-03-16 11:08:31.021] [info] 	overall scale factor = 1.1533
+[2021-03-16 11:08:31.021] [info] Measurement 'r_tibia_length'
+[2021-03-16 11:08:31.021] [info] 	pair 0 (RKJC, RAJC): model = 0.38269, experimental = 0.437658
+[2021-03-16 11:08:31.022] [info] 	overall scale factor = 1.14364
+[2021-03-16 11:08:31.022] [info] Measurement 'r_tibia_breadth'
+[2021-03-16 11:08:31.022] [info] 	pair 0 (RLMAL, RMMAL): model = 0.093372, experimental = 0.0955162
+[2021-03-16 11:08:31.023] [info] 	overall scale factor = 1.02296
+[2021-03-16 11:08:31.023] [info] Measurement 'r_foot_length'
+[2021-03-16 11:08:31.023] [info] 	pair 0 (fRCAL, fRAJC): model = 0.0810480, experimental = 0.0694764
+[2021-03-16 11:08:31.023] [info] 	pair 1 (fRAJC, fRMT3): model = 0.128814, experimental = 0.148666
+[2021-03-16 11:08:31.024] [info] 	overall scale factor = 1.00567
+[2021-03-16 11:08:31.024] [info] Measurement 'r_foot_height'
+[2021-03-16 11:08:31.024] [info] 	pair 0 (RAJC, fRAJC): model = 0.0696915, experimental = 0.100821
+[2021-03-16 11:08:31.025] [info] 	overall scale factor = 1.44667
+[2021-03-16 11:08:31.025] [info] Measurement 'r_foot_width'
+[2021-03-16 11:08:31.027] [info] 	pair 0 (fRMT1, fRMT5): model = 0.0759802, experimental = 0.109619
+[2021-03-16 11:08:31.028] [info] 	overall scale factor = 1.44273
+[2021-03-16 11:08:31.028] [info] Measurement 'l_thigh_length'
+[2021-03-16 11:08:31.029] [info] 	pair 0 (LHJC, LKJC): model = 0.390494, experimental = 0.474762
+[2021-03-16 11:08:31.029] [info] 	overall scale factor = 1.2158
+[2021-03-16 11:08:31.030] [info] Measurement 'l_thigh_breadth'
+[2021-03-16 11:08:31.030] [info] 	pair 0 (LLFC, LMFC): model = 0.108539, experimental = 0.125672
+[2021-03-16 11:08:31.031] [info] 	overall scale factor = 1.15785
+[2021-03-16 11:08:31.031] [info] Measurement 'l_tibia_length'
+[2021-03-16 11:08:31.032] [info] 	pair 0 (LKJC, LAJC): model = 0.38269, experimental = 0.433973
+[2021-03-16 11:08:31.032] [info] 	overall scale factor = 1.13401
+[2021-03-16 11:08:31.033] [info] Measurement 'l_tibia_breadth'
+[2021-03-16 11:08:31.033] [info] 	pair 0 (LLMAL, LMMAL): model = 0.093372, experimental = 0.0950852
+[2021-03-16 11:08:31.034] [info] 	overall scale factor = 1.01835
+[2021-03-16 11:08:31.034] [info] Measurement 'l_foot_length'
+[2021-03-16 11:08:31.035] [info] 	pair 0 (fLCAL, fLAJC): model = 0.0822059, experimental = 0.068191
+[2021-03-16 11:08:31.035] [info] 	pair 1 (fLAJC, fLMT3): model = 0.129019, experimental = 0.153377
+[2021-03-16 11:08:31.036] [info] 	overall scale factor = 1.00915
+[2021-03-16 11:08:31.037] [info] Measurement 'l_foot_height'
+[2021-03-16 11:08:31.038] [info] 	pair 0 (LAJC, fLAJC): model = 0.0696334, experimental = 0.101405
+[2021-03-16 11:08:31.039] [info] 	overall scale factor = 1.45627
+[2021-03-16 11:08:31.039] [info] Measurement 'l_foot_width'
+[2021-03-16 11:08:31.040] [info] 	pair 0 (fLMT1, fLMT5): model = 0.0759802, experimental = 0.110420
+[2021-03-16 11:08:31.040] [info] 	overall scale factor = 1.45327
+[2021-03-16 11:08:31.104] [info] Wrote model file 'scaledModel2D.osim' from model.
+[2021-03-16 11:08:31.111] [info] Wrote scale file 'scaleSet2D.xml' for model model.
+[2021-03-16 11:08:31.112] [info] Step 3: Placing markers on model
+[2021-03-16 11:08:31.310] [info] Loaded marker file ..\Data\staticVirtualMarkers.trc (58 markers, 483 frames)
+[2021-03-16 11:08:31.311] [info] Averaged frames from time 0.5 to 1.5 in ..\Data\staticVirtualMarkers.trc (frames 126 to 376)
+[2021-03-16 11:08:31.311] [info] Deleted 0 unused markers from model model.
+[2021-03-16 11:08:31.328] [info] Frame at (t = 0.5):	 total squared error = 5.34968, marker error: RMS = 0.311876, max = 0.402405 (RMT5)
+[2021-03-16 11:08:31.328] [info] Moved markers in model model to match locations in marker file '..\Data\staticVirtualMarkers.trc'.
+[2021-03-16 11:08:31.355] [info] Wrote model file 'scaledModelAdjusted2D.osim' from model model.
+[2021-03-16 11:08:31.409] [info] Loaded model model from file scaledModelAdjusted2D.osim
+[2021-03-16 11:21:47.199] [info] Processing subject ...
+[2021-03-16 11:21:47.199] [info] Step 1: Loading generic model
+[2021-03-16 11:21:47.276] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
+[2021-03-16 11:21:47.432] [info] Step 2: Scaling generic model
+[2021-03-16 11:21:47.569] [info] Loaded marker file ..\Data\staticVirtualMarkers.trc (58 markers, 483 frames)
+[2021-03-16 11:21:47.570] [info] Measurement 'torso_height'
+[2021-03-16 11:21:47.571] [info] 	pair 0 (MTOR, MPEL): model = 0.468396, experimental = 0.466528
+[2021-03-16 11:21:47.572] [info] 	overall scale factor = 0.996011
+[2021-03-16 11:21:47.572] [info] Measurement 'torso_breadth'
+[2021-03-16 11:21:47.573] [info] 	pair 0 (C7, CLAV): model = 0.146032, experimental = 0.146906
+[2021-03-16 11:21:47.574] [info] 	pair 1 (T10, STRN): model = 0.222121, experimental = 0.241562
+[2021-03-16 11:21:47.574] [info] 	overall scale factor = 1.04675
+[2021-03-16 11:21:47.575] [info] Measurement 'torso_width'
+[2021-03-16 11:21:47.575] [info] 	pair 0 (RACR, LACR): model = 0.283321, experimental = 0.345905
+[2021-03-16 11:21:47.576] [info] 	overall scale factor = 1.22089
+[2021-03-16 11:21:47.576] [info] Measurement 'pelvis_w'
+[2021-03-16 11:21:47.577] [info] 	pair 0 (RASI, LASI): model = 0.25789, experimental = 0.216053
+[2021-03-16 11:21:47.577] [info] 	pair 1 (RPSI, LPSI): model = 0.092731, experimental = 0.0960037
+[2021-03-16 11:21:47.578] [info] 	overall scale factor = 0.936532
+[2021-03-16 11:21:47.578] [info] Measurement 'pelvis_d'
+[2021-03-16 11:21:47.579] [info] 	pair 0 (RASI, RPSI): model = 0.201128, experimental = 0.188603
+[2021-03-16 11:21:47.579] [info] 	pair 1 (LASI, LPSI): model = 0.192488, experimental = 0.188085
+[2021-03-16 11:21:47.579] [info] 	overall scale factor = 0.957426
+[2021-03-16 11:21:47.580] [info] Measurement 'pelvis_h'
+[2021-03-16 11:21:47.580] [info] 	pair 0 (MPEL, RHJC): model = 0.131542, experimental = 0.105614
+[2021-03-16 11:21:47.581] [info] 	pair 1 (MPEL, LHJC): model = 0.131025, experimental = 0.108303
+[2021-03-16 11:21:47.582] [info] 	overall scale factor = 0.814735
+[2021-03-16 11:21:47.582] [info] Measurement 'r_thigh_length'
+[2021-03-16 11:21:47.583] [info] 	pair 0 (RHJC, RKJC): model = 0.390494, experimental = 0.46219
+[2021-03-16 11:21:47.584] [info] 	overall scale factor = 1.1836
+[2021-03-16 11:21:47.584] [info] Measurement 'r_thigh_breadth'
+[2021-03-16 11:21:47.585] [info] 	pair 0 (RLFC, RMFC): model = 0.108539, experimental = 0.125179
+[2021-03-16 11:21:47.586] [info] 	overall scale factor = 1.1533
+[2021-03-16 11:21:47.586] [info] Measurement 'r_tibia_length'
+[2021-03-16 11:21:47.587] [info] 	pair 0 (RKJC, RAJC): model = 0.391627, experimental = 0.437658
+[2021-03-16 11:21:47.588] [info] 	overall scale factor = 1.11754
+[2021-03-16 11:21:47.589] [info] Measurement 'r_tibia_breadth'
+[2021-03-16 11:21:47.589] [info] 	pair 0 (RLMAL, RMMAL): model = 0.093372, experimental = 0.0955162
+[2021-03-16 11:21:47.590] [info] 	overall scale factor = 1.02296
+[2021-03-16 11:21:47.591] [info] Measurement 'r_foot_length'
+[2021-03-16 11:21:47.592] [info] 	pair 0 (fRCAL, fRAJC): model = 0.0941763, experimental = 0.0694764
+[2021-03-16 11:21:47.593] [info] 	pair 1 (fRAJC, fRMT3): model = 0.129502, experimental = 0.148666
+[2021-03-16 11:21:47.593] [info] 	overall scale factor = 0.942854
+[2021-03-16 11:21:47.594] [info] Measurement 'r_foot_height'
+[2021-03-16 11:21:47.594] [info] 	pair 0 (RAJC, fRAJC): model = 0.0696915, experimental = 0.100821
+[2021-03-16 11:21:47.595] [info] 	overall scale factor = 1.44667
+[2021-03-16 11:21:47.596] [info] Measurement 'r_foot_width'
+[2021-03-16 11:21:47.596] [info] 	pair 0 (fRMT1, fRMT5): model = 0.0759802, experimental = 0.109619
+[2021-03-16 11:21:47.596] [info] 	overall scale factor = 1.44273
+[2021-03-16 11:21:47.597] [info] Measurement 'l_thigh_length'
+[2021-03-16 11:21:47.597] [info] 	pair 0 (LHJC, LKJC): model = 0.390494, experimental = 0.474762
+[2021-03-16 11:21:47.598] [info] 	overall scale factor = 1.2158
+[2021-03-16 11:21:47.598] [info] Measurement 'l_thigh_breadth'
+[2021-03-16 11:21:47.599] [info] 	pair 0 (LLFC, LMFC): model = 0.108539, experimental = 0.125672
+[2021-03-16 11:21:47.599] [info] 	overall scale factor = 1.15785
+[2021-03-16 11:21:47.600] [info] Measurement 'l_tibia_length'
+[2021-03-16 11:21:47.600] [info] 	pair 0 (LKJC, LAJC): model = 0.391627, experimental = 0.433973
+[2021-03-16 11:21:47.601] [info] 	overall scale factor = 1.10813
+[2021-03-16 11:21:47.601] [info] Measurement 'l_tibia_breadth'
+[2021-03-16 11:21:47.602] [info] 	pair 0 (LLMAL, LMMAL): model = 0.093372, experimental = 0.0950852
+[2021-03-16 11:21:47.602] [info] 	overall scale factor = 1.01835
+[2021-03-16 11:21:47.603] [info] Measurement 'l_foot_length'
+[2021-03-16 11:21:47.603] [info] 	pair 0 (fLCAL, fLAJC): model = 0.0954936, experimental = 0.068191
+[2021-03-16 11:21:47.604] [info] 	pair 1 (fLAJC, fLMT3): model = 0.129723, experimental = 0.153377
+[2021-03-16 11:21:47.604] [info] 	overall scale factor = 0.948218
+[2021-03-16 11:21:47.605] [info] Measurement 'l_foot_height'
+[2021-03-16 11:21:47.605] [info] 	pair 0 (LAJC, fLAJC): model = 0.0696334, experimental = 0.101405
+[2021-03-16 11:21:47.605] [info] 	overall scale factor = 1.45627
+[2021-03-16 11:21:47.606] [info] Measurement 'l_foot_width'
+[2021-03-16 11:21:47.606] [info] 	pair 0 (fLMT1, fLMT5): model = 0.0759802, experimental = 0.110420
+[2021-03-16 11:21:47.607] [info] 	overall scale factor = 1.45327
+[2021-03-16 11:21:47.920] [info] Wrote model file 'scaledModel.osim' from model.
+[2021-03-16 11:21:47.924] [info] Wrote scale file 'scaleSet.xml' for model model.
+[2021-03-16 11:21:47.924] [info] Step 3: Placing markers on model
+[2021-03-16 11:21:48.051] [info] Loaded marker file ..\Data\staticVirtualMarkers.trc (58 markers, 483 frames)
+[2021-03-16 11:21:48.051] [info] Averaged frames from time 0.5 to 1.5 in ..\Data\staticVirtualMarkers.trc (frames 126 to 376)
+[2021-03-16 11:21:48.052] [info] Deleted 0 unused markers from model model.
+[2021-03-16 11:21:48.227] [info] Frame at (t = 0.5):	 total squared error = 0.0573014, marker error: RMS = 0.0322776, max = 0.0574159 (LTH2)
+[2021-03-16 11:21:48.228] [info] Moved markers in model model to match locations in marker file '..\Data\staticVirtualMarkers.trc'.
+[2021-03-16 11:21:48.292] [info] Wrote model file 'scaledModelAdjusted.osim' from model model.
+[2021-03-16 11:21:48.404] [info] Loaded model model from file scaledModelAdjusted.osim
+[2021-03-16 11:21:48.597] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
+[2021-03-16 11:21:48.851] [info] Loaded model scaledModel from file scaledModelAdjusted.osim
+[2021-03-16 11:21:49.125] [info] Loaded model scaledModel from file scaledModelMuscle.osim
+[2021-03-16 11:21:54.632] [info] Processing subject ...
+[2021-03-16 11:21:54.632] [info] Step 1: Loading generic model
+[2021-03-16 11:21:54.653] [info] Loaded model gait9dof18musc_Ong_et_al from file gait9dof18musc_Ong_et_al_Moco.osim
+[2021-03-16 11:21:54.667] [info] Step 2: Scaling generic model
+[2021-03-16 11:21:54.722] [info] Loaded marker file ..\Data\staticVirtualMarkers.trc (58 markers, 483 frames)
+[2021-03-16 11:21:54.722] [info] Measurement 'torso_height'
+[2021-03-16 11:21:54.722] [info] 	pair 0 (MTOR, MPEL): model = 0.465351, experimental = 0.466528
+[2021-03-16 11:21:54.723] [info] 	overall scale factor = 1.00253
+[2021-03-16 11:21:54.723] [info] Measurement 'torso_breadth'
+[2021-03-16 11:21:54.723] [info] 	pair 0 (C7, CLAV): model = 0.146032, experimental = 0.146906
+[2021-03-16 11:21:54.723] [info] 	pair 1 (T10, STRN): model = 0.222121, experimental = 0.241562
+[2021-03-16 11:21:54.724] [info] 	overall scale factor = 1.04675
+[2021-03-16 11:21:54.724] [info] Measurement 'torso_width'
+[2021-03-16 11:21:54.724] [info] 	pair 0 (RACR, LACR): model = 0.283321, experimental = 0.345905
+[2021-03-16 11:21:54.724] [info] 	overall scale factor = 1.22089
+[2021-03-16 11:21:54.724] [info] Measurement 'pelvis_w'
+[2021-03-16 11:21:54.725] [info] 	pair 0 (RASI, LASI): model = 0.25789, experimental = 0.216053
+[2021-03-16 11:21:54.725] [info] 	pair 1 (RPSI, LPSI): model = 0.092731, experimental = 0.0960037
+[2021-03-16 11:21:54.725] [info] 	overall scale factor = 0.936532
+[2021-03-16 11:21:54.725] [info] Measurement 'pelvis_d'
+[2021-03-16 11:21:54.725] [info] 	pair 0 (RASI, RPSI): model = 0.201128, experimental = 0.188603
+[2021-03-16 11:21:54.726] [info] 	pair 1 (LASI, LPSI): model = 0.192488, experimental = 0.188085
+[2021-03-16 11:21:54.726] [info] 	overall scale factor = 0.957426
+[2021-03-16 11:21:54.726] [info] Measurement 'pelvis_h'
+[2021-03-16 11:21:54.726] [info] 	pair 0 (MPEL, RHJC): model = 0.12213, experimental = 0.105614
+[2021-03-16 11:21:54.726] [info] 	pair 1 (MPEL, LHJC): model = 0.121537, experimental = 0.108303
+[2021-03-16 11:21:54.726] [info] 	overall scale factor = 0.877939
+[2021-03-16 11:21:54.727] [info] Measurement 'r_thigh_length'
+[2021-03-16 11:21:54.727] [info] 	pair 0 (RHJC, RKJC): model = 0.390494, experimental = 0.46219
+[2021-03-16 11:21:54.727] [info] 	overall scale factor = 1.1836
+[2021-03-16 11:21:54.727] [info] Measurement 'r_thigh_breadth'
+[2021-03-16 11:21:54.727] [info] 	pair 0 (RLFC, RMFC): model = 0.108539, experimental = 0.125179
+[2021-03-16 11:21:54.727] [info] 	overall scale factor = 1.1533
+[2021-03-16 11:21:54.727] [info] Measurement 'r_tibia_length'
+[2021-03-16 11:21:54.728] [info] 	pair 0 (RKJC, RAJC): model = 0.38269, experimental = 0.437658
+[2021-03-16 11:21:54.728] [info] 	overall scale factor = 1.14364
+[2021-03-16 11:21:54.728] [info] Measurement 'r_tibia_breadth'
+[2021-03-16 11:21:54.728] [info] 	pair 0 (RLMAL, RMMAL): model = 0.093372, experimental = 0.0955162
+[2021-03-16 11:21:54.728] [info] 	overall scale factor = 1.02296
+[2021-03-16 11:21:54.728] [info] Measurement 'r_foot_length'
+[2021-03-16 11:21:54.728] [info] 	pair 0 (fRCAL, fRAJC): model = 0.0810480, experimental = 0.0694764
+[2021-03-16 11:21:54.729] [info] 	pair 1 (fRAJC, fRMT3): model = 0.128814, experimental = 0.148666
+[2021-03-16 11:21:54.729] [info] 	overall scale factor = 1.00567
+[2021-03-16 11:21:54.729] [info] Measurement 'r_foot_height'
+[2021-03-16 11:21:54.729] [info] 	pair 0 (RAJC, fRAJC): model = 0.0696915, experimental = 0.100821
+[2021-03-16 11:21:54.729] [info] 	overall scale factor = 1.44667
+[2021-03-16 11:21:54.729] [info] Measurement 'r_foot_width'
+[2021-03-16 11:21:54.729] [info] 	pair 0 (fRMT1, fRMT5): model = 0.0759802, experimental = 0.109619
+[2021-03-16 11:21:54.729] [info] 	overall scale factor = 1.44273
+[2021-03-16 11:21:54.729] [info] Measurement 'l_thigh_length'
+[2021-03-16 11:21:54.730] [info] 	pair 0 (LHJC, LKJC): model = 0.390494, experimental = 0.474762
+[2021-03-16 11:21:54.730] [info] 	overall scale factor = 1.2158
+[2021-03-16 11:21:54.730] [info] Measurement 'l_thigh_breadth'
+[2021-03-16 11:21:54.730] [info] 	pair 0 (LLFC, LMFC): model = 0.108539, experimental = 0.125672
+[2021-03-16 11:21:54.730] [info] 	overall scale factor = 1.15785
+[2021-03-16 11:21:54.730] [info] Measurement 'l_tibia_length'
+[2021-03-16 11:21:54.730] [info] 	pair 0 (LKJC, LAJC): model = 0.38269, experimental = 0.433973
+[2021-03-16 11:21:54.730] [info] 	overall scale factor = 1.13401
+[2021-03-16 11:21:54.730] [info] Measurement 'l_tibia_breadth'
+[2021-03-16 11:21:54.731] [info] 	pair 0 (LLMAL, LMMAL): model = 0.093372, experimental = 0.0950852
+[2021-03-16 11:21:54.731] [info] 	overall scale factor = 1.01835
+[2021-03-16 11:21:54.731] [info] Measurement 'l_foot_length'
+[2021-03-16 11:21:54.731] [info] 	pair 0 (fLCAL, fLAJC): model = 0.0822059, experimental = 0.068191
+[2021-03-16 11:21:54.731] [info] 	pair 1 (fLAJC, fLMT3): model = 0.129019, experimental = 0.153377
+[2021-03-16 11:21:54.731] [info] 	overall scale factor = 1.00915
+[2021-03-16 11:21:54.731] [info] Measurement 'l_foot_height'
+[2021-03-16 11:21:54.731] [info] 	pair 0 (LAJC, fLAJC): model = 0.0696334, experimental = 0.101405
+[2021-03-16 11:21:54.732] [info] 	overall scale factor = 1.45627
+[2021-03-16 11:21:54.732] [info] Measurement 'l_foot_width'
+[2021-03-16 11:21:54.732] [info] 	pair 0 (fLMT1, fLMT5): model = 0.0759802, experimental = 0.110420
+[2021-03-16 11:21:54.732] [info] 	overall scale factor = 1.45327
+[2021-03-16 11:21:54.771] [info] Wrote model file 'scaledModel2D.osim' from model.
+[2021-03-16 11:21:54.776] [info] Wrote scale file 'scaleSet2D.xml' for model model.
+[2021-03-16 11:21:54.776] [info] Step 3: Placing markers on model
+[2021-03-16 11:21:54.882] [info] Loaded marker file ..\Data\staticVirtualMarkers.trc (58 markers, 483 frames)
+[2021-03-16 11:21:54.883] [info] Averaged frames from time 0.5 to 1.5 in ..\Data\staticVirtualMarkers.trc (frames 126 to 376)
+[2021-03-16 11:21:54.883] [info] Deleted 0 unused markers from model model.
+[2021-03-16 11:21:54.893] [info] Frame at (t = 0.5):	 total squared error = 5.34968, marker error: RMS = 0.311876, max = 0.402405 (RMT5)
+[2021-03-16 11:21:54.894] [info] Moved markers in model model to match locations in marker file '..\Data\staticVirtualMarkers.trc'.
+[2021-03-16 11:21:54.910] [info] Wrote model file 'scaledModelAdjusted2D.osim' from model model.
+[2021-03-16 11:21:54.945] [info] Loaded model model from file scaledModelAdjusted2D.osim
+[2021-03-16 11:21:58.158] [info] Loaded model gait9dof18musc_Ong_et_al from file gait9dof18musc_Ong_et_al_Moco.osim
+[2021-03-16 11:21:58.183] [info] Loaded model scaledModel2D from file scaledModelAdjusted2D.osim
+[2021-03-16 11:21:58.247] [info] Loaded model scaledModel2D from file scaledModelMuscle2D.osim
+[2021-03-16 11:22:06.006] [info] Loaded model scaledModel from file scaledModelMuscle.osim
+[2021-03-16 11:22:42.805] [info] Storage: read data file = C:\+GitRepos+\flash-running\ExpData\RRA\rra1\rra1_Kinematics_q.sto (nr=325 nc=26)
+[2021-03-16 11:22:42.815] [info] Storage: read data file = C:\+GitRepos+\flash-running\ExpData\RRA\rra1\rra1_Kinematics_q.sto (nr=325 nc=26)
+[2021-03-16 11:22:42.914] [info] Loaded model scaledModel from file C:\+GitRepos+\flash-running\ExpData\RRA\rra1\rraAdjustedModel_1.osim
+[2021-03-16 11:22:42.916] [warning] Couldn't find file 'r_pelvis.vtp'.
+[2021-03-16 11:22:42.916] [warning] Couldn't find file 'l_pelvis.vtp'.
+[2021-03-16 11:22:42.917] [warning] Couldn't find file 'sacrum.vtp'.
+[2021-03-16 11:22:42.917] [warning] Couldn't find file 'r_femur.vtp'.
+[2021-03-16 11:22:42.918] [warning] Couldn't find file 'r_tibia.vtp'.
+[2021-03-16 11:22:42.918] [warning] Couldn't find file 'r_fibula.vtp'.
+[2021-03-16 11:22:42.918] [warning] Couldn't find file 'r_patella.vtp'.
+[2021-03-16 11:22:42.919] [warning] Couldn't find file 'r_talus.vtp'.
+[2021-03-16 11:22:42.919] [warning] Couldn't find file 'r_foot.vtp'.
+[2021-03-16 11:22:42.920] [warning] Couldn't find file 'r_bofoot.vtp'.
+[2021-03-16 11:22:42.920] [warning] Couldn't find file 'l_femur.vtp'.
+[2021-03-16 11:22:42.921] [warning] Couldn't find file 'l_tibia.vtp'.
+[2021-03-16 11:22:42.921] [warning] Couldn't find file 'l_fibula.vtp'.
+[2021-03-16 11:22:42.922] [warning] Couldn't find file 'l_patella.vtp'.
+[2021-03-16 11:22:42.922] [warning] Couldn't find file 'l_talus.vtp'.
+[2021-03-16 11:22:42.922] [warning] Couldn't find file 'l_foot.vtp'.
+[2021-03-16 11:22:42.923] [warning] Couldn't find file 'l_bofoot.vtp'.
+[2021-03-16 11:22:42.923] [warning] Couldn't find file 'hat_spine.vtp'.
+[2021-03-16 11:22:42.924] [warning] Couldn't find file 'hat_jaw.vtp'.
+[2021-03-16 11:22:42.924] [warning] Couldn't find file 'hat_skull.vtp'.
+[2021-03-16 11:22:42.925] [warning] Couldn't find file 'hat_ribs_scap.vtp'.
+[2021-03-16 11:22:43.324] [info] Loaded model scaledModel from file C:\+GitRepos+\flash-running\ExpData\RRA\rra1\rraAdjustedModel_1.osim
+[2021-03-16 11:22:43.326] [warning] Couldn't find file 'r_pelvis.vtp'.
+[2021-03-16 11:22:43.327] [warning] Couldn't find file 'l_pelvis.vtp'.
+[2021-03-16 11:22:43.327] [warning] Couldn't find file 'sacrum.vtp'.
+[2021-03-16 11:22:43.328] [warning] Couldn't find file 'r_femur.vtp'.
+[2021-03-16 11:22:43.328] [warning] Couldn't find file 'r_tibia.vtp'.
+[2021-03-16 11:22:43.329] [warning] Couldn't find file 'r_fibula.vtp'.
+[2021-03-16 11:22:43.329] [warning] Couldn't find file 'r_patella.vtp'.
+[2021-03-16 11:22:43.330] [warning] Couldn't find file 'r_talus.vtp'.
+[2021-03-16 11:22:43.330] [warning] Couldn't find file 'r_foot.vtp'.
+[2021-03-16 11:22:43.331] [warning] Couldn't find file 'r_bofoot.vtp'.
+[2021-03-16 11:22:43.331] [warning] Couldn't find file 'l_femur.vtp'.
+[2021-03-16 11:22:43.332] [warning] Couldn't find file 'l_tibia.vtp'.
+[2021-03-16 11:22:43.332] [warning] Couldn't find file 'l_fibula.vtp'.
+[2021-03-16 11:22:43.333] [warning] Couldn't find file 'l_patella.vtp'.
+[2021-03-16 11:22:43.333] [warning] Couldn't find file 'l_talus.vtp'.
+[2021-03-16 11:22:43.334] [warning] Couldn't find file 'l_foot.vtp'.
+[2021-03-16 11:22:43.334] [warning] Couldn't find file 'l_bofoot.vtp'.
+[2021-03-16 11:22:43.335] [warning] Couldn't find file 'hat_spine.vtp'.
+[2021-03-16 11:22:43.335] [warning] Couldn't find file 'hat_jaw.vtp'.
+[2021-03-16 11:22:43.336] [warning] Couldn't find file 'hat_skull.vtp'.
+[2021-03-16 11:22:43.336] [warning] Couldn't find file 'hat_ribs_scap.vtp'.
+[2021-03-16 15:27:11.821] [info] Processing subject ...
+[2021-03-16 15:27:11.822] [info] Step 1: Loading generic model
+[2021-03-16 15:27:11.876] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
+[2021-03-16 15:27:12.163] [info] Step 2: Scaling generic model
+[2021-03-16 15:27:12.267] [info] Loaded marker file ..\Data\staticVirtualMarkers.trc (58 markers, 483 frames)
+[2021-03-16 15:27:12.268] [info] Measurement 'torso_height'
+[2021-03-16 15:27:12.268] [info] 	pair 0 (MTOR, MPEL): model = 0.468396, experimental = 0.466528
+[2021-03-16 15:27:12.268] [info] 	overall scale factor = 0.996011
+[2021-03-16 15:27:12.268] [info] Measurement 'torso_breadth'
+[2021-03-16 15:27:12.268] [info] 	pair 0 (C7, CLAV): model = 0.146032, experimental = 0.146906
+[2021-03-16 15:27:12.268] [info] 	pair 1 (T10, STRN): model = 0.222121, experimental = 0.241562
+[2021-03-16 15:27:12.269] [info] 	overall scale factor = 1.04675
+[2021-03-16 15:27:12.269] [info] Measurement 'torso_width'
+[2021-03-16 15:27:12.269] [info] 	pair 0 (RACR, LACR): model = 0.283321, experimental = 0.345905
+[2021-03-16 15:27:12.269] [info] 	overall scale factor = 1.22089
+[2021-03-16 15:27:12.269] [info] Measurement 'pelvis_w'
+[2021-03-16 15:27:12.269] [info] 	pair 0 (RASI, LASI): model = 0.25789, experimental = 0.216053
+[2021-03-16 15:27:12.269] [info] 	pair 1 (RPSI, LPSI): model = 0.092731, experimental = 0.0960037
+[2021-03-16 15:27:12.270] [info] 	overall scale factor = 0.936532
+[2021-03-16 15:27:12.270] [info] Measurement 'pelvis_d'
+[2021-03-16 15:27:12.270] [info] 	pair 0 (RASI, RPSI): model = 0.201128, experimental = 0.188603
+[2021-03-16 15:27:12.270] [info] 	pair 1 (LASI, LPSI): model = 0.192488, experimental = 0.188085
+[2021-03-16 15:27:12.270] [info] 	overall scale factor = 0.957426
+[2021-03-16 15:27:12.271] [info] Measurement 'pelvis_h'
+[2021-03-16 15:27:12.271] [info] 	pair 0 (MPEL, RHJC): model = 0.131542, experimental = 0.105614
+[2021-03-16 15:27:12.271] [info] 	pair 1 (MPEL, LHJC): model = 0.131025, experimental = 0.108303
+[2021-03-16 15:27:12.271] [info] 	overall scale factor = 0.814735
+[2021-03-16 15:27:12.272] [info] Measurement 'r_thigh_length'
+[2021-03-16 15:27:12.272] [info] 	pair 0 (RHJC, RKJC): model = 0.390494, experimental = 0.46219
+[2021-03-16 15:27:12.272] [info] 	overall scale factor = 1.1836
+[2021-03-16 15:27:12.273] [info] Measurement 'r_thigh_breadth'
+[2021-03-16 15:27:12.273] [info] 	pair 0 (RLFC, RMFC): model = 0.108539, experimental = 0.125179
+[2021-03-16 15:27:12.273] [info] 	overall scale factor = 1.1533
+[2021-03-16 15:27:12.273] [info] Measurement 'r_tibia_length'
+[2021-03-16 15:27:12.274] [info] 	pair 0 (RKJC, RAJC): model = 0.391627, experimental = 0.437658
+[2021-03-16 15:27:12.274] [info] 	overall scale factor = 1.11754
+[2021-03-16 15:27:12.274] [info] Measurement 'r_tibia_breadth'
+[2021-03-16 15:27:12.274] [info] 	pair 0 (RLMAL, RMMAL): model = 0.093372, experimental = 0.0955162
+[2021-03-16 15:27:12.274] [info] 	overall scale factor = 1.02296
+[2021-03-16 15:27:12.275] [info] Measurement 'r_foot_length'
+[2021-03-16 15:27:12.275] [info] 	pair 0 (fRCAL, fRAJC): model = 0.0941763, experimental = 0.0694764
+[2021-03-16 15:27:12.275] [info] 	pair 1 (fRAJC, fRMT3): model = 0.129502, experimental = 0.148666
+[2021-03-16 15:27:12.275] [info] 	overall scale factor = 0.942854
+[2021-03-16 15:27:12.275] [info] Measurement 'r_foot_height'
+[2021-03-16 15:27:12.276] [info] 	pair 0 (RAJC, fRAJC): model = 0.0696915, experimental = 0.100821
+[2021-03-16 15:27:12.276] [info] 	overall scale factor = 1.44667
+[2021-03-16 15:27:12.276] [info] Measurement 'r_foot_width'
+[2021-03-16 15:27:12.276] [info] 	pair 0 (fRMT1, fRMT5): model = 0.0759802, experimental = 0.109619
+[2021-03-16 15:27:12.277] [info] 	overall scale factor = 1.44273
+[2021-03-16 15:27:12.277] [info] Measurement 'l_thigh_length'
+[2021-03-16 15:27:12.278] [info] 	pair 0 (LHJC, LKJC): model = 0.390494, experimental = 0.474762
+[2021-03-16 15:27:12.278] [info] 	overall scale factor = 1.2158
+[2021-03-16 15:27:12.278] [info] Measurement 'l_thigh_breadth'
+[2021-03-16 15:27:12.278] [info] 	pair 0 (LLFC, LMFC): model = 0.108539, experimental = 0.125672
+[2021-03-16 15:27:12.279] [info] 	overall scale factor = 1.15785
+[2021-03-16 15:27:12.279] [info] Measurement 'l_tibia_length'
+[2021-03-16 15:27:12.279] [info] 	pair 0 (LKJC, LAJC): model = 0.391627, experimental = 0.433973
+[2021-03-16 15:27:12.279] [info] 	overall scale factor = 1.10813
+[2021-03-16 15:27:12.280] [info] Measurement 'l_tibia_breadth'
+[2021-03-16 15:27:12.280] [info] 	pair 0 (LLMAL, LMMAL): model = 0.093372, experimental = 0.0950852
+[2021-03-16 15:27:12.280] [info] 	overall scale factor = 1.01835
+[2021-03-16 15:27:12.280] [info] Measurement 'l_foot_length'
+[2021-03-16 15:27:12.280] [info] 	pair 0 (fLCAL, fLAJC): model = 0.0954936, experimental = 0.068191
+[2021-03-16 15:27:12.281] [info] 	pair 1 (fLAJC, fLMT3): model = 0.129723, experimental = 0.153377
+[2021-03-16 15:27:12.281] [info] 	overall scale factor = 0.948218
+[2021-03-16 15:27:12.281] [info] Measurement 'l_foot_height'
+[2021-03-16 15:27:12.281] [info] 	pair 0 (LAJC, fLAJC): model = 0.0696334, experimental = 0.101405
+[2021-03-16 15:27:12.282] [info] 	overall scale factor = 1.45627
+[2021-03-16 15:27:12.282] [info] Measurement 'l_foot_width'
+[2021-03-16 15:27:12.282] [info] 	pair 0 (fLMT1, fLMT5): model = 0.0759802, experimental = 0.110420
+[2021-03-16 15:27:12.282] [info] 	overall scale factor = 1.45327
+[2021-03-16 15:27:12.515] [info] Wrote model file 'scaledModel.osim' from model.
+[2021-03-16 15:27:12.519] [info] Wrote scale file 'scaleSet.xml' for model model.
+[2021-03-16 15:27:12.519] [info] Step 3: Placing markers on model
+[2021-03-16 15:27:12.617] [info] Loaded marker file ..\Data\staticVirtualMarkers.trc (58 markers, 483 frames)
+[2021-03-16 15:27:12.617] [info] Averaged frames from time 0.5 to 1.5 in ..\Data\staticVirtualMarkers.trc (frames 126 to 376)
+[2021-03-16 15:27:12.618] [info] Deleted 0 unused markers from model model.
+[2021-03-16 15:27:12.753] [info] Frame at (t = 0.5):	 total squared error = 0.0573014, marker error: RMS = 0.0322776, max = 0.0574159 (LTH2)
+[2021-03-16 15:27:12.753] [info] Moved markers in model model to match locations in marker file '..\Data\staticVirtualMarkers.trc'.
+[2021-03-16 15:27:12.815] [info] Wrote model file 'scaledModelAdjusted.osim' from model model.
+[2021-03-16 15:27:12.933] [info] Loaded model model from file scaledModelAdjusted.osim
+[2021-03-16 15:27:13.184] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
+[2021-03-16 15:27:13.367] [info] Loaded model scaledModel from file scaledModelAdjusted.osim
+[2021-03-16 15:27:13.719] [info] Loaded model scaledModel from file scaledModelMuscle.osim
+[2021-03-16 15:27:13.830] [info] Processing subject ...
+[2021-03-16 15:27:13.830] [info] Step 1: Loading generic model
+[2021-03-16 15:27:13.856] [info] Loaded model gait9dof18musc_Ong_et_al from file gait9dof18musc_Ong_et_al_Moco.osim
+[2021-03-16 15:27:13.921] [info] Step 2: Scaling generic model
+[2021-03-16 15:27:13.995] [info] Loaded marker file ..\Data\staticVirtualMarkers.trc (58 markers, 483 frames)
+[2021-03-16 15:27:13.996] [info] Measurement 'torso_height'
+[2021-03-16 15:27:13.996] [info] 	pair 0 (MTOR, MPEL): model = 0.465351, experimental = 0.466528
+[2021-03-16 15:27:13.997] [info] 	overall scale factor = 1.00253
+[2021-03-16 15:27:13.997] [info] Measurement 'torso_breadth'
+[2021-03-16 15:27:13.998] [info] 	pair 0 (C7, CLAV): model = 0.146032, experimental = 0.146906
+[2021-03-16 15:27:13.998] [info] 	pair 1 (T10, STRN): model = 0.222121, experimental = 0.241562
+[2021-03-16 15:27:13.999] [info] 	overall scale factor = 1.04675
+[2021-03-16 15:27:13.999] [info] Measurement 'torso_width'
+[2021-03-16 15:27:14.000] [info] 	pair 0 (RACR, LACR): model = 0.283321, experimental = 0.345905
+[2021-03-16 15:27:14.000] [info] 	overall scale factor = 1.22089
+[2021-03-16 15:27:14.000] [info] Measurement 'pelvis_w'
+[2021-03-16 15:27:14.001] [info] 	pair 0 (RASI, LASI): model = 0.25789, experimental = 0.216053
+[2021-03-16 15:27:14.001] [info] 	pair 1 (RPSI, LPSI): model = 0.092731, experimental = 0.0960037
+[2021-03-16 15:27:14.002] [info] 	overall scale factor = 0.936532
+[2021-03-16 15:27:14.002] [info] Measurement 'pelvis_d'
+[2021-03-16 15:27:14.002] [info] 	pair 0 (RASI, RPSI): model = 0.201128, experimental = 0.188603
+[2021-03-16 15:27:14.003] [info] 	pair 1 (LASI, LPSI): model = 0.192488, experimental = 0.188085
+[2021-03-16 15:27:14.003] [info] 	overall scale factor = 0.957426
+[2021-03-16 15:27:14.003] [info] Measurement 'pelvis_h'
+[2021-03-16 15:27:14.004] [info] 	pair 0 (MPEL, RHJC): model = 0.12213, experimental = 0.105614
+[2021-03-16 15:27:14.004] [info] 	pair 1 (MPEL, LHJC): model = 0.121537, experimental = 0.108303
+[2021-03-16 15:27:14.005] [info] 	overall scale factor = 0.877939
+[2021-03-16 15:27:14.007] [info] Measurement 'r_thigh_length'
+[2021-03-16 15:27:14.007] [info] 	pair 0 (RHJC, RKJC): model = 0.390494, experimental = 0.46219
+[2021-03-16 15:27:14.007] [info] 	overall scale factor = 1.1836
+[2021-03-16 15:27:14.008] [info] Measurement 'r_thigh_breadth'
+[2021-03-16 15:27:14.008] [info] 	pair 0 (RLFC, RMFC): model = 0.108539, experimental = 0.125179
+[2021-03-16 15:27:14.009] [info] 	overall scale factor = 1.1533
+[2021-03-16 15:27:14.009] [info] Measurement 'r_tibia_length'
+[2021-03-16 15:27:14.009] [info] 	pair 0 (RKJC, RAJC): model = 0.38269, experimental = 0.437658
+[2021-03-16 15:27:14.011] [info] 	overall scale factor = 1.14364
+[2021-03-16 15:27:14.011] [info] Measurement 'r_tibia_breadth'
+[2021-03-16 15:27:14.012] [info] 	pair 0 (RLMAL, RMMAL): model = 0.093372, experimental = 0.0955162
+[2021-03-16 15:27:14.012] [info] 	overall scale factor = 1.02296
+[2021-03-16 15:27:14.013] [info] Measurement 'r_foot_length'
+[2021-03-16 15:27:14.013] [info] 	pair 0 (fRCAL, fRAJC): model = 0.0810480, experimental = 0.0694764
+[2021-03-16 15:27:14.013] [info] 	pair 1 (fRAJC, fRMT3): model = 0.128814, experimental = 0.148666
+[2021-03-16 15:27:14.014] [info] 	overall scale factor = 1.00567
+[2021-03-16 15:27:14.014] [info] Measurement 'r_foot_height'
+[2021-03-16 15:27:14.015] [info] 	pair 0 (RAJC, fRAJC): model = 0.0696915, experimental = 0.100821
+[2021-03-16 15:27:14.015] [info] 	overall scale factor = 1.44667
+[2021-03-16 15:27:14.015] [info] Measurement 'r_foot_width'
+[2021-03-16 15:27:14.016] [info] 	pair 0 (fRMT1, fRMT5): model = 0.0759802, experimental = 0.109619
+[2021-03-16 15:27:14.016] [info] 	overall scale factor = 1.44273
+[2021-03-16 15:27:14.016] [info] Measurement 'l_thigh_length'
+[2021-03-16 15:27:14.017] [info] 	pair 0 (LHJC, LKJC): model = 0.390494, experimental = 0.474762
+[2021-03-16 15:27:14.017] [info] 	overall scale factor = 1.2158
+[2021-03-16 15:27:14.018] [info] Measurement 'l_thigh_breadth'
+[2021-03-16 15:27:14.018] [info] 	pair 0 (LLFC, LMFC): model = 0.108539, experimental = 0.125672
+[2021-03-16 15:27:14.018] [info] 	overall scale factor = 1.15785
+[2021-03-16 15:27:14.019] [info] Measurement 'l_tibia_length'
+[2021-03-16 15:27:14.019] [info] 	pair 0 (LKJC, LAJC): model = 0.38269, experimental = 0.433973
+[2021-03-16 15:27:14.019] [info] 	overall scale factor = 1.13401
+[2021-03-16 15:27:14.020] [info] Measurement 'l_tibia_breadth'
+[2021-03-16 15:27:14.022] [info] 	pair 0 (LLMAL, LMMAL): model = 0.093372, experimental = 0.0950852
+[2021-03-16 15:27:14.022] [info] 	overall scale factor = 1.01835
+[2021-03-16 15:27:14.023] [info] Measurement 'l_foot_length'
+[2021-03-16 15:27:14.023] [info] 	pair 0 (fLCAL, fLAJC): model = 0.0822059, experimental = 0.068191
+[2021-03-16 15:27:14.024] [info] 	pair 1 (fLAJC, fLMT3): model = 0.129019, experimental = 0.153377
+[2021-03-16 15:27:14.024] [info] 	overall scale factor = 1.00915
+[2021-03-16 15:27:14.024] [info] Measurement 'l_foot_height'
+[2021-03-16 15:27:14.025] [info] 	pair 0 (LAJC, fLAJC): model = 0.0696334, experimental = 0.101405
+[2021-03-16 15:27:14.025] [info] 	overall scale factor = 1.45627
+[2021-03-16 15:27:14.026] [info] Measurement 'l_foot_width'
+[2021-03-16 15:27:14.026] [info] 	pair 0 (fLMT1, fLMT5): model = 0.0759802, experimental = 0.110420
+[2021-03-16 15:27:14.027] [info] 	overall scale factor = 1.45327
+[2021-03-16 15:27:14.078] [info] Wrote model file 'scaledModel2D.osim' from model.
+[2021-03-16 15:27:14.084] [info] Wrote scale file 'scaleSet2D.xml' for model model.
+[2021-03-16 15:27:14.084] [info] Step 3: Placing markers on model
+[2021-03-16 15:27:14.226] [info] Loaded marker file ..\Data\staticVirtualMarkers.trc (58 markers, 483 frames)
+[2021-03-16 15:27:14.227] [info] Averaged frames from time 0.5 to 1.5 in ..\Data\staticVirtualMarkers.trc (frames 126 to 376)
+[2021-03-16 15:27:14.227] [info] Deleted 0 unused markers from model model.
+[2021-03-16 15:27:14.240] [info] Frame at (t = 0.5):	 total squared error = 5.34968, marker error: RMS = 0.311876, max = 0.402405 (RMT5)
+[2021-03-16 15:27:14.240] [info] Moved markers in model model to match locations in marker file '..\Data\staticVirtualMarkers.trc'.
+[2021-03-16 15:27:14.265] [info] Wrote model file 'scaledModelAdjusted2D.osim' from model model.
+[2021-03-16 15:27:14.308] [info] Loaded model model from file scaledModelAdjusted2D.osim
+[2021-03-16 15:27:14.363] [info] Loaded model gait9dof18musc_Ong_et_al from file gait9dof18musc_Ong_et_al_Moco.osim
+[2021-03-16 15:27:14.399] [info] Loaded model scaledModel2D from file scaledModelAdjusted2D.osim
+[2021-03-16 15:27:14.461] [info] Loaded model scaledModel2D from file scaledModelMuscle2D.osim
+[2021-03-16 15:27:14.554] [info] Loaded model scaledModel from file scaledModelMuscle.osim
+[2021-03-16 15:27:51.146] [info] Storage: read data file = C:\+GitRepos+\flash-running\ExpData\RRA\rra1\rra1_Kinematics_q.sto (nr=325 nc=26)
+[2021-03-16 15:27:51.157] [info] Storage: read data file = C:\+GitRepos+\flash-running\ExpData\RRA\rra1\rra1_Kinematics_q.sto (nr=325 nc=26)
+[2021-03-16 15:27:51.274] [info] Loaded model scaledModel from file C:\+GitRepos+\flash-running\ExpData\RRA\rra1\rraAdjustedModel_1.osim
+[2021-03-16 15:27:51.276] [warning] Couldn't find file 'r_pelvis.vtp'.
+[2021-03-16 15:27:51.276] [warning] Couldn't find file 'l_pelvis.vtp'.
+[2021-03-16 15:27:51.276] [warning] Couldn't find file 'sacrum.vtp'.
+[2021-03-16 15:27:51.277] [warning] Couldn't find file 'r_femur.vtp'.
+[2021-03-16 15:27:51.277] [warning] Couldn't find file 'r_tibia.vtp'.
+[2021-03-16 15:27:51.278] [warning] Couldn't find file 'r_fibula.vtp'.
+[2021-03-16 15:27:51.278] [warning] Couldn't find file 'r_patella.vtp'.
+[2021-03-16 15:27:51.279] [warning] Couldn't find file 'r_talus.vtp'.
+[2021-03-16 15:27:51.279] [warning] Couldn't find file 'r_foot.vtp'.
+[2021-03-16 15:27:51.279] [warning] Couldn't find file 'r_bofoot.vtp'.
+[2021-03-16 15:27:51.280] [warning] Couldn't find file 'l_femur.vtp'.
+[2021-03-16 15:27:51.280] [warning] Couldn't find file 'l_tibia.vtp'.
+[2021-03-16 15:27:51.281] [warning] Couldn't find file 'l_fibula.vtp'.
+[2021-03-16 15:27:51.282] [warning] Couldn't find file 'l_patella.vtp'.
+[2021-03-16 15:27:51.282] [warning] Couldn't find file 'l_talus.vtp'.
+[2021-03-16 15:27:51.283] [warning] Couldn't find file 'l_foot.vtp'.
+[2021-03-16 15:27:51.283] [warning] Couldn't find file 'l_bofoot.vtp'.
+[2021-03-16 15:27:51.283] [warning] Couldn't find file 'hat_spine.vtp'.
+[2021-03-16 15:27:51.284] [warning] Couldn't find file 'hat_jaw.vtp'.
+[2021-03-16 15:27:51.284] [warning] Couldn't find file 'hat_skull.vtp'.
+[2021-03-16 15:27:51.285] [warning] Couldn't find file 'hat_ribs_scap.vtp'.
+[2021-03-16 15:27:51.671] [info] Loaded model scaledModel from file C:\+GitRepos+\flash-running\ExpData\RRA\rra1\rraAdjustedModel_1.osim
+[2021-03-16 15:27:51.673] [warning] Couldn't find file 'r_pelvis.vtp'.
+[2021-03-16 15:27:51.673] [warning] Couldn't find file 'l_pelvis.vtp'.
+[2021-03-16 15:27:51.674] [warning] Couldn't find file 'sacrum.vtp'.
+[2021-03-16 15:27:51.675] [warning] Couldn't find file 'r_femur.vtp'.
+[2021-03-16 15:27:51.675] [warning] Couldn't find file 'r_tibia.vtp'.
+[2021-03-16 15:27:51.676] [warning] Couldn't find file 'r_fibula.vtp'.
+[2021-03-16 15:27:51.676] [warning] Couldn't find file 'r_patella.vtp'.
+[2021-03-16 15:27:51.677] [warning] Couldn't find file 'r_talus.vtp'.
+[2021-03-16 15:27:51.678] [warning] Couldn't find file 'r_foot.vtp'.
+[2021-03-16 15:27:51.678] [warning] Couldn't find file 'r_bofoot.vtp'.
+[2021-03-16 15:27:51.679] [warning] Couldn't find file 'l_femur.vtp'.
+[2021-03-16 15:27:51.679] [warning] Couldn't find file 'l_tibia.vtp'.
+[2021-03-16 15:27:51.679] [warning] Couldn't find file 'l_fibula.vtp'.
+[2021-03-16 15:27:51.680] [warning] Couldn't find file 'l_patella.vtp'.
+[2021-03-16 15:27:51.680] [warning] Couldn't find file 'l_talus.vtp'.
+[2021-03-16 15:27:51.681] [warning] Couldn't find file 'l_foot.vtp'.
+[2021-03-16 15:27:51.683] [warning] Couldn't find file 'l_bofoot.vtp'.
+[2021-03-16 15:27:51.683] [warning] Couldn't find file 'hat_spine.vtp'.
+[2021-03-16 15:27:51.684] [warning] Couldn't find file 'hat_jaw.vtp'.
+[2021-03-16 15:27:51.684] [warning] Couldn't find file 'hat_skull.vtp'.
+[2021-03-16 15:27:51.685] [warning] Couldn't find file 'hat_ribs_scap.vtp'.
+[2021-03-17 16:04:55.262] [info] Processing subject ...
+[2021-03-17 16:04:55.263] [info] Step 1: Loading generic model
+[2021-03-17 16:04:55.338] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
+[2021-03-17 16:04:55.611] [info] Step 2: Scaling generic model
+[2021-03-17 16:04:55.717] [info] Loaded marker file ..\Data\staticVirtualMarkers.trc (58 markers, 483 frames)
+[2021-03-17 16:04:55.717] [info] Measurement 'torso_height'
+[2021-03-17 16:04:55.718] [info] 	pair 0 (MTOR, MPEL): model = 0.468396, experimental = 0.466528
+[2021-03-17 16:04:55.719] [info] 	overall scale factor = 0.996011
+[2021-03-17 16:04:55.719] [info] Measurement 'torso_breadth'
+[2021-03-17 16:04:55.719] [info] 	pair 0 (C7, CLAV): model = 0.146032, experimental = 0.146906
+[2021-03-17 16:04:55.720] [info] 	pair 1 (T10, STRN): model = 0.222121, experimental = 0.241562
+[2021-03-17 16:04:55.720] [info] 	overall scale factor = 1.04675
+[2021-03-17 16:04:55.720] [info] Measurement 'torso_width'
+[2021-03-17 16:04:55.721] [info] 	pair 0 (RACR, LACR): model = 0.283321, experimental = 0.345905
+[2021-03-17 16:04:55.721] [info] 	overall scale factor = 1.22089
+[2021-03-17 16:04:55.722] [info] Measurement 'pelvis_w'
+[2021-03-17 16:04:55.722] [info] 	pair 0 (RASI, LASI): model = 0.25789, experimental = 0.216053
+[2021-03-17 16:04:55.722] [info] 	pair 1 (RPSI, LPSI): model = 0.092731, experimental = 0.0960037
+[2021-03-17 16:04:55.723] [info] 	overall scale factor = 0.936532
+[2021-03-17 16:04:55.723] [info] Measurement 'pelvis_d'
+[2021-03-17 16:04:55.723] [info] 	pair 0 (RASI, RPSI): model = 0.201128, experimental = 0.188603
+[2021-03-17 16:04:55.723] [info] 	pair 1 (LASI, LPSI): model = 0.192488, experimental = 0.188085
+[2021-03-17 16:04:55.724] [info] 	overall scale factor = 0.957426
+[2021-03-17 16:04:55.724] [info] Measurement 'pelvis_h'
+[2021-03-17 16:04:55.724] [info] 	pair 0 (MPEL, RHJC): model = 0.131542, experimental = 0.105614
+[2021-03-17 16:04:55.725] [info] 	pair 1 (MPEL, LHJC): model = 0.131025, experimental = 0.108303
+[2021-03-17 16:04:55.725] [info] 	overall scale factor = 0.814735
+[2021-03-17 16:04:55.725] [info] Measurement 'r_thigh_length'
+[2021-03-17 16:04:55.726] [info] 	pair 0 (RHJC, RKJC): model = 0.390494, experimental = 0.46219
+[2021-03-17 16:04:55.726] [info] 	overall scale factor = 1.1836
+[2021-03-17 16:04:55.726] [info] Measurement 'r_thigh_breadth'
+[2021-03-17 16:04:55.728] [info] 	pair 0 (RLFC, RMFC): model = 0.108539, experimental = 0.125179
+[2021-03-17 16:04:55.729] [info] 	overall scale factor = 1.1533
+[2021-03-17 16:04:55.729] [info] Measurement 'r_tibia_length'
+[2021-03-17 16:04:55.729] [info] 	pair 0 (RKJC, RAJC): model = 0.391627, experimental = 0.437658
+[2021-03-17 16:04:55.729] [info] 	overall scale factor = 1.11754
+[2021-03-17 16:04:55.729] [info] Measurement 'r_tibia_breadth'
+[2021-03-17 16:04:55.729] [info] 	pair 0 (RLMAL, RMMAL): model = 0.093372, experimental = 0.0955162
+[2021-03-17 16:04:55.730] [info] 	overall scale factor = 1.02296
+[2021-03-17 16:04:55.730] [info] Measurement 'r_foot_length'
+[2021-03-17 16:04:55.730] [info] 	pair 0 (fRCAL, fRAJC): model = 0.0941763, experimental = 0.0694764
+[2021-03-17 16:04:55.730] [info] 	pair 1 (fRAJC, fRMT3): model = 0.129502, experimental = 0.148666
+[2021-03-17 16:04:55.731] [info] 	overall scale factor = 0.942854
+[2021-03-17 16:04:55.731] [info] Measurement 'r_foot_height'
+[2021-03-17 16:04:55.731] [info] 	pair 0 (RAJC, fRAJC): model = 0.0696915, experimental = 0.100821
+[2021-03-17 16:04:55.731] [info] 	overall scale factor = 1.44667
+[2021-03-17 16:04:55.731] [info] Measurement 'r_foot_width'
+[2021-03-17 16:04:55.732] [info] 	pair 0 (fRMT1, fRMT5): model = 0.0759802, experimental = 0.109619
+[2021-03-17 16:04:55.732] [info] 	overall scale factor = 1.44273
+[2021-03-17 16:04:55.732] [info] Measurement 'l_thigh_length'
+[2021-03-17 16:04:55.732] [info] 	pair 0 (LHJC, LKJC): model = 0.390494, experimental = 0.474762
+[2021-03-17 16:04:55.732] [info] 	overall scale factor = 1.2158
+[2021-03-17 16:04:55.733] [info] Measurement 'l_thigh_breadth'
+[2021-03-17 16:04:55.733] [info] 	pair 0 (LLFC, LMFC): model = 0.108539, experimental = 0.125672
+[2021-03-17 16:04:55.733] [info] 	overall scale factor = 1.15785
+[2021-03-17 16:04:55.733] [info] Measurement 'l_tibia_length'
+[2021-03-17 16:04:55.733] [info] 	pair 0 (LKJC, LAJC): model = 0.391627, experimental = 0.433973
+[2021-03-17 16:04:55.733] [info] 	overall scale factor = 1.10813
+[2021-03-17 16:04:55.734] [info] Measurement 'l_tibia_breadth'
+[2021-03-17 16:04:55.734] [info] 	pair 0 (LLMAL, LMMAL): model = 0.093372, experimental = 0.0950852
+[2021-03-17 16:04:55.734] [info] 	overall scale factor = 1.01835
+[2021-03-17 16:04:55.734] [info] Measurement 'l_foot_length'
+[2021-03-17 16:04:55.734] [info] 	pair 0 (fLCAL, fLAJC): model = 0.0954936, experimental = 0.068191
+[2021-03-17 16:04:55.734] [info] 	pair 1 (fLAJC, fLMT3): model = 0.129723, experimental = 0.153377
+[2021-03-17 16:04:55.735] [info] 	overall scale factor = 0.948218
+[2021-03-17 16:04:55.735] [info] Measurement 'l_foot_height'
+[2021-03-17 16:04:55.735] [info] 	pair 0 (LAJC, fLAJC): model = 0.0696334, experimental = 0.101405
+[2021-03-17 16:04:55.735] [info] 	overall scale factor = 1.45627
+[2021-03-17 16:04:55.735] [info] Measurement 'l_foot_width'
+[2021-03-17 16:04:55.735] [info] 	pair 0 (fLMT1, fLMT5): model = 0.0759802, experimental = 0.110420
+[2021-03-17 16:04:55.735] [info] 	overall scale factor = 1.45327
+[2021-03-17 16:04:55.979] [info] Wrote model file 'scaledModel.osim' from model.
+[2021-03-17 16:04:55.984] [info] Wrote scale file 'scaleSet.xml' for model model.
+[2021-03-17 16:04:55.984] [info] Step 3: Placing markers on model
+[2021-03-17 16:04:56.078] [info] Loaded marker file ..\Data\staticVirtualMarkers.trc (58 markers, 483 frames)
+[2021-03-17 16:04:56.079] [info] Averaged frames from time 0.5 to 1.5 in ..\Data\staticVirtualMarkers.trc (frames 126 to 376)
+[2021-03-17 16:04:56.080] [info] Deleted 0 unused markers from model model.
+[2021-03-17 16:04:56.204] [info] Frame at (t = 0.5):	 total squared error = 0.0573014, marker error: RMS = 0.0322776, max = 0.0574159 (LTH2)
+[2021-03-17 16:04:56.205] [info] Moved markers in model model to match locations in marker file '..\Data\staticVirtualMarkers.trc'.
+[2021-03-17 16:04:56.275] [info] Wrote model file 'scaledModelAdjusted.osim' from model model.
+[2021-03-17 16:04:56.367] [info] Loaded model model from file scaledModelAdjusted.osim
+[2021-03-17 16:04:56.550] [info] Loaded model genericModel_LaiArnold from file genericModel_LaiArnold.osim
+[2021-03-17 16:04:56.678] [info] Loaded model scaledModel from file scaledModelAdjusted.osim
+[2021-03-17 16:04:56.914] [info] Loaded model scaledModel from file scaledModelMuscle.osim
+[2021-03-17 16:05:05.167] [info] Processing subject ...
+[2021-03-17 16:05:05.167] [info] Step 1: Loading generic model
+[2021-03-17 16:05:05.188] [info] Loaded model gait9dof18musc_Ong_et_al from file gait9dof18musc_Ong_et_al_Moco.osim
+[2021-03-17 16:05:05.331] [info] Step 2: Scaling generic model
+[2021-03-17 16:05:05.378] [info] Loaded marker file ..\Data\staticVirtualMarkers.trc (58 markers, 483 frames)
+[2021-03-17 16:05:05.379] [info] Measurement 'torso_height'
+[2021-03-17 16:05:05.380] [info] 	pair 0 (MTOR, MPEL): model = 0.465351, experimental = 0.466528
+[2021-03-17 16:05:05.380] [info] 	overall scale factor = 1.00253
+[2021-03-17 16:05:05.380] [info] Measurement 'torso_breadth'
+[2021-03-17 16:05:05.380] [info] 	pair 0 (C7, CLAV): model = 0.146032, experimental = 0.146906
+[2021-03-17 16:05:05.381] [info] 	pair 1 (T10, STRN): model = 0.222121, experimental = 0.241562
+[2021-03-17 16:05:05.381] [info] 	overall scale factor = 1.04675
+[2021-03-17 16:05:05.381] [info] Measurement 'torso_width'
+[2021-03-17 16:05:05.382] [info] 	pair 0 (RACR, LACR): model = 0.283321, experimental = 0.345905
+[2021-03-17 16:05:05.382] [info] 	overall scale factor = 1.22089
+[2021-03-17 16:05:05.382] [info] Measurement 'pelvis_w'
+[2021-03-17 16:05:05.382] [info] 	pair 0 (RASI, LASI): model = 0.25789, experimental = 0.216053
+[2021-03-17 16:05:05.383] [info] 	pair 1 (RPSI, LPSI): model = 0.092731, experimental = 0.0960037
+[2021-03-17 16:05:05.383] [info] 	overall scale factor = 0.936532
+[2021-03-17 16:05:05.383] [info] Measurement 'pelvis_d'
+[2021-03-17 16:05:05.383] [info] 	pair 0 (RASI, RPSI): model = 0.201128, experimental = 0.188603
+[2021-03-17 16:05:05.383] [info] 	pair 1 (LASI, LPSI): model = 0.192488, experimental = 0.188085
+[2021-03-17 16:05:05.384] [info] 	overall scale factor = 0.957426
+[2021-03-17 16:05:05.384] [info] Measurement 'pelvis_h'
+[2021-03-17 16:05:05.384] [info] 	pair 0 (MPEL, RHJC): model = 0.12213, experimental = 0.105614
+[2021-03-17 16:05:05.384] [info] 	pair 1 (MPEL, LHJC): model = 0.121537, experimental = 0.108303
+[2021-03-17 16:05:05.384] [info] 	overall scale factor = 0.877939
+[2021-03-17 16:05:05.384] [info] Measurement 'r_thigh_length'
+[2021-03-17 16:05:05.385] [info] 	pair 0 (RHJC, RKJC): model = 0.390494, experimental = 0.46219
+[2021-03-17 16:05:05.385] [info] 	overall scale factor = 1.1836
+[2021-03-17 16:05:05.385] [info] Measurement 'r_thigh_breadth'
+[2021-03-17 16:05:05.385] [info] 	pair 0 (RLFC, RMFC): model = 0.108539, experimental = 0.125179
+[2021-03-17 16:05:05.385] [info] 	overall scale factor = 1.1533
+[2021-03-17 16:05:05.386] [info] Measurement 'r_tibia_length'
+[2021-03-17 16:05:05.386] [info] 	pair 0 (RKJC, RAJC): model = 0.38269, experimental = 0.437658
+[2021-03-17 16:05:05.386] [info] 	overall scale factor = 1.14364
+[2021-03-17 16:05:05.386] [info] Measurement 'r_tibia_breadth'
+[2021-03-17 16:05:05.387] [info] 	pair 0 (RLMAL, RMMAL): model = 0.093372, experimental = 0.0955162
+[2021-03-17 16:05:05.387] [info] 	overall scale factor = 1.02296
+[2021-03-17 16:05:05.387] [info] Measurement 'r_foot_length'
+[2021-03-17 16:05:05.387] [info] 	pair 0 (fRCAL, fRAJC): model = 0.0810480, experimental = 0.0694764
+[2021-03-17 16:05:05.389] [info] 	pair 1 (fRAJC, fRMT3): model = 0.128814, experimental = 0.148666
+[2021-03-17 16:05:05.389] [info] 	overall scale factor = 1.00567
+[2021-03-17 16:05:05.390] [info] Measurement 'r_foot_height'
+[2021-03-17 16:05:05.390] [info] 	pair 0 (RAJC, fRAJC): model = 0.0696915, experimental = 0.100821
+[2021-03-17 16:05:05.390] [info] 	overall scale factor = 1.44667
+[2021-03-17 16:05:05.390] [info] Measurement 'r_foot_width'
+[2021-03-17 16:05:05.391] [info] 	pair 0 (fRMT1, fRMT5): model = 0.0759802, experimental = 0.109619
+[2021-03-17 16:05:05.391] [info] 	overall scale factor = 1.44273
+[2021-03-17 16:05:05.391] [info] Measurement 'l_thigh_length'
+[2021-03-17 16:05:05.392] [info] 	pair 0 (LHJC, LKJC): model = 0.390494, experimental = 0.474762
+[2021-03-17 16:05:05.392] [info] 	overall scale factor = 1.2158
+[2021-03-17 16:05:05.392] [info] Measurement 'l_thigh_breadth'
+[2021-03-17 16:05:05.393] [info] 	pair 0 (LLFC, LMFC): model = 0.108539, experimental = 0.125672
+[2021-03-17 16:05:05.393] [info] 	overall scale factor = 1.15785
+[2021-03-17 16:05:05.393] [info] Measurement 'l_tibia_length'
+[2021-03-17 16:05:05.393] [info] 	pair 0 (LKJC, LAJC): model = 0.38269, experimental = 0.433973
+[2021-03-17 16:05:05.393] [info] 	overall scale factor = 1.13401
+[2021-03-17 16:05:05.394] [info] Measurement 'l_tibia_breadth'
+[2021-03-17 16:05:05.394] [info] 	pair 0 (LLMAL, LMMAL): model = 0.093372, experimental = 0.0950852
+[2021-03-17 16:05:05.394] [info] 	overall scale factor = 1.01835
+[2021-03-17 16:05:05.394] [info] Measurement 'l_foot_length'
+[2021-03-17 16:05:05.395] [info] 	pair 0 (fLCAL, fLAJC): model = 0.0822059, experimental = 0.068191
+[2021-03-17 16:05:05.395] [info] 	pair 1 (fLAJC, fLMT3): model = 0.129019, experimental = 0.153377
+[2021-03-17 16:05:05.395] [info] 	overall scale factor = 1.00915
+[2021-03-17 16:05:05.395] [info] Measurement 'l_foot_height'
+[2021-03-17 16:05:05.395] [info] 	pair 0 (LAJC, fLAJC): model = 0.0696334, experimental = 0.101405
+[2021-03-17 16:05:05.396] [info] 	overall scale factor = 1.45627
+[2021-03-17 16:05:05.396] [info] Measurement 'l_foot_width'
+[2021-03-17 16:05:05.396] [info] 	pair 0 (fLMT1, fLMT5): model = 0.0759802, experimental = 0.110420
+[2021-03-17 16:05:05.396] [info] 	overall scale factor = 1.45327
+[2021-03-17 16:05:05.430] [info] Wrote model file 'scaledModel2D.osim' from model.
+[2021-03-17 16:05:05.435] [info] Wrote scale file 'scaleSet2D.xml' for model model.
+[2021-03-17 16:05:05.435] [info] Step 3: Placing markers on model
+[2021-03-17 16:05:05.534] [info] Loaded marker file ..\Data\staticVirtualMarkers.trc (58 markers, 483 frames)
+[2021-03-17 16:05:05.535] [info] Averaged frames from time 0.5 to 1.5 in ..\Data\staticVirtualMarkers.trc (frames 126 to 376)
+[2021-03-17 16:05:05.536] [info] Deleted 0 unused markers from model model.
+[2021-03-17 16:05:05.544] [info] Frame at (t = 0.5):	 total squared error = 5.34968, marker error: RMS = 0.311876, max = 0.402405 (RMT5)
+[2021-03-17 16:05:05.545] [info] Moved markers in model model to match locations in marker file '..\Data\staticVirtualMarkers.trc'.
+[2021-03-17 16:05:05.562] [info] Wrote model file 'scaledModelAdjusted2D.osim' from model model.
+[2021-03-17 16:05:05.594] [info] Loaded model model from file scaledModelAdjusted2D.osim
+[2021-03-17 16:05:05.633] [info] Loaded model gait9dof18musc_Ong_et_al from file gait9dof18musc_Ong_et_al_Moco.osim
+[2021-03-17 16:05:05.657] [info] Loaded model scaledModel2D from file scaledModelAdjusted2D.osim
+[2021-03-17 16:05:05.700] [info] Loaded model scaledModel2D from file scaledModelMuscle2D.osim
+[2021-03-17 16:05:18.542] [info] Loaded model scaledModel from file scaledModelMuscle.osim
+[2021-03-17 16:05:46.741] [info] Storage: read data file = C:\+GitRepos+\flash-running\ExpData\RRA\rra1\rra1_Kinematics_q.sto (nr=325 nc=26)
+[2021-03-17 16:05:46.747] [info] Storage: read data file = C:\+GitRepos+\flash-running\ExpData\RRA\rra1\rra1_Kinematics_q.sto (nr=325 nc=26)
+[2021-03-17 16:05:46.824] [info] Loaded model scaledModel from file C:\+GitRepos+\flash-running\ExpData\RRA\rra1\rraAdjustedModel_1.osim
+[2021-03-17 16:05:46.825] [warning] Couldn't find file 'r_pelvis.vtp'.
+[2021-03-17 16:05:46.826] [warning] Couldn't find file 'l_pelvis.vtp'.
+[2021-03-17 16:05:46.826] [warning] Couldn't find file 'sacrum.vtp'.
+[2021-03-17 16:05:46.826] [warning] Couldn't find file 'r_femur.vtp'.
+[2021-03-17 16:05:46.827] [warning] Couldn't find file 'r_tibia.vtp'.
+[2021-03-17 16:05:46.827] [warning] Couldn't find file 'r_fibula.vtp'.
+[2021-03-17 16:05:46.827] [warning] Couldn't find file 'r_patella.vtp'.
+[2021-03-17 16:05:46.828] [warning] Couldn't find file 'r_talus.vtp'.
+[2021-03-17 16:05:46.828] [warning] Couldn't find file 'r_foot.vtp'.
+[2021-03-17 16:05:46.829] [warning] Couldn't find file 'r_bofoot.vtp'.
+[2021-03-17 16:05:46.829] [warning] Couldn't find file 'l_femur.vtp'.
+[2021-03-17 16:05:46.829] [warning] Couldn't find file 'l_tibia.vtp'.
+[2021-03-17 16:05:46.829] [warning] Couldn't find file 'l_fibula.vtp'.
+[2021-03-17 16:05:46.830] [warning] Couldn't find file 'l_patella.vtp'.
+[2021-03-17 16:05:46.831] [warning] Couldn't find file 'l_talus.vtp'.
+[2021-03-17 16:05:46.832] [warning] Couldn't find file 'l_foot.vtp'.
+[2021-03-17 16:05:46.832] [warning] Couldn't find file 'l_bofoot.vtp'.
+[2021-03-17 16:05:46.832] [warning] Couldn't find file 'hat_spine.vtp'.
+[2021-03-17 16:05:46.832] [warning] Couldn't find file 'hat_jaw.vtp'.
+[2021-03-17 16:05:46.833] [warning] Couldn't find file 'hat_skull.vtp'.
+[2021-03-17 16:05:46.833] [warning] Couldn't find file 'hat_ribs_scap.vtp'.
+[2021-03-17 16:05:47.067] [info] Loaded model scaledModel from file C:\+GitRepos+\flash-running\ExpData\RRA\rra1\rraAdjustedModel_1.osim
+[2021-03-17 16:05:47.069] [warning] Couldn't find file 'r_pelvis.vtp'.
+[2021-03-17 16:05:47.069] [warning] Couldn't find file 'l_pelvis.vtp'.
+[2021-03-17 16:05:47.069] [warning] Couldn't find file 'sacrum.vtp'.
+[2021-03-17 16:05:47.069] [warning] Couldn't find file 'r_femur.vtp'.
+[2021-03-17 16:05:47.070] [warning] Couldn't find file 'r_tibia.vtp'.
+[2021-03-17 16:05:47.070] [warning] Couldn't find file 'r_fibula.vtp'.
+[2021-03-17 16:05:47.070] [warning] Couldn't find file 'r_patella.vtp'.
+[2021-03-17 16:05:47.070] [warning] Couldn't find file 'r_talus.vtp'.
+[2021-03-17 16:05:47.071] [warning] Couldn't find file 'r_foot.vtp'.
+[2021-03-17 16:05:47.071] [warning] Couldn't find file 'r_bofoot.vtp'.
+[2021-03-17 16:05:47.071] [warning] Couldn't find file 'l_femur.vtp'.
+[2021-03-17 16:05:47.072] [warning] Couldn't find file 'l_tibia.vtp'.
+[2021-03-17 16:05:47.072] [warning] Couldn't find file 'l_fibula.vtp'.
+[2021-03-17 16:05:47.072] [warning] Couldn't find file 'l_patella.vtp'.
+[2021-03-17 16:05:47.072] [warning] Couldn't find file 'l_talus.vtp'.
+[2021-03-17 16:05:47.073] [warning] Couldn't find file 'l_foot.vtp'.
+[2021-03-17 16:05:47.073] [warning] Couldn't find file 'l_bofoot.vtp'.
+[2021-03-17 16:05:47.073] [warning] Couldn't find file 'hat_spine.vtp'.
+[2021-03-17 16:05:47.074] [warning] Couldn't find file 'hat_jaw.vtp'.
+[2021-03-17 16:05:47.074] [warning] Couldn't find file 'hat_skull.vtp'.
+[2021-03-17 16:05:47.074] [warning] Couldn't find file 'hat_ribs_scap.vtp'.
+[2021-03-17 16:08:23.567] [info] Storage: read data file = C:\+GitRepos+\flash-running\ExpData\RRA\rra1\rra1_Kinematics_q.sto (nr=325 nc=26)
+[2021-03-17 16:08:23.574] [info] Storage: read data file = C:\+GitRepos+\flash-running\ExpData\RRA\rra1\rra1_Kinematics_q.sto (nr=325 nc=26)
+[2021-03-17 16:08:23.633] [info] Loaded model scaledModel from file C:\+GitRepos+\flash-running\ExpData\RRA\rra1\rraAdjustedModel_1.osim
+[2021-03-17 16:08:23.634] [warning] Couldn't find file 'r_pelvis.vtp'.
+[2021-03-17 16:08:23.634] [warning] Couldn't find file 'l_pelvis.vtp'.
+[2021-03-17 16:08:23.634] [warning] Couldn't find file 'sacrum.vtp'.
+[2021-03-17 16:08:23.635] [warning] Couldn't find file 'r_femur.vtp'.
+[2021-03-17 16:08:23.635] [warning] Couldn't find file 'r_tibia.vtp'.
+[2021-03-17 16:08:23.636] [warning] Couldn't find file 'r_fibula.vtp'.
+[2021-03-17 16:08:23.636] [warning] Couldn't find file 'r_patella.vtp'.
+[2021-03-17 16:08:23.636] [warning] Couldn't find file 'r_talus.vtp'.
+[2021-03-17 16:08:23.636] [warning] Couldn't find file 'r_foot.vtp'.
+[2021-03-17 16:08:23.637] [warning] Couldn't find file 'r_bofoot.vtp'.
+[2021-03-17 16:08:23.637] [warning] Couldn't find file 'l_femur.vtp'.
+[2021-03-17 16:08:23.638] [warning] Couldn't find file 'l_tibia.vtp'.
+[2021-03-17 16:08:23.638] [warning] Couldn't find file 'l_fibula.vtp'.
+[2021-03-17 16:08:23.638] [warning] Couldn't find file 'l_patella.vtp'.
+[2021-03-17 16:08:23.638] [warning] Couldn't find file 'l_talus.vtp'.
+[2021-03-17 16:08:23.639] [warning] Couldn't find file 'l_foot.vtp'.
+[2021-03-17 16:08:23.639] [warning] Couldn't find file 'l_bofoot.vtp'.
+[2021-03-17 16:08:23.639] [warning] Couldn't find file 'hat_spine.vtp'.
+[2021-03-17 16:08:23.640] [warning] Couldn't find file 'hat_jaw.vtp'.
+[2021-03-17 16:08:23.640] [warning] Couldn't find file 'hat_skull.vtp'.
+[2021-03-17 16:08:23.640] [warning] Couldn't find file 'hat_ribs_scap.vtp'.
+[2021-03-17 16:08:23.863] [info] Loaded model scaledModel from file C:\+GitRepos+\flash-running\ExpData\RRA\rra1\rraAdjustedModel_1.osim
+[2021-03-17 16:08:23.865] [warning] Couldn't find file 'r_pelvis.vtp'.
+[2021-03-17 16:08:23.865] [warning] Couldn't find file 'l_pelvis.vtp'.
+[2021-03-17 16:08:23.865] [warning] Couldn't find file 'sacrum.vtp'.
+[2021-03-17 16:08:23.866] [warning] Couldn't find file 'r_femur.vtp'.
+[2021-03-17 16:08:23.866] [warning] Couldn't find file 'r_tibia.vtp'.
+[2021-03-17 16:08:23.866] [warning] Couldn't find file 'r_fibula.vtp'.
+[2021-03-17 16:08:23.867] [warning] Couldn't find file 'r_patella.vtp'.
+[2021-03-17 16:08:23.867] [warning] Couldn't find file 'r_talus.vtp'.
+[2021-03-17 16:08:23.867] [warning] Couldn't find file 'r_foot.vtp'.
+[2021-03-17 16:08:23.868] [warning] Couldn't find file 'r_bofoot.vtp'.
+[2021-03-17 16:08:23.868] [warning] Couldn't find file 'l_femur.vtp'.
+[2021-03-17 16:08:23.868] [warning] Couldn't find file 'l_tibia.vtp'.
+[2021-03-17 16:08:23.869] [warning] Couldn't find file 'l_fibula.vtp'.
+[2021-03-17 16:08:23.869] [warning] Couldn't find file 'l_patella.vtp'.
+[2021-03-17 16:08:23.869] [warning] Couldn't find file 'l_talus.vtp'.
+[2021-03-17 16:08:23.870] [warning] Couldn't find file 'l_foot.vtp'.
+[2021-03-17 16:08:23.870] [warning] Couldn't find file 'l_bofoot.vtp'.
+[2021-03-17 16:08:23.870] [warning] Couldn't find file 'hat_spine.vtp'.
+[2021-03-17 16:08:23.871] [warning] Couldn't find file 'hat_jaw.vtp'.
+[2021-03-17 16:08:23.871] [warning] Couldn't find file 'hat_skull.vtp'.
+[2021-03-17 16:08:23.871] [warning] Couldn't find file 'hat_ribs_scap.vtp'.

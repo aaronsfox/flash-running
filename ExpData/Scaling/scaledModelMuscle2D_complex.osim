@@ -2930,13 +2930,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.94999999999999996</static_friction>
+					<static_friction>0.80000000000000004</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.29999999999999999</dynamic_friction>
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.29999999999999999</viscous_friction>
+					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.001</transition_velocity>
+					<transition_velocity>0.20000000000000001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -2952,13 +2952,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.94999999999999996</static_friction>
+					<static_friction>0.80000000000000004</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.29999999999999999</dynamic_friction>
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.29999999999999999</viscous_friction>
+					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.001</transition_velocity>
+					<transition_velocity>0.20000000000000001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -2974,13 +2974,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.94999999999999996</static_friction>
+					<static_friction>0.80000000000000004</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.29999999999999999</dynamic_friction>
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.29999999999999999</viscous_friction>
+					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.001</transition_velocity>
+					<transition_velocity>0.20000000000000001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -2996,13 +2996,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.94999999999999996</static_friction>
+					<static_friction>0.80000000000000004</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.29999999999999999</dynamic_friction>
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.29999999999999999</viscous_friction>
+					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.001</transition_velocity>
+					<transition_velocity>0.20000000000000001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -3018,13 +3018,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.94999999999999996</static_friction>
+					<static_friction>0.80000000000000004</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.29999999999999999</dynamic_friction>
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.29999999999999999</viscous_friction>
+					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.001</transition_velocity>
+					<transition_velocity>0.20000000000000001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -3040,13 +3040,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.94999999999999996</static_friction>
+					<static_friction>0.80000000000000004</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.29999999999999999</dynamic_friction>
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.29999999999999999</viscous_friction>
+					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.001</transition_velocity>
+					<transition_velocity>0.20000000000000001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -3062,13 +3062,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.94999999999999996</static_friction>
+					<static_friction>0.80000000000000004</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.29999999999999999</dynamic_friction>
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.29999999999999999</viscous_friction>
+					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.001</transition_velocity>
+					<transition_velocity>0.20000000000000001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -3084,13 +3084,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.94999999999999996</static_friction>
+					<static_friction>0.80000000000000004</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.29999999999999999</dynamic_friction>
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.29999999999999999</viscous_friction>
+					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.001</transition_velocity>
+					<transition_velocity>0.20000000000000001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -3106,13 +3106,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.94999999999999996</static_friction>
+					<static_friction>0.80000000000000004</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.29999999999999999</dynamic_friction>
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.29999999999999999</viscous_friction>
+					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.001</transition_velocity>
+					<transition_velocity>0.20000000000000001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -3128,13 +3128,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.94999999999999996</static_friction>
+					<static_friction>0.80000000000000004</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.29999999999999999</dynamic_friction>
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.29999999999999999</viscous_friction>
+					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.001</transition_velocity>
+					<transition_velocity>0.20000000000000001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -3150,13 +3150,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.94999999999999996</static_friction>
+					<static_friction>0.80000000000000004</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.29999999999999999</dynamic_friction>
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.29999999999999999</viscous_friction>
+					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.001</transition_velocity>
+					<transition_velocity>0.20000000000000001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -3172,13 +3172,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.94999999999999996</static_friction>
+					<static_friction>0.80000000000000004</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.29999999999999999</dynamic_friction>
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.29999999999999999</viscous_friction>
+					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.001</transition_velocity>
+					<transition_velocity>0.20000000000000001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -8846,456 +8846,7 @@
 		</ForceSet>
 		<!--Markers in the model.-->
 		<MarkerSet name="markerset">
-			<objects>
-				<Marker name="C7">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/torso</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.075273851009963616 0.44207639440418056 -7.9593263171753236e-09</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="T10">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/torso</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.11282839709912654 0.15797726900586706 -0.011418607767383564</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="CLAV">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/torso</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.053187165499651898 0.36325010965755467 0.0011676399564592382</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="STRN">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/torso</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.15687509021364987 0.20655373217992756 0.0033635078207928104</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="RACR">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/torso</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.01922685321096277 0.41492514068058217 0.17549620695233045</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LACR">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/torso</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.017099852284101727 0.41682652524985397 -0.17039164856194411</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="MTOR">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/torso</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.014603347751344054 0.40926954249804287 0.0015680480605937215</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RASI">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.0097737857930530504 0.0090042082217888404 0.12084167037841295</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LASI">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.010244743556424666 0.0090356569977564343 -0.12068058686123423</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RPSI">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.1631597219861228 0.031949349230662824 0.042293413967348759</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LPSI">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.15418768457901685 0.033050219336554318 -0.044098298585411679</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="MPEL">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.074332219303915481 0.020759858446690604 -0.00041095027522105226</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RTH1">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.013119189478229043 -0.1808727636966575 0.11295370233971525</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="RTH2">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.057651489625166419 -0.27143293934866586 0.088791540583674</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="RTH3">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.0054253270032279532 -0.35613995830662593 0.087438430742288631</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="RHJC">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0 0 0</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RLFC">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.011463958875014935 -0.46496190854274755 0.061665020589745226</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RMFC">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.011463962210514213 -0.45911619700691192 -0.063383902366575318</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RKJC">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.011463960006978101 -0.46203905223611924 -0.00085944054375194034</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RTB3">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.007015846176908036 -0.23863766526695912 0.0015338740321042543</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="RTB2">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.019891256768850174 -0.16849374764254837 0.048618580768145847</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="RTB1">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.0028668003099171502 -0.099027775891566472 -9.8042479797555426e-05</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="RLMAL">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.0051163192132835196 -0.42590858325229397 0.054378870767544066</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RMMAL">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.0057919204081167382 -0.4140524031314019 -0.039889760975934156</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RAJC">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.00033780023819454289 -0.41998049311777585 0.0072445551751587943</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="fRAJC">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.00033914339046335227 -0.49779844680193652 0.010155683761659645</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RCAL">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.032636423301660049 0.048577700520986665 -0.010520494172257472</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="fRCAL">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.032636423301660049 -0.0050518696404991785 -0.010520494172257472</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RMT5">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-2.357135254126449e-05 0.051471038650233315 0.066762185850862271</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="fRMT5">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-2.357135254126449e-05 -0.0021585315112525199 0.066762185850862271</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RMT1">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.017974570593908619 0.051471038650233315 -0.039340997620188813</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="fRMT1">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.017973627739806965 -0.0021585315112525255 -0.039340997620188813</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RMT3">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.0089750281936328367 0.051471038650233301 0.013710666251680175</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="fRMT3">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.0089750281936328367 -0.0021585315112525229 0.013710594115336733</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LTH1">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.0039160035192204457 -0.16280749773955872 -0.10838540705821072</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="LTH2">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.042219927297727888 -0.25344898704722219 -0.094854540408895544</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="LTH3">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.022800466420058285 -0.33320009881079926 -0.084209825661960128</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="LHJC">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0 0 0</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LLFC">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.011509155007905463 -0.47760941347201508 -0.061908085797122259</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LMFC">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.011509155007905463 -0.47160458475688133 0.063633743497812228</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LKJC">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.011509156165754162 -0.47460717783682543 0.0008628288503449809</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LTB3">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.00029818556482513747 -0.23459280918973868 0.008037835844211999</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="LTB2">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.020609497546664579 -0.17092156371495615 -0.043152128460827305</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="LTB1">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.0041106685241927288 -0.096347896846046832 -0.0011361228100719989</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="LLMAL">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.0050932316599734953 -0.42232262843988666 -0.054133496599800268</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LMMAL">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.0057657900564243103 -0.41056648061727569 0.039709805400523941</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LAJC">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.00033627614317848539 -0.4164446952610511 -0.0072118690216645695</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="fLAJC">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.00033627614317848539 -0.49360750291257455 -0.0072118690216645695</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LCAL">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.034498079637586221 0.048900206591954154 0.0033616806284614345</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="fLCAL">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.034498079637586221 -0.0050854088696377303 0.0033616806284614345</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LMT5">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-2.3705458494298298e-05 0.05181275351663648 -0.067249889149638711</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="fLMT5">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.015797171228772555 -0.0023313662385156669 -0.072069026938025901</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="LMT1">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.018075886211074352 0.051812753516636494 0.039628386867140403</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="fLMT1">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.018075886211074352 -0.0021728619449553881 0.039628386867140403</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LMT3">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.0090260903762900135 0.051812753516636494 -0.013810823804554553</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="fLMT3">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.0090260903762900135 -0.002172861944955386 -0.013810751141249149</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-			</objects>
+			<objects />
 			<groups />
 		</MarkerSet>
 		<!--Geometry to be used in contact forces.-->

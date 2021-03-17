@@ -461,13 +461,43 @@ for ss in range(0,len(sphereList)):
             scaleFac = heelSphereScale_l
             scaleBod = 'calcn_l'
     #Rescale the radius
-    currSphere.setRadius(currSphere.getRadius() * scaleFac)
+    #Option to scale size here...
+    # currSphere.setRadius(currSphere.getRadius() * scaleFac)
     #Set new location
     newLoc = []
     newLoc.append(currSphere.getLocation().get(0) * scaleFactors[scaleBod][0])
     newLoc.append(currSphere.getLocation().get(1) * scaleFactors[scaleBod][1])
     newLoc.append(currSphere.getLocation().get(2) * scaleFactors[scaleBod][2])
     currSphere.setLocation(osim.Vec3(newLoc[0],newLoc[1],newLoc[2]))    
+
+#Ensure all spheres lie on a flat plane with the foot in a neutral position (i.e. default pose)
+#This will done by finding minimum base of sphere and ensuring each aligns with that
+#on the Y-axis
+#Loop through sphere list to identify minimum Y-value
+minY = 999 #default unnecessarily high starting value
+for ss in range(0,len(sphereList)):
+    #Get the current sphere
+    currSphere = osim.ContactSphere.safeDownCast(scaledModel.getContactGeometrySet().get(sphereList[ss]))
+    #Check the y-value minimum location taking centre position and radius
+    currY = currSphere.getLocation().get(1) - currSphere.getRadius()
+    #Replace min-Y if appropriate
+    if currY < minY:
+        minY = currSphere.getLocation().get(1) - currSphere.getRadius()
+#Re-loop through spheres and adjust Y-location if it is higher than the min
+for ss in range(0,len(sphereList)): 
+    #Get the current sphere
+    currSphere = osim.ContactSphere.safeDownCast(scaledModel.getContactGeometrySet().get(sphereList[ss]))
+    #Check min location and adjust if necessary
+    #Need to do absolutes as Y-value is negative
+    if abs((currSphere.getLocation().get(1) - currSphere.getRadius())) < abs(minY):
+        #Drop the y-value on the sphere
+        #Calculate new y-loc
+        diffY = abs(minY) - abs((currSphere.getLocation().get(1) - currSphere.getRadius()))
+        newY = currSphere.getLocation().get(1) - diffY
+        currSphere.setLocation(osim.Vec3(
+            currSphere.getLocation().get(0),
+            newY,
+            currSphere.getLocation().get(2)))
     
 #Reset model name
 scaledModel.setName('scaledModel')
@@ -572,47 +602,74 @@ toesSphereScale_l_2D = sum(scaleFactors2D['toes_l']) / 3
 #While accessing the spheres, also adjust their position based on the scale
 #factor for the respective axes
 #Create a list of the sheres to loop through and edit
-sphereList2D = ['heel_r','toe1_r','toe2_r',
-                'heel_l','toe1_l','toe2_l']
+sphereList2D = ['heel_r','midfoot_r', 'toe_r',
+                'heel_r','midfoot_l', 'toe_l']
 #Loop through sphere list
 for ss in range(len(sphereList2D)):
     #Get the current sphere
     currSphere = osim.ContactSphere.safeDownCast(scaledModel2D.getContactGeometrySet().get(sphereList2D[ss]))
     #Set the current scaling factor based on sphere name
     if '_r' in sphereList2D[ss]:
-        if 'toe' in sphereList2D[ss]:
+        if 'toe' in sphereList2D[ss] or 'midfoot' in sphereList2D[ss]:
             scaleFac = toesSphereScale_r
             scaleBod = 'toes_r'
         else:
             scaleFac = heelSphereScale_r
             scaleBod = 'calcn_r'
     elif '_l' in sphereList2D[ss]:
-        if 'toe' in sphereList2D[ss]:
+        if 'toe' in sphereList2D[ss] or 'midfoot' in sphereList2D[ss]:
             scaleFac = toesSphereScale_l
             scaleBod = 'toes_l'
         else:
             scaleFac = heelSphereScale_l
             scaleBod = 'calcn_l'
     #Rescale the radius
-    currSphere.setRadius(currSphere.getRadius() * scaleFac)
+    #Option to scale size here
+    # currSphere.setRadius(currSphere.getRadius() * scaleFac)
     #Set new location
     newLoc = []
     newLoc.append(currSphere.getLocation().get(0) * scaleFactors[scaleBod][0])
     newLoc.append(currSphere.getLocation().get(1) * scaleFactors[scaleBod][1])
     newLoc.append(currSphere.getLocation().get(2) * scaleFactors[scaleBod][2])
     currSphere.setLocation(osim.Vec3(newLoc[0],newLoc[1],newLoc[2]))    
-    
+
+#Ensure all spheres lie on a flat plane with the foot in a neutral position (i.e. default pose)
+#This will done by finding minimum base of sphere and ensuring each aligns with that
+#on the Y-axis
+#Loop through sphere list to identify minimum Y-value
+minY = 999 #default unnecessarily high starting value
+for ss in range(0,len(sphereList2D)):
+    #Get the current sphere
+    currSphere = osim.ContactSphere.safeDownCast(scaledModel2D.getContactGeometrySet().get(sphereList2D[ss]))
+    #Check the y-value minimum location taking centre position and radius
+    currY = currSphere.getLocation().get(1) - currSphere.getRadius()
+    #Replace min-Y if appropriate
+    if currY < minY:
+        minY = currSphere.getLocation().get(1) - currSphere.getRadius()
+#Re-loop through spheres and adjust Y-location if it is higher than the min
+for ss in range(0,len(sphereList2D)): 
+    #Get the current sphere
+    currSphere = osim.ContactSphere.safeDownCast(scaledModel2D.getContactGeometrySet().get(sphereList2D[ss]))
+    #Check min location and adjust if necessary
+    #Need to do absolutes as Y-value is negative
+    if abs((currSphere.getLocation().get(1) - currSphere.getRadius())) < abs(minY):
+        #Drop the y-value on the sphere
+        #Calculate new y-loc
+        diffY = abs(minY) - abs((currSphere.getLocation().get(1) - currSphere.getRadius()))
+        newY = currSphere.getLocation().get(1) - diffY
+        currSphere.setLocation(osim.Vec3(
+            currSphere.getLocation().get(0),
+            newY,
+            currSphere.getLocation().get(2)))
+
 #Reset model name
 scaledModel2D.setName('scaledModel2D')
 
-#Finalise connections and update scaled model
-scaledModel2D.finalizeConnections()
-scaledModel2D.printToXML('scaledModelAdjusted2D.osim')
+#Remove the marker set as it's no use in this 2D context
+scaledModel2D.updMarkerSet().clearAndDestroy()
 
-# Note that the scaled 2D model's markers are not in an appropriate position given
-# the lack of ability to translate in all three dimensions. The 2D model is therfore
-# not applicable to inverse kinematics analysis or anything to do with the original
-# 3D marker data --- it is simply for Moco-based simulations
+#Update scaled model
+scaledModel2D.printToXML('scaledModelAdjusted2D.osim')
 
 #Scale muscle strength based on linear function presented in Handsfield
 #et al. (2014). This uses some convenience functions that are packaged
@@ -872,6 +929,9 @@ editProcessor.append(osim.ModOpReplaceMusclesWithDeGrooteFregly2016())
 #Process model output
 model2D_final = editProcessor.process()
 
+#Remove the marker set as it's no use in this 2D context
+model2D_final.updMarkerSet().clearAndDestroy()
+
 #Print 2D model output
 model2D_final.printToXML('scaledModelMuscle2D_complex.osim')
 
@@ -1052,16 +1112,16 @@ rraModel = os.getcwd()+'\\rra'+str(finalRRA)+'\\rraAdjustedModel_'+str(finalRRA)
 #Convert kinematic results to a states file and store in simulation directory
 osimHelper.kinematicsToStates(kinematicsFileName = rraKinematics,
                               osimModelFileName = rraModel,
-                              outputFileName = '..\\..\\Simulations\\refQ.sto',
+                              outputFileName = '..\\..\\Simulations\\trackingSims\\refQ.sto',
                               inDegrees = True, outDegrees = False)
 
 #Convert states to 2D model format
-osimHelper.statesTo2D(statesFileName = '..\\..\\Simulations\\refQ.sto',
-                      outputFileName = '..\\..\\Simulations\\refQ_2D.sto',
+osimHelper.statesTo2D(statesFileName = '..\\..\\Simulations\\trackingSims\\refQ.sto',
+                      outputFileName = '..\\..\\Simulations\\trackingSims\\refQ_2D.sto',
                       renameWalkerKnee = True)
 
 #Copy final rra model to simulation directory
-shutil.copy(rraModel,'..\\..\\Simulations\\gaitModel3D.osim')
+shutil.copy(rraModel,'..\\..\\Simulations\\trackingSims\\gaitModel3D.osim')
 
 #Adjust mass of 2D model coinciding with RRA changes
 #Get model masses and ratios
@@ -1075,7 +1135,7 @@ for ii in range(allBodies.getSize()):
     newBodyMass = currBodyMass * massRatio2D
     allBodies.get(ii).setMass(newBodyMass)
 #Re-print adjusted mass model to simulation directory
-scaledModelMuscle2D.printToXML('..\\..\\Simulations\\gaitModel2D.osim')
+scaledModelMuscle2D.printToXML('..\\..\\Simulations\\trackingSims\\gaitModel2D.osim')
 
 #Repeat for complex 2D model
 mass2D = osimHelper.getMassOfModel(model2D_final)
@@ -1087,91 +1147,23 @@ for ii in range(allBodies.getSize()):
     newBodyMass = currBodyMass * massRatio2D
     allBodies.get(ii).setMass(newBodyMass)
 #Re-print adjusted mass model to simulation directory
-model2D_final.printToXML('..\\..\\Simulations\\gaitModel2D_complex.osim')
+model2D_final.printToXML('..\\..\\Simulations\\trackingSims\\gaitModel2D_complex.osim')
 
 # %% Do some final data copies for subsequent simulations
 
 #Copy geometry folder across to simulations directory
-os.chdir('..\\..\\Simulations')
+os.chdir('..\\..\\Simulations\\trackingSims')
 if not os.path.isdir('Geometry'):
     os.mkdir('Geometry')
-copy_tree('..\\ExpData\\Scaling\\Geometry',
+copy_tree('..\\..\\ExpData\\Scaling\\Geometry',
           os.getcwd()+'\\Geometry')
 
 #Copy GRF data files to simulations directory
-os.chdir('..\\ExpData\\Data')
-shutil.copy('refGRF_2D.mot', '..\\..\\Simulations')
-shutil.copy('refGRF_2D.xml', '..\\..\\Simulations')
-shutil.copy('refGRF.mot', '..\\..\\Simulations')
-shutil.copy('refGRF.xml', '..\\..\\Simulations')
-
-# %% Create double strength & velocity models for simulations
-
-#Navigate to directory
-os.chdir('..\\..\\Simulations')
-
-#2D model
-
-#Load model
-strengthModel2D = osim.Model('gaitModel2D.osim')
-
-#Loop through the muscles and double isometric force
-for mm in range(strengthModel2D.getMuscles().getSize()):
-    #Get the current muscle
-    currMusc = strengthModel2D.getMuscles().get(mm)
-    #Get current max isometric force
-    currForce = currMusc.getMaxIsometricForce()
-    #Set new force in muscle
-    currMusc.set_max_isometric_force(currForce*2)
-    #Get current max contraction velocity
-    currVel = currMusc.getMaxContractionVelocity()
-    #Set new max contraction velocity
-    currMusc.set_max_contraction_velocity(currVel*2)
-
-#Print new model to file
-strengthModel2D.printToXML('gaitModel2D_doubleStrengthVel.osim')
-
-#Complex 2D model
-
-#Load model
-strengthModel2D_complex = osim.Model('gaitModel2D_complex.osim')
-
-#Loop through the muscles and double isometric force
-for mm in range(strengthModel2D_complex.getMuscles().getSize()):
-    #Get the current muscle
-    currMusc = strengthModel2D_complex.getMuscles().get(mm)
-    #Get current max isometric force
-    currForce = currMusc.getMaxIsometricForce()
-    #Set new force in muscle
-    currMusc.set_max_isometric_force(currForce*2)
-    #Get current max contraction velocity
-    currVel = currMusc.getMaxContractionVelocity()
-    #Set new max contraction velocity
-    currMusc.set_max_contraction_velocity(currVel*2)
-
-#Print new model to file
-strengthModel2D_complex.printToXML('gaitModel2D_complex_doubleStrengthVel.osim')
-
-#3D model
-
-#Load model
-strengthModel3D = osim.Model('gaitModel3D.osim')
-
-#Loop through the muscles and double isometric force
-for mm in range(strengthModel3D.getMuscles().getSize()):
-    #Get the current muscle
-    currMusc = strengthModel3D.getMuscles().get(mm)
-    #Get current max isometric force
-    currForce = currMusc.getMaxIsometricForce()
-    #Set new force in muscle
-    currMusc.set_max_isometric_force(currForce*2)
-    #Get current max contraction velocity
-    currVel = currMusc.getMaxContractionVelocity()
-    #Set new max contraction velocity
-    currMusc.set_max_contraction_velocity(currVel*2)
-
-#Print new model to file
-strengthModel3D.printToXML('gaitModel3D_doubleStrengthVel.osim')
+os.chdir('..\\..\\ExpData\\Data')
+shutil.copy('refGRF_2D.mot', '..\\..\\Simulations\\trackingSims')
+shutil.copy('refGRF_2D.xml', '..\\..\\Simulations\\trackingSims')
+shutil.copy('refGRF.mot', '..\\..\\Simulations\\trackingSims')
+shutil.copy('refGRF.xml', '..\\..\\Simulations\\trackingSims')
 
 # %% Finish up
 print('----- Processing of experimental data complete -----')

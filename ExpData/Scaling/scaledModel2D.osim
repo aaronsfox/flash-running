@@ -1086,11 +1086,11 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.94999999999999996</static_friction>
+					<static_friction>0.80000000000000004</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.29999999999999999</dynamic_friction>
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.29999999999999999</viscous_friction>
+					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
 					<transition_velocity>0.001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
@@ -1098,9 +1098,9 @@
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
 					<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
 				</SmoothSphereHalfSpaceForce>
-				<SmoothSphereHalfSpaceForce name="contactMH1_r">
+				<SmoothSphereHalfSpaceForce name="contactMidfoot_r">
 					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
-					<socket_sphere>/contactgeometryset/mh1_r</socket_sphere>
+					<socket_sphere>/contactgeometryset/midfoot_r</socket_sphere>
 					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
 					<socket_half_space>/contactgeometryset/floor</socket_half_space>
 					<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
@@ -1108,21 +1108,21 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.94999999999999996</static_friction>
+					<static_friction>0.80000000000000004</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.29999999999999999</dynamic_friction>
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.29999999999999999</viscous_friction>
+					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.001</transition_velocity>
+					<transition_velocity>0.20000000000000001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
 					<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
 				</SmoothSphereHalfSpaceForce>
-				<SmoothSphereHalfSpaceForce name="contactMH3_r">
+				<SmoothSphereHalfSpaceForce name="contactToe_r">
 					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
-					<socket_sphere>/contactgeometryset/mh3_r</socket_sphere>
+					<socket_sphere>/contactgeometryset/toe_r</socket_sphere>
 					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
 					<socket_half_space>/contactgeometryset/floor</socket_half_space>
 					<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
@@ -1130,79 +1130,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.94999999999999996</static_friction>
+					<static_friction>0.80000000000000004</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.29999999999999999</dynamic_friction>
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.29999999999999999</viscous_friction>
+					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.001</transition_velocity>
-					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
-					<hertz_smoothing>300</hertz_smoothing>
-					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
-					<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
-				</SmoothSphereHalfSpaceForce>
-				<SmoothSphereHalfSpaceForce name="contactMH5_r">
-					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
-					<socket_sphere>/contactgeometryset/mh5_r</socket_sphere>
-					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
-					<socket_half_space>/contactgeometryset/floor</socket_half_space>
-					<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
-					<stiffness>3067776</stiffness>
-					<!--The dissipation coefficient, default is 0 (s/m).-->
-					<dissipation>2</dissipation>
-					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.94999999999999996</static_friction>
-					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.29999999999999999</dynamic_friction>
-					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.29999999999999999</viscous_friction>
-					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.001</transition_velocity>
-					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
-					<hertz_smoothing>300</hertz_smoothing>
-					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
-					<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
-				</SmoothSphereHalfSpaceForce>
-				<SmoothSphereHalfSpaceForce name="contactToe1_r">
-					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
-					<socket_sphere>/contactgeometryset/toe1_r</socket_sphere>
-					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
-					<socket_half_space>/contactgeometryset/floor</socket_half_space>
-					<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
-					<stiffness>3067776</stiffness>
-					<!--The dissipation coefficient, default is 0 (s/m).-->
-					<dissipation>2</dissipation>
-					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.94999999999999996</static_friction>
-					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.29999999999999999</dynamic_friction>
-					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.29999999999999999</viscous_friction>
-					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.001</transition_velocity>
-					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
-					<hertz_smoothing>300</hertz_smoothing>
-					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
-					<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
-				</SmoothSphereHalfSpaceForce>
-				<SmoothSphereHalfSpaceForce name="contactToe2_r">
-					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
-					<socket_sphere>/contactgeometryset/toe2_r</socket_sphere>
-					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
-					<socket_half_space>/contactgeometryset/floor</socket_half_space>
-					<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
-					<stiffness>3067776</stiffness>
-					<!--The dissipation coefficient, default is 0 (s/m).-->
-					<dissipation>2</dissipation>
-					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.94999999999999996</static_friction>
-					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.29999999999999999</dynamic_friction>
-					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.29999999999999999</viscous_friction>
-					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.001</transition_velocity>
+					<transition_velocity>0.20000000000000001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -1218,21 +1152,21 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.94999999999999996</static_friction>
+					<static_friction>0.80000000000000004</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.29999999999999999</dynamic_friction>
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.29999999999999999</viscous_friction>
+					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.001</transition_velocity>
+					<transition_velocity>0.20000000000000001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
 					<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
 				</SmoothSphereHalfSpaceForce>
-				<SmoothSphereHalfSpaceForce name="contactMH1_l">
+				<SmoothSphereHalfSpaceForce name="contactMidfoot_l">
 					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
-					<socket_sphere>/contactgeometryset/mh1_l</socket_sphere>
+					<socket_sphere>/contactgeometryset/midfoot_l</socket_sphere>
 					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
 					<socket_half_space>/contactgeometryset/floor</socket_half_space>
 					<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
@@ -1240,21 +1174,21 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.94999999999999996</static_friction>
+					<static_friction>0.80000000000000004</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.29999999999999999</dynamic_friction>
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.29999999999999999</viscous_friction>
+					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.001</transition_velocity>
+					<transition_velocity>0.20000000000000001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
 					<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
 				</SmoothSphereHalfSpaceForce>
-				<SmoothSphereHalfSpaceForce name="contactMH3_l">
+				<SmoothSphereHalfSpaceForce name="contactToe_l">
 					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
-					<socket_sphere>/contactgeometryset/mh3_l</socket_sphere>
+					<socket_sphere>/contactgeometryset/toe_l</socket_sphere>
 					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
 					<socket_half_space>/contactgeometryset/floor</socket_half_space>
 					<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
@@ -1262,79 +1196,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.94999999999999996</static_friction>
+					<static_friction>0.80000000000000004</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.29999999999999999</dynamic_friction>
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.29999999999999999</viscous_friction>
+					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.001</transition_velocity>
-					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
-					<hertz_smoothing>300</hertz_smoothing>
-					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
-					<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
-				</SmoothSphereHalfSpaceForce>
-				<SmoothSphereHalfSpaceForce name="contactMH5_l">
-					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
-					<socket_sphere>/contactgeometryset/mh5_l</socket_sphere>
-					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
-					<socket_half_space>/contactgeometryset/floor</socket_half_space>
-					<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
-					<stiffness>3067776</stiffness>
-					<!--The dissipation coefficient, default is 0 (s/m).-->
-					<dissipation>2</dissipation>
-					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.94999999999999996</static_friction>
-					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.29999999999999999</dynamic_friction>
-					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.29999999999999999</viscous_friction>
-					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.001</transition_velocity>
-					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
-					<hertz_smoothing>300</hertz_smoothing>
-					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
-					<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
-				</SmoothSphereHalfSpaceForce>
-				<SmoothSphereHalfSpaceForce name="contactToe1_l">
-					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
-					<socket_sphere>/contactgeometryset/toe1_l</socket_sphere>
-					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
-					<socket_half_space>/contactgeometryset/floor</socket_half_space>
-					<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
-					<stiffness>3067776</stiffness>
-					<!--The dissipation coefficient, default is 0 (s/m).-->
-					<dissipation>2</dissipation>
-					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.94999999999999996</static_friction>
-					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.29999999999999999</dynamic_friction>
-					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.29999999999999999</viscous_friction>
-					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.001</transition_velocity>
-					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
-					<hertz_smoothing>300</hertz_smoothing>
-					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
-					<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
-				</SmoothSphereHalfSpaceForce>
-				<SmoothSphereHalfSpaceForce name="contactToe2_l">
-					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
-					<socket_sphere>/contactgeometryset/toe2_l</socket_sphere>
-					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
-					<socket_half_space>/contactgeometryset/floor</socket_half_space>
-					<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
-					<stiffness>3067776</stiffness>
-					<!--The dissipation coefficient, default is 0 (s/m).-->
-					<dissipation>2</dissipation>
-					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.94999999999999996</static_friction>
-					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.29999999999999999</dynamic_friction>
-					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.29999999999999999</viscous_friction>
-					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.001</transition_velocity>
+					<transition_velocity>0.20000000000000001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -3326,97 +3194,49 @@
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_r</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.031307527581931796 0.010435842527310599 0</location>
+					<location>0.031307527581931796 0.010500000000000001 0</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.040000000000000001</radius>
+					<radius>0.035000000000000003</radius>
 				</ContactSphere>
-				<ContactSphere name="mh1_r">
+				<ContactSphere name="midfoot_r">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_r</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.17000000000000001 -0.0080999999999999996 -0.023</location>
+					<location>0.13 0.0050000000000000001 0</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.02</radius>
+					<radius>0.025000000000000001</radius>
 				</ContactSphere>
-				<ContactSphere name="mh3_r">
+				<ContactSphere name="toe_r">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_r</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.155 -0.0080999999999999996 0.011599999999999999</location>
+					<location>0.20999999999999999 0.0050000000000000001 0</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.02</radius>
-				</ContactSphere>
-				<ContactSphere name="mh5_r">
-					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
-					<socket_frame>/bodyset/calcn_r</socket_frame>
-					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.13500000000000001 -0.0080999999999999996 0.036999999999999998</location>
-					<!--Radius of the sphere (default: 0).-->
-					<radius>0.02</radius>
-				</ContactSphere>
-				<ContactSphere name="toe1_r">
-					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
-					<socket_frame>/bodyset/toes_r</socket_frame>
-					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.0562 -0.010200000000000001 -0.018100000000000002</location>
-					<!--Radius of the sphere (default: 0).-->
-					<radius>0.02</radius>
-				</ContactSphere>
-				<ContactSphere name="toe2_r">
-					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
-					<socket_frame>/bodyset/toes_r</socket_frame>
-					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.0441 -0.0060000000000000001 0.024199999999999999</location>
-					<!--Radius of the sphere (default: 0).-->
-					<radius>0.02</radius>
+					<radius>0.025000000000000001</radius>
 				</ContactSphere>
 				<ContactSphere name="heel_l">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_l</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.031307527581931796 0.010435842527310599 0</location>
+					<location>0.031307527581931796 0.010500000000000001 0</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.040000000000000001</radius>
+					<radius>0.035000000000000003</radius>
 				</ContactSphere>
-				<ContactSphere name="mh1_l">
+				<ContactSphere name="midfoot_l">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_l</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.17000000000000001 -0.0080999999999999996 0.023</location>
+					<location>0.13 0.0050000000000000001 0</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.02</radius>
+					<radius>0.025000000000000001</radius>
 				</ContactSphere>
-				<ContactSphere name="mh3_l">
+				<ContactSphere name="toe_l">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_l</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.155 -0.0080999999999999996 -0.011599999999999999</location>
+					<location>0.20999999999999999 0.0050000000000000001 0</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.02</radius>
-				</ContactSphere>
-				<ContactSphere name="mh5_l">
-					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
-					<socket_frame>/bodyset/calcn_l</socket_frame>
-					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.13500000000000001 -0.0080999999999999996 -0.036999999999999998</location>
-					<!--Radius of the sphere (default: 0).-->
-					<radius>0.02</radius>
-				</ContactSphere>
-				<ContactSphere name="toe1_l">
-					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
-					<socket_frame>/bodyset/toes_l</socket_frame>
-					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.0562 -0.010200000000000001 0.018100000000000002</location>
-					<!--Radius of the sphere (default: 0).-->
-					<radius>0.02</radius>
-				</ContactSphere>
-				<ContactSphere name="toe2_l">
-					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
-					<socket_frame>/bodyset/toes_l</socket_frame>
-					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.0441 -0.0060000000000000001 -0.024199999999999999</location>
-					<!--Radius of the sphere (default: 0).-->
-					<radius>0.02</radius>
+					<radius>0.025000000000000001</radius>
 				</ContactSphere>
 			</objects>
 		</ContactGeometrySet>
