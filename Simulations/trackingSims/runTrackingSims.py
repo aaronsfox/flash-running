@@ -27,6 +27,7 @@ Created on Thu Mar  4 15:23:54 2021
 import opensim as osim
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
 # %% Define functions
 
@@ -96,6 +97,22 @@ runMusclePrediction = False
 #Here we provide an option to compare and visualise the results of the function
 #Defaults to true for loading results and comparing visually
 compareResults = True
+
+#Set matplotlib parameters
+from matplotlib import rcParams
+# rcParams['font.family'] = 'sans-serif'
+rcParams['font.sans-serif'] = 'Arial'
+rcParams['font.weight'] = 'bold'
+rcParams['axes.labelsize'] = 12
+rcParams['axes.titlesize'] = 16
+rcParams['axes.linewidth'] = 1.5
+rcParams['axes.labelweight'] = 'bold'
+rcParams['legend.fontsize'] = 10
+rcParams['xtick.major.width'] = 1.5
+rcParams['ytick.major.width'] = 1.5
+rcParams['legend.framealpha'] = 0.0
+rcParams['savefig.dpi'] = 300
+rcParams['savefig.format'] = 'pdf'
 
 # %% 2D basic tracking sim of experimental data (torque driven)
 
@@ -988,9 +1005,92 @@ if runMusclePrediction:
                                                          forceNames_l)
     osim.STOFileAdapter.write(externalLoads,'predictedGRF_matchedSpeed_muscleDriven_2D.mot')
 
-# %% TODO:
+# %% Compare simulations
+
+# This section loads in the simulation data and compares kinematics, muscle function
+# (where appropriate), and the GRF data
+
+#Check whether to compare
+# if compareResults:
     
-    #Create option to run sims or just load results
-    #Create a visual to compare sims
+#Load in experimental data
+df_expKinematics = readSTO('refQ_2D.sto')
+df_expGRF = readSTO('refGRF_2D.mot')
+
+#Load in torque driven tracking solution
+df_torqueTracking = readSTO('sprintTracking_torqueDriven_solution.sto')
+df_torqueTrackingGRF = readSTO('trackedGRF_torqueDriven_2D.mot')
+
+#Load in muscle driven tracking solution
+df_muscleTracking = readSTO('sprintTracking_muscleDriven_solution.sto')
+df_muscleTrackingGRF = readSTO('trackedGRF_muscleDriven_2D.mot')
+
+#Load in muscle driven predictive solution
+df_musclePrediction = readSTO('sprintPrediction_matchedSpeed_muscleDriven_solution.sto')
+df_musclePredictionGRF = readSTO('predictedGRF_matchedSpeed_muscleDriven_2D.mot')
+
+
+
+#Visualisations...
+
+### TODO: set a better colour palette...
+
+#Set the dictionary colour palette
+colourDict = {'expData': '#000000',
+              'torqueTracking': '#4885ed',
+              'muscleTracking': '#db3236',
+              'musclePrediction': '#f4c20d'}
+
+#Get the initial and final time from the experimental kinematics
+expInitialTime = osim.Storage('refQ_2D.sto').getFirstTime()
+expFinalTime = osim.Storage('refQ_2D.sto').getLastTime()
+
+#GRF...
+
+#Set figure and subplots
+fig, ax = plt.subplots(figsize=(6, 3), nrows = 1, ncols = 2)
+
+#Experimental data
+#Extract the relevant section of data
+vGRF = df_expGRF.loc[(df_expGRF['time'] >= expInitialTime) &
+                     (df_expGRF['time'] <= expFinalTime),
+                     ['ground_force_r_vy']].to_numpy().flatten()
+apGRF = df_expGRF.loc[(df_expGRF['time'] >= expInitialTime) &
+                      (df_expGRF['time'] <= expFinalTime),
+                      ['ground_force_r_vx']].to_numpy().flatten()
+timeVals = df_expGRF.loc[(df_expGRF['time'] >= expInitialTime) &
+                         (df_expGRF['time'] <= expFinalTime),
+                         ['time']].to_numpy().flatten()
+#Normalise the data to 101-points
+newTime = np.linspace(timeVals[0],timeVals[-1],101).flatten()
+vGRF_norm = np.interp(newTime,timeVals,vGRF)
+apGRF_norm = np.interp(newTime,timeVals,apGRF)
+#Plot the data
+ax[0].plot(np.linspace(0,100,101), vGRF_norm,
+           linewidth = 2, color = colourDict['expData'])
+ax[1].plot(np.linspace(0,100,101), apGRF_norm,
+           linewidth = 2, color = colourDict['expData'])
+
+#Torque tracking data (all data is relevant)
+vGRF = df_torqueTrackingGRF['ground_force_r_vy'].to_numpy().flatten()
+apGRF = df_torqueTrackingGRF['ground_force_r_vx'].to_numpy().flatten()
+timeVals = df_torqueTrackingGRF['time'].to_numpy().flatten()
+#Normalise the data to 101-points
+newTime = np.linspace(timeVals[0],timeVals[-1],101).flatten()
+vGRF_norm = np.interp(newTime,timeVals,vGRF)
+apGRF_norm = np.interp(newTime,timeVals,apGRF)
+#Plot the data
+ax[0].plot(np.linspace(0,100,101), vGRF_norm,
+           linewidth = 2, color = colourDict['torqueTracking'])
+ax[1].plot(np.linspace(0,100,101), apGRF_norm,
+           linewidth = 2, color = colourDict['torqueTracking'])
+
+##### normalised data offset despite times matching???
+
+
+
+
+###
+
 
 

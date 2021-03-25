@@ -7140,3 +7140,12 @@
 [2021-03-17 12:52:13.071] [info] MocoCasADiSolver succeeded!
 [2021-03-17 12:52:13.071] [info] ========================================================================
 [2021-03-17 13:24:00.711] [info] Exiting visualization.
+[2021-03-17 16:34:37.078] [info] Storage: read data file = refQ_2D.sto (nr=70 nc=11)
+[2021-03-17 16:35:35.699] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2021-03-17 16:37:22.405] [error] IO.OpenInputFile(const string&,openmode mode): failed to open sprintPrediction_muscleDriven_solution.sto.
+[2021-03-17 16:38:36.600] [error] IO.OpenInputFile(const string&,openmode mode): failed to open predictedGRF_muscleDriven_2D.mot.
+[2021-03-17 20:23:00.754] [info] Storage: read data file = refQ_2D.sto (nr=70 nc=11)
+[2021-03-17 20:23:00.829] [info] Storage: read data file = refGRF_2D.mot (nr=1509 nc=19)
+[2021-03-17 20:32:05.297] [info] Storage: read data file = refQ_2D.sto (nr=70 nc=11)
+[2021-03-17 20:32:28.367] [info] Storage: read data file = refQ_2D.sto (nr=70 nc=11)
+[2021-03-17 20:32:33.963] [info] Storage: read data file = refQ_2D.sto (nr=70 nc=11)
