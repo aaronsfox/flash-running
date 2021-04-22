@@ -4,7 +4,7 @@ nColumns=11
 nRows=70
 DataType=double
 version=3
-OpenSimVersion=4.2
+OpenSimVersion=4.2-2021-03-12-fcedec9
 endheader
 time	/jointset/ground_pelvis/pelvis_tilt/value	/jointset/ground_pelvis/pelvis_tx/value	/jointset/ground_pelvis/pelvis_ty/value	/jointset/hip_r/hip_flexion_r/value	/jointset/knee_r/knee_angle_r/value	/jointset/ankle_r/ankle_angle_r/value	/jointset/hip_l/hip_flexion_l/value	/jointset/knee_l/knee_angle_l/value	/jointset/ankle_l/ankle_angle_l/value	/jointset/back/lumbar_extension/value	/jointset/ground_pelvis/pelvis_tilt/speed	/jointset/ground_pelvis/pelvis_tx/speed	/jointset/ground_pelvis/pelvis_ty/speed	/jointset/hip_l/hip_flexion_l/speed	/jointset/hip_r/hip_flexion_r/speed	/jointset/knee_l/knee_angle_l/speed	/jointset/knee_r/knee_angle_r/speed	/jointset/ankle_l/ankle_angle_l/speed	/jointset/ankle_r/ankle_angle_r/speed	/jointset/back/lumbar_extension/speed
 0.868	-0.08540594	1.06146646	0.97157888	0.59794232	-0.53519824	-0.05149426	-0.26959814	-1.60852122	-0.17552727	-0.18006245	1.468789725805232	6.279738275488161	-0.5665155380486759	4.697287875199298	-4.270953048153133	-13.90165348496762	-8.250051078465956	5.419167579493386	14.77562190773653	-2.79081376183135

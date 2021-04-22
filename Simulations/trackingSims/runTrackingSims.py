@@ -28,6 +28,7 @@ import opensim as osim
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from scipy.signal import butter, lfilter
 
 # %% Define functions
 
@@ -753,6 +754,9 @@ if runMusclePrediction:
     effortWeight = 0.1
     speedWeight = 1
     symmetryWeight = 1
+    #Additional low tracking weights for use
+    motionTrackingWeight = 1e-3
+    grfTrackingWeight = 1e-3
     
     #Model parameters
     complexModel = False
@@ -832,7 +836,8 @@ if runMusclePrediction:
      
     #Construct the study object and set basic parameters
     study = osim.MocoStudy()
-    study.setName('sprintPrediction_matchedSpeed_muscleDriven')
+    # study.setName('sprintPrediction_matchedSpeed_muscleDriven')
+    study.setName('sprintPredictionLowTracking_matchedSpeed_muscleDriven')
     
     #Update problem
     problem = study.updProblem()
@@ -840,7 +845,7 @@ if runMusclePrediction:
     #Set model
     studyModel = studyModelProcessor.process()
     studyModel.initSystem()
-    problem.setModelCopy(studyModel)
+    problem.setModelAsCopy(studyModel)
     
     #Set the speed goal
     #Get the original speed
@@ -922,6 +927,69 @@ if runMusclePrediction:
     #Add symmetry goal
     symmetryGoal.setWeight(symmetryWeight)
     
+    #Set low weight tracking goals
+    
+    #Add contact tracking goal
+    #Set force names
+    if complexModel:
+        forceNamesRightFoot = ['forceset/contactHeel_r',
+                               'forceset/contactMH1_r',
+                               'forceset/contactMH3_r',
+                               'forceset/contactMH5_r',
+                               'forceset/contactHallux_r',
+                               'forceset/contactOtherToes_r']
+        forceNamesLeftFoot = ['forceset/contactHeel_l',
+                                'forceset/contactMH1_l',
+                                'forceset/contactMH3_l',
+                                'forceset/contactMH5_l',
+                                'forceset/contactHallux_l',
+                                'forceset/contactOtherToes_l']
+    else:
+        forceNamesRightFoot = ['forceset/contactHeel_r',
+                               'forceset/contactMidfoot_r',
+                               'forceset/contactToe_r']
+        forceNamesLeftFoot = ['forceset/contactHeel_l',
+                                'forceset/contactMidfoot_l',
+                                'forceset/contactToe_l']
+    
+    #Create contact tracking goal
+    contactGoal = osim.MocoContactTrackingGoal('contactGoal', grfTrackingWeight)
+    #Set external loads
+    contactGoal.setExternalLoadsFile('refGRF_2D.xml')
+    #Set force name groups
+    forceNames_r = osim.StdVectorString()
+    forceNames_l = osim.StdVectorString()
+    for ff in range(len(forceNamesRightFoot)):
+        forceNames_r.append(forceNamesRightFoot[ff])
+        forceNames_l.append(forceNamesLeftFoot[ff])
+    #Create and add tracking groups
+    trackRightGRF = osim.MocoContactTrackingGoalGroup(forceNames_r, 'RightGRF')
+    trackRightGRF.append_alternative_frame_paths('/bodyset/toes_r');
+    contactGoal.addContactGroup(trackRightGRF)
+    trackLeftGRF = osim.MocoContactTrackingGoalGroup(forceNames_l, 'LeftGRF')
+    trackLeftGRF.append_alternative_frame_paths('/bodyset/toes_l')
+    contactGoal.addContactGroup(trackLeftGRF)
+    #Set parameters
+    contactGoal.setProjection('plane')
+    contactGoal.setProjectionVector(osim.Vec3(0, 0, 1))
+    #Add contact tracking goal
+    problem.addGoal(contactGoal)
+    
+    # #Create kinematic tracking goal
+    # kinematicGoal = osim.MocoStateTrackingGoal('kinematicTracking', motionTrackingWeight)
+    # #Set kinematic data and parameters
+    # tableProcessor = osim.TableProcessor('sprintTracking_torqueDriven_solution.sto')
+    # tableProcessor.append(osim.TabOpUseAbsoluteStateNames())
+    # kinematicGoal.setReference(tableProcessor)
+    # #Set unused state references to be allowed in case of file errors
+    # kinematicGoal.setAllowUnusedReferences(True)
+    # #Set pattern to track kinematics
+    # kinematicGoal.setPattern('/jointset/.*/value')
+    # #Add kineamtic tracking goal
+    # problem.addGoal(kinematicGoal)
+    
+    #### TODO: state goal doesn't work as table not right (no inDegrees header)
+    
     #Add state bounds
     #Set the initial values for the lumbar and pelvis coordinates that
     #reflect 'normal' running motions - bounds based off experimental data
@@ -967,7 +1035,8 @@ if runMusclePrediction:
     #Create a full gait cycle trajectory from the periodic solution.
     addPatterns = [".*pelvis_tx/value"]
     fullTraj = osim.createPeriodicTrajectory(solution, addPatterns)
-    fullTraj.write('sprintPrediction_matchedSpeed_muscleDriven_fullTrajectory.sto')
+    # fullTraj.write('sprintPrediction_matchedSpeed_muscleDriven_fullTrajectory.sto')
+    fullTraj.write('sprintPredictionLowTracking_matchedSpeed_muscleDriven_fullTrajectory.sto')
     
     #Compute ground reaction forces generated by contact sphere from the 
     #full gait cycle trajectory
@@ -1000,10 +1069,11 @@ if runMusclePrediction:
         forceNames_l.append(forceNamesLeftFoot[ff])
     #Compute external loads
     externalLoads = osim.createExternalLoadsTableForGait(studyModel,
-                                                         fullTraj,
+                                                         solution,
                                                          forceNames_r,
                                                          forceNames_l)
-    osim.STOFileAdapter.write(externalLoads,'predictedGRF_matchedSpeed_muscleDriven_2D.mot')
+    # osim.STOFileAdapter.write(externalLoads,'predictedGRF_matchedSpeed_muscleDriven_2D.mot')
+    osim.STOFileAdapter.write(externalLoads,'predictedLowTrackingGRF_matchedSpeed_muscleDriven_2D.mot')
 
 # %% Compare simulations
 
@@ -1066,10 +1136,26 @@ newTime = np.linspace(timeVals[0],timeVals[-1],101).flatten()
 vGRF_norm = np.interp(newTime,timeVals,vGRF)
 apGRF_norm = np.interp(newTime,timeVals,apGRF)
 #Plot the data
-ax[0].plot(np.linspace(0,100,101), vGRF_norm,
-           linewidth = 2, color = colourDict['expData'])
-ax[1].plot(np.linspace(0,100,101), apGRF_norm,
-           linewidth = 2, color = colourDict['expData'])
+# ax[0].plot(np.linspace(0,100,101), vGRF_norm,
+#            linewidth = 2, color = colourDict['expData'])
+# ax[1].plot(np.linspace(0,100,101), apGRF_norm,
+#            linewidth = 2, color = colourDict['expData'])
+ax[0].plot(timeVals, vGRF, label = 'Exp. Data',
+            linewidth = 2, color = colourDict['expData'])
+ax[1].plot(timeVals, apGRF, label = 'Exp. Data',
+            linewidth = 2, color = colourDict['expData'])
+
+# #Identify the GRF section to plot based on exp. data
+# #(i.e. contact phase)
+# #Simple way to find the first zero in the exp. data
+# startTime = timeVals[0]
+# endTime = timeVals[np.where(vGRF == 0)[0][0]]
+
+#Identify the GRF section to plot based on exp. data
+#(i.e. half gait cycle)
+#Simple way to find the first zero in the exp. data
+startTime = timeVals[0]
+endTime = timeVals[-1]
 
 #Torque tracking data (all data is relevant)
 vGRF = df_torqueTrackingGRF['ground_force_r_vy'].to_numpy().flatten()
@@ -1080,12 +1166,81 @@ newTime = np.linspace(timeVals[0],timeVals[-1],101).flatten()
 vGRF_norm = np.interp(newTime,timeVals,vGRF)
 apGRF_norm = np.interp(newTime,timeVals,apGRF)
 #Plot the data
-ax[0].plot(np.linspace(0,100,101), vGRF_norm,
+# ax[0].plot(np.linspace(0,100,101), vGRF_norm,
+#            linewidth = 2, color = colourDict['torqueTracking'])
+# ax[1].plot(np.linspace(0,100,101), apGRF_norm,
+#            linewidth = 2, color = colourDict['torqueTracking'])
+ax[0].plot(timeVals, vGRF, label = 'Torque Driven Tracking',
            linewidth = 2, color = colourDict['torqueTracking'])
-ax[1].plot(np.linspace(0,100,101), apGRF_norm,
+ax[1].plot(timeVals, apGRF, label = 'Torque Driven Tracking',
            linewidth = 2, color = colourDict['torqueTracking'])
 
+#Muscle tracking data (all data is relevant)
+vGRF = df_muscleTrackingGRF['ground_force_r_vy'].to_numpy().flatten()
+apGRF = df_muscleTrackingGRF['ground_force_r_vx'].to_numpy().flatten()
+timeVals = df_muscleTrackingGRF['time'].to_numpy().flatten()
+#Normalise the data to 101-points
+newTime = np.linspace(timeVals[0],timeVals[-1],101).flatten()
+vGRF_norm = np.interp(newTime,timeVals,vGRF)
+apGRF_norm = np.interp(newTime,timeVals,apGRF)
+#Plot the data
+# ax[0].plot(np.linspace(0,100,101), vGRF_norm,
+#            linewidth = 2, color = colourDict['muscleTracking'])
+# ax[1].plot(np.linspace(0,100,101), apGRF_norm,
+#            linewidth = 2, color = colourDict['muscleTracking'])
+ax[0].plot(timeVals, vGRF, label = 'Muscle Driven Tracking',
+           linewidth = 2, color = colourDict['muscleTracking'])
+ax[1].plot(timeVals, apGRF, label = 'Muscle Driven Tracking',
+           linewidth = 2, color = colourDict['muscleTracking'])
+
+#Muscle prediction data (all data is relevant)
+
+#### TODO: Predictive data needs smoothing???
+
+vGRF = df_musclePredictionGRF['ground_force_r_vy'].to_numpy().flatten()
+apGRF = df_musclePredictionGRF['ground_force_r_vx'].to_numpy().flatten()
+timeVals = df_muscleTrackingGRF['time'].to_numpy().flatten()
+
+#Smooth data with 50Hz low-pass
+#Define filter for forces data (50N Low-pass 4th Order Butterworth)
+fs = 1 / np.mean(np.diff(timeVals))
+nyq = 0.5 * fs
+normCutoff = 50 / nyq
+b, a = butter(4, normCutoff, btype = 'low', analog = False)
+#Apply lowpass filter to force data (50N cut-off)
+vGRF_f = lfilter(b,a,vGRF)
+apGRF_f = lfilter(b,a,apGRF)
+
+#Normalise the data to 101-points
+newTime = np.linspace(timeVals[0],timeVals[-1],101).flatten()
+vGRF_norm = np.interp(newTime,timeVals,vGRF_f)
+apGRF_norm = np.interp(newTime,timeVals,apGRF_f)
+#Plot the data
+# ax[0].plot(np.linspace(0,100,101), vGRF_norm,
+#            linewidth = 2, color = colourDict['musclePrediction'])
+# ax[1].plot(np.linspace(0,100,101), apGRF_norm,
+#            linewidth = 2, color = colourDict['musclePrediction'])
+ax[0].plot(timeVals, vGRF_f, label = 'Muscle Driven Prediction',
+           linewidth = 2, color = colourDict['musclePrediction'])
+ax[1].plot(timeVals, apGRF_f, label = 'Muscle Driven Prediction',
+           linewidth = 2, color = colourDict['musclePrediction'])
+
+# #Add legend outside of second axes
+# ax[1].legend(bbox_to_anchor = (1.85,0.4))
+
+#Set each axes to time limits
+ax[0].set_xlim([startTime,endTime])
+ax[1].set_xlim([startTime,endTime])
+
+#Tight layout
+plt.tight_layout()
+
+##### TODO: add labels etc.
+
+##### prediction slightly different --- could use very low tracking weight for predictions?
+
 ##### normalised data offset despite times matching???
+##### Time scale on GRF data wrong???
 
 
 

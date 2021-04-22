@@ -40,7 +40,7 @@
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
 							<socket_frame>..</socket_frame>
 							<!--Scale factors in X, Y, Z directions respectively.-->
-							<scale_factors>0.92462441634174353 0.8478607598972373 0.92341688141945455</scale_factors>
+							<scale_factors>0.92462441634174353 0.84786075989723741 0.92341688141945455</scale_factors>
 							<!--Default appearance attributes for this Geometry-->
 							<Appearance>
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
@@ -55,7 +55,7 @@
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
 							<socket_frame>..</socket_frame>
 							<!--Scale factors in X, Y, Z directions respectively.-->
-							<scale_factors>0.92462441634174353 0.8478607598972373 0.92341688141945455</scale_factors>
+							<scale_factors>0.92462441634174353 0.84786075989723741 0.92341688141945455</scale_factors>
 							<!--Default appearance attributes for this Geometry-->
 							<Appearance>
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
@@ -70,7 +70,7 @@
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
 							<socket_frame>..</socket_frame>
 							<!--Scale factors in X, Y, Z directions respectively.-->
-							<scale_factors>0.92462441634174353 0.8478607598972373 0.92341688141945455</scale_factors>
+							<scale_factors>0.92462441634174353 0.84786075989723741 0.92341688141945455</scale_factors>
 							<!--Default appearance attributes for this Geometry-->
 							<Appearance>
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
@@ -103,7 +103,7 @@
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
 							<socket_frame>..</socket_frame>
 							<!--Scale factors in X, Y, Z directions respectively.-->
-							<scale_factors>1.1610327827206517 1.2191419303705953 1.1610327827206517</scale_factors>
+							<scale_factors>1.1610327827206517 1.219141930370595 1.1610327827206517</scale_factors>
 							<!--Default appearance attributes for this Geometry-->
 							<Appearance>
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
@@ -118,7 +118,7 @@
 					<!--The mass of the body (kg)-->
 					<mass>8.5831450467741508</mass>
 					<!--The location (Vec3) of the mass center in the body frame.-->
-					<mass_center>0 -0.20725352026375893 0</mass_center>
+					<mass_center>0 -0.20725352026375887 0</mass_center>
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
 					<inertia>0.12423951785485277 0.032567640602728307 0.13101284481781364 0 0 0</inertia>
 				</Body>
@@ -612,7 +612,7 @@
 							<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
 							<socket_parent>/bodyset/pelvis</socket_parent>
 							<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
-							<translation>-0.065370929165529112 -0.056043581594957273 -0.077105335826918919</translation>
+							<translation>-0.065370929165529112 -0.05604358159495728 -0.077105335826918919</translation>
 							<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
 							<orientation>0 0 0</orientation>
 						</PhysicalOffsetFrame>
@@ -658,7 +658,7 @@
 							<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
 							<socket_parent>/bodyset/pelvis</socket_parent>
 							<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
-							<translation>-0.065370929165529112 -0.056043581594957273 0.077105335826918919</translation>
+							<translation>-0.065370929165529112 -0.05604358159495728 0.077105335826918919</translation>
 							<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
 							<orientation>0 0 0</orientation>
 						</PhysicalOffsetFrame>
@@ -704,7 +704,7 @@
 							<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
 							<socket_parent>/bodyset/femur_l</socket_parent>
 							<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
-							<translation>-0.0052244591651163103 -0.48255922809349233 0</translation>
+							<translation>-0.0052244591651163103 -0.48255922809349222 0</translation>
 							<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
 							<orientation>0 0 0</orientation>
 						</PhysicalOffsetFrame>
@@ -1044,7 +1044,7 @@
 							<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
 							<socket_parent>/bodyset/pelvis</socket_parent>
 							<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
-							<translation>-0.093109654412571172 0.069100633887882221 0</translation>
+							<translation>-0.093109654412571172 0.069100633887882235 0</translation>
 							<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
 							<orientation>0 0 0</orientation>
 						</PhysicalOffsetFrame>
@@ -1232,7 +1232,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.11646606449550748 -0.086965032665422104 0.064122103609218148</location>
+									<location>-0.11646606449550748 -0.086965032665422118 0.064122103609218148</location>
 								</PathPoint>
 								<PathPoint name="bifemlh_r-P2">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
@@ -1274,15 +1274,15 @@
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
-					<!--Smaller value means activation can change more rapidly (units: seconds).-->
+					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
 					<activation_time_constant>0.01</activation_time_constant>
-					<!--Smaller value means activation can decrease more rapidly (units: seconds).-->
+					<!--Smaller value means activation can decrease more rapidly. Default: 0.060 seconds.-->
 					<deactivation_time_constant>0.040000000000000001</deactivation_time_constant>
-					<!--Value of activation in the default state returned by initSystem().-->
+					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
 					<active_force_width_scale>1</active_force_width_scale>
-					<!--The linear damping of the fiber. Default: 0.-->
+					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
@@ -1345,15 +1345,15 @@
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
-					<!--Smaller value means activation can change more rapidly (units: seconds).-->
+					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
 					<activation_time_constant>0.01</activation_time_constant>
-					<!--Smaller value means activation can decrease more rapidly (units: seconds).-->
+					<!--Smaller value means activation can decrease more rapidly. Default: 0.060 seconds.-->
 					<deactivation_time_constant>0.040000000000000001</deactivation_time_constant>
-					<!--Value of activation in the default state returned by initSystem().-->
+					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
 					<active_force_width_scale>1</active_force_width_scale>
-					<!--The linear damping of the fiber. Default: 0.-->
+					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
@@ -1374,13 +1374,13 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.12177307584409226 0.0073763903669838609 0.042661845686291243</location>
+									<location>-0.12177307584409226 0.0073763903669838617 0.042661845686291243</location>
 								</PathPoint>
 								<PathPoint name="glut_max_r-P2">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.12426908497015407 -0.051634750127665989 0.075073816060009985</location>
+									<location>-0.12426908497015407 -0.051634750127665996 0.075073816060009985</location>
 								</PathPoint>
 								<PathPoint name="glut_max_r-P3">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
@@ -1422,15 +1422,15 @@
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
-					<!--Smaller value means activation can change more rapidly (units: seconds).-->
+					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
 					<activation_time_constant>0.01</activation_time_constant>
-					<!--Smaller value means activation can decrease more rapidly (units: seconds).-->
+					<!--Smaller value means activation can decrease more rapidly. Default: 0.060 seconds.-->
 					<deactivation_time_constant>0.040000000000000001</deactivation_time_constant>
-					<!--Value of activation in the default state returned by initSystem().-->
+					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
 					<active_force_width_scale>1</active_force_width_scale>
-					<!--The linear damping of the fiber. Default: 0.-->
+					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
@@ -1451,13 +1451,13 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.059823220800678957 0.075205216041204906 0.026686762482922635</location>
+									<location>-0.059823220800678957 0.07520521604120492 0.026686762482922635</location>
 								</PathPoint>
 								<PathPoint name="psoas_r-P2">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.022006049619823595 -0.048328080872921488 0.070087344671252078</location>
+									<location>-0.022006049619823595 -0.048328080872921494 0.070087344671252078</location>
 								</PathPoint>
 								<ConditionalPathPoint name="psoas_r-P3">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
@@ -1509,15 +1509,15 @@
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
-					<!--Smaller value means activation can change more rapidly (units: seconds).-->
+					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
 					<activation_time_constant>0.01</activation_time_constant>
-					<!--Smaller value means activation can decrease more rapidly (units: seconds).-->
+					<!--Smaller value means activation can decrease more rapidly. Default: 0.060 seconds.-->
 					<deactivation_time_constant>0.040000000000000001</deactivation_time_constant>
-					<!--Value of activation in the default state returned by initSystem().-->
+					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
 					<active_force_width_scale>1</active_force_width_scale>
-					<!--The linear damping of the fiber. Default: 0.-->
+					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
@@ -1538,7 +1538,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.027276391559306678 -0.0263684573416588 0.089386742133792621</location>
+									<location>-0.027276391559306678 -0.026368457341658803 0.089386742133792621</location>
 								</PathPoint>
 								<ConditionalPathPoint name="rect_fem_r-P2">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
@@ -1624,15 +1624,15 @@
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
-					<!--Smaller value means activation can change more rapidly (units: seconds).-->
+					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
 					<activation_time_constant>0.01</activation_time_constant>
-					<!--Smaller value means activation can decrease more rapidly (units: seconds).-->
+					<!--Smaller value means activation can decrease more rapidly. Default: 0.060 seconds.-->
 					<deactivation_time_constant>0.040000000000000001</deactivation_time_constant>
-					<!--Value of activation in the default state returned by initSystem().-->
+					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
 					<active_force_width_scale>1</active_force_width_scale>
-					<!--The linear damping of the fiber. Default: 0.-->
+					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
@@ -1745,15 +1745,15 @@
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
-					<!--Smaller value means activation can change more rapidly (units: seconds).-->
+					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
 					<activation_time_constant>0.01</activation_time_constant>
-					<!--Smaller value means activation can decrease more rapidly (units: seconds).-->
+					<!--Smaller value means activation can decrease more rapidly. Default: 0.060 seconds.-->
 					<deactivation_time_constant>0.040000000000000001</deactivation_time_constant>
-					<!--Value of activation in the default state returned by initSystem().-->
+					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
 					<active_force_width_scale>1</active_force_width_scale>
-					<!--The linear damping of the fiber. Default: 0.-->
+					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
@@ -1820,15 +1820,15 @@
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
-					<!--Smaller value means activation can change more rapidly (units: seconds).-->
+					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
 					<activation_time_constant>0.01</activation_time_constant>
-					<!--Smaller value means activation can decrease more rapidly (units: seconds).-->
+					<!--Smaller value means activation can decrease more rapidly. Default: 0.060 seconds.-->
 					<deactivation_time_constant>0.040000000000000001</deactivation_time_constant>
-					<!--Value of activation in the default state returned by initSystem().-->
+					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
 					<active_force_width_scale>1</active_force_width_scale>
-					<!--The linear damping of the fiber. Default: 0.-->
+					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.10000000000000001</tendon_strain_at_one_norm_force>
@@ -1885,15 +1885,15 @@
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
-					<!--Smaller value means activation can change more rapidly (units: seconds).-->
+					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
 					<activation_time_constant>0.01</activation_time_constant>
-					<!--Smaller value means activation can decrease more rapidly (units: seconds).-->
+					<!--Smaller value means activation can decrease more rapidly. Default: 0.060 seconds.-->
 					<deactivation_time_constant>0.040000000000000001</deactivation_time_constant>
-					<!--Value of activation in the default state returned by initSystem().-->
+					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
 					<active_force_width_scale>1</active_force_width_scale>
-					<!--The linear damping of the fiber. Default: 0.-->
+					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.10000000000000001</tendon_strain_at_one_norm_force>
@@ -1956,15 +1956,15 @@
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
-					<!--Smaller value means activation can change more rapidly (units: seconds).-->
+					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
 					<activation_time_constant>0.01</activation_time_constant>
-					<!--Smaller value means activation can decrease more rapidly (units: seconds).-->
+					<!--Smaller value means activation can decrease more rapidly. Default: 0.060 seconds.-->
 					<deactivation_time_constant>0.040000000000000001</deactivation_time_constant>
-					<!--Value of activation in the default state returned by initSystem().-->
+					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
 					<active_force_width_scale>1</active_force_width_scale>
-					<!--The linear damping of the fiber. Default: 0.-->
+					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
@@ -1985,7 +1985,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.11646606449550748 -0.086965032665422104 -0.064122103609218148</location>
+									<location>-0.11646606449550748 -0.086965032665422118 -0.064122103609218148</location>
 								</PathPoint>
 								<PathPoint name="bifemlh_l-P2">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
@@ -2027,15 +2027,15 @@
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
-					<!--Smaller value means activation can change more rapidly (units: seconds).-->
+					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
 					<activation_time_constant>0.01</activation_time_constant>
-					<!--Smaller value means activation can decrease more rapidly (units: seconds).-->
+					<!--Smaller value means activation can decrease more rapidly. Default: 0.060 seconds.-->
 					<deactivation_time_constant>0.040000000000000001</deactivation_time_constant>
-					<!--Value of activation in the default state returned by initSystem().-->
+					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
 					<active_force_width_scale>1</active_force_width_scale>
-					<!--The linear damping of the fiber. Default: 0.-->
+					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
@@ -2056,7 +2056,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.0058051407566292821 -0.25735900740854373 -0.027167993438358427</location>
+									<location>0.0058051407566292821 -0.25735900740854367 -0.027167993438358427</location>
 								</PathPoint>
 								<PathPoint name="bifemsh_l-P2">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
@@ -2098,15 +2098,15 @@
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
-					<!--Smaller value means activation can change more rapidly (units: seconds).-->
+					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
 					<activation_time_constant>0.01</activation_time_constant>
-					<!--Smaller value means activation can decrease more rapidly (units: seconds).-->
+					<!--Smaller value means activation can decrease more rapidly. Default: 0.060 seconds.-->
 					<deactivation_time_constant>0.040000000000000001</deactivation_time_constant>
-					<!--Value of activation in the default state returned by initSystem().-->
+					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
 					<active_force_width_scale>1</active_force_width_scale>
-					<!--The linear damping of the fiber. Default: 0.-->
+					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
@@ -2127,25 +2127,25 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.12177307584409226 0.0073763903669838609 -0.042661845686291243</location>
+									<location>-0.12177307584409226 0.0073763903669838617 -0.042661845686291243</location>
 								</PathPoint>
 								<PathPoint name="glut_max_l-P2">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.12426908497015407 -0.051634750127665989 -0.075073816060009985</location>
+									<location>-0.12426908497015407 -0.051634750127665996 -0.075073816060009985</location>
 								</PathPoint>
 								<PathPoint name="glut_max_l-P3">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.052246185760254617 -0.0711975239940974 -0.029257910339690538</location>
+									<location>-0.052246185760254617 -0.071197523994097386 -0.029257910339690538</location>
 								</PathPoint>
 								<PathPoint name="glut_max_l-P4">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.018111995625572284 -0.12386433380625865 -0.048647013080038069</location>
+									<location>-0.018111995625572284 -0.12386433380625862 -0.048647013080038069</location>
 								</PathPoint>
 							</objects>
 							<groups />
@@ -2175,15 +2175,15 @@
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
-					<!--Smaller value means activation can change more rapidly (units: seconds).-->
+					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
 					<activation_time_constant>0.01</activation_time_constant>
-					<!--Smaller value means activation can decrease more rapidly (units: seconds).-->
+					<!--Smaller value means activation can decrease more rapidly. Default: 0.060 seconds.-->
 					<deactivation_time_constant>0.040000000000000001</deactivation_time_constant>
-					<!--Value of activation in the default state returned by initSystem().-->
+					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
 					<active_force_width_scale>1</active_force_width_scale>
-					<!--The linear damping of the fiber. Default: 0.-->
+					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
@@ -2204,13 +2204,13 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.059823220800678957 0.075205216041204906 -0.026686762482922635</location>
+									<location>-0.059823220800678957 0.07520521604120492 -0.026686762482922635</location>
 								</PathPoint>
 								<PathPoint name="psoas_l-P2">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.022006049619823595 -0.048328080872921488 -0.070087344671252078</location>
+									<location>-0.022006049619823595 -0.048328080872921494 -0.070087344671252078</location>
 								</PathPoint>
 								<ConditionalPathPoint name="psoas_l-P3">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
@@ -2226,13 +2226,13 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.0018576408738660546 -0.061810222315130156 -0.0044119014173644999</location>
+									<location>0.0018576408738660546 -0.061810222315130142 -0.0044119014173644999</location>
 								</PathPoint>
 								<PathPoint name="psoas_l-P5">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.021827300530278371 -0.072782438898541274 -0.012074625155424897</location>
+									<location>-0.021827300530278371 -0.07278243889854126 -0.012074625155424897</location>
 								</PathPoint>
 							</objects>
 							<groups />
@@ -2262,15 +2262,15 @@
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
-					<!--Smaller value means activation can change more rapidly (units: seconds).-->
+					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
 					<activation_time_constant>0.01</activation_time_constant>
-					<!--Smaller value means activation can decrease more rapidly (units: seconds).-->
+					<!--Smaller value means activation can decrease more rapidly. Default: 0.060 seconds.-->
 					<deactivation_time_constant>0.040000000000000001</deactivation_time_constant>
-					<!--Value of activation in the default state returned by initSystem().-->
+					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
 					<active_force_width_scale>1</active_force_width_scale>
-					<!--The linear damping of the fiber. Default: 0.-->
+					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
@@ -2291,13 +2291,13 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.027276391559306678 -0.0263684573416588 -0.089386742133792621</location>
+									<location>-0.027276391559306678 -0.026368457341658803 -0.089386742133792621</location>
 								</PathPoint>
 								<ConditionalPathPoint name="rect_fem_l-P2">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.038778321265564943 -0.49131146239275969 -0.0022059564979257438</location>
+									<location>0.038778321265564943 -0.49131146239275958 -0.0022059564979257438</location>
 									<!--Path to a Component that satisfies the Socket 'coordinate' of type Coordinate (description: The coordinate whose value determines when the path point is active according to the specified range.).-->
 									<socket_coordinate>/jointset/knee_l/knee_angle_l</socket_coordinate>
 									<!--The minimum and maximum values that the coordinate can range between, for which the PathPoint is active. Angular coordinates in radians.-->
@@ -2377,15 +2377,15 @@
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
-					<!--Smaller value means activation can change more rapidly (units: seconds).-->
+					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
 					<activation_time_constant>0.01</activation_time_constant>
-					<!--Smaller value means activation can decrease more rapidly (units: seconds).-->
+					<!--Smaller value means activation can decrease more rapidly. Default: 0.060 seconds.-->
 					<deactivation_time_constant>0.040000000000000001</deactivation_time_constant>
-					<!--Value of activation in the default state returned by initSystem().-->
+					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
 					<active_force_width_scale>1</active_force_width_scale>
-					<!--The linear damping of the fiber. Default: 0.-->
+					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
@@ -2406,19 +2406,19 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.033669777021594079 -0.2345615700249695 -0.035991842587035382</location>
+									<location>0.033669777021594079 -0.23456157002496947 -0.035991842587035382</location>
 								</PathPoint>
 								<PathPoint name="vas_int_l-P2">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.038894453490054472 -0.25406784091089901 -0.033089231684016285</location>
+									<location>0.038894453490054472 -0.25406784091089896 -0.033089231684016285</location>
 								</PathPoint>
 								<ConditionalPathPoint name="vas_int_l-P3">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.039823279716231001 -0.49131146239275969 -0.0063856513587461144</location>
+									<location>0.039823279716231001 -0.49131146239275958 -0.0063856513587461144</location>
 									<!--Path to a Component that satisfies the Socket 'coordinate' of type Coordinate (description: The coordinate whose value determines when the path point is active according to the specified range.).-->
 									<socket_coordinate>/jointset/knee_l/knee_angle_l</socket_coordinate>
 									<!--The minimum and maximum values that the coordinate can range between, for which the PathPoint is active. Angular coordinates in radians.-->
@@ -2498,15 +2498,15 @@
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
-					<!--Smaller value means activation can change more rapidly (units: seconds).-->
+					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
 					<activation_time_constant>0.01</activation_time_constant>
-					<!--Smaller value means activation can decrease more rapidly (units: seconds).-->
+					<!--Smaller value means activation can decrease more rapidly. Default: 0.060 seconds.-->
 					<deactivation_time_constant>0.040000000000000001</deactivation_time_constant>
-					<!--Value of activation in the default state returned by initSystem().-->
+					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
 					<active_force_width_scale>1</active_force_width_scale>
-					<!--The linear damping of the fiber. Default: 0.-->
+					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
@@ -2527,13 +2527,13 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.022059564979257439 -0.47899907113984219 0.02728412566284796</location>
+									<location>-0.022059564979257439 -0.47899907113984208 0.02728412566284796</location>
 								</PathPoint>
 								<ConditionalPathPoint name="med_gas_l-P2">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.034830867696749666 -0.49033639200816004 0.029954472116887992</location>
+									<location>-0.034830867696749666 -0.49033639200815998 0.029954472116887992</location>
 									<!--Path to a Component that satisfies the Socket 'coordinate' of type Coordinate (description: The coordinate whose value determines when the path point is active according to the specified range.).-->
 									<socket_coordinate>/jointset/knee_l/knee_angle_l</socket_coordinate>
 									<!--The minimum and maximum values that the coordinate can range between, for which the PathPoint is active. Angular coordinates in radians.-->
@@ -2573,15 +2573,15 @@
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
-					<!--Smaller value means activation can change more rapidly (units: seconds).-->
+					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
 					<activation_time_constant>0.01</activation_time_constant>
-					<!--Smaller value means activation can decrease more rapidly (units: seconds).-->
+					<!--Smaller value means activation can decrease more rapidly. Default: 0.060 seconds.-->
 					<deactivation_time_constant>0.040000000000000001</deactivation_time_constant>
-					<!--Value of activation in the default state returned by initSystem().-->
+					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
 					<active_force_width_scale>1</active_force_width_scale>
-					<!--The linear damping of the fiber. Default: 0.-->
+					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.10000000000000001</tendon_strain_at_one_norm_force>
@@ -2638,15 +2638,15 @@
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
-					<!--Smaller value means activation can change more rapidly (units: seconds).-->
+					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
 					<activation_time_constant>0.01</activation_time_constant>
-					<!--Smaller value means activation can decrease more rapidly (units: seconds).-->
+					<!--Smaller value means activation can decrease more rapidly. Default: 0.060 seconds.-->
 					<deactivation_time_constant>0.040000000000000001</deactivation_time_constant>
-					<!--Value of activation in the default state returned by initSystem().-->
+					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
 					<active_force_width_scale>1</active_force_width_scale>
-					<!--The linear damping of the fiber. Default: 0.-->
+					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.10000000000000001</tendon_strain_at_one_norm_force>
@@ -2709,15 +2709,15 @@
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
-					<!--Smaller value means activation can change more rapidly (units: seconds).-->
+					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
 					<activation_time_constant>0.01</activation_time_constant>
-					<!--Smaller value means activation can decrease more rapidly (units: seconds).-->
+					<!--Smaller value means activation can decrease more rapidly. Default: 0.060 seconds.-->
 					<deactivation_time_constant>0.040000000000000001</deactivation_time_constant>
-					<!--Value of activation in the default state returned by initSystem().-->
+					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
 					<active_force_width_scale>1</active_force_width_scale>
-					<!--The linear damping of the fiber. Default: 0.-->
+					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
@@ -2814,7 +2814,7 @@
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
 					<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.15418768457901685 0.03561412019973012 -0.044098298585411679</location>
+					<location>-0.15418768457901685 0.035614120199730127 -0.044098298585411679</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
@@ -2822,7 +2822,7 @@
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
 					<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.074332219303915481 0.022370323371260954 -0.00041095027522105226</location>
+					<location>-0.074332219303915481 0.022370323371260957 -0.00041095027522105226</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
@@ -3006,7 +3006,7 @@
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
 					<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.019731825955192021 -0.12790564796886336 -0.11415797667321304</location>
+					<location>0.019731825955192021 -0.12790564796886333 -0.11415797667321304</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -3014,7 +3014,7 @@
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
 					<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.091141912883877782 -0.22595250095595515 -0.10698591447824267</location>
+					<location>0.091141912883877782 -0.22595250095595509 -0.10698591447824267</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -3022,7 +3022,7 @@
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
 					<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.017193821607424713 -0.30660614082324461 -0.10489692385586959</location>
+					<location>0.017193821607424713 -0.30660614082324456 -0.10489692385586959</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -3038,7 +3038,7 @@
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
 					<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.011509155007905463 -0.47760941347201508 -0.061908085797122259</location>
+					<location>0.011509155007905463 -0.47760941347201502 -0.061908085797122259</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
@@ -3046,7 +3046,7 @@
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
 					<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.011509155007905463 -0.47160458475688133 0.063633743497812228</location>
+					<location>0.011509155007905463 -0.47160458475688122 0.063633743497812228</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>
@@ -3054,7 +3054,7 @@
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
 					<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.011509156165754162 -0.47460717783682543 0.0008628288503449809</location>
+					<location>0.011509156165754162 -0.47460717783682538 0.0008628288503449809</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>true</fixed>
 				</Marker>

@@ -336,8 +336,8 @@ leftGRF.setTorqueIdentifier('ground_torque_l_')
 forceXML.cloneAndAppend(leftGRF)
 #Set GRF datafile
 forceXML.setDataFileName('refGRF.mot')
-#Set filtering for kinematics
-forceXML.setLowpassCutoffFrequencyForLoadKinematics(12)
+# #Set filtering for kinematics
+# forceXML.setLowpassCutoffFrequencyForLoadKinematics(12)
 #Write to file
 forceXML.printToXML('refGRF.xml')
 
@@ -684,6 +684,8 @@ scaledModelMuscle2D = osim.Model('scaledModelMuscle2D.osim')
 
 # %% Adapt 3D model to create a complex 2D version
     
+### TODO: does this get used anymore???
+
 #Set a new copy of the model
 model2D = osim.Model('scaledModelMuscle.osim')
 
