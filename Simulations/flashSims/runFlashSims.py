@@ -12,6 +12,48 @@ Created on Wed Mar 17 16:30:31 2021
 
 # %% SAMPLE from original predictive sim tests
 
+import opensim as osim
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from scipy.signal import butter, lfilter
+
+# %% Define functions
+
+#readSTO
+def readSTO(fileName):
+    
+    #Read storage
+    sto = osim.Storage(fileName)
+        
+    #Get column list
+    labels = osimArrayToList(sto.getColumnLabels())
+
+    #Get time
+    time = osim.ArrayDouble()
+    sto.getTimeColumn(time)  
+    time = osimArrayToList(time)
+    
+    #Get data
+    data = []
+    for i in range(sto.getSize()):
+        temp = osimArrayToList(sto.getStateVector(i).getData())
+        temp.insert(0, time[i])
+        data.append(temp)
+
+    df = pd.DataFrame(data, columns=labels)
+    df.index = df.time
+    
+    return df
+
+#osimArrayToList
+def osimArrayToList(array):
+    temp = []
+    for i in range(array.getSize()):
+        temp.append(array.get(i))
+
+    return temp
+
 # %% 2D predictive at higher speed (muscle driven)
 
 # This section attempts to generate a predictive simulation of a half gait cycle
@@ -22,8 +64,8 @@ Created on Wed Mar 17 16:30:31 2021
 #Timing and mesh data
 # initialTime = osim.Storage('refQ_2D.sto').getFirstTime()
 # finalTime = osim.Storage('refQ_2D.sto').getLastTime()
-initialTime = osim.Storage('sprintTracking_torqueDriven_solution.sto').getFirstTime()
-finalTime = osim.Storage('sprintTracking_torqueDriven_solution.sto').getLastTime()
+initialTime = osim.Storage('..\\trackingSims\\sprintTracking_torqueDriven_solution.sto').getFirstTime()
+finalTime = osim.Storage('..\\trackingSims\\sprintTracking_torqueDriven_solution.sto').getLastTime()
 duration = finalTime - initialTime
 meshNo = 100 #set as per mesh number for half gait cycle in Falisse et al. 2019, J R Soc Interface
 meshInterval = duration / meshNo
@@ -39,22 +81,37 @@ complexModel = False
 #Muscle parameters
 passiveForces = False
 implicitTendonCompliance = True
+tendonDynamics = True
+activationDynamics = False
+contractVelScale = 10 #upscale for sprinting
+maxForceScale = 10 #upscale for sprinting 
 
-### TODO: conditional for tendons
 
 #Create the model processor for the tracking problem
 
 #Load the model and create processor
 if complexModel:
-    osimModel = osim.Model('gaitModel2D_complex_doubleStrengthVel.osim')
+    osimModel = osim.Model('..\\trackingSims\\gaitModel2D_complex.osim')
 else:
-    osimModel = osim.Model('gaitModel2D_doubleStrengthVel.osim')    
+    osimModel = osim.Model('..\\trackingSims\\gaitModel2D.osim')
+    
+#Update contractile velocity maximum to assist with sprinting sim
+for mm in range(osimModel.getMuscles().getSize()):
+    #Get the current muscle
+    currMusc = osimModel.getMuscles().get(mm)
+    #Get current max contraction velocity
+    currVel = currMusc.getMaxContractionVelocity()
+    #Set new max contraction velocity
+    currMusc.set_max_contraction_velocity(currVel*contractVelScale)
+    
+#Finalise connections
+osimModel.finalizeConnections()
+    
+#Put the model in a processor
 modelProcessor = osim.ModelProcessor(osimModel)
 
-# #Convert muscles to DeGrooteFregley variant
-# modelProcessor.append(osim.ModOpReplaceMusclesWithDeGrooteFregly2016())
-##### NOTE: don't need to do this as already done earlier
-##### Is there still the wrapping object issue with this though???
+#Scale the maximum isometric force of muscles to assist with sprinting sim
+modelProcessor.append(osim.ModOpScaleMaxIsometricForce(maxForceScale))
 
 #Disable tendon compliance (will be re-enabled for certain muscles later)
 modelProcessor.append(osim.ModOpIgnoreTendonCompliance())
@@ -69,44 +126,30 @@ if not passiveForces:
 #Modify active force width
 #This appears most important for "de-stiffening" muscles to allow appropriate movement
 modelProcessor.append(osim.ModOpScaleActiveFiberForceCurveWidthDGF(1.5))
-
-#Scale isometric forces (even more)
-#### Infinite strength vs. infinite activation level?
-modelProcessor.append(osim.ModOpScaleMaxIsometricForce(10))
     
 #Process model for additional parameters
 studyModel = modelProcessor.process()
 studyModel.initSystem()
 
 #Enable tendon compliance in the gastrocnemius and soleus
+#Check activation dynamics
 muscles = studyModel.updMuscles()
 for mm in np.arange(muscles.getSize()):
+    #Get current muscle
     currMusc = osim.DeGrooteFregly2016Muscle.safeDownCast(muscles.get(int(mm)))
+    #Switch off activation dynamics if necessary
+    if not activationDynamics:
+        currMusc.set_ignore_activation_dynamics(True)    
+    #Get muscle name
     muscName = currMusc.getName()
     #Enable tendon compliance dynamics in the plantarflexors
     if ('gastroc' in muscName) or ('soleus' in muscName):
         currMusc.set_ignore_tendon_compliance(False)
-        
-#Upscale contraction velocity for super speed
-#Also turn off activation dynamics
-for mm in range(studyModel.getMuscles().getSize()):
-    #Get the current muscle
-    currMusc = studyModel.getMuscles().get(mm)
-    #Get current max contraction velocity
-    currVel = currMusc.getMaxContractionVelocity()
-    #Set new max contraction velocity
-    currMusc.set_max_contraction_velocity(currVel*10)
-    # #Turn off activation dynamics
-    # currMusc.set_ignore_activation_dynamics(True)
-    #Turning off seems to change states - just set to zero?
-    #Can't set to zero --- set really low...
-    osim.DeGrooteFregly2016Muscle.safeDownCast(currMusc).set_activation_time_constant(1e-10)
-    osim.DeGrooteFregly2016Muscle.safeDownCast(currMusc).set_deactivation_time_constant(1e-10)
 
-#Finalise model connections
-studyModel.finalizeConnections()    
-        
-#Get the track model as a processor object
+#Finalise connections
+studyModel.finalizeConnections()
+
+#Get the model as a processor object
 studyModelProcessor = osim.ModelProcessor(studyModel)
 
 #Set model to use implicit tendon compliance if appropriate
@@ -123,7 +166,7 @@ problem = study.updProblem()
 #Set model
 studyModel = studyModelProcessor.process()
 studyModel.initSystem()
-problem.setModelCopy(studyModel)
+problem.setModelAsCopy(studyModel)
 
 #Set the speed goal
 #Tracking speed was ~6.5, so going for 7m.s here
@@ -131,10 +174,11 @@ problem.setModelCopy(studyModel)
 #9m.s was ok - really pushing to 15m.s
 
 #Get the original speed
-df_kinematics = readSTO('refQ_2D.sto')
+df_kinematics = readSTO('..\\trackingSims\\refQ_2D.sto')
 startPos = df_kinematics['/jointset/ground_pelvis/pelvis_tx/value'].to_numpy()[0]
 endPos = df_kinematics['/jointset/ground_pelvis/pelvis_tx/value'].to_numpy()[-1]
 sprintSpeed = (endPos - startPos) / (finalTime - initialTime)
+
 #Add a speed goal to go at three times as fast
 problem.addGoal(osim.MocoAverageSpeedGoal('speed'))
 speedGoal = osim.MocoAverageSpeedGoal().safeDownCast(problem.updGoal('speed'))
@@ -154,6 +198,7 @@ effort = osim.MocoControlGoal().safeDownCast(problem.updGoal('effort'))
 effort.setDivideByDisplacement(True)
 effort.setWeight(effortWeight)
 effort.setWeightForControl('/forceset/lumbarAct', 0.001)
+##### TODO: such low weight here might be why you get lumbar fluctuation in predictive???
 
 #Set the symmetry goal
 problem.addGoal(osim.MocoPeriodicityGoal('symmetry'))
@@ -191,25 +236,37 @@ for cc in range(studyModel.getCoordinateSet().getSize()):
 #Add a symmetry pair for pelvis_tx speed
 symmetryGoal.addStatePair(osim.MocoPeriodicityGoalPair(
     '/jointset/ground_pelvis/pelvis_tx/speed'))
-#Set symmetric activations
-for ff in range(studyModel.getForceSet().getSize()):
-    #Check for muscle or actuator
-    if (studyModel.getForceSet().get(ff).getConcreteClassName().endswith('Muscle') or
-        studyModel.getForceSet().get(ff).getConcreteClassName().endswith('Actuator')):
-        #Get force name
-        forceName = studyModel.getForceSet().get(ff).getName()
-        #Set symmetry parameters based on coordinate
-        if forceName.endswith('_r'):
-            symmetryGoal.addStatePair(osim.MocoPeriodicityGoalPair(
-                studyModel.getForceSet().get(ff).getAbsolutePathString()+'/activation',
-                studyModel.getForceSet().get(ff).getAbsolutePathString().replace('_r','_l')+'/activation'))
-        elif forceName.endswith('_l'):
-            symmetryGoal.addStatePair(osim.MocoPeriodicityGoalPair(
-                studyModel.getForceSet().get(ff).getAbsolutePathString()+'/activation',
-                studyModel.getForceSet().get(ff).getAbsolutePathString().replace('_l','_r')+'/activation'))
-        # elif forceName == 'lumbarAct':
-        #     symmetryGoal.addStatePair(osim.MocoPeriodicityGoalPair(
-        #         trackModel.getForceSet().get(ff).getAbsolutePathString()))
+#### TODO: without activation dynamics, might need something different here...
+# #Set symmetric activations
+# for ff in range(studyModel.getForceSet().getSize()):
+#     #Check for muscle or actuator
+#     if (studyModel.getForceSet().get(ff).getConcreteClassName().endswith('Muscle') or
+#         studyModel.getForceSet().get(ff).getConcreteClassName().endswith('Actuator')):
+#         #Get force name
+#         forceName = studyModel.getForceSet().get(ff).getName()
+#         #Set symmetry parameters based on coordinate
+#         #Check if using activation dynamics within here
+#         if forceName.endswith('_r'):
+#             if activationDynamics:
+#                 symmetryGoal.addStatePair(osim.MocoPeriodicityGoalPair(
+#                     studyModel.getForceSet().get(ff).getAbsolutePathString()+'/activation',
+#                     studyModel.getForceSet().get(ff).getAbsolutePathString().replace('_r','_l')+'/activation'))
+#             else:
+#                 symmetryGoal.addStatePair(osim.MocoPeriodicityGoalPair(
+#                     studyModel.getForceSet().get(ff).getAbsolutePathString(),
+#                     studyModel.getForceSet().get(ff).getAbsolutePathString().replace('_r','_l')))                    
+#         elif forceName.endswith('_l'):
+#             if activationDynamics:
+#                 symmetryGoal.addStatePair(osim.MocoPeriodicityGoalPair(
+#                     studyModel.getForceSet().get(ff).getAbsolutePathString()+'/activation',
+#                     studyModel.getForceSet().get(ff).getAbsolutePathString().replace('_l','_r')+'/activation'))
+#             else:
+#                 symmetryGoal.addStatePair(osim.MocoPeriodicityGoalPair(
+#                     studyModel.getForceSet().get(ff).getAbsolutePathString(),
+#                     studyModel.getForceSet().get(ff).getAbsolutePathString().replace('_l','_r')))
+#         # elif forceName == 'lumbarAct':
+#         #     symmetryGoal.addStatePair(osim.MocoPeriodicityGoalPair(
+#         #         trackModel.getForceSet().get(ff).getAbsolutePathString()))
 #Add symmetry goal
 symmetryGoal.setWeight(symmetryWeight)
 
@@ -256,7 +313,42 @@ solver.set_optim_convergence_tolerance(1e-2)
 solver.set_num_mesh_intervals(meshNo)
 
 #Set guess from tracking simulation
-solver.setGuessFile('sprintTracking_muscleDriven_solution.sto')
+#Different if activation dynamics taken out
+guess = solver.createGuess()
+origGuess = osim.MocoTrajectory('..\\trackingSims\\sprintTracking_muscleDriven_solution.sto')
+
+#Match up guess nodes
+#Times theoretically already match up?
+if guess.getNumTimes() != origGuess.getNumTimes():
+    guess.setNumTimes(origGuess.getNumTimes())
+    
+#Fill the guess with data from the old guess where column headers match
+#States
+for gg in range(len(guess.getStateNames())):
+    #Get current state name
+    currState = guess.getStateNames()[gg]
+    #Fill the value from the original guess
+    guess.setState(currState,origGuess.getStateMat(currState))
+#Controls
+for gg in range(len(guess.getControlNames())):
+    #Get current control name
+    currControl = guess.getControlNames()[gg]
+    #Fill the value from the original guess
+    guess.setControl(currControl,origGuess.getControlMat(currControl))
+#Derivatives
+for gg in range(len(guess.getDerivativeNames())):
+    #Get current derivative name
+    currDerivative = guess.getDerivativeNames()[gg]
+    #Fill the value from the original guess
+    guess.setDerivative(currDerivative,origGuess.getDerivativesTrajectoryMat()[:,gg])
+    
+#Reset time due to it getting filled with nan's
+guess.setTime(origGuess.getTime())
+
+#Set guess
+solver.setGuess(guess)
+
+# solver.setGuessFile('sprintTracking_muscleDriven_solution.sto')
 # solver.setGuessFile('sprintPrediction_9ms_muscleDriven_solution.sto') #piggy back off predictions
 
 #Solve
@@ -266,6 +358,9 @@ solution = study.solve()
 #### predictive sim covered in 34 mins and 114 iters (9m.s)
 #### running at 15m.s was struggling at an hour - stopped to check
 #### solution looks pretty good...
+
+#### above at 3 x speed solves pretty quickly in 10 mins
+#### quick little strides so will be interesting to see further speed progression
 
 #Option to visualise
 study.visualize(solution)
@@ -304,6 +399,7 @@ osim.STOFileAdapter.write(externalLoads,'predictGRF_3xSpeed_muscleDriven_2D.mot'
 #### adjust final time to allow for faster running...
 #### perhaps set initial and final bounds for pelvis_tx to speed goal? with a little flexibility...
     ##### don't know if there is a pelvis_tx/speed state?
+		##### just figure out how far tx is going to travel with that speed and put the bounds on that
 #### minimise lumbar motion? a bit of flexion and extension throughout? or keep posture upright?
 
 #### 3 x speed can be achieved with really high contractile velocities and strength
