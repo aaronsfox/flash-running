@@ -1,0 +1,14 @@
+[2021-11-03 10:03:06.762] [info] Storage: read data file = referenceCoordinates.sto (nr=50 nc=11)
+[2021-11-03 10:03:14.805] [info] Storage: read data file = referenceCoordinates.sto (nr=50 nc=11)
+[2021-11-03 10:03:41.482] [info] Loaded model muscles2DModel from file ..\\models\\muscles2DModel.osim
+[2021-11-03 10:11:00.717] [warning] Coordinate.setValue:  coordinate elbow_flex_r is locked. Unable to change its value.
+[2021-11-03 10:11:00.717] [warning] Coordinate.setValue:  coordinate elbow_flex_l is locked. Unable to change its value.
+[2021-11-03 10:11:00.717] [warning] Coordinate.setValue:  coordinate arm_flex_r is locked. Unable to change its value.
+[2021-11-03 10:11:00.717] [warning] Coordinate.setValue:  coordinate arm_flex_l is locked. Unable to change its value.
+[2021-11-03 10:11:57.851] [info] Storage: read data file = referenceCoordinates.sto (nr=50 nc=11)
+[2021-11-03 10:11:57.861] [info] Storage: read data file = referenceCoordinates.sto (nr=50 nc=11)
+[2021-11-03 10:12:03.834] [info] Loaded model muscles2DModel from file ..\\models\\muscles2DModel.osim
+[2021-11-03 10:12:16.088] [warning] Coordinate.setValue:  coordinate elbow_flex_r is locked. Unable to change its value.
+[2021-11-03 10:12:16.088] [warning] Coordinate.setValue:  coordinate elbow_flex_l is locked. Unable to change its value.
+[2021-11-03 10:12:16.088] [warning] Coordinate.setValue:  coordinate arm_flex_r is locked. Unable to change its value.
+[2021-11-03 10:12:16.088] [warning] Coordinate.setValue:  coordinate arm_flex_l is locked. Unable to change its value.

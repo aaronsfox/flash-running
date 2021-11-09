@@ -1,127 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <OpenSimDocument Version="40000">
-	<Model name="JA1_SCALED">
-		<defaults>
-			<ControlLinear name="default">
-				<is_model_control>true</is_model_control>
-				<extrapolate>true</extrapolate>
-				<default_min>-5</default_min>
-				<default_max>5</default_max>
-				<filter_on>false</filter_on>
-				<use_steps>false</use_steps>
-				<x_nodes />
-				<min_nodes />
-				<max_nodes />
-				<kp>100</kp>
-				<kv>20</kv>
-			</ControlLinear>
-			<CoordinateActuator name="default">
-				<!--Name of the generalized coordinate to which the actuator applies.-->
-				<coordinate>Unassigned</coordinate>
-				<!--The maximum generalized force produced by this actuator.-->
-				<optimal_force>300</optimal_force>
-			</CoordinateActuator>
-			<PointActuator name="default">
-				<!--Name of Body to which this actuator is applied.-->
-				<body>MYDEFAULT</body>
-				<!--Location of application point; in body frame unless point_is_global=true-->
-				<point>0 0 0</point>
-				<!--Interpret point in Ground frame if true; otherwise, body frame.-->
-				<point_is_global>false</point_is_global>
-				<!--Force application direction; in body frame unless force_is_global=true.-->
-				<direction>-1 0 0</direction>
-				<!--Interpret direction in Ground frame if true; otherwise, body frame.-->
-				<force_is_global>true</force_is_global>
-				<!--The maximum force produced by this actuator when fully activated.-->
-				<optimal_force>1000</optimal_force>
-			</PointActuator>
-			<TorqueActuator name="default">
-				<!--Name of Body to which the torque actuator is applied.-->
-				<bodyA>MYDEFAULT</bodyA>
-				<!--Name of Body to which the equal and opposite torque is applied.-->
-				<bodyB>MYDEFAULT</bodyB>
-				<!--Interpret axis in Ground frame if true; otherwise, body A's frame.-->
-				<torque_is_global>true</torque_is_global>
-				<!--Fixed direction about which torque is applied, in Ground or body A frame depending on 'torque_is_global' property.-->
-				<axis>-1 0 0</axis>
-				<!--The maximum torque produced by this actuator when fully activated.-->
-				<optimal_force>300</optimal_force>
-			</TorqueActuator>
-			<Thelen2003Muscle name="default">
-				<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
-				<min_control>1.0000000000000001e-05</min_control>
-				<!--The set of points defining the path of the actuator.-->
-				<GeometryPath>
-					<!--The set of points defining the path-->
-					<PathPointSet>
-						<objects />
-						<groups />
-					</PathPointSet>
-					<!--The wrap objects that are associated with this path-->
-					<PathWrapSet>
-						<objects />
-						<groups />
-					</PathWrapSet>
-					<!--Default appearance attributes for this GeometryPath-->
-					<Appearance>
-						<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-						<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
-					</Appearance>
-				</GeometryPath>
-				<!--Maximum isometric force that the fibers can generate-->
-				<max_isometric_force>0</max_isometric_force>
-				<!--Optimal length of the muscle fibers-->
-				<optimal_fiber_length>0</optimal_fiber_length>
-				<!--Resting length of the tendon-->
-				<tendon_slack_length>0</tendon_slack_length>
-				<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
-				<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
-				<!--tendon strain at maximum isometric muscle force-->
-				<FmaxTendonStrain>0.033000000000000002</FmaxTendonStrain>
-				<!--passive muscle strain at maximum isometric muscle force-->
-				<FmaxMuscleStrain>0.59999999999999998</FmaxMuscleStrain>
-				<!--shape factor for Gaussian active muscle force-length relationship-->
-				<KshapeActive>0.55000000000000004</KshapeActive>
-				<!--exponential shape factor for passive force-length relationship-->
-				<KshapePassive>3.2999999999999998</KshapePassive>
-				<!--force-velocity shape factor-->
-				<Af>0.75</Af>
-				<!--maximum normalized lengthening force-->
-				<Flen>2.3999999999999999</Flen>
-				<!--Activation time constant, in seconds-->
-				<activation_time_constant>0.01</activation_time_constant>
-				<!--Deactivation time constant, in seconds-->
-				<deactivation_time_constant>0.040000000000000001</deactivation_time_constant>
-			</Thelen2003Muscle>
-			<CMC_Joint name="default">
-				<!--Flag (true or false) indicating whether or not a task is enabled.-->
-				<on>false</on>
-				<!--Weight with which a task is tracked relative to other tasks. To track a task more tightly, make the weight larger.-->
-				<weight> 1 1 1</weight>
-				<!--Name of body frame with respect to which a tracking objective is specified. The special name 'center_of_mass' refers to the system center of mass. This property is not used for tracking joint angles.-->
-				<wrt_body>-1</wrt_body>
-				<!--Name of body frame in which the tracking objectives are expressed.  This property is not used for tracking joint angles.-->
-				<express_body>-1</express_body>
-				<!--Array of 3 flags (each true or false) specifying whether a component of a task is active.  For example, tracking the trajectory of a point in space could have three components (x,y,z).  This allows each of those to be made active (true) or inactive (false).  A task for tracking a joint coordinate only has one component.-->
-				<active>false false false </active>
-				<!--Position error feedback gain (stiffness). To achieve critical damping of errors, choose kv = 2*sqrt(kp).-->
-				<kp> 1 1 1</kp>
-				<!--Velocity error feedback gain (damping). To achieve critical damping of errors, choose kv = 2*sqrt(kp).-->
-				<kv> 1 1 1</kv>
-				<!--Feedforward acceleration gain.  This is normally set to 1.0, so no gain.-->
-				<ka> 1 1 1</ka>
-				<!--Direction vector[3] for component 0 of a task. Joint tasks do not use this property.-->
-				<r0> 0 0 0</r0>
-				<!--Direction vector[3] for component 1 of a task. Joint tasks do not use this property.-->
-				<r1> 0 0 0</r1>
-				<!--Direction vector[3] for component 2 of a task. Joint tasks do not use this property.-->
-				<r2> 0 0 0</r2>
-				<!--Name of the coordinate to be tracked.-->
-				<coordinate />
-				<!--Error limit on the tracking accuracy for this coordinate. If the tracking errors approach this limit, the weighting for this coordinate is increased. -->
-				<limit>0</limit>
-			</CMC_Joint>
-		</defaults>
+	<Model name="base3DModel">
+		<!--List of components that this component owns and serializes.-->
+		<components />
 		<!--The model's ground reference frame.-->
 		<Ground name="ground">
 			<!--The geometry used to display the axes of this Frame.-->
@@ -132,16 +13,7 @@
 				<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
 			</FrameGeometry>
 			<!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
-			<attached_geometry>
-				<Mesh name="ground_geom_0">
-					<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
-					<socket_frame>..</socket_frame>
-					<!--Scale factors in X, Y, Z directions respectively.-->
-					<scale_factors>1 1 1</scale_factors>
-					<!--Name of geometry file.-->
-					<mesh_file>platform_800x85cm.vtp</mesh_file>
-				</Mesh>
-			</attached_geometry>
+			<attached_geometry />
 			<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
 			<WrapObjectSet name="wrapobjectset">
 				<objects />
@@ -617,7 +489,7 @@
 					<!--The mass of the body (kg)-->
 					<mass>27.098199999999999</mass>
 					<!--The location (Vec3) of the mass center in the body frame.-->
-					<mass_center>-0.014290000000000001 0.30939 0.0022247</mass_center>
+					<mass_center>-0.11429 0.30939 0.068842095322198052</mass_center>
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
 					<inertia>1.3923000000000001 0.71335999999999999 1.3515999999999999 0 0 0</inertia>
 				</Body>
@@ -1300,7 +1172,7 @@
 					<coordinates>
 						<Coordinate name="pelvis_tilt">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>0.046443999999999999</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -1314,7 +1186,7 @@
 						</Coordinate>
 						<Coordinate name="pelvis_list">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>-0.077712000000000003</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -1328,7 +1200,7 @@
 						</Coordinate>
 						<Coordinate name="pelvis_rotation">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>0.10907</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -1342,7 +1214,7 @@
 						</Coordinate>
 						<Coordinate name="pelvis_tx">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>7.3231999999999999</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -1370,7 +1242,7 @@
 						</Coordinate>
 						<Coordinate name="pelvis_tz">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>-0.016299000000000001</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -1506,7 +1378,7 @@
 					<coordinates>
 						<Coordinate name="hip_flexion_r">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>0.31507000000000002</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -1520,7 +1392,7 @@
 						</Coordinate>
 						<Coordinate name="hip_adduction_r">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>0.073435</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -1534,7 +1406,7 @@
 						</Coordinate>
 						<Coordinate name="hip_rotation_r">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>-0.23430999999999999</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -1664,7 +1536,7 @@
 					<coordinates>
 						<Coordinate name="knee_angle_r">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>-0.22783</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -1796,7 +1668,7 @@
 					<coordinates>
 						<Coordinate name="ankle_angle_r">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>-0.053215999999999999</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -1922,7 +1794,7 @@
 					<coordinates>
 						<Coordinate name="subtalar_angle_r">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>0.19028</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -2174,7 +2046,7 @@
 					<coordinates>
 						<Coordinate name="hip_flexion_l">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>-0.19084000000000001</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -2188,7 +2060,7 @@
 						</Coordinate>
 						<Coordinate name="hip_adduction_l">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>-0.094209000000000001</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -2202,7 +2074,7 @@
 						</Coordinate>
 						<Coordinate name="hip_rotation_l">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>0.10552</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -2332,7 +2204,7 @@
 					<coordinates>
 						<Coordinate name="knee_angle_l">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>-1.2242999999999999</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -2464,7 +2336,7 @@
 					<coordinates>
 						<Coordinate name="ankle_angle_l">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>-0.27973999999999999</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -2590,7 +2462,7 @@
 					<coordinates>
 						<Coordinate name="subtalar_angle_l">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>-0.13824</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -2842,7 +2714,7 @@
 					<coordinates>
 						<Coordinate name="lumbar_extension">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>-0.18992999999999999</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -2856,7 +2728,7 @@
 						</Coordinate>
 						<Coordinate name="lumbar_bending">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>0.094840999999999995</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -2870,7 +2742,7 @@
 						</Coordinate>
 						<Coordinate name="lumbar_rotation">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>-0.11573</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -3000,7 +2872,7 @@
 					<coordinates>
 						<Coordinate name="arm_flex_r">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>-0.93611999999999995</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -3014,7 +2886,7 @@
 						</Coordinate>
 						<Coordinate name="arm_add_r">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>-0.32216</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -3028,7 +2900,7 @@
 						</Coordinate>
 						<Coordinate name="arm_rot_r">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>-0.19819999999999999</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -3158,7 +3030,7 @@
 					<coordinates>
 						<Coordinate name="elbow_flex_r">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>1.5869</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -3284,7 +3156,7 @@
 					<coordinates>
 						<Coordinate name="pro_sup_r">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>1.0472999999999999</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -3552,7 +3424,7 @@
 					<coordinates>
 						<Coordinate name="arm_flex_l">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>-0.34247</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -3566,7 +3438,7 @@
 						</Coordinate>
 						<Coordinate name="arm_add_l">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>-0.38131999999999999</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -3580,7 +3452,7 @@
 						</Coordinate>
 						<Coordinate name="arm_rot_l">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>0.062075999999999999</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -3710,7 +3582,7 @@
 					<coordinates>
 						<Coordinate name="elbow_flex_l">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>2.0907</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -3836,7 +3708,7 @@
 					<coordinates>
 						<Coordinate name="pro_sup_l">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>1.0471999999999999</default_value>
+							<default_value>0</default_value>
 							<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 							<default_speed_value>0</default_speed_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -4120,21 +3992,21 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.8</static_friction>
+					<static_friction>0.80000000000000004</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.8</dynamic_friction>
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
 					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.2</transition_velocity>
+					<transition_velocity>0.001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
 					<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
 				</SmoothSphereHalfSpaceForce>
-				<SmoothSphereHalfSpaceForce name="contactMH1_r">
+				<SmoothSphereHalfSpaceForce name="contactMidfoot_r">
 					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
-					<socket_sphere>/contactgeometryset/mh1_r</socket_sphere>
+					<socket_sphere>/contactgeometryset/midfoot_r</socket_sphere>
 					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
 					<socket_half_space>/contactgeometryset/floor</socket_half_space>
 					<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
@@ -4142,21 +4014,21 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.8</static_friction>
+					<static_friction>0.80000000000000004</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.8</dynamic_friction>
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
 					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.2</transition_velocity>
+					<transition_velocity>0.20000000000000001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
 					<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
 				</SmoothSphereHalfSpaceForce>
-				<SmoothSphereHalfSpaceForce name="contactMH3_r">
+				<SmoothSphereHalfSpaceForce name="contactToe_r">
 					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
-					<socket_sphere>/contactgeometryset/mh3_r</socket_sphere>
+					<socket_sphere>/contactgeometryset/toe_r</socket_sphere>
 					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
 					<socket_half_space>/contactgeometryset/floor</socket_half_space>
 					<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
@@ -4164,79 +4036,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.8</static_friction>
+					<static_friction>0.80000000000000004</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.8</dynamic_friction>
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
 					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.2</transition_velocity>
-					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
-					<hertz_smoothing>300</hertz_smoothing>
-					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
-					<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
-				</SmoothSphereHalfSpaceForce>
-				<SmoothSphereHalfSpaceForce name="contactMH5_r">
-					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
-					<socket_sphere>/contactgeometryset/mh5_r</socket_sphere>
-					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
-					<socket_half_space>/contactgeometryset/floor</socket_half_space>
-					<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
-					<stiffness>3067776</stiffness>
-					<!--The dissipation coefficient, default is 0 (s/m).-->
-					<dissipation>2</dissipation>
-					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.8</static_friction>
-					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.8</dynamic_friction>
-					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.5</viscous_friction>
-					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.2</transition_velocity>
-					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
-					<hertz_smoothing>300</hertz_smoothing>
-					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
-					<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
-				</SmoothSphereHalfSpaceForce>
-				<SmoothSphereHalfSpaceForce name="contactHallux_r">
-					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
-					<socket_sphere>/contactgeometryset/hallux_r</socket_sphere>
-					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
-					<socket_half_space>/contactgeometryset/floor</socket_half_space>
-					<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
-					<stiffness>3067776</stiffness>
-					<!--The dissipation coefficient, default is 0 (s/m).-->
-					<dissipation>2</dissipation>
-					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.8</static_friction>
-					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.8</dynamic_friction>
-					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.5</viscous_friction>
-					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.2</transition_velocity>
-					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
-					<hertz_smoothing>300</hertz_smoothing>
-					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
-					<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
-				</SmoothSphereHalfSpaceForce>
-				<SmoothSphereHalfSpaceForce name="contactOtherToes_r">
-					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
-					<socket_sphere>/contactgeometryset/othertoes_r</socket_sphere>
-					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
-					<socket_half_space>/contactgeometryset/floor</socket_half_space>
-					<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
-					<stiffness>306777.59999999998</stiffness>
-					<!--The dissipation coefficient, default is 0 (s/m).-->
-					<dissipation>2</dissipation>
-					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.8</static_friction>
-					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.8</dynamic_friction>
-					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.5</viscous_friction>
-					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.2</transition_velocity>
+					<transition_velocity>0.20000000000000001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -4252,21 +4058,21 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.8</static_friction>
+					<static_friction>0.80000000000000004</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.8</dynamic_friction>
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
 					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.2</transition_velocity>
+					<transition_velocity>0.20000000000000001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
 					<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
 				</SmoothSphereHalfSpaceForce>
-				<SmoothSphereHalfSpaceForce name="contactMH1_l">
+				<SmoothSphereHalfSpaceForce name="contactMidfoot_l">
 					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
-					<socket_sphere>/contactgeometryset/mh1_l</socket_sphere>
+					<socket_sphere>/contactgeometryset/midfoot_l</socket_sphere>
 					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
 					<socket_half_space>/contactgeometryset/floor</socket_half_space>
 					<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
@@ -4274,21 +4080,21 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.8</static_friction>
+					<static_friction>0.80000000000000004</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.8</dynamic_friction>
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
 					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.2</transition_velocity>
+					<transition_velocity>0.20000000000000001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
 					<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
 				</SmoothSphereHalfSpaceForce>
-				<SmoothSphereHalfSpaceForce name="contactMH3_l">
+				<SmoothSphereHalfSpaceForce name="contactToe_l">
 					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
-					<socket_sphere>/contactgeometryset/mh3_l</socket_sphere>
+					<socket_sphere>/contactgeometryset/toe_l</socket_sphere>
 					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
 					<socket_half_space>/contactgeometryset/floor</socket_half_space>
 					<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
@@ -4296,79 +4102,13 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.8</static_friction>
+					<static_friction>0.80000000000000004</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.8</dynamic_friction>
+					<dynamic_friction>0.80000000000000004</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
 					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.2</transition_velocity>
-					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
-					<hertz_smoothing>300</hertz_smoothing>
-					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
-					<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
-				</SmoothSphereHalfSpaceForce>
-				<SmoothSphereHalfSpaceForce name="contactMH5_l">
-					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
-					<socket_sphere>/contactgeometryset/mh5_l</socket_sphere>
-					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
-					<socket_half_space>/contactgeometryset/floor</socket_half_space>
-					<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
-					<stiffness>3067776</stiffness>
-					<!--The dissipation coefficient, default is 0 (s/m).-->
-					<dissipation>2</dissipation>
-					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.8</static_friction>
-					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.8</dynamic_friction>
-					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.5</viscous_friction>
-					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.2</transition_velocity>
-					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
-					<hertz_smoothing>300</hertz_smoothing>
-					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
-					<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
-				</SmoothSphereHalfSpaceForce>
-				<SmoothSphereHalfSpaceForce name="contactHallux_l">
-					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
-					<socket_sphere>/contactgeometryset/hallux_l</socket_sphere>
-					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
-					<socket_half_space>/contactgeometryset/floor</socket_half_space>
-					<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
-					<stiffness>3067776</stiffness>
-					<!--The dissipation coefficient, default is 0 (s/m).-->
-					<dissipation>2</dissipation>
-					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.8</static_friction>
-					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.8</dynamic_friction>
-					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.5</viscous_friction>
-					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.2</transition_velocity>
-					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
-					<hertz_smoothing>300</hertz_smoothing>
-					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
-					<hunt_crossley_smoothing>50</hunt_crossley_smoothing>
-				</SmoothSphereHalfSpaceForce>
-				<SmoothSphereHalfSpaceForce name="contactOtherToes_l">
-					<!--Path to a Component that satisfies the Socket 'sphere' of type ContactSphere (description: The sphere participating in this contact.).-->
-					<socket_sphere>/contactgeometryset/othertoes_l</socket_sphere>
-					<!--Path to a Component that satisfies the Socket 'half_space' of type ContactHalfSpace (description: The half-space participating in this contact.).-->
-					<socket_half_space>/contactgeometryset/floor</socket_half_space>
-					<!--The stiffness constant (i.e., plain strain modulus), default is 1 (N/m^2)-->
-					<stiffness>306777.59999999998</stiffness>
-					<!--The dissipation coefficient, default is 0 (s/m).-->
-					<dissipation>2</dissipation>
-					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.8</static_friction>
-					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.8</dynamic_friction>
-					<!--The coefficient of viscous friction, default is 0.-->
-					<viscous_friction>0.5</viscous_friction>
-					<!--The transition velocity, default is 0.01 (m/s).-->
-					<transition_velocity>0.2</transition_velocity>
+					<transition_velocity>0.20000000000000001</transition_velocity>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hertz force. The larger the steeper the transition but the worse for optimization, default is 300.-->
 					<hertz_smoothing>300</hertz_smoothing>
 					<!--The parameter that determines the smoothness of the transition of the tanh used to smooth the Hunt-Crossley force. The larger the steeper the transition but the worse for optimization, default is 50.-->
@@ -4866,110 +4606,67 @@
 		<!--Geometry to be used in contact forces.-->
 		<ContactGeometrySet name="contactgeometryset">
 			<objects>
+				<ContactHalfSpace name="floor">
+					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
+					<socket_frame>/ground</socket_frame>
+					<!--Orientation of geometry in the PhysicalFrame (body-fixed XYZ Euler angles).-->
+					<orientation>0 0 -1.5707963267949001</orientation>
+				</ContactHalfSpace>
 				<ContactSphere name="heel_r">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_r</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.031307527581931796 0.010435842527310599 0</location>
+					<location>0.027831567546491673 0.017233350000000001 0</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.040</radius>
+					<radius>0.035000000000000003</radius>
 				</ContactSphere>
-				<ContactSphere name="mh1_r">
+				<ContactSphere name="midfoot_r">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_r</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.182 -0.0080999999999999996 -0.023</location>
+					<location>0.12257102 0.0072333499999999995 0</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.020</radius>
+					<radius>0.025000000000000001</radius>
 				</ContactSphere>
-				<ContactSphere name="mh3_r">
+				<ContactSphere name="toe_r">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_r</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.1658 -0.0080999999999999996 0.011599999999999999</location>
+					<location>0.19799934 0.0072333499999999995 0</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.020</radius>
-				</ContactSphere>
-				<ContactSphere name="mh5_r">
-					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
-					<socket_frame>/bodyset/calcn_r</socket_frame>
-					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.14299999999999999 -0.0080999999999999996 0.036999999999999998</location>
-					<!--Radius of the sphere (default: 0).-->
-					<radius>0.020</radius>
-				</ContactSphere>
-				<ContactSphere name="hallux_r">
-					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
-					<socket_frame>/bodyset/toes_r</socket_frame>
-					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.0562 -0.010200000000000001 -0.018100000000000002</location>
-					<!--Radius of the sphere (default: 0).-->
-					<radius>0.020</radius>
-				</ContactSphere>
-				<ContactSphere name="othertoes_r">
-					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
-					<socket_frame>/bodyset/toes_r</socket_frame>
-					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.0441 -0.0060000000000000001 0.024199999999999999</location>
-					<!--Radius of the sphere (default: 0).-->
-					<radius>0.020</radius>
+					<radius>0.025000000000000001</radius>
 				</ContactSphere>
 				<ContactSphere name="heel_l">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_l</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.031307527581931796 0.010435842527310599 0</location>
+					<location>0.031307527581931796 0.010500000000000001 0</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.040</radius>
+					<radius>0.035000000000000003</radius>
 				</ContactSphere>
-				<ContactSphere name="mh1_l">
+				<ContactSphere name="midfoot_l">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_l</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.182 -0.0080999999999999996 0.023</location>
+					<location>0.12326834 0.0072333500000000004 0</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.020</radius>
+					<radius>0.025000000000000001</radius>
 				</ContactSphere>
-				<ContactSphere name="mh3_l">
+				<ContactSphere name="toe_l">
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_l</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.1658 -0.0080999999999999996 -0.011599999999999999</location>
+					<location>0.19912578 0.0072333500000000004 0</location>
 					<!--Radius of the sphere (default: 0).-->
-					<radius>0.020</radius>
+					<radius>0.025000000000000001</radius>
 				</ContactSphere>
-				<ContactSphere name="mh5_l">
-					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
-					<socket_frame>/bodyset/calcn_l</socket_frame>
-					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.14299999999999999 -0.0080999999999999996 -0.036999999999999998</location>
-					<!--Radius of the sphere (default: 0).-->
-					<radius>0.020</radius>
-				</ContactSphere>
-				<ContactSphere name="hallux_l">
-					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
-					<socket_frame>/bodyset/toes_l</socket_frame>
-					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.0562 -0.010200000000000001 0.018100000000000002</location>
-					<!--Radius of the sphere (default: 0).-->
-					<radius>0.020</radius>
-				</ContactSphere>
-				<ContactSphere name="othertoes_l">
-					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
-					<socket_frame>/bodyset/toes_l</socket_frame>
-					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.0441 -0.0060000000000000001 -0.024199999999999999</location>
-					<!--Radius of the sphere (default: 0).-->
-					<radius>0.020</radius>
-				</ContactSphere>
-				<ContactHalfSpace name="floor">
-					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
-					<socket_frame>/ground</socket_frame>
-					<!--Orientation of geometry in the PhysicalFrame (body-fixed XYZ Euler angles).-->
-					<orientation>0 0 -1.5707963267948966</orientation>
-				</ContactHalfSpace>			
 			</objects>
 			<groups />
 		</ContactGeometrySet>
+		<!--Additional components in the model.-->
+		<ComponentSet name="componentset">
+			<objects />
+			<groups />
+		</ComponentSet>
 	</Model>
 </OpenSimDocument>

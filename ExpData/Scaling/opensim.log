@@ -1468,3 +1468,43 @@ misc modelcomponents: 0
 [2021-04-22 13:55:43.863] [warning] Couldn't find file 'hat_jaw.vtp'.
 [2021-04-22 13:55:43.863] [warning] Couldn't find file 'hat_skull.vtp'.
 [2021-04-22 13:55:43.863] [warning] Couldn't find file 'hat_ribs_scap.vtp'.
+[2021-10-28 11:04:16.924] [info] Loaded model scaledModel from file scaledModelMuscle.osim
+[2021-10-28 11:04:56.156] [warning] Couldn't find file 'r_femur.vtp'.
+[2021-10-28 11:04:56.157] [warning] Couldn't find file 'r_tibia.vtp'.
+[2021-10-28 11:04:56.225] [warning] Couldn't find file 'l_femur.vtp'.
+[2021-10-28 11:04:56.226] [warning] Couldn't find file 'l_tibia.vtp'.
+[2021-10-28 11:04:56.533] [cout] [info] 
+               MODEL: scaledModel
+         coordinates: 25
+              forces: 95
+           actuators: 83
+             muscles: 80
+            analyses: 0
+              probes: 0
+              bodies: 14
+              joints: 14
+         constraints: 2
+             markers: 56
+         controllers: 0
+  contact geometries: 13
+misc modelcomponents: 0
+[2021-10-28 11:04:56.534] [info] Running tool .
+[2021-10-28 11:08:05.245] [info] Loaded model scaledModel2D from file scaledModelMuscle2D.osim
+[2021-10-28 11:09:10.344] [info] Loaded model scaledModel2D from file ..\Scaling\scaledModelMuscle2D.osim
+[2021-10-28 11:09:26.690] [info] Loaded model scaledModel from file ..\Scaling\scaledModelMuscle.osim
+[2021-10-28 11:09:32.942] [cout] [info] 
+               MODEL: scaledModel
+         coordinates: 25
+              forces: 95
+           actuators: 83
+             muscles: 80
+            analyses: 0
+              probes: 0
+              bodies: 14
+              joints: 14
+         constraints: 2
+             markers: 56
+         controllers: 0
+  contact geometries: 13
+misc modelcomponents: 0
+[2021-10-28 11:09:32.943] [info] Running tool .

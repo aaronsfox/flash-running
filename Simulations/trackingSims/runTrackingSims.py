@@ -360,11 +360,28 @@ if runTorqueTracking:
     problem.setStateInfo('/jointset/ankle_l/ankle_angle_l/value', [-20*np.pi/180, 30*np.pi/180])
     problem.setStateInfo('/jointset/ankle_r/ankle_angle_r/value', [-20*np.pi/180, 30*np.pi/180])
     
+    
+    ###### Optimise contact parameters????? #####
+    
+    #Add parameter
+    # heel_r_size = osim.MocoParameter()
+    # heel_r_size.setName('heel_r_size')
+    # heel_r_size.appendComponentPath('/contactgeometryset/heel_r')
+    # heel_r_size.setPropertyName('radius')
+    # heel_r_size.setBounds(osim.MocoBounds(0.025,0.045))
+    # problem.addParameter(heel_r_size)
+    
+    
+    ######
+    
+    
+    
     #Configure the solver
     solver = osim.MocoCasADiSolver.safeDownCast(study.updSolver())
     solver.resetProblem(problem)
     solver.set_optim_constraint_tolerance(1e-2)
     solver.set_optim_convergence_tolerance(1e-2)
+    # solver.set_parameters_require_initsystem(False) #### for parameters --- don't think it's required
     
     #Solve
     solution = study.solve()
