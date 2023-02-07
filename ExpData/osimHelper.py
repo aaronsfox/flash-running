@@ -298,151 +298,59 @@ def addVirtualMarkersStatic(staticTRC = None, outputTRC = 'static_withVirtualMar
     #Print confirm message
     print('Virtual markers added to new .trc file: '+outputTRC)
 
-# %% getHalfGaitCycle
+# %% getGaitTimings
 
-def getHalfGaitCycle(grfFile = None):
+def getGaitTimings(grfFile = None, extLoads = None,
+                   startForceName = 'RightGRF1',
+                   stopForceName = 'LeftGRF1'):
     
-    # Convenience function for getting the middle half gait cycle based on GRF
-    # data. Note that this function is only applicable to the way the current
-    # data is structured, but could easily be edited (e.g. for getting a full
-    # gait cycle, or left to right foot strike etc.)
+    # Convenience function for getting gait cycle timings based on force data.
+    # Note that this function is only applicable to external loads where foot strikes
+    # are labelled as individual forces within an XML file (i.e. individual strikes
+    # on force plates during overground running is the scenario this is used in).
+    # Timings for a half gait cycle can be achieved by using a right then left, 
+    # or left then right force as the start and stop. Timings for a full gait cycle
     #
     # Input:    grfFile - .mot file containing GRF time history
+    #           extLoads - .xml file for external loads linked to GRF data
+    #           startForceName - the force name and hence force identifier to start the timings with
+    #           stopForceName - the force name and hence force identifier to start the timings with\
     
     #Check for input
     if grfFile is None:
         raise ValueError('A GRF file in .mot format is required')
+    if extLoads is None:
+        raise ValueError('An external loads file in .xml format is required')
         
     #Load the GRF data
     grfTable = osim.TimeSeriesTable(grfFile)
     
-    #Convert to more easily readable object for easier manipulation
-    #Get number of column labels and data rows
-    nLabels = grfTable.getNumColumns()
-    nRows = grfTable.getNumRows()
-    #Pre-allocate numpy array based on data size
-    grfArray = np.zeros((nRows,nLabels))
-    #Loop through labels and rows and get data
-    for iLabel in range(0,nLabels):
-        #Get current column label
-        currLabel = grfTable.getColumnLabel(iLabel)
-        #Store column index value if one of the vertical GRF data
-        if currLabel == 'ground_force_r_vy':
-            rightGrfCol = int(iLabel)
-        elif  currLabel == 'ground_force_l_vy':
-            leftGrfCol = int(iLabel)
-        for iRow in range(0,nRows):
-            grfArray[iRow,iLabel] = grfTable.getDependentColumn(currLabel).getElt(0,iRow)
+    #Read in the external loads file
+    externalLoads = osim.ExternalLoads(extLoads, True)
     
-    #Create a logical for where the right & left foot is in contact with the ground
-    #based on 10N threshold
-    #Identify columns for right and left vertical GRF
-    rightGrfOn = grfArray[:,rightGrfCol] > 10
-    leftGrfOn = grfArray[:,leftGrfCol] > 10
+    #Get the force identifiers for the desired force names
+    startForceIdentifier = externalLoads.get(startForceName).getForceIdentifier()
+    stopForceIdentifier = externalLoads.get(stopForceName).getForceIdentifier()
     
-    #Identify the index where right and left GRF starts
-    #Identify where change in boolean value is present
-    rightGrfDiff = np.where(rightGrfOn[:-1] != rightGrfOn[1:])[0]
-    leftGrfDiff = np.where(leftGrfOn[:-1] != leftGrfOn[1:])[0]
-    #Identify where the index one above the change is true for foot strikes
-    rightGrfOnInd = list()
-    for gg in range(0,len(rightGrfDiff)):
-        if rightGrfOn[rightGrfDiff[gg]+1]:
-            rightGrfOnInd.append(rightGrfDiff[gg]+1)
-    leftGrfOnInd = list()
-    for gg in range(0,len(leftGrfDiff)):
-        if leftGrfOn[leftGrfDiff[gg]+1]:
-            leftGrfOnInd.append(leftGrfDiff[gg]+1)
+    #Get the vertical force from the GRF data as a numpy array
+    startVGRF = grfTable.getDependentColumn(f'{startForceIdentifier}y').to_numpy()
+    stopVGRF = grfTable.getDependentColumn(f'{stopForceIdentifier}y').to_numpy()
     
-    #Find the middle right foot strike
-    rightStartInd = rightGrfOnInd[int(len(rightGrfOnInd)/2)] - 1
+    #Find the first instance where vGRF > 50N in forces
+    startOnInd = np.argmax(startVGRF > 50)
+    stopOnInd = np.argmax(stopVGRF > 50)
     
-    #Find the next left foot strike after the right foot strike
-    leftStartInd = leftGrfOnInd[np.where(leftGrfOnInd > rightStartInd)[0][0]] - 1
+    #Check whether stop is after start and raise an error if not
+    if stopOnInd < startOnInd:
+        raise ValueError('End time before start time. Check names and order of forces used.')
     
-    #Identify the times corresponding to these foot strikes
-    startTime = list(grfTable.getIndependentColumn())[rightStartInd]
-    endTime = list(grfTable.getIndependentColumn())[leftStartInd]
+    #Get the times for the gait timings
+    startTime = grfTable.getIndependentColumn()[startOnInd]
+    endTime = grfTable.getIndependentColumn()[stopOnInd]
     
     #Print outputs
-    print('Start Time: '+str(startTime))
-    print('End Time: '+str(endTime))
-    
-    return startTime,endTime
-
-# %% getFullGaitCycle
-
-def getFullGaitCycle(grfFile = None):
-    
-    # Convenience function for getting the first full gait cycle based on GRF
-    # data. Note that this function is only applicable to the way the current
-    # data is structured, but could easily be edited (e.g. for getting a full
-    # gait cycle, or right to right foot strike etc.)
-    #
-    # This function is currently only applicable to going from right contact
-    # to another right contact. This could easily be edited with an input 
-    # variable asking for limb.
-    #
-    # Input:    grfFile - .mot file containing GRF time history
-    
-    #Check for input
-    if grfFile is None:
-        raise ValueError('A GRF file in .mot format is required')
-        
-    #Load the GRF data
-    grfTable = osim.TimeSeriesTable(grfFile)
-    
-    #Convert to more easily readable object for easier manipulation
-    #Get number of column labels and data rows
-    nLabels = grfTable.getNumColumns()
-    nRows = grfTable.getNumRows()
-    #Pre-allocate numpy array based on data size
-    grfArray = np.zeros((nRows,nLabels))
-    #Loop through labels and rows and get data
-    for iLabel in range(0,nLabels):
-        #Get current column label
-        currLabel = grfTable.getColumnLabel(iLabel)
-        #Store column index value if one of the vertical GRF data
-        if currLabel == 'ground_force_r_vy':
-            rightGrfCol = int(iLabel)
-        elif  currLabel == 'ground_force_l_vy':
-            leftGrfCol = int(iLabel)
-        for iRow in range(0,nRows):
-            grfArray[iRow,iLabel] = grfTable.getDependentColumn(currLabel).getElt(0,iRow)
-    
-    #Create a logical for where the right & left foot is in contact with the ground
-    #based on 10N threshold
-    #Identify columns for right and left vertical GRF
-    rightGrfOn = grfArray[:,rightGrfCol] > 10
-    leftGrfOn = grfArray[:,leftGrfCol] > 10
-    
-    #Identify the index where right and left GRF starts
-    #Identify where change in boolean value is present
-    rightGrfDiff = np.where(rightGrfOn[:-1] != rightGrfOn[1:])[0]
-    leftGrfDiff = np.where(leftGrfOn[:-1] != leftGrfOn[1:])[0]
-    #Identify where the index one above the change is true for foot strikes
-    rightGrfOnInd = list()
-    for gg in range(0,len(rightGrfDiff)):
-        if rightGrfOn[rightGrfDiff[gg]+1]:
-            rightGrfOnInd.append(rightGrfDiff[gg]+1)
-    leftGrfOnInd = list()
-    for gg in range(0,len(leftGrfDiff)):
-        if leftGrfOn[leftGrfDiff[gg]+1]:
-            leftGrfOnInd.append(leftGrfDiff[gg]+1)
-    
-    #Instead of finding the middle foot strike like in the half gait cycle,
-    #find the first and then get the next. With sprint trials there are generally
-    #only two anyway
-    rightStartInd = rightGrfOnInd[0] - 1
-    rightStopInd = rightGrfOnInd[1] - 1
-    
-    #Identify the times corresponding to these foot strikes
-    startTime = list(grfTable.getIndependentColumn())[rightStartInd]
-    endTime = list(grfTable.getIndependentColumn())[rightStopInd]
-    
-    #Print outputs
-    print('Start Time: '+str(startTime))
-    print('End Time: '+str(endTime))
+    print(f'Start Time: {startTime}')
+    print(f'End Time: {endTime}')
     
     return startTime,endTime
 

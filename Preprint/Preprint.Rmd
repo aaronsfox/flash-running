@@ -45,6 +45,8 @@ shhh <- suppressPackageStartupMessages # It's a library, so shhh!
 # Introduction
 
 
+ALT TITLE FOR BMJ: "The metabolic requirements and potential risk of injury with running at superhuman speed: A case study of Barry Allen"
+
 Humans have long been interested in running as fast as possible. The ancient Olympic Games included various iterations of foot faces ***[refs]*** to determine who was the fastest, and this style of race (e.g. 100m sprint) remain one of the premier events on the track and field calendar within the modern Olympic Games.
 
 
@@ -103,7 +105,11 @@ While obvious, it remains important to flag that the models used and simulations
 
 In no way does this work suggest that humans could ever produce...
 
+Let's be real — unless lightning strikes and gives someone superpowers, the findings from this work have no practical implications for human sprinting. The code and analyses used herein, however, provide a framework for others to follow for using predictive simulations and direct collocation to potentially investigate realistic outcomes for improving human sprinting. This includes adjusting muscle parameters in a manner that may reflect physical training, or using predictive methods to investigate changes in technique that may lead to faster sprinting speed (e.g. like Nick's paper) ...
+
 Weyand et al. --- "Consequently, human running speeds in excess of 50 km/h are likely to be limited to the realms of science fiction and, not inconceivably, gene doping."
+
+Similarly, this paper may provide an interesting platform to discuss the use of predictive simulation in biomechanics to a young group. While noted that adults can enjoy comic books too, an amusing example with popular culture references may be a more excitable proposition and teaching opportunity to employ with  budding biomechanists when delving into predictive simulations and direct collocation...
 
 
 Consider part of the discussion to reflect on the trials of generating simulations...

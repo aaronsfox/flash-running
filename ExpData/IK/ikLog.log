@@ -1,0 +1,255 @@
+[2022-11-04 13:33:58.329] [info] Loaded model model from file ..\Scaling\scaledModelAdjusted.osim
+[2022-11-04 13:33:58.442] [cout] [info] 
+               MODEL: model
+         coordinates: 25
+              forces: 95
+           actuators: 83
+             muscles: 80
+            analyses: 0
+              probes: 0
+              bodies: 14
+              joints: 14
+         constraints: 2
+             markers: 56
+         controllers: 0
+  contact geometries: 13
+misc modelcomponents: 0
+[2022-11-04 13:33:58.442] [info] Running tool .
+[2022-11-04 13:33:58.668] [info] Frame 84 (t = 0.336):	 total squared error = 0.0339376, marker error: RMS = 0.0325661, max = 0.110191 (LTH1)
+[2022-11-04 13:33:58.697] [info] Frame 85 (t = 0.34):	 total squared error = 0.0341517, marker error: RMS = 0.0326686, max = 0.110117 (LTH1)
+[2022-11-04 13:33:58.760] [info] Frame 86 (t = 0.344):	 total squared error = 0.0339619, marker error: RMS = 0.0325778, max = 0.109723 (LTH1)
+[2022-11-04 13:33:58.796] [info] Frame 87 (t = 0.348):	 total squared error = 0.0343182, marker error: RMS = 0.0327482, max = 0.109411 (LTH1)
+[2022-11-04 13:33:58.831] [info] Frame 88 (t = 0.352):	 total squared error = 0.0346365, marker error: RMS = 0.0328997, max = 0.109142 (LTH1)
+[2022-11-04 13:33:58.857] [info] Frame 89 (t = 0.356):	 total squared error = 0.0350548, marker error: RMS = 0.0330978, max = 0.108817 (LTH1)
+[2022-11-04 13:33:58.896] [info] Frame 90 (t = 0.36):	 total squared error = 0.0356115, marker error: RMS = 0.0333595, max = 0.109079 (LTH1)
+[2022-11-04 13:33:58.944] [info] Frame 91 (t = 0.364):	 total squared error = 0.0362574, marker error: RMS = 0.0336607, max = 0.109301 (LTH1)
+[2022-11-04 13:33:58.971] [info] Frame 92 (t = 0.368):	 total squared error = 0.0370485, marker error: RMS = 0.0340260, max = 0.109604 (LTH1)
+[2022-11-04 13:33:58.994] [info] Frame 93 (t = 0.372):	 total squared error = 0.0377976, marker error: RMS = 0.0343682, max = 0.110408 (LTH1)
+[2022-11-04 13:33:59.018] [info] Frame 94 (t = 0.376):	 total squared error = 0.0386449, marker error: RMS = 0.0347513, max = 0.110892 (LTH1)
+[2022-11-04 13:33:59.043] [info] Frame 95 (t = 0.38):	 total squared error = 0.0393428, marker error: RMS = 0.0350637, max = 0.111321 (LTH1)
+[2022-11-04 13:33:59.071] [info] Frame 96 (t = 0.384):	 total squared error = 0.0399785, marker error: RMS = 0.0353458, max = 0.110786 (LTH1)
+[2022-11-04 13:33:59.098] [info] Frame 97 (t = 0.388):	 total squared error = 0.0405047, marker error: RMS = 0.0355777, max = 0.109904 (LTH1)
+[2022-11-04 13:33:59.119] [info] Frame 98 (t = 0.392):	 total squared error = 0.0412105, marker error: RMS = 0.0358863, max = 0.110132 (LTH1)
+[2022-11-04 13:33:59.161] [info] Frame 99 (t = 0.396):	 total squared error = 0.0416439, marker error: RMS = 0.0360745, max = 0.109617 (LTH1)
+[2022-11-04 13:33:59.189] [info] Frame 100 (t = 0.4):	 total squared error = 0.0419636, marker error: RMS = 0.0362127, max = 0.108620 (LTH1)
+[2022-11-04 13:33:59.214] [info] Frame 101 (t = 0.404000):	 total squared error = 0.0421408, marker error: RMS = 0.0362891, max = 0.108089 (LTH1)
+[2022-11-04 13:33:59.240] [info] Frame 102 (t = 0.408000):	 total squared error = 0.0423536, marker error: RMS = 0.0363806, max = 0.107621 (LTH1)
+[2022-11-04 13:33:59.262] [info] Frame 103 (t = 0.412):	 total squared error = 0.0424219, marker error: RMS = 0.03641, max = 0.106982 (LTH1)
+[2022-11-04 13:33:59.288] [info] Frame 104 (t = 0.416):	 total squared error = 0.0424912, marker error: RMS = 0.0364397, max = 0.106359 (LTH1)
+[2022-11-04 13:33:59.304] [info] Frame 105 (t = 0.42):	 total squared error = 0.0424894, marker error: RMS = 0.0364389, max = 0.105653 (LTH1)
+[2022-11-04 13:33:59.324] [info] Frame 106 (t = 0.424):	 total squared error = 0.0423804, marker error: RMS = 0.0363921, max = 0.104559 (LTH1)
+[2022-11-04 13:33:59.344] [info] Frame 107 (t = 0.428):	 total squared error = 0.0421416, marker error: RMS = 0.0362894, max = 0.103862 (LTH1)
+[2022-11-04 13:33:59.372] [info] Frame 108 (t = 0.432):	 total squared error = 0.0418068, marker error: RMS = 0.036145, max = 0.103080 (LTH1)
+[2022-11-04 13:33:59.394] [info] Frame 109 (t = 0.436):	 total squared error = 0.0414811, marker error: RMS = 0.0360039, max = 0.102110 (LTH1)
+[2022-11-04 13:33:59.426] [info] Frame 110 (t = 0.44):	 total squared error = 0.0410837, marker error: RMS = 0.0358311, max = 0.100947 (LTH1)
+[2022-11-04 13:33:59.461] [info] Frame 111 (t = 0.444):	 total squared error = 0.0406450, marker error: RMS = 0.0356392, max = 0.101280 (LTH2)
+[2022-11-04 13:33:59.496] [info] Frame 112 (t = 0.448):	 total squared error = 0.0403045, marker error: RMS = 0.0354897, max = 0.102499 (LTH2)
+[2022-11-04 13:33:59.555] [info] Frame 113 (t = 0.452):	 total squared error = 0.0400626, marker error: RMS = 0.035383, max = 0.103824 (LTH2)
+[2022-11-04 13:33:59.578] [info] Frame 114 (t = 0.456):	 total squared error = 0.0397585, marker error: RMS = 0.0352485, max = 0.104491 (LTH2)
+[2022-11-04 13:33:59.607] [info] Frame 115 (t = 0.46):	 total squared error = 0.0397737, marker error: RMS = 0.0352552, max = 0.105823 (LTH2)
+[2022-11-04 13:33:59.654] [info] Frame 116 (t = 0.464):	 total squared error = 0.0393163, marker error: RMS = 0.0350519, max = 0.106194 (LTH2)
+[2022-11-04 13:33:59.682] [info] Frame 117 (t = 0.468):	 total squared error = 0.0393235, marker error: RMS = 0.0350551, max = 0.107231 (LTH2)
+[2022-11-04 13:33:59.702] [info] Frame 118 (t = 0.472):	 total squared error = 0.0391378, marker error: RMS = 0.0349722, max = 0.107754 (LTH2)
+[2022-11-04 13:33:59.757] [info] Frame 119 (t = 0.476):	 total squared error = 0.0384625, marker error: RMS = 0.0346692, max = 0.108328 (LTH2)
+[2022-11-04 13:33:59.780] [info] Frame 120 (t = 0.48):	 total squared error = 0.0381656, marker error: RMS = 0.0345351, max = 0.109392 (LTH2)
+[2022-11-04 13:33:59.843] [info] Frame 121 (t = 0.484):	 total squared error = 0.0373145, marker error: RMS = 0.0341479, max = 0.109696 (LTH2)
+[2022-11-04 13:33:59.884] [info] Frame 122 (t = 0.488):	 total squared error = 0.0365093, marker error: RMS = 0.0337774, max = 0.11136 (LTH2)
+[2022-11-04 13:33:59.907] [info] Frame 123 (t = 0.492):	 total squared error = 0.0358684, marker error: RMS = 0.0334797, max = 0.113032 (LTH2)
+[2022-11-04 13:33:59.966] [info] Frame 124 (t = 0.496):	 total squared error = 0.035127, marker error: RMS = 0.0331318, max = 0.114011 (LTH2)
+[2022-11-04 13:33:59.991] [info] Frame 125 (t = 0.5):	 total squared error = 0.034655, marker error: RMS = 0.0329085, max = 0.115172 (LTH2)
+[2022-11-04 13:34:00.050] [info] Frame 126 (t = 0.504000):	 total squared error = 0.0340278, marker error: RMS = 0.0326094, max = 0.115264 (LTH2)
+[2022-11-04 13:34:00.085] [info] Frame 127 (t = 0.508000):	 total squared error = 0.0333671, marker error: RMS = 0.0322912, max = 0.11565 (LTH2)
+[2022-11-04 13:34:00.111] [info] Frame 128 (t = 0.512):	 total squared error = 0.0328024, marker error: RMS = 0.0320168, max = 0.115542 (LTH2)
+[2022-11-04 13:34:00.169] [info] Frame 129 (t = 0.516):	 total squared error = 0.0323769, marker error: RMS = 0.0318084, max = 0.11585 (LTH2)
+[2022-11-04 13:34:00.195] [info] Frame 130 (t = 0.52):	 total squared error = 0.031758, marker error: RMS = 0.0315030, max = 0.115136 (LTH2)
+[2022-11-04 13:34:00.223] [info] Frame 131 (t = 0.524):	 total squared error = 0.0313318, marker error: RMS = 0.0312909, max = 0.115080 (LTH2)
+[2022-11-04 13:34:00.244] [info] Frame 132 (t = 0.528):	 total squared error = 0.0308057, marker error: RMS = 0.0310270, max = 0.114415 (LTH2)
+[2022-11-04 13:34:00.287] [info] Frame 133 (t = 0.532):	 total squared error = 0.0303160, marker error: RMS = 0.0307795, max = 0.113392 (LTH2)
+[2022-11-04 13:34:00.316] [info] Frame 134 (t = 0.536):	 total squared error = 0.0301044, marker error: RMS = 0.0306718, max = 0.112874 (LTH2)
+[2022-11-04 13:34:00.348] [info] Frame 135 (t = 0.54):	 total squared error = 0.0300527, marker error: RMS = 0.0306455, max = 0.112804 (LTH2)
+[2022-11-04 13:34:00.373] [info] Frame 136 (t = 0.544):	 total squared error = 0.0297503, marker error: RMS = 0.0304910, max = 0.111884 (LTH2)
+[2022-11-04 13:34:00.424] [info] Frame 137 (t = 0.548):	 total squared error = 0.0296623, marker error: RMS = 0.0304458, max = 0.110803 (LTH2)
+[2022-11-04 13:34:00.451] [info] Frame 138 (t = 0.552):	 total squared error = 0.0297895, marker error: RMS = 0.0305110, max = 0.110327 (LTH2)
+[2022-11-04 13:34:00.474] [info] Frame 139 (t = 0.556):	 total squared error = 0.0299171, marker error: RMS = 0.0305763, max = 0.109641 (LTH2)
+[2022-11-04 13:34:00.499] [info] Frame 140 (t = 0.56):	 total squared error = 0.0301783, marker error: RMS = 0.0307095, max = 0.109158 (LTH2)
+[2022-11-04 13:34:00.538] [info] Frame 141 (t = 0.564):	 total squared error = 0.0301431, marker error: RMS = 0.0306916, max = 0.107304 (LTH2)
+[2022-11-04 13:34:00.566] [info] Frame 142 (t = 0.568):	 total squared error = 0.0303038, marker error: RMS = 0.0307732, max = 0.105885 (LTH2)
+[2022-11-04 13:34:00.590] [info] Frame 143 (t = 0.572):	 total squared error = 0.0304113, marker error: RMS = 0.0308278, max = 0.104639 (LTH2)
+[2022-11-04 13:34:00.622] [info] Frame 144 (t = 0.576):	 total squared error = 0.0304405, marker error: RMS = 0.0308426, max = 0.103048 (LTH2)
+[2022-11-04 13:34:00.639] [info] Frame 145 (t = 0.58):	 total squared error = 0.0306665, marker error: RMS = 0.0309569, max = 0.101988 (LTH2)
+[2022-11-04 13:34:00.663] [info] Frame 146 (t = 0.584):	 total squared error = 0.0308805, marker error: RMS = 0.0310647, max = 0.101333 (LTH2)
+[2022-11-04 13:34:00.685] [info] Frame 147 (t = 0.588):	 total squared error = 0.0311789, marker error: RMS = 0.0312144, max = 0.100476 (LTH1)
+[2022-11-04 13:34:00.710] [info] Frame 148 (t = 0.592):	 total squared error = 0.0314030, marker error: RMS = 0.0313264, max = 0.100905 (LTH1)
+[2022-11-04 13:34:00.738] [info] Frame 149 (t = 0.596):	 total squared error = 0.0315452, marker error: RMS = 0.0313972, max = 0.101271 (LTH1)
+[2022-11-04 13:34:00.762] [info] Frame 150 (t = 0.6):	 total squared error = 0.0316981, marker error: RMS = 0.0314732, max = 0.101263 (LTH1)
+[2022-11-04 13:34:00.769] [info] InverseKinematicsTool completed 67 frames in 2 second(s).
+[2022-11-04 19:50:51.593] [info] Loaded model model from file ..\Scaling\scaledModelAdjusted.osim
+[2022-11-04 19:50:51.821] [cout] [info] 
+               MODEL: model
+         coordinates: 25
+              forces: 95
+           actuators: 83
+             muscles: 80
+            analyses: 0
+              probes: 0
+              bodies: 14
+              joints: 14
+         constraints: 2
+             markers: 56
+         controllers: 0
+  contact geometries: 13
+misc modelcomponents: 0
+[2022-11-04 19:50:51.821] [info] Running tool .
+[2022-11-04 19:50:52.215] [info] Frame 84 (t = 0.336):	 total squared error = 0.0339376, marker error: RMS = 0.0325661, max = 0.110191 (LTH1)
+[2022-11-04 19:50:52.259] [info] Frame 85 (t = 0.34):	 total squared error = 0.0341517, marker error: RMS = 0.0326686, max = 0.110117 (LTH1)
+[2022-11-04 19:50:52.342] [info] Frame 86 (t = 0.344):	 total squared error = 0.0339619, marker error: RMS = 0.0325778, max = 0.109723 (LTH1)
+[2022-11-04 19:50:52.393] [info] Frame 87 (t = 0.348):	 total squared error = 0.0343182, marker error: RMS = 0.0327482, max = 0.109411 (LTH1)
+[2022-11-04 19:50:52.441] [info] Frame 88 (t = 0.352):	 total squared error = 0.0346365, marker error: RMS = 0.0328997, max = 0.109142 (LTH1)
+[2022-11-04 19:50:52.487] [info] Frame 89 (t = 0.356):	 total squared error = 0.0350548, marker error: RMS = 0.0330978, max = 0.108817 (LTH1)
+[2022-11-04 19:50:52.547] [info] Frame 90 (t = 0.36):	 total squared error = 0.0356115, marker error: RMS = 0.0333595, max = 0.109079 (LTH1)
+[2022-11-04 19:50:52.615] [info] Frame 91 (t = 0.364):	 total squared error = 0.0362574, marker error: RMS = 0.0336607, max = 0.109301 (LTH1)
+[2022-11-04 19:50:52.657] [info] Frame 92 (t = 0.368):	 total squared error = 0.0370485, marker error: RMS = 0.0340260, max = 0.109604 (LTH1)
+[2022-11-04 19:50:52.694] [info] Frame 93 (t = 0.372):	 total squared error = 0.0377976, marker error: RMS = 0.0343682, max = 0.110408 (LTH1)
+[2022-11-04 19:50:52.732] [info] Frame 94 (t = 0.376):	 total squared error = 0.0386449, marker error: RMS = 0.0347513, max = 0.110892 (LTH1)
+[2022-11-04 19:50:52.772] [info] Frame 95 (t = 0.38):	 total squared error = 0.0393428, marker error: RMS = 0.0350637, max = 0.111321 (LTH1)
+[2022-11-04 19:50:52.813] [info] Frame 96 (t = 0.384):	 total squared error = 0.0399785, marker error: RMS = 0.0353458, max = 0.110786 (LTH1)
+[2022-11-04 19:50:52.852] [info] Frame 97 (t = 0.388):	 total squared error = 0.0405047, marker error: RMS = 0.0355777, max = 0.109904 (LTH1)
+[2022-11-04 19:50:52.885] [info] Frame 98 (t = 0.392):	 total squared error = 0.0412105, marker error: RMS = 0.0358863, max = 0.110132 (LTH1)
+[2022-11-04 19:50:52.945] [info] Frame 99 (t = 0.396):	 total squared error = 0.0416439, marker error: RMS = 0.0360745, max = 0.109617 (LTH1)
+[2022-11-04 19:50:52.986] [info] Frame 100 (t = 0.4):	 total squared error = 0.0419636, marker error: RMS = 0.0362127, max = 0.108620 (LTH1)
+[2022-11-04 19:50:53.019] [info] Frame 101 (t = 0.404000):	 total squared error = 0.0421408, marker error: RMS = 0.0362891, max = 0.108089 (LTH1)
+[2022-11-04 19:50:53.051] [info] Frame 102 (t = 0.408000):	 total squared error = 0.0423536, marker error: RMS = 0.0363806, max = 0.107621 (LTH1)
+[2022-11-04 19:50:53.085] [info] Frame 103 (t = 0.412):	 total squared error = 0.0424219, marker error: RMS = 0.03641, max = 0.106982 (LTH1)
+[2022-11-04 19:50:53.126] [info] Frame 104 (t = 0.416):	 total squared error = 0.0424912, marker error: RMS = 0.0364397, max = 0.106359 (LTH1)
+[2022-11-04 19:50:53.153] [info] Frame 105 (t = 0.42):	 total squared error = 0.0424894, marker error: RMS = 0.0364389, max = 0.105653 (LTH1)
+[2022-11-04 19:50:53.185] [info] Frame 106 (t = 0.424):	 total squared error = 0.0423804, marker error: RMS = 0.0363921, max = 0.104559 (LTH1)
+[2022-11-04 19:50:53.217] [info] Frame 107 (t = 0.428):	 total squared error = 0.0421416, marker error: RMS = 0.0362894, max = 0.103862 (LTH1)
+[2022-11-04 19:50:53.262] [info] Frame 108 (t = 0.432):	 total squared error = 0.0418068, marker error: RMS = 0.036145, max = 0.103080 (LTH1)
+[2022-11-04 19:50:53.297] [info] Frame 109 (t = 0.436):	 total squared error = 0.0414811, marker error: RMS = 0.0360039, max = 0.102110 (LTH1)
+[2022-11-04 19:50:53.345] [info] Frame 110 (t = 0.44):	 total squared error = 0.0410837, marker error: RMS = 0.0358311, max = 0.100947 (LTH1)
+[2022-11-04 19:50:53.391] [info] Frame 111 (t = 0.444):	 total squared error = 0.0406450, marker error: RMS = 0.0356392, max = 0.101280 (LTH2)
+[2022-11-04 19:50:53.431] [info] Frame 112 (t = 0.448):	 total squared error = 0.0403045, marker error: RMS = 0.0354897, max = 0.102499 (LTH2)
+[2022-11-04 19:50:53.516] [info] Frame 113 (t = 0.452):	 total squared error = 0.0400626, marker error: RMS = 0.035383, max = 0.103824 (LTH2)
+[2022-11-04 19:50:53.549] [info] Frame 114 (t = 0.456):	 total squared error = 0.0397585, marker error: RMS = 0.0352485, max = 0.104491 (LTH2)
+[2022-11-04 19:50:53.595] [info] Frame 115 (t = 0.46):	 total squared error = 0.0397737, marker error: RMS = 0.0352552, max = 0.105823 (LTH2)
+[2022-11-04 19:50:53.672] [info] Frame 116 (t = 0.464):	 total squared error = 0.0393163, marker error: RMS = 0.0350519, max = 0.106194 (LTH2)
+[2022-11-04 19:50:53.715] [info] Frame 117 (t = 0.468):	 total squared error = 0.0393235, marker error: RMS = 0.0350551, max = 0.107231 (LTH2)
+[2022-11-04 19:50:53.748] [info] Frame 118 (t = 0.472):	 total squared error = 0.0391378, marker error: RMS = 0.0349722, max = 0.107754 (LTH2)
+[2022-11-04 19:50:53.836] [info] Frame 119 (t = 0.476):	 total squared error = 0.0384625, marker error: RMS = 0.0346692, max = 0.108328 (LTH2)
+[2022-11-04 19:50:53.872] [info] Frame 120 (t = 0.48):	 total squared error = 0.0381656, marker error: RMS = 0.0345351, max = 0.109392 (LTH2)
+[2022-11-04 19:50:53.956] [info] Frame 121 (t = 0.484):	 total squared error = 0.0373145, marker error: RMS = 0.0341479, max = 0.109696 (LTH2)
+[2022-11-04 19:50:54.003] [info] Frame 122 (t = 0.488):	 total squared error = 0.0365093, marker error: RMS = 0.0337774, max = 0.11136 (LTH2)
+[2022-11-04 19:50:54.036] [info] Frame 123 (t = 0.492):	 total squared error = 0.0358684, marker error: RMS = 0.0334797, max = 0.113032 (LTH2)
+[2022-11-04 19:50:54.117] [info] Frame 124 (t = 0.496):	 total squared error = 0.035127, marker error: RMS = 0.0331318, max = 0.114011 (LTH2)
+[2022-11-04 19:50:54.157] [info] Frame 125 (t = 0.5):	 total squared error = 0.034655, marker error: RMS = 0.0329085, max = 0.115172 (LTH2)
+[2022-11-04 19:50:54.244] [info] Frame 126 (t = 0.504000):	 total squared error = 0.0340278, marker error: RMS = 0.0326094, max = 0.115264 (LTH2)
+[2022-11-04 19:50:54.301] [info] Frame 127 (t = 0.508000):	 total squared error = 0.0333671, marker error: RMS = 0.0322912, max = 0.11565 (LTH2)
+[2022-11-04 19:50:54.344] [info] Frame 128 (t = 0.512):	 total squared error = 0.0328024, marker error: RMS = 0.0320168, max = 0.115542 (LTH2)
+[2022-11-04 19:50:54.435] [info] Frame 129 (t = 0.516):	 total squared error = 0.0323769, marker error: RMS = 0.0318084, max = 0.11585 (LTH2)
+[2022-11-04 19:50:54.478] [info] Frame 130 (t = 0.52):	 total squared error = 0.031758, marker error: RMS = 0.0315030, max = 0.115136 (LTH2)
+[2022-11-04 19:50:54.523] [info] Frame 131 (t = 0.524):	 total squared error = 0.0313318, marker error: RMS = 0.0312909, max = 0.115080 (LTH2)
+[2022-11-04 19:50:54.555] [info] Frame 132 (t = 0.528):	 total squared error = 0.0308057, marker error: RMS = 0.0310270, max = 0.114415 (LTH2)
+[2022-11-04 19:50:54.623] [info] Frame 133 (t = 0.532):	 total squared error = 0.0303160, marker error: RMS = 0.0307795, max = 0.113392 (LTH2)
+[2022-11-04 19:50:54.668] [info] Frame 134 (t = 0.536):	 total squared error = 0.0301044, marker error: RMS = 0.0306718, max = 0.112874 (LTH2)
+[2022-11-04 19:50:54.715] [info] Frame 135 (t = 0.54):	 total squared error = 0.0300527, marker error: RMS = 0.0306455, max = 0.112804 (LTH2)
+[2022-11-04 19:50:54.752] [info] Frame 136 (t = 0.544):	 total squared error = 0.0297503, marker error: RMS = 0.0304910, max = 0.111884 (LTH2)
+[2022-11-04 19:50:54.825] [info] Frame 137 (t = 0.548):	 total squared error = 0.0296623, marker error: RMS = 0.0304458, max = 0.110803 (LTH2)
+[2022-11-04 19:50:54.866] [info] Frame 138 (t = 0.552):	 total squared error = 0.0297895, marker error: RMS = 0.0305110, max = 0.110327 (LTH2)
+[2022-11-04 19:50:54.903] [info] Frame 139 (t = 0.556):	 total squared error = 0.0299171, marker error: RMS = 0.0305763, max = 0.109641 (LTH2)
+[2022-11-04 19:50:54.943] [info] Frame 140 (t = 0.56):	 total squared error = 0.0301783, marker error: RMS = 0.0307095, max = 0.109158 (LTH2)
+[2022-11-04 19:50:55.006] [info] Frame 141 (t = 0.564):	 total squared error = 0.0301431, marker error: RMS = 0.0306916, max = 0.107304 (LTH2)
+[2022-11-04 19:50:55.046] [info] Frame 142 (t = 0.568):	 total squared error = 0.0303038, marker error: RMS = 0.0307732, max = 0.105885 (LTH2)
+[2022-11-04 19:50:55.085] [info] Frame 143 (t = 0.572):	 total squared error = 0.0304113, marker error: RMS = 0.0308278, max = 0.104639 (LTH2)
+[2022-11-04 19:50:55.131] [info] Frame 144 (t = 0.576):	 total squared error = 0.0304405, marker error: RMS = 0.0308426, max = 0.103048 (LTH2)
+[2022-11-04 19:50:55.157] [info] Frame 145 (t = 0.58):	 total squared error = 0.0306665, marker error: RMS = 0.0309569, max = 0.101988 (LTH2)
+[2022-11-04 19:50:55.192] [info] Frame 146 (t = 0.584):	 total squared error = 0.0308805, marker error: RMS = 0.0310647, max = 0.101333 (LTH2)
+[2022-11-04 19:50:55.224] [info] Frame 147 (t = 0.588):	 total squared error = 0.0311789, marker error: RMS = 0.0312144, max = 0.100476 (LTH1)
+[2022-11-04 19:50:55.262] [info] Frame 148 (t = 0.592):	 total squared error = 0.0314030, marker error: RMS = 0.0313264, max = 0.100905 (LTH1)
+[2022-11-04 19:50:55.304] [info] Frame 149 (t = 0.596):	 total squared error = 0.0315452, marker error: RMS = 0.0313972, max = 0.101271 (LTH1)
+[2022-11-04 19:50:55.342] [info] Frame 150 (t = 0.6):	 total squared error = 0.0316981, marker error: RMS = 0.0314732, max = 0.101263 (LTH1)
+[2022-11-04 19:50:55.360] [info] InverseKinematicsTool completed 67 frames in 3 second(s).
+[2022-11-04 21:26:30.743] [info] Loaded model model from file ..\Scaling\scaledModelAdjusted.osim
+[2022-11-04 21:26:30.910] [cout] [info] 
+               MODEL: model
+         coordinates: 25
+              forces: 95
+           actuators: 83
+             muscles: 80
+            analyses: 0
+              probes: 0
+              bodies: 14
+              joints: 14
+         constraints: 2
+             markers: 56
+         controllers: 0
+  contact geometries: 13
+misc modelcomponents: 0
+[2022-11-04 21:26:30.910] [info] Running tool .
+[2022-11-04 21:26:31.222] [info] Frame 84 (t = 0.336):	 total squared error = 0.0339376, marker error: RMS = 0.0325661, max = 0.110191 (LTH1)
+[2022-11-04 21:26:31.259] [info] Frame 85 (t = 0.34):	 total squared error = 0.0341517, marker error: RMS = 0.0326686, max = 0.110117 (LTH1)
+[2022-11-04 21:26:31.331] [info] Frame 86 (t = 0.344):	 total squared error = 0.0339619, marker error: RMS = 0.0325778, max = 0.109723 (LTH1)
+[2022-11-04 21:26:31.373] [info] Frame 87 (t = 0.348):	 total squared error = 0.0343182, marker error: RMS = 0.0327482, max = 0.109411 (LTH1)
+[2022-11-04 21:26:31.415] [info] Frame 88 (t = 0.352):	 total squared error = 0.0346365, marker error: RMS = 0.0328997, max = 0.109142 (LTH1)
+[2022-11-04 21:26:31.452] [info] Frame 89 (t = 0.356):	 total squared error = 0.0350548, marker error: RMS = 0.0330978, max = 0.108817 (LTH1)
+[2022-11-04 21:26:31.501] [info] Frame 90 (t = 0.36):	 total squared error = 0.0356115, marker error: RMS = 0.0333595, max = 0.109079 (LTH1)
+[2022-11-04 21:26:31.559] [info] Frame 91 (t = 0.364):	 total squared error = 0.0362574, marker error: RMS = 0.0336607, max = 0.109301 (LTH1)
+[2022-11-04 21:26:31.595] [info] Frame 92 (t = 0.368):	 total squared error = 0.0370485, marker error: RMS = 0.0340260, max = 0.109604 (LTH1)
+[2022-11-04 21:26:31.627] [info] Frame 93 (t = 0.372):	 total squared error = 0.0377976, marker error: RMS = 0.0343682, max = 0.110408 (LTH1)
+[2022-11-04 21:26:31.661] [info] Frame 94 (t = 0.376):	 total squared error = 0.0386449, marker error: RMS = 0.0347513, max = 0.110892 (LTH1)
+[2022-11-04 21:26:31.697] [info] Frame 95 (t = 0.38):	 total squared error = 0.0393428, marker error: RMS = 0.0350637, max = 0.111321 (LTH1)
+[2022-11-04 21:26:31.733] [info] Frame 96 (t = 0.384):	 total squared error = 0.0399785, marker error: RMS = 0.0353458, max = 0.110786 (LTH1)
+[2022-11-04 21:26:31.769] [info] Frame 97 (t = 0.388):	 total squared error = 0.0405047, marker error: RMS = 0.0355777, max = 0.109904 (LTH1)
+[2022-11-04 21:26:31.797] [info] Frame 98 (t = 0.392):	 total squared error = 0.0412105, marker error: RMS = 0.0358863, max = 0.110132 (LTH1)
+[2022-11-04 21:26:31.853] [info] Frame 99 (t = 0.396):	 total squared error = 0.0416439, marker error: RMS = 0.0360745, max = 0.109617 (LTH1)
+[2022-11-04 21:26:31.890] [info] Frame 100 (t = 0.4):	 total squared error = 0.0419636, marker error: RMS = 0.0362127, max = 0.108620 (LTH1)
+[2022-11-04 21:26:31.920] [info] Frame 101 (t = 0.404000):	 total squared error = 0.0421408, marker error: RMS = 0.0362891, max = 0.108089 (LTH1)
+[2022-11-04 21:26:31.948] [info] Frame 102 (t = 0.408000):	 total squared error = 0.0423536, marker error: RMS = 0.0363806, max = 0.107621 (LTH1)
+[2022-11-04 21:26:31.978] [info] Frame 103 (t = 0.412):	 total squared error = 0.0424219, marker error: RMS = 0.03641, max = 0.106982 (LTH1)
+[2022-11-04 21:26:32.015] [info] Frame 104 (t = 0.416):	 total squared error = 0.0424912, marker error: RMS = 0.0364397, max = 0.106359 (LTH1)
+[2022-11-04 21:26:32.039] [info] Frame 105 (t = 0.42):	 total squared error = 0.0424894, marker error: RMS = 0.0364389, max = 0.105653 (LTH1)
+[2022-11-04 21:26:32.068] [info] Frame 106 (t = 0.424):	 total squared error = 0.0423804, marker error: RMS = 0.0363921, max = 0.104559 (LTH1)
+[2022-11-04 21:26:32.097] [info] Frame 107 (t = 0.428):	 total squared error = 0.0421416, marker error: RMS = 0.0362894, max = 0.103862 (LTH1)
+[2022-11-04 21:26:32.136] [info] Frame 108 (t = 0.432):	 total squared error = 0.0418068, marker error: RMS = 0.036145, max = 0.103080 (LTH1)
+[2022-11-04 21:26:32.170] [info] Frame 109 (t = 0.436):	 total squared error = 0.0414811, marker error: RMS = 0.0360039, max = 0.102110 (LTH1)
+[2022-11-04 21:26:32.213] [info] Frame 110 (t = 0.44):	 total squared error = 0.0410837, marker error: RMS = 0.0358311, max = 0.100947 (LTH1)
+[2022-11-04 21:26:32.258] [info] Frame 111 (t = 0.444):	 total squared error = 0.0406450, marker error: RMS = 0.0356392, max = 0.101280 (LTH2)
+[2022-11-04 21:26:32.295] [info] Frame 112 (t = 0.448):	 total squared error = 0.0403045, marker error: RMS = 0.0354897, max = 0.102499 (LTH2)
+[2022-11-04 21:26:32.374] [info] Frame 113 (t = 0.452):	 total squared error = 0.0400626, marker error: RMS = 0.035383, max = 0.103824 (LTH2)
+[2022-11-04 21:26:32.404] [info] Frame 114 (t = 0.456):	 total squared error = 0.0397585, marker error: RMS = 0.0352485, max = 0.104491 (LTH2)
+[2022-11-04 21:26:32.442] [info] Frame 115 (t = 0.46):	 total squared error = 0.0397737, marker error: RMS = 0.0352552, max = 0.105823 (LTH2)
+[2022-11-04 21:26:32.508] [info] Frame 116 (t = 0.464):	 total squared error = 0.0393163, marker error: RMS = 0.0350519, max = 0.106194 (LTH2)
+[2022-11-04 21:26:32.545] [info] Frame 117 (t = 0.468):	 total squared error = 0.0393235, marker error: RMS = 0.0350551, max = 0.107231 (LTH2)
+[2022-11-04 21:26:32.572] [info] Frame 118 (t = 0.472):	 total squared error = 0.0391378, marker error: RMS = 0.0349722, max = 0.107754 (LTH2)
+[2022-11-04 21:26:32.648] [info] Frame 119 (t = 0.476):	 total squared error = 0.0384625, marker error: RMS = 0.0346692, max = 0.108328 (LTH2)
+[2022-11-04 21:26:32.680] [info] Frame 120 (t = 0.48):	 total squared error = 0.0381656, marker error: RMS = 0.0345351, max = 0.109392 (LTH2)
+[2022-11-04 21:26:32.746] [info] Frame 121 (t = 0.484):	 total squared error = 0.0373145, marker error: RMS = 0.0341479, max = 0.109696 (LTH2)
+[2022-11-04 21:26:32.788] [info] Frame 122 (t = 0.488):	 total squared error = 0.0365093, marker error: RMS = 0.0337774, max = 0.11136 (LTH2)
+[2022-11-04 21:26:32.817] [info] Frame 123 (t = 0.492):	 total squared error = 0.0358684, marker error: RMS = 0.0334797, max = 0.113032 (LTH2)
+[2022-11-04 21:26:32.887] [info] Frame 124 (t = 0.496):	 total squared error = 0.035127, marker error: RMS = 0.0331318, max = 0.114011 (LTH2)
+[2022-11-04 21:26:32.921] [info] Frame 125 (t = 0.5):	 total squared error = 0.034655, marker error: RMS = 0.0329085, max = 0.115172 (LTH2)
+[2022-11-04 21:26:32.989] [info] Frame 126 (t = 0.504000):	 total squared error = 0.0340278, marker error: RMS = 0.0326094, max = 0.115264 (LTH2)
+[2022-11-04 21:26:33.038] [info] Frame 127 (t = 0.508000):	 total squared error = 0.0333671, marker error: RMS = 0.0322912, max = 0.11565 (LTH2)
+[2022-11-04 21:26:33.075] [info] Frame 128 (t = 0.512):	 total squared error = 0.0328024, marker error: RMS = 0.0320168, max = 0.115542 (LTH2)
+[2022-11-04 21:26:33.156] [info] Frame 129 (t = 0.516):	 total squared error = 0.0323769, marker error: RMS = 0.0318084, max = 0.11585 (LTH2)
+[2022-11-04 21:26:33.193] [info] Frame 130 (t = 0.52):	 total squared error = 0.031758, marker error: RMS = 0.0315030, max = 0.115136 (LTH2)
+[2022-11-04 21:26:33.233] [info] Frame 131 (t = 0.524):	 total squared error = 0.0313318, marker error: RMS = 0.0312909, max = 0.115080 (LTH2)
+[2022-11-04 21:26:33.262] [info] Frame 132 (t = 0.528):	 total squared error = 0.0308057, marker error: RMS = 0.0310270, max = 0.114415 (LTH2)
+[2022-11-04 21:26:33.324] [info] Frame 133 (t = 0.532):	 total squared error = 0.0303160, marker error: RMS = 0.0307795, max = 0.113392 (LTH2)
+[2022-11-04 21:26:33.366] [info] Frame 134 (t = 0.536):	 total squared error = 0.0301044, marker error: RMS = 0.0306718, max = 0.112874 (LTH2)
+[2022-11-04 21:26:33.409] [info] Frame 135 (t = 0.54):	 total squared error = 0.0300527, marker error: RMS = 0.0306455, max = 0.112804 (LTH2)
+[2022-11-04 21:26:33.444] [info] Frame 136 (t = 0.544):	 total squared error = 0.0297503, marker error: RMS = 0.0304910, max = 0.111884 (LTH2)
+[2022-11-04 21:26:33.513] [info] Frame 137 (t = 0.548):	 total squared error = 0.0296623, marker error: RMS = 0.0304458, max = 0.110803 (LTH2)
+[2022-11-04 21:26:33.549] [info] Frame 138 (t = 0.552):	 total squared error = 0.0297895, marker error: RMS = 0.0305110, max = 0.110327 (LTH2)
+[2022-11-04 21:26:33.581] [info] Frame 139 (t = 0.556):	 total squared error = 0.0299171, marker error: RMS = 0.0305763, max = 0.109641 (LTH2)
+[2022-11-04 21:26:33.618] [info] Frame 140 (t = 0.56):	 total squared error = 0.0301783, marker error: RMS = 0.0307095, max = 0.109158 (LTH2)
+[2022-11-04 21:26:33.674] [info] Frame 141 (t = 0.564):	 total squared error = 0.0301431, marker error: RMS = 0.0306916, max = 0.107304 (LTH2)
+[2022-11-04 21:26:33.710] [info] Frame 142 (t = 0.568):	 total squared error = 0.0303038, marker error: RMS = 0.0307732, max = 0.105885 (LTH2)
+[2022-11-04 21:26:33.747] [info] Frame 143 (t = 0.572):	 total squared error = 0.0304113, marker error: RMS = 0.0308278, max = 0.104639 (LTH2)
+[2022-11-04 21:26:33.796] [info] Frame 144 (t = 0.576):	 total squared error = 0.0304405, marker error: RMS = 0.0308426, max = 0.103048 (LTH2)
+[2022-11-04 21:26:33.820] [info] Frame 145 (t = 0.58):	 total squared error = 0.0306665, marker error: RMS = 0.0309569, max = 0.101988 (LTH2)
+[2022-11-04 21:26:33.856] [info] Frame 146 (t = 0.584):	 total squared error = 0.0308805, marker error: RMS = 0.0310647, max = 0.101333 (LTH2)
+[2022-11-04 21:26:33.886] [info] Frame 147 (t = 0.588):	 total squared error = 0.0311789, marker error: RMS = 0.0312144, max = 0.100476 (LTH1)
+[2022-11-04 21:26:33.929] [info] Frame 148 (t = 0.592):	 total squared error = 0.0314030, marker error: RMS = 0.0313264, max = 0.100905 (LTH1)
+[2022-11-04 21:26:33.981] [info] Frame 149 (t = 0.596):	 total squared error = 0.0315452, marker error: RMS = 0.0313972, max = 0.101271 (LTH1)
+[2022-11-04 21:26:34.018] [info] Frame 150 (t = 0.6):	 total squared error = 0.0316981, marker error: RMS = 0.0314732, max = 0.101263 (LTH1)
+[2022-11-04 21:26:34.034] [info] InverseKinematicsTool completed 67 frames in 3 second(s).

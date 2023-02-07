@@ -1,4 +1,4 @@
-PathFileType	4	(X/Y/Z)	maxSprint.trc
+PathFileType	4	(X/Y/Z)	Data\maxSprint.trc
 DataRate	CameraRate	NumFrames	NumMarkers	Units	OrigDataRate	OrigDataStartFrame	OrigNumFrames
 250.000000	250.000000	377	34	mm	250.000000	0	377
 Frame#	Time	RASI			LASI			LAIC			RTH1			RTH2			RTH3			RTB1			RTB2			RTB3			RMT1			RMT5			LTH1			LTH2			LTH3			LTB1			LTB3			CLAV			STRN			RACR			LACR			LMT5			RPSI			LTB2			LMT1			RAIC			LCAL			T10			C7			LPSI			RCAL			*30			*31			*32			*33			

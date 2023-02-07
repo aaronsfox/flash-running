@@ -1,8 +1,124 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <OpenSimDocument Version="40000">
-	<Model name="model">
+	<Model name="gaitModel2D">
 		<!--List of components that this component owns and serializes.-->
-		<components />
+		<components>
+			<Bhargava2004SmoothedMuscleMetabolics name="metabolicCost">
+				<!--Metabolic parameters for each muscle.-->
+				<muscle_parameters>
+					<Bhargava2004SmoothedMuscleMetabolics_MuscleParameters name="hamstrings_r">
+						<!--Path to a Component that satisfies the Socket 'muscle' of type Muscle (description: The muscle to which the Bhargava2004SmoothedMuscleMetabolics is connected.).-->
+						<socket_muscle>/forceset/hamstrings_r</socket_muscle>
+						<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the 'provided_muscle_mass' property must be specified (default is false).-->
+						<use_provided_muscle_mass>false</use_provided_muscle_mass>
+					</Bhargava2004SmoothedMuscleMetabolics_MuscleParameters>
+					<Bhargava2004SmoothedMuscleMetabolics_MuscleParameters name="bifemsh_r">
+						<!--Path to a Component that satisfies the Socket 'muscle' of type Muscle (description: The muscle to which the Bhargava2004SmoothedMuscleMetabolics is connected.).-->
+						<socket_muscle>/forceset/bifemsh_r</socket_muscle>
+						<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the 'provided_muscle_mass' property must be specified (default is false).-->
+						<use_provided_muscle_mass>false</use_provided_muscle_mass>
+					</Bhargava2004SmoothedMuscleMetabolics_MuscleParameters>
+					<Bhargava2004SmoothedMuscleMetabolics_MuscleParameters name="glut_max_r">
+						<!--Path to a Component that satisfies the Socket 'muscle' of type Muscle (description: The muscle to which the Bhargava2004SmoothedMuscleMetabolics is connected.).-->
+						<socket_muscle>/forceset/glut_max_r</socket_muscle>
+						<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the 'provided_muscle_mass' property must be specified (default is false).-->
+						<use_provided_muscle_mass>false</use_provided_muscle_mass>
+					</Bhargava2004SmoothedMuscleMetabolics_MuscleParameters>
+					<Bhargava2004SmoothedMuscleMetabolics_MuscleParameters name="iliopsoas_r">
+						<!--Path to a Component that satisfies the Socket 'muscle' of type Muscle (description: The muscle to which the Bhargava2004SmoothedMuscleMetabolics is connected.).-->
+						<socket_muscle>/forceset/iliopsoas_r</socket_muscle>
+						<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the 'provided_muscle_mass' property must be specified (default is false).-->
+						<use_provided_muscle_mass>false</use_provided_muscle_mass>
+					</Bhargava2004SmoothedMuscleMetabolics_MuscleParameters>
+					<Bhargava2004SmoothedMuscleMetabolics_MuscleParameters name="rect_fem_r">
+						<!--Path to a Component that satisfies the Socket 'muscle' of type Muscle (description: The muscle to which the Bhargava2004SmoothedMuscleMetabolics is connected.).-->
+						<socket_muscle>/forceset/rect_fem_r</socket_muscle>
+						<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the 'provided_muscle_mass' property must be specified (default is false).-->
+						<use_provided_muscle_mass>false</use_provided_muscle_mass>
+					</Bhargava2004SmoothedMuscleMetabolics_MuscleParameters>
+					<Bhargava2004SmoothedMuscleMetabolics_MuscleParameters name="vasti_r">
+						<!--Path to a Component that satisfies the Socket 'muscle' of type Muscle (description: The muscle to which the Bhargava2004SmoothedMuscleMetabolics is connected.).-->
+						<socket_muscle>/forceset/vasti_r</socket_muscle>
+						<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the 'provided_muscle_mass' property must be specified (default is false).-->
+						<use_provided_muscle_mass>false</use_provided_muscle_mass>
+					</Bhargava2004SmoothedMuscleMetabolics_MuscleParameters>
+					<Bhargava2004SmoothedMuscleMetabolics_MuscleParameters name="gastroc_r">
+						<!--Path to a Component that satisfies the Socket 'muscle' of type Muscle (description: The muscle to which the Bhargava2004SmoothedMuscleMetabolics is connected.).-->
+						<socket_muscle>/forceset/gastroc_r</socket_muscle>
+						<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the 'provided_muscle_mass' property must be specified (default is false).-->
+						<use_provided_muscle_mass>false</use_provided_muscle_mass>
+					</Bhargava2004SmoothedMuscleMetabolics_MuscleParameters>
+					<Bhargava2004SmoothedMuscleMetabolics_MuscleParameters name="soleus_r">
+						<!--Path to a Component that satisfies the Socket 'muscle' of type Muscle (description: The muscle to which the Bhargava2004SmoothedMuscleMetabolics is connected.).-->
+						<socket_muscle>/forceset/soleus_r</socket_muscle>
+						<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the 'provided_muscle_mass' property must be specified (default is false).-->
+						<use_provided_muscle_mass>false</use_provided_muscle_mass>
+					</Bhargava2004SmoothedMuscleMetabolics_MuscleParameters>
+					<Bhargava2004SmoothedMuscleMetabolics_MuscleParameters name="tib_ant_r">
+						<!--Path to a Component that satisfies the Socket 'muscle' of type Muscle (description: The muscle to which the Bhargava2004SmoothedMuscleMetabolics is connected.).-->
+						<socket_muscle>/forceset/tib_ant_r</socket_muscle>
+						<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the 'provided_muscle_mass' property must be specified (default is false).-->
+						<use_provided_muscle_mass>false</use_provided_muscle_mass>
+					</Bhargava2004SmoothedMuscleMetabolics_MuscleParameters>
+					<Bhargava2004SmoothedMuscleMetabolics_MuscleParameters name="hamstrings_l">
+						<!--Path to a Component that satisfies the Socket 'muscle' of type Muscle (description: The muscle to which the Bhargava2004SmoothedMuscleMetabolics is connected.).-->
+						<socket_muscle>/forceset/hamstrings_l</socket_muscle>
+						<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the 'provided_muscle_mass' property must be specified (default is false).-->
+						<use_provided_muscle_mass>false</use_provided_muscle_mass>
+					</Bhargava2004SmoothedMuscleMetabolics_MuscleParameters>
+					<Bhargava2004SmoothedMuscleMetabolics_MuscleParameters name="bifemsh_l">
+						<!--Path to a Component that satisfies the Socket 'muscle' of type Muscle (description: The muscle to which the Bhargava2004SmoothedMuscleMetabolics is connected.).-->
+						<socket_muscle>/forceset/bifemsh_l</socket_muscle>
+						<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the 'provided_muscle_mass' property must be specified (default is false).-->
+						<use_provided_muscle_mass>false</use_provided_muscle_mass>
+					</Bhargava2004SmoothedMuscleMetabolics_MuscleParameters>
+					<Bhargava2004SmoothedMuscleMetabolics_MuscleParameters name="glut_max_l">
+						<!--Path to a Component that satisfies the Socket 'muscle' of type Muscle (description: The muscle to which the Bhargava2004SmoothedMuscleMetabolics is connected.).-->
+						<socket_muscle>/forceset/glut_max_l</socket_muscle>
+						<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the 'provided_muscle_mass' property must be specified (default is false).-->
+						<use_provided_muscle_mass>false</use_provided_muscle_mass>
+					</Bhargava2004SmoothedMuscleMetabolics_MuscleParameters>
+					<Bhargava2004SmoothedMuscleMetabolics_MuscleParameters name="iliopsoas_l">
+						<!--Path to a Component that satisfies the Socket 'muscle' of type Muscle (description: The muscle to which the Bhargava2004SmoothedMuscleMetabolics is connected.).-->
+						<socket_muscle>/forceset/iliopsoas_l</socket_muscle>
+						<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the 'provided_muscle_mass' property must be specified (default is false).-->
+						<use_provided_muscle_mass>false</use_provided_muscle_mass>
+					</Bhargava2004SmoothedMuscleMetabolics_MuscleParameters>
+					<Bhargava2004SmoothedMuscleMetabolics_MuscleParameters name="rect_fem_l">
+						<!--Path to a Component that satisfies the Socket 'muscle' of type Muscle (description: The muscle to which the Bhargava2004SmoothedMuscleMetabolics is connected.).-->
+						<socket_muscle>/forceset/rect_fem_l</socket_muscle>
+						<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the 'provided_muscle_mass' property must be specified (default is false).-->
+						<use_provided_muscle_mass>false</use_provided_muscle_mass>
+					</Bhargava2004SmoothedMuscleMetabolics_MuscleParameters>
+					<Bhargava2004SmoothedMuscleMetabolics_MuscleParameters name="vasti_l">
+						<!--Path to a Component that satisfies the Socket 'muscle' of type Muscle (description: The muscle to which the Bhargava2004SmoothedMuscleMetabolics is connected.).-->
+						<socket_muscle>/forceset/vasti_l</socket_muscle>
+						<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the 'provided_muscle_mass' property must be specified (default is false).-->
+						<use_provided_muscle_mass>false</use_provided_muscle_mass>
+					</Bhargava2004SmoothedMuscleMetabolics_MuscleParameters>
+					<Bhargava2004SmoothedMuscleMetabolics_MuscleParameters name="gastroc_l">
+						<!--Path to a Component that satisfies the Socket 'muscle' of type Muscle (description: The muscle to which the Bhargava2004SmoothedMuscleMetabolics is connected.).-->
+						<socket_muscle>/forceset/gastroc_l</socket_muscle>
+						<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the 'provided_muscle_mass' property must be specified (default is false).-->
+						<use_provided_muscle_mass>false</use_provided_muscle_mass>
+					</Bhargava2004SmoothedMuscleMetabolics_MuscleParameters>
+					<Bhargava2004SmoothedMuscleMetabolics_MuscleParameters name="soleus_l">
+						<!--Path to a Component that satisfies the Socket 'muscle' of type Muscle (description: The muscle to which the Bhargava2004SmoothedMuscleMetabolics is connected.).-->
+						<socket_muscle>/forceset/soleus_l</socket_muscle>
+						<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the 'provided_muscle_mass' property must be specified (default is false).-->
+						<use_provided_muscle_mass>false</use_provided_muscle_mass>
+					</Bhargava2004SmoothedMuscleMetabolics_MuscleParameters>
+					<Bhargava2004SmoothedMuscleMetabolics_MuscleParameters name="tib_ant_l">
+						<!--Path to a Component that satisfies the Socket 'muscle' of type Muscle (description: The muscle to which the Bhargava2004SmoothedMuscleMetabolics is connected.).-->
+						<socket_muscle>/forceset/tib_ant_l</socket_muscle>
+						<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the 'provided_muscle_mass' property must be specified (default is false).-->
+						<use_provided_muscle_mass>false</use_provided_muscle_mass>
+					</Bhargava2004SmoothedMuscleMetabolics_MuscleParameters>
+				</muscle_parameters>
+				<!--An optional flag that allows the user to explicitly specify whether a smooth approximation of the metabolic energy model should be used (default is false).-->
+				<use_smoothing>true</use_smoothing>
+			</Bhargava2004SmoothedMuscleMetabolics>
+		</components>
 		<!--The model's ground reference frame.-->
 		<Ground name="ground">
 			<!--The geometry used to display the axes of this Frame.-->
@@ -83,7 +199,7 @@
 						</Mesh>
 					</attached_geometry>
 					<!--The mass of the body (kg)-->
-					<mass>10.863867838987032</mass>
+					<mass>9.8424260287465746</mass>
 					<!--The location (Vec3) of the mass center in the body frame.-->
 					<mass_center>-0.065370929001696415 0 0</mass_center>
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
@@ -116,7 +232,7 @@
 						</Mesh>
 					</attached_geometry>
 					<!--The mass of the body (kg)-->
-					<mass>8.5802140033585861</mass>
+					<mass>7.7734857318318307</mass>
 					<!--The location (Vec3) of the mass center in the body frame.-->
 					<mass_center>0 -0.20725352026375893 0</mass_center>
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
@@ -149,7 +265,7 @@
 						</Mesh>
 					</attached_geometry>
 					<!--The mass of the body (kg)-->
-					<mass>8.5802140033585861</mass>
+					<mass>7.7734857318318307</mass>
 					<!--The location (Vec3) of the mass center in the body frame.-->
 					<mass_center>0 -0.20176521668239381 0</mass_center>
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
@@ -197,7 +313,7 @@
 						</Mesh>
 					</attached_geometry>
 					<!--The mass of the body (kg)-->
-					<mass>3.4200382111780945</mass>
+					<mass>3.0984796214297292</mass>
 					<!--The location (Vec3) of the mass center in the body frame.-->
 					<mass_center>0 -0.20467596115652986 0</mass_center>
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
@@ -245,7 +361,7 @@
 						</Mesh>
 					</attached_geometry>
 					<!--The mass of the body (kg)-->
-					<mass>3.4200382111780945</mass>
+					<mass>3.0984796214297292</mass>
 					<!--The location (Vec3) of the mass center in the body frame.-->
 					<mass_center>0 -0.20641374969251272 0</mass_center>
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
@@ -278,7 +394,7 @@
 						</Mesh>
 					</attached_geometry>
 					<!--The mass of the body (kg)-->
-					<mass>0.092246479060771311</mass>
+					<mass>0.083573287159264487</mass>
 					<!--The location (Vec3) of the mass center in the body frame.-->
 					<mass_center>0 0 0</mass_center>
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
@@ -311,7 +427,7 @@
 						</Mesh>
 					</attached_geometry>
 					<!--The mass of the body (kg)-->
-					<mass>0.092246479060771311</mass>
+					<mass>0.083573287159264487</mass>
 					<!--The location (Vec3) of the mass center in the body frame.-->
 					<mass_center>0 0 0</mass_center>
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
@@ -344,7 +460,7 @@
 						</Mesh>
 					</attached_geometry>
 					<!--The mass of the body (kg)-->
-					<mass>1.1530809882596385</mass>
+					<mass>1.0446660894908035</mass>
 					<!--The location (Vec3) of the mass center in the body frame.-->
 					<mass_center>0.092228892646568195 0.03992766890843135 0</mass_center>
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
@@ -377,7 +493,7 @@
 						</Mesh>
 					</attached_geometry>
 					<!--The mass of the body (kg)-->
-					<mass>1.1530809882596385</mass>
+					<mass>1.0446660894908035</mass>
 					<!--The location (Vec3) of the mass center in the body frame.-->
 					<mass_center>0.09191019248203397 0.039664338413122717 0</mass_center>
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
@@ -410,7 +526,7 @@
 						</Mesh>
 					</attached_geometry>
 					<!--The mass of the body (kg)-->
-					<mass>0.19980587364563049</mass>
+					<mass>0.18101973998696674</mass>
 					<!--The location (Vec3) of the mass center in the body frame.-->
 					<mass_center>0.031911226726634274 0.0079855483444208931 0.023243102152189665</mass_center>
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
@@ -443,7 +559,7 @@
 						</Mesh>
 					</attached_geometry>
 					<!--The mass of the body (kg)-->
-					<mass>0.19980587364563049</mass>
+					<mass>0.18101973998696674</mass>
 					<!--The location (Vec3) of the mass center in the body frame.-->
 					<mass_center>0.031800956366485417 0.0079328821493151892 -0.023074540720538869</mass_center>
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
@@ -521,7 +637,7 @@
 						</Mesh>
 					</attached_geometry>
 					<!--The mass of the body (kg)-->
-					<mass>31.582058050120072</mass>
+					<mass>28.612652031568786</mass>
 					<!--The location (Vec3) of the mass center in the body frame.-->
 					<mass_center>-0.030326720597048995 0.30981825192046747 0</mass_center>
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
@@ -1086,9 +1202,9 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.80000000000000004</static_friction>
+					<static_friction>0.5</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.80000000000000004</dynamic_friction>
+					<dynamic_friction>0.5</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
 					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
@@ -1108,9 +1224,9 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.80000000000000004</static_friction>
+					<static_friction>0.5</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.80000000000000004</dynamic_friction>
+					<dynamic_friction>0.5</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
 					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
@@ -1130,9 +1246,9 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.80000000000000004</static_friction>
+					<static_friction>0.5</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.80000000000000004</dynamic_friction>
+					<dynamic_friction>0.5</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
 					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
@@ -1152,9 +1268,9 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.80000000000000004</static_friction>
+					<static_friction>0.5</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.80000000000000004</dynamic_friction>
+					<dynamic_friction>0.5</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
 					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
@@ -1174,9 +1290,9 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.80000000000000004</static_friction>
+					<static_friction>0.5</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.80000000000000004</dynamic_friction>
+					<dynamic_friction>0.5</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
 					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
@@ -1196,9 +1312,9 @@
 					<!--The dissipation coefficient, default is 0 (s/m).-->
 					<dissipation>2</dissipation>
 					<!--The coefficient of static friction, default is 0.-->
-					<static_friction>0.80000000000000004</static_friction>
+					<static_friction>0.5</static_friction>
 					<!--The coefficient of dynamic friction, default is 0.-->
-					<dynamic_friction>0.80000000000000004</dynamic_friction>
+					<dynamic_friction>0.5</dynamic_friction>
 					<!--The coefficient of viscous friction, default is 0.-->
 					<viscous_friction>0.5</viscous_friction>
 					<!--The transition velocity, default is 0.01 (m/s).-->
@@ -1261,7 +1377,7 @@
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>4105.4655739999998</max_isometric_force>
+					<max_isometric_force>9367.8439224928425</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.069000000000000006</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -1269,9 +1385,9 @@
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.26179939000000002</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
-					<max_contraction_velocity>15</max_contraction_velocity>
+					<max_contraction_velocity>30</max_contraction_velocity>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
-					<ignore_tendon_compliance>false</ignore_tendon_compliance>
+					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
 					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
@@ -1281,13 +1397,13 @@
 					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
-					<active_force_width_scale>1</active_force_width_scale>
+					<active_force_width_scale>3</active_force_width_scale>
 					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
 					<!--Make the passive fiber force 0. Default: false.-->
-					<ignore_passive_fiber_force>false</ignore_passive_fiber_force>
+					<ignore_passive_fiber_force>true</ignore_passive_fiber_force>
 				</DeGrooteFregly2016Muscle>
 				<DeGrooteFregly2016Muscle name="bifemsh_r">
 					<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
@@ -1332,7 +1448,7 @@
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>557.11475409835998</max_isometric_force>
+					<max_isometric_force>1271.2234384239453</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.11</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -1340,9 +1456,9 @@
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.40142572999999998</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
-					<max_contraction_velocity>15</max_contraction_velocity>
+					<max_contraction_velocity>30</max_contraction_velocity>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
-					<ignore_tendon_compliance>false</ignore_tendon_compliance>
+					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
 					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
@@ -1352,13 +1468,13 @@
 					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
-					<active_force_width_scale>1</active_force_width_scale>
+					<active_force_width_scale>3</active_force_width_scale>
 					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
 					<!--Make the passive fiber force 0. Default: false.-->
-					<ignore_passive_fiber_force>false</ignore_passive_fiber_force>
+					<ignore_passive_fiber_force>true</ignore_passive_fiber_force>
 				</DeGrooteFregly2016Muscle>
 				<DeGrooteFregly2016Muscle name="glut_max_r">
 					<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
@@ -1409,7 +1525,7 @@
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>3337.583607</max_isometric_force>
+					<max_isometric_force>7615.6922388180983</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.157</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -1417,9 +1533,9 @@
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
-					<max_contraction_velocity>15</max_contraction_velocity>
+					<max_contraction_velocity>30</max_contraction_velocity>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
-					<ignore_tendon_compliance>false</ignore_tendon_compliance>
+					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
 					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
@@ -1429,13 +1545,13 @@
 					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
-					<active_force_width_scale>1</active_force_width_scale>
+					<active_force_width_scale>3</active_force_width_scale>
 					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
 					<!--Make the passive fiber force 0. Default: false.-->
-					<ignore_passive_fiber_force>false</ignore_passive_fiber_force>
+					<ignore_passive_fiber_force>true</ignore_passive_fiber_force>
 				</DeGrooteFregly2016Muscle>
 				<DeGrooteFregly2016Muscle name="iliopsoas_r">
 					<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
@@ -1496,7 +1612,7 @@
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>2697.3442620000001</max_isometric_force>
+					<max_isometric_force>6154.7952591960138</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.11700000000000001</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -1504,9 +1620,9 @@
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.13962633999999999</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
-					<max_contraction_velocity>15</max_contraction_velocity>
+					<max_contraction_velocity>30</max_contraction_velocity>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
-					<ignore_tendon_compliance>false</ignore_tendon_compliance>
+					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
 					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
@@ -1516,13 +1632,13 @@
 					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
-					<active_force_width_scale>1</active_force_width_scale>
+					<active_force_width_scale>3</active_force_width_scale>
 					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
 					<!--Make the passive fiber force 0. Default: false.-->
-					<ignore_passive_fiber_force>false</ignore_passive_fiber_force>
+					<ignore_passive_fiber_force>true</ignore_passive_fiber_force>
 				</DeGrooteFregly2016Muscle>
 				<DeGrooteFregly2016Muscle name="rect_fem_r">
 					<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
@@ -1611,7 +1727,7 @@
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>2191.7409836065599</max_isometric_force>
+					<max_isometric_force>5001.1106128829997</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.075999999999999998</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -1619,9 +1735,9 @@
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.087266460000000004</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
-					<max_contraction_velocity>15</max_contraction_velocity>
+					<max_contraction_velocity>30</max_contraction_velocity>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
-					<ignore_tendon_compliance>false</ignore_tendon_compliance>
+					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
 					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
@@ -1631,13 +1747,13 @@
 					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
-					<active_force_width_scale>1</active_force_width_scale>
+					<active_force_width_scale>3</active_force_width_scale>
 					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
 					<!--Make the passive fiber force 0. Default: false.-->
-					<ignore_passive_fiber_force>false</ignore_passive_fiber_force>
+					<ignore_passive_fiber_force>true</ignore_passive_fiber_force>
 				</DeGrooteFregly2016Muscle>
 				<DeGrooteFregly2016Muscle name="vasti_r">
 					<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
@@ -1732,7 +1848,7 @@
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>9593.95082</max_isometric_force>
+					<max_isometric_force>21891.459631523929</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.099000000000000005</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -1740,9 +1856,9 @@
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.052359879999999998</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
-					<max_contraction_velocity>15</max_contraction_velocity>
+					<max_contraction_velocity>30</max_contraction_velocity>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
-					<ignore_tendon_compliance>false</ignore_tendon_compliance>
+					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
 					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
@@ -1752,13 +1868,13 @@
 					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
-					<active_force_width_scale>1</active_force_width_scale>
+					<active_force_width_scale>3</active_force_width_scale>
 					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
 					<!--Make the passive fiber force 0. Default: false.-->
-					<ignore_passive_fiber_force>false</ignore_passive_fiber_force>
+					<ignore_passive_fiber_force>true</ignore_passive_fiber_force>
 				</DeGrooteFregly2016Muscle>
 				<DeGrooteFregly2016Muscle name="gastroc_r">
 					<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
@@ -1807,7 +1923,7 @@
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>4690.57377</max_isometric_force>
+					<max_isometric_force>10702.942746025043</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.050999999999999997</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -1815,7 +1931,7 @@
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.29670596999999999</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
-					<max_contraction_velocity>15</max_contraction_velocity>
+					<max_contraction_velocity>30</max_contraction_velocity>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
@@ -1827,13 +1943,13 @@
 					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
-					<active_force_width_scale>1</active_force_width_scale>
+					<active_force_width_scale>3</active_force_width_scale>
 					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
-					<tendon_strain_at_one_norm_force>0.10000000000000001</tendon_strain_at_one_norm_force>
+					<tendon_strain_at_one_norm_force>0.34999999999999998</tendon_strain_at_one_norm_force>
 					<!--Make the passive fiber force 0. Default: false.-->
-					<ignore_passive_fiber_force>false</ignore_passive_fiber_force>
+					<ignore_passive_fiber_force>true</ignore_passive_fiber_force>
 				</DeGrooteFregly2016Muscle>
 				<DeGrooteFregly2016Muscle name="soleus_r">
 					<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
@@ -1872,7 +1988,7 @@
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>7924.9967210000004</max_isometric_force>
+					<max_isometric_force>18083.243186536474</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.043999999999999997</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -1880,7 +1996,7 @@
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.43633231</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
-					<max_contraction_velocity>15</max_contraction_velocity>
+					<max_contraction_velocity>30</max_contraction_velocity>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
@@ -1892,13 +2008,13 @@
 					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
-					<active_force_width_scale>1</active_force_width_scale>
+					<active_force_width_scale>3</active_force_width_scale>
 					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
-					<tendon_strain_at_one_norm_force>0.10000000000000001</tendon_strain_at_one_norm_force>
+					<tendon_strain_at_one_norm_force>0.34999999999999998</tendon_strain_at_one_norm_force>
 					<!--Make the passive fiber force 0. Default: false.-->
-					<ignore_passive_fiber_force>false</ignore_passive_fiber_force>
+					<ignore_passive_fiber_force>true</ignore_passive_fiber_force>
 				</DeGrooteFregly2016Muscle>
 				<DeGrooteFregly2016Muscle name="tib_ant_r">
 					<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
@@ -1943,7 +2059,7 @@
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>2116.818162</max_isometric_force>
+					<max_isometric_force>4830.1518540304214</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.068000000000000005</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -1951,9 +2067,9 @@
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.087266460000000004</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
-					<max_contraction_velocity>15</max_contraction_velocity>
+					<max_contraction_velocity>30</max_contraction_velocity>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
-					<ignore_tendon_compliance>false</ignore_tendon_compliance>
+					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
 					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
@@ -1963,13 +2079,13 @@
 					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
-					<active_force_width_scale>1</active_force_width_scale>
+					<active_force_width_scale>3</active_force_width_scale>
 					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
 					<!--Make the passive fiber force 0. Default: false.-->
-					<ignore_passive_fiber_force>false</ignore_passive_fiber_force>
+					<ignore_passive_fiber_force>true</ignore_passive_fiber_force>
 				</DeGrooteFregly2016Muscle>
 				<DeGrooteFregly2016Muscle name="hamstrings_l">
 					<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
@@ -2014,7 +2130,7 @@
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>4105.4655739999998</max_isometric_force>
+					<max_isometric_force>9367.8439224928425</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.069000000000000006</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -2022,9 +2138,9 @@
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.26179939000000002</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
-					<max_contraction_velocity>15</max_contraction_velocity>
+					<max_contraction_velocity>30</max_contraction_velocity>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
-					<ignore_tendon_compliance>false</ignore_tendon_compliance>
+					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
 					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
@@ -2034,13 +2150,13 @@
 					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
-					<active_force_width_scale>1</active_force_width_scale>
+					<active_force_width_scale>3</active_force_width_scale>
 					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
 					<!--Make the passive fiber force 0. Default: false.-->
-					<ignore_passive_fiber_force>false</ignore_passive_fiber_force>
+					<ignore_passive_fiber_force>true</ignore_passive_fiber_force>
 				</DeGrooteFregly2016Muscle>
 				<DeGrooteFregly2016Muscle name="bifemsh_l">
 					<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
@@ -2085,7 +2201,7 @@
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>557.11475409835998</max_isometric_force>
+					<max_isometric_force>1271.2234384239453</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.11</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -2093,9 +2209,9 @@
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.40142572999999998</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
-					<max_contraction_velocity>15</max_contraction_velocity>
+					<max_contraction_velocity>30</max_contraction_velocity>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
-					<ignore_tendon_compliance>false</ignore_tendon_compliance>
+					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
 					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
@@ -2105,13 +2221,13 @@
 					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
-					<active_force_width_scale>1</active_force_width_scale>
+					<active_force_width_scale>3</active_force_width_scale>
 					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
 					<!--Make the passive fiber force 0. Default: false.-->
-					<ignore_passive_fiber_force>false</ignore_passive_fiber_force>
+					<ignore_passive_fiber_force>true</ignore_passive_fiber_force>
 				</DeGrooteFregly2016Muscle>
 				<DeGrooteFregly2016Muscle name="glut_max_l">
 					<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
@@ -2162,7 +2278,7 @@
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>3337.583607</max_isometric_force>
+					<max_isometric_force>7615.6922388180983</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.157</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -2170,9 +2286,9 @@
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
-					<max_contraction_velocity>15</max_contraction_velocity>
+					<max_contraction_velocity>30</max_contraction_velocity>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
-					<ignore_tendon_compliance>false</ignore_tendon_compliance>
+					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
 					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
@@ -2182,13 +2298,13 @@
 					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
-					<active_force_width_scale>1</active_force_width_scale>
+					<active_force_width_scale>3</active_force_width_scale>
 					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
 					<!--Make the passive fiber force 0. Default: false.-->
-					<ignore_passive_fiber_force>false</ignore_passive_fiber_force>
+					<ignore_passive_fiber_force>true</ignore_passive_fiber_force>
 				</DeGrooteFregly2016Muscle>
 				<DeGrooteFregly2016Muscle name="iliopsoas_l">
 					<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
@@ -2249,7 +2365,7 @@
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>2697.3442620000001</max_isometric_force>
+					<max_isometric_force>6154.7952591960138</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.11700000000000001</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -2257,9 +2373,9 @@
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.13962633999999999</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
-					<max_contraction_velocity>15</max_contraction_velocity>
+					<max_contraction_velocity>30</max_contraction_velocity>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
-					<ignore_tendon_compliance>false</ignore_tendon_compliance>
+					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
 					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
@@ -2269,13 +2385,13 @@
 					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
-					<active_force_width_scale>1</active_force_width_scale>
+					<active_force_width_scale>3</active_force_width_scale>
 					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
 					<!--Make the passive fiber force 0. Default: false.-->
-					<ignore_passive_fiber_force>false</ignore_passive_fiber_force>
+					<ignore_passive_fiber_force>true</ignore_passive_fiber_force>
 				</DeGrooteFregly2016Muscle>
 				<DeGrooteFregly2016Muscle name="rect_fem_l">
 					<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
@@ -2364,7 +2480,7 @@
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>2191.7409836065599</max_isometric_force>
+					<max_isometric_force>5001.1106128829997</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.075999999999999998</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -2372,9 +2488,9 @@
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.087266460000000004</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
-					<max_contraction_velocity>15</max_contraction_velocity>
+					<max_contraction_velocity>30</max_contraction_velocity>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
-					<ignore_tendon_compliance>false</ignore_tendon_compliance>
+					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
 					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
@@ -2384,13 +2500,13 @@
 					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
-					<active_force_width_scale>1</active_force_width_scale>
+					<active_force_width_scale>3</active_force_width_scale>
 					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
 					<!--Make the passive fiber force 0. Default: false.-->
-					<ignore_passive_fiber_force>false</ignore_passive_fiber_force>
+					<ignore_passive_fiber_force>true</ignore_passive_fiber_force>
 				</DeGrooteFregly2016Muscle>
 				<DeGrooteFregly2016Muscle name="vasti_l">
 					<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
@@ -2485,7 +2601,7 @@
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>9593.95082</max_isometric_force>
+					<max_isometric_force>21891.459631523929</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.099000000000000005</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -2493,9 +2609,9 @@
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.052359879999999998</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
-					<max_contraction_velocity>15</max_contraction_velocity>
+					<max_contraction_velocity>30</max_contraction_velocity>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
-					<ignore_tendon_compliance>false</ignore_tendon_compliance>
+					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
 					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
@@ -2505,13 +2621,13 @@
 					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
-					<active_force_width_scale>1</active_force_width_scale>
+					<active_force_width_scale>3</active_force_width_scale>
 					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
 					<!--Make the passive fiber force 0. Default: false.-->
-					<ignore_passive_fiber_force>false</ignore_passive_fiber_force>
+					<ignore_passive_fiber_force>true</ignore_passive_fiber_force>
 				</DeGrooteFregly2016Muscle>
 				<DeGrooteFregly2016Muscle name="gastroc_l">
 					<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
@@ -2560,7 +2676,7 @@
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>4690.57377</max_isometric_force>
+					<max_isometric_force>10702.942746025043</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.050999999999999997</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -2568,7 +2684,7 @@
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.29670596999999999</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
-					<max_contraction_velocity>15</max_contraction_velocity>
+					<max_contraction_velocity>30</max_contraction_velocity>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
@@ -2580,13 +2696,13 @@
 					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
-					<active_force_width_scale>1</active_force_width_scale>
+					<active_force_width_scale>3</active_force_width_scale>
 					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
-					<tendon_strain_at_one_norm_force>0.10000000000000001</tendon_strain_at_one_norm_force>
+					<tendon_strain_at_one_norm_force>0.34999999999999998</tendon_strain_at_one_norm_force>
 					<!--Make the passive fiber force 0. Default: false.-->
-					<ignore_passive_fiber_force>false</ignore_passive_fiber_force>
+					<ignore_passive_fiber_force>true</ignore_passive_fiber_force>
 				</DeGrooteFregly2016Muscle>
 				<DeGrooteFregly2016Muscle name="soleus_l">
 					<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
@@ -2625,7 +2741,7 @@
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>7924.9967210000004</max_isometric_force>
+					<max_isometric_force>18083.243186536474</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.043999999999999997</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -2633,7 +2749,7 @@
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.43633231</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
-					<max_contraction_velocity>15</max_contraction_velocity>
+					<max_contraction_velocity>30</max_contraction_velocity>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
@@ -2645,13 +2761,13 @@
 					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
-					<active_force_width_scale>1</active_force_width_scale>
+					<active_force_width_scale>3</active_force_width_scale>
 					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
-					<tendon_strain_at_one_norm_force>0.10000000000000001</tendon_strain_at_one_norm_force>
+					<tendon_strain_at_one_norm_force>0.34999999999999998</tendon_strain_at_one_norm_force>
 					<!--Make the passive fiber force 0. Default: false.-->
-					<ignore_passive_fiber_force>false</ignore_passive_fiber_force>
+					<ignore_passive_fiber_force>true</ignore_passive_fiber_force>
 				</DeGrooteFregly2016Muscle>
 				<DeGrooteFregly2016Muscle name="tib_ant_l">
 					<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
@@ -2696,7 +2812,7 @@
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>2116.818162</max_isometric_force>
+					<max_isometric_force>4830.1518540304214</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.068000000000000005</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -2704,9 +2820,9 @@
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.087266460000000004</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
-					<max_contraction_velocity>15</max_contraction_velocity>
+					<max_contraction_velocity>30</max_contraction_velocity>
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
-					<ignore_tendon_compliance>false</ignore_tendon_compliance>
+					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
 					<ignore_activation_dynamics>false</ignore_activation_dynamics>
 					<!--Smaller value means activation can increase more rapidly. Default: 0.015 seconds.-->
@@ -2716,469 +2832,20 @@
 					<!--Value of activation in the default state returned by initSystem(). Default: 0.5.-->
 					<default_activation>0.01</default_activation>
 					<!--Scale factor for the width of the active force-length curve. Larger values make the curve wider. Default: 1.0.-->
-					<active_force_width_scale>1</active_force_width_scale>
+					<active_force_width_scale>3</active_force_width_scale>
 					<!--Use this property to define the linear damping force that is added to the total muscle fiber force. It is computed by multiplying this damping parameter by the normalized fiber velocity and the max isometric force. Default: 0.-->
 					<fiber_damping>0.01</fiber_damping>
 					<!--Tendon strain at a tension of 1 normalized force. Default: 0.049.-->
 					<tendon_strain_at_one_norm_force>0.049000000000000002</tendon_strain_at_one_norm_force>
 					<!--Make the passive fiber force 0. Default: false.-->
-					<ignore_passive_fiber_force>false</ignore_passive_fiber_force>
+					<ignore_passive_fiber_force>true</ignore_passive_fiber_force>
 				</DeGrooteFregly2016Muscle>
 			</objects>
 			<groups />
 		</ForceSet>
 		<!--Markers in the model.-->
 		<MarkerSet name="markerset">
-			<objects>
-				<Marker name="C7">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/torso</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.075273851009963616 0.44496905438553869 -7.9593263171753236e-09</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="T10">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/torso</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.11282839709912654 0.15901096935676098 -0.011418607767383564</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="CLAV">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/torso</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.053187165499651898 0.36562698177452568 0.0011676399564592382</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="STRN">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/torso</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.11602831926123984 0.19762433860047202 -0.0025170563993159511</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="RACR">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/torso</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.01922685321096277 0.41764014054236803 0.17549620695233045</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LACR">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/torso</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.017099852284101727 0.4195539665338065 -0.17039164856194411</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="MTOR">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/torso</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.014603347751344054 0.41194753580905974 0.0015680480605937215</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RASI">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.0097737857930530504 0.0097027178745379677 0.12084167037841295</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LASI">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.010244743556424666 0.0097366063179409896 -0.12068058686123423</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RPSI">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.1631597219861228 0.034427849092834743 0.042293413967348759</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LPSI">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.15418768457901685 0.03561412019973012 -0.044098298585411679</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="MPEL">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/pelvis</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.074332219303915481 0.022370323371260954 -0.00041095027522105226</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RTH1">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.0047204529672185379 -0.1322901001564788 0.1172308271488154</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="RTH2">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.095892782183255448 -0.23150678757174592 0.095782757186108458</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="RTH3">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.015358751488531051 -0.30757220442844385 0.1021910789538992</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="RHJC">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0 0 0</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RLFC">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.011463958875014935 -0.46496190854274755 0.061665020589745226</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RMFC">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.011463962210514213 -0.45911619700691192 -0.063383902366575318</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RKJC">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.011463960006978101 -0.46203905223611924 -0.00085944054375194034</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RTB3">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.033061289025801979 -0.27483521480453421 -0.0022293054176127803</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="RTB2">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.01262409688019513 -0.19680491854537083 0.057071184369289124</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="RTB1">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.028868873989045252 -0.13085942575345907 -0.0075434520768850799</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="RLMAL">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.0051163192132835196 -0.43585487036400844 0.054378870767544066</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RMMAL">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.0057919204081167382 -0.42372181164482631 -0.039889760975934156</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RAJC">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.00033780023819454289 -0.42978834092861545 0.0072445551751587943</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="fRAJC">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.00033914339046335227 -0.50942358531839749 0.010155683761659645</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RCAL">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.034810611797801184 0.048577700520986353 -0.01052049417225747</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="fRCAL">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.034810611797801184 -0.0050518696404991464 -0.01052049417225747</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RMT5">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-2.5141639918040166e-05 0.051471038650232982 0.066762185850862257</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="fRMT5">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-2.5141639918040166e-05 -0.002158531511252506 0.066762185850862257</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RMT1">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.019172008935945475 0.051471038650232982 -0.039340997620188799</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="fRMT1">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.019171003270348749 -0.0021585315112525117 -0.039340997620188806</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="RMT3">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.00957293081521534 0.051471038650232968 0.013710666251680171</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="fRMT3">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.00957293081521534 -0.0021585315112525091 0.013710594115336729</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LTH1">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.019731825955192021 -0.12790564796886336 -0.11415797667321304</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="LTH2">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.091141912883877782 -0.22595250095595515 -0.10698591447824267</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="LTH3">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.017193821607424713 -0.30660614082324461 -0.10489692385586959</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="LHJC">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0 0 0</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LLFC">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.011509155007905463 -0.47760941347201508 -0.061908085797122259</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LMFC">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.011509155007905463 -0.47160458475688133 0.063633743497812228</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LKJC">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/femur_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.011509156165754162 -0.47460717783682543 0.0008628288503449809</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LTB3">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.039637502623363248 -0.26062451145920601 0.0046986825334504132</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="LTB2">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.043004571671308521 -0.18551122677634407 -0.060044299550135599</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="LTB1">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.03120323091522233 -0.12391871889910076 0.0031080010689356922</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="LLMAL">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.0050932316599734953 -0.43218517241631654 -0.054133496599800268</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LMMAL">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.0057657900564243103 -0.42015448205895611 0.039709805400523941</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LAJC">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.00033627614317848539 -0.42616997125664619 -0.0072118690216645695</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="fLAJC">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/tibia_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.00033627614317848539 -0.50513476992773498 -0.0072118690216645695</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LCAL">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.036714995691845755 0.048900206591953967 0.0033616806284614328</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="fLCAL">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/calcn_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.036714995691845755 -0.0050854088696377104 0.0033616806284614328</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LMT5">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-2.5228818984553978e-05 0.051812753516636272 -0.06724988914963867</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="fLMT5">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-2.5228818984553978e-05 -0.0021728619449553764 -0.06724988914963867</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="LMT1">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.019237479052104243 0.051812753516636285 0.039628386867140382</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="fLMT1">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.019237479052104243 -0.0021728619449553795 0.039628386867140382</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="LMT3">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.0096061251165598296 0.051812753516636285 -0.013810823804554546</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-				<Marker name="fLMT3">
-					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
-					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.0096061251165598296 -0.0021728619449553773 -0.01381075114124914</location>
-					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
-				</Marker>
-			</objects>
+			<objects />
 			<groups />
 		</MarkerSet>
 		<!--Geometry to be used in contact forces.-->
@@ -3194,7 +2861,7 @@
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_r</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.031307527581931796 0.010500000000000001 0</location>
+					<location>0.031663561447284383 0.017233350000000001 0</location>
 					<!--Radius of the sphere (default: 0).-->
 					<radius>0.035000000000000003</radius>
 				</ContactSphere>
@@ -3202,7 +2869,7 @@
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_r</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.13 0.0050000000000000001 0</location>
+					<location>0.13073710000000002 0.0072333499999999995 0</location>
 					<!--Radius of the sphere (default: 0).-->
 					<radius>0.025000000000000001</radius>
 				</ContactSphere>
@@ -3210,7 +2877,7 @@
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_r</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.20999999999999999 0.0050000000000000001 0</location>
+					<location>0.21119070000000001 0.0072333499999999995 0</location>
 					<!--Radius of the sphere (default: 0).-->
 					<radius>0.025000000000000001</radius>
 				</ContactSphere>
@@ -3226,7 +2893,7 @@
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_l</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.13 0.0050000000000000001 0</location>
+					<location>0.13118950000000001 0.0072333500000000004 0</location>
 					<!--Radius of the sphere (default: 0).-->
 					<radius>0.025000000000000001</radius>
 				</ContactSphere>
@@ -3234,11 +2901,12 @@
 					<!--Path to a Component that satisfies the Socket 'frame' of type PhysicalFrame (description: The frame to which this geometry is attached.).-->
 					<socket_frame>/bodyset/calcn_l</socket_frame>
 					<!--Location of geometry center in the PhysicalFrame.-->
-					<location>0.20999999999999999 0.0050000000000000001 0</location>
+					<location>0.21192149999999998 0.0072333500000000004 0</location>
 					<!--Radius of the sphere (default: 0).-->
 					<radius>0.025000000000000001</radius>
 				</ContactSphere>
 			</objects>
+			<groups />
 		</ContactGeometrySet>
 	</Model>
 </OpenSimDocument>

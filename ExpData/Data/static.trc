@@ -1,4 +1,4 @@
-PathFileType	4	(X/Y/Z)	static.trc
+PathFileType	4	(X/Y/Z)	Data\static.trc
 DataRate	CameraRate	NumFrames	NumMarkers	Units	OrigDataRate	OrigDataStartFrame	OrigNumFrames
 250.000000	250.000000	483	38	mm	250.000000	0	483
 Frame#	Time	RASI			LASI			RPSI			LPSI			RAIC			LAIC			RLFC			RMFC			RTH1			RTH2			RTH3			RLMAL			RMMAL			RTB1			RTB2			RTB3			RCAL			RMT1			RMT5			LLFC			LMFC			LTH1			LTH2			LTH3			LLMAL			LMMAL			LTB1			LTB2			LTB3			LCAL			LMT1			LMT5			C7			T10			CLAV			STRN			RACR			LACR			

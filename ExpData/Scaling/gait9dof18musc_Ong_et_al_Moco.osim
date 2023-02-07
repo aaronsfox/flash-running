@@ -1272,7 +1272,7 @@
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.069</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.349</tendon_slack_length>
+					<tendon_slack_length>0.3325</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.26179939</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -1353,7 +1353,7 @@
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.11</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.117</tendon_slack_length>
+					<tendon_slack_length>0.105817218589115</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.40142573</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -2094,7 +2094,7 @@
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.069</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.349</tendon_slack_length>
+					<tendon_slack_length>0.3325</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.26179939</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -2175,7 +2175,7 @@
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.11</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.117</tendon_slack_length>
+					<tendon_slack_length>0.105817218589115</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.40142573</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->

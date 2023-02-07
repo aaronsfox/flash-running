@@ -1,7 +1,0 @@
-[2021-03-04 15:28:59.075] [info] Storage: read data file = refQ_2D.sto (nr=70 nc=11)
-[2021-03-04 15:29:01.037] [info] Storage: read data file = refQ_2D.sto (nr=70 nc=11)
-[2021-03-04 15:29:16.217] [info] Storage: read data file = refQ_2D.sto (nr=70 nc=11)
-[2021-03-04 15:29:16.218] [info] Storage: read data file = refQ_2D.sto (nr=70 nc=11)
-[2021-03-04 15:35:22.869] [info] Loaded model scaledModel2D from file gaitModel2D.osim
-[2021-03-04 16:06:23.046] [info] Storage: read data file = refQ_2D.sto (nr=70 nc=11)
-[2021-03-04 16:10:49.556] [info] Storage: read data file = refQ_2D.sto (nr=70 nc=11)
