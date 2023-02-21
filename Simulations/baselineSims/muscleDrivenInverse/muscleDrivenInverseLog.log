@@ -1,0 +1,2211 @@
+[2023-02-17 17:34:07.991] [info] Loaded model gaitModel2D from file gaitModel2D.osim
+[2023-02-17 17:34:08.023] [info] Loaded model gait9dof18musc_Ong_et_al from file ..\..\ExpData\Scaling\gait9dof18musc_Ong_et_al_Moco_withSurfaceConstraints.osim
+[2023-02-17 17:34:08.316] [info] Adding reserve actuators with an optimal force of 1.0...
+[2023-02-17 17:34:08.349] [info] Added 9 reserve actuator(s), for each of the following coordinates:
+[2023-02-17 17:34:08.349] [info]   /jointset/ground_pelvis/pelvis_tilt
+[2023-02-17 17:34:08.349] [info]   /jointset/ground_pelvis/pelvis_tx
+[2023-02-17 17:34:08.349] [info]   /jointset/ground_pelvis/pelvis_ty
+[2023-02-17 17:34:08.349] [info]   /jointset/hip_l/hip_flexion_l
+[2023-02-17 17:34:08.349] [info]   /jointset/hip_r/hip_flexion_r
+[2023-02-17 17:34:08.349] [info]   /jointset/knee_l/knee_angle_l
+[2023-02-17 17:34:08.349] [info]   /jointset/knee_r/knee_angle_r
+[2023-02-17 17:34:08.349] [info]   /jointset/ankle_l/ankle_angle_l
+[2023-02-17 17:34:08.349] [info]   /jointset/ankle_r/ankle_angle_r
+[2023-02-17 17:43:22.219] [info] Loaded model gaitModel2D from file gaitModel2D.osim
+[2023-02-17 17:43:22.231] [info] Loaded model gait9dof18musc_Ong_et_al from file ..\..\ExpData\Scaling\gait9dof18musc_Ong_et_al_Moco_withSurfaceConstraints.osim
+[2023-02-17 17:43:22.273] [info] Adding reserve actuators with an optimal force of 1.0...
+[2023-02-17 17:43:22.307] [info] Added 9 reserve actuator(s), for each of the following coordinates:
+[2023-02-17 17:43:22.307] [info]   /jointset/ground_pelvis/pelvis_tilt
+[2023-02-17 17:43:22.307] [info]   /jointset/ground_pelvis/pelvis_tx
+[2023-02-17 17:43:22.307] [info]   /jointset/ground_pelvis/pelvis_ty
+[2023-02-17 17:43:22.307] [info]   /jointset/hip_l/hip_flexion_l
+[2023-02-17 17:43:22.307] [info]   /jointset/hip_r/hip_flexion_r
+[2023-02-17 17:43:22.307] [info]   /jointset/knee_l/knee_angle_l
+[2023-02-17 17:43:22.307] [info]   /jointset/knee_r/knee_angle_r
+[2023-02-17 17:43:22.307] [info]   /jointset/ankle_l/ankle_angle_l
+[2023-02-17 17:43:22.307] [info]   /jointset/ankle_r/ankle_angle_r
+[2023-02-17 17:44:10.286] [info] Loaded model gaitModel2D from file gaitModel2D.osim
+[2023-02-17 17:44:10.299] [info] Loaded model gait9dof18musc_Ong_et_al from file ..\..\ExpData\Scaling\gait9dof18musc_Ong_et_al_Moco_withSurfaceConstraints.osim
+[2023-02-17 17:44:10.338] [info] Adding reserve actuators with an optimal force of 1.0...
+[2023-02-17 17:44:10.368] [info] Added 9 reserve actuator(s), for each of the following coordinates:
+[2023-02-17 17:44:10.368] [info]   /jointset/ground_pelvis/pelvis_tilt
+[2023-02-17 17:44:10.368] [info]   /jointset/ground_pelvis/pelvis_tx
+[2023-02-17 17:44:10.368] [info]   /jointset/ground_pelvis/pelvis_ty
+[2023-02-17 17:44:10.369] [info]   /jointset/hip_l/hip_flexion_l
+[2023-02-17 17:44:10.369] [info]   /jointset/hip_r/hip_flexion_r
+[2023-02-17 17:44:10.369] [info]   /jointset/knee_l/knee_angle_l
+[2023-02-17 17:44:10.369] [info]   /jointset/knee_r/knee_angle_r
+[2023-02-17 17:44:10.369] [info]   /jointset/ankle_l/ankle_angle_l
+[2023-02-17 17:44:10.369] [info]   /jointset/ankle_r/ankle_angle_r
+[2023-02-17 19:50:35.777] [info] Loaded model gaitModel2D from file gaitModel2D.osim
+[2023-02-17 19:50:46.543] [info] Loaded model gait9dof18musc_Ong_et_al from file ..\..\ExpData\Scaling\gait9dof18musc_Ong_et_al_Moco_withSurfaceConstraints.osim
+[2023-02-17 19:50:48.988] [info] Adding reserve actuators with an optimal force of 1.0...
+[2023-02-17 19:50:49.020] [info] Added 9 reserve actuator(s), for each of the following coordinates:
+[2023-02-17 19:50:49.020] [info]   /jointset/ground_pelvis/pelvis_tilt
+[2023-02-17 19:50:49.020] [info]   /jointset/ground_pelvis/pelvis_tx
+[2023-02-17 19:50:49.020] [info]   /jointset/ground_pelvis/pelvis_ty
+[2023-02-17 19:50:49.020] [info]   /jointset/hip_l/hip_flexion_l
+[2023-02-17 19:50:49.020] [info]   /jointset/hip_r/hip_flexion_r
+[2023-02-17 19:50:49.020] [info]   /jointset/knee_l/knee_angle_l
+[2023-02-17 19:50:49.020] [info]   /jointset/knee_r/knee_angle_r
+[2023-02-17 19:50:49.020] [info]   /jointset/ankle_l/ankle_angle_l
+[2023-02-17 19:50:49.020] [info]   /jointset/ankle_r/ankle_angle_r
+[2023-02-17 19:52:55.602] [info] Storage: read data file = refQ_2D.sto (nr=67 nc=11)
+[2023-02-17 19:53:07.411] [info] Storage: read data file = refQ_2D.sto (nr=67 nc=11)
+[2023-02-17 19:53:11.889] [info] Storage: read data file = refQ_2D.sto (nr=67 nc=11)
+[2023-02-17 19:53:15.506] [info] Storage: read data file = refQ_2D.sto (nr=67 nc=11)
+[2023-02-17 19:53:32.854] [info] Loaded model gaitModel2D from file muscleDrivenInverse\muscleModel.osim
+[2023-02-17 19:53:32.854] [warning] Couldn't find file 'r_pelvis.vtp'.
+[2023-02-17 19:53:32.854] [warning] Couldn't find file 'l_pelvis.vtp'.
+[2023-02-17 19:53:32.855] [warning] Couldn't find file 'sacrum.vtp'.
+[2023-02-17 19:53:32.855] [warning] Couldn't find file 'femur_l.vtp'.
+[2023-02-17 19:53:32.855] [warning] Couldn't find file 'femur_r.vtp'.
+[2023-02-17 19:53:32.855] [warning] Couldn't find file 'tibia_l.vtp'.
+[2023-02-17 19:53:32.855] [warning] Couldn't find file 'l_fibula.vtp'.
+[2023-02-17 19:53:32.855] [warning] Couldn't find file 'tibia_r.vtp'.
+[2023-02-17 19:53:32.855] [warning] Couldn't find file 'r_fibula.vtp'.
+[2023-02-17 19:53:32.855] [warning] Couldn't find file 'l_talus.vtp'.
+[2023-02-17 19:53:32.855] [warning] Couldn't find file 'r_talus.vtp'.
+[2023-02-17 19:53:32.856] [warning] Couldn't find file 'l_foot.vtp'.
+[2023-02-17 19:53:32.856] [warning] Couldn't find file 'r_foot.vtp'.
+[2023-02-17 19:53:32.856] [warning] Couldn't find file 'l_bofoot.vtp'.
+[2023-02-17 19:53:32.856] [warning] Couldn't find file 'r_bofoot.vtp'.
+[2023-02-17 19:53:32.856] [warning] Couldn't find file 'hat_spine.vtp'.
+[2023-02-17 19:53:32.856] [warning] Couldn't find file 'hat_jaw.vtp'.
+[2023-02-17 19:53:32.856] [warning] Couldn't find file 'hat_skull.vtp'.
+[2023-02-17 19:53:32.856] [warning] Couldn't find file 'hat_ribs.vtp'.
+[2023-02-17 19:55:45.877] [info] Storage: read data file = refQ_2D.sto (nr=67 nc=11)
+[2023-02-17 19:55:45.878] [info] Storage: read data file = refQ_2D.sto (nr=67 nc=11)
+[2023-02-17 19:56:31.681] [info] Loaded model gaitModel2D from file gaitModel2D.osim
+[2023-02-17 19:56:31.707] [info] Adding reserve actuators with an optimal force of 1.0...
+[2023-02-17 19:56:31.737] [info] Added 9 reserve actuator(s), for each of the following coordinates:
+[2023-02-17 19:56:31.737] [info]   /jointset/ground_pelvis/pelvis_tilt
+[2023-02-17 19:56:31.737] [info]   /jointset/ground_pelvis/pelvis_tx
+[2023-02-17 19:56:31.737] [info]   /jointset/ground_pelvis/pelvis_ty
+[2023-02-17 19:56:31.737] [info]   /jointset/hip_l/hip_flexion_l
+[2023-02-17 19:56:31.737] [info]   /jointset/hip_r/hip_flexion_r
+[2023-02-17 19:56:31.737] [info]   /jointset/knee_l/knee_angle_l
+[2023-02-17 19:56:31.737] [info]   /jointset/knee_r/knee_angle_r
+[2023-02-17 19:56:31.737] [info]   /jointset/ankle_l/ankle_angle_l
+[2023-02-17 19:56:31.737] [info]   /jointset/ankle_r/ankle_angle_r
+[2023-02-17 19:56:31.957] [info] ========================================================================
+[2023-02-17 19:56:31.957] [info] MocoCasADiSolver starting.
+[2023-02-17 19:56:31.957] [info] Fri Feb 17 19:56:31 2023
+[2023-02-17 19:56:31.957] [info] ------------------------------------------------------------------------
+[2023-02-17 19:56:31.957] [cout] [info] Costs: (total: 1)
+[2023-02-17 19:56:31.957] [cout] [info]   excitation_effort. MocoControlGoal, enabled: true, mode: cost, weight: 1.0
+[2023-02-17 19:56:31.957] [cout] [info]         control: /forceset/lumbarAct, weight: 1.0
+[2023-02-17 19:56:31.957] [cout] [info]         control: /forceset/hamstrings_r, weight: 1.0
+[2023-02-17 19:56:31.957] [cout] [info]         control: /forceset/bifemsh_r, weight: 1.0
+[2023-02-17 19:56:31.957] [cout] [info]         control: /forceset/glut_max_r, weight: 1.0
+[2023-02-17 19:56:31.957] [cout] [info]         control: /forceset/iliopsoas_r, weight: 1.0
+[2023-02-17 19:56:31.957] [cout] [info]         control: /forceset/rect_fem_r, weight: 1.0
+[2023-02-17 19:56:31.957] [cout] [info]         control: /forceset/vasti_r, weight: 1.0
+[2023-02-17 19:56:31.958] [cout] [info]         control: /forceset/gastroc_r, weight: 1.0
+[2023-02-17 19:56:31.958] [cout] [info]         control: /forceset/soleus_r, weight: 1.0
+[2023-02-17 19:56:31.958] [cout] [info]         control: /forceset/tib_ant_r, weight: 1.0
+[2023-02-17 19:56:31.958] [cout] [info]         control: /forceset/hamstrings_l, weight: 1.0
+[2023-02-17 19:56:31.958] [cout] [info]         control: /forceset/bifemsh_l, weight: 1.0
+[2023-02-17 19:56:31.958] [cout] [info]         control: /forceset/glut_max_l, weight: 1.0
+[2023-02-17 19:56:31.958] [cout] [info]         control: /forceset/iliopsoas_l, weight: 1.0
+[2023-02-17 19:56:31.958] [cout] [info]         control: /forceset/rect_fem_l, weight: 1.0
+[2023-02-17 19:56:31.958] [cout] [info]         control: /forceset/vasti_l, weight: 1.0
+[2023-02-17 19:56:31.958] [cout] [info]         control: /forceset/gastroc_l, weight: 1.0
+[2023-02-17 19:56:31.958] [cout] [info]         control: /forceset/soleus_l, weight: 1.0
+[2023-02-17 19:56:31.958] [cout] [info]         control: /forceset/tib_ant_l, weight: 1.0
+[2023-02-17 19:56:31.958] [cout] [info]         control: /forceset/reserve_jointset_ground_pelvis_pelvis_tilt, weight: 1.0
+[2023-02-17 19:56:31.958] [cout] [info]         control: /forceset/reserve_jointset_ground_pelvis_pelvis_tx, weight: 1.0
+[2023-02-17 19:56:31.958] [cout] [info]         control: /forceset/reserve_jointset_ground_pelvis_pelvis_ty, weight: 1.0
+[2023-02-17 19:56:31.958] [cout] [info]         control: /forceset/reserve_jointset_hip_l_hip_flexion_l, weight: 1.0
+[2023-02-17 19:56:31.958] [cout] [info]         control: /forceset/reserve_jointset_hip_r_hip_flexion_r, weight: 1.0
+[2023-02-17 19:56:31.958] [cout] [info]         control: /forceset/reserve_jointset_knee_l_knee_angle_l, weight: 1.0
+[2023-02-17 19:56:31.958] [cout] [info]         control: /forceset/reserve_jointset_knee_r_knee_angle_r, weight: 1.0
+[2023-02-17 19:56:31.958] [cout] [info]         control: /forceset/reserve_jointset_ankle_l_ankle_angle_l, weight: 1.0
+[2023-02-17 19:56:31.958] [cout] [info]         control: /forceset/reserve_jointset_ankle_r_ankle_angle_r, weight: 1.0
+[2023-02-17 19:56:31.958] [cout] [info] Endpoint constraints: (total: 1)
+[2023-02-17 19:56:31.958] [cout] [info]   initial_activation. MocoInitialActivationGoal, enabled: true, mode: endpoint_constraint
+[2023-02-17 19:56:31.958] [cout] [info] Kinematic constraints: none
+[2023-02-17 19:56:31.958] [cout] [info] Path constraints: none
+[2023-02-17 19:56:31.958] [cout] [info] States: (total: 18)
+[2023-02-17 19:56:31.958] [cout] [info]   /forceset/bifemsh_r/activation. bounds: [0.01, 1]
+[2023-02-17 19:56:31.958] [cout] [info]   /forceset/hamstrings_r/activation. bounds: [0.01, 1]
+[2023-02-17 19:56:31.958] [cout] [info]   /forceset/glut_max_r/activation. bounds: [0.01, 1]
+[2023-02-17 19:56:31.958] [cout] [info]   /forceset/vasti_r/activation. bounds: [0.01, 1]
+[2023-02-17 19:56:31.958] [cout] [info]   /forceset/gastroc_r/activation. bounds: [0.01, 1]
+[2023-02-17 19:56:31.958] [cout] [info]   /forceset/iliopsoas_r/activation. bounds: [0.01, 1]
+[2023-02-17 19:56:31.958] [cout] [info]   /forceset/soleus_r/activation. bounds: [0.01, 1]
+[2023-02-17 19:56:31.958] [cout] [info]   /forceset/rect_fem_r/activation. bounds: [0.01, 1]
+[2023-02-17 19:56:31.958] [cout] [info]   /forceset/tib_ant_r/activation. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/hamstrings_l/activation. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/bifemsh_l/activation. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/glut_max_l/activation. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/iliopsoas_l/activation. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/rect_fem_l/activation. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/gastroc_l/activation. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/vasti_l/activation. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/soleus_l/activation. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/tib_ant_l/activation. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info] Controls: (total: 28)
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/lumbarAct. bounds: [-inf, inf]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/reserve_jointset_hip_r_hip_flexion_r. bounds: [-inf, inf]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/reserve_jointset_ground_pelvis_pelvis_ty. bounds: [-inf, inf]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/bifemsh_r. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/reserve_jointset_ankle_l_ankle_angle_l. bounds: [-inf, inf]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/hamstrings_r. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/glut_max_r. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/vasti_r. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/gastroc_r. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/iliopsoas_r. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/rect_fem_r. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/soleus_r. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/tib_ant_r. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/hamstrings_l. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/bifemsh_l. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/glut_max_l. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/iliopsoas_l. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/reserve_jointset_ground_pelvis_pelvis_tx. bounds: [-inf, inf]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/rect_fem_l. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/gastroc_l. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/vasti_l. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/soleus_l. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/tib_ant_l. bounds: [0.01, 1]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/reserve_jointset_ground_pelvis_pelvis_tilt. bounds: [-inf, inf]
+[2023-02-17 19:56:31.959] [cout] [info]   /forceset/reserve_jointset_hip_l_hip_flexion_l. bounds: [-inf, inf]
+[2023-02-17 19:56:31.960] [cout] [info]   /forceset/reserve_jointset_knee_l_knee_angle_l. bounds: [-inf, inf]
+[2023-02-17 19:56:31.960] [cout] [info]   /forceset/reserve_jointset_knee_r_knee_angle_r. bounds: [-inf, inf]
+[2023-02-17 19:56:31.960] [cout] [info]   /forceset/reserve_jointset_ankle_r_ankle_angle_r. bounds: [-inf, inf]
+[2023-02-17 19:56:31.960] [cout] [info] Parameters: none
+[2023-02-17 19:56:32.227] [info] Number of threads: 8
+[2023-02-17 19:58:51.174] [info] Set log level to Info.
+[2023-02-17 19:58:51.176] [info] ------------------------------------------------------------------------
+[2023-02-17 19:58:51.176] [info] Elapsed real time: 139 second(s) (2 minute(s), 19 second(s)).
+[2023-02-17 19:58:51.177] [info] Fri Feb 17 19:58:51 2023
+[2023-02-17 19:58:51.177] [warning] MocoCasADiSolver did NOT succeed:
+[2023-02-17 19:58:51.177] [warning]   User_Requested_Stop
+[2023-02-17 19:58:51.177] [info] ========================================================================
+[2023-02-17 20:04:56.835] [info] Loaded model gaitModel2D from file gaitModel2D.osim
+[2023-02-17 20:04:56.859] [info] Adding reserve actuators with an optimal force of 1.0...
+[2023-02-17 20:04:56.890] [info] Added 9 reserve actuator(s), for each of the following coordinates:
+[2023-02-17 20:04:56.890] [info]   /jointset/ground_pelvis/pelvis_tilt
+[2023-02-17 20:04:56.890] [info]   /jointset/ground_pelvis/pelvis_tx
+[2023-02-17 20:04:56.890] [info]   /jointset/ground_pelvis/pelvis_ty
+[2023-02-17 20:04:56.890] [info]   /jointset/hip_l/hip_flexion_l
+[2023-02-17 20:04:56.890] [info]   /jointset/hip_r/hip_flexion_r
+[2023-02-17 20:04:56.891] [info]   /jointset/knee_l/knee_angle_l
+[2023-02-17 20:04:56.891] [info]   /jointset/knee_r/knee_angle_r
+[2023-02-17 20:04:56.891] [info]   /jointset/ankle_l/ankle_angle_l
+[2023-02-17 20:04:56.891] [info]   /jointset/ankle_r/ankle_angle_r
+[2023-02-17 20:04:57.111] [info] ========================================================================
+[2023-02-17 20:04:57.111] [info] MocoCasADiSolver starting.
+[2023-02-17 20:04:57.111] [info] Fri Feb 17 20:04:57 2023
+[2023-02-17 20:04:57.111] [info] ------------------------------------------------------------------------
+[2023-02-17 20:04:57.111] [cout] [info] Costs: (total: 1)
+[2023-02-17 20:04:57.111] [cout] [info]   excitation_effort. MocoControlGoal, enabled: true, mode: cost, weight: 1.0
+[2023-02-17 20:04:57.111] [cout] [info]         control: /forceset/lumbarAct, weight: 1.0
+[2023-02-17 20:04:57.111] [cout] [info]         control: /forceset/hamstrings_r, weight: 1.0
+[2023-02-17 20:04:57.111] [cout] [info]         control: /forceset/bifemsh_r, weight: 1.0
+[2023-02-17 20:04:57.111] [cout] [info]         control: /forceset/glut_max_r, weight: 1.0
+[2023-02-17 20:04:57.111] [cout] [info]         control: /forceset/iliopsoas_r, weight: 1.0
+[2023-02-17 20:04:57.111] [cout] [info]         control: /forceset/rect_fem_r, weight: 1.0
+[2023-02-17 20:04:57.111] [cout] [info]         control: /forceset/vasti_r, weight: 1.0
+[2023-02-17 20:04:57.111] [cout] [info]         control: /forceset/gastroc_r, weight: 1.0
+[2023-02-17 20:04:57.111] [cout] [info]         control: /forceset/soleus_r, weight: 1.0
+[2023-02-17 20:04:57.111] [cout] [info]         control: /forceset/tib_ant_r, weight: 1.0
+[2023-02-17 20:04:57.111] [cout] [info]         control: /forceset/hamstrings_l, weight: 1.0
+[2023-02-17 20:04:57.111] [cout] [info]         control: /forceset/bifemsh_l, weight: 1.0
+[2023-02-17 20:04:57.111] [cout] [info]         control: /forceset/glut_max_l, weight: 1.0
+[2023-02-17 20:04:57.112] [cout] [info]         control: /forceset/iliopsoas_l, weight: 1.0
+[2023-02-17 20:04:57.112] [cout] [info]         control: /forceset/rect_fem_l, weight: 1.0
+[2023-02-17 20:04:57.112] [cout] [info]         control: /forceset/vasti_l, weight: 1.0
+[2023-02-17 20:04:57.112] [cout] [info]         control: /forceset/gastroc_l, weight: 1.0
+[2023-02-17 20:04:57.112] [cout] [info]         control: /forceset/soleus_l, weight: 1.0
+[2023-02-17 20:04:57.112] [cout] [info]         control: /forceset/tib_ant_l, weight: 1.0
+[2023-02-17 20:04:57.112] [cout] [info]         control: /forceset/reserve_jointset_ground_pelvis_pelvis_tilt, weight: 1.0
+[2023-02-17 20:04:57.112] [cout] [info]         control: /forceset/reserve_jointset_ground_pelvis_pelvis_tx, weight: 1.0
+[2023-02-17 20:04:57.112] [cout] [info]         control: /forceset/reserve_jointset_ground_pelvis_pelvis_ty, weight: 1.0
+[2023-02-17 20:04:57.112] [cout] [info]         control: /forceset/reserve_jointset_hip_l_hip_flexion_l, weight: 1.0
+[2023-02-17 20:04:57.112] [cout] [info]         control: /forceset/reserve_jointset_hip_r_hip_flexion_r, weight: 1.0
+[2023-02-17 20:04:57.112] [cout] [info]         control: /forceset/reserve_jointset_knee_l_knee_angle_l, weight: 1.0
+[2023-02-17 20:04:57.112] [cout] [info]         control: /forceset/reserve_jointset_knee_r_knee_angle_r, weight: 1.0
+[2023-02-17 20:04:57.112] [cout] [info]         control: /forceset/reserve_jointset_ankle_l_ankle_angle_l, weight: 1.0
+[2023-02-17 20:04:57.112] [cout] [info]         control: /forceset/reserve_jointset_ankle_r_ankle_angle_r, weight: 1.0
+[2023-02-17 20:04:57.112] [cout] [info] Endpoint constraints: (total: 1)
+[2023-02-17 20:04:57.112] [cout] [info]   initial_activation. MocoInitialActivationGoal, enabled: true, mode: endpoint_constraint
+[2023-02-17 20:04:57.112] [cout] [info] Kinematic constraints: none
+[2023-02-17 20:04:57.112] [cout] [info] Path constraints: none
+[2023-02-17 20:04:57.112] [cout] [info] States: (total: 18)
+[2023-02-17 20:04:57.112] [cout] [info]   /forceset/bifemsh_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:04:57.112] [cout] [info]   /forceset/hamstrings_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:04:57.112] [cout] [info]   /forceset/glut_max_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:04:57.112] [cout] [info]   /forceset/vasti_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:04:57.112] [cout] [info]   /forceset/gastroc_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:04:57.112] [cout] [info]   /forceset/iliopsoas_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:04:57.112] [cout] [info]   /forceset/soleus_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:04:57.112] [cout] [info]   /forceset/rect_fem_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:04:57.112] [cout] [info]   /forceset/tib_ant_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:04:57.112] [cout] [info]   /forceset/hamstrings_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:04:57.112] [cout] [info]   /forceset/bifemsh_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:04:57.112] [cout] [info]   /forceset/glut_max_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:04:57.112] [cout] [info]   /forceset/iliopsoas_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:04:57.112] [cout] [info]   /forceset/rect_fem_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:04:57.112] [cout] [info]   /forceset/gastroc_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:04:57.112] [cout] [info]   /forceset/vasti_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/soleus_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/tib_ant_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:04:57.113] [cout] [info] Controls: (total: 28)
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/lumbarAct. bounds: [-inf, inf]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/reserve_jointset_hip_r_hip_flexion_r. bounds: [-inf, inf]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/reserve_jointset_ground_pelvis_pelvis_ty. bounds: [-inf, inf]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/bifemsh_r. bounds: [0.01, 1]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/reserve_jointset_ankle_l_ankle_angle_l. bounds: [-inf, inf]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/hamstrings_r. bounds: [0.01, 1]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/glut_max_r. bounds: [0.01, 1]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/vasti_r. bounds: [0.01, 1]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/gastroc_r. bounds: [0.01, 1]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/iliopsoas_r. bounds: [0.01, 1]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/rect_fem_r. bounds: [0.01, 1]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/soleus_r. bounds: [0.01, 1]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/tib_ant_r. bounds: [0.01, 1]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/hamstrings_l. bounds: [0.01, 1]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/bifemsh_l. bounds: [0.01, 1]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/glut_max_l. bounds: [0.01, 1]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/iliopsoas_l. bounds: [0.01, 1]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/reserve_jointset_ground_pelvis_pelvis_tx. bounds: [-inf, inf]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/rect_fem_l. bounds: [0.01, 1]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/gastroc_l. bounds: [0.01, 1]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/vasti_l. bounds: [0.01, 1]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/soleus_l. bounds: [0.01, 1]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/tib_ant_l. bounds: [0.01, 1]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/reserve_jointset_ground_pelvis_pelvis_tilt. bounds: [-inf, inf]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/reserve_jointset_hip_l_hip_flexion_l. bounds: [-inf, inf]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/reserve_jointset_knee_l_knee_angle_l. bounds: [-inf, inf]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/reserve_jointset_knee_r_knee_angle_r. bounds: [-inf, inf]
+[2023-02-17 20:04:57.113] [cout] [info]   /forceset/reserve_jointset_ankle_r_ankle_angle_r. bounds: [-inf, inf]
+[2023-02-17 20:04:57.113] [cout] [info] Parameters: none
+[2023-02-17 20:04:57.381] [info] Number of threads: 8
+[2023-02-17 20:05:20.971] [info] Set log level to Info.
+[2023-02-17 20:05:20.973] [info] ------------------------------------------------------------------------
+[2023-02-17 20:05:20.973] [info] Elapsed real time: 24 second(s).
+[2023-02-17 20:05:20.973] [info] Fri Feb 17 20:05:20 2023
+[2023-02-17 20:05:20.973] [info] MocoCasADiSolver succeeded!
+[2023-02-17 20:05:20.973] [info] ========================================================================
+[2023-02-17 20:07:26.414] [info] Loaded model gaitModel2D from file gaitModel2D.osim
+[2023-02-17 20:07:26.437] [info] Adding reserve actuators with an optimal force of 1.0...
+[2023-02-17 20:07:26.465] [info] Added 9 reserve actuator(s), for each of the following coordinates:
+[2023-02-17 20:07:26.465] [info]   /jointset/ground_pelvis/pelvis_tilt
+[2023-02-17 20:07:26.465] [info]   /jointset/ground_pelvis/pelvis_tx
+[2023-02-17 20:07:26.465] [info]   /jointset/ground_pelvis/pelvis_ty
+[2023-02-17 20:07:26.465] [info]   /jointset/hip_l/hip_flexion_l
+[2023-02-17 20:07:26.465] [info]   /jointset/hip_r/hip_flexion_r
+[2023-02-17 20:07:26.465] [info]   /jointset/knee_l/knee_angle_l
+[2023-02-17 20:07:26.465] [info]   /jointset/knee_r/knee_angle_r
+[2023-02-17 20:07:26.465] [info]   /jointset/ankle_l/ankle_angle_l
+[2023-02-17 20:07:26.465] [info]   /jointset/ankle_r/ankle_angle_r
+[2023-02-17 20:07:26.683] [info] ========================================================================
+[2023-02-17 20:07:26.683] [info] MocoCasADiSolver starting.
+[2023-02-17 20:07:26.683] [info] Fri Feb 17 20:07:26 2023
+[2023-02-17 20:07:26.683] [info] ------------------------------------------------------------------------
+[2023-02-17 20:07:26.683] [cout] [info] Costs: (total: 1)
+[2023-02-17 20:07:26.683] [cout] [info]   excitation_effort. MocoControlGoal, enabled: true, mode: cost, weight: 1.0
+[2023-02-17 20:07:26.683] [cout] [info]         control: /forceset/lumbarAct, weight: 1.0
+[2023-02-17 20:07:26.683] [cout] [info]         control: /forceset/hamstrings_r, weight: 1.0
+[2023-02-17 20:07:26.683] [cout] [info]         control: /forceset/bifemsh_r, weight: 1.0
+[2023-02-17 20:07:26.683] [cout] [info]         control: /forceset/glut_max_r, weight: 1.0
+[2023-02-17 20:07:26.683] [cout] [info]         control: /forceset/iliopsoas_r, weight: 1.0
+[2023-02-17 20:07:26.683] [cout] [info]         control: /forceset/rect_fem_r, weight: 1.0
+[2023-02-17 20:07:26.683] [cout] [info]         control: /forceset/vasti_r, weight: 1.0
+[2023-02-17 20:07:26.683] [cout] [info]         control: /forceset/gastroc_r, weight: 1.0
+[2023-02-17 20:07:26.683] [cout] [info]         control: /forceset/soleus_r, weight: 1.0
+[2023-02-17 20:07:26.683] [cout] [info]         control: /forceset/tib_ant_r, weight: 1.0
+[2023-02-17 20:07:26.683] [cout] [info]         control: /forceset/hamstrings_l, weight: 1.0
+[2023-02-17 20:07:26.683] [cout] [info]         control: /forceset/bifemsh_l, weight: 1.0
+[2023-02-17 20:07:26.683] [cout] [info]         control: /forceset/glut_max_l, weight: 1.0
+[2023-02-17 20:07:26.684] [cout] [info]         control: /forceset/iliopsoas_l, weight: 1.0
+[2023-02-17 20:07:26.684] [cout] [info]         control: /forceset/rect_fem_l, weight: 1.0
+[2023-02-17 20:07:26.684] [cout] [info]         control: /forceset/vasti_l, weight: 1.0
+[2023-02-17 20:07:26.684] [cout] [info]         control: /forceset/gastroc_l, weight: 1.0
+[2023-02-17 20:07:26.684] [cout] [info]         control: /forceset/soleus_l, weight: 1.0
+[2023-02-17 20:07:26.684] [cout] [info]         control: /forceset/tib_ant_l, weight: 1.0
+[2023-02-17 20:07:26.684] [cout] [info]         control: /forceset/reserve_jointset_ground_pelvis_pelvis_tilt, weight: 1.0
+[2023-02-17 20:07:26.684] [cout] [info]         control: /forceset/reserve_jointset_ground_pelvis_pelvis_tx, weight: 1.0
+[2023-02-17 20:07:26.684] [cout] [info]         control: /forceset/reserve_jointset_ground_pelvis_pelvis_ty, weight: 1.0
+[2023-02-17 20:07:26.684] [cout] [info]         control: /forceset/reserve_jointset_hip_l_hip_flexion_l, weight: 1.0
+[2023-02-17 20:07:26.684] [cout] [info]         control: /forceset/reserve_jointset_hip_r_hip_flexion_r, weight: 1.0
+[2023-02-17 20:07:26.684] [cout] [info]         control: /forceset/reserve_jointset_knee_l_knee_angle_l, weight: 1.0
+[2023-02-17 20:07:26.684] [cout] [info]         control: /forceset/reserve_jointset_knee_r_knee_angle_r, weight: 1.0
+[2023-02-17 20:07:26.684] [cout] [info]         control: /forceset/reserve_jointset_ankle_l_ankle_angle_l, weight: 1.0
+[2023-02-17 20:07:26.684] [cout] [info]         control: /forceset/reserve_jointset_ankle_r_ankle_angle_r, weight: 1.0
+[2023-02-17 20:07:26.684] [cout] [info] Endpoint constraints: (total: 1)
+[2023-02-17 20:07:26.684] [cout] [info]   initial_activation. MocoInitialActivationGoal, enabled: true, mode: endpoint_constraint
+[2023-02-17 20:07:26.684] [cout] [info] Kinematic constraints: none
+[2023-02-17 20:07:26.684] [cout] [info] Path constraints: none
+[2023-02-17 20:07:26.684] [cout] [info] States: (total: 18)
+[2023-02-17 20:07:26.684] [cout] [info]   /forceset/bifemsh_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:07:26.684] [cout] [info]   /forceset/hamstrings_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:07:26.684] [cout] [info]   /forceset/glut_max_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:07:26.684] [cout] [info]   /forceset/vasti_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:07:26.684] [cout] [info]   /forceset/gastroc_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:07:26.684] [cout] [info]   /forceset/iliopsoas_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:07:26.684] [cout] [info]   /forceset/soleus_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:07:26.684] [cout] [info]   /forceset/rect_fem_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:07:26.684] [cout] [info]   /forceset/tib_ant_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:07:26.684] [cout] [info]   /forceset/hamstrings_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:07:26.684] [cout] [info]   /forceset/bifemsh_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:07:26.684] [cout] [info]   /forceset/glut_max_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:07:26.684] [cout] [info]   /forceset/iliopsoas_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/rect_fem_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/gastroc_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/vasti_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/soleus_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/tib_ant_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:07:26.685] [cout] [info] Controls: (total: 28)
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/lumbarAct. bounds: [-inf, inf]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/reserve_jointset_hip_r_hip_flexion_r. bounds: [-inf, inf]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/reserve_jointset_ground_pelvis_pelvis_ty. bounds: [-inf, inf]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/bifemsh_r. bounds: [0.01, 1]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/reserve_jointset_ankle_l_ankle_angle_l. bounds: [-inf, inf]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/hamstrings_r. bounds: [0.01, 1]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/glut_max_r. bounds: [0.01, 1]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/vasti_r. bounds: [0.01, 1]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/gastroc_r. bounds: [0.01, 1]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/iliopsoas_r. bounds: [0.01, 1]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/rect_fem_r. bounds: [0.01, 1]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/soleus_r. bounds: [0.01, 1]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/tib_ant_r. bounds: [0.01, 1]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/hamstrings_l. bounds: [0.01, 1]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/bifemsh_l. bounds: [0.01, 1]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/glut_max_l. bounds: [0.01, 1]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/iliopsoas_l. bounds: [0.01, 1]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/reserve_jointset_ground_pelvis_pelvis_tx. bounds: [-inf, inf]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/rect_fem_l. bounds: [0.01, 1]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/gastroc_l. bounds: [0.01, 1]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/vasti_l. bounds: [0.01, 1]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/soleus_l. bounds: [0.01, 1]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/tib_ant_l. bounds: [0.01, 1]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/reserve_jointset_ground_pelvis_pelvis_tilt. bounds: [-inf, inf]
+[2023-02-17 20:07:26.685] [cout] [info]   /forceset/reserve_jointset_hip_l_hip_flexion_l. bounds: [-inf, inf]
+[2023-02-17 20:07:26.686] [cout] [info]   /forceset/reserve_jointset_knee_l_knee_angle_l. bounds: [-inf, inf]
+[2023-02-17 20:07:26.686] [cout] [info]   /forceset/reserve_jointset_knee_r_knee_angle_r. bounds: [-inf, inf]
+[2023-02-17 20:07:26.686] [cout] [info]   /forceset/reserve_jointset_ankle_r_ankle_angle_r. bounds: [-inf, inf]
+[2023-02-17 20:07:26.686] [cout] [info] Parameters: none
+[2023-02-17 20:07:26.954] [info] Number of threads: 8
+[2023-02-17 20:07:53.299] [info] Set log level to Info.
+[2023-02-17 20:07:53.301] [info] ------------------------------------------------------------------------
+[2023-02-17 20:07:53.301] [info] Elapsed real time: 27 second(s).
+[2023-02-17 20:07:53.301] [info] Fri Feb 17 20:07:53 2023
+[2023-02-17 20:07:53.301] [info] MocoCasADiSolver succeeded!
+[2023-02-17 20:07:53.302] [info] ========================================================================
+[2023-02-17 20:09:46.969] [info] Loaded model gaitModel2D from file gaitModel2D.osim
+[2023-02-17 20:10:03.732] [info] Adding reserve actuators with an optimal force of 1.0...
+[2023-02-17 20:10:03.761] [info] Added 9 reserve actuator(s), for each of the following coordinates:
+[2023-02-17 20:10:03.761] [info]   /jointset/ground_pelvis/pelvis_tilt
+[2023-02-17 20:10:03.761] [info]   /jointset/ground_pelvis/pelvis_tx
+[2023-02-17 20:10:03.761] [info]   /jointset/ground_pelvis/pelvis_ty
+[2023-02-17 20:10:03.761] [info]   /jointset/hip_l/hip_flexion_l
+[2023-02-17 20:10:03.761] [info]   /jointset/hip_r/hip_flexion_r
+[2023-02-17 20:10:03.761] [info]   /jointset/knee_l/knee_angle_l
+[2023-02-17 20:10:03.761] [info]   /jointset/knee_r/knee_angle_r
+[2023-02-17 20:10:03.761] [info]   /jointset/ankle_l/ankle_angle_l
+[2023-02-17 20:10:03.761] [info]   /jointset/ankle_r/ankle_angle_r
+[2023-02-17 20:10:27.843] [info] Loaded model gaitModel2D from file muscleDrivenInverse\muscleModel.osim
+[2023-02-17 20:10:27.844] [warning] Couldn't find file 'r_pelvis.vtp'.
+[2023-02-17 20:10:27.844] [warning] Couldn't find file 'l_pelvis.vtp'.
+[2023-02-17 20:10:27.844] [warning] Couldn't find file 'sacrum.vtp'.
+[2023-02-17 20:10:27.844] [warning] Couldn't find file 'femur_l.vtp'.
+[2023-02-17 20:10:27.844] [warning] Couldn't find file 'femur_r.vtp'.
+[2023-02-17 20:10:27.844] [warning] Couldn't find file 'tibia_l.vtp'.
+[2023-02-17 20:10:27.844] [warning] Couldn't find file 'l_fibula.vtp'.
+[2023-02-17 20:10:27.845] [warning] Couldn't find file 'tibia_r.vtp'.
+[2023-02-17 20:10:27.845] [warning] Couldn't find file 'r_fibula.vtp'.
+[2023-02-17 20:10:27.845] [warning] Couldn't find file 'l_talus.vtp'.
+[2023-02-17 20:10:27.845] [warning] Couldn't find file 'r_talus.vtp'.
+[2023-02-17 20:10:27.845] [warning] Couldn't find file 'l_foot.vtp'.
+[2023-02-17 20:10:27.845] [warning] Couldn't find file 'r_foot.vtp'.
+[2023-02-17 20:10:27.845] [warning] Couldn't find file 'l_bofoot.vtp'.
+[2023-02-17 20:10:27.845] [warning] Couldn't find file 'r_bofoot.vtp'.
+[2023-02-17 20:10:27.846] [warning] Couldn't find file 'hat_spine.vtp'.
+[2023-02-17 20:10:27.846] [warning] Couldn't find file 'hat_jaw.vtp'.
+[2023-02-17 20:10:27.846] [warning] Couldn't find file 'hat_skull.vtp'.
+[2023-02-17 20:10:27.846] [warning] Couldn't find file 'hat_ribs.vtp'.
+[2023-02-17 20:10:28.099] [info] ========================================================================
+[2023-02-17 20:10:28.099] [info] MocoCasADiSolver starting.
+[2023-02-17 20:10:28.099] [info] Fri Feb 17 20:10:28 2023
+[2023-02-17 20:10:28.099] [info] ------------------------------------------------------------------------
+[2023-02-17 20:10:28.099] [cout] [info] Costs: (total: 1)
+[2023-02-17 20:10:28.099] [cout] [info]   excitation_effort. MocoControlGoal, enabled: true, mode: cost, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/lumbarAct, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/hamstrings_r, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/bifemsh_r, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/glut_max_r, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/iliopsoas_r, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/rect_fem_r, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/vasti_r, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/gastroc_r, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/soleus_r, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/tib_ant_r, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/hamstrings_l, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/bifemsh_l, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/glut_max_l, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/iliopsoas_l, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/rect_fem_l, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/vasti_l, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/gastroc_l, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/soleus_l, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/tib_ant_l, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/reserve_jointset_ground_pelvis_pelvis_tilt, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/reserve_jointset_ground_pelvis_pelvis_tx, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/reserve_jointset_ground_pelvis_pelvis_ty, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/reserve_jointset_hip_l_hip_flexion_l, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/reserve_jointset_hip_r_hip_flexion_r, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/reserve_jointset_knee_l_knee_angle_l, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/reserve_jointset_knee_r_knee_angle_r, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/reserve_jointset_ankle_l_ankle_angle_l, weight: 1.0
+[2023-02-17 20:10:28.099] [cout] [info]         control: /forceset/reserve_jointset_ankle_r_ankle_angle_r, weight: 1.0
+[2023-02-17 20:10:28.100] [cout] [info] Endpoint constraints: (total: 1)
+[2023-02-17 20:10:28.100] [cout] [info]   initial_activation. MocoInitialActivationGoal, enabled: true, mode: endpoint_constraint
+[2023-02-17 20:10:28.100] [cout] [info] Kinematic constraints: none
+[2023-02-17 20:10:28.100] [cout] [info] Path constraints: none
+[2023-02-17 20:10:28.100] [cout] [info] States: (total: 18)
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/bifemsh_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/hamstrings_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/glut_max_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/vasti_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/gastroc_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/iliopsoas_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/soleus_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/rect_fem_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/tib_ant_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/hamstrings_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/bifemsh_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/glut_max_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/iliopsoas_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/rect_fem_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/gastroc_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/vasti_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/soleus_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/tib_ant_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:10:28.100] [cout] [info] Controls: (total: 28)
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/lumbarAct. bounds: [-inf, inf]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/reserve_jointset_hip_r_hip_flexion_r. bounds: [-inf, inf]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/reserve_jointset_ground_pelvis_pelvis_ty. bounds: [-inf, inf]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/bifemsh_r. bounds: [0.01, 1]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/reserve_jointset_ankle_l_ankle_angle_l. bounds: [-inf, inf]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/hamstrings_r. bounds: [0.01, 1]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/glut_max_r. bounds: [0.01, 1]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/vasti_r. bounds: [0.01, 1]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/gastroc_r. bounds: [0.01, 1]
+[2023-02-17 20:10:28.100] [cout] [info]   /forceset/iliopsoas_r. bounds: [0.01, 1]
+[2023-02-17 20:10:28.101] [cout] [info]   /forceset/rect_fem_r. bounds: [0.01, 1]
+[2023-02-17 20:10:28.101] [cout] [info]   /forceset/soleus_r. bounds: [0.01, 1]
+[2023-02-17 20:10:28.101] [cout] [info]   /forceset/tib_ant_r. bounds: [0.01, 1]
+[2023-02-17 20:10:28.101] [cout] [info]   /forceset/hamstrings_l. bounds: [0.01, 1]
+[2023-02-17 20:10:28.101] [cout] [info]   /forceset/bifemsh_l. bounds: [0.01, 1]
+[2023-02-17 20:10:28.101] [cout] [info]   /forceset/glut_max_l. bounds: [0.01, 1]
+[2023-02-17 20:10:28.101] [cout] [info]   /forceset/iliopsoas_l. bounds: [0.01, 1]
+[2023-02-17 20:10:28.101] [cout] [info]   /forceset/reserve_jointset_ground_pelvis_pelvis_tx. bounds: [-inf, inf]
+[2023-02-17 20:10:28.101] [cout] [info]   /forceset/rect_fem_l. bounds: [0.01, 1]
+[2023-02-17 20:10:28.101] [cout] [info]   /forceset/gastroc_l. bounds: [0.01, 1]
+[2023-02-17 20:10:28.101] [cout] [info]   /forceset/vasti_l. bounds: [0.01, 1]
+[2023-02-17 20:10:28.101] [cout] [info]   /forceset/soleus_l. bounds: [0.01, 1]
+[2023-02-17 20:10:28.101] [cout] [info]   /forceset/tib_ant_l. bounds: [0.01, 1]
+[2023-02-17 20:10:28.101] [cout] [info]   /forceset/reserve_jointset_ground_pelvis_pelvis_tilt. bounds: [-inf, inf]
+[2023-02-17 20:10:28.101] [cout] [info]   /forceset/reserve_jointset_hip_l_hip_flexion_l. bounds: [-inf, inf]
+[2023-02-17 20:10:28.101] [cout] [info]   /forceset/reserve_jointset_knee_l_knee_angle_l. bounds: [-inf, inf]
+[2023-02-17 20:10:28.101] [cout] [info]   /forceset/reserve_jointset_knee_r_knee_angle_r. bounds: [-inf, inf]
+[2023-02-17 20:10:28.101] [cout] [info]   /forceset/reserve_jointset_ankle_r_ankle_angle_r. bounds: [-inf, inf]
+[2023-02-17 20:10:28.101] [cout] [info] Parameters: none
+[2023-02-17 20:10:28.379] [info] Number of threads: 8
+[2023-02-17 20:10:48.805] [info] Set log level to Info.
+[2023-02-17 20:10:48.807] [info] ------------------------------------------------------------------------
+[2023-02-17 20:10:48.807] [info] Elapsed real time: 21 second(s).
+[2023-02-17 20:10:48.807] [info] Fri Feb 17 20:10:48 2023
+[2023-02-17 20:10:48.807] [info] MocoCasADiSolver succeeded!
+[2023-02-17 20:10:48.807] [info] ========================================================================
+[2023-02-17 20:12:11.130] [info] Loaded model gaitModel2D from file gaitModel2D.osim
+[2023-02-17 20:13:19.299] [info] Loaded model gaitModel2D from file muscleDrivenInverse\muscleModel.osim
+[2023-02-17 20:13:19.299] [warning] Couldn't find file 'r_pelvis.vtp'.
+[2023-02-17 20:13:19.299] [warning] Couldn't find file 'l_pelvis.vtp'.
+[2023-02-17 20:13:19.299] [warning] Couldn't find file 'sacrum.vtp'.
+[2023-02-17 20:13:19.299] [warning] Couldn't find file 'femur_l.vtp'.
+[2023-02-17 20:13:19.300] [warning] Couldn't find file 'femur_r.vtp'.
+[2023-02-17 20:13:19.300] [warning] Couldn't find file 'tibia_l.vtp'.
+[2023-02-17 20:13:19.300] [warning] Couldn't find file 'l_fibula.vtp'.
+[2023-02-17 20:13:19.300] [warning] Couldn't find file 'tibia_r.vtp'.
+[2023-02-17 20:13:19.300] [warning] Couldn't find file 'r_fibula.vtp'.
+[2023-02-17 20:13:19.300] [warning] Couldn't find file 'l_talus.vtp'.
+[2023-02-17 20:13:19.300] [warning] Couldn't find file 'r_talus.vtp'.
+[2023-02-17 20:13:19.300] [warning] Couldn't find file 'l_foot.vtp'.
+[2023-02-17 20:13:19.300] [warning] Couldn't find file 'r_foot.vtp'.
+[2023-02-17 20:13:19.300] [warning] Couldn't find file 'l_bofoot.vtp'.
+[2023-02-17 20:13:19.301] [warning] Couldn't find file 'r_bofoot.vtp'.
+[2023-02-17 20:13:19.301] [warning] Couldn't find file 'hat_spine.vtp'.
+[2023-02-17 20:13:19.301] [warning] Couldn't find file 'hat_jaw.vtp'.
+[2023-02-17 20:13:19.301] [warning] Couldn't find file 'hat_skull.vtp'.
+[2023-02-17 20:13:19.301] [warning] Couldn't find file 'hat_ribs.vtp'.
+[2023-02-17 20:18:04.275] [info] ========================================================================
+[2023-02-17 20:18:04.275] [info] MocoCasADiSolver starting.
+[2023-02-17 20:18:04.275] [info] Fri Feb 17 20:18:04 2023
+[2023-02-17 20:18:04.275] [info] ------------------------------------------------------------------------
+[2023-02-17 20:18:04.275] [cout] [info] Costs: (total: 1)
+[2023-02-17 20:18:04.275] [cout] [info]   excitation_effort. MocoControlGoal, enabled: true, mode: cost, weight: 0.01
+[2023-02-17 20:18:04.275] [cout] [info]         control: /forceset/lumbarAct, weight: 1.0
+[2023-02-17 20:18:04.275] [cout] [info]         control: /forceset/hamstrings_r, weight: 1.0
+[2023-02-17 20:18:04.275] [cout] [info]         control: /forceset/bifemsh_r, weight: 1.0
+[2023-02-17 20:18:04.275] [cout] [info]         control: /forceset/glut_max_r, weight: 1.0
+[2023-02-17 20:18:04.275] [cout] [info]         control: /forceset/iliopsoas_r, weight: 1.0
+[2023-02-17 20:18:04.275] [cout] [info]         control: /forceset/rect_fem_r, weight: 1.0
+[2023-02-17 20:18:04.275] [cout] [info]         control: /forceset/vasti_r, weight: 1.0
+[2023-02-17 20:18:04.275] [cout] [info]         control: /forceset/gastroc_r, weight: 1.0
+[2023-02-17 20:18:04.276] [cout] [info]         control: /forceset/soleus_r, weight: 1.0
+[2023-02-17 20:18:04.276] [cout] [info]         control: /forceset/tib_ant_r, weight: 1.0
+[2023-02-17 20:18:04.276] [cout] [info]         control: /forceset/hamstrings_l, weight: 1.0
+[2023-02-17 20:18:04.276] [cout] [info]         control: /forceset/bifemsh_l, weight: 1.0
+[2023-02-17 20:18:04.276] [cout] [info]         control: /forceset/glut_max_l, weight: 1.0
+[2023-02-17 20:18:04.276] [cout] [info]         control: /forceset/iliopsoas_l, weight: 1.0
+[2023-02-17 20:18:04.276] [cout] [info]         control: /forceset/rect_fem_l, weight: 1.0
+[2023-02-17 20:18:04.276] [cout] [info]         control: /forceset/vasti_l, weight: 1.0
+[2023-02-17 20:18:04.276] [cout] [info]         control: /forceset/gastroc_l, weight: 1.0
+[2023-02-17 20:18:04.276] [cout] [info]         control: /forceset/soleus_l, weight: 1.0
+[2023-02-17 20:18:04.276] [cout] [info]         control: /forceset/tib_ant_l, weight: 1.0
+[2023-02-17 20:18:04.276] [cout] [info] Endpoint constraints: (total: 1)
+[2023-02-17 20:18:04.276] [cout] [info]   initial_activation. MocoInitialActivationGoal, enabled: true, mode: endpoint_constraint
+[2023-02-17 20:18:04.276] [cout] [info] Kinematic constraints: none
+[2023-02-17 20:18:04.276] [cout] [info] Path constraints: none
+[2023-02-17 20:18:04.276] [cout] [info] States: (total: 22)
+[2023-02-17 20:18:04.276] [cout] [info]   /forceset/rect_fem_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:18:04.276] [cout] [info]   /forceset/gastroc_r/normalized_tendon_force. bounds: [0, 2.5]
+[2023-02-17 20:18:04.276] [cout] [info]   /forceset/soleus_r/normalized_tendon_force. bounds: [0, 2.5]
+[2023-02-17 20:18:04.276] [cout] [info]   /forceset/rect_fem_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:18:04.276] [cout] [info]   /forceset/gastroc_l/normalized_tendon_force. bounds: [0, 2.5]
+[2023-02-17 20:18:04.276] [cout] [info]   /forceset/soleus_l/normalized_tendon_force. bounds: [0, 2.5]
+[2023-02-17 20:18:04.276] [cout] [info]   /forceset/hamstrings_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:18:04.276] [cout] [info]   /forceset/bifemsh_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:18:04.276] [cout] [info]   /forceset/glut_max_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:18:04.276] [cout] [info]   /forceset/iliopsoas_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:18:04.276] [cout] [info]   /forceset/gastroc_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:18:04.276] [cout] [info]   /forceset/vasti_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:18:04.276] [cout] [info]   /forceset/soleus_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:18:04.276] [cout] [info]   /forceset/tib_ant_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:18:04.276] [cout] [info]   /forceset/hamstrings_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:18:04.276] [cout] [info]   /forceset/bifemsh_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:18:04.276] [cout] [info]   /forceset/glut_max_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:18:04.276] [cout] [info]   /forceset/iliopsoas_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:18:04.276] [cout] [info]   /forceset/gastroc_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:18:04.277] [cout] [info]   /forceset/vasti_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:18:04.277] [cout] [info]   /forceset/soleus_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:18:04.277] [cout] [info]   /forceset/tib_ant_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:18:04.277] [cout] [info] Controls: (total: 19)
+[2023-02-17 20:18:04.277] [cout] [info]   /forceset/lumbarAct. bounds: [-inf, inf]
+[2023-02-17 20:18:04.277] [cout] [info]   /forceset/hamstrings_r. bounds: [0.01, 1]
+[2023-02-17 20:18:04.277] [cout] [info]   /forceset/bifemsh_r. bounds: [0.01, 1]
+[2023-02-17 20:18:04.277] [cout] [info]   /forceset/glut_max_r. bounds: [0.01, 1]
+[2023-02-17 20:18:04.277] [cout] [info]   /forceset/iliopsoas_r. bounds: [0.01, 1]
+[2023-02-17 20:18:04.277] [cout] [info]   /forceset/rect_fem_r. bounds: [0.01, 1]
+[2023-02-17 20:18:04.277] [cout] [info]   /forceset/gastroc_r. bounds: [0.01, 1]
+[2023-02-17 20:18:04.277] [cout] [info]   /forceset/vasti_r. bounds: [0.01, 1]
+[2023-02-17 20:18:04.277] [cout] [info]   /forceset/soleus_r. bounds: [0.01, 1]
+[2023-02-17 20:18:04.277] [cout] [info]   /forceset/tib_ant_r. bounds: [0.01, 1]
+[2023-02-17 20:18:04.277] [cout] [info]   /forceset/hamstrings_l. bounds: [0.01, 1]
+[2023-02-17 20:18:04.277] [cout] [info]   /forceset/bifemsh_l. bounds: [0.01, 1]
+[2023-02-17 20:18:04.277] [cout] [info]   /forceset/glut_max_l. bounds: [0.01, 1]
+[2023-02-17 20:18:04.277] [cout] [info]   /forceset/iliopsoas_l. bounds: [0.01, 1]
+[2023-02-17 20:18:04.277] [cout] [info]   /forceset/rect_fem_l. bounds: [0.01, 1]
+[2023-02-17 20:18:04.277] [cout] [info]   /forceset/gastroc_l. bounds: [0.01, 1]
+[2023-02-17 20:18:04.277] [cout] [info]   /forceset/vasti_l. bounds: [0.01, 1]
+[2023-02-17 20:18:04.277] [cout] [info]   /forceset/soleus_l. bounds: [0.01, 1]
+[2023-02-17 20:18:04.277] [cout] [info]   /forceset/tib_ant_l. bounds: [0.01, 1]
+[2023-02-17 20:18:04.277] [cout] [info] Parameters: none
+[2023-02-17 20:18:04.516] [info] Number of threads: 8
+[2023-02-17 20:18:31.118] [info] Set log level to Info.
+[2023-02-17 20:18:31.120] [info] ------------------------------------------------------------------------
+[2023-02-17 20:18:31.120] [info] Elapsed real time: 27 second(s).
+[2023-02-17 20:18:31.120] [info] Fri Feb 17 20:18:31 2023
+[2023-02-17 20:18:31.120] [warning] MocoCasADiSolver did NOT succeed:
+[2023-02-17 20:18:31.120] [warning]   User_Requested_Stop
+[2023-02-17 20:18:31.120] [info] ========================================================================
+[2023-02-17 20:19:04.171] [info] Loaded model gaitModel2D from file gaitModel2D.osim
+[2023-02-17 20:19:19.084] [info] Adding reserve actuators with an optimal force of 1.0...
+[2023-02-17 20:19:19.112] [info] Added 9 reserve actuator(s), for each of the following coordinates:
+[2023-02-17 20:19:19.112] [info]   /jointset/ground_pelvis/pelvis_tilt
+[2023-02-17 20:19:19.112] [info]   /jointset/ground_pelvis/pelvis_tx
+[2023-02-17 20:19:19.112] [info]   /jointset/ground_pelvis/pelvis_ty
+[2023-02-17 20:19:19.112] [info]   /jointset/hip_l/hip_flexion_l
+[2023-02-17 20:19:19.112] [info]   /jointset/hip_r/hip_flexion_r
+[2023-02-17 20:19:19.112] [info]   /jointset/knee_l/knee_angle_l
+[2023-02-17 20:19:19.112] [info]   /jointset/knee_r/knee_angle_r
+[2023-02-17 20:19:19.112] [info]   /jointset/ankle_l/ankle_angle_l
+[2023-02-17 20:19:19.112] [info]   /jointset/ankle_r/ankle_angle_r
+[2023-02-17 20:19:19.164] [info] Loaded model gaitModel2D from file muscleDrivenInverse\muscleModel.osim
+[2023-02-17 20:19:19.164] [warning] Couldn't find file 'r_pelvis.vtp'.
+[2023-02-17 20:19:19.165] [warning] Couldn't find file 'l_pelvis.vtp'.
+[2023-02-17 20:19:19.165] [warning] Couldn't find file 'sacrum.vtp'.
+[2023-02-17 20:19:19.165] [warning] Couldn't find file 'femur_l.vtp'.
+[2023-02-17 20:19:19.165] [warning] Couldn't find file 'femur_r.vtp'.
+[2023-02-17 20:19:19.165] [warning] Couldn't find file 'tibia_l.vtp'.
+[2023-02-17 20:19:19.165] [warning] Couldn't find file 'l_fibula.vtp'.
+[2023-02-17 20:19:19.165] [warning] Couldn't find file 'tibia_r.vtp'.
+[2023-02-17 20:19:19.165] [warning] Couldn't find file 'r_fibula.vtp'.
+[2023-02-17 20:19:19.165] [warning] Couldn't find file 'l_talus.vtp'.
+[2023-02-17 20:19:19.166] [warning] Couldn't find file 'r_talus.vtp'.
+[2023-02-17 20:19:19.166] [warning] Couldn't find file 'l_foot.vtp'.
+[2023-02-17 20:19:19.166] [warning] Couldn't find file 'r_foot.vtp'.
+[2023-02-17 20:19:19.166] [warning] Couldn't find file 'l_bofoot.vtp'.
+[2023-02-17 20:19:19.166] [warning] Couldn't find file 'r_bofoot.vtp'.
+[2023-02-17 20:19:19.166] [warning] Couldn't find file 'hat_spine.vtp'.
+[2023-02-17 20:19:19.166] [warning] Couldn't find file 'hat_jaw.vtp'.
+[2023-02-17 20:19:19.166] [warning] Couldn't find file 'hat_skull.vtp'.
+[2023-02-17 20:19:19.166] [warning] Couldn't find file 'hat_ribs.vtp'.
+[2023-02-17 20:20:36.203] [info] ========================================================================
+[2023-02-17 20:20:36.203] [info] MocoCasADiSolver starting.
+[2023-02-17 20:20:36.203] [info] Fri Feb 17 20:20:36 2023
+[2023-02-17 20:20:36.203] [info] ------------------------------------------------------------------------
+[2023-02-17 20:20:36.203] [cout] [info] Costs: (total: 1)
+[2023-02-17 20:20:36.203] [cout] [info]   excitation_effort. MocoControlGoal, enabled: true, mode: cost, weight: 0.01
+[2023-02-17 20:20:36.203] [cout] [info]         control: /forceset/lumbarAct, weight: 1.0
+[2023-02-17 20:20:36.203] [cout] [info]         control: /forceset/hamstrings_r, weight: 1.0
+[2023-02-17 20:20:36.203] [cout] [info]         control: /forceset/bifemsh_r, weight: 1.0
+[2023-02-17 20:20:36.203] [cout] [info]         control: /forceset/glut_max_r, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info]         control: /forceset/iliopsoas_r, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info]         control: /forceset/rect_fem_r, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info]         control: /forceset/vasti_r, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info]         control: /forceset/gastroc_r, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info]         control: /forceset/soleus_r, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info]         control: /forceset/tib_ant_r, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info]         control: /forceset/hamstrings_l, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info]         control: /forceset/bifemsh_l, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info]         control: /forceset/glut_max_l, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info]         control: /forceset/iliopsoas_l, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info]         control: /forceset/rect_fem_l, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info]         control: /forceset/vasti_l, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info]         control: /forceset/gastroc_l, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info]         control: /forceset/soleus_l, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info]         control: /forceset/tib_ant_l, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info]         control: /forceset/reserve_jointset_ground_pelvis_pelvis_tilt, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info]         control: /forceset/reserve_jointset_ground_pelvis_pelvis_tx, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info]         control: /forceset/reserve_jointset_ground_pelvis_pelvis_ty, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info]         control: /forceset/reserve_jointset_hip_l_hip_flexion_l, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info]         control: /forceset/reserve_jointset_hip_r_hip_flexion_r, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info]         control: /forceset/reserve_jointset_knee_l_knee_angle_l, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info]         control: /forceset/reserve_jointset_knee_r_knee_angle_r, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info]         control: /forceset/reserve_jointset_ankle_l_ankle_angle_l, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info]         control: /forceset/reserve_jointset_ankle_r_ankle_angle_r, weight: 1.0
+[2023-02-17 20:20:36.204] [cout] [info] Endpoint constraints: (total: 1)
+[2023-02-17 20:20:36.204] [cout] [info]   initial_activation. MocoInitialActivationGoal, enabled: true, mode: endpoint_constraint
+[2023-02-17 20:20:36.204] [cout] [info] Kinematic constraints: none
+[2023-02-17 20:20:36.204] [cout] [info] Path constraints: none
+[2023-02-17 20:20:36.204] [cout] [info] States: (total: 22)
+[2023-02-17 20:20:36.204] [cout] [info]   /forceset/rect_fem_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:20:36.204] [cout] [info]   /forceset/gastroc_r/normalized_tendon_force. bounds: [0, 2.5]
+[2023-02-17 20:20:36.204] [cout] [info]   /forceset/soleus_r/normalized_tendon_force. bounds: [0, 2.5]
+[2023-02-17 20:20:36.204] [cout] [info]   /forceset/rect_fem_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:20:36.204] [cout] [info]   /forceset/gastroc_l/normalized_tendon_force. bounds: [0, 2.5]
+[2023-02-17 20:20:36.204] [cout] [info]   /forceset/soleus_l/normalized_tendon_force. bounds: [0, 2.5]
+[2023-02-17 20:20:36.204] [cout] [info]   /forceset/hamstrings_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:20:36.204] [cout] [info]   /forceset/bifemsh_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:20:36.204] [cout] [info]   /forceset/glut_max_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/iliopsoas_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/gastroc_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/vasti_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/soleus_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/tib_ant_r/activation. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/hamstrings_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/bifemsh_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/glut_max_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/iliopsoas_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/gastroc_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/vasti_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/soleus_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/tib_ant_l/activation. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info] Controls: (total: 28)
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/lumbarAct. bounds: [-inf, inf]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/reserve_jointset_ankle_l_ankle_angle_l. bounds: [-inf, inf]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/hamstrings_r. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/reserve_jointset_hip_r_hip_flexion_r. bounds: [-inf, inf]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/reserve_jointset_ground_pelvis_pelvis_ty. bounds: [-inf, inf]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/bifemsh_r. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/glut_max_r. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/iliopsoas_r. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/rect_fem_r. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/gastroc_r. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/vasti_r. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/soleus_r. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/tib_ant_r. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/hamstrings_l. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/bifemsh_l. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/glut_max_l. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/iliopsoas_l. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/reserve_jointset_ground_pelvis_pelvis_tx. bounds: [-inf, inf]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/rect_fem_l. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/gastroc_l. bounds: [0.01, 1]
+[2023-02-17 20:20:36.205] [cout] [info]   /forceset/vasti_l. bounds: [0.01, 1]
+[2023-02-17 20:20:36.206] [cout] [info]   /forceset/soleus_l. bounds: [0.01, 1]
+[2023-02-17 20:20:36.206] [cout] [info]   /forceset/tib_ant_l. bounds: [0.01, 1]
+[2023-02-17 20:20:36.206] [cout] [info]   /forceset/reserve_jointset_ground_pelvis_pelvis_tilt. bounds: [-inf, inf]
+[2023-02-17 20:20:36.206] [cout] [info]   /forceset/reserve_jointset_hip_l_hip_flexion_l. bounds: [-inf, inf]
+[2023-02-17 20:20:36.206] [cout] [info]   /forceset/reserve_jointset_knee_l_knee_angle_l. bounds: [-inf, inf]
+[2023-02-17 20:20:36.206] [cout] [info]   /forceset/reserve_jointset_knee_r_knee_angle_r. bounds: [-inf, inf]
+[2023-02-17 20:20:36.206] [cout] [info]   /forceset/reserve_jointset_ankle_r_ankle_angle_r. bounds: [-inf, inf]
+[2023-02-17 20:20:36.206] [cout] [info] Parameters: none
+[2023-02-17 20:20:36.453] [info] Number of threads: 8
+[2023-02-17 20:20:51.303] [info] Set log level to Info.
+[2023-02-17 20:20:51.305] [info] ------------------------------------------------------------------------
+[2023-02-17 20:20:51.305] [info] Elapsed real time: 15 second(s).
+[2023-02-17 20:20:51.305] [info] Fri Feb 17 20:20:51 2023
+[2023-02-17 20:20:51.305] [info] MocoCasADiSolver succeeded!
+[2023-02-17 20:20:51.305] [info] ========================================================================
+[2023-02-20 14:28:03.184] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.186] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.188] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.190] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.192] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.193] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.195] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.197] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.199] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.200] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.203] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.204] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.206] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.208] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.210] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.211] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.213] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.215] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.217] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.219] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.221] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.222] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.224] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.226] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.228] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.229] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.232] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.233] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.235] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.236] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.239] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.240] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.242] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.244] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.246] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.247] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.249] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.251] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.253] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.254] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.257] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.258] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.260] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.261] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.264] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.265] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.267] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.269] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.271] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.272] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.274] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.276] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.278] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.280] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.282] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.284] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.286] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.288] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.290] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.291] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.294] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.295] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.297] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.298] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.301] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.302] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.304] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.306] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.308] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.309] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.311] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.313] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.315] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.316] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.318] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.320] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.322] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.323] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.325] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.327] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.329] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.331] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.333] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.334] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.336] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.338] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.341] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.343] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.345] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.347] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.350] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.351] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.354] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.356] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.358] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.359] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.361] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.363] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.365] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.367] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.369] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.370] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.373] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.374] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.376] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.377] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.380] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.381] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.383] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.385] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.387] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.388] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.390] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.392] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.394] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.395] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.397] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.399] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.401] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.402] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.405] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.406] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.408] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.409] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.411] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.413] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.415] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.416] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.418] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.420] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.422] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.423] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.425] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.427] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.429] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.430] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.432] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.434] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.436] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.437] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.439] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.441] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.443] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.444] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.446] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.448] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.450] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.453] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.458] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.460] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.462] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.464] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.466] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.467] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.469] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.471] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.473] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.474] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.476] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.478] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.480] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.481] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.483] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.485] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.487] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.488] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.491] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.492] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.494] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.496] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.498] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.499] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.502] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.503] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.505] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.507] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.509] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.510] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.513] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.514] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.516] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.518] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.520] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.521] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.524] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.525] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.527] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.529] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.531] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.532] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.534] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.536] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.538] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.539] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.541] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.543] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.545] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.547] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.549] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.550] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:28:03.553] [error] Model unable to assemble: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+.Model relaxing constraints and trying again.
+[2023-02-20 14:28:03.554] [error] Model unable to assemble with relaxed constraints: SimTK Exception thrown at Assembler.cpp:227:
+  Error detected by Simbody method AssemblerSystem::objectiveFunc(): calcGoal() method of assembly condition QValue returned a negative or non-finite value nan.
+  (Required condition 'goalValue >= 0' was not met.)
+
+[2023-02-20 14:29:38.456] [info] Loaded model gaitModel2D from file gaitModel2D_lotsOfMuscles3.osim
+[2023-02-20 14:31:17.263] [info] Adding reserve actuators with an optimal force of 1.0...
+[2023-02-20 14:31:17.332] [info] Added 11 reserve actuator(s), for each of the following coordinates:
+[2023-02-20 14:31:17.332] [info]   /jointset/ground_pelvis/pelvis_tilt
+[2023-02-20 14:31:17.332] [info]   /jointset/ground_pelvis/pelvis_tx
+[2023-02-20 14:31:17.332] [info]   /jointset/ground_pelvis/pelvis_ty
+[2023-02-20 14:31:17.332] [info]   /jointset/hip_l/hip_flexion_l
+[2023-02-20 14:31:17.332] [info]   /jointset/hip_r/hip_flexion_r
+[2023-02-20 14:31:17.333] [info]   /jointset/knee_l/knee_angle_l
+[2023-02-20 14:31:17.333] [info]   /jointset/knee_r/knee_angle_r
+[2023-02-20 14:31:17.333] [info]   /jointset/ankle_l/ankle_angle_l
+[2023-02-20 14:31:17.333] [info]   /jointset/ankle_r/ankle_angle_r
+[2023-02-20 14:31:17.333] [info]   /jointset/patellofemoral_r/knee_angle_r_beta
+[2023-02-20 14:31:17.333] [info]   /jointset/patellofemoral_l/knee_angle_l_beta
+[2023-02-20 14:31:35.474] [info] ========================================================================
+[2023-02-20 14:31:35.474] [info] MocoCasADiSolver starting.
+[2023-02-20 14:31:35.474] [info] Mon Feb 20 14:31:35 2023
+[2023-02-20 14:31:35.474] [info] ------------------------------------------------------------------------
+[2023-02-20 14:31:35.474] [cout] [info] Costs: (total: 1)
+[2023-02-20 14:31:35.474] [cout] [info]   excitation_effort. MocoControlGoal, enabled: true, mode: cost, weight: 0.01
+[2023-02-20 14:31:35.474] [cout] [info]         control: /forceset/addbrev_r, weight: 1.0
+[2023-02-20 14:31:35.474] [cout] [info]         control: /forceset/addlong_r, weight: 1.0
+[2023-02-20 14:31:35.474] [cout] [info]         control: /forceset/addmagDist_r, weight: 1.0
+[2023-02-20 14:31:35.474] [cout] [info]         control: /forceset/addmagIsch_r, weight: 1.0
+[2023-02-20 14:31:35.474] [cout] [info]         control: /forceset/addmagMid_r, weight: 1.0
+[2023-02-20 14:31:35.474] [cout] [info]         control: /forceset/addmagProx_r, weight: 1.0
+[2023-02-20 14:31:35.474] [cout] [info]         control: /forceset/bflh140_r, weight: 1.0
+[2023-02-20 14:31:35.474] [cout] [info]         control: /forceset/bfsh140_r, weight: 1.0
+[2023-02-20 14:31:35.474] [cout] [info]         control: /forceset/edl_r, weight: 1.0
+[2023-02-20 14:31:35.474] [cout] [info]         control: /forceset/ehl_r, weight: 1.0
+[2023-02-20 14:31:35.474] [cout] [info]         control: /forceset/fdl_r, weight: 1.0
+[2023-02-20 14:31:35.474] [cout] [info]         control: /forceset/fhl_r, weight: 1.0
+[2023-02-20 14:31:35.474] [cout] [info]         control: /forceset/gaslat140_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/gasmed_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/glmax1_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/glmax2_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/glmax3_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/glmed1_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/glmed2_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/glmed3_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/glmin1_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/glmin2_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/glmin3_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/grac_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/iliacus_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/perbrev_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/perlong_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/piri_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/psoas_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/recfem_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/sart_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/semimem_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/semiten_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/soleus_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/tfl_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/tibant_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/tibpost_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/vasint_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/vaslat140_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/vasmed_r, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/addbrev_l, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/addlong_l, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/addmagDist_l, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/addmagIsch_l, weight: 1.0
+[2023-02-20 14:31:35.475] [cout] [info]         control: /forceset/addmagMid_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/addmagProx_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/bflh140_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/bfsh140_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/edl_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/ehl_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/fdl_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/fhl_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/gaslat140_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/gasmed_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/glmax1_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/glmax2_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/glmax3_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/glmed1_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/glmed2_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/glmed3_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/glmin1_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/glmin2_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/glmin3_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/grac_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/iliacus_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/perbrev_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/perlong_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/piri_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/psoas_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/recfem_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/sart_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/semimem_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/semiten_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/soleus_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/tfl_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/tibant_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/tibpost_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/vasint_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/vaslat140_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/vasmed_l, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/lumbar_extension_actuator, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/reserve_jointset_ground_pelvis_pelvis_tilt, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/reserve_jointset_ground_pelvis_pelvis_tx, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/reserve_jointset_ground_pelvis_pelvis_ty, weight: 1.0
+[2023-02-20 14:31:35.476] [cout] [info]         control: /forceset/reserve_jointset_hip_l_hip_flexion_l, weight: 1.0
+[2023-02-20 14:31:35.477] [cout] [info]         control: /forceset/reserve_jointset_hip_r_hip_flexion_r, weight: 1.0
+[2023-02-20 14:31:35.477] [cout] [info]         control: /forceset/reserve_jointset_knee_l_knee_angle_l, weight: 1.0
+[2023-02-20 14:31:35.477] [cout] [info]         control: /forceset/reserve_jointset_knee_r_knee_angle_r, weight: 1.0
+[2023-02-20 14:31:35.477] [cout] [info]         control: /forceset/reserve_jointset_ankle_l_ankle_angle_l, weight: 1.0
+[2023-02-20 14:31:35.477] [cout] [info]         control: /forceset/reserve_jointset_ankle_r_ankle_angle_r, weight: 1.0
+[2023-02-20 14:31:35.477] [cout] [info]         control: /forceset/reserve_jointset_patellofemoral_r_knee_angle_r_beta, weight: 1.0
+[2023-02-20 14:31:35.477] [cout] [info]         control: /forceset/reserve_jointset_patellofemoral_l_knee_angle_l_beta, weight: 1.0
+[2023-02-20 14:31:35.477] [cout] [info] Endpoint constraints: (total: 1)
+[2023-02-20 14:31:35.477] [cout] [info]   initial_activation. MocoInitialActivationGoal, enabled: true, mode: endpoint_constraint
+[2023-02-20 14:31:35.477] [cout] [info] Kinematic constraints: none
+[2023-02-20 14:31:35.477] [cout] [info] Path constraints: none
+[2023-02-20 14:31:35.477] [cout] [info] States: (total: 86)
+[2023-02-20 14:31:35.477] [cout] [info]   /forceset/gaslat140_r/normalized_tendon_force. bounds: [0, 2.5]
+[2023-02-20 14:31:35.477] [cout] [info]   /forceset/gasmed_r/normalized_tendon_force. bounds: [0, 2.5]
+[2023-02-20 14:31:35.477] [cout] [info]   /forceset/soleus_r/normalized_tendon_force. bounds: [0, 2.5]
+[2023-02-20 14:31:35.477] [cout] [info]   /forceset/gaslat140_l/normalized_tendon_force. bounds: [0, 2.5]
+[2023-02-20 14:31:35.477] [cout] [info]   /forceset/addlong_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.477] [cout] [info]   /forceset/gasmed_l/normalized_tendon_force. bounds: [0, 2.5]
+[2023-02-20 14:31:35.477] [cout] [info]   /forceset/soleus_l/normalized_tendon_force. bounds: [0, 2.5]
+[2023-02-20 14:31:35.477] [cout] [info]   /forceset/addbrev_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.477] [cout] [info]   /forceset/addlong_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.477] [cout] [info]   /forceset/addmagDist_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.477] [cout] [info]   /forceset/addmagIsch_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.477] [cout] [info]   /forceset/addmagMid_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.477] [cout] [info]   /forceset/addmagProx_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.477] [cout] [info]   /forceset/bflh140_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.477] [cout] [info]   /forceset/bfsh140_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.477] [cout] [info]   /forceset/edl_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.477] [cout] [info]   /forceset/semimem_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.477] [cout] [info]   /forceset/ehl_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.477] [cout] [info]   /forceset/fdl_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.477] [cout] [info]   /forceset/fhl_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.477] [cout] [info]   /forceset/gaslat140_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.477] [cout] [info]   /forceset/gasmed_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.477] [cout] [info]   /forceset/glmax1_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/glmax2_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/glmax3_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/glmed1_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/glmed2_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/tibant_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/glmed3_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/glmin1_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/glmin2_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/glmin3_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/grac_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/iliacus_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/perbrev_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/perlong_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/piri_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/psoas_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/recfem_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/sart_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/semiten_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/soleus_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/tfl_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/tibpost_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/vasint_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/vaslat140_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/vasmed_r/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/addbrev_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/addmagDist_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/addmagIsch_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/addmagMid_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/addmagProx_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/bflh140_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/bfsh140_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/edl_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/semimem_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/ehl_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/fdl_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.478] [cout] [info]   /forceset/fhl_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/gaslat140_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/gasmed_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/glmax1_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/glmax2_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/glmax3_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/glmed1_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/glmed2_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/tibant_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/glmed3_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/glmin1_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/glmin2_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/glmin3_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/grac_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/iliacus_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/perbrev_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/perlong_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/piri_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/psoas_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/recfem_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/sart_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/semiten_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/soleus_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/tfl_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/tibpost_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/vasint_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/vaslat140_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/vasmed_l/activation. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info] Controls: (total: 92)
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/addbrev_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/addlong_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/addmagDist_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/addmagIsch_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/addmagMid_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/addmagProx_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/bflh140_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.479] [cout] [info]   /forceset/bfsh140_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/edl_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/semimem_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/ehl_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/fdl_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/fhl_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/gaslat140_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/gasmed_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/glmax1_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/glmax2_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/glmax3_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/glmed1_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/glmed2_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/tibant_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/glmed3_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/glmin1_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/glmin2_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/glmin3_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/grac_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/iliacus_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/perbrev_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/perlong_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/piri_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/psoas_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/recfem_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/sart_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/semiten_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/soleus_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/tfl_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/tibpost_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/vasint_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/vaslat140_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/vasmed_r. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/addbrev_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/addlong_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/addmagDist_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.480] [cout] [info]   /forceset/addmagIsch_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/addmagMid_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/addmagProx_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/bflh140_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/reserve_jointset_hip_l_hip_flexion_l. bounds: [-inf, inf]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/bfsh140_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/edl_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/semimem_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/ehl_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/fdl_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/fhl_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/gaslat140_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/gasmed_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/glmax1_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/glmax2_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/glmax3_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/glmed1_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/glmed2_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/tibant_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/glmed3_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/glmin1_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/glmin2_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/glmin3_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/grac_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/iliacus_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/perbrev_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/perlong_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/piri_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/psoas_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/recfem_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/sart_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/semiten_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/soleus_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/tfl_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/tibpost_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.481] [cout] [info]   /forceset/vasint_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.482] [cout] [info]   /forceset/vaslat140_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.482] [cout] [info]   /forceset/vasmed_l. bounds: [0.01, 1]
+[2023-02-20 14:31:35.482] [cout] [info]   /forceset/lumbar_extension_actuator. bounds: [-inf, inf]
+[2023-02-20 14:31:35.482] [cout] [info]   /forceset/reserve_jointset_ground_pelvis_pelvis_tilt. bounds: [-inf, inf]
+[2023-02-20 14:31:35.482] [cout] [info]   /forceset/reserve_jointset_ground_pelvis_pelvis_tx. bounds: [-inf, inf]
+[2023-02-20 14:31:35.482] [cout] [info]   /forceset/reserve_jointset_hip_r_hip_flexion_r. bounds: [-inf, inf]
+[2023-02-20 14:31:35.482] [cout] [info]   /forceset/reserve_jointset_ground_pelvis_pelvis_ty. bounds: [-inf, inf]
+[2023-02-20 14:31:35.482] [cout] [info]   /forceset/reserve_jointset_knee_l_knee_angle_l. bounds: [-inf, inf]
+[2023-02-20 14:31:35.482] [cout] [info]   /forceset/reserve_jointset_knee_r_knee_angle_r. bounds: [-inf, inf]
+[2023-02-20 14:31:35.482] [cout] [info]   /forceset/reserve_jointset_ankle_l_ankle_angle_l. bounds: [-inf, inf]
+[2023-02-20 14:31:35.482] [cout] [info]   /forceset/reserve_jointset_ankle_r_ankle_angle_r. bounds: [-inf, inf]
+[2023-02-20 14:31:35.482] [cout] [info]   /forceset/reserve_jointset_patellofemoral_r_knee_angle_r_beta. bounds: [-inf, inf]
+[2023-02-20 14:31:35.482] [cout] [info]   /forceset/reserve_jointset_patellofemoral_l_knee_angle_l_beta. bounds: [-inf, inf]
+[2023-02-20 14:31:35.482] [cout] [info] Parameters: none
+[2023-02-20 14:31:36.300] [info] Number of threads: 8
+[2023-02-20 14:31:51.392] [info] Set log level to Info.
+[2023-02-20 14:31:51.400] [info] ------------------------------------------------------------------------
+[2023-02-20 14:31:51.400] [info] Elapsed real time: 16 second(s).
+[2023-02-20 14:31:51.400] [info] Mon Feb 20 14:31:51 2023
+[2023-02-20 14:31:51.400] [warning] MocoCasADiSolver did NOT succeed:
+[2023-02-20 14:31:51.400] [warning]   Invalid_Number_Detected
+[2023-02-20 14:31:51.400] [info] ========================================================================
+[2023-02-20 15:10:15.960] [info] Loaded model gaitModel2D from file gaitModel2D.osim
+[2023-02-20 15:23:36.424] [info] Loaded model model from file ..\..\ExpData\Scaling\scaledModelAdjusted.osim
+[2023-02-20 15:31:04.690] [info] Loaded model gaitModel2D from file gaitModel2D.osim
+[2023-02-20 15:31:10.694] [info] Loaded model model from file ..\..\ExpData\Scaling\scaledModelAdjusted.osim
+[2023-02-20 15:37:39.023] [info] Loaded model gaitModel2D from file gaitModel2D.osim
+[2023-02-20 15:37:43.169] [info] Loaded model model from file ..\..\ExpData\Scaling\scaledModelAdjusted.osim
+[2023-02-20 15:39:28.595] [info] Loaded model gaitModel2D from file gaitModel2D.osim
+[2023-02-20 15:39:28.639] [info] Loaded model model from file ..\..\ExpData\Scaling\scaledModelAdjusted.osim
+[2023-02-20 15:43:47.389] [info] Loaded model gaitModel2D from file gaitModel2D.osim
+[2023-02-20 15:43:47.432] [info] Loaded model model from file ..\..\ExpData\Scaling\scaledModelAdjusted.osim
+[2023-02-20 15:45:17.600] [info] Loaded model gaitModel2D from file gaitModel2D.osim
+[2023-02-20 15:45:17.645] [info] Loaded model model from file ..\..\ExpData\Scaling\scaledModelAdjusted.osim
+[2023-02-20 15:45:44.625] [info] Loaded model gaitModel2D from file gaitModel2D.osim
+[2023-02-20 15:45:44.670] [info] Loaded model model from file ..\..\ExpData\Scaling\scaledModelAdjusted.osim
+[2023-02-20 15:46:20.746] [info] Loaded model gaitModel2D from file gaitModel2D.osim
+[2023-02-20 15:46:20.797] [info] Loaded model model from file ..\..\ExpData\Scaling\scaledModelAdjusted.osim
+[2023-02-20 15:48:10.786] [info] Loaded model gaitModel2D from file gaitModel2D.osim
+[2023-02-20 15:48:11.041] [info] Loaded model model from file ..\..\ExpData\Scaling\scaledModelAdjusted.osim
+[2023-02-20 16:02:51.140] [info] Loaded model gaitModel2D from file gaitModel2D.osim
+[2023-02-20 16:02:51.239] [info] Loaded model model from file ..\..\ExpData\Scaling\scaledModelAdjusted.osim
+[2023-02-20 16:05:39.179] [info] Loaded model gaitModel2D from file gaitModel2D_extraMuscles.osim
+[2023-02-20 16:07:14.234] [info] Loaded model gaitModel2D from file gaitModel2D.osim
+[2023-02-20 16:07:14.279] [info] Loaded model model from file ..\..\ExpData\Scaling\scaledModelAdjusted.osim
+[2023-02-20 16:10:19.653] [info] Loaded model gaitModel2D from file gaitModel2D_extraMuscles.osim
+[2023-02-20 16:18:49.468] [info] Loaded model gaitModel2D from file muscleDrivenInverse\muscleModel.osim
+[2023-02-20 16:19:52.236] [info] ========================================================================
+[2023-02-20 16:19:52.236] [info] MocoCasADiSolver starting.
+[2023-02-20 16:19:52.236] [info] Mon Feb 20 16:19:52 2023
+[2023-02-20 16:19:52.236] [info] ------------------------------------------------------------------------
+[2023-02-20 16:19:52.236] [cout] [info] Costs: (total: 1)
+[2023-02-20 16:19:52.237] [cout] [info]   excitation_effort. MocoControlGoal, enabled: true, mode: cost, weight: 0.01
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/hip_flexion_r_actuator, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/hip_flexion_l_actuator, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/knee_angle_r_actuator, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/knee_angle_l_actuator, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/ankle_angle_r_actuator, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/ankle_angle_l_actuator, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/lumbar_extension_actuator, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/addbrev_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/addlong_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/addmagDist_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/addmagIsch_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/addmagMid_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/addmagProx_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/bflh140_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/bfsh140_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/edl_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/ehl_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/fdl_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/fhl_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/gaslat140_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/gasmed_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/glmax1_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/glmax2_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/glmax3_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/glmed1_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/glmed2_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/glmed3_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/glmin1_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/glmin2_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/glmin3_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/grac_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/iliacus_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/perbrev_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/perlong_r, weight: 1.0
+[2023-02-20 16:19:52.237] [cout] [info]         control: /forceset/piri_r, weight: 1.0
+[2023-02-20 16:19:52.238] [cout] [info]         control: /forceset/psoas_r, weight: 1.0
+[2023-02-20 16:19:52.238] [cout] [info]         control: /forceset/recfem_r, weight: 1.0
+[2023-02-20 16:19:52.238] [cout] [info]         control: /forceset/sart_r, weight: 1.0
+[2023-02-20 16:19:52.238] [cout] [info]         control: /forceset/semimem_r, weight: 1.0
+[2023-02-20 16:19:52.238] [cout] [info]         control: /forceset/semiten_r, weight: 1.0
+[2023-02-20 16:19:52.238] [cout] [info]         control: /forceset/soleus_r, weight: 1.0
+[2023-02-20 16:19:52.238] [cout] [info]         control: /forceset/tfl_r, weight: 1.0
+[2023-02-20 16:19:52.238] [cout] [info]         control: /forceset/tibant_r, weight: 1.0
+[2023-02-20 16:19:52.238] [cout] [info]         control: /forceset/tibpost_r, weight: 1.0
+[2023-02-20 16:19:52.238] [cout] [info]         control: /forceset/vasint_r, weight: 1.0
+[2023-02-20 16:19:52.238] [cout] [info]         control: /forceset/vaslat140_r, weight: 1.0
+[2023-02-20 16:19:52.238] [cout] [info]         control: /forceset/vasmed_r, weight: 1.0
+[2023-02-20 16:19:52.238] [cout] [info] Endpoint constraints: (total: 1)
+[2023-02-20 16:19:52.238] [cout] [info]   initial_activation. MocoInitialActivationGoal, enabled: true, mode: endpoint_constraint
+[2023-02-20 16:19:52.238] [cout] [info] Kinematic constraints: none
+[2023-02-20 16:19:52.238] [cout] [info] Path constraints: none
+[2023-02-20 16:19:52.238] [cout] [info] States: (total: 41)
+[2023-02-20 16:19:52.238] [cout] [info]   /forceset/soleus_r/normalized_tendon_force. bounds: [0, 2]
+[2023-02-20 16:19:52.238] [cout] [info]   /forceset/addbrev_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.238] [cout] [info]   /forceset/addmagIsch_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.238] [cout] [info]   /forceset/addlong_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.238] [cout] [info]   /forceset/piri_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.238] [cout] [info]   /forceset/addmagDist_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.238] [cout] [info]   /forceset/vasmed_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.238] [cout] [info]   /forceset/addmagMid_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.238] [cout] [info]   /forceset/addmagProx_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.238] [cout] [info]   /forceset/bflh140_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.238] [cout] [info]   /forceset/vaslat140_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.238] [cout] [info]   /forceset/bfsh140_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.238] [cout] [info]   /forceset/edl_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.238] [cout] [info]   /forceset/semimem_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.238] [cout] [info]   /forceset/ehl_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.238] [cout] [info]   /forceset/fdl_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.238] [cout] [info]   /forceset/fhl_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/perlong_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/gaslat140_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/soleus_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/gasmed_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/recfem_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/glmax1_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/glmax2_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/iliacus_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/glmax3_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/glmed1_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/glmed2_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/tibant_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/glmed3_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/glmin1_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/glmin2_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/glmin3_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/grac_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/perbrev_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/psoas_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/sart_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/semiten_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/tfl_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/tibpost_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/vasint_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info] Controls: (total: 47)
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/hip_flexion_r_actuator. bounds: [-inf, inf]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/tibpost_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/hip_flexion_l_actuator. bounds: [-inf, inf]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/knee_angle_r_actuator. bounds: [-inf, inf]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/knee_angle_l_actuator. bounds: [-inf, inf]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/semiten_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/ankle_angle_r_actuator. bounds: [-inf, inf]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/vasint_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/ankle_angle_l_actuator. bounds: [-inf, inf]
+[2023-02-20 16:19:52.239] [cout] [info]   /forceset/lumbar_extension_actuator. bounds: [-inf, inf]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/addbrev_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/addmagIsch_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/addlong_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/piri_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/addmagDist_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/vasmed_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/addmagMid_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/addmagProx_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/bflh140_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/vaslat140_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/bfsh140_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/edl_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/semimem_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/ehl_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/fdl_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/fhl_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/perlong_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/gaslat140_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/soleus_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/gasmed_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/recfem_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/glmax1_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/glmax2_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/iliacus_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/glmax3_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/glmed1_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/glmed2_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/tibant_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/glmed3_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/glmin1_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/glmin2_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/glmin3_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/grac_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/perbrev_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.240] [cout] [info]   /forceset/psoas_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.241] [cout] [info]   /forceset/sart_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.241] [cout] [info]   /forceset/tfl_r. bounds: [0.01, 1]
+[2023-02-20 16:19:52.241] [cout] [info] Parameters: none
+[2023-02-20 16:19:52.728] [info] Number of threads: 8
+[2023-02-20 16:19:55.576] [info] Set log level to Info.
+[2023-02-20 16:19:55.580] [info] ------------------------------------------------------------------------
+[2023-02-20 16:19:55.580] [info] Elapsed real time: 3 second(s).
+[2023-02-20 16:19:55.580] [info] Mon Feb 20 16:19:55 2023
+[2023-02-20 16:19:55.580] [warning] MocoCasADiSolver did NOT succeed:
+[2023-02-20 16:19:55.580] [warning]   Invalid_Number_Detected
+[2023-02-20 16:19:55.580] [info] ========================================================================
+[2023-02-20 16:46:29.496] [info] Loaded model gaitModel2D from file gaitModel2D.osim
+[2023-02-20 16:46:34.848] [info] Loaded model model from file ..\..\ExpData\Scaling\scaledModelAdjusted.osim
+[2023-02-20 16:46:44.779] [info] Loaded model gaitModel2D from file gaitModel2D_extraMuscles.osim
+[2023-02-20 16:47:40.464] [info] Loaded model gaitModel2D from file muscleDrivenInverse\muscleModel.osim
+[2023-02-20 16:47:48.942] [info] ========================================================================
+[2023-02-20 16:47:48.942] [info] MocoCasADiSolver starting.
+[2023-02-20 16:47:48.942] [info] Mon Feb 20 16:47:48 2023
+[2023-02-20 16:47:48.942] [info] ------------------------------------------------------------------------
+[2023-02-20 16:47:48.942] [cout] [info] Costs: (total: 1)
+[2023-02-20 16:47:48.943] [cout] [info]   excitation_effort. MocoControlGoal, enabled: true, mode: cost, weight: 0.01
+[2023-02-20 16:47:48.943] [cout] [info]         control: /forceset/hip_flexion_r_actuator, weight: 1.0
+[2023-02-20 16:47:48.943] [cout] [info]         control: /forceset/hip_flexion_l_actuator, weight: 1.0
+[2023-02-20 16:47:48.943] [cout] [info]         control: /forceset/knee_angle_r_actuator, weight: 1.0
+[2023-02-20 16:47:48.943] [cout] [info]         control: /forceset/knee_angle_l_actuator, weight: 1.0
+[2023-02-20 16:47:48.943] [cout] [info]         control: /forceset/ankle_angle_r_actuator, weight: 1.0
+[2023-02-20 16:47:48.943] [cout] [info]         control: /forceset/ankle_angle_l_actuator, weight: 1.0
+[2023-02-20 16:47:48.943] [cout] [info]         control: /forceset/lumbar_extension_actuator, weight: 1.0
+[2023-02-20 16:47:48.943] [cout] [info]         control: /forceset/addbrev_r, weight: 1.0
+[2023-02-20 16:47:48.943] [cout] [info]         control: /forceset/addlong_r, weight: 1.0
+[2023-02-20 16:47:48.943] [cout] [info]         control: /forceset/addmagDist_r, weight: 1.0
+[2023-02-20 16:47:48.943] [cout] [info]         control: /forceset/addmagIsch_r, weight: 1.0
+[2023-02-20 16:47:48.943] [cout] [info]         control: /forceset/addmagMid_r, weight: 1.0
+[2023-02-20 16:47:48.943] [cout] [info]         control: /forceset/addmagProx_r, weight: 1.0
+[2023-02-20 16:47:48.943] [cout] [info]         control: /forceset/bflh140_r, weight: 1.0
+[2023-02-20 16:47:48.943] [cout] [info]         control: /forceset/bfsh140_r, weight: 1.0
+[2023-02-20 16:47:48.943] [cout] [info]         control: /forceset/edl_r, weight: 1.0
+[2023-02-20 16:47:48.943] [cout] [info]         control: /forceset/ehl_r, weight: 1.0
+[2023-02-20 16:47:48.943] [cout] [info]         control: /forceset/fdl_r, weight: 1.0
+[2023-02-20 16:47:48.943] [cout] [info]         control: /forceset/fhl_r, weight: 1.0
+[2023-02-20 16:47:48.943] [cout] [info]         control: /forceset/gaslat140_r, weight: 1.0
+[2023-02-20 16:47:48.943] [cout] [info]         control: /forceset/gasmed_r, weight: 1.0
+[2023-02-20 16:47:48.943] [cout] [info]         control: /forceset/glmax1_r, weight: 1.0
+[2023-02-20 16:47:48.943] [cout] [info]         control: /forceset/glmax2_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info]         control: /forceset/glmax3_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info]         control: /forceset/glmed1_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info]         control: /forceset/glmed2_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info]         control: /forceset/glmed3_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info]         control: /forceset/glmin1_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info]         control: /forceset/glmin2_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info]         control: /forceset/glmin3_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info]         control: /forceset/grac_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info]         control: /forceset/iliacus_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info]         control: /forceset/perbrev_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info]         control: /forceset/perlong_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info]         control: /forceset/piri_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info]         control: /forceset/psoas_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info]         control: /forceset/recfem_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info]         control: /forceset/sart_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info]         control: /forceset/semimem_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info]         control: /forceset/semiten_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info]         control: /forceset/soleus_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info]         control: /forceset/tfl_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info]         control: /forceset/tibant_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info]         control: /forceset/tibpost_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info]         control: /forceset/vasint_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info]         control: /forceset/vaslat140_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info]         control: /forceset/vasmed_r, weight: 1.0
+[2023-02-20 16:47:48.944] [cout] [info] Endpoint constraints: (total: 1)
+[2023-02-20 16:47:48.944] [cout] [info]   initial_activation. MocoInitialActivationGoal, enabled: true, mode: endpoint_constraint
+[2023-02-20 16:47:48.944] [cout] [info] Kinematic constraints: none
+[2023-02-20 16:47:48.944] [cout] [info] Path constraints: none
+[2023-02-20 16:47:48.944] [cout] [info] States: (total: 43)
+[2023-02-20 16:47:48.944] [cout] [info]   /forceset/semiten_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.944] [cout] [info]   /forceset/gaslat140_r/normalized_tendon_force. bounds: [0, 2]
+[2023-02-20 16:47:48.944] [cout] [info]   /forceset/soleus_r/normalized_tendon_force. bounds: [0, 2]
+[2023-02-20 16:47:48.944] [cout] [info]   /forceset/gasmed_r/normalized_tendon_force. bounds: [0, 2]
+[2023-02-20 16:47:48.944] [cout] [info]   /forceset/addbrev_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.944] [cout] [info]   /forceset/addmagIsch_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/addlong_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/piri_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/addmagDist_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/vasmed_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/addmagMid_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/addmagProx_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/bflh140_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/vaslat140_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/bfsh140_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/edl_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/semimem_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/ehl_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/fdl_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/fhl_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/perlong_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/gaslat140_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/soleus_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/gasmed_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/recfem_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/glmax1_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/glmax2_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/iliacus_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/glmax3_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/glmed1_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/glmed2_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/tibant_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/glmed3_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/glmin1_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/glmin2_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/glmin3_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/grac_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.945] [cout] [info]   /forceset/perbrev_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/psoas_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/sart_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/tfl_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/tibpost_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/vasint_r/activation. bounds: [0.01, 1]
+[2023-02-20 16:47:48.946] [cout] [info] Controls: (total: 47)
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/hip_flexion_r_actuator. bounds: [-inf, inf]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/tibpost_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/hip_flexion_l_actuator. bounds: [-inf, inf]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/knee_angle_r_actuator. bounds: [-inf, inf]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/knee_angle_l_actuator. bounds: [-inf, inf]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/semiten_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/ankle_angle_r_actuator. bounds: [-inf, inf]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/vasint_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/ankle_angle_l_actuator. bounds: [-inf, inf]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/lumbar_extension_actuator. bounds: [-inf, inf]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/addbrev_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/addmagIsch_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/addlong_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/piri_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/addmagDist_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/vasmed_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/addmagMid_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/addmagProx_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/bflh140_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/vaslat140_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/bfsh140_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/edl_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/semimem_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/ehl_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/fdl_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.946] [cout] [info]   /forceset/fhl_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.947] [cout] [info]   /forceset/perlong_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.947] [cout] [info]   /forceset/gaslat140_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.947] [cout] [info]   /forceset/soleus_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.947] [cout] [info]   /forceset/gasmed_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.947] [cout] [info]   /forceset/recfem_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.947] [cout] [info]   /forceset/glmax1_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.947] [cout] [info]   /forceset/glmax2_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.947] [cout] [info]   /forceset/iliacus_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.947] [cout] [info]   /forceset/glmax3_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.947] [cout] [info]   /forceset/glmed1_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.947] [cout] [info]   /forceset/glmed2_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.947] [cout] [info]   /forceset/tibant_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.947] [cout] [info]   /forceset/glmed3_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.947] [cout] [info]   /forceset/glmin1_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.947] [cout] [info]   /forceset/glmin2_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.947] [cout] [info]   /forceset/glmin3_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.947] [cout] [info]   /forceset/grac_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.947] [cout] [info]   /forceset/perbrev_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.947] [cout] [info]   /forceset/psoas_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.947] [cout] [info]   /forceset/sart_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.947] [cout] [info]   /forceset/tfl_r. bounds: [0.01, 1]
+[2023-02-20 16:47:48.947] [cout] [info] Parameters: none
+[2023-02-20 16:47:49.418] [info] Number of threads: 8
+[2023-02-20 16:47:52.204] [info] Set log level to Info.
+[2023-02-20 16:47:52.208] [info] ------------------------------------------------------------------------
+[2023-02-20 16:47:52.208] [info] Elapsed real time: 3 second(s).
+[2023-02-20 16:47:52.208] [info] Mon Feb 20 16:47:52 2023
+[2023-02-20 16:47:52.208] [warning] MocoCasADiSolver did NOT succeed:
+[2023-02-20 16:47:52.208] [warning]   Invalid_Number_Detected
+[2023-02-20 16:47:52.208] [info] ========================================================================
