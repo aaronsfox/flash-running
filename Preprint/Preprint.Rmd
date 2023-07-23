@@ -1,5 +1,5 @@
 ---
-title: "What does it take to run like The Flash? Predictive neuromechanical simulations of superhuman sprinting speed"
+title: "Neuromechanics of superhuman speed"
 author:
   - name: Aaron S. Fox
     affiliation: Centre for Sport Research,Barwon Centre for Orthopaedic Research and Education (B-CORE)
@@ -44,26 +44,64 @@ shhh <- suppressPackageStartupMessages # It's a library, so shhh!
 
 # Introduction
 
+Running is a popular mode of exercise amongst humans of all ages, and has the highest participation rate of all physical activities amongst those over the age of 15.
 
-ALT TITLE FOR BMJ: "The metabolic requirements and potential risk of injury with running at superhuman speed: A case study of Barry Allen"
+Many treat this as a leisurely activity, yet running as a competitive endeavour also has a long history.
 
-Humans have long been interested in running as fast as possible. The ancient Olympic Games included various iterations of foot faces ***[refs]*** to determine who was the fastest, and this style of race (e.g. 100m sprint) remain one of the premier events on the track and field calendar within the modern Olympic Games.
+The ancient Olympic Games included various iterations of foot races ***[refs]***, with the 100-metre sprint remaining as the premier event on the modern Olympic Games track and field calendar.
 
+Understanding the peak of human running ability has also been a focus of scientific endeavours ***[refs]***
 
-Understanding how the peak of human ability when it comes to speed has also been a focus of scientific endeavours ***[refs]***
+The current world record for the men's and women's 100-metre sprints stand at 9.58 and 10.49 seconds, achieved by Usain Bolt in 2009 and Florence Griffith-Joyner in 1988, respectively.
 
-Einmahl and Smeets proposed the fastest times achievable for men and women in the 100-metre sprint at 9.51 and 10.33 seconds, respectively 
+Statistical modelling and computer simulation studies ***[refs]*** have, however, proposed that humans have not yet reached their physical peak in this event and that these records could be broken.
 
+Usain Bolt completed a world record breaking performance (at the time) at the Beijing Olympics in 2008, running the event in 9.69 seconds, while celeberating along the track for the final 20-metres.
 
+Eriksen et al. [https://doi.org/10.1119/1.3033168] proposed that had Bolt maintained his acceleration rather than celebrating over this period, he may have achieved a time of 9.55 seconds — which would have eclipsed his later (and current) world record effort of 9.58. 
 
-The interest in human running provides a teaching platform...
+Einmahl and Smeets [https://core.ac.uk/download/pdf/6239807.pdf] applied extreme value theory to men's and women's 100-metre sprinting performances across 1991 to 2008, and determined theoretical world record limts of 9.51 and 10.33 seconds for men and women, respectively.
 
+Physiological analyses of human muscle physiology and mechanics suggest that, with optimal function, these theoretical world records are achievable.
+
+Weyand et al. [https://journals.physiology.org/doi/full/10.1152/japplphysiol.00947.2009] demonstrated that humans are able to apply more rapid forces to the ground during hopping versus running
+
+They hypothesised that if the rapid forces produced during hopping could be transferred to running, top speeds of up to 9.3 m/s may be achievable by humans [Weyand].
+
+The ability to transfer hopping kinetics to running would likely require an adaptation in human muscle contractile mechanics to permit more rapid muscle fibre contractions [Weyand], yet these hypothetical top speeds would far exceed those achieved in 100-metre world record performances.
+
+---
+
+Current literature aiming to understand the theoretical peak of huamn sprinting performance has predominantly employed modelling and simulation approaches ***[refs]***. 
+
+Where human participants havebeen used (e.g. [Weyand]), their findings have potentially been limited by the human ability of the recruited participants.
+
+There are, however, documented cases of superhuman 'speedsters' in both historical [early Flash comics ref] and modern [new Flash comics ref] literature.
+
+These speedsters form a sub-group of the population collectively known as 'metahumans' and provide a potentially unique cohort to examine and understand the potential neuromechanics of extreme running speeds.
+
+Investigation of this unique population may yield insights applicable to human running and ...
+
+Therefore, the purpose of this study was to investigate the X, Y and Z of meta-human speedsters running at extreme speeds above and beyond those capable by humans...
+
+---
 
 First and foremost, this work aims to predict the neuromechanical behaviour of sprinting at superhuman speeds, as depicted notably by the comic book character 'The Flash.' The secondary, but perhaps more notable, aims of this work are to: (i) provide open-source code examples that leverage new tools (i.e. OpenSim Moco) to adapt musculoskeletal models and produce simulations of human running; and (ii) provide a fun and accessible dataset for communicating complex biomechanical concepts and approaches in a relatable format for young (and maybe old too) students.
 
 
 # Methodology
 
+
+## Participants
+
+This study was originally designed as an experimental case series of key individuals known to possess superhuman speed (e.g. The Flash, Kid Flash, Impulse, ...) ...
+
+However, logistical constraints prohibited any paricipants being able to attend the laboratory for testing, and therefore a computer simulation approach guided by existing experimental sprinting data was subsequently adopted.
+
+Used the experimental data from Dorn - ran trcking etc.
+Then converted the experimental participant from this work into something that might resemble the physiological adpatations experience by The Flash
+
+Predictive simulations have been used to yield insight into human gait across a range of areas, including human sprinting [Nicos work], transtibial amputation gait [Miller work], cerebral palsy [Falisse work]...
 
 ## Sub-Heading
 
@@ -99,7 +137,15 @@ Biological limits on musclar force production in Weyand et al. --- proposes that
 
 Weyand et al. also proposes that boucning gaits involve a trade-off between the magnitude of ground forces applied and the step frequencies that can be attained as foot-ground contact periods become shorter at progressively faster speeds. What was the trade-off betweens tep frequency and peak force here?
 
+Main kinematic adjustments seem to be reduced hip flexion - less swing, more trunk lean
 
+Some muscle forces might go down - what's the theory on this?
+Our simulations were designed to simulate an average target speed - i.e. constant speed already achieved
+The large ground reaction, forces, momentum of the runner - may mean runnng at superhuman speed becomes more of a stability task?
+Simulting the acceleration phase to get up to these speeds would likely result in different findings with respect to the muscle force required...
+
+Reserve actuators contributed a small amount to the joint torques
+The most evident was at the MTP joint, and this was likely due to the model not having sufficient toe muscles to produce the torques at this joint
 
 While obvious, it remains important to flag that the models used and simulations created in this work do not represent real-world studies of human movement. 
 
@@ -113,6 +159,17 @@ Similarly, this paper may provide an interesting platform to discuss the use of 
 
 
 Consider part of the discussion to reflect on the trials of generating simulations...
+
+Limitations
+
+Potentially biased solutions
+
+Constrained the simulations to employ an increased cadence approach, by providing sped-up tracking kinematics
+	Biased our solution to the increased cadence
+	Further simulation work may wish to be less constrained to determine whether an increased stride length (e.g. bounding) may be an adoptible superhuman speed running gait
+	
+Estimated GRFs to track for the faster speeds assuming conventional physics or typical GRF profiles
+	It's possible that superhuman running may adopt a strategy that alters the typical GRF profile for a more efficient running gait - hoever simulations were biased away from this
 
 
 # Conclusions
