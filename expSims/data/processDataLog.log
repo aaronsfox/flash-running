@@ -1,0 +1,1105 @@
+[2023-11-13 12:46:20.768] [info] Loaded model JA1_SCALED from file ..\model\JA1_SCALED_Osim40_Muscles.osim
+[2023-11-13 12:46:20.791] [warning] Couldn't find file 'r_femur.vtp'.
+[2023-11-13 12:46:20.791] [warning] Couldn't find file 'r_tibia.vtp'.
+[2023-11-13 12:46:20.817] [warning] Couldn't find file 'l_femur.vtp'.
+[2023-11-13 12:46:20.817] [warning] Couldn't find file 'l_tibia.vtp'.
+[2023-11-13 12:46:20.877] [warning] Couldn't find file 'scapula_lv1.vtp'.
+[2023-11-13 12:46:20.877] [warning] Couldn't find file 'scapula_rv1.vtp'.
+[2023-11-13 12:46:20.877] [warning] Couldn't find file 'clavicle_lv1.vtp'.
+[2023-11-13 12:46:20.878] [warning] Couldn't find file 'clavicle_rv1.vtp'.
+[2023-11-13 12:46:21.358] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:46:21.395] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:46:21.395] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:46:21.395] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:46:21.395] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:46:21.399] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:46:21.437] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:46:21.437] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:46:21.437] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:46:21.437] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:46:21.441] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:46:21.479] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:46:21.479] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:46:21.479] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:46:21.479] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:46:21.482] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:46:21.519] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:46:21.519] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:46:21.519] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:46:21.519] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:46:21.523] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:46:21.561] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:46:21.561] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:46:21.561] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:46:21.561] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:46:21.589] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:46:21.626] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:46:21.626] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:46:21.626] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:46:21.626] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:46:56.715] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:46:56.754] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:46:56.754] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:46:56.754] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:46:56.754] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:51:47.091] [info] Loaded model JA1_SCALED from file ..\model\JA1_SCALED_Osim4_Muscles.osim
+[2023-11-13 12:51:47.104] [warning] Couldn't find file 'r_tibia.vtp'.
+[2023-11-13 12:52:07.622] [info] Loaded model JA1_SCALED from file ..\model\JA1_SCALED_Osim4_Muscles.osim
+[2023-11-13 12:52:19.463] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:19.498] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:19.498] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:19.499] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:19.499] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:19.503] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:19.541] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:19.541] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:19.541] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:19.541] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:19.546] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:19.582] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:19.582] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:19.582] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:19.582] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:19.586] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:19.623] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:19.623] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:19.623] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:19.623] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:19.628] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:19.665] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:19.665] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:19.665] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:19.665] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:19.687] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:19.725] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:19.725] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:19.725] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:19.725] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:19.730] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:19.766] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:19.766] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:19.766] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:19.766] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:24.389] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:24.426] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:24.426] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:24.426] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:24.426] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:30.886] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:30.924] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:30.924] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:30.924] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:30.924] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:31.045] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:31.083] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:31.083] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:31.083] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:31.083] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:31.206] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:31.245] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:31.245] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:31.245] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:31.245] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:31.302] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:31.339] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:31.339] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:31.339] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:31.339] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:31.364] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:31.401] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:31.401] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:31.401] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:31.401] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:31.448] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:31.485] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:31.485] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:31.485] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:31.485] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:31.510] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:31.547] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:31.547] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:31.547] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:31.547] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:31.593] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:31.630] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:31.630] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:31.630] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:31.630] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:31.653] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:31.691] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:31.691] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:31.691] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:31.691] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:31.739] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:31.777] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:31.777] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:31.777] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:31.777] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:31.802] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:31.839] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:31.839] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:31.839] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:31.839] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:31.882] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:31.917] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:31.917] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:31.917] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:31.917] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:31.942] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:31.978] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:31.978] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:31.978] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:31.978] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:32.018] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:32.055] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:32.055] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:32.055] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:32.055] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:32.081] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:32.118] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:32.118] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:32.118] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:32.118] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:32.162] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:32.198] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:32.198] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:32.198] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:32.198] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:32.223] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:32.260] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:32.260] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:32.260] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:32.260] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:32.305] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:32.343] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:32.343] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:32.343] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:32.343] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:32.369] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:32.407] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:32.407] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:32.407] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:32.407] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:32.449] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:32.487] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:32.487] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:32.487] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:32.487] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:32.513] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:32.550] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:32.550] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:32.550] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:32.550] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:32.594] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:32.631] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:32.631] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:32.631] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:32.631] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:32.656] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:32.692] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:32.692] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:32.692] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:32.692] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:35.592] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:35.635] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:35.635] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:35.635] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:35.635] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:35.661] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:35.701] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:35.701] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:35.701] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:35.701] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:35.749] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:35.793] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:35.793] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:35.793] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:35.793] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:35.820] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:35.862] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:35.862] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:35.862] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:35.862] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:38.378] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:38.419] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:38.419] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:38.419] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:38.419] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:38.448] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:38.513] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:38.513] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:38.513] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:38.513] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:38.574] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:38.615] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:38.615] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:38.615] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:38.615] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:38.642] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:38.681] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:38.681] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:38.681] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:38.681] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:38.708] [info] ========================================================================
+[2023-11-13 12:52:38.708] [info] MocoCasADiSolver starting.
+[2023-11-13 12:52:38.708] [info] Mon Nov 13 12:52:38 2023
+[2023-11-13 12:52:38.708] [info] ------------------------------------------------------------------------
+[2023-11-13 12:52:38.708] [cout] [info] Costs: (total: 2)
+[2023-11-13 12:52:38.708] [cout] [info]   marker_tracking. MocoMarkerTrackingGoal, enabled: true, mode: cost, weight: 10.0
+[2023-11-13 12:52:38.708] [cout] [info]         allow unused references: 
+[2023-11-13 12:52:38.708] [cout] [info]         tracked marker(s):
+[2023-11-13 12:52:38.708] [cout] [info]             C7, weight: 2.0
+[2023-11-13 12:52:38.708] [cout] [info]             RSH, weight: 2.5
+[2023-11-13 12:52:38.708] [cout] [info]             LSH, weight: 2.5
+[2023-11-13 12:52:38.708] [cout] [info]             MAN, weight: 2.0
+[2023-11-13 12:52:38.708] [cout] [info]             T7, weight: 2.0
+[2023-11-13 12:52:38.708] [cout] [info]             LARM, weight: 1.0
+[2023-11-13 12:52:38.708] [cout] [info]             LELB, weight: 2.0
+[2023-11-13 12:52:38.708] [cout] [info]             LFOREARM, weight: 1.0
+[2023-11-13 12:52:38.708] [cout] [info]             LWR, weight: 2.0
+[2023-11-13 12:52:38.708] [cout] [info]             RARM, weight: 1.0
+[2023-11-13 12:52:38.708] [cout] [info]             RELB, weight: 2.0
+[2023-11-13 12:52:38.708] [cout] [info]             RFOREARM, weight: 1.0
+[2023-11-13 12:52:38.708] [cout] [info]             RWR, weight: 2.0
+[2023-11-13 12:52:38.708] [cout] [info]             RASI, weight: 2.0
+[2023-11-13 12:52:38.708] [cout] [info]             LASI, weight: 2.0
+[2023-11-13 12:52:38.708] [cout] [info]             SACR, weight: 2.5
+[2023-11-13 12:52:38.708] [cout] [info]             P1, weight: 1.0
+[2023-11-13 12:52:38.708] [cout] [info]             P2, weight: 1.0
+[2023-11-13 12:52:38.708] [cout] [info]             P3, weight: 1.0
+[2023-11-13 12:52:38.708] [cout] [info]             LTHLP, weight: 1.0
+[2023-11-13 12:52:38.708] [cout] [info]             LTHLD, weight: 1.0
+[2023-11-13 12:52:38.708] [cout] [info]             LTHAP, weight: 1.0
+[2023-11-13 12:52:38.708] [cout] [info]             LTHAD, weight: 1.0
+[2023-11-13 12:52:38.708] [cout] [info]             LLEPI, weight: 2.0
+[2023-11-13 12:52:38.708] [cout] [info]             LPAT, weight: 1.0
+[2023-11-13 12:52:38.708] [cout] [info]             LTIAP, weight: 1.0
+[2023-11-13 12:52:38.708] [cout] [info]             LTIAD, weight: 1.0
+[2023-11-13 12:52:38.708] [cout] [info]             LTILAT, weight: 1.0
+[2023-11-13 12:52:38.708] [cout] [info]             LLMAL, weight: 2.5
+[2023-11-13 12:52:38.708] [cout] [info]             LHEEL, weight: 1.0
+[2023-11-13 12:52:38.708] [cout] [info]             LMFS, weight: 1.0
+[2023-11-13 12:52:38.708] [cout] [info]             LMFL, weight: 1.0
+[2023-11-13 12:52:38.708] [cout] [info]             LP1MT, weight: 2.0
+[2023-11-13 12:52:38.708] [cout] [info]             LTOE, weight: 2.0
+[2023-11-13 12:52:38.709] [cout] [info]             LP5MT, weight: 2.0
+[2023-11-13 12:52:38.709] [cout] [info]             RTHLP, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]             RTHLD, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]             RTHAP, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]             RTHAD, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]             RLEPI, weight: 2.0
+[2023-11-13 12:52:38.709] [cout] [info]             RPAT, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]             RTIAP, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]             RTIAD, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]             RTILAT, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]             RLMAL, weight: 2.5
+[2023-11-13 12:52:38.709] [cout] [info]             RHEEL, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]             RMFS, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]             RMFL, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]             RP1MT, weight: 2.0
+[2023-11-13 12:52:38.709] [cout] [info]             RTOE, weight: 2.0
+[2023-11-13 12:52:38.709] [cout] [info]             RP5MT, weight: 2.0
+[2023-11-13 12:52:38.709] [cout] [info]   control_effort. MocoControlGoal, enabled: true, mode: cost, weight: 0.00100000
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/lumbar_extension_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/lumbar_bending_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/lumbar_rotation_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/arm_flex_r_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/arm_add_r_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/arm_rot_r_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/elbow_flex_r_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/pro_sup_r_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/arm_flex_l_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/arm_add_l_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/arm_rot_l_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/elbow_flex_l_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/pro_sup_l_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/hip_flexion_l_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/hip_adduction_l_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/hip_rotation_l_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/knee_angle_l_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/ankle_angle_l_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/subtalar_angle_l_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/mtp_angle_l_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/hip_flexion_r_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/hip_adduction_r_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/hip_rotation_r_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/knee_angle_r_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/ankle_angle_r_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/subtalar_angle_r_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/mtp_angle_r_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/pelvis_tx_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/pelvis_ty_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/pelvis_tz_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/pelvis_tilt_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/pelvis_list_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info]         control: /forceset/pelvis_rotation_actuator, weight: 1.0
+[2023-11-13 12:52:38.709] [cout] [info] Endpoint constraints: none
+[2023-11-13 12:52:38.709] [cout] [info] Kinematic constraints: none
+[2023-11-13 12:52:38.709] [cout] [info] Path constraints: (total: 10)
+[2023-11-13 12:52:38.709] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-13 12:52:38.709] [cout] [info]         output: /markerset/r_fp_heel1|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-13 12:52:38.709] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-13 12:52:38.709] [cout] [info]         output: /markerset/r_fp_heel2|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-13 12:52:38.709] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-13 12:52:38.709] [cout] [info]         output: /markerset/r_fp_mt1|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-13 12:52:38.709] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-13 12:52:38.709] [cout] [info]         output: /markerset/r_fp_mt2|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-13 12:52:38.709] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-13 12:52:38.709] [cout] [info]         output: /markerset/r_fp_toe|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-13 12:52:38.709] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-13 12:52:38.709] [cout] [info]         output: /markerset/l_fp_heel1|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-13 12:52:38.709] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-13 12:52:38.709] [cout] [info]         output: /markerset/l_fp_heel2|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-13 12:52:38.709] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-13 12:52:38.709] [cout] [info]         output: /markerset/l_fp_mt1|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-13 12:52:38.709] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-13 12:52:38.709] [cout] [info]         output: /markerset/l_fp_mt2|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-13 12:52:38.709] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-13 12:52:38.709] [cout] [info]         output: /markerset/l_fp_toe|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-13 12:52:38.709] [cout] [info] States: (total: 66)
+[2023-11-13 12:52:38.709] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/value. bounds: [-1.5708, 1.5708]
+[2023-11-13 12:52:38.709] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.709] [cout] [info]   /jointset/ground_pelvis/pelvis_list/value. bounds: [-1.5708, 1.5708]
+[2023-11-13 12:52:38.709] [cout] [info]   /jointset/ground_pelvis/pelvis_list/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.709] [cout] [info]   /jointset/radioulnar_r/pro_sup_r/value. bounds: [0, 3.1416]
+[2023-11-13 12:52:38.709] [cout] [info]   /jointset/ground_pelvis/pelvis_rotation/value. bounds: [-1.5708, 1.5708]
+[2023-11-13 12:52:38.709] [cout] [info]   /jointset/radioulnar_r/pro_sup_r/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.709] [cout] [info]   /jointset/ground_pelvis/pelvis_rotation/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/value. bounds: [-20, 20]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/elbow_r/elbow_flex_r/value. bounds: [-0.17453, 2.618]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/value. bounds: [-2, 4]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/elbow_r/elbow_flex_r/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/ground_pelvis/pelvis_tz/value. bounds: [-5, 5]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/ground_pelvis/pelvis_tz/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/ankle_r/ankle_angle_r/value. bounds: [-1.0472, 0.69813]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/hip_r/hip_adduction_r/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/hip_r/hip_flexion_r/value. bounds: [-0.69813, 1.7453]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/ankle_r/ankle_angle_r/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/hip_r/hip_flexion_r/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/hip_r/hip_adduction_r/value. bounds: [-0.5236, 0.5236]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/back/lumbar_rotation/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/hip_r/hip_rotation_r/value. bounds: [-0.5236, 0.5236]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/hip_r/hip_rotation_r/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/mtp_l/mtp_angle_l/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/knee_r/knee_angle_r/value. bounds: [-2.7925, 0.17453]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/ankle_l/ankle_angle_l/value. bounds: [-1.0472, 0.69813]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/knee_r/knee_angle_r/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/hip_l/hip_flexion_l/value. bounds: [-0.69813, 1.7453]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/subtalar_r/subtalar_angle_r/value. bounds: [-0.87266, 0.87266]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/hip_l/hip_flexion_l/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/subtalar_r/subtalar_angle_r/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/mtp_r/mtp_angle_r/value. bounds: [-1.0472, 1.0472]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/mtp_r/mtp_angle_r/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/hip_l/hip_adduction_l/value. bounds: [-0.5236, 0.5236]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/hip_l/hip_adduction_l/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/hip_l/hip_rotation_l/value. bounds: [-0.5236, 0.5236]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/hip_l/hip_rotation_l/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/knee_l/knee_angle_l/value. bounds: [-2.7925, 0.17453]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/knee_l/knee_angle_l/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/ankle_l/ankle_angle_l/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/subtalar_l/subtalar_angle_l/value. bounds: [-0.87266, 0.87266]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/subtalar_l/subtalar_angle_l/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/mtp_l/mtp_angle_l/value. bounds: [-1.0472, 1.0472]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/back/lumbar_extension/value. bounds: [-0.7854, 0.17453]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/back/lumbar_extension/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/back/lumbar_bending/value. bounds: [-0.34907, 0.34907]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/back/lumbar_bending/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/back/lumbar_rotation/value. bounds: [-0.5236, 0.5236]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/acromial_r/arm_flex_r/value. bounds: [-1.5708, 1.5708]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/acromial_r/arm_flex_r/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/acromial_r/arm_add_r/value. bounds: [-2.0944, 1.5708]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/acromial_r/arm_add_r/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/acromial_r/arm_rot_r/value. bounds: [-1.5708, 1.5708]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/acromial_r/arm_rot_r/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/acromial_l/arm_flex_l/value. bounds: [-1.5708, 1.5708]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/acromial_l/arm_flex_l/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/acromial_l/arm_add_l/value. bounds: [-2.0944, 1.5708]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/acromial_l/arm_add_l/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/acromial_l/arm_rot_l/value. bounds: [-1.5708, 1.5708]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/acromial_l/arm_rot_l/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/elbow_l/elbow_flex_l/value. bounds: [-0.17453, 2.618]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/elbow_l/elbow_flex_l/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/radioulnar_l/pro_sup_l/value. bounds: [0, 3.1416]
+[2023-11-13 12:52:38.710] [cout] [info]   /jointset/radioulnar_l/pro_sup_l/speed. bounds: [-50, 50]
+[2023-11-13 12:52:38.710] [cout] [info] Controls: (total: 33)
+[2023-11-13 12:52:38.710] [cout] [info]   /forceset/lumbar_extension_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.710] [cout] [info]   /forceset/lumbar_bending_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.710] [cout] [info]   /forceset/ankle_angle_r_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.710] [cout] [info]   /forceset/lumbar_rotation_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.710] [cout] [info]   /forceset/pelvis_tilt_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.710] [cout] [info]   /forceset/hip_rotation_r_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.710] [cout] [info]   /forceset/arm_flex_r_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.710] [cout] [info]   /forceset/arm_add_r_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.710] [cout] [info]   /forceset/arm_rot_r_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.710] [cout] [info]   /forceset/hip_adduction_r_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.710] [cout] [info]   /forceset/hip_flexion_l_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.710] [cout] [info]   /forceset/elbow_flex_r_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.710] [cout] [info]   /forceset/pro_sup_r_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.710] [cout] [info]   /forceset/hip_rotation_l_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.710] [cout] [info]   /forceset/arm_flex_l_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.710] [cout] [info]   /forceset/arm_add_l_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.710] [cout] [info]   /forceset/arm_rot_l_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.710] [cout] [info]   /forceset/hip_flexion_r_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.710] [cout] [info]   /forceset/hip_adduction_l_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.710] [cout] [info]   /forceset/elbow_flex_l_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.710] [cout] [info]   /forceset/pro_sup_l_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.710] [cout] [info]   /forceset/knee_angle_l_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.711] [cout] [info]   /forceset/ankle_angle_l_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.711] [cout] [info]   /forceset/subtalar_angle_l_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.711] [cout] [info]   /forceset/mtp_angle_l_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.711] [cout] [info]   /forceset/knee_angle_r_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.711] [cout] [info]   /forceset/subtalar_angle_r_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.711] [cout] [info]   /forceset/mtp_angle_r_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.711] [cout] [info]   /forceset/pelvis_tx_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.711] [cout] [info]   /forceset/pelvis_ty_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.711] [cout] [info]   /forceset/pelvis_tz_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.711] [cout] [info]   /forceset/pelvis_list_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.711] [cout] [info]   /forceset/pelvis_rotation_actuator. bounds: [-inf, inf]
+[2023-11-13 12:52:38.711] [cout] [info] Parameters: none
+[2023-11-13 12:52:38.737] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:38.777] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:38.777] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:38.777] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:38.777] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:38.802] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:38.840] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:38.840] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:38.840] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:38.840] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:38.889] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:38.934] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:38.934] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:38.935] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:38.935] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:38.962] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:38.999] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:38.999] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:38.999] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:38.999] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.045] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:39.085] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:39.085] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.085] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:39.085] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.118] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:39.164] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:39.164] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.164] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:39.164] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.210] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:39.251] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:39.251] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.251] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:39.251] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.277] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:39.314] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:39.314] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.314] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:39.314] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.360] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:39.396] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:39.396] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.396] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:39.396] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.420] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:39.456] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:39.456] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.456] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:39.456] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.500] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:39.537] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:39.537] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.537] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:39.537] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.563] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:39.597] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:39.597] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.597] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:39.597] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.639] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:39.673] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:39.673] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.673] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:39.673] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.697] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:39.734] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:39.734] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.734] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:39.734] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.783] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:39.824] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:39.824] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.824] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:39.824] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.856] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 12:52:39.892] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:39.892] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.892] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 12:52:39.892] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 12:52:39.918] [info] Number of threads: 8
+[2023-11-13 13:13:58.800] [info] Set log level to Info.
+[2023-11-13 13:13:58.809] [info] ------------------------------------------------------------------------
+[2023-11-13 13:13:58.809] [info] Elapsed real time: 1280 second(s) (21 minute(s), 20 second(s)).
+[2023-11-13 13:13:58.809] [info] Mon Nov 13 13:13:58 2023
+[2023-11-13 13:13:58.809] [info] MocoCasADiSolver succeeded!
+[2023-11-13 13:13:58.809] [info] ========================================================================
+[2023-11-13 13:30:02.334] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 13:30:02.375] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 13:30:02.375] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 13:30:02.375] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 13:30:02.375] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 13:30:02.417] [info] Storage: read data file = sprint_grf.mot (nr=1297 nc=73)
+[2023-11-13 13:30:02.454] [info] ExternalForce::RightGRF1 Data source being set to sprint_grf
+[2023-11-13 13:30:02.455] [info] ExternalForce::RightGRF2 Data source being set to sprint_grf
+[2023-11-13 13:30:02.455] [info] ExternalForce::LeftGRF1 Data source being set to sprint_grf
+[2023-11-13 13:30:02.455] [info] ExternalForce::LeftGRF2 Data source being set to sprint_grf
+[2023-11-13 13:30:31.502] [cout] [info] Exiting visualization.
+[2023-11-14 09:55:05.111] [info] Loaded model JA1_SCALED from file ..\results\fullTracking\osimModel.osim
+[2023-11-14 09:57:01.899] [info] Loaded model JA1_SCALED from file model.osim
+[2023-11-14 09:58:09.290] [info] ========================================================================
+[2023-11-14 09:58:09.290] [info] MocoCasADiSolver starting.
+[2023-11-14 09:58:09.291] [info] Tue Nov 14 09:58:09 2023
+[2023-11-14 09:58:09.291] [info] ------------------------------------------------------------------------
+[2023-11-14 09:58:09.291] [cout] [info] Costs: (total: 5)
+[2023-11-14 09:58:09.291] [cout] [info]   marker_tracking. MocoMarkerTrackingGoal, enabled: true, mode: cost, weight: 10.0
+[2023-11-14 09:58:09.291] [cout] [info]         allow unused references: 
+[2023-11-14 09:58:09.291] [cout] [info]         tracked marker(s):
+[2023-11-14 09:58:09.291] [cout] [info]             C7, weight: 2.0
+[2023-11-14 09:58:09.291] [cout] [info]             RSH, weight: 2.5
+[2023-11-14 09:58:09.300] [cout] [info]             LSH, weight: 2.5
+[2023-11-14 09:58:09.300] [cout] [info]             MAN, weight: 2.0
+[2023-11-14 09:58:09.300] [cout] [info]             T7, weight: 2.0
+[2023-11-14 09:58:09.300] [cout] [info]             LARM, weight: 1.0
+[2023-11-14 09:58:09.300] [cout] [info]             LELB, weight: 2.0
+[2023-11-14 09:58:09.300] [cout] [info]             LFOREARM, weight: 1.0
+[2023-11-14 09:58:09.300] [cout] [info]             LWR, weight: 2.0
+[2023-11-14 09:58:09.300] [cout] [info]             RARM, weight: 1.0
+[2023-11-14 09:58:09.300] [cout] [info]             RELB, weight: 2.0
+[2023-11-14 09:58:09.300] [cout] [info]             RFOREARM, weight: 1.0
+[2023-11-14 09:58:09.300] [cout] [info]             RWR, weight: 2.0
+[2023-11-14 09:58:09.300] [cout] [info]             RASI, weight: 2.0
+[2023-11-14 09:58:09.300] [cout] [info]             LASI, weight: 2.0
+[2023-11-14 09:58:09.300] [cout] [info]             SACR, weight: 2.5
+[2023-11-14 09:58:09.300] [cout] [info]             P1, weight: 1.0
+[2023-11-14 09:58:09.300] [cout] [info]             P2, weight: 1.0
+[2023-11-14 09:58:09.300] [cout] [info]             P3, weight: 1.0
+[2023-11-14 09:58:09.300] [cout] [info]             LTHLP, weight: 1.0
+[2023-11-14 09:58:09.300] [cout] [info]             LTHLD, weight: 1.0
+[2023-11-14 09:58:09.300] [cout] [info]             LTHAP, weight: 1.0
+[2023-11-14 09:58:09.300] [cout] [info]             LTHAD, weight: 1.0
+[2023-11-14 09:58:09.300] [cout] [info]             LLEPI, weight: 2.0
+[2023-11-14 09:58:09.300] [cout] [info]             LPAT, weight: 1.0
+[2023-11-14 09:58:09.300] [cout] [info]             LTIAP, weight: 1.0
+[2023-11-14 09:58:09.300] [cout] [info]             LTIAD, weight: 1.0
+[2023-11-14 09:58:09.300] [cout] [info]             LTILAT, weight: 1.0
+[2023-11-14 09:58:09.300] [cout] [info]             LLMAL, weight: 2.5
+[2023-11-14 09:58:09.301] [cout] [info]             LHEEL, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]             LMFS, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]             LMFL, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]             LP1MT, weight: 2.0
+[2023-11-14 09:58:09.301] [cout] [info]             LTOE, weight: 2.0
+[2023-11-14 09:58:09.301] [cout] [info]             LP5MT, weight: 2.0
+[2023-11-14 09:58:09.301] [cout] [info]             RTHLP, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]             RTHLD, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]             RTHAP, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]             RTHAD, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]             RLEPI, weight: 2.0
+[2023-11-14 09:58:09.301] [cout] [info]             RPAT, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]             RTIAP, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]             RTIAD, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]             RTILAT, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]             RLMAL, weight: 2.5
+[2023-11-14 09:58:09.301] [cout] [info]             RHEEL, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]             RMFS, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]             RMFL, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]             RP1MT, weight: 2.0
+[2023-11-14 09:58:09.301] [cout] [info]             RTOE, weight: 2.0
+[2023-11-14 09:58:09.301] [cout] [info]             RP5MT, weight: 2.0
+[2023-11-14 09:58:09.301] [cout] [info]   control_effort. MocoControlGoal, enabled: true, mode: cost, weight: 0.00100000
+[2023-11-14 09:58:09.301] [cout] [info]         control: /forceset/lumbar_extension_actuator, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]         control: /forceset/lumbar_bending_actuator, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]         control: /forceset/lumbar_rotation_actuator, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]         control: /forceset/arm_flex_r_actuator, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]         control: /forceset/arm_add_r_actuator, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]         control: /forceset/arm_rot_r_actuator, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]         control: /forceset/elbow_flex_r_actuator, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]         control: /forceset/pro_sup_r_actuator, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]         control: /forceset/arm_flex_l_actuator, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]         control: /forceset/arm_add_l_actuator, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]         control: /forceset/arm_rot_l_actuator, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]         control: /forceset/elbow_flex_l_actuator, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]         control: /forceset/pro_sup_l_actuator, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]         control: /forceset/hip_flexion_l_actuator, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]         control: /forceset/hip_adduction_l_actuator, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]         control: /forceset/hip_rotation_l_actuator, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]         control: /forceset/knee_angle_l_actuator, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]         control: /forceset/ankle_angle_l_actuator, weight: 1.0
+[2023-11-14 09:58:09.301] [cout] [info]         control: /forceset/subtalar_angle_l_actuator, weight: 1.0
+[2023-11-14 09:58:09.302] [cout] [info]         control: /forceset/mtp_angle_l_actuator, weight: 1.0
+[2023-11-14 09:58:09.302] [cout] [info]         control: /forceset/hip_flexion_r_actuator, weight: 1.0
+[2023-11-14 09:58:09.302] [cout] [info]         control: /forceset/hip_adduction_r_actuator, weight: 1.0
+[2023-11-14 09:58:09.302] [cout] [info]         control: /forceset/hip_rotation_r_actuator, weight: 1.0
+[2023-11-14 09:58:09.302] [cout] [info]         control: /forceset/knee_angle_r_actuator, weight: 1.0
+[2023-11-14 09:58:09.302] [cout] [info]         control: /forceset/ankle_angle_r_actuator, weight: 1.0
+[2023-11-14 09:58:09.302] [cout] [info]         control: /forceset/subtalar_angle_r_actuator, weight: 1.0
+[2023-11-14 09:58:09.302] [cout] [info]         control: /forceset/mtp_angle_r_actuator, weight: 1.0
+[2023-11-14 09:58:09.302] [cout] [info]         control: /forceset/pelvis_tx_actuator, weight: 1.0
+[2023-11-14 09:58:09.302] [cout] [info]         control: /forceset/pelvis_ty_actuator, weight: 1.0
+[2023-11-14 09:58:09.302] [cout] [info]         control: /forceset/pelvis_tz_actuator, weight: 1.0
+[2023-11-14 09:58:09.302] [cout] [info]         control: /forceset/pelvis_tilt_actuator, weight: 1.0
+[2023-11-14 09:58:09.302] [cout] [info]         control: /forceset/pelvis_list_actuator, weight: 1.0
+[2023-11-14 09:58:09.302] [cout] [info]         control: /forceset/pelvis_rotation_actuator, weight: 1.0
+[2023-11-14 09:58:09.302] [cout] [info]   contact0. MocoContactTrackingGoal, enabled: true, mode: cost, weight: 0.1
+[2023-11-14 09:58:09.302] [cout] [info]         projection type: vector
+[2023-11-14 09:58:09.302] [cout] [info]         projection vector: ~[1,0,0]
+[2023-11-14 09:58:09.302] [cout] [info]         group 0: ExternalForce: LeftGRF1
+[2023-11-14 09:58:09.302] [cout] [info]             forces:
+[2023-11-14 09:58:09.302] [cout] [info]                 /forceset/contactForce_s1_l
+[2023-11-14 09:58:09.302] [cout] [info]                 /forceset/contactForce_s2_l
+[2023-11-14 09:58:09.302] [cout] [info]                 /forceset/contactForce_s3_l
+[2023-11-14 09:58:09.302] [cout] [info]                 /forceset/contactForce_s5_l
+[2023-11-14 09:58:09.302] [cout] [info]         group 1: ExternalForce: RightGRF1
+[2023-11-14 09:58:09.302] [cout] [info]             forces:
+[2023-11-14 09:58:09.302] [cout] [info]                 /forceset/contactForce_s1_r
+[2023-11-14 09:58:09.302] [cout] [info]                 /forceset/contactForce_s2_r
+[2023-11-14 09:58:09.302] [cout] [info]                 /forceset/contactForce_s3_r
+[2023-11-14 09:58:09.302] [cout] [info]                 /forceset/contactForce_s5_r
+[2023-11-14 09:58:09.302] [cout] [info]   contact1. MocoContactTrackingGoal, enabled: true, mode: cost, weight: 0.1
+[2023-11-14 09:58:09.302] [cout] [info]         projection type: vector
+[2023-11-14 09:58:09.302] [cout] [info]         projection vector: ~[0,1,0]
+[2023-11-14 09:58:09.302] [cout] [info]         group 0: ExternalForce: LeftGRF1
+[2023-11-14 09:58:09.302] [cout] [info]             forces:
+[2023-11-14 09:58:09.302] [cout] [info]                 /forceset/contactForce_s1_l
+[2023-11-14 09:58:09.302] [cout] [info]                 /forceset/contactForce_s2_l
+[2023-11-14 09:58:09.302] [cout] [info]                 /forceset/contactForce_s3_l
+[2023-11-14 09:58:09.302] [cout] [info]                 /forceset/contactForce_s5_l
+[2023-11-14 09:58:09.302] [cout] [info]         group 1: ExternalForce: RightGRF1
+[2023-11-14 09:58:09.302] [cout] [info]             forces:
+[2023-11-14 09:58:09.302] [cout] [info]                 /forceset/contactForce_s1_r
+[2023-11-14 09:58:09.303] [cout] [info]                 /forceset/contactForce_s2_r
+[2023-11-14 09:58:09.303] [cout] [info]                 /forceset/contactForce_s3_r
+[2023-11-14 09:58:09.303] [cout] [info]                 /forceset/contactForce_s5_r
+[2023-11-14 09:58:09.303] [cout] [info]   contact2. MocoContactTrackingGoal, enabled: true, mode: cost, weight: 0.1
+[2023-11-14 09:58:09.303] [cout] [info]         projection type: vector
+[2023-11-14 09:58:09.303] [cout] [info]         projection vector: ~[0,0,1]
+[2023-11-14 09:58:09.303] [cout] [info]         group 0: ExternalForce: LeftGRF1
+[2023-11-14 09:58:09.303] [cout] [info]             forces:
+[2023-11-14 09:58:09.303] [cout] [info]                 /forceset/contactForce_s1_l
+[2023-11-14 09:58:09.303] [cout] [info]                 /forceset/contactForce_s2_l
+[2023-11-14 09:58:09.303] [cout] [info]                 /forceset/contactForce_s3_l
+[2023-11-14 09:58:09.303] [cout] [info]                 /forceset/contactForce_s5_l
+[2023-11-14 09:58:09.303] [cout] [info]         group 1: ExternalForce: RightGRF1
+[2023-11-14 09:58:09.303] [cout] [info]             forces:
+[2023-11-14 09:58:09.303] [cout] [info]                 /forceset/contactForce_s1_r
+[2023-11-14 09:58:09.303] [cout] [info]                 /forceset/contactForce_s2_r
+[2023-11-14 09:58:09.303] [cout] [info]                 /forceset/contactForce_s3_r
+[2023-11-14 09:58:09.303] [cout] [info]                 /forceset/contactForce_s5_r
+[2023-11-14 09:58:09.303] [cout] [info] Endpoint constraints: none
+[2023-11-14 09:58:09.303] [cout] [info] Kinematic constraints: none
+[2023-11-14 09:58:09.303] [cout] [info] Path constraints: (total: 10)
+[2023-11-14 09:58:09.303] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-14 09:58:09.303] [cout] [info]         output: /markerset/r_fp_heel1|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-14 09:58:09.303] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-14 09:58:09.303] [cout] [info]         output: /markerset/r_fp_heel2|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-14 09:58:09.303] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-14 09:58:09.303] [cout] [info]         output: /markerset/r_fp_mt1|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-14 09:58:09.303] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-14 09:58:09.303] [cout] [info]         output: /markerset/r_fp_mt2|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-14 09:58:09.303] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-14 09:58:09.303] [cout] [info]         output: /markerset/r_fp_toe|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-14 09:58:09.303] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-14 09:58:09.303] [cout] [info]         output: /markerset/l_fp_heel1|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-14 09:58:09.303] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-14 09:58:09.303] [cout] [info]         output: /markerset/l_fp_heel2|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-14 09:58:09.303] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-14 09:58:09.303] [cout] [info]         output: /markerset/l_fp_mt1|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-14 09:58:09.304] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-14 09:58:09.304] [cout] [info]         output: /markerset/l_fp_mt2|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-14 09:58:09.304] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-14 09:58:09.304] [cout] [info]         output: /markerset/l_fp_toe|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-14 09:58:09.304] [cout] [info] States: (total: 66)
+[2023-11-14 09:58:09.304] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/value. bounds: [-1.5708, 1.5708]
+[2023-11-14 09:58:09.304] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.304] [cout] [info]   /jointset/ground_pelvis/pelvis_list/value. bounds: [-1.5708, 1.5708]
+[2023-11-14 09:58:09.304] [cout] [info]   /jointset/ground_pelvis/pelvis_list/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.304] [cout] [info]   /jointset/radioulnar_r/pro_sup_r/value. bounds: [0, 3.1416]
+[2023-11-14 09:58:09.304] [cout] [info]   /jointset/ground_pelvis/pelvis_rotation/value. bounds: [-1.5708, 1.5708]
+[2023-11-14 09:58:09.304] [cout] [info]   /jointset/radioulnar_r/pro_sup_r/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.304] [cout] [info]   /jointset/ground_pelvis/pelvis_rotation/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.304] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/value. bounds: [-20, 20]
+[2023-11-14 09:58:09.304] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.304] [cout] [info]   /jointset/elbow_r/elbow_flex_r/value. bounds: [-0.17453, 2.618]
+[2023-11-14 09:58:09.304] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/value. bounds: [-2, 4]
+[2023-11-14 09:58:09.304] [cout] [info]   /jointset/elbow_r/elbow_flex_r/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.304] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.304] [cout] [info]   /jointset/ground_pelvis/pelvis_tz/value. bounds: [-5, 5]
+[2023-11-14 09:58:09.304] [cout] [info]   /jointset/ground_pelvis/pelvis_tz/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.304] [cout] [info]   /jointset/ankle_r/ankle_angle_r/value. bounds: [-1.0472, 0.69813]
+[2023-11-14 09:58:09.304] [cout] [info]   /jointset/hip_r/hip_adduction_r/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.304] [cout] [info]   /jointset/hip_r/hip_flexion_r/value. bounds: [-0.69813, 1.7453]
+[2023-11-14 09:58:09.304] [cout] [info]   /jointset/ankle_r/ankle_angle_r/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.304] [cout] [info]   /jointset/hip_r/hip_flexion_r/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.304] [cout] [info]   /jointset/hip_r/hip_adduction_r/value. bounds: [-0.5236, 0.5236]
+[2023-11-14 09:58:09.304] [cout] [info]   /jointset/back/lumbar_rotation/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.304] [cout] [info]   /jointset/hip_r/hip_rotation_r/value. bounds: [-0.5236, 0.5236]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/hip_r/hip_rotation_r/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/mtp_l/mtp_angle_l/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/knee_r/knee_angle_r/value. bounds: [-2.7925, 0.17453]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/ankle_l/ankle_angle_l/value. bounds: [-1.0472, 0.69813]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/knee_r/knee_angle_r/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/hip_l/hip_flexion_l/value. bounds: [-0.69813, 1.7453]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/subtalar_r/subtalar_angle_r/value. bounds: [-0.87266, 0.87266]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/hip_l/hip_flexion_l/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/subtalar_r/subtalar_angle_r/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/mtp_r/mtp_angle_r/value. bounds: [-1.0472, 1.0472]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/mtp_r/mtp_angle_r/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/hip_l/hip_adduction_l/value. bounds: [-0.5236, 0.5236]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/hip_l/hip_adduction_l/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/hip_l/hip_rotation_l/value. bounds: [-0.5236, 0.5236]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/hip_l/hip_rotation_l/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/knee_l/knee_angle_l/value. bounds: [-2.7925, 0.17453]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/knee_l/knee_angle_l/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/ankle_l/ankle_angle_l/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/subtalar_l/subtalar_angle_l/value. bounds: [-0.87266, 0.87266]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/subtalar_l/subtalar_angle_l/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/mtp_l/mtp_angle_l/value. bounds: [-1.0472, 1.0472]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/back/lumbar_extension/value. bounds: [-0.7854, 0.17453]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/back/lumbar_extension/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/back/lumbar_bending/value. bounds: [-0.34907, 0.34907]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/back/lumbar_bending/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/back/lumbar_rotation/value. bounds: [-0.5236, 0.5236]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/acromial_r/arm_flex_r/value. bounds: [-1.5708, 1.5708]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/acromial_r/arm_flex_r/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/acromial_r/arm_add_r/value. bounds: [-2.0944, 1.5708]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/acromial_r/arm_add_r/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/acromial_r/arm_rot_r/value. bounds: [-1.5708, 1.5708]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/acromial_r/arm_rot_r/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/acromial_l/arm_flex_l/value. bounds: [-1.5708, 1.5708]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/acromial_l/arm_flex_l/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.305] [cout] [info]   /jointset/acromial_l/arm_add_l/value. bounds: [-2.0944, 1.5708]
+[2023-11-14 09:58:09.306] [cout] [info]   /jointset/acromial_l/arm_add_l/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.306] [cout] [info]   /jointset/acromial_l/arm_rot_l/value. bounds: [-1.5708, 1.5708]
+[2023-11-14 09:58:09.306] [cout] [info]   /jointset/acromial_l/arm_rot_l/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.306] [cout] [info]   /jointset/elbow_l/elbow_flex_l/value. bounds: [-0.17453, 2.618]
+[2023-11-14 09:58:09.306] [cout] [info]   /jointset/elbow_l/elbow_flex_l/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.306] [cout] [info]   /jointset/radioulnar_l/pro_sup_l/value. bounds: [0, 3.1416]
+[2023-11-14 09:58:09.306] [cout] [info]   /jointset/radioulnar_l/pro_sup_l/speed. bounds: [-50, 50]
+[2023-11-14 09:58:09.306] [cout] [info] Controls: (total: 33)
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/lumbar_extension_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/lumbar_bending_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/ankle_angle_r_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/lumbar_rotation_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/pelvis_tilt_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/hip_rotation_r_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/arm_flex_r_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/arm_add_r_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/arm_rot_r_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/hip_adduction_r_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/hip_flexion_l_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/elbow_flex_r_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/pro_sup_r_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/hip_rotation_l_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/arm_flex_l_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/arm_add_l_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/arm_rot_l_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/hip_flexion_r_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/hip_adduction_l_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/elbow_flex_l_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/pro_sup_l_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/knee_angle_l_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/ankle_angle_l_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/subtalar_angle_l_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/mtp_angle_l_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/knee_angle_r_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/subtalar_angle_r_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/mtp_angle_r_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/pelvis_tx_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/pelvis_ty_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/pelvis_tz_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/pelvis_list_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info]   /forceset/pelvis_rotation_actuator. bounds: [-inf, inf]
+[2023-11-14 09:58:09.306] [cout] [info] Parameters: none
+[2023-11-14 09:58:10.644] [info] Number of threads: 8
+[2023-11-14 11:19:11.069] [info] Set log level to Info.
+[2023-11-14 11:19:11.073] [info] ------------------------------------------------------------------------
+[2023-11-14 11:19:11.073] [info] Elapsed real time: 4862 second(s) (1 hour(s), 21 minute(s), 2 second(s)).
+[2023-11-14 11:19:11.073] [info] Tue Nov 14 11:19:11 2023
+[2023-11-14 11:19:11.073] [warning] MocoCasADiSolver did NOT succeed:
+[2023-11-14 11:19:11.073] [warning]   Maximum_Iterations_Exceeded
+[2023-11-14 11:19:11.073] [info] ========================================================================
+[2023-11-14 11:25:32.315] [cout] [info] Exiting visualization.
+[2023-11-14 11:26:50.243] [info] Loaded model JA1_SCALED from file model.osim
+[2023-11-14 11:29:06.783] [info] ========================================================================
+[2023-11-14 11:29:06.784] [info] MocoCasADiSolver starting.
+[2023-11-14 11:29:06.784] [info] Tue Nov 14 11:29:06 2023
+[2023-11-14 11:29:06.784] [info] ------------------------------------------------------------------------
+[2023-11-14 11:29:06.784] [cout] [info] Costs: (total: 5)
+[2023-11-14 11:29:06.784] [cout] [info]   marker_tracking. MocoMarkerTrackingGoal, enabled: true, mode: cost, weight: 10.0
+[2023-11-14 11:29:06.784] [cout] [info]         allow unused references: 
+[2023-11-14 11:29:06.784] [cout] [info]         tracked marker(s):
+[2023-11-14 11:29:06.784] [cout] [info]             C7, weight: 2.0
+[2023-11-14 11:29:06.784] [cout] [info]             RSH, weight: 2.5
+[2023-11-14 11:29:06.784] [cout] [info]             LSH, weight: 2.5
+[2023-11-14 11:29:06.784] [cout] [info]             MAN, weight: 2.0
+[2023-11-14 11:29:06.784] [cout] [info]             T7, weight: 2.0
+[2023-11-14 11:29:06.784] [cout] [info]             LARM, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             LELB, weight: 2.0
+[2023-11-14 11:29:06.784] [cout] [info]             LFOREARM, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             LWR, weight: 2.0
+[2023-11-14 11:29:06.784] [cout] [info]             RARM, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             RELB, weight: 2.0
+[2023-11-14 11:29:06.784] [cout] [info]             RFOREARM, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             RWR, weight: 2.0
+[2023-11-14 11:29:06.784] [cout] [info]             RASI, weight: 2.0
+[2023-11-14 11:29:06.784] [cout] [info]             LASI, weight: 2.0
+[2023-11-14 11:29:06.784] [cout] [info]             SACR, weight: 2.5
+[2023-11-14 11:29:06.784] [cout] [info]             P1, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             P2, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             P3, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             LTHLP, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             LTHLD, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             LTHAP, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             LTHAD, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             LLEPI, weight: 2.0
+[2023-11-14 11:29:06.784] [cout] [info]             LPAT, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             LTIAP, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             LTIAD, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             LTILAT, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             LLMAL, weight: 2.5
+[2023-11-14 11:29:06.784] [cout] [info]             LHEEL, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             LMFS, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             LMFL, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             LP1MT, weight: 2.0
+[2023-11-14 11:29:06.784] [cout] [info]             LTOE, weight: 2.0
+[2023-11-14 11:29:06.784] [cout] [info]             LP5MT, weight: 2.0
+[2023-11-14 11:29:06.784] [cout] [info]             RTHLP, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             RTHLD, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             RTHAP, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             RTHAD, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             RLEPI, weight: 2.0
+[2023-11-14 11:29:06.784] [cout] [info]             RPAT, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             RTIAP, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             RTIAD, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             RTILAT, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             RLMAL, weight: 2.5
+[2023-11-14 11:29:06.784] [cout] [info]             RHEEL, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             RMFS, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             RMFL, weight: 1.0
+[2023-11-14 11:29:06.784] [cout] [info]             RP1MT, weight: 2.0
+[2023-11-14 11:29:06.784] [cout] [info]             RTOE, weight: 2.0
+[2023-11-14 11:29:06.784] [cout] [info]             RP5MT, weight: 2.0
+[2023-11-14 11:29:06.785] [cout] [info]   control_effort. MocoControlGoal, enabled: true, mode: cost, weight: 0.00100000
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/lumbar_extension_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/lumbar_bending_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/lumbar_rotation_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/arm_flex_r_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/arm_add_r_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/arm_rot_r_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/elbow_flex_r_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/pro_sup_r_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/arm_flex_l_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/arm_add_l_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/arm_rot_l_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/elbow_flex_l_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/pro_sup_l_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/hip_flexion_l_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/hip_adduction_l_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/hip_rotation_l_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/knee_angle_l_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/ankle_angle_l_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/subtalar_angle_l_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/mtp_angle_l_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/hip_flexion_r_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/hip_adduction_r_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/hip_rotation_r_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/knee_angle_r_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/ankle_angle_r_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/subtalar_angle_r_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/mtp_angle_r_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/pelvis_tx_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/pelvis_ty_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/pelvis_tz_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/pelvis_tilt_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/pelvis_list_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]         control: /forceset/pelvis_rotation_actuator, weight: 1.0
+[2023-11-14 11:29:06.785] [cout] [info]   contact0. MocoContactTrackingGoal, enabled: true, mode: cost, weight: 0.1
+[2023-11-14 11:29:06.785] [cout] [info]         projection type: vector
+[2023-11-14 11:29:06.785] [cout] [info]         projection vector: ~[1,0,0]
+[2023-11-14 11:29:06.785] [cout] [info]         group 0: ExternalForce: LeftGRF1
+[2023-11-14 11:29:06.785] [cout] [info]             forces:
+[2023-11-14 11:29:06.785] [cout] [info]                 /forceset/contactForce_s1_l
+[2023-11-14 11:29:06.785] [cout] [info]                 /forceset/contactForce_s2_l
+[2023-11-14 11:29:06.785] [cout] [info]                 /forceset/contactForce_s3_l
+[2023-11-14 11:29:06.785] [cout] [info]                 /forceset/contactForce_s5_l
+[2023-11-14 11:29:06.785] [cout] [info]         group 1: ExternalForce: RightGRF1
+[2023-11-14 11:29:06.785] [cout] [info]             forces:
+[2023-11-14 11:29:06.785] [cout] [info]                 /forceset/contactForce_s1_r
+[2023-11-14 11:29:06.785] [cout] [info]                 /forceset/contactForce_s2_r
+[2023-11-14 11:29:06.785] [cout] [info]                 /forceset/contactForce_s3_r
+[2023-11-14 11:29:06.785] [cout] [info]                 /forceset/contactForce_s5_r
+[2023-11-14 11:29:06.785] [cout] [info]   contact1. MocoContactTrackingGoal, enabled: true, mode: cost, weight: 0.1
+[2023-11-14 11:29:06.785] [cout] [info]         projection type: vector
+[2023-11-14 11:29:06.785] [cout] [info]         projection vector: ~[0,1,0]
+[2023-11-14 11:29:06.785] [cout] [info]         group 0: ExternalForce: LeftGRF1
+[2023-11-14 11:29:06.785] [cout] [info]             forces:
+[2023-11-14 11:29:06.785] [cout] [info]                 /forceset/contactForce_s1_l
+[2023-11-14 11:29:06.785] [cout] [info]                 /forceset/contactForce_s2_l
+[2023-11-14 11:29:06.785] [cout] [info]                 /forceset/contactForce_s3_l
+[2023-11-14 11:29:06.785] [cout] [info]                 /forceset/contactForce_s5_l
+[2023-11-14 11:29:06.786] [cout] [info]         group 1: ExternalForce: RightGRF1
+[2023-11-14 11:29:06.786] [cout] [info]             forces:
+[2023-11-14 11:29:06.786] [cout] [info]                 /forceset/contactForce_s1_r
+[2023-11-14 11:29:06.786] [cout] [info]                 /forceset/contactForce_s2_r
+[2023-11-14 11:29:06.786] [cout] [info]                 /forceset/contactForce_s3_r
+[2023-11-14 11:29:06.786] [cout] [info]                 /forceset/contactForce_s5_r
+[2023-11-14 11:29:06.786] [cout] [info]   contact2. MocoContactTrackingGoal, enabled: true, mode: cost, weight: 0.1
+[2023-11-14 11:29:06.786] [cout] [info]         projection type: vector
+[2023-11-14 11:29:06.786] [cout] [info]         projection vector: ~[0,0,1]
+[2023-11-14 11:29:06.786] [cout] [info]         group 0: ExternalForce: LeftGRF1
+[2023-11-14 11:29:06.786] [cout] [info]             forces:
+[2023-11-14 11:29:06.786] [cout] [info]                 /forceset/contactForce_s1_l
+[2023-11-14 11:29:06.786] [cout] [info]                 /forceset/contactForce_s2_l
+[2023-11-14 11:29:06.786] [cout] [info]                 /forceset/contactForce_s3_l
+[2023-11-14 11:29:06.786] [cout] [info]                 /forceset/contactForce_s5_l
+[2023-11-14 11:29:06.786] [cout] [info]         group 1: ExternalForce: RightGRF1
+[2023-11-14 11:29:06.786] [cout] [info]             forces:
+[2023-11-14 11:29:06.786] [cout] [info]                 /forceset/contactForce_s1_r
+[2023-11-14 11:29:06.786] [cout] [info]                 /forceset/contactForce_s2_r
+[2023-11-14 11:29:06.786] [cout] [info]                 /forceset/contactForce_s3_r
+[2023-11-14 11:29:06.786] [cout] [info]                 /forceset/contactForce_s5_r
+[2023-11-14 11:29:06.786] [cout] [info] Endpoint constraints: none
+[2023-11-14 11:29:06.786] [cout] [info] Kinematic constraints: none
+[2023-11-14 11:29:06.786] [cout] [info] Path constraints: (total: 10)
+[2023-11-14 11:29:06.786] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-14 11:29:06.786] [cout] [info]         output: /markerset/r_fp_heel1|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-14 11:29:06.786] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-14 11:29:06.786] [cout] [info]         output: /markerset/r_fp_heel2|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-14 11:29:06.786] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-14 11:29:06.786] [cout] [info]         output: /markerset/r_fp_mt1|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-14 11:29:06.786] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-14 11:29:06.786] [cout] [info]         output: /markerset/r_fp_mt2|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-14 11:29:06.786] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-14 11:29:06.786] [cout] [info]         output: /markerset/r_fp_toe|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-14 11:29:06.786] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-14 11:29:06.786] [cout] [info]         output: /markerset/l_fp_heel1|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-14 11:29:06.786] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-14 11:29:06.786] [cout] [info]         output: /markerset/l_fp_heel2|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-14 11:29:06.786] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-14 11:29:06.786] [cout] [info]         output: /markerset/l_fp_mt1|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-14 11:29:06.786] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-14 11:29:06.786] [cout] [info]         output: /markerset/l_fp_mt2|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-14 11:29:06.786] [cout] [info]   . MocoConstraintInfo. number of scalar equations: 1. bounds: [0, 1]
+[2023-11-14 11:29:06.786] [cout] [info]         output: /markerset/l_fp_toe|location, type: SimTK::Vec3, index: 1, exponent: 1
+[2023-11-14 11:29:06.786] [cout] [info] States: (total: 66)
+[2023-11-14 11:29:06.786] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/value. bounds: [-1.5708, 1.5708]
+[2023-11-14 11:29:06.786] [cout] [info]   /jointset/ground_pelvis/pelvis_tilt/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.786] [cout] [info]   /jointset/ground_pelvis/pelvis_list/value. bounds: [-1.5708, 1.5708]
+[2023-11-14 11:29:06.786] [cout] [info]   /jointset/ground_pelvis/pelvis_list/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.786] [cout] [info]   /jointset/radioulnar_r/pro_sup_r/value. bounds: [0, 3.1416]
+[2023-11-14 11:29:06.786] [cout] [info]   /jointset/ground_pelvis/pelvis_rotation/value. bounds: [-1.5708, 1.5708]
+[2023-11-14 11:29:06.786] [cout] [info]   /jointset/radioulnar_r/pro_sup_r/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.786] [cout] [info]   /jointset/ground_pelvis/pelvis_rotation/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/value. bounds: [-20, 20]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/ground_pelvis/pelvis_tx/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/elbow_r/elbow_flex_r/value. bounds: [-0.17453, 2.618]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/value. bounds: [-2, 4]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/elbow_r/elbow_flex_r/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/ground_pelvis/pelvis_ty/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/ground_pelvis/pelvis_tz/value. bounds: [-5, 5]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/ground_pelvis/pelvis_tz/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/ankle_r/ankle_angle_r/value. bounds: [-1.0472, 0.69813]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/hip_r/hip_adduction_r/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/hip_r/hip_flexion_r/value. bounds: [-0.69813, 1.7453]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/ankle_r/ankle_angle_r/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/hip_r/hip_flexion_r/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/hip_r/hip_adduction_r/value. bounds: [-0.5236, 0.5236]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/back/lumbar_rotation/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/hip_r/hip_rotation_r/value. bounds: [-0.5236, 0.5236]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/hip_r/hip_rotation_r/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/mtp_l/mtp_angle_l/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/knee_r/knee_angle_r/value. bounds: [-2.7925, 0.17453]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/ankle_l/ankle_angle_l/value. bounds: [-1.0472, 0.69813]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/knee_r/knee_angle_r/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/hip_l/hip_flexion_l/value. bounds: [-0.69813, 1.7453]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/subtalar_r/subtalar_angle_r/value. bounds: [-0.87266, 0.87266]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/hip_l/hip_flexion_l/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/subtalar_r/subtalar_angle_r/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/mtp_r/mtp_angle_r/value. bounds: [-1.0472, 1.0472]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/mtp_r/mtp_angle_r/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/hip_l/hip_adduction_l/value. bounds: [-0.5236, 0.5236]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/hip_l/hip_adduction_l/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/hip_l/hip_rotation_l/value. bounds: [-0.5236, 0.5236]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/hip_l/hip_rotation_l/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/knee_l/knee_angle_l/value. bounds: [-2.7925, 0.17453]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/knee_l/knee_angle_l/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/ankle_l/ankle_angle_l/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/subtalar_l/subtalar_angle_l/value. bounds: [-0.87266, 0.87266]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/subtalar_l/subtalar_angle_l/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/mtp_l/mtp_angle_l/value. bounds: [-1.0472, 1.0472]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/back/lumbar_extension/value. bounds: [-0.7854, 0.17453]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/back/lumbar_extension/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/back/lumbar_bending/value. bounds: [-0.34907, 0.34907]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/back/lumbar_bending/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/back/lumbar_rotation/value. bounds: [-0.5236, 0.5236]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/acromial_r/arm_flex_r/value. bounds: [-1.5708, 1.5708]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/acromial_r/arm_flex_r/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.787] [cout] [info]   /jointset/acromial_r/arm_add_r/value. bounds: [-2.0944, 1.5708]
+[2023-11-14 11:29:06.788] [cout] [info]   /jointset/acromial_r/arm_add_r/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.788] [cout] [info]   /jointset/acromial_r/arm_rot_r/value. bounds: [-1.5708, 1.5708]
+[2023-11-14 11:29:06.788] [cout] [info]   /jointset/acromial_r/arm_rot_r/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.788] [cout] [info]   /jointset/acromial_l/arm_flex_l/value. bounds: [-1.5708, 1.5708]
+[2023-11-14 11:29:06.788] [cout] [info]   /jointset/acromial_l/arm_flex_l/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.788] [cout] [info]   /jointset/acromial_l/arm_add_l/value. bounds: [-2.0944, 1.5708]
+[2023-11-14 11:29:06.788] [cout] [info]   /jointset/acromial_l/arm_add_l/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.788] [cout] [info]   /jointset/acromial_l/arm_rot_l/value. bounds: [-1.5708, 1.5708]
+[2023-11-14 11:29:06.788] [cout] [info]   /jointset/acromial_l/arm_rot_l/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.788] [cout] [info]   /jointset/elbow_l/elbow_flex_l/value. bounds: [-0.17453, 2.618]
+[2023-11-14 11:29:06.788] [cout] [info]   /jointset/elbow_l/elbow_flex_l/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.788] [cout] [info]   /jointset/radioulnar_l/pro_sup_l/value. bounds: [0, 3.1416]
+[2023-11-14 11:29:06.788] [cout] [info]   /jointset/radioulnar_l/pro_sup_l/speed. bounds: [-50, 50]
+[2023-11-14 11:29:06.788] [cout] [info] Controls: (total: 33)
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/lumbar_extension_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/lumbar_bending_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/ankle_angle_r_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/lumbar_rotation_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/pelvis_tilt_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/hip_rotation_r_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/arm_flex_r_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/arm_add_r_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/arm_rot_r_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/hip_adduction_r_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/hip_flexion_l_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/elbow_flex_r_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/pro_sup_r_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/hip_rotation_l_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/arm_flex_l_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/arm_add_l_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/arm_rot_l_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/hip_flexion_r_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/hip_adduction_l_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/elbow_flex_l_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/pro_sup_l_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/knee_angle_l_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/ankle_angle_l_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/subtalar_angle_l_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/mtp_angle_l_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/knee_angle_r_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/subtalar_angle_r_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/mtp_angle_r_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/pelvis_tx_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.788] [cout] [info]   /forceset/pelvis_ty_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.789] [cout] [info]   /forceset/pelvis_tz_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.789] [cout] [info]   /forceset/pelvis_list_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.789] [cout] [info]   /forceset/pelvis_rotation_actuator. bounds: [-inf, inf]
+[2023-11-14 11:29:06.789] [cout] [info] Parameters: none
+[2023-11-14 11:29:09.006] [info] Number of threads: 8
+[2023-11-14 13:41:38.951] [info] Set log level to Info.
+[2023-11-14 13:41:38.973] [info] ------------------------------------------------------------------------
+[2023-11-14 13:41:38.974] [info] Elapsed real time: 7952 second(s) (2 hour(s), 12 minute(s), 32 second(s)).
+[2023-11-14 13:41:38.974] [info] Tue Nov 14 13:41:38 2023
+[2023-11-14 13:41:38.974] [warning] MocoCasADiSolver did NOT succeed:
+[2023-11-14 13:41:38.974] [warning]   User_Requested_Stop
+[2023-11-14 13:41:38.974] [info] ========================================================================
+[2023-11-14 13:42:31.996] [cout] [info] Exiting visualization.

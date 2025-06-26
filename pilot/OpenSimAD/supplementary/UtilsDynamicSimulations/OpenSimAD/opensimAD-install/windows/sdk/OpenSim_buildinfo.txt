@@ -1,0 +1,3 @@
+Product Version=4.0
+Compiler=Visual Studio 15 2017-MSVC
+Platform=Windows-x64

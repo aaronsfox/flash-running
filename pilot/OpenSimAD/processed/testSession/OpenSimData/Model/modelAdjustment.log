@@ -1,0 +1,7 @@
+-For pose #0, scaled gmax1 moment arm was 0.009. Unscaled was 0.005. No adjustements made.
+-For pose #0, scaled iliacus moment arm was 0.024. Unscaled was 0.030. No adjustements made.
+-For pose #1, scaled iliacus moment arm was 0.017. Unscaled was 0.006. No adjustements made.
+-For pose #2, scaled iliacus moment arm was 0.037. Unscaled was 0.043. No adjustements made.
+-For pose #0, scaled psoas moment arm was 0.019. Unscaled was 0.022. No adjustements made.
+-For pose #1, moved psoas pelvis path point xpos forward from -0.020 to -0.018, and femur psoas path point ypos down from -0.048 to -0.050. Restored moment arm from 0.004 to 0.015.
+-For pose #2, scaled psoas moment arm was 0.030. Unscaled was 0.008. No adjustements made.
